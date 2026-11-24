@@ -1,0 +1,19 @@
+name: Research feedback
+description: Report an error, independent check, reproduction or improvement
+title: "[Research feedback] "
+body:
+  - type: input
+    attributes:
+      label: Project and version
+    validations:
+      required: true
+  - type: textarea
+    attributes:
+      label: Claim and feedback
+      description: Identify the claim and provide reasoning or evidence.
+    validations:
+      required: true
+  - type: textarea
+    attributes:
+      label: Reproduction and limitations
+      description: Include methods, environment, results and any conflicts of interest.

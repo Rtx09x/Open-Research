@@ -1,0 +1,18 @@
+name: Research proposal
+description: Propose a question, existing research project or new domain
+title: "[Proposal] "
+body:
+  - type: textarea
+    attributes:
+      label: Problem and significance
+      description: What is the question and why does it matter?
+    validations:
+      required: true
+  - type: textarea
+    attributes:
+      label: Context and prior work
+      description: Include relevant references, domain and existing results if any.
+  - type: textarea
+    attributes:
+      label: Approach and collaboration
+      description: Proposed methods, evidence, limitations and help needed.

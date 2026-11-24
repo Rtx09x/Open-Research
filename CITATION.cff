@@ -1,0 +1,8 @@
+cff-version: 1.2.0
+message: "Cite the specific research project and its authors; use this citation for the initiative itself."
+title: "Open Research"
+type: dataset
+authors:
+  - name: "Open Research"
+repository-code: "https://github.com/Rtx09x/Open-Research"
+url: "https://github.com/Rtx09x/Open-Research"

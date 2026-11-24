@@ -1,0 +1,8 @@
+name: General issue
+description: Discuss collaboration, infrastructure or other initiative matters
+body:
+  - type: textarea
+    attributes:
+      label: Description
+    validations:
+      required: true
