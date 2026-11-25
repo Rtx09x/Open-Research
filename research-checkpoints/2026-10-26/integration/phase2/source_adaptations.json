@@ -1,0 +1,83 @@
+{
+  "scope": "Portable paths and documentation only; precise source/curated hashes for modified copied artifacts",
+  "changes": [
+    {
+      "path": "advisor/phase2/check_packing_best_fit.py",
+      "reason": "Portable paths; reuse the already integrated factual source tables instead of bundling full article HTML; label replay scope accurately.",
+      "source_sha256": "1eeefc1a40a18904346c7634bde54797a99a220a5969aaf0574cdc9a4d712637",
+      "curated_sha256": "1b6cb413dd0df774fa56c363f87e196567f27a153daa896b769c24c10721aed9"
+    },
+    {
+      "path": "advisor/phase2/check_packing_single_thresholds.py",
+      "reason": "Portable paths; reuse the already integrated factual source tables instead of bundling full article HTML; label replay scope accurately.",
+      "source_sha256": "544bcb317821e6154fa8995bd7d7be50a10a58c0a17c0513d21ff99e7a82c156",
+      "curated_sha256": "4538c20254a1ed5edee2e710f6d8a8d015e3faeaf334cdd412e4af84d24dc09e"
+    },
+    {
+      "path": "quantum-independent-audit/verify_full_certificate_independent.py",
+      "reason": "Replace cloud-workspace absolute paths with repository-relative paths; mathematical code unchanged.",
+      "source_sha256": "c25f4acfbdb113e5143abda238f5cbd16fecfc76c09c7dc70f850678beef90da",
+      "curated_sha256": "8e24fa80d83aa2ee459752adb36ed1d5b03bbcd5231937f36e3cf8978a1f1a9b"
+    },
+    {
+      "path": "quantum-independent-audit/check_kl_stability.py",
+      "reason": "Replace cloud-workspace absolute paths with repository-relative paths; mathematical code unchanged.",
+      "source_sha256": "69ad4682e52f56459a35ac6557c846c8e4cdc355226e9ca130475b109e001b8b",
+      "curated_sha256": "231b984e97057cae79e5d66cb4fd2371f9b29d95c053ebd8548d2306cfed1eb6"
+    },
+    {
+      "path": "quantum-independent-audit/replay_known19_exact.py",
+      "reason": "Replace cloud-workspace absolute paths with repository-relative paths; mathematical code unchanged.",
+      "source_sha256": "8cf543f91b1b98b95f609197221ada8f334eb81d41396493a225f8d96c4cf645",
+      "curated_sha256": "1969b5aff3ad85ea7b29aa8f58f70d7dc281228938ea943725533de4efdbc98a"
+    },
+    {
+      "path": "quantum-independent-audit/replay_shorter_lengths.py",
+      "reason": "Replace cloud-workspace absolute paths with repository-relative paths; mathematical code unchanged.",
+      "source_sha256": "6132023d84e30de68a4cf0fb6626b2d7680ed342ce24c3d6dd32d50605446579",
+      "curated_sha256": "f42bf18b1d056b30db149588dbbad399045af3cda49eeb8abbf7e26f79d0bf7f"
+    },
+    {
+      "path": "quantum-independent-audit/replay_all_cones.py",
+      "reason": "Replace cloud-workspace absolute paths with repository-relative paths; mathematical code unchanged.",
+      "source_sha256": "3420e9fb72791070d8c23b328c6aa0623fad9d68a06d0c1549ffe41c82fc6752",
+      "curated_sha256": "dc55c415e8893eef8f876bf770063bd0d716f9b4527d172215ca1a876ba68af7"
+    },
+    {
+      "path": "quantum-independent-audit/complex_projector_controls.py",
+      "reason": "Replace cloud-workspace absolute paths with repository-relative paths; mathematical code unchanged.",
+      "source_sha256": "b6d6b6443887feefc33e4f458e25f60b8740686a36befac5772420cbea4c84d6",
+      "curated_sha256": "7e67ddadbe4efff85c71a8d4e778efbd425e396ca06cfebfce8f990b03beae65"
+    },
+    {
+      "path": "quantum-independent-audit/generic_n18_control.py",
+      "reason": "Replace cloud-workspace absolute paths with repository-relative paths; mathematical code unchanged.",
+      "source_sha256": "8bbf50055803c3c3458f4e1366887011632f0ccf1402a3ed65183aaa7d13110f",
+      "curated_sha256": "4f7f16d3ee88926b23822012c1558e8a58a36c06aee969789f32f82c92bd3ebe"
+    },
+    {
+      "path": "advisor/phase2/check_spinor_compression.py",
+      "reason": "Replace cloud-workspace absolute paths with repository-relative paths; mathematical code unchanged.",
+      "source_sha256": "7eacb83457d12292bfc66aba08741df904b26c7f1ddbf8a199fe32e51537fb79",
+      "curated_sha256": "e1309f62162d2099b77f0d49e402b982ce9236dedf5490b79094c89904974de9"
+    },
+    {
+      "path": "advisor/phase2/check_rational_moment_export.py",
+      "reason": "Portable path to exact moment coefficients; mathematical code unchanged.",
+      "source_sha256": "c825e89bfa3edcaa2db590eafd938738cd991d8af647bb81599c6e486211c99b",
+      "curated_sha256": "740722177a578e900c9a2590f740f0094ca0eade6cf2266aa4558a4d9024d80a"
+    },
+    {
+      "path": "symmetric-quantum-codes/phase2/certificate_readme.md",
+      "reason": "Portable interpreter command and correct document-relative independent-audit paths; mathematical claims unchanged.",
+      "source_sha256": "3f69ea04abb8d669d985a6727802400e4c645bced608c7c00a026ce3bc74ab37",
+      "curated_sha256": "12cb07cedf30a2ec20973a6a3c150ad4c6299710c34ac97a1de0c9b6eee829d7"
+    },
+    {
+      "path": "symmetric-quantum-codes/phase2/theorem_and_necessity.md",
+      "reason": "Portable interpreter command and correct document-relative independent-audit paths; mathematical claims unchanged.",
+      "source_sha256": "01da6671a6246654dcc40ff5282f30bcaff0e59102271220748e9272eb1c150e",
+      "curated_sha256": "6755b893640acc9beed8814536267f1638aea0e68e975cc09233116c456d24b5"
+    }
+  ]
+}

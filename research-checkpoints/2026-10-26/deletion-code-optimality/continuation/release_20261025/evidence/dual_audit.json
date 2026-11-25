@@ -1,0 +1,16 @@
+{
+  "passed": true,
+  "numerator": 320497437108,
+  "denominator": 1000000000,
+  "upper": 320.497437108,
+  "integer_upper": 320,
+  "dual_cliques": 578,
+  "dual_CG_nodes": 52,
+  "expanded_ancestor_nodes": 52,
+  "maximum_CG_rank": 1,
+  "coverage_checks": 1056,
+  "rounded_cap_ancestor": null,
+  "cap_proof": null,
+  "checked_cliques": 599,
+  "seconds": 0.03153681099865935
+}

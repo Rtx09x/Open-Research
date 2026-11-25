@@ -1,0 +1,22 @@
+# Literature and exact target (checked 2026-10-25)
+
+## Target
+[RE-02](https://github.com/ajt60gaibb/OpenProblemsInNLA/blob/main/randomized-and-low-rank-approximation/RE-02/README.md) asks for universal constants and a uniform randomized polynomial-arithmetic algorithm. With N=2^(L+1) k and 2k-sized leaves, output rank-at-most-k HSS B using at most C_q k forward **plus** transpose matvecs on every execution, with E||A-B||_F² <= C_e L min_HSS ||A-H||_F². Exact real arithmetic is the model; no finite-precision theorem is required. The source continues to mark the problem open, last checked 2026-09-10.
+
+## Primary reusable work
+1. Amsel, Chen, Duman Keles, Halikias, Musco, Musco, Persson, [Quasi-optimal hierarchically semi-separable matrix approximation](https://arxiv.org/html/2505.16937v2), arXiv v2 dated 2025-09-06; SIAM J. Matrix Anal. Appl. 47(2), 586–621 (2026), DOI 10.1137/25M176622X. Theorem 13 uses O(kL) products and O(L) squared-error ratio. Sections 4.3–4.4 identify dependencies from reusing probes and errors contaminating compressed sketches. Public experiment source: https://github.com/NoahAmsel/HSS-approximation . Locally retained `HSS_approx.upstream.py` for comparison only; our small baseline is separately implemented.
+2. Levitt and Martinsson, [Linear-Complexity Black-Box Randomized Compression of Rank-Structured Matrices](https://arxiv.org/pdf/2205.02990v3), SIAM J. Sci. Comput. 46(3), A1747–A1763 (2024), DOI 10.1137/22M1528574. Algorithm 4.1 reuses Gaussian Ω,Ψ and compressed products. Remark 4.3 explicitly does not prove that the coarser adaptive tests retain Gaussian behavior. It is not a robust relative-error theorem for arbitrary A.
+3. Massei, Robol, Kressner, [hm-toolbox](https://arxiv.org/abs/1909.07909), SISC 42 (2020), C43–C68: rank definition of HSS.
+
+## Freshness search
+Targeted searches for 2026 HSS quasi-optimality, depth-independent sketch reuse, and citations of arXiv:2505.16937 found the above published result and ongoing references, not a primary-source resolution of RE-02. This is a scoped search, not proof of absence.
+
+## Excluded shortcuts
+Exact recovery alone; full entry access; output rank larger than k; fresh O(k) probes per level; proving constant-factor RE-01 instead; empirical success interpreted as an expectation theorem; uniform embedding of all HSS secants (too strong).
+
+## Additional relevant primary literature found during work
+- Gallmeier–Otto, [Efficient Approximation of Structured Linear Operators using Randomized One-Sided Queries](https://arxiv.org/html/2610.07513v1), 2026-10-05. Prescribed row subspaces of dimension d can be approximated in expectation with q Gaussian forward probes and excess squared error factor d/(q−d−1). For HSS the prescribed whole-row dimension can grow with depth; the theorem does not learn unknown nested bases or directly settle RE-02.
+- Amsel et al., [Query Efficient Structured Matrix Learning](https://proceedings.mlr.press/v336/amsel26a.html), COLT2026. General finite-family/linear-family results; dimension-based query cost is not O(k) for the full HSS parameter space.
+- Montoison–Dalle–Gebremedhin, [Revisiting Sparse Matrix Coloring and Bicoloring](https://arxiv.org/abs/2505.07308), 2025; and Coleman–Cai, [The Cyclic Coloring Problem and Estimation of Sparse Hessian Matrices](https://hdl.handle.net/1813/6485), 1984technical report. Exact sparse recovery by coloring and leaf substitution is established background. Our block-tree experiment is not claimed to invent that recovery mechanism. The precise random-sign arbitrary-noise path-length expectation needs a separate novelty check.
+- Yesypenko, [Quasi-Optimal Randomized Recovery of H² Matrices](https://arxiv.org/html/2610.04574), 2026-10-03. Appendix A.2 establishes one-level reuse through Gaussian nullspace/row-space splitting. The global carried-probe method remains empirical; its proved global theorem uses resketched levels. This is a useful direct proof ingredient, not a RE-02 resolution.
+- Musco–Ramesh, [Nearly Instance Optimal Sparse Matrix Approximation from Matrix-Vector Products](https://drops.dagstuhl.de/entities/document/10.4230/LIPIcs.ESA.2026.85), ESA2026. A degeneracy-based robust bound uses a logarithmic query factor. The tree subclass has degeneracy one; our exact constant-query/diameter-error tradeoff is not directly implied, but related exact-recovery and sparse-probing mechanisms are established.

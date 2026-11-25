@@ -1,0 +1,34 @@
+{
+  "all_rejected": true,
+  "controls": [
+    {
+      "case": "quantum Farkas coefficient",
+      "rejected_by_assertion": true,
+      "returncode": 1,
+      "wall_seconds": 0.059,
+      "output": "Traceback (most recent call last):\n  File \"/tmp/research-negative-6qgv1wec/symmetric-quantum-codes/tests/check_quantum_farkas.py\", line 23, in <module>\n    assert sum(a*v for a,v in zip(b,y))==-1\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError\n"
+    },
+    {
+      "case": "HSS claimed rational mean",
+      "rejected_by_assertion": true,
+      "returncode": 1,
+      "wall_seconds": 3.78,
+      "output": "Traceback (most recent call last):\n  File \"/tmp/research-negative-k6edpq8v/hss-probe-reuse/verify_rational_potential.py\", line 58, in <module>\n    mean=total/count;expected=Q(c['expected_energy_increase_exact']);assert mean==expected\n                                                                            ^^^^^^^^^^^^^^\nAssertionError\n"
+    },
+    {
+      "case": "C7 inherited input vector",
+      "rejected_by_assertion": true,
+      "returncode": 1,
+      "wall_seconds": 0.173,
+      "output": "Traceback (most recent call last):\n  File \"/tmp/research-negative-g5i6h8o8/seven-cycle-capacity/verify_recycled_certificate.py\", line 8, in <module>\n    sys.set_int_max_str_digits(0);P=Path(__file__).resolve().parent;start=time.monotonic();ap=argparse.ArgumentParser();ap.add_argument('certificate',nargs='?',default='recycled_terminal_certificate.json');args=ap.parse_args();c=json.load(open(P/args.certificate));raw=(P/c['source_base']).read_bytes();assert hashlib.sha256(raw).hexdigest()==c['source_base_sha256'];base=json.loads(raw);L='BNADOHV';seps={frozenset(p) for p in ('BO','BH','BV','NA','ND','NO','NH','NV','AD','AH','DV')}\n                                                                                                                                                                                                                                                                                                                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError\n"
+    },
+    {
+      "case": "AH invalid target",
+      "rejected_by_assertion": true,
+      "returncode": 1,
+      "wall_seconds": 0.079,
+      "output": "Traceback (most recent call last):\n  File \"/tmp/research-negative-0yxunoht/online-bin-packing/verify_ah_full.py\", line 60, in <module>\n    if __name__=='__main__':run(*sys.argv[1:])\n                            ^^^^^^^^^^^^^^^^^^\n  File \"/tmp/research-negative-0yxunoht/online-bin-packing/verify_ah_full.py\", line 55, in run\n    a=price_bound(normal,rho,Q(1),target);b=price_bound(heavy,rho,y,target-1)\n      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/tmp/research-negative-0yxunoht/online-bin-packing/verify_ah_independent.py\", line 23, in price_bound\n    assert allowance>=0\n           ^^^^^^^^^^^^\nAssertionError\n"
+    }
+  ],
+  "scope": "Four deliberate corruptions rejected; not exhaustive adversarial verifier testing."
+}

@@ -1,0 +1,15 @@
+{
+  "status": "n34 terminal independent arithmetic/applicability PASS; internally verified t3 bracket35..37; general theorem OPEN",
+  "files": {
+    "general_dual_n34_t3.json": "04ca5f383f77f8168d3989cb2b67a13ae51a82648518ec75d0f6407c1fb392ba",
+    "general_dual_n34_t3_verified.json": "9419b3ecc32b4331ad3bb377654410700cd252b4b1f3c7786de8242b965a7594",
+    "check_general_dual_tight.py": "f29dfa02439e6dadbef99224e288ce66b8188bc329341b39df1e95791daf1a5d",
+    "t3_verified_bracket.md": "b15d1de5c52d46d3ca2ef5c420a7365d8723ea2b59bff30b94d22710137aa4e5",
+    "README.md": "3fd6eb5d0ae71733d317bc2dda26c7b33996ad9a2ef8a121e8397f3f8d649b02",
+    "terminology_clarification.md": "12e2c3495cae9e44725f45b09fe86c30fcfec2c67f97a9ffe395312aba9644ea"
+  },
+  "need_previous_package": "validated_checkpoint_20261025_2318",
+  "independent_audit": "/workspace/shared/research-active/advisor/phase2/quantum_general_n34_t3_audit.json",
+  "necessity_changes": "none; same valid cone family; only n changes and tighter residual tolerance",
+  "external_review": "not externally reviewed; priority unconfirmed"
+}

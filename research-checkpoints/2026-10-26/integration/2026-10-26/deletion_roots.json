@@ -1,0 +1,15 @@
+{
+  "all_passed": true,
+  "network_used": false,
+  "checks": [
+    {
+      "group": "deletion",
+      "cwd": "deletion-code-optimality/checkpoints/root-exclusions-2026-10-26",
+      "command": "python replay.py",
+      "passed": true,
+      "returncode": 0,
+      "output": "{\n  \"passed\": true,\n  \"claim\": \"Normalized length12 deletion code of size320 with constants cannot contain word5\",\n  \"ten_cover_cases_excluded\": 10,\n  \"global_upper319_proved\": false,\n  \"manifest_files\": 149,\n  \"negative_controls\": [\n    \"incorrect dual numerator rejected\",\n    \"incorrect row RHS rejected\"\n  ],\n  \"seconds\": 32.39363554799638\n}\n{\n  \"status\": \"PASS\",\n  \"parent\": 5,\n  \"bundle_manifest_sha256\": \"1c9e09ee5eaf3a479b38de7760c53a1774e3e97779f0846c7f0e81d991a4757c\",\n  \"ancestors_recomputed\": true,\n  \"steps\": [\n    \"check_deletion_forced_receivers_independent.py\",\n    \"check_deletion_forced_face_independent.py\",\n    \"check_deletion_forced_face263_771_independent.py\",\n    \"check_deletion_parent5_independent.py\"\n  ],\n  \"scope\": \"Normalized size320 code cannot contain word5; not global319.\"\n}\n{\n  \"passed\": true,\n  \"claim\": \"Normalized target320 code with constants cannot contain word11\",\n  \"root_children_excluded\": 8,\n  \"global_upper319_proved\": false,\n  \"files_checked\": 145,\n  \"negative_controls\": [\n    \"wrong integer dual numerator rejected\"\n  ],\n  \"seconds\": 31.405303052000818\n}\n{\n  \"status\": \"PASS\",\n  \"parent\": 11,\n  \"bundle_manifest_sha256\": \"75dfbeb05aa15b14a3e6f26b33b7ef94d7ca67c5339216246cc9fddb34c162e1\",\n  \"ancestors_recomputed\": true,\n  \"steps\": [\n    \"check_deletion_forced_receivers_independent.py\",\n    \"check_deletion_parent11_independent.py\"\n  ],\n  \"scope\": \"Normalized size320 code cannot contain word11; not global319.\"\n}\nPASS: both frozen primary and independently reconstructed root-case proofs, including corruption controls.\n",
+      "seconds": 74.73297761599679
+    }
+  ]
+}

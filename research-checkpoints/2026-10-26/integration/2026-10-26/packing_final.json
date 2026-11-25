@@ -1,0 +1,51 @@
+{
+  "all_passed": true,
+  "network_used": false,
+  "checks": [
+    {
+      "group": "packing",
+      "cwd": "online-bin-packing",
+      "command": "python phase7/actual_floor/verify_actual_floor.py",
+      "passed": true,
+      "returncode": 0,
+      "output": "PASS actual fixed-algorithm lower 1.5782054112079646 analysis-only window 1.0679078349233566e-07 replayed items 297658\n",
+      "seconds": 0.42722393699659733
+    },
+    {
+      "group": "packing",
+      "cwd": "online-bin-packing",
+      "command": "python phase4/retune_two/verify_independent.py",
+      "passed": true,
+      "returncode": 0,
+      "output": "{'status': 'PASS', 'target': '96988842290419266162339453629607142739/61455140781288409357546665835971477504', 'target_decimal': 1.5782055179987482, 'scenarios': 402, 'knapsacks': 804, 'certificate_sha256': 'c8559b05ef4fd6373ad391504fc93d931651ea550ab61c998eb4f0ebe52868bd', 'nodes': 30422, 'seconds': 1.7944514751434326}\n",
+      "seconds": 1.832533892003994
+    },
+    {
+      "group": "packing",
+      "cwd": "online-bin-packing",
+      "command": "python phase4/retune_two/verify_active_face.py",
+      "passed": true,
+      "returncode": 0,
+      "output": "{'status': 'PASS exact fixed-charge two-coordinate optimum', 'target': '96988842290419266162339453629607142739/61455140781288409357546665835971477504', 'target_decimal': 1.5782055179987482, 'x': '18935351344611151924017505131572893074843797829399515287/133498822356113632293830702495609152090893986932790919168', 'y': '5195967633676282691551522200004974757740244110567974189921/13144499431986573025854099938029208821257254097997875118080', 'P_intercept': '16937334239132566685351795707/10496187989852832684086132736', 'P_slope_x': '-1/4', 'Z_intercept': '101960709481823113009047421167/57415045414579597588163461120', 'Z_slope_y': '-1/2', 'constant_G_pattern': [1, 165, 172], 'constant_G_residual': '1/60', 'scope': 'classes167/179 proportions only, fixed other parameters and fixed charges; not joint analysis/algorithm optimum or true ratio', 'certificate_sha256': 'c8559b05ef4fd6373ad391504fc93d931651ea550ab61c998eb4f0ebe52868bd'}\n",
+      "seconds": 0.049212965997867286
+    },
+    {
+      "group": "packing",
+      "cwd": "advisor/phase3",
+      "command": "python check_packing_actual_floor_independent.py",
+      "passed": true,
+      "returncode": 0,
+      "output": "{\n  \"status\": \"PASS\",\n  \"source_sha256\": \"c8559b05ef4fd6373ad391504fc93d931651ea550ab61c998eb4f0ebe52868bd\",\n  \"claim_sha256\": \"75eb8252024061302c16ce52a1f4faeefa4be626cb8875cc18e5c7a190b75dd6\",\n  \"positive_rates\": {\n    \"165\": \"56035901/134217728\",\n    \"179\": \"47814059833445664222897846116231682970603195636995944297/533995289424454529175322809982436608363575947731163676672\",\n    \"205\": \"61605937/2415919104\",\n    \"208\": \"20486803/872415232\",\n    \"211\": \"30706159/1409286144\"\n  },\n  \"Kp\": \"4629362226716989759188631892637569797799391977917968977/2934040051782717193271004450452948397602065646874525696\",\n  \"K\": \"47899435362138/32568497273\",\n  \"lower\": \"4107392448037194657402218954908536678004115949310575318313228556551/2602571515005375788795491740665865407544891224611410110356087898112\",\n  \"upper\": \"96988842290419266162339453629607142739/61455140781288409357546665835971477504\",\n  \"gap\": \"244214804051211930109591/2286852816926276513629309223262\",\n  \"sufficient_additive_constant\": \"7985408545915647477871282569666211244730436188593438682732147959581553/710502023596467590341169245201781256259755304318914960127211996184576\",\n  \"arbitrary_prefix_checks\": 120000,\n  \"scope\": \"Fixed capacities/proportions and positive-container architecture; not universal online lower bound.\"\n}\n",
+      "seconds": 1.945300072999089
+    },
+    {
+      "group": "packing",
+      "cwd": "advisor/phase3",
+      "command": "python check_packing_retune_two.py",
+      "passed": true,
+      "returncode": 0,
+      "output": "{\n  \"status\": \"PASS\",\n  \"source_parameters_independently_reparsed\": true,\n  \"all_published_analysis_weights_preserved\": true,\n  \"exact_bound\": \"96988842290419266162339453629607142739/61455140781288409357546665835971477504\",\n  \"decimal_bound\": 1.5782055179987482,\n  \"certificate_sha256\": \"c8559b05ef4fd6373ad391504fc93d931651ea550ab61c998eb4f0ebe52868bd\",\n  \"scenarios\": 402,\n  \"strict_knapsacks\": 804,\n  \"pricing_nodes\": 42813,\n  \"seconds\": 2.6204323768615723,\n  \"scope\": \"Revised class167/179 proportions of all-container tiny Best Fit AH; fixed ordered-suffix charges. Exact upper and fixed-two-coordinate analysis floor, not algorithm tightness or full parameter optimum\",\n  \"changed_classes\": [\n    167,\n    179\n  ],\n  \"physical_floor\": \"96988842290419266162339453629607142739/61455140781288409357546665835971477504\"\n}\n",
+      "seconds": 2.6582635039958404
+    }
+  ]
+}

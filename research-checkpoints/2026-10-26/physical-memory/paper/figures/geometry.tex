@@ -1,0 +1,11 @@
+\begin{tikzpicture}[>=Latex,x=1cm,y=1cm,font=\small]
+\tikzset{state/.style={draw=azure!58,fill=azure!5,rounded corners=5pt,minimum height=1.18cm,minimum width=2.9cm,align=center,inner sep=4pt},arr/.style={-{Latex[length=3mm]},line width=1.1pt,draw=azure}}
+\node[state] (a) at (0,0) {\textbf{Baseline} $A$\\$k$ active bits};
+\node[state,draw=jade!65,fill=jade!7] (p) at (4.25,0) {\textbf{Peak} $P$\\$A\cup\{i\}$};
+\node[state] (t) at (8.5,0) {\textbf{Next} $T$\\$P\setminus\{j\}$};
+\draw[arr] (a.east)--(p.west);
+\draw[arr] (p.east)--(t.west);
+\node[font=\scriptsize,text=azure] at (2.12,-.88) {UP: add $i$};
+\node[font=\scriptsize,text=azure] at (6.38,-.88) {DOWN: remove $j$};
+\node[font=\footnotesize,text=black!75] at (4.25,-1.48) {When $i\ne j$, the number of active bits is unchanged.};
+\end{tikzpicture}

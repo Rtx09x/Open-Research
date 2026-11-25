@@ -1,0 +1,23 @@
+{
+  "files": {
+    "README.md": "2cda03192e887963dd94563af64183fd24ce75c3710c8065850eb4372b41e950",
+    "advisor/c7_circular382_independent_audit.json": "e51c5d359521a538e4528d8fcd1513a770ee433a4c03518773f7e31a08871d77",
+    "advisor/c7_circular_range_independent_audit.json": "f969f417baf910634cdff90f02651f182a99e1c60f169f4cc2f94f4e467efca9",
+    "advisor/c7_finite_subgroup_gate_audit.md": "35dee9342cc1e977b3f1f2bb889944e2624d6dba600c445aab9214d667b36cee",
+    "advisor/check_c7_abelian_subgroups_independent.json": "909003c6f5fe9b0e1cd64c880bf5c62a097fc633287a4ab99d4fdfcc1c483f30",
+    "advisor/check_c7_abelian_subgroups_independent.py": "810d896ab2571991c30def0d929ff366a3cc61f5f2c43f6d92e311e2b448b02a",
+    "advisor/check_c7_circular382_independent.py": "934fee422751cf455c821075181e7dfff7916fc688e6429d16bb0b84c91dad6c",
+    "advisor/check_c7_circular_range_independent.py": "34589e2b25dbef2f0cb188920abbba17205e82fa971a1f2bda03627838afd150",
+    "physical_iteration/abelian_torus_gate.json": "13d551d6b162a14f133f2b0e2b64aaefa6b98b992a2b88b7a7d2fb9f8fe80847",
+    "physical_iteration/abelian_torus_gate.py": "2c5395df72837f0d4a48a959279e7207e1c81772945d5a36af4e0738bfa5a9ee",
+    "physical_iteration/check_cyclic_multiplier_gate.py": "b480157f78ccfd8edc8a02f5b8be4511893ccc8d1b277364c8ec177a09580f35",
+    "physical_iteration/cyclic_multiplier_bitset_audit.json": "586dda61c8bcb7ba6517b9cc7e36599a2e96d5db7d0d711a0b79ca1286575256",
+    "physical_iteration/cyclic_multiplier_gate_proof.md": "f1f86926655b4cbae477a85a94d67b068fb84c053e065b773dfee4d60b7d7edc",
+    "physical_iteration/finite_subgroup_gate_proof.md": "a63d3d83d778acd9f59ba2ad8b920061f3d8a5323efaa18341e7791cee0b0527",
+    "physical_iteration/finite_subgroup_theta_reduction.json": "5e485d5ea6b9f2480050a08f3d56a23a0e22498cdd8dbc4f860eddc60af42143",
+    "physical_iteration/finite_subgroup_theta_reduction.py": "f1a8869fa0a6458c681a156e13626c1b4fd4be371cec14a8a30ff587a3159fa5",
+    "physical_iteration/theta_10_over_3_exact.json": "cb630332c770ce4099d58828c65bab8a4e3e7ddc838e4c111310dfa434f64fdb",
+    "physical_iteration/theta_10_over_3_exact.py": "230d6a823f2ccf38c0a289794b7c2d61fec29b5d913e74596a11c3562bbf5958"
+  },
+  "scope": "Restricted finite-subgroup construction theorem; no C7 capacity gain."
+}

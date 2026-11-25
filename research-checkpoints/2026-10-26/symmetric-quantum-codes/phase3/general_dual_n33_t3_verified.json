@@ -1,0 +1,14 @@
+{
+  "n": 33,
+  "t": 3,
+  "rigorously_verified": true,
+  "witness_sha256": "49fb069b0eaf9a25be58aa079aa31cf101d2f9ac248401b7532d08b3c6cd51a0",
+  "constant_exact": "-169973/6250000000",
+  "each_residual_entry_bound": "1/100000000",
+  "residual_budget_exact": "289/100000000",
+  "strict_negative_upper_exact": "-303821/12500000000",
+  "diagnostic_max_Z_residual": 1.6110243551572512e-11,
+  "diagnostic_max_a_residual": 2.466776239907728e-10,
+  "seconds": 24.746535062789917,
+  "scope": "Unrestricted complex symmetric rank2 code, distance2t+1; independent arithmetic and model audits remain separate."
+}

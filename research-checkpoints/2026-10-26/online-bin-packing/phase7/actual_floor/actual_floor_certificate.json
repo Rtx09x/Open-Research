@@ -1,0 +1,112 @@
+{
+  "status": "PASS actual algorithm-specific asymptotic lower bound; no universal online lower claim",
+  "source_certificate_sha256": "c8559b05ef4fd6373ad391504fc93d931651ea550ab61c998eb4f0ebe52868bd",
+  "tau": "1/1000000000",
+  "tiny_item_size": "12462342491/26251500000000",
+  "huge_size": "500000001/1000000000",
+  "non_tiny_sizes": {
+    "165": "1000000003/3000000000",
+    "179": "1000000011/11000000000",
+    "205": "1000000037/37000000000",
+    "208": "25000001/1000000000",
+    "211": "1000000043/43000000000"
+  },
+  "offline_bin_volume": "1",
+  "tiny_capacity_floor_counts": [
+    596,
+    2106
+  ],
+  "tiny_type_proportions": [
+    "13701867480/32568497273",
+    "18866629793/32568497273"
+  ],
+  "mean_items_per_tiny_container": "47899435362138/32568497273",
+  "positive_container_rates": {
+    "165": "56035901/134217728",
+    "179": "47814059833445664222897846116231682970603195636995944297/533995289424454529175322809982436608363575947731163676672",
+    "205": "61605937/2415919104",
+    "208": "20486803/872415232",
+    "211": "30706159/1409286144"
+  },
+  "non_tiny_positive_rate_including_huge": "4629362226716989759188631892637569797799391977917968977/2934040051782717193271004450452948397602065646874525696",
+  "non_tiny_count_error_constant": "2575018357407901595711099876691490824975161706055962135037/266997644712227264587661404991218304181787973865581838336",
+  "actual_algorithm_ratio_lower": "4107392448037194657402218954908536678004115949310575318313228556551/2602571515005375788795491740665865407544891224611410110356087898112",
+  "frozen_upper": "96988842290419266162339453629607142739/61455140781288409357546665835971477504",
+  "remaining_analysis_only_window": "244214804051211930109591/2286852816926276513629309223262",
+  "traces": [
+    {
+      "containers": 1,
+      "tiny_items": 596,
+      "type_counts": [
+        1,
+        0
+      ],
+      "all_final_gaps_less_than_identical_item": true,
+      "OPT_exact": 596,
+      "actual_bin_lower_from_source_invariants": "82834357123604918327881179817466581576157553869434334433845/88999214904075754862553801663739434727262657955193946112"
+    },
+    {
+      "containers": 10,
+      "tiny_items": 15020,
+      "type_counts": [
+        4,
+        6
+      ],
+      "all_final_gaps_less_than_identical_item": true,
+      "OPT_exact": 15020,
+      "actual_bin_lower_from_source_invariants": "36997262258667727512549828725427713275019184265467695239989/1561389735159223769518487748486656749601099262371823616"
+    },
+    {
+      "containers": 64,
+      "tiny_items": 94014,
+      "type_counts": [
+        27,
+        37
+      ],
+      "all_final_gaps_less_than_identical_item": true,
+      "OPT_exact": 94014,
+      "actual_bin_lower_from_source_invariants": "39612766189310912352246795898760975900728146397817144687618093/266997644712227264587661404991218304181787973865581838336"
+    },
+    {
+      "containers": 128,
+      "tiny_items": 188028,
+      "type_counts": [
+        54,
+        74
+      ],
+      "all_final_gaps_less_than_identical_item": true,
+      "OPT_exact": 188028,
+      "actual_bin_lower_from_source_invariants": "79228107396979232606089302897398643292281267957340345337371223/266997644712227264587661404991218304181787973865581838336"
+    }
+  ],
+  "compressed_arbitrarily_large_instances": [
+    {
+      "containers": 1000,
+      "tiny_items_and_OPT": 1470290,
+      "type_counts": [
+        421,
+        579
+      ],
+      "rigorous_finite_ratio_lower": "206514656851675251043669607042462547075294956971848693725618179/130854655681313541616864229048179453485147013364942107029012480"
+    },
+    {
+      "containers": 1000000,
+      "tiny_items_and_OPT": 1470729410,
+      "type_counts": [
+        420709,
+        579291
+      ],
+      "rigorous_finite_ratio_lower": "68859081311975467857512741500996466783702997978647929669936344401/43631254275444847181436127938056172410053506616491399600291184640"
+    },
+    {
+      "containers": 1000000000,
+      "tiny_items_and_OPT": 1470729059680,
+      "type_counts": [
+        420709232,
+        579290768
+      ],
+      "rigorous_finite_ratio_lower": "619731586738285147216749070294520790689959576965290310358235111956771/392681194944388729045469821092962155166885238584459591811991055892480"
+    }
+  ],
+  "scope": "Seven fixed rational sizes, deterministic tiny BF with the frozen capacities/proportions and unchanged non-tiny AH positive-container invariants. No claim that the algorithm ratio equals this lower bound. No improvement of the universal lower bound1.542780906...; no full-gap closure."
+}

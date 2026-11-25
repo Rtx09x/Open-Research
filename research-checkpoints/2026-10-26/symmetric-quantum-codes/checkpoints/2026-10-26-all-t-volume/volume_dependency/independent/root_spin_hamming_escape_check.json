@@ -1,0 +1,6 @@
+{
+  "bernstein_identity_exact": true,
+  "all_six_coefficient_polynomials_positive_for_t_positive": true,
+  "scope": "Independent root symbolic check of escape comparison only; full analytic proof and prior monotonicity separately read/audited.",
+  "utc": "2026-10-26T00:55:18.795485+00:00"
+}

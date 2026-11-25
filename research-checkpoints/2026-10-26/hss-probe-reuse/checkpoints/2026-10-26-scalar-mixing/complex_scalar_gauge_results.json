@@ -1,0 +1,38 @@
+{
+  "status": "NUMERICAL_IMPLEMENTATION_CONTROL_PASS",
+  "checks": [
+    {
+      "L": 1,
+      "n": 4,
+      "complex_forward_calls": 3,
+      "complex_adjoint_calls": 3,
+      "projection_gauge_defect": 1.4491669859131396e-15,
+      "exact_on_class_defect": 1.1628645808227532e-15
+    },
+    {
+      "L": 2,
+      "n": 8,
+      "complex_forward_calls": 3,
+      "complex_adjoint_calls": 3,
+      "projection_gauge_defect": 2.9893599649955734e-15,
+      "exact_on_class_defect": 4.486692856896435e-15
+    },
+    {
+      "L": 3,
+      "n": 16,
+      "complex_forward_calls": 3,
+      "complex_adjoint_calls": 3,
+      "projection_gauge_defect": 5.2400511247904906e-15,
+      "exact_on_class_defect": 7.537970495785393e-15
+    },
+    {
+      "L": 4,
+      "n": 32,
+      "complex_forward_calls": 3,
+      "complex_adjoint_calls": 3,
+      "projection_gauge_defect": 6.90565221594819e-15,
+      "exact_on_class_defect": 1.1647962194472375e-14
+    }
+  ],
+  "scope": "Phase gauge and complex query implementation only; analytic corollary separate"
+}

@@ -1,0 +1,437 @@
+{
+  "all_checks_passed": true,
+  "requests_1based": [
+    17,
+    1,
+    18,
+    2,
+    19,
+    3,
+    20,
+    4,
+    21,
+    5,
+    22,
+    6,
+    23,
+    7,
+    24,
+    8,
+    25,
+    9,
+    25
+  ],
+  "rounds": 19,
+  "board_size": 32,
+  "same_right_child_and_same_leaf_receive_25_twice": true,
+  "isolated_child_second_request_illegal": true,
+  "deletion_augmented_projection_legal": true,
+  "root_full_board_never_reached": true,
+  "algorithm_source_sha256": "511b5d1f5a0eaad2fe4cd21a22efa498bac06b36a91598c6fcc4b5aa09d2a40e",
+  "scope": "Confirms an induction-interface defect, not a counterexample to the sign bound. Root requests are all legal; the child needs its external-erasure history.",
+  "rows": [
+    {
+      "round": 1,
+      "request_1based": 17,
+      "sign": "+",
+      "erased_plus_cells": [],
+      "occupied_after": [
+        17
+      ],
+      "root_tau": 0,
+      "root_phase": 1,
+      "root_half_counts": [
+        0,
+        1
+      ],
+      "root_continuation_cap": 0
+    },
+    {
+      "round": 2,
+      "request_1based": 1,
+      "sign": "+",
+      "erased_plus_cells": [
+        17
+      ],
+      "occupied_after": [
+        1
+      ],
+      "root_tau": 0,
+      "root_phase": 2,
+      "root_half_counts": [
+        1,
+        1
+      ],
+      "root_continuation_cap": 0
+    },
+    {
+      "round": 3,
+      "request_1based": 18,
+      "sign": "+",
+      "erased_plus_cells": [],
+      "occupied_after": [
+        1,
+        18
+      ],
+      "root_tau": 2,
+      "root_phase": 1,
+      "root_half_counts": [
+        0,
+        1
+      ],
+      "root_continuation_cap": 0
+    },
+    {
+      "round": 4,
+      "request_1based": 2,
+      "sign": "+",
+      "erased_plus_cells": [
+        18
+      ],
+      "occupied_after": [
+        1,
+        2
+      ],
+      "root_tau": 2,
+      "root_phase": 2,
+      "root_half_counts": [
+        1,
+        1
+      ],
+      "root_continuation_cap": 0
+    },
+    {
+      "round": 5,
+      "request_1based": 19,
+      "sign": "+",
+      "erased_plus_cells": [],
+      "occupied_after": [
+        1,
+        2,
+        19
+      ],
+      "root_tau": 4,
+      "root_phase": 1,
+      "root_half_counts": [
+        0,
+        1
+      ],
+      "root_continuation_cap": 0
+    },
+    {
+      "round": 6,
+      "request_1based": 3,
+      "sign": "+",
+      "erased_plus_cells": [
+        19
+      ],
+      "occupied_after": [
+        1,
+        2,
+        3
+      ],
+      "root_tau": 4,
+      "root_phase": 2,
+      "root_half_counts": [
+        1,
+        1
+      ],
+      "root_continuation_cap": 0
+    },
+    {
+      "round": 7,
+      "request_1based": 20,
+      "sign": "+",
+      "erased_plus_cells": [],
+      "occupied_after": [
+        1,
+        2,
+        3,
+        20
+      ],
+      "root_tau": 6,
+      "root_phase": 1,
+      "root_half_counts": [
+        0,
+        1
+      ],
+      "root_continuation_cap": 0
+    },
+    {
+      "round": 8,
+      "request_1based": 4,
+      "sign": "+",
+      "erased_plus_cells": [
+        20
+      ],
+      "occupied_after": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "root_tau": 6,
+      "root_phase": 2,
+      "root_half_counts": [
+        1,
+        1
+      ],
+      "root_continuation_cap": 0
+    },
+    {
+      "round": 9,
+      "request_1based": 21,
+      "sign": "+",
+      "erased_plus_cells": [],
+      "occupied_after": [
+        1,
+        2,
+        3,
+        4,
+        21
+      ],
+      "root_tau": 8,
+      "root_phase": 1,
+      "root_half_counts": [
+        0,
+        1
+      ],
+      "root_continuation_cap": 0
+    },
+    {
+      "round": 10,
+      "request_1based": 5,
+      "sign": "+",
+      "erased_plus_cells": [
+        21
+      ],
+      "occupied_after": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "root_tau": 8,
+      "root_phase": 2,
+      "root_half_counts": [
+        1,
+        1
+      ],
+      "root_continuation_cap": 0
+    },
+    {
+      "round": 11,
+      "request_1based": 22,
+      "sign": "+",
+      "erased_plus_cells": [],
+      "occupied_after": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        22
+      ],
+      "root_tau": 10,
+      "root_phase": 1,
+      "root_half_counts": [
+        0,
+        1
+      ],
+      "root_continuation_cap": 0
+    },
+    {
+      "round": 12,
+      "request_1based": 6,
+      "sign": "+",
+      "erased_plus_cells": [
+        22
+      ],
+      "occupied_after": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "root_tau": 10,
+      "root_phase": 2,
+      "root_half_counts": [
+        1,
+        1
+      ],
+      "root_continuation_cap": 0
+    },
+    {
+      "round": 13,
+      "request_1based": 23,
+      "sign": "+",
+      "erased_plus_cells": [],
+      "occupied_after": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        23
+      ],
+      "root_tau": 12,
+      "root_phase": 1,
+      "root_half_counts": [
+        0,
+        1
+      ],
+      "root_continuation_cap": 0
+    },
+    {
+      "round": 14,
+      "request_1based": 7,
+      "sign": "+",
+      "erased_plus_cells": [
+        23
+      ],
+      "occupied_after": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "root_tau": 12,
+      "root_phase": 2,
+      "root_half_counts": [
+        1,
+        1
+      ],
+      "root_continuation_cap": 0
+    },
+    {
+      "round": 15,
+      "request_1based": 24,
+      "sign": "+",
+      "erased_plus_cells": [],
+      "occupied_after": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        24
+      ],
+      "root_tau": 14,
+      "root_phase": 1,
+      "root_half_counts": [
+        0,
+        1
+      ],
+      "root_continuation_cap": 0
+    },
+    {
+      "round": 16,
+      "request_1based": 8,
+      "sign": "+",
+      "erased_plus_cells": [
+        24
+      ],
+      "occupied_after": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "root_tau": 14,
+      "root_phase": 2,
+      "root_half_counts": [
+        1,
+        1
+      ],
+      "root_continuation_cap": 0
+    },
+    {
+      "round": 17,
+      "request_1based": 25,
+      "sign": "+",
+      "erased_plus_cells": [],
+      "occupied_after": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        25
+      ],
+      "root_tau": 16,
+      "root_phase": 1,
+      "root_half_counts": [
+        0,
+        1
+      ],
+      "root_continuation_cap": 0
+    },
+    {
+      "round": 18,
+      "request_1based": 9,
+      "sign": "+",
+      "erased_plus_cells": [
+        25
+      ],
+      "occupied_after": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "root_tau": 16,
+      "root_phase": 1,
+      "root_half_counts": [
+        1,
+        1
+      ],
+      "root_continuation_cap": 0
+    },
+    {
+      "round": 19,
+      "request_1based": 25,
+      "sign": "+",
+      "erased_plus_cells": [],
+      "occupied_after": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        25
+      ],
+      "root_tau": 16,
+      "root_phase": 1,
+      "root_half_counts": [
+        1,
+        2
+      ],
+      "root_continuation_cap": 0
+    }
+  ]
+}

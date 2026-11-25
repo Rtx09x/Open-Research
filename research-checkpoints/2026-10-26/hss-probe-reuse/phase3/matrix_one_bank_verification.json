@@ -1,0 +1,29 @@
+{
+  "status": "PASS",
+  "arithmetic": "fractions.Fraction",
+  "k": 2,
+  "local_orientation_design": "all 8 signed permutations",
+  "results": [
+    {
+      "step": 1,
+      "exact_orientation_histories": 8,
+      "covariance_cap_psd": true,
+      "pointwise_flux_cap": true,
+      "expected_energy_ratio": 0.7066298405543799
+    },
+    {
+      "step": 2,
+      "exact_orientation_histories": 64,
+      "covariance_cap_psd": true,
+      "pointwise_flux_cap": true,
+      "expected_energy_ratio": 0.5059474948410871
+    },
+    {
+      "step": 3,
+      "exact_orientation_histories": 512,
+      "covariance_cap_psd": true,
+      "pointwise_flux_cap": true,
+      "expected_energy_ratio": 0.40974997264706764
+    }
+  ]
+}

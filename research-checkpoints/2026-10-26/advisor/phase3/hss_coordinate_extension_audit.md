@@ -1,0 +1,9 @@
+# Coordinate HSS extension and dense-envelope boundary: final prose audit
+
+PASS,2026-10-25 23:18UTC. Audited worker notes coordinate_star_probing_theorem.md and dense_envelope_coloring_obstruction.md.
+
+The width-two support decomposition remains valid for unrelated row/column active-child choices: all four current2×2 block edges are present before refining children. Each refinement adds two bags of size3 along the existing active-pair edge, preserving running intersection. The established6-color star theorem applies. Choosing a leaf observation for every supported edge yields no repeated observation; independent signs then give the exact off-support weight1+w withw∈{0,1,2}. Thus12k total queries and expected squared factor3 hold for this prescribed coordinate subclass, including complex matrices with adjoint queries. This is a noisy corollary of known star probing, not a new coloring method or fullRE02.
+
+For dense nonzero transfer rotations, one branch containsL detail wavelets and one root-active wavelet, not both root actives. Localda/ad/dd atoms imply the free support envelope containsK_(L+1,L+1). Proper star coloring requires≥L+2 colors: if both sides repeat a color there is a bichromaticP4. Entries of this envelope are tied in the actual class. Consequently this only defeats the naive free-envelope star-probing route, not arbitrary dense fixed-basis algorithms. Projection back to the tied class is valid but does not repair depth-growing query count.
+
+The all-state common quadratic-storage obstruction was also algebraically checked conditional on its displayed fresh-orientation update laws. It is not an algorithm lower bound. Coordinate observation-forest reduction is analytically consistent with rooted tree-flow inversion; its finite implementation controls remain worker-authored rather than independently reimplemented here.

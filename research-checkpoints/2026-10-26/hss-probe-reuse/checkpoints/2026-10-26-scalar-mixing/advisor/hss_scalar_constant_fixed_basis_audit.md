@@ -1,0 +1,23 @@
+# Independent analytic audit: scalar constant-factor fixed-basis reconstruction
+
+2026-10-26 00:57 UTC. **Analytic PASS** for the six-query, real scalar, prescribed-basis theorem in `hss-probe-reuse/phase2/scalar_constant_fixed_basis_bound.md`. No internally checkable mathematical blocker remains in the argument reviewed here. This is not a novelty or external peer-review verdict.
+
+## Statement and scope
+For arbitrary deterministic real A and arbitrary orthonormal scalar nested left/right bases fixed before the independent width-three Haar tree-frame banks, the specified local coefficient decoder has E||R(A)||_F²≤800||A||_F² and expected squared approximation error≤801 times the optimum squared Frobenius error in that FIXED linear class. It uses three forward and three transpose products, independently of depth, in exact arithmetic. It does not discover the bases; it is not a result for arbitrary k, the unrestricted HSS optimum, adaptive reused-sketch basis selection, global least squares, or numerical roundoff.
+
+## Critical proof gates
+1. The one-bank rank-one input lemma does not illegally condition the inverse-column bound on a correlated amplitude. At each deterministic wavelet birth, the two amplitude squares sum to at most the squared deterministic spatial amplitude. The inverse column has norm at least one and is orthogonal to that birth's dd coordinate. This gives a pointwise domination before taking its unconditional expectation.
+2. Cross-birth cancellation uses the deeper birth's OWN centered opposite-bank detail sign. Its possible overlapping strict-ancestor output is linear in that sign; the other birth never uses it, and its own local coordinates cannot overlap the other output. The forward-only amplitudes may depend on the entire forward bank. This is different from the previously refuted conditional carry-potential assertions.
+3. The correlated ad anchor is the strict-ancestor portion of the actual ad inverse column. No independence of its amplitude B_j and that column is required: their separately established fourth moments give sqrt(150000)||a||² by Cauchy–Schwarz. The pointwise contraction |B_j|≤||P^T a|| is legitimate even though P_j is part of P.
+4. Whole ad columns, whole da rows and individual off-diagonal dd entries are the correct fine-sign sectors. Conditioning is used only for Walsh orthogonality; all norm bounds are then averaged under the original joint bank law. It is not used to manufacture fresh independent anchors.
+5. Fine output coordinates and all coarser output coordinates are orthogonal in the prescribed coefficient basis. The aa sector is precisely the same consistent problem on the coarser tree. Thus induction takes a maximum, not a sum over depth. The non-aa coefficient budget is below787 and fits800.
+6. Linearity, exactness on the fixed class and range contained in that class yield the final orthogonal residual identity and factor801.
+
+## Dependencies and controls
+The scalar full-complement reverse-frame construction, mean inverse-column bound and fourth-moment proof were separately analytically audited in `hss_wide_scalar_inverse_audit.md` and `hss_inverse_column_fourth_moment_audit.md`. In particular, the fourth moment uses Haar spherical moments; no finite signed-permutation fourth-moment extension is asserted.
+
+Replayed the worker's standard-library Fraction controls in an advisor-owned output directory:512 finite Doob paths;64 row-sign assignments/eight deterministic wavelet inputs with forward-dependent q and exactly zero cross-birth output Gram;256 finest-sign assignments/21 complete correlated sectors with Walsh Gram256I. These are exact finite consistency checks and replays of the worker's implementations, not an independent all-depth proof or independently rewritten arithmetic. The independent contribution here is the analytic applicability audit above. Direct physical decoder Monte Carlo is not used as proof.
+
+Correctness and novelty remain separate. Full RE02 still requires arbitrary-rank and unknown-basis work; this restricted constant-factor theorem cannot silently be multiplied by a learned-basis guarantee without checking its conditioning and comparator ledger.
+
+Final additional control,00:57UTC: the worker's Fraction22x22 original triangular inverse and all eight complete physical ad columns replayed PASS; each strict-ancestor inverse column equals the actual pure-detail coarse decoder, and the whole physical sector equals first source plus correlated anchor. This closes the stated finite anchor-identity validation loop, still without any independence assertion.

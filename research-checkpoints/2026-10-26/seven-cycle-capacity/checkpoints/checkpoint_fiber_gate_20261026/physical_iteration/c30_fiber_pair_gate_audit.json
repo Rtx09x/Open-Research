@@ -1,0 +1,14 @@
+{
+  "PASS": true,
+  "port_vertices": 46,
+  "outer_labels": 367,
+  "base_square": 118336,
+  "selected_outer_pairs": 35,
+  "diagonal_bound": 135138,
+  "additional_pair_deficit": 78,
+  "final_dimension10_upper": 135060,
+  "target": 135093,
+  "target_excluded": true,
+  "P_intersection_X_empty": true,
+  "scope": "B\u00d7B plus arbitrary independent P-fibers in two directions indexed by the fixed independent X; all crossing conflicts and overlaps can only reduce cardinality"
+}

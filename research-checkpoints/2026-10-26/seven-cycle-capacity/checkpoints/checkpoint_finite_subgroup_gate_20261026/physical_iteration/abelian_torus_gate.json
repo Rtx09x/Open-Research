@@ -1,0 +1,1675 @@
+{
+  "records": [
+    {
+      "factors": [
+        2,
+        196
+      ],
+      "order": 392,
+      "exponent": 196,
+      "distance": 56,
+      "mode": "surjective",
+      "difference_classes": 111,
+      "candidate_masks": 192,
+      "excluded_bad_image_characters": 8,
+      "excluded_surjective_characters": 0,
+      "characters": null,
+      "pair_masks": 18274,
+      "outer_tests": 18274,
+      "bitset_intersections": 317325,
+      "complete": true
+    },
+    {
+      "factors": [
+        2,
+        196
+      ],
+      "order": 392,
+      "exponent": 196,
+      "distance": 56,
+      "mode": "no_surjective",
+      "difference_classes": 197,
+      "candidate_masks": 108,
+      "excluded_bad_image_characters": 8,
+      "excluded_surjective_characters": 168,
+      "characters": null,
+      "pair_masks": 5842,
+      "outer_tests": 630936,
+      "bitset_intersections": 11075054,
+      "complete": true
+    },
+    {
+      "factors": [
+        2,
+        184
+      ],
+      "order": 368,
+      "exponent": 184,
+      "distance": 53,
+      "mode": "surjective",
+      "difference_classes": 105,
+      "candidate_masks": 176,
+      "excluded_bad_image_characters": 16,
+      "excluded_surjective_characters": 0,
+      "characters": null,
+      "pair_masks": 15394,
+      "outer_tests": 15394,
+      "bitset_intersections": 233484,
+      "complete": true
+    },
+    {
+      "factors": [
+        2,
+        184
+      ],
+      "order": 368,
+      "exponent": 184,
+      "distance": 53,
+      "mode": "no_surjective",
+      "difference_classes": 185,
+      "candidate_masks": 88,
+      "excluded_bad_image_characters": 16,
+      "excluded_surjective_characters": 176,
+      "characters": null,
+      "obstruction": "all_candidate_characters_miss_difference",
+      "missed_difference": [
+        0,
+        92
+      ]
+    },
+    {
+      "factors": [
+        4,
+        92
+      ],
+      "order": 368,
+      "exponent": 92,
+      "distance": 27,
+      "mode": "surjective",
+      "difference_classes": 106,
+      "candidate_masks": 176,
+      "excluded_bad_image_characters": 16,
+      "excluded_surjective_characters": 0,
+      "characters": null,
+      "pair_masks": 15386,
+      "outer_tests": 15386,
+      "bitset_intersections": 257032,
+      "complete": true
+    },
+    {
+      "factors": [
+        4,
+        92
+      ],
+      "order": 368,
+      "exponent": 92,
+      "distance": 27,
+      "mode": "no_surjective",
+      "difference_classes": 185,
+      "candidate_masks": 44,
+      "excluded_bad_image_characters": 16,
+      "excluded_surjective_characters": 264,
+      "characters": null,
+      "obstruction": "all_candidate_characters_miss_difference",
+      "missed_difference": [
+        0,
+        46
+      ]
+    },
+    {
+      "factors": [
+        3,
+        123
+      ],
+      "order": 369,
+      "exponent": 123,
+      "distance": 36,
+      "mode": "surjective",
+      "difference_classes": 106,
+      "candidate_masks": 180,
+      "excluded_bad_image_characters": 9,
+      "excluded_surjective_characters": 0,
+      "characters": null,
+      "pair_masks": 16096,
+      "outer_tests": 16096,
+      "bitset_intersections": 286118,
+      "complete": true
+    },
+    {
+      "factors": [
+        3,
+        123
+      ],
+      "order": 369,
+      "exponent": 123,
+      "distance": 36,
+      "mode": "no_surjective",
+      "difference_classes": 184,
+      "candidate_masks": 20,
+      "excluded_bad_image_characters": 9,
+      "excluded_surjective_characters": 320,
+      "characters": null,
+      "obstruction": "all_candidate_characters_miss_difference",
+      "missed_difference": [
+        0,
+        41
+      ]
+    },
+    {
+      "factors": [
+        2,
+        186
+      ],
+      "order": 372,
+      "exponent": 186,
+      "distance": 54,
+      "mode": "surjective",
+      "difference_classes": 107,
+      "candidate_masks": 180,
+      "excluded_bad_image_characters": 12,
+      "excluded_surjective_characters": 0,
+      "characters": null,
+      "pair_masks": 16093,
+      "outer_tests": 16093,
+      "bitset_intersections": 261020,
+      "complete": true
+    },
+    {
+      "factors": [
+        2,
+        186
+      ],
+      "order": 372,
+      "exponent": 186,
+      "distance": 54,
+      "mode": "no_surjective",
+      "difference_classes": 187,
+      "candidate_masks": 90,
+      "excluded_bad_image_characters": 12,
+      "excluded_surjective_characters": 180,
+      "characters": null,
+      "pair_masks": 4095,
+      "outer_tests": 368550,
+      "bitset_intersections": 6970688,
+      "complete": true
+    },
+    {
+      "factors": [
+        5,
+        75
+      ],
+      "order": 375,
+      "exponent": 75,
+      "distance": 22,
+      "mode": "surjective",
+      "difference_classes": 107,
+      "candidate_masks": 150,
+      "excluded_bad_image_characters": 75,
+      "excluded_surjective_characters": 0,
+      "characters": null,
+      "pair_masks": 11166,
+      "outer_tests": 11166,
+      "bitset_intersections": 181659,
+      "complete": true
+    },
+    {
+      "factors": [
+        5,
+        75
+      ],
+      "order": 375,
+      "exponent": 75,
+      "distance": 22,
+      "mode": "no_surjective",
+      "difference_classes": 187,
+      "candidate_masks": 50,
+      "excluded_bad_image_characters": 75,
+      "excluded_surjective_characters": 200,
+      "characters": null,
+      "obstruction": "all_candidate_characters_miss_difference",
+      "missed_difference": [
+        0,
+        25
+      ]
+    },
+    {
+      "factors": [
+        2,
+        188
+      ],
+      "order": 376,
+      "exponent": 188,
+      "distance": 54,
+      "mode": "surjective",
+      "difference_classes": 107,
+      "candidate_masks": 184,
+      "excluded_bad_image_characters": 8,
+      "excluded_surjective_characters": 0,
+      "characters": null,
+      "pair_masks": 16828,
+      "outer_tests": 16828,
+      "bitset_intersections": 268011,
+      "complete": true
+    },
+    {
+      "factors": [
+        2,
+        188
+      ],
+      "order": 376,
+      "exponent": 188,
+      "distance": 54,
+      "mode": "no_surjective",
+      "difference_classes": 189,
+      "candidate_masks": 92,
+      "excluded_bad_image_characters": 8,
+      "excluded_surjective_characters": 184,
+      "characters": null,
+      "obstruction": "all_candidate_characters_miss_difference",
+      "missed_difference": [
+        0,
+        94
+      ]
+    },
+    {
+      "factors": [
+        3,
+        126
+      ],
+      "order": 378,
+      "exponent": 126,
+      "distance": 36,
+      "mode": "surjective",
+      "difference_classes": 106,
+      "candidate_masks": 162,
+      "excluded_bad_image_characters": 54,
+      "excluded_surjective_characters": 0,
+      "characters": null,
+      "pair_masks": 12988,
+      "outer_tests": 12988,
+      "bitset_intersections": 282033,
+      "complete": true
+    },
+    {
+      "factors": [
+        3,
+        126
+      ],
+      "order": 378,
+      "exponent": 126,
+      "distance": 36,
+      "mode": "no_surjective",
+      "difference_classes": 189,
+      "candidate_masks": 108,
+      "excluded_bad_image_characters": 54,
+      "excluded_surjective_characters": 108,
+      "characters": null,
+      "pair_masks": 5850,
+      "outer_tests": 631800,
+      "bitset_intersections": 12000933,
+      "complete": true
+    },
+    {
+      "factors": [
+        2,
+        190
+      ],
+      "order": 380,
+      "exponent": 190,
+      "distance": 55,
+      "mode": "surjective",
+      "difference_classes": 109,
+      "candidate_masks": 186,
+      "excluded_bad_image_characters": 8,
+      "excluded_surjective_characters": 0,
+      "characters": null,
+      "pair_masks": 17187,
+      "outer_tests": 17187,
+      "bitset_intersections": 270358,
+      "complete": true
+    },
+    {
+      "factors": [
+        2,
+        190
+      ],
+      "order": 380,
+      "exponent": 190,
+      "distance": 55,
+      "mode": "no_surjective",
+      "difference_classes": 191,
+      "candidate_masks": 78,
+      "excluded_bad_image_characters": 8,
+      "excluded_surjective_characters": 216,
+      "characters": null,
+      "pair_masks": 3075,
+      "outer_tests": 239850,
+      "bitset_intersections": 3928231,
+      "complete": true
+    },
+    {
+      "factors": [
+        2,
+        192
+      ],
+      "order": 384,
+      "exponent": 192,
+      "distance": 55,
+      "mode": "surjective",
+      "difference_classes": 109,
+      "candidate_masks": 176,
+      "excluded_bad_image_characters": 32,
+      "excluded_surjective_characters": 0,
+      "characters": null,
+      "pair_masks": 15394,
+      "outer_tests": 15394,
+      "bitset_intersections": 219746,
+      "complete": true
+    },
+    {
+      "factors": [
+        2,
+        192
+      ],
+      "order": 384,
+      "exponent": 192,
+      "distance": 55,
+      "mode": "no_surjective",
+      "difference_classes": 193,
+      "candidate_masks": 112,
+      "excluded_bad_image_characters": 32,
+      "excluded_surjective_characters": 128,
+      "characters": null,
+      "pair_masks": 6328,
+      "outer_tests": 708736,
+      "bitset_intersections": 10805109,
+      "complete": true
+    },
+    {
+      "factors": [
+        4,
+        96
+      ],
+      "order": 384,
+      "exponent": 96,
+      "distance": 28,
+      "mode": "surjective",
+      "difference_classes": 110,
+      "candidate_masks": 160,
+      "excluded_bad_image_characters": 64,
+      "excluded_surjective_characters": 0,
+      "characters": null,
+      "pair_masks": 12709,
+      "outer_tests": 12709,
+      "bitset_intersections": 216610,
+      "complete": true
+    },
+    {
+      "factors": [
+        4,
+        96
+      ],
+      "order": 384,
+      "exponent": 96,
+      "distance": 28,
+      "mode": "no_surjective",
+      "difference_classes": 193,
+      "candidate_masks": 96,
+      "excluded_bad_image_characters": 64,
+      "excluded_surjective_characters": 128,
+      "characters": null,
+      "pair_masks": 4656,
+      "outer_tests": 446976,
+      "bitset_intersections": 6970632,
+      "complete": true
+    },
+    {
+      "factors": [
+        8,
+        48
+      ],
+      "order": 384,
+      "exponent": 48,
+      "distance": 14,
+      "mode": "surjective",
+      "difference_classes": 108,
+      "candidate_masks": 144,
+      "excluded_bad_image_characters": 96,
+      "excluded_surjective_characters": 0,
+      "characters": null,
+      "pair_masks": 10284,
+      "outer_tests": 10284,
+      "bitset_intersections": 172538,
+      "complete": true
+    },
+    {
+      "factors": [
+        8,
+        48
+      ],
+      "order": 384,
+      "exponent": 48,
+      "distance": 14,
+      "mode": "no_surjective",
+      "difference_classes": 193,
+      "candidate_masks": 80,
+      "excluded_bad_image_characters": 96,
+      "excluded_surjective_characters": 128,
+      "characters": null,
+      "pair_masks": 3240,
+      "outer_tests": 259200,
+      "bitset_intersections": 3771994,
+      "complete": true
+    },
+    {
+      "factors": [
+        3,
+        129
+      ],
+      "order": 387,
+      "exponent": 129,
+      "distance": 37,
+      "mode": "surjective",
+      "difference_classes": 109,
+      "candidate_masks": 189,
+      "excluded_bad_image_characters": 9,
+      "excluded_surjective_characters": 0,
+      "characters": null,
+      "pair_masks": 17749,
+      "outer_tests": 17749,
+      "bitset_intersections": 324561,
+      "complete": true
+    },
+    {
+      "factors": [
+        3,
+        129
+      ],
+      "order": 387,
+      "exponent": 129,
+      "distance": 37,
+      "mode": "no_surjective",
+      "difference_classes": 193,
+      "candidate_masks": 21,
+      "excluded_bad_image_characters": 9,
+      "excluded_surjective_characters": 336,
+      "characters": null,
+      "obstruction": "all_candidate_characters_miss_difference",
+      "missed_difference": [
+        0,
+        43
+      ]
+    },
+    {
+      "factors": [
+        2,
+        194
+      ],
+      "order": 388,
+      "exponent": 194,
+      "distance": 56,
+      "mode": "surjective",
+      "difference_classes": 111,
+      "candidate_masks": 192,
+      "excluded_bad_image_characters": 4,
+      "excluded_surjective_characters": 0,
+      "characters": null,
+      "pair_masks": 18321,
+      "outer_tests": 18321,
+      "bitset_intersections": 269656,
+      "complete": true
+    },
+    {
+      "factors": [
+        2,
+        194
+      ],
+      "order": 388,
+      "exponent": 194,
+      "distance": 56,
+      "mode": "no_surjective",
+      "difference_classes": 195,
+      "candidate_masks": 48,
+      "excluded_bad_image_characters": 4,
+      "excluded_surjective_characters": 288,
+      "characters": null,
+      "obstruction": "all_candidate_characters_miss_difference",
+      "missed_difference": [
+        0,
+        97
+      ]
+    },
+    {
+      "factors": [
+        7,
+        56
+      ],
+      "order": 392,
+      "exponent": 56,
+      "distance": 16,
+      "mode": "surjective",
+      "difference_classes": 108,
+      "candidate_masks": 192,
+      "excluded_bad_image_characters": 8,
+      "excluded_surjective_characters": 0,
+      "characters": null,
+      "pair_masks": 18158,
+      "outer_tests": 18158,
+      "bitset_intersections": 390621,
+      "complete": true
+    },
+    {
+      "factors": [
+        7,
+        56
+      ],
+      "order": 392,
+      "exponent": 56,
+      "distance": 16,
+      "mode": "no_surjective",
+      "difference_classes": 196,
+      "candidate_masks": 96,
+      "excluded_bad_image_characters": 8,
+      "excluded_surjective_characters": 192,
+      "characters": null,
+      "obstruction": "all_candidate_characters_miss_difference",
+      "missed_difference": [
+        0,
+        28
+      ]
+    },
+    {
+      "factors": [
+        14,
+        28
+      ],
+      "order": 392,
+      "exponent": 28,
+      "distance": 8,
+      "mode": "surjective",
+      "difference_classes": 105,
+      "candidate_masks": 192,
+      "excluded_bad_image_characters": 8,
+      "excluded_surjective_characters": 0,
+      "characters": null,
+      "pair_masks": 17884,
+      "outer_tests": 17884,
+      "bitset_intersections": 413733,
+      "complete": true
+    },
+    {
+      "factors": [
+        14,
+        28
+      ],
+      "order": 392,
+      "exponent": 28,
+      "distance": 8,
+      "mode": "no_surjective",
+      "difference_classes": 197,
+      "candidate_masks": 96,
+      "excluded_bad_image_characters": 8,
+      "excluded_surjective_characters": 192,
+      "characters": null,
+      "obstruction": "all_candidate_characters_miss_difference",
+      "missed_difference": [
+        0,
+        14
+      ]
+    },
+    {
+      "factors": [
+        2,
+        198
+      ],
+      "order": 396,
+      "exponent": 198,
+      "distance": 57,
+      "mode": "surjective",
+      "difference_classes": 113,
+      "candidate_masks": 175,
+      "excluded_bad_image_characters": 46,
+      "excluded_surjective_characters": 0,
+      "characters": null,
+      "pair_masks": 15213,
+      "outer_tests": 15213,
+      "bitset_intersections": 224355,
+      "complete": true
+    },
+    {
+      "factors": [
+        2,
+        198
+      ],
+      "order": 396,
+      "exponent": 198,
+      "distance": 57,
+      "mode": "no_surjective",
+      "difference_classes": 199,
+      "candidate_masks": 85,
+      "excluded_bad_image_characters": 46,
+      "excluded_surjective_characters": 180,
+      "characters": null,
+      "pair_masks": 3655,
+      "outer_tests": 310675,
+      "bitset_intersections": 5174443,
+      "complete": true
+    },
+    {
+      "factors": [
+        3,
+        132
+      ],
+      "order": 396,
+      "exponent": 132,
+      "distance": 38,
+      "mode": "surjective",
+      "difference_classes": 112,
+      "candidate_masks": 175,
+      "excluded_bad_image_characters": 46,
+      "excluded_surjective_characters": 0,
+      "characters": null,
+      "pair_masks": 15220,
+      "outer_tests": 15220,
+      "bitset_intersections": 259129,
+      "complete": true
+    },
+    {
+      "factors": [
+        3,
+        132
+      ],
+      "order": 396,
+      "exponent": 132,
+      "distance": 38,
+      "mode": "no_surjective",
+      "difference_classes": 198,
+      "candidate_masks": 95,
+      "excluded_bad_image_characters": 46,
+      "excluded_surjective_characters": 160,
+      "characters": null,
+      "pair_masks": 4560,
+      "outer_tests": 433200,
+      "bitset_intersections": 6255494,
+      "complete": true
+    },
+    {
+      "factors": [
+        6,
+        66
+      ],
+      "order": 396,
+      "exponent": 66,
+      "distance": 19,
+      "mode": "surjective",
+      "difference_classes": 111,
+      "candidate_masks": 175,
+      "excluded_bad_image_characters": 46,
+      "excluded_surjective_characters": 0,
+      "characters": null,
+      "pair_masks": 15201,
+      "outer_tests": 15201,
+      "bitset_intersections": 278657,
+      "complete": true
+    },
+    {
+      "factors": [
+        6,
+        66
+      ],
+      "order": 396,
+      "exponent": 66,
+      "distance": 19,
+      "mode": "no_surjective",
+      "difference_classes": 199,
+      "candidate_masks": 55,
+      "excluded_bad_image_characters": 46,
+      "excluded_surjective_characters": 240,
+      "characters": null,
+      "pair_masks": 1540,
+      "outer_tests": 84700,
+      "bitset_intersections": 1164277,
+      "complete": true
+    },
+    {
+      "factors": [
+        2,
+        200
+      ],
+      "order": 400,
+      "exponent": 200,
+      "distance": 58,
+      "mode": "surjective",
+      "difference_classes": 115,
+      "candidate_masks": 190,
+      "excluded_bad_image_characters": 20,
+      "excluded_surjective_characters": 0,
+      "characters": null,
+      "pair_masks": 17951,
+      "outer_tests": 17951,
+      "bitset_intersections": 289320,
+      "complete": true
+    },
+    {
+      "factors": [
+        2,
+        200
+      ],
+      "order": 400,
+      "exponent": 200,
+      "distance": 58,
+      "mode": "no_surjective",
+      "difference_classes": 201,
+      "candidate_masks": 110,
+      "excluded_bad_image_characters": 20,
+      "excluded_surjective_characters": 160,
+      "characters": null,
+      "pair_masks": 6105,
+      "outer_tests": 671550,
+      "bitset_intersections": 11313365,
+      "complete": true
+    },
+    {
+      "factors": [
+        4,
+        100
+      ],
+      "order": 400,
+      "exponent": 100,
+      "distance": 29,
+      "mode": "surjective",
+      "difference_classes": 114,
+      "candidate_masks": 190,
+      "excluded_bad_image_characters": 20,
+      "excluded_surjective_characters": 0,
+      "characters": null,
+      "pair_masks": 17947,
+      "outer_tests": 17947,
+      "bitset_intersections": 361594,
+      "complete": true
+    },
+    {
+      "factors": [
+        4,
+        100
+      ],
+      "order": 400,
+      "exponent": 100,
+      "distance": 29,
+      "mode": "no_surjective",
+      "difference_classes": 201,
+      "candidate_masks": 70,
+      "excluded_bad_image_characters": 20,
+      "excluded_surjective_characters": 240,
+      "characters": null,
+      "pair_masks": 2485,
+      "outer_tests": 173950,
+      "bitset_intersections": 2663679,
+      "complete": true
+    },
+    {
+      "factors": [
+        5,
+        80
+      ],
+      "order": 400,
+      "exponent": 80,
+      "distance": 23,
+      "mode": "surjective",
+      "difference_classes": 112,
+      "candidate_masks": 184,
+      "excluded_bad_image_characters": 32,
+      "excluded_surjective_characters": 0,
+      "characters": null,
+      "pair_masks": 16821,
+      "outer_tests": 16821,
+      "bitset_intersections": 314172,
+      "complete": true
+    },
+    {
+      "factors": [
+        5,
+        80
+      ],
+      "order": 400,
+      "exponent": 80,
+      "distance": 23,
+      "mode": "no_surjective",
+      "difference_classes": 200,
+      "candidate_masks": 88,
+      "excluded_bad_image_characters": 32,
+      "excluded_surjective_characters": 192,
+      "characters": null,
+      "pair_masks": 3916,
+      "outer_tests": 344608,
+      "bitset_intersections": 4271359,
+      "complete": true
+    },
+    {
+      "factors": [
+        10,
+        40
+      ],
+      "order": 400,
+      "exponent": 40,
+      "mode": "surjective",
+      "characters": null,
+      "complete": true,
+      "obstruction": "exact_theta_E10_over3_cohomomorphism"
+    },
+    {
+      "factors": [
+        10,
+        40
+      ],
+      "order": 400,
+      "exponent": 40,
+      "mode": "no_surjective",
+      "characters": null,
+      "complete": true,
+      "obstruction": "exact_theta_E10_over3_cohomomorphism"
+    },
+    {
+      "factors": [
+        20,
+        20
+      ],
+      "order": 400,
+      "exponent": 20,
+      "mode": "surjective",
+      "characters": null,
+      "complete": true,
+      "obstruction": "exact_theta_E10_over3_cohomomorphism"
+    },
+    {
+      "factors": [
+        20,
+        20
+      ],
+      "order": 400,
+      "exponent": 20,
+      "mode": "no_surjective",
+      "characters": null,
+      "complete": true,
+      "obstruction": "exact_theta_E10_over3_cohomomorphism"
+    },
+    {
+      "factors": [
+        2,
+        2,
+        92
+      ],
+      "order": 368,
+      "exponent": 92,
+      "distance": 27,
+      "mode": "surjective",
+      "difference_classes": 107,
+      "candidate_masks": 176,
+      "excluded_bad_image_characters": 16,
+      "excluded_surjective_characters": 0,
+      "characters": null,
+      "pair_masks": 15374,
+      "outer_tests": 15374,
+      "bitset_intersections": 212929,
+      "complete": true
+    },
+    {
+      "factors": [
+        2,
+        2,
+        92
+      ],
+      "order": 368,
+      "exponent": 92,
+      "distance": 27,
+      "mode": "no_surjective",
+      "difference_classes": 187,
+      "candidate_masks": 88,
+      "excluded_bad_image_characters": 16,
+      "excluded_surjective_characters": 176,
+      "characters": null,
+      "obstruction": "all_candidate_characters_miss_difference",
+      "missed_difference": [
+        0,
+        0,
+        46
+      ]
+    },
+    {
+      "factors": [
+        5,
+        5,
+        15
+      ],
+      "order": 375,
+      "exponent": 15,
+      "mode": "surjective",
+      "characters": null,
+      "complete": true,
+      "obstruction": "exact_theta_E10_over3_cohomomorphism"
+    },
+    {
+      "factors": [
+        5,
+        5,
+        15
+      ],
+      "order": 375,
+      "exponent": 15,
+      "mode": "no_surjective",
+      "characters": null,
+      "complete": true,
+      "obstruction": "exact_theta_E10_over3_cohomomorphism"
+    },
+    {
+      "factors": [
+        2,
+        2,
+        94
+      ],
+      "order": 376,
+      "exponent": 94,
+      "distance": 27,
+      "mode": "surjective",
+      "difference_classes": 107,
+      "candidate_masks": 184,
+      "excluded_bad_image_characters": 8,
+      "excluded_surjective_characters": 0,
+      "characters": null,
+      "pair_masks": 16763,
+      "outer_tests": 16763,
+      "bitset_intersections": 266671,
+      "complete": true
+    },
+    {
+      "factors": [
+        2,
+        2,
+        94
+      ],
+      "order": 376,
+      "exponent": 94,
+      "distance": 27,
+      "mode": "no_surjective",
+      "difference_classes": 191,
+      "candidate_masks": 23,
+      "excluded_bad_image_characters": 8,
+      "excluded_surjective_characters": 322,
+      "characters": null,
+      "obstruction": "all_candidate_characters_miss_difference",
+      "missed_difference": [
+        0,
+        0,
+        47
+      ]
+    },
+    {
+      "factors": [
+        3,
+        3,
+        42
+      ],
+      "order": 378,
+      "exponent": 42,
+      "distance": 12,
+      "mode": "surjective",
+      "difference_classes": 103,
+      "candidate_masks": 162,
+      "excluded_bad_image_characters": 54,
+      "excluded_surjective_characters": 0,
+      "characters": null,
+      "pair_masks": 12863,
+      "outer_tests": 12863,
+      "bitset_intersections": 301689,
+      "complete": true
+    },
+    {
+      "factors": [
+        3,
+        3,
+        42
+      ],
+      "order": 378,
+      "exponent": 42,
+      "distance": 12,
+      "mode": "no_surjective",
+      "difference_classes": 189,
+      "candidate_masks": 84,
+      "excluded_bad_image_characters": 54,
+      "excluded_surjective_characters": 156,
+      "characters": null,
+      "pair_masks": 3471,
+      "outer_tests": 291564,
+      "bitset_intersections": 4139468,
+      "complete": true
+    },
+    {
+      "factors": [
+        2,
+        2,
+        96
+      ],
+      "order": 384,
+      "exponent": 96,
+      "distance": 28,
+      "mode": "surjective",
+      "difference_classes": 111,
+      "candidate_masks": 160,
+      "excluded_bad_image_characters": 64,
+      "excluded_surjective_characters": 0,
+      "characters": null,
+      "pair_masks": 12697,
+      "outer_tests": 12697,
+      "bitset_intersections": 179301,
+      "complete": true
+    },
+    {
+      "factors": [
+        2,
+        2,
+        96
+      ],
+      "order": 384,
+      "exponent": 96,
+      "distance": 28,
+      "mode": "no_surjective",
+      "difference_classes": 195,
+      "candidate_masks": 96,
+      "excluded_bad_image_characters": 64,
+      "excluded_surjective_characters": 128,
+      "characters": null,
+      "pair_masks": 4656,
+      "outer_tests": 446976,
+      "bitset_intersections": 6014400,
+      "complete": true
+    },
+    {
+      "factors": [
+        2,
+        4,
+        48
+      ],
+      "order": 384,
+      "exponent": 48,
+      "distance": 14,
+      "mode": "surjective",
+      "difference_classes": 109,
+      "candidate_masks": 128,
+      "excluded_bad_image_characters": 128,
+      "excluded_surjective_characters": 0,
+      "characters": null,
+      "pair_masks": 8100,
+      "outer_tests": 8100,
+      "bitset_intersections": 103403,
+      "complete": true
+    },
+    {
+      "factors": [
+        2,
+        4,
+        48
+      ],
+      "order": 384,
+      "exponent": 48,
+      "distance": 14,
+      "mode": "no_surjective",
+      "difference_classes": 195,
+      "candidate_masks": 64,
+      "excluded_bad_image_characters": 128,
+      "excluded_surjective_characters": 128,
+      "characters": null,
+      "obstruction": "all_candidate_characters_miss_difference",
+      "missed_difference": [
+        0,
+        0,
+        4
+      ]
+    },
+    {
+      "factors": [
+        2,
+        8,
+        24
+      ],
+      "order": 384,
+      "exponent": 24,
+      "distance": 7,
+      "mode": "surjective",
+      "difference_classes": 105,
+      "candidate_masks": 96,
+      "excluded_bad_image_characters": 192,
+      "excluded_surjective_characters": 0,
+      "characters": null,
+      "pair_masks": 4443,
+      "outer_tests": 4443,
+      "bitset_intersections": 47870,
+      "complete": true
+    },
+    {
+      "factors": [
+        2,
+        8,
+        24
+      ],
+      "order": 384,
+      "exponent": 24,
+      "distance": 7,
+      "mode": "no_surjective",
+      "difference_classes": 195,
+      "candidate_masks": 0,
+      "excluded_bad_image_characters": 192,
+      "excluded_surjective_characters": 192,
+      "characters": null,
+      "obstruction": "all_candidate_characters_miss_difference",
+      "missed_difference": [
+        0,
+        0,
+        1
+      ]
+    },
+    {
+      "factors": [
+        4,
+        4,
+        24
+      ],
+      "order": 384,
+      "exponent": 24,
+      "distance": 7,
+      "mode": "surjective",
+      "difference_classes": 105,
+      "candidate_masks": 64,
+      "excluded_bad_image_characters": 256,
+      "excluded_surjective_characters": 0,
+      "characters": null,
+      "obstruction": "all_candidate_characters_miss_difference",
+      "missed_difference": [
+        0,
+        0,
+        4
+      ]
+    },
+    {
+      "factors": [
+        4,
+        4,
+        24
+      ],
+      "order": 384,
+      "exponent": 24,
+      "distance": 7,
+      "mode": "no_surjective",
+      "difference_classes": 195,
+      "candidate_masks": 0,
+      "excluded_bad_image_characters": 256,
+      "excluded_surjective_characters": 128,
+      "characters": null,
+      "obstruction": "all_candidate_characters_miss_difference",
+      "missed_difference": [
+        0,
+        0,
+        1
+      ]
+    },
+    {
+      "factors": [
+        2,
+        2,
+        98
+      ],
+      "order": 392,
+      "exponent": 98,
+      "distance": 28,
+      "mode": "surjective",
+      "difference_classes": 111,
+      "candidate_masks": 192,
+      "excluded_bad_image_characters": 8,
+      "excluded_surjective_characters": 0,
+      "characters": null,
+      "pair_masks": 18103,
+      "outer_tests": 18103,
+      "bitset_intersections": 294673,
+      "complete": true
+    },
+    {
+      "factors": [
+        2,
+        2,
+        98
+      ],
+      "order": 392,
+      "exponent": 98,
+      "distance": 28,
+      "mode": "no_surjective",
+      "difference_classes": 199,
+      "candidate_masks": 45,
+      "excluded_bad_image_characters": 8,
+      "excluded_surjective_characters": 294,
+      "characters": null,
+      "pair_masks": 907,
+      "outer_tests": 40815,
+      "bitset_intersections": 465154,
+      "complete": true
+    },
+    {
+      "factors": [
+        2,
+        14,
+        14
+      ],
+      "order": 392,
+      "exponent": 14,
+      "distance": 4,
+      "mode": "surjective",
+      "difference_classes": 99,
+      "candidate_masks": 184,
+      "excluded_bad_image_characters": 8,
+      "excluded_surjective_characters": 0,
+      "characters": null,
+      "pair_masks": 14527,
+      "outer_tests": 14527,
+      "bitset_intersections": 300171,
+      "complete": true
+    },
+    {
+      "factors": [
+        2,
+        14,
+        14
+      ],
+      "order": 392,
+      "exponent": 14,
+      "distance": 4,
+      "mode": "no_surjective",
+      "difference_classes": 199,
+      "candidate_masks": 24,
+      "excluded_bad_image_characters": 8,
+      "excluded_surjective_characters": 336,
+      "characters": null,
+      "obstruction": "all_candidate_characters_miss_difference",
+      "missed_difference": [
+        0,
+        0,
+        7
+      ]
+    },
+    {
+      "factors": [
+        2,
+        2,
+        100
+      ],
+      "order": 400,
+      "exponent": 100,
+      "distance": 29,
+      "mode": "surjective",
+      "difference_classes": 115,
+      "candidate_masks": 190,
+      "excluded_bad_image_characters": 20,
+      "excluded_surjective_characters": 0,
+      "characters": null,
+      "pair_masks": 17935,
+      "outer_tests": 17935,
+      "bitset_intersections": 339773,
+      "complete": true
+    },
+    {
+      "factors": [
+        2,
+        2,
+        100
+      ],
+      "order": 400,
+      "exponent": 100,
+      "distance": 29,
+      "mode": "no_surjective",
+      "difference_classes": 203,
+      "candidate_masks": 110,
+      "excluded_bad_image_characters": 20,
+      "excluded_surjective_characters": 160,
+      "characters": null,
+      "pair_masks": 6105,
+      "outer_tests": 671550,
+      "bitset_intersections": 9306234,
+      "complete": true
+    },
+    {
+      "factors": [
+        2,
+        10,
+        20
+      ],
+      "order": 400,
+      "exponent": 20,
+      "mode": "surjective",
+      "characters": null,
+      "complete": true,
+      "obstruction": "exact_theta_E10_over3_cohomomorphism"
+    },
+    {
+      "factors": [
+        2,
+        10,
+        20
+      ],
+      "order": 400,
+      "exponent": 20,
+      "mode": "no_surjective",
+      "characters": null,
+      "complete": true,
+      "obstruction": "exact_theta_E10_over3_cohomomorphism"
+    },
+    {
+      "factors": [
+        2,
+        2,
+        2,
+        46
+      ],
+      "order": 368,
+      "exponent": 46,
+      "mode": "surjective",
+      "characters": null,
+      "complete": true,
+      "obstruction": "exact_theta_E10_over3_cohomomorphism"
+    },
+    {
+      "factors": [
+        2,
+        2,
+        2,
+        46
+      ],
+      "order": 368,
+      "exponent": 46,
+      "mode": "no_surjective",
+      "characters": null,
+      "complete": true,
+      "obstruction": "exact_theta_E10_over3_cohomomorphism"
+    },
+    {
+      "factors": [
+        2,
+        2,
+        2,
+        48
+      ],
+      "order": 384,
+      "exponent": 48,
+      "distance": 14,
+      "mode": "surjective",
+      "difference_classes": 111,
+      "candidate_masks": 128,
+      "excluded_bad_image_characters": 128,
+      "excluded_surjective_characters": 0,
+      "characters": null,
+      "pair_masks": 8036,
+      "outer_tests": 8036,
+      "bitset_intersections": 96704,
+      "complete": true
+    },
+    {
+      "factors": [
+        2,
+        2,
+        2,
+        48
+      ],
+      "order": 384,
+      "exponent": 48,
+      "distance": 14,
+      "mode": "no_surjective",
+      "difference_classes": 199,
+      "candidate_masks": 64,
+      "excluded_bad_image_characters": 128,
+      "excluded_surjective_characters": 128,
+      "characters": null,
+      "obstruction": "all_candidate_characters_miss_difference",
+      "missed_difference": [
+        0,
+        0,
+        0,
+        4
+      ]
+    },
+    {
+      "factors": [
+        2,
+        2,
+        4,
+        24
+      ],
+      "order": 384,
+      "exponent": 24,
+      "distance": 7,
+      "mode": "surjective",
+      "difference_classes": 107,
+      "candidate_masks": 64,
+      "excluded_bad_image_characters": 256,
+      "excluded_surjective_characters": 0,
+      "characters": null,
+      "obstruction": "all_candidate_characters_miss_difference",
+      "missed_difference": [
+        0,
+        0,
+        0,
+        4
+      ]
+    },
+    {
+      "factors": [
+        2,
+        2,
+        4,
+        24
+      ],
+      "order": 384,
+      "exponent": 24,
+      "distance": 7,
+      "mode": "no_surjective",
+      "difference_classes": 199,
+      "candidate_masks": 0,
+      "excluded_bad_image_characters": 256,
+      "excluded_surjective_characters": 128,
+      "characters": null,
+      "obstruction": "all_candidate_characters_miss_difference",
+      "missed_difference": [
+        0,
+        0,
+        0,
+        1
+      ]
+    },
+    {
+      "factors": [
+        2,
+        4,
+        4,
+        12
+      ],
+      "order": 384,
+      "exponent": 12,
+      "mode": "surjective",
+      "characters": null,
+      "complete": true,
+      "obstruction": "exact_theta_E10_over3_cohomomorphism"
+    },
+    {
+      "factors": [
+        2,
+        4,
+        4,
+        12
+      ],
+      "order": 384,
+      "exponent": 12,
+      "mode": "no_surjective",
+      "characters": null,
+      "complete": true,
+      "obstruction": "exact_theta_E10_over3_cohomomorphism"
+    },
+    {
+      "factors": [
+        2,
+        2,
+        2,
+        50
+      ],
+      "order": 400,
+      "exponent": 50,
+      "mode": "surjective",
+      "characters": null,
+      "complete": true,
+      "obstruction": "exact_theta_E10_over3_cohomomorphism"
+    },
+    {
+      "factors": [
+        2,
+        2,
+        2,
+        50
+      ],
+      "order": 400,
+      "exponent": 50,
+      "mode": "no_surjective",
+      "characters": null,
+      "complete": true,
+      "obstruction": "exact_theta_E10_over3_cohomomorphism"
+    },
+    {
+      "factors": [
+        2,
+        2,
+        10,
+        10
+      ],
+      "order": 400,
+      "exponent": 10,
+      "mode": "surjective",
+      "characters": null,
+      "complete": true,
+      "obstruction": "exact_theta_E10_over3_cohomomorphism"
+    },
+    {
+      "factors": [
+        2,
+        2,
+        10,
+        10
+      ],
+      "order": 400,
+      "exponent": 10,
+      "mode": "no_surjective",
+      "characters": null,
+      "complete": true,
+      "obstruction": "exact_theta_E10_over3_cohomomorphism"
+    },
+    {
+      "factors": [
+        2,
+        2,
+        2,
+        2,
+        24
+      ],
+      "order": 384,
+      "exponent": 24,
+      "distance": 7,
+      "mode": "surjective",
+      "difference_classes": 111,
+      "candidate_masks": 64,
+      "excluded_bad_image_characters": 256,
+      "excluded_surjective_characters": 0,
+      "characters": null,
+      "obstruction": "all_candidate_characters_miss_difference",
+      "missed_difference": [
+        0,
+        0,
+        0,
+        0,
+        4
+      ]
+    },
+    {
+      "factors": [
+        2,
+        2,
+        2,
+        2,
+        24
+      ],
+      "order": 384,
+      "exponent": 24,
+      "distance": 7,
+      "mode": "no_surjective",
+      "difference_classes": 207,
+      "candidate_masks": 0,
+      "excluded_bad_image_characters": 256,
+      "excluded_surjective_characters": 128,
+      "characters": null,
+      "obstruction": "all_candidate_characters_miss_difference",
+      "missed_difference": [
+        0,
+        0,
+        0,
+        0,
+        1
+      ]
+    },
+    {
+      "factors": [
+        2,
+        2,
+        2,
+        4,
+        12
+      ],
+      "order": 384,
+      "exponent": 12,
+      "mode": "surjective",
+      "characters": null,
+      "complete": true,
+      "obstruction": "exact_theta_E10_over3_cohomomorphism"
+    },
+    {
+      "factors": [
+        2,
+        2,
+        2,
+        4,
+        12
+      ],
+      "order": 384,
+      "exponent": 12,
+      "mode": "no_surjective",
+      "characters": null,
+      "complete": true,
+      "obstruction": "exact_theta_E10_over3_cohomomorphism"
+    }
+  ],
+  "noncyclic_group_types": 44,
+  "jobs": 88,
+  "skipped_rank_gt5": [
+    [
+      2,
+      2,
+      2,
+      2,
+      2,
+      12
+    ],
+    [
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      6
+    ]
+  ],
+  "complete": true,
+  "seconds_this_checkpoint": 47.58223797100072,
+  "maxRSS_KiB": 14784,
+  "scope": "Finite abelian subgroup codes of order368..401 in five circles at distance2/7, with rational image-order theta pruning. Cyclic groups are covered separately by prior exact gate. Nonlinear near-packing/rounding-completion remains outside."
+}

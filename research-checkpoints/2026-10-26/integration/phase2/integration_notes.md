@@ -1,0 +1,11 @@
+# Phase-2 integration scope
+
+The audited fixed witness is unchanged. Portable path edits are documented in `source_adaptations.json`. The independent arithmetic verifier is run only after its KL-stability evidence is freshly regenerated in the same temporary copy; the wrapper then checks every shorter-length certificate and the exact known19 existence chain. Supplemental controls are separated from rigorous proof replay, and selected negative controls test rejection rather than correctness of all possible inputs.
+
+All 15 non-quantum integration checks, both quantum proof-chain commands, 11 supplemental-control groups (12 individual scripts), and four negative controls passed. The numerical model scripts are retained to reproduce diagnostic controls; no numerical optimizer result is elevated to a proof. The exact quantum witness needs neither these scripts nor a solver. The n≤8 no-cloning proof and physical model applicability are analytic inputs audited separately.
+
+Some raw worker logs and host-generated replay timestamps use the cloud runtime's clock, which differs from the task clock. They are retained as measured provenance, not silently rewritten. The phase-2 manifest records the task-clock freeze time. Nothing in a mathematical certificate depends on these timestamps or wall-clock timings.
+
+The original quantum workspace inventory is retained under its `phase2/provenance/` directory but includes files deliberately omitted here. The cumulative root inventory and this update's manifest are authoritative for bundled content. The complete packing manifest is included unchanged. HSS optional global-LS and wider-frame status notes remain exploratory, and associated optimizer outputs/arrays are excluded. Two current paper trees and every preexisting research artifact remain unchanged. Only the root reading index and cumulative file inventory are updated.
+
+No outside contact, public publication, paid solver, or user-computer operation was performed for this integration. Main is updated only by a non-forced fast-forward with an expected-head lease, after current-head inspection. Remote verification receipts are kept in the cloud handoff, since a commit cannot include its own eventual commit/ref receipt.

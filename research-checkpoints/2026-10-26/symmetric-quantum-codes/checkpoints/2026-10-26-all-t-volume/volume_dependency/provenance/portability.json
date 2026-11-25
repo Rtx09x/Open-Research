@@ -1,0 +1,6 @@
+{
+  "worker_checker_original_sha256": "c08ffef12510d517705a5f76797b8dc8ea2579238ca465d1cbac70005a79b5e4",
+  "adaptation": "Only checker import changes from scalar_frontier.racah to extracted racah_coefficients.racah and proposed\u2192all-t in docstring. Exact factorial function copied unchanged. This removes unnecessary numpy/scipy/optimizer imports. Independent scripts copied byte-for-byte before reproduction.",
+  "required_package": "sympy==1.14.0",
+  "stdlib_only_check": "independent/check_quantum_lp_length_monotonicity.py"
+}

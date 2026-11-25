@@ -1,0 +1,81 @@
+{
+  "spec": {
+    "codes": [
+      1,
+      2,
+      0,
+      4,
+      5,
+      7,
+      8
+    ],
+    "f": [
+      0,
+      0,
+      0,
+      1,
+      4,
+      5,
+      6
+    ],
+    "n": 4,
+    "degree": 1,
+    "common": true,
+    "uniform": true,
+    "nonnegative": false,
+    "fixed_additions": {},
+    "support": null
+  },
+  "fingerprint": "cd0e51f9bd69a63392c77c0d9a462927b8860782157eb7d5561ea238e9543323",
+  "variables": [
+    "H",
+    "W",
+    "a:0",
+    "J:0:2",
+    "J:0:4",
+    "J:0:8",
+    "a:1",
+    "J:1:1",
+    "J:1:4",
+    "J:1:8",
+    "a:2",
+    "J:2:1",
+    "J:2:2",
+    "J:2:8",
+    "a:3",
+    "J:3:1",
+    "J:3:2",
+    "J:3:4"
+  ],
+  "rows": 105,
+  "dimension": 18,
+  "solver_status": 0,
+  "status": "feasible",
+  "primal": [
+    "6",
+    "14",
+    "2",
+    "2",
+    "4",
+    "6",
+    "8",
+    "8",
+    "-4",
+    "0",
+    "12",
+    "-4",
+    "4",
+    "-4",
+    "4",
+    "4",
+    "2",
+    "2"
+  ],
+  "physical_check": {
+    "trials": 7,
+    "scale": 1,
+    "margin": 2,
+    "min_span": 14,
+    "band_gap": 0
+  }
+}

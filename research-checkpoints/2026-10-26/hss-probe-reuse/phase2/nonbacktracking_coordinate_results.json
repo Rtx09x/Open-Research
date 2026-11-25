@@ -1,0 +1,127 @@
+[
+  {
+    "L": 2,
+    "n": 8,
+    "input_entry": [
+      1,
+      5
+    ],
+    "fixed_class_optimum": 1,
+    "sign_assignments": 4096,
+    "exhaustive": true,
+    "observed_exact_errors": [
+      4
+    ],
+    "observed_exact_coefficient_ledgers": [
+      [
+        2,
+        0,
+        1
+      ]
+    ]
+  },
+  {
+    "L": 4,
+    "n": 32,
+    "input_entry": [
+      5,
+      21
+    ],
+    "fixed_class_optimum": 1,
+    "sign_assignments": 20,
+    "exhaustive": false,
+    "observed_exact_errors": [
+      6
+    ],
+    "observed_exact_coefficient_ledgers": [
+      [
+        2,
+        0,
+        2,
+        0,
+        1
+      ]
+    ]
+  },
+  {
+    "L": 6,
+    "n": 128,
+    "input_entry": [
+      21,
+      85
+    ],
+    "fixed_class_optimum": 1,
+    "sign_assignments": 20,
+    "exhaustive": false,
+    "observed_exact_errors": [
+      8
+    ],
+    "observed_exact_coefficient_ledgers": [
+      [
+        2,
+        0,
+        2,
+        0,
+        2,
+        0,
+        1
+      ]
+    ]
+  },
+  {
+    "L": 8,
+    "n": 512,
+    "input_entry": [
+      85,
+      341
+    ],
+    "fixed_class_optimum": 1,
+    "sign_assignments": 20,
+    "exhaustive": false,
+    "observed_exact_errors": [
+      10
+    ],
+    "observed_exact_coefficient_ledgers": [
+      [
+        2,
+        0,
+        2,
+        0,
+        2,
+        0,
+        2,
+        0,
+        1
+      ]
+    ]
+  },
+  {
+    "L": 10,
+    "n": 2048,
+    "input_entry": [
+      341,
+      1365
+    ],
+    "fixed_class_optimum": 1,
+    "sign_assignments": 20,
+    "exhaustive": false,
+    "observed_exact_errors": [
+      12
+    ],
+    "observed_exact_coefficient_ledgers": [
+      [
+        2,
+        0,
+        2,
+        0,
+        2,
+        0,
+        2,
+        0,
+        2,
+        0,
+        1
+      ]
+    ]
+  }
+]

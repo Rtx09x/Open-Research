@@ -1,0 +1,13 @@
+{
+  "status": "PASS",
+  "primary_HTML_parameters_and_weights": true,
+  "exact_modified_parameters_match": true,
+  "scenarios": 402,
+  "strict_knapsacks": 804,
+  "large_balance_inequalities": 492,
+  "integer_lattice_nodes_no_dominance_pruning": 109845241,
+  "target": "1848920194883516152323541607/1171513518439186595284254720",
+  "seconds": 98.97932240200134,
+  "maxrss_kib": 17292,
+  "endpoint_convention": "threshold chosen at interior midpoint for scenario classification; separate proof establishes applicability to every input"
+}

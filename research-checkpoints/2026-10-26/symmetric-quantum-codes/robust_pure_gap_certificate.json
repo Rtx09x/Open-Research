@@ -1,0 +1,11 @@
+{
+  "scope": "all hypothetical n18 codes, conditional on preceding exact reductions",
+  "variance_definition": "nu=||G-I9/19||F^2",
+  "necessary_lower_bound": "1/100000000",
+  "strict": true,
+  "A": "14451119586298011848706/295472319059230495",
+  "w": "48406267961263443/12338404532143691",
+  "rational_upper_at_test": "3146129664606981651889659/7386807976480762375000000",
+  "bound_float": "0.425911933087215",
+  "reason": "If nu<=q^2, exact dual plus ||Q0-Q||F^2=2*N^2*nu implies1<=bound<1."
+}

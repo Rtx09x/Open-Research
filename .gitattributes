@@ -1,0 +1,3 @@
+# Frozen research artifacts are hash-bound and must survive checkout unchanged.
+research-checkpoints/2026-10-26/** -text
+computer-science/sequential-calibration/code/calibration-adaptive-weight-v3-review/** -text

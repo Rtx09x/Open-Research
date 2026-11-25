@@ -1,0 +1,34 @@
+{
+  "passed": true,
+  "sha256": "e64181dcab35a7982620ea216098fcb7223dda15ada3433bc2ce6b478d65bbd8",
+  "size": 367,
+  "pair_checks": 67161,
+  "common_core_retained": 342,
+  "outside_old377": 15,
+  "not_coordinate_dihedral_permutation_equivalent_to_I0": true,
+  "not_coordinate_dihedral_permutation_equivalent_to_X": true,
+  "witness_I0": [
+    [
+      0,
+      0,
+      0,
+      1,
+      2
+    ],
+    538,
+    542
+  ],
+  "witness_X": [
+    [
+      0,
+      0,
+      0,
+      1,
+      2
+    ],
+    538,
+    550
+  ],
+  "scope": "New physical seed, not cardinality/capacity improvement",
+  "seconds": 0.33489990234375
+}

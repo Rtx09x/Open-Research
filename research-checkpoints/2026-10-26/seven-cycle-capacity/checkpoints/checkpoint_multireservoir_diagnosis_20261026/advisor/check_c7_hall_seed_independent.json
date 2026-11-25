@@ -1,0 +1,14 @@
+{
+  "PASS": true,
+  "certificate_sha256": "1e6c0136787701aa8ac1fc5b73e8ad932a6be814c5549aaadfa00913b72a28c1",
+  "forced_core": 4272,
+  "complete_removed_Z_neighborhood": 5248,
+  "admissible_T_outsiders": 112769,
+  "matching": 112718,
+  "Hall_selected": 53,
+  "complete_Hall_deleted": 2,
+  "exact_optimum_with_forced_core": 133828,
+  "target_shortfall": 1265,
+  "seconds": 1.309506808000151,
+  "scope": "Must retain all4272 specified core words; only Z/T(Z) otherwise. No unrestricted alphabet/capacity or global bound."
+}

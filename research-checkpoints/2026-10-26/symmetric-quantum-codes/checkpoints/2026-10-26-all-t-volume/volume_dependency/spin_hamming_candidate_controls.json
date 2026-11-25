@@ -1,0 +1,72 @@
+{
+  "status": "exact symbolic algebra and finite normalization controls PASS; full analytic audit separate",
+  "stochastic_drift_reversibility_cases": 284,
+  "full_linearization_cases": 440,
+  "bernstein_identity_symbolic": true,
+  "positive_coefficient_polynomials": [
+    "t*(t + 1)**3*(t + 2)*(t**2 + 7*t + 3)",
+    "t*(t + 1)**2*(t + 2)*(2*t**3 + 42*t**2 + 52*t + 15)/5",
+    "t*(t + 1)*(t**5 + 89*t**4 + 368*t**3 + 526*t**2 + 305*t + 60)/10",
+    "t*(86*t**5 + 456*t**4 + 908*t**3 + 848*t**2 + 371*t + 60)/10",
+    "t*(42*t**5 + 227*t**4 + 458*t**3 + 429*t**2 + 188*t + 30)/5",
+    "2*t*(t + 1)*(4*t**4 + 19*t**3 + 27*t**2 + 16*t + 3)"
+  ],
+  "critical_cases": [
+    {
+      "K": 2,
+      "t": 1,
+      "n": 6,
+      "minimum_low_coefficient": "4"
+    },
+    {
+      "K": 2,
+      "t": 2,
+      "n": 16,
+      "minimum_low_coefficient": "9"
+    },
+    {
+      "K": 2,
+      "t": 3,
+      "n": 30,
+      "minimum_low_coefficient": "16"
+    },
+    {
+      "K": 2,
+      "t": 4,
+      "n": 48,
+      "minimum_low_coefficient": "25"
+    },
+    {
+      "K": 2,
+      "t": 5,
+      "n": 70,
+      "minimum_low_coefficient": "36"
+    },
+    {
+      "K": 2,
+      "t": 6,
+      "n": 96,
+      "minimum_low_coefficient": "49"
+    },
+    {
+      "K": 3,
+      "t": 1,
+      "n": 10,
+      "minimum_low_coefficient": "4"
+    },
+    {
+      "K": 3,
+      "t": 2,
+      "n": 25,
+      "minimum_low_coefficient": "9"
+    },
+    {
+      "K": 3,
+      "t": 3,
+      "n": 46,
+      "minimum_low_coefficient": "16"
+    }
+  ],
+  "saturating_n7_control": true,
+  "seconds": 1.7388863563537598
+}

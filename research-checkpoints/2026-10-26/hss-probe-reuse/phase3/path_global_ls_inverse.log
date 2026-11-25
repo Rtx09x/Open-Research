@@ -1,0 +1,57 @@
+{
+  "status": "NUMERICAL_CONTROLS_NOT_PROOF",
+  "physical": [
+    {
+      "n": 3,
+      "coefficient_count": 7,
+      "gram_identity_error": 2.220446049250313e-16
+    },
+    {
+      "n": 4,
+      "coefficient_count": 10,
+      "gram_identity_error": 4.440892098500626e-16
+    },
+    {
+      "n": 9,
+      "coefficient_count": 25,
+      "gram_identity_error": 4.440892098500626e-16
+    },
+    {
+      "n": 16,
+      "coefficient_count": 46,
+      "gram_identity_error": 4.440892098500626e-16
+    }
+  ],
+  "inverse_moments": [
+    {
+      "chain_length": 2,
+      "trials": 20000,
+      "max_empirical_mean_inverse_diagonal": 0.5494104323588664,
+      "analytic_upper_bound": 1.2337005501361697
+    },
+    {
+      "chain_length": 4,
+      "trials": 20000,
+      "max_empirical_mean_inverse_diagonal": 0.618177383360357,
+      "analytic_upper_bound": 1.2337005501361697
+    },
+    {
+      "chain_length": 8,
+      "trials": 20000,
+      "max_empirical_mean_inverse_diagonal": 0.6275318805108467,
+      "analytic_upper_bound": 1.2337005501361697
+    },
+    {
+      "chain_length": 32,
+      "trials": 20000,
+      "max_empirical_mean_inverse_diagonal": 0.6298582406711748,
+      "analytic_upper_bound": 1.2337005501361697
+    },
+    {
+      "chain_length": 128,
+      "trials": 20000,
+      "max_empirical_mean_inverse_diagonal": 0.6301963401696453,
+      "analytic_upper_bound": 1.2337005501361697
+    }
+  ]
+}

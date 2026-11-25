@@ -1,0 +1,10 @@
+{
+  "status": "EXACT_FRACTION_PASS",
+  "k": 2,
+  "width": 6,
+  "physical_recursion": true,
+  "pointwise_flux_identity": true,
+  "flux_loss": "230291547970153018497452195314553809779056/13600232051658167620189487934112548828125",
+  "naive_row_covariance_cone_minimum_defect": "-1/2",
+  "scope": "Algebra control; not a general-k stability theorem"
+}

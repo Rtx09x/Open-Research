@@ -1,0 +1,79 @@
+{
+  "PASS": true,
+  "certificate": "reservoir_orbit_compact.json.gz",
+  "sha256": "a7961fa477d3d4ad6bacb875de2568cc27741d38294850c4003683913c88bb61",
+  "records": [
+    {
+      "name": "published",
+      "maximum_code_size": 134753,
+      "deficiency": 64,
+      "reservoir_count": 5360,
+      "matching_size": 5296
+    },
+    {
+      "name": "published_T1",
+      "maximum_code_size": 134753,
+      "deficiency": 64,
+      "reservoir_count": 133729,
+      "matching_size": 133665
+    },
+    {
+      "name": "published_J_exchange",
+      "maximum_code_size": 134753,
+      "deficiency": 64,
+      "reservoir_count": 133729,
+      "matching_size": 133665
+    },
+    {
+      "name": "published_T2",
+      "maximum_code_size": 134753,
+      "deficiency": 64,
+      "reservoir_count": 133665,
+      "matching_size": 133601
+    },
+    {
+      "name": "published_T3",
+      "maximum_code_size": 134753,
+      "deficiency": 64,
+      "reservoir_count": 133685,
+      "matching_size": 133621
+    },
+    {
+      "name": "cycle_flip",
+      "maximum_code_size": 134753,
+      "deficiency": 64,
+      "reservoir_count": 15905,
+      "matching_size": 15841
+    },
+    {
+      "name": "cycle_flip_T1",
+      "maximum_code_size": 134753,
+      "deficiency": 64,
+      "reservoir_count": 133729,
+      "matching_size": 133665
+    },
+    {
+      "name": "cycle_flip_J_exchange",
+      "maximum_code_size": 134753,
+      "deficiency": 64,
+      "reservoir_count": 133729,
+      "matching_size": 133665
+    },
+    {
+      "name": "cycle_flip_T2",
+      "maximum_code_size": 134753,
+      "deficiency": 64,
+      "reservoir_count": 133665,
+      "matching_size": 133601
+    },
+    {
+      "name": "cycle_flip_T3",
+      "maximum_code_size": 134753,
+      "deficiency": 64,
+      "reservoir_count": 133685,
+      "matching_size": 133621
+    }
+  ],
+  "seconds": 7.933451909000723,
+  "scope": "Exact maximum within I0^2 union each specified independent reservoir, not global C7^10 optimality."
+}

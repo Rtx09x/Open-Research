@@ -1,0 +1,16 @@
+{
+  "I0": {
+    "words": 367,
+    "dimension": 5,
+    "pair_comparisons": 67161,
+    "disjoint_cube_points": 11744,
+    "sha256": "2878df7a30e260db83f2e4b409ac2b92055a4f034ccca3c3f7efe54960bdfb2a"
+  },
+  "X": {
+    "words": 367,
+    "dimension": 5,
+    "pair_comparisons": 67161,
+    "disjoint_cube_points": 11744,
+    "sha256": "cff9b7c4f9a2c7a61cb826afc90e410623bb63b2b2f3683c789d7e5fdbbff6c0"
+  }
+}

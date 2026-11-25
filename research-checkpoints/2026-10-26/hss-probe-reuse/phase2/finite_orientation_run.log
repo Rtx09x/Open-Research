@@ -1,0 +1,12 @@
+{"k": 1, "L": 1, "n": 4, "trials": 30, "query_count": 4, "mean_error_ratio": 3.806224355075321, "exact_model_error": 4.3097683900059457e-16}
+{"k": 1, "L": 2, "n": 8, "trials": 30, "query_count": 4, "mean_error_ratio": 3.1452135632721516, "exact_model_error": 7.02820689981329e-16}
+{"k": 1, "L": 3, "n": 16, "trials": 30, "query_count": 4, "mean_error_ratio": 2.993302859166704, "exact_model_error": 1.0967068441645022e-15}
+{"k": 1, "L": 4, "n": 32, "trials": 30, "query_count": 4, "mean_error_ratio": 3.1212083252214438, "exact_model_error": 9.390621384522105e-16}
+{"k": 2, "L": 1, "n": 8, "trials": 30, "query_count": 8, "mean_error_ratio": 2.3276443205583, "exact_model_error": 2.458582930688054e-16}
+{"k": 2, "L": 2, "n": 16, "trials": 30, "query_count": 8, "mean_error_ratio": 2.824033937792211, "exact_model_error": 1.0974808512200029e-15}
+{"k": 2, "L": 3, "n": 32, "trials": 30, "query_count": 8, "mean_error_ratio": 3.079017314597393, "exact_model_error": 9.714896834694337e-16}
+{"k": 2, "L": 4, "n": 64, "trials": 30, "query_count": 8, "mean_error_ratio": 3.318737487504825, "exact_model_error": 9.674659048160588e-16}
+{"k": 3, "L": 1, "n": 12, "trials": 30, "query_count": 12, "mean_error_ratio": 3.0166529586730233, "exact_model_error": 7.021236094470166e-16}
+{"k": 3, "L": 2, "n": 24, "trials": 30, "query_count": 12, "mean_error_ratio": 2.9730093731767937, "exact_model_error": 7.38344111615119e-16}
+{"k": 3, "L": 3, "n": 48, "trials": 30, "query_count": 12, "mean_error_ratio": 3.1051314712100746, "exact_model_error": 9.277573415031908e-16}
+{"k": 3, "L": 4, "n": 96, "trials": 30, "query_count": 12, "mean_error_ratio": 3.3485469374614905, "exact_model_error": 1.159135966447251e-15}

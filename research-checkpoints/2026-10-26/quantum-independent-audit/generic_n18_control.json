@@ -1,0 +1,14 @@
+{
+  "n": 18,
+  "arbitrary_complex_rank2": true,
+  "time_reversal_violation": 1.7089295805037898,
+  "weighted_imaginary_moment_max": 0.00628996727781904,
+  "S3_real_reconstruction_error": 1.942890293094024e-16,
+  "pair_map_error": 5.94246873930615e-12,
+  "MacWilliams_transform_error": 1.0551204354669608e-10,
+  "enumerator_sum_error": 1.34701139131721e-11,
+  "all_universal_marginal_error": 7.923078859661814e-12,
+  "PPT_min_eigenvalue": 7.898524135864928e-05,
+  "KL_was_not_imposed": true,
+  "seconds": 16.923465490341187
+}

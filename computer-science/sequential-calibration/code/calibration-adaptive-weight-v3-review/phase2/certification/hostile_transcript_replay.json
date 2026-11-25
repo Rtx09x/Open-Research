@@ -1,0 +1,424 @@
+{
+  "all_checks_passed": true,
+  "requests_one_based": [
+    17,
+    1,
+    18,
+    2,
+    19,
+    3,
+    20,
+    4,
+    21,
+    5,
+    22,
+    6,
+    23,
+    7,
+    24,
+    8,
+    25,
+    9,
+    25
+  ],
+  "rounds": [
+    {
+      "round": 1,
+      "request": 17,
+      "label": "+",
+      "erased": [],
+      "root_epoch_tau": 0,
+      "root_phase": 1,
+      "root_half_counts": [
+        0,
+        1
+      ],
+      "occupied_plus_positions": [
+        17
+      ]
+    },
+    {
+      "round": 2,
+      "request": 1,
+      "label": "+",
+      "erased": [
+        17
+      ],
+      "root_epoch_tau": 0,
+      "root_phase": 2,
+      "root_half_counts": [
+        1,
+        1
+      ],
+      "occupied_plus_positions": [
+        1
+      ]
+    },
+    {
+      "round": 3,
+      "request": 18,
+      "label": "+",
+      "erased": [],
+      "root_epoch_tau": 2,
+      "root_phase": 1,
+      "root_half_counts": [
+        0,
+        1
+      ],
+      "occupied_plus_positions": [
+        1,
+        18
+      ]
+    },
+    {
+      "round": 4,
+      "request": 2,
+      "label": "+",
+      "erased": [
+        18
+      ],
+      "root_epoch_tau": 2,
+      "root_phase": 2,
+      "root_half_counts": [
+        1,
+        1
+      ],
+      "occupied_plus_positions": [
+        1,
+        2
+      ]
+    },
+    {
+      "round": 5,
+      "request": 19,
+      "label": "+",
+      "erased": [],
+      "root_epoch_tau": 4,
+      "root_phase": 1,
+      "root_half_counts": [
+        0,
+        1
+      ],
+      "occupied_plus_positions": [
+        1,
+        2,
+        19
+      ]
+    },
+    {
+      "round": 6,
+      "request": 3,
+      "label": "+",
+      "erased": [
+        19
+      ],
+      "root_epoch_tau": 4,
+      "root_phase": 2,
+      "root_half_counts": [
+        1,
+        1
+      ],
+      "occupied_plus_positions": [
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "round": 7,
+      "request": 20,
+      "label": "+",
+      "erased": [],
+      "root_epoch_tau": 6,
+      "root_phase": 1,
+      "root_half_counts": [
+        0,
+        1
+      ],
+      "occupied_plus_positions": [
+        1,
+        2,
+        3,
+        20
+      ]
+    },
+    {
+      "round": 8,
+      "request": 4,
+      "label": "+",
+      "erased": [
+        20
+      ],
+      "root_epoch_tau": 6,
+      "root_phase": 2,
+      "root_half_counts": [
+        1,
+        1
+      ],
+      "occupied_plus_positions": [
+        1,
+        2,
+        3,
+        4
+      ]
+    },
+    {
+      "round": 9,
+      "request": 21,
+      "label": "+",
+      "erased": [],
+      "root_epoch_tau": 8,
+      "root_phase": 1,
+      "root_half_counts": [
+        0,
+        1
+      ],
+      "occupied_plus_positions": [
+        1,
+        2,
+        3,
+        4,
+        21
+      ]
+    },
+    {
+      "round": 10,
+      "request": 5,
+      "label": "+",
+      "erased": [
+        21
+      ],
+      "root_epoch_tau": 8,
+      "root_phase": 2,
+      "root_half_counts": [
+        1,
+        1
+      ],
+      "occupied_plus_positions": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ]
+    },
+    {
+      "round": 11,
+      "request": 22,
+      "label": "+",
+      "erased": [],
+      "root_epoch_tau": 10,
+      "root_phase": 1,
+      "root_half_counts": [
+        0,
+        1
+      ],
+      "occupied_plus_positions": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        22
+      ]
+    },
+    {
+      "round": 12,
+      "request": 6,
+      "label": "+",
+      "erased": [
+        22
+      ],
+      "root_epoch_tau": 10,
+      "root_phase": 2,
+      "root_half_counts": [
+        1,
+        1
+      ],
+      "occupied_plus_positions": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ]
+    },
+    {
+      "round": 13,
+      "request": 23,
+      "label": "+",
+      "erased": [],
+      "root_epoch_tau": 12,
+      "root_phase": 1,
+      "root_half_counts": [
+        0,
+        1
+      ],
+      "occupied_plus_positions": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        23
+      ]
+    },
+    {
+      "round": 14,
+      "request": 7,
+      "label": "+",
+      "erased": [
+        23
+      ],
+      "root_epoch_tau": 12,
+      "root_phase": 2,
+      "root_half_counts": [
+        1,
+        1
+      ],
+      "occupied_plus_positions": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ]
+    },
+    {
+      "round": 15,
+      "request": 24,
+      "label": "+",
+      "erased": [],
+      "root_epoch_tau": 14,
+      "root_phase": 1,
+      "root_half_counts": [
+        0,
+        1
+      ],
+      "occupied_plus_positions": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        24
+      ]
+    },
+    {
+      "round": 16,
+      "request": 8,
+      "label": "+",
+      "erased": [
+        24
+      ],
+      "root_epoch_tau": 14,
+      "root_phase": 2,
+      "root_half_counts": [
+        1,
+        1
+      ],
+      "occupied_plus_positions": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ]
+    },
+    {
+      "round": 17,
+      "request": 25,
+      "label": "+",
+      "erased": [],
+      "root_epoch_tau": 16,
+      "root_phase": 1,
+      "root_half_counts": [
+        0,
+        1
+      ],
+      "occupied_plus_positions": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        25
+      ]
+    },
+    {
+      "round": 18,
+      "request": 9,
+      "label": "+",
+      "erased": [
+        25
+      ],
+      "root_epoch_tau": 16,
+      "root_phase": 1,
+      "root_half_counts": [
+        1,
+        1
+      ],
+      "occupied_plus_positions": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ]
+    },
+    {
+      "round": 19,
+      "request": 25,
+      "label": "+",
+      "erased": [],
+      "root_epoch_tau": 16,
+      "root_phase": 1,
+      "root_half_counts": [
+        1,
+        2
+      ],
+      "occupied_plus_positions": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        25
+      ]
+    }
+  ],
+  "same_right_half_child_on_rounds_17_and_19": true,
+  "same_previously_full_leaf_on_rounds_17_and_19": true,
+  "right_child_counts_after_rounds_17_18_19": [
+    1,
+    1,
+    2
+  ],
+  "isolated_child_request_sequence": [
+    25,
+    25
+  ],
+  "isolated_standalone_second_request_illegal": true,
+  "scope": "Actual v2 rational runtime; all19 physical requests legal, no root full-board termination. Confirms proof-interface defect under ordinary-child interpretation, not failure of sign bound.",
+  "runtime_sha256": "511b5d1f5a0eaad2fe4cd21a22efa498bac06b36a91598c6fcc4b5aa09d2a40e"
+}

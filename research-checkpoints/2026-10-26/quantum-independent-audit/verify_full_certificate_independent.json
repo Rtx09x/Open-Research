@@ -1,0 +1,12 @@
+{
+  "PASS": true,
+  "candidate_sha256": "201e1acd2e8616807d98d07038174559cc4480aba1cca8b2d736997e251c7a79",
+  "constant_exact": "-1930688571530266893851/19000000000000000000000000",
+  "rigorous_residual_bound_exact": "16150000000000000000000000000000001/10000000000000000000000000000000000000000",
+  "strict_negative_upper_exact": "-983849999999999999999999999999999999/10000000000000000000000000000000000000000",
+  "KL_strategy": "A posteriori exact-Casimir eigenresidual bound, not assumed exact Racah projector",
+  "arithmetic": "SymPy exact sign/square 6j + outward Arb 256-bit balls; exact rational PSD Gram factors",
+  "worker_code_imports": false,
+  "seconds": 63.26378297805786,
+  "scope": "Arithmetic certificate plus stated physically necessary model; does not establish literature novelty."
+}

@@ -1,0 +1,13 @@
+\begin{tikzpicture}[>=Latex,x=1cm,y=1cm,font=\small]
+\tikzset{state/.style={circle,draw=azure!70,fill=azure!5,thick,minimum size=9mm,inner sep=0pt,font=\small\bfseries}, edge/.style={-{Latex[length=2.5mm]},draw=azure,line width=1pt}}
+\node[state] (C) at (0,1.0) {$C$};
+\node[state] (A) at (2.0,1.0) {$A$};
+\node[state] (R) at (4.0,1.0) {$R$};
+\node[state] (B) at (2.0,-.55) {$B$};
+\draw[edge] (C)--(A);\draw[edge] (A)--(R);\draw[edge] (B) to[out=22,in=235] (R);
+\node[state] (X) at (6.3,1.0) {$X$};
+\node[state] (Y) at (7.95,1.0) {$Y$};
+\node[state] (Z) at (9.6,1.0) {$Z$};
+\foreach \u in {R,X,Y,Z} {\draw[edge] (\u) to[out=75,in=105,looseness=5] (\u);}
+\node[font=\footnotesize,text=black!73,anchor=west] at (0,-1.28) {$R,X,Y,Z$ are fixed; arrows denote the same pulse.};
+\end{tikzpicture}

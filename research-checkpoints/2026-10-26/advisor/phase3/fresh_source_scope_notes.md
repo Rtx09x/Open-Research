@@ -1,0 +1,8 @@
+# Fresh primary-source scope notes (2026-10-25,23:11UTC)
+
+These are scope checks, not exhaustive priority claims.
+
+- [Misawa, Quantizing Delsarte Theory,2610.09900v1](https://arxiv.org/html/2610.09900v1#S5.SS1.SSS1): Definition5.3 distinguishes scalar error compression from zero compression. Proposition5.4 identifies the QAS code condition with **purity**, so its code bound cannot simply be imposed on unrestricted symmetric KL codes. The paper is useful language for matrix-valued conic distributions, not an n18 shortcut.
+- [Xiao, A Three-Point Continuous-Variable Quantum MacWilliams Identity,2607.14920v1](https://arxiv.org/html/2607.14920v1#S6.SS6): Theorem6.3 is a finite radial-Laguerre CP-cone collapse at one mode. Section6.8 expressly distinguishes operator-moment SDP hierarchies from that auxiliary-function obstruction. No contradiction with our finite SU2 projector-moment improvements follows.
+- [Anglès Munné–Huber, SDP bounds on quantum codes:rational certificates,2603.19901v1](https://arxiv.org/html/2603.19901v1): exact/algebraic certificate extraction for general qubit Hamming SDP bounds is prior art. Our certification method must not be presented as newly inventing rigorous SDP rounding.
+- [Albertson etal, Coloring with no2-coloredP4's,EJC11(2004)R26](https://citeseerx.ist.psu.edu/document?doi=e98dd521c139dcc050ee725752161b012f1aedf6&repid=rep1&type=pdf): treewidth t admits at most binomial(t+2,2) star colors. Thus treewidth2 gives6. [Gebremedhin etal,2008/09](https://pubsonline.informs.org/doi/abs/10.1287/ijoc.1080.0286) already use star coloring for direct sparse-matrix recovery. A signed-noise approximation corollary is not a new coloring/probing paradigm.

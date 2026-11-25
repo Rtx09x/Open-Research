@@ -1,0 +1,30 @@
+{
+  "I0": 367,
+  "X": 367,
+  "U2_size": 702,
+  "U2_matching": 335,
+  "U3_size": 704,
+  "U3_pairs": 331,
+  "U3_cycles": [
+    [
+      6494,
+      8888,
+      6773,
+      6828,
+      4092
+    ],
+    [
+      13358,
+      13065,
+      11062,
+      10677,
+      13364
+    ]
+  ],
+  "U3_theta_upper": "363 + 2 sqrt(5)",
+  "U3_below_target": true,
+  "U4_vertices": 1009,
+  "U4_edges": 5394,
+  "U4_maximal_cliques": 3698,
+  "U4_max_clique_size": 3
+}

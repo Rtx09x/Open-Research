@@ -1,0 +1,80 @@
+{
+  "purpose": "Frozen final bounded-refinement checkpoint; older anchors and lower-bound negatives are preserved as optional history",
+  "target": "1848920194883516152323541607/1171513518439186595284254720",
+  "target_decimal": 1.5782320611603713,
+  "priority_claim": false,
+  "algorithm_scope": "AH with exactly three small-class container-proportion transfers; every published analysis weight unchanged",
+  "runtime": "Python 3 standard library; one CPU; about 6 seconds for complete proof check",
+  "commands": [
+    "python verify_ah_source_delta.py",
+    "python verify_ah_full.py ah_three_parameter_full_certificate.json ah_three_parameter_full_verification.json",
+    "python verify_ah_three_parameter_algebra.py"
+  ],
+  "files": [
+    {
+      "path": "AH_THREE_PARAMETER_REFINEMENT.md",
+      "bytes": 7773,
+      "sha256": "dc6dde2b9f986f576a27621f308a63fa332c9b6d19940c1b92415ac084cb61c8"
+    },
+    {
+      "path": "ah_three_parameter_full_certificate.json",
+      "bytes": 105799,
+      "sha256": "39da513da04fa7d8722ca6e1f14406d6d04962ad9d11f77a0fc52810295f96e7"
+    },
+    {
+      "path": "ah_published_numeric_snapshot.json",
+      "bytes": 93816,
+      "sha256": "a4709c039ff0c92240eb0025496a001ebed3253a8b3c8ab5fb2c1fd8257df229"
+    },
+    {
+      "path": "verify_ah_full.py",
+      "bytes": 3029,
+      "sha256": "9c981c0495f0eb67b78016a0b6c129c9851c0b557a58d2241b19a770003cc1d5"
+    },
+    {
+      "path": "verify_ah_independent.py",
+      "bytes": 3688,
+      "sha256": "815a9b87f502bda24d0378b8a9f5e761146600cf947a144af89a50e8697b0c6d"
+    },
+    {
+      "path": "verify_ah_source_delta.py",
+      "bytes": 1480,
+      "sha256": "ad84bfc30faaff930b257d26866879cf15867890520bf5ff88d1c6b2fed64fab"
+    },
+    {
+      "path": "verify_ah_three_parameter_algebra.py",
+      "bytes": 1923,
+      "sha256": "2915e151717260372708be84e71ec602238df7f4f3310bc53a665830401233dd"
+    },
+    {
+      "path": "ah_three_parameter_full_verification.json",
+      "bytes": 117644,
+      "sha256": "b0e0f6e8eb838c4f86dc94ccb6a65b16642c9a4a17c8c1bf067465b3df1f410c"
+    },
+    {
+      "path": "literature.md",
+      "bytes": 4070,
+      "sha256": "a98bb0e98710f9f9a7aeea404fe0205406147232dfec0cf9ead6f891337f1126"
+    },
+    {
+      "path": "README.md",
+      "bytes": 5400,
+      "sha256": "2bd5680549bededbb56df92ab5b5356ef741bf3a319be5ef39ca9a6d7827f8c6"
+    }
+  ],
+  "optional_review_packet": "pro_brief_ah_review.md",
+  "exclude": [
+    "paper*.html",
+    "paper*.txt",
+    "__pycache__",
+    "*_float.json",
+    "*_rational_point.json"
+  ],
+  "independent_advisor_files": [
+    "advisor/audit_ah_three_parameter.py",
+    "advisor/ah_three_parameter_audit.json",
+    "advisor/audit_ah_two_scenario_floor.py",
+    "advisor/ah_two_scenario_floor_audit.json"
+  ],
+  "note": "Advisor files live in advisor-owned directory; integration owner should include them from that source. Verification logs contain timing fields and need not be bit-for-bit stable across reruns."
+}

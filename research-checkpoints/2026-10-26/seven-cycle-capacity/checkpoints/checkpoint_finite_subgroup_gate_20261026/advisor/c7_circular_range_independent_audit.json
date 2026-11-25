@@ -1,0 +1,418 @@
+{
+  "PASS": true,
+  "cases": 211,
+  "records": [
+    {
+      "n": 368,
+      "threshold": 106,
+      "no_unit_gcd_cases": [
+        2,
+        4,
+        8,
+        16,
+        23,
+        46,
+        92,
+        184
+      ],
+      "infeasible": true
+    },
+    {
+      "n": 369,
+      "threshold": 106,
+      "no_unit_gcd_cases": [
+        3,
+        9,
+        41,
+        123
+      ],
+      "infeasible": true
+    },
+    {
+      "n": 370,
+      "threshold": 106,
+      "no_unit_gcd_cases": [
+        2,
+        5,
+        10,
+        37,
+        74,
+        185
+      ],
+      "infeasible": true
+    },
+    {
+      "n": 371,
+      "threshold": 106,
+      "no_unit_gcd_cases": [
+        7,
+        53
+      ],
+      "infeasible": true
+    },
+    {
+      "n": 372,
+      "threshold": 107,
+      "no_unit_gcd_cases": [
+        2,
+        3,
+        4,
+        6,
+        12,
+        31,
+        62,
+        93,
+        124,
+        186
+      ],
+      "infeasible": true
+    },
+    {
+      "n": 373,
+      "threshold": 107,
+      "no_unit_gcd_cases": [],
+      "infeasible": true
+    },
+    {
+      "n": 374,
+      "threshold": 107,
+      "no_unit_gcd_cases": [
+        2,
+        11,
+        17,
+        22,
+        34,
+        187
+      ],
+      "infeasible": true
+    },
+    {
+      "n": 375,
+      "threshold": 108,
+      "no_unit_gcd_cases": [
+        3,
+        5,
+        15,
+        25,
+        75,
+        125
+      ],
+      "infeasible": true
+    },
+    {
+      "n": 376,
+      "threshold": 108,
+      "no_unit_gcd_cases": [
+        2,
+        4,
+        8,
+        47,
+        94,
+        188
+      ],
+      "infeasible": true
+    },
+    {
+      "n": 377,
+      "threshold": 108,
+      "no_unit_gcd_cases": [
+        13,
+        29
+      ],
+      "infeasible": true
+    },
+    {
+      "n": 378,
+      "threshold": 108,
+      "no_unit_gcd_cases": [
+        2,
+        3,
+        6,
+        7,
+        9,
+        14,
+        18,
+        21,
+        27,
+        42,
+        54,
+        63,
+        126,
+        189
+      ],
+      "infeasible": true
+    },
+    {
+      "n": 379,
+      "threshold": 109,
+      "no_unit_gcd_cases": [],
+      "infeasible": true
+    },
+    {
+      "n": 380,
+      "threshold": 109,
+      "no_unit_gcd_cases": [
+        2,
+        4,
+        5,
+        10,
+        19,
+        20,
+        38,
+        76,
+        95,
+        190
+      ],
+      "infeasible": true
+    },
+    {
+      "n": 381,
+      "threshold": 109,
+      "no_unit_gcd_cases": [
+        3,
+        127
+      ],
+      "infeasible": true
+    },
+    {
+      "n": 382,
+      "threshold": 110,
+      "no_unit_gcd_cases": [
+        2,
+        191
+      ],
+      "infeasible": true
+    },
+    {
+      "n": 383,
+      "threshold": 110,
+      "no_unit_gcd_cases": [],
+      "infeasible": true
+    },
+    {
+      "n": 384,
+      "threshold": 110,
+      "no_unit_gcd_cases": [
+        2,
+        3,
+        4,
+        6,
+        8,
+        12,
+        16,
+        24,
+        32,
+        48,
+        64,
+        96,
+        128,
+        192
+      ],
+      "infeasible": true
+    },
+    {
+      "n": 385,
+      "threshold": 110,
+      "no_unit_gcd_cases": [
+        5,
+        7,
+        11,
+        35,
+        55,
+        77
+      ],
+      "infeasible": true
+    },
+    {
+      "n": 386,
+      "threshold": 111,
+      "no_unit_gcd_cases": [
+        2,
+        193
+      ],
+      "infeasible": true
+    },
+    {
+      "n": 387,
+      "threshold": 111,
+      "no_unit_gcd_cases": [
+        3,
+        9,
+        43,
+        129
+      ],
+      "infeasible": true
+    },
+    {
+      "n": 388,
+      "threshold": 111,
+      "no_unit_gcd_cases": [
+        2,
+        4,
+        97,
+        194
+      ],
+      "infeasible": true
+    },
+    {
+      "n": 389,
+      "threshold": 112,
+      "no_unit_gcd_cases": [],
+      "infeasible": true
+    },
+    {
+      "n": 390,
+      "threshold": 112,
+      "no_unit_gcd_cases": [
+        2,
+        3,
+        5,
+        6,
+        10,
+        13,
+        15,
+        26,
+        30,
+        39,
+        65,
+        78,
+        130,
+        195
+      ],
+      "infeasible": true
+    },
+    {
+      "n": 391,
+      "threshold": 112,
+      "no_unit_gcd_cases": [
+        17,
+        23
+      ],
+      "infeasible": true
+    },
+    {
+      "n": 392,
+      "threshold": 112,
+      "no_unit_gcd_cases": [
+        2,
+        4,
+        7,
+        8,
+        14,
+        28,
+        49,
+        56,
+        98,
+        196
+      ],
+      "infeasible": true
+    },
+    {
+      "n": 393,
+      "threshold": 113,
+      "no_unit_gcd_cases": [
+        3,
+        131
+      ],
+      "infeasible": true
+    },
+    {
+      "n": 394,
+      "threshold": 113,
+      "no_unit_gcd_cases": [
+        2,
+        197
+      ],
+      "infeasible": true
+    },
+    {
+      "n": 395,
+      "threshold": 113,
+      "no_unit_gcd_cases": [
+        5,
+        79
+      ],
+      "infeasible": true
+    },
+    {
+      "n": 396,
+      "threshold": 114,
+      "no_unit_gcd_cases": [
+        2,
+        3,
+        4,
+        6,
+        9,
+        11,
+        12,
+        18,
+        22,
+        33,
+        36,
+        44,
+        66,
+        99,
+        132,
+        198
+      ],
+      "infeasible": true
+    },
+    {
+      "n": 397,
+      "threshold": 114,
+      "no_unit_gcd_cases": [],
+      "infeasible": true
+    },
+    {
+      "n": 398,
+      "threshold": 114,
+      "no_unit_gcd_cases": [
+        2,
+        199
+      ],
+      "infeasible": true
+    },
+    {
+      "n": 399,
+      "threshold": 114,
+      "no_unit_gcd_cases": [
+        3,
+        7,
+        19,
+        21,
+        57,
+        133
+      ],
+      "infeasible": true
+    },
+    {
+      "n": 400,
+      "threshold": 115,
+      "no_unit_gcd_cases": [
+        2,
+        4,
+        5,
+        8,
+        10,
+        16,
+        20,
+        25,
+        40,
+        50,
+        80,
+        100,
+        200
+      ],
+      "infeasible": true
+    },
+    {
+      "n": 401,
+      "threshold": 115,
+      "no_unit_gcd_cases": [],
+      "infeasible": true
+    }
+  ],
+  "seconds": 42.99220877300104,
+  "peak_rss_KiB": 14596,
+  "scope": "Rank-one circular templates only; all n368..401 direct ceil(2n/7) thresholds. Zero coordinates reduce to repeated nonzero coordinates. Not nonlinear codes."
+}

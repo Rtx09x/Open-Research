@@ -1,0 +1,11 @@
+# Three-error bracket and the open all-t goal
+
+The internally verified computer-assisted bracket is **35 ≤ n_min(3) ≤ 37** for a two-dimensional complex code contained in the fully symmetric n-qubit subspace correcting arbitrary errors on at most three physical qubits. Read [the standalone theorem](t3_verified_bracket.md). Minimum 37 and the conjectured all-t formula remain **OPEN**; the earlier exact t=2 minimum 19 is an intermediate solved case, not completion of this track.
+
+This curated directory combines the immutable 23:18 checkpoint and 23:27 n34 addendum. Their original hash manifests are retained in `provenance/`. No older n33 evidence was replaced. The finite proof uses scalar exclusions through n=32, separate n33/n34 three-copy certificates, and exact 37-qubit existence (rational contraction plus all 98 KL identities). The n34 witness SHA-256 is `04ca5f383f77f8168d3989cb2b67a13ae51a82648518ec75d0f6407c1fb392ba`.
+
+The necessity argument uses intrinsic/shadow constraints, an S3-invariant third projector moment, ordinary PSD, partial-time-reversal PSD and lifted KL equations. Taking real parts is a relaxation, not a restriction to real codewords. There are no new D/R-strengthened constraints or n35/n36 solver experiments in this proof. Independent arithmetic/model reports and separate implementations are under [`advisor/phase3`](../../advisor/phase3/). See also [terminology_clarification.md](terminology_clarification.md): auxiliary complement counts describe intrinsic collective operators, not all physical Pauli-error images, and that auxiliary route is not used by these finite certificates.
+
+Read [priority/PRIORITY_REPORT.md](priority/PRIORITY_REPORT.md) and [priority/CITATION_ADDENDUM.md](priority/CITATION_ADDENDUM.md) for primary-literature antecedents. Numerical 37 candidates predate this calculation. No external review, acceptance, exhaustive novelty or publication-priority claim is made.
+
+Replay from repository root with `python run_phase3_checks.py --only quantum --slow`. Stdlib plus python-flint 0.9.0 suffices for primary finite witnesses; the fully independent n33/n34 implementations also use SymPy 1.14.0. The runner uses isolated writable copies and never downloads or runs discovery solvers.

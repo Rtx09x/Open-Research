@@ -1,0 +1,40 @@
+{
+  "complete": true,
+  "n": 6,
+  "k": 2,
+  "connected_supports": [
+    {
+      "removed_count": 1,
+      "connected_supports": 2,
+      "sha256": "ffc22fec512b91211c1d8bf3777304fa89db911d3cf8c23f97c5b6637e4a2b0a"
+    },
+    {
+      "removed_count": 2,
+      "connected_supports": 8,
+      "sha256": "dafbb41406074184a9840877063d874e7c271b6f951d69e7ba0496549f4548d0"
+    }
+  ],
+  "checked": 10,
+  "eligible_improvement_tests": 0,
+  "positive": [],
+  "neutral_examples": [
+    {
+      "removed": [
+        11
+      ],
+      "added": [
+        7
+      ]
+    },
+    {
+      "removed": [
+        52
+      ],
+      "added": [
+        56
+      ]
+    }
+  ],
+  "seconds": 0.0004521630007729982,
+  "claim": "No improving trade removing at most 2 words of VT0(6)"
+}

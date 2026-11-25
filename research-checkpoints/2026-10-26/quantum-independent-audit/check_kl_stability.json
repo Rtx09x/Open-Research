@@ -1,0 +1,2029 @@
+{
+  "PASS": true,
+  "candidate_sha256": "201e1acd2e8616807d98d07038174559cc4480aba1cca8b2d736997e251c7a79",
+  "arithmetic": "SymPy exact 6j signs/squares converted to outward Arb balls; 256 bits",
+  "vectors_checked": 252,
+  "max_dimension": 19,
+  "total_KL_defect_bound_exact": "3591/31250000000000000000000000000000000000000000000000",
+  "simplified_KL_defect_bound": "1/10^40",
+  "explanation": "Uses spectral separation, not exact Racah orthogonality/eigenvector identities. The physical commutator Casimir spectrum and KL high-rank support are the mathematical inputs.",
+  "seconds": 5.021639347076416,
+  "rows": [
+    {
+      "L": 0,
+      "Lp": 0,
+      "r": 0,
+      "dimension": 1,
+      "residual_component_bound": "1/10^50",
+      "coefficient_abs_bound": "1"
+    },
+    {
+      "L": 0,
+      "Lp": 1,
+      "r": 1,
+      "dimension": 1,
+      "residual_component_bound": "1/10^50",
+      "coefficient_abs_bound": "1"
+    },
+    {
+      "L": 0,
+      "Lp": 2,
+      "r": 2,
+      "dimension": 1,
+      "residual_component_bound": "1/10^50",
+      "coefficient_abs_bound": "1"
+    },
+    {
+      "L": 0,
+      "Lp": 3,
+      "r": 3,
+      "dimension": 1,
+      "residual_component_bound": "1/10^50",
+      "coefficient_abs_bound": "1"
+    },
+    {
+      "L": 0,
+      "Lp": 4,
+      "r": 4,
+      "dimension": 1,
+      "residual_component_bound": "1/10^50",
+      "coefficient_abs_bound": "1"
+    },
+    {
+      "L": 1,
+      "Lp": 1,
+      "r": 0,
+      "dimension": 3,
+      "residual_component_bound": "1/10^50",
+      "coefficient_abs_bound": "1"
+    },
+    {
+      "L": 1,
+      "Lp": 1,
+      "r": 1,
+      "dimension": 3,
+      "residual_component_bound": "1/10^50",
+      "coefficient_abs_bound": "1"
+    },
+    {
+      "L": 1,
+      "Lp": 1,
+      "r": 2,
+      "dimension": 3,
+      "residual_component_bound": "1/10^50",
+      "coefficient_abs_bound": "1"
+    },
+    {
+      "L": 1,
+      "Lp": 2,
+      "r": 1,
+      "dimension": 3,
+      "residual_component_bound": "1/10^50",
+      "coefficient_abs_bound": "1"
+    },
+    {
+      "L": 1,
+      "Lp": 2,
+      "r": 2,
+      "dimension": 3,
+      "residual_component_bound": "1/10^50",
+      "coefficient_abs_bound": "1"
+    },
+    {
+      "L": 1,
+      "Lp": 2,
+      "r": 3,
+      "dimension": 3,
+      "residual_component_bound": "1/10^50",
+      "coefficient_abs_bound": "1"
+    },
+    {
+      "L": 1,
+      "Lp": 3,
+      "r": 2,
+      "dimension": 3,
+      "residual_component_bound": "1/10^50",
+      "coefficient_abs_bound": "1"
+    },
+    {
+      "L": 1,
+      "Lp": 3,
+      "r": 3,
+      "dimension": 3,
+      "residual_component_bound": "1/10^50",
+      "coefficient_abs_bound": "1"
+    },
+    {
+      "L": 1,
+      "Lp": 3,
+      "r": 4,
+      "dimension": 3,
+      "residual_component_bound": "1/10^50",
+      "coefficient_abs_bound": "1"
+    },
+    {
+      "L": 1,
+      "Lp": 4,
+      "r": 3,
+      "dimension": 3,
+      "residual_component_bound": "1/10^50",
+      "coefficient_abs_bound": "1"
+    },
+    {
+      "L": 1,
+      "Lp": 4,
+      "r": 4,
+      "dimension": 3,
+      "residual_component_bound": "1/10^50",
+      "coefficient_abs_bound": "1"
+    },
+    {
+      "L": 1,
+      "Lp": 5,
+      "r": 4,
+      "dimension": 3,
+      "residual_component_bound": "1/10^50",
+      "coefficient_abs_bound": "1"
+    },
+    {
+      "L": 2,
+      "Lp": 2,
+      "r": 0,
+      "dimension": 5,
+      "residual_component_bound": "1/10^50",
+      "coefficient_abs_bound": "1"
+    },
+    {
+      "L": 2,
+      "Lp": 2,
+      "r": 1,
+      "dimension": 5,
+      "residual_component_bound": "1/10^50",
+      "coefficient_abs_bound": "1"
+    },
+    {
+      "L": 2,
+      "Lp": 2,
+      "r": 2,
+      "dimension": 5,
+      "residual_component_bound": "1/10^50",
+      "coefficient_abs_bound": "1"
+    },
+    {
+      "L": 2,
+      "Lp": 2,
+      "r": 3,
+      "dimension": 5,
+      "residual_component_bound": "1/10^50",
+      "coefficient_abs_bound": "1"
+    },
+    {
+      "L": 2,
+      "Lp": 2,
+      "r": 4,
+      "dimension": 5,
+      "residual_component_bound": "1/10^50",
+      "coefficient_abs_bound": "1"
+    },
+    {
+      "L": 2,
+      "Lp": 3,
+      "r": 1,
+      "dimension": 5,
+      "residual_component_bound": "1/10^50",
+      "coefficient_abs_bound": "1"
+    },
+    {
+      "L": 2,
+      "Lp": 3,
+      "r": 2,
+      "dimension": 5,
+      "residual_component_bound": "1/10^50",
+      "coefficient_abs_bound": "1"
+    },
+    {
+      "L": 2,
+      "Lp": 3,
+      "r": 3,
+      "dimension": 5,
+      "residual_component_bound": "1/10^50",
+      "coefficient_abs_bound": "1"
+    },
+    {
+      "L": 2,
+      "Lp": 3,
+      "r": 4,
+      "dimension": 5,
+      "residual_component_bound": "1/10^50",
+      "coefficient_abs_bound": "1"
+    },
+    {
+      "L": 2,
+      "Lp": 4,
+      "r": 2,
+      "dimension": 5,
+      "residual_component_bound": "1/10^50",
+      "coefficient_abs_bound": "1"
+    },
+    {
+      "L": 2,
+      "Lp": 4,
+      "r": 3,
+      "dimension": 5,
+      "residual_component_bound": "1/10^50",
+      "coefficient_abs_bound": "1"
+    },
+    {
+      "L": 2,
+      "Lp": 4,
+      "r": 4,
+      "dimension": 5,
+      "residual_component_bound": "1/10^50",
+      "coefficient_abs_bound": "1"
+    },
+    {
+      "L": 2,
+      "Lp": 5,
+      "r": 3,
+      "dimension": 5,
+      "residual_component_bound": "1/10^50",
+      "coefficient_abs_bound": "1"
+    },
+    {
+      "L": 2,
+      "Lp": 5,
+      "r": 4,
+      "dimension": 5,
+      "residual_component_bound": "1/10^50",
+      "coefficient_abs_bound": "1"
+    },
+    {
+      "L": 2,
+      "Lp": 6,
+      "r": 4,
+      "dimension": 5,
+      "residual_component_bound": "1/10^50",
+      "coefficient_abs_bound": "1"
+    },
+    {
+      "L": 3,
+      "Lp": 3,
+      "r": 0,
+      "dimension": 7,
+      "residual_component_bound": "1/10^50",
+      "coefficient_abs_bound": "1"
+    },
+    {
+      "L": 3,
+      "Lp": 3,
+      "r": 1,
+      "dimension": 7,
+      "residual_component_bound": "1/10^50",
+      "coefficient_abs_bound": "1"
+    },
+    {
+      "L": 3,
+      "Lp": 3,
+      "r": 2,
+      "dimension": 7,
+      "residual_component_bound": "1/10^50",
+      "coefficient_abs_bound": "1"
+    },
+    {
+      "L": 3,
+      "Lp": 3,
+      "r": 3,
+      "dimension": 7,
+      "residual_component_bound": "1/10^50",
+      "coefficient_abs_bound": "1"
+    },
+    {
+      "L": 3,
+      "Lp": 3,
+      "r": 4,
+      "dimension": 7,
+      "residual_component_bound": "1/10^50",
+      "coefficient_abs_bound": "1"
+    },
+    {
+      "L": 3,
+      "Lp": 4,
+      "r": 1,
+      "dimension": 7,
+      "residual_component_bound": "1/10^50",
+      "coefficient_abs_bound": "1"
+    },
+    {
+      "L": 3,
+      "Lp": 4,
+      "r": 2,
+      "dimension": 7,
+      "residual_component_bound": "1/10^50",
+      "coefficient_abs_bound": "1"
+    },
+    {
+      "L": 3,
+      "Lp": 4,
+      "r": 3,
+      "dimension": 7,
+      "residual_component_bound": "1/10^50",
+      "coefficient_abs_bound": "1"
+    },
+    {
+      "L": 3,
+      "Lp": 4,
+      "r": 4,
+      "dimension": 7,
+      "residual_component_bound": "1/10^50",
+      "coefficient_abs_bound": "1"
+    },
+    {
+      "L": 3,
+      "Lp": 5,
+      "r": 2,
+      "dimension": 7,
+      "residual_component_bound": "1/10^50",
+      "coefficient_abs_bound": "1"
+    },
+    {
+      "L": 3,
+      "Lp": 5,
+      "r": 3,
+      "dimension": 7,
+      "residual_component_bound": "1/10^50",
+      "coefficient_abs_bound": "1"
+    },
+    {
+      "L": 3,
+      "Lp": 5,
+      "r": 4,
+      "dimension": 7,
+      "residual_component_bound": "1/10^50",
+      "coefficient_abs_bound": "1"
+    },
+    {
+      "L": 3,
+      "Lp": 6,
+      "r": 3,
+      "dimension": 7,
+      "residual_component_bound": "1/10^50",
+      "coefficient_abs_bound": "1"
+    },
+    {
+      "L": 3,
+      "Lp": 6,
+      "r": 4,
+      "dimension": 7,
+      "residual_component_bound": "1/10^50",
+      "coefficient_abs_bound": "1"
+    },
+    {
+      "L": 3,
+      "Lp": 7,
+      "r": 4,
+      "dimension": 7,
+      "residual_component_bound": "1/10^50",
+      "coefficient_abs_bound": "1"
+    },
+    {
+      "L": 4,
+      "Lp": 4,
+      "r": 0,
+      "dimension": 9,
+      "residual_component_bound": "1/10^50",
+      "coefficient_abs_bound": "1"
+    },
+    {
+      "L": 4,
+      "Lp": 4,
+      "r": 1,
+      "dimension": 9,
+      "residual_component_bound": "1/10^50",
+      "coefficient_abs_bound": "1"
+    },
+    {
+      "L": 4,
+      "Lp": 4,
+      "r": 2,
+      "dimension": 9,
+      "residual_component_bound": "1/10^50",
+      "coefficient_abs_bound": "1"
+    },
+    {
+      "L": 4,
+      "Lp": 4,
+      "r": 3,
+      "dimension": 9,
+      "residual_component_bound": "1/10^50",
+      "coefficient_abs_bound": "1"
+    },
+    {
+      "L": 4,
+      "Lp": 4,
+      "r": 4,
+      "dimension": 9,
+      "residual_component_bound": "1/10^50",
+      "coefficient_abs_bound": "1"
+    },
+    {
+      "L": 4,
+      "Lp": 5,
+      "r": 1,
+      "dimension": 9,
+      "residual_component_bound": "1/10^50",
+      "coefficient_abs_bound": "1"
+    },
+    {
+      "L": 4,
+      "Lp": 5,
+      "r": 2,
+      "dimension": 9,
+      "residual_component_bound": "1/10^50",
+      "coefficient_abs_bound": "1"
+    },
+    {
+      "L": 4,
+      "Lp": 5,
+      "r": 3,
+      "dimension": 9,
+      "residual_component_bound": "1/10^50",
+      "coefficient_abs_bound": "1"
+    },
+    {
+      "L": 4,
+      "Lp": 5,
+      "r": 4,
+      "dimension": 9,
+      "residual_component_bound": "1/10^50",
+      "coefficient_abs_bound": "1"
+    },
+    {
+      "L": 4,
+      "Lp": 6,
+      "r": 2,
+      "dimension": 9,
+      "residual_component_bound": "1/10^50",
+      "coefficient_abs_bound": "1"
+    },
+    {
+      "L": 4,
+      "Lp": 6,
+      "r": 3,
+      "dimension": 9,
+      "residual_component_bound": "1/10^50",
+      "coefficient_abs_bound": "1"
+    },
+    {
+      "L": 4,
+      "Lp": 6,
+      "r": 4,
+      "dimension": 9,
+      "residual_component_bound": "1/10^50",
+      "coefficient_abs_bound": "1"
+    },
+    {
+      "L": 4,
+      "Lp": 7,
+      "r": 3,
+      "dimension": 9,
+      "residual_component_bound": "1/10^50",
+      "coefficient_abs_bound": "1"
+    },
+    {
+      "L": 4,
+      "Lp": 7,
+      "r": 4,
+      "dimension": 9,
+      "residual_component_bound": "1/10^50",
+      "coefficient_abs_bound": "1"
+    },
+    {
+      "L": 4,
+      "Lp": 8,
+      "r": 4,
+      "dimension": 9,
+      "residual_component_bound": "1/10^50",
+      "coefficient_abs_bound": "1"
+    },
+    {
+      "L": 5,
+      "Lp": 5,
+      "r": 0,
+      "dimension": 11,
+      "residual_component_bound": "1/10^50",
+      "coefficient_abs_bound": "1"
+    },
+    {
+      "L": 5,
+      "Lp": 5,
+      "r": 1,
+      "dimension": 11,
+      "residual_component_bound": "1/10^50",
+      "coefficient_abs_bound": "1"
+    },
+    {
+      "L": 5,
+      "Lp": 5,
+      "r": 2,
+      "dimension": 11,
+      "residual_component_bound": "1/10^50",
+      "coefficient_abs_bound": "1"
+    },
+    {
+      "L": 5,
+      "Lp": 5,
+      "r": 3,
+      "dimension": 11,
+      "residual_component_bound": "1/10^50",
+      "coefficient_abs_bound": "1"
+    },
+    {
+      "L": 5,
+      "Lp": 5,
+      "r": 4,
+      "dimension": 11,
+      "residual_component_bound": "1/10^50",
+      "coefficient_abs_bound": "1"
+    },
+    {
+      "L": 5,
+      "Lp": 6,
+      "r": 1,
+      "dimension": 11,
+      "residual_component_bound": "1/10^50",
+      "coefficient_abs_bound": "1"
+    },
+    {
+      "L": 5,
+      "Lp": 6,
+      "r": 2,
+      "dimension": 11,
+      "residual_component_bound": "1/10^50",
+      "coefficient_abs_bound": "1"
+    },
+    {
+      "L": 5,
+      "Lp": 6,
+      "r": 3,
+      "dimension": 11,
+      "residual_component_bound": "1/10^50",
+      "coefficient_abs_bound": "1"
+    },
+    {
+      "L": 5,
+      "Lp": 6,
+      "r": 4,
+      "dimension": 11,
+      "residual_component_bound": "1/10^50",
+      "coefficient_abs_bound": "1"
+    },
+    {
+      "L": 5,
+      "Lp": 7,
+      "r": 2,
+      "dimension": 11,
+      "residual_component_bound": "1/10^50",
+      "coefficient_abs_bound": "1"
+    },
+    {
+      "L": 5,
+      "Lp": 7,
+      "r": 3,
+      "dimension": 11,
+      "residual_component_bound": "1/10^50",
+      "coefficient_abs_bound": "1"
+    },
+    {
+      "L": 5,
+      "Lp": 7,
+      "r": 4,
+      "dimension": 11,
+      "residual_component_bound": "1/10^50",
+      "coefficient_abs_bound": "1"
+    },
+    {
+      "L": 5,
+      "Lp": 8,
+      "r": 3,
+      "dimension": 11,
+      "residual_component_bound": "1/10^50",
+      "coefficient_abs_bound": "1"
+    },
+    {
+      "L": 5,
+      "Lp": 8,
+      "r": 4,
+      "dimension": 11,
+      "residual_component_bound": "1/10^50",
+      "coefficient_abs_bound": "1"
+    },
+    {
+      "L": 5,
+      "Lp": 9,
+      "r": 4,
+      "dimension": 11,
+      "residual_component_bound": "1/10^50",
+      "coefficient_abs_bound": "1"
+    },
+    {
+      "L": 6,
+      "Lp": 6,
+      "r": 0,
+      "dimension": 13,
+      "residual_component_bound": "1/10^50",
+      "coefficient_abs_bound": "1"
+    },
+    {
+      "L": 6,
+      "Lp": 6,
+      "r": 1,
+      "dimension": 13,
+      "residual_component_bound": "1/10^50",
+      "coefficient_abs_bound": "1"
+    },
+    {
+      "L": 6,
+      "Lp": 6,
+      "r": 2,
+      "dimension": 13,
+      "residual_component_bound": "1/10^50",
+      "coefficient_abs_bound": "1"
+    },
+    {
+      "L": 6,
+      "Lp": 6,
+      "r": 3,
+      "dimension": 13,
+      "residual_component_bound": "1/10^50",
+      "coefficient_abs_bound": "1"
+    },
+    {
+      "L": 6,
+      "Lp": 6,
+      "r": 4,
+      "dimension": 13,
+      "residual_component_bound": "1/10^50",
+      "coefficient_abs_bound": "1"
+    },
+    {
+      "L": 6,
+      "Lp": 7,
+      "r": 1,
+      "dimension": 13,
+      "residual_component_bound": "1/10^50",
+      "coefficient_abs_bound": "1"
+    },
+    {
+      "L": 6,
+      "Lp": 7,
+      "r": 2,
+      "dimension": 13,
+      "residual_component_bound": "1/10^50",
+      "coefficient_abs_bound": "1"
+    },
+    {
+      "L": 6,
+      "Lp": 7,
+      "r": 3,
+      "dimension": 13,
+      "residual_component_bound": "1/10^50",
+      "coefficient_abs_bound": "1"
+    },
+    {
+      "L": 6,
+      "Lp": 7,
+      "r": 4,
+      "dimension": 13,
+      "residual_component_bound": "1/10^50",
+      "coefficient_abs_bound": "1"
+    },
+    {
+      "L": 6,
+      "Lp": 8,
+      "r": 2,
+      "dimension": 13,
+      "residual_component_bound": "1/10^50",
+      "coefficient_abs_bound": "1"
+    },
+    {
+      "L": 6,
+      "Lp": 8,
+      "r": 3,
+      "dimension": 13,
+      "residual_component_bound": "1/10^50",
+      "coefficient_abs_bound": "1"
+    },
+    {
+      "L": 6,
+      "Lp": 8,
+      "r": 4,
+      "dimension": 13,
+      "residual_component_bound": "1/10^50",
+      "coefficient_abs_bound": "1"
+    },
+    {
+      "L": 6,
+      "Lp": 9,
+      "r": 3,
+      "dimension": 13,
+      "residual_component_bound": "1/10^50",
+      "coefficient_abs_bound": "1"
+    },
+    {
+      "L": 6,
+      "Lp": 9,
+      "r": 4,
+      "dimension": 13,
+      "residual_component_bound": "1/10^50",
+      "coefficient_abs_bound": "1"
+    },
+    {
+      "L": 6,
+      "Lp": 10,
+      "r": 4,
+      "dimension": 13,
+      "residual_component_bound": "1/10^50",
+      "coefficient_abs_bound": "1"
+    },
+    {
+      "L": 7,
+      "Lp": 7,
+      "r": 0,
+      "dimension": 15,
+      "residual_component_bound": "1/10^50",
+      "coefficient_abs_bound": "1"
+    },
+    {
+      "L": 7,
+      "Lp": 7,
+      "r": 1,
+      "dimension": 15,
+      "residual_component_bound": "1/10^50",
+      "coefficient_abs_bound": "1"
+    },
+    {
+      "L": 7,
+      "Lp": 7,
+      "r": 2,
+      "dimension": 15,
+      "residual_component_bound": "1/10^50",
+      "coefficient_abs_bound": "1"
+    },
+    {
+      "L": 7,
+      "Lp": 7,
+      "r": 3,
+      "dimension": 15,
+      "residual_component_bound": "1/10^50",
+      "coefficient_abs_bound": "1"
+    },
+    {
+      "L": 7,
+      "Lp": 7,
+      "r": 4,
+      "dimension": 15,
+      "residual_component_bound": "1/10^50",
+      "coefficient_abs_bound": "1"
+    },
+    {
+      "L": 7,
+      "Lp": 8,
+      "r": 1,
+      "dimension": 15,
+      "residual_component_bound": "1/10^50",
+      "coefficient_abs_bound": "1"
+    },
+    {
+      "L": 7,
+      "Lp": 8,
+      "r": 2,
+      "dimension": 15,
+      "residual_component_bound": "1/10^50",
+      "coefficient_abs_bound": "1"
+    },
+    {
+      "L": 7,
+      "Lp": 8,
+      "r": 3,
+      "dimension": 15,
+      "residual_component_bound": "1/10^50",
+      "coefficient_abs_bound": "1"
+    },
+    {
+      "L": 7,
+      "Lp": 8,
+      "r": 4,
+      "dimension": 15,
+      "residual_component_bound": "1/10^50",
+      "coefficient_abs_bound": "1"
+    },
+    {
+      "L": 7,
+      "Lp": 9,
+      "r": 2,
+      "dimension": 15,
+      "residual_component_bound": "1/10^50",
+      "coefficient_abs_bound": "1"
+    },
+    {
+      "L": 7,
+      "Lp": 9,
+      "r": 3,
+      "dimension": 15,
+      "residual_component_bound": "1/10^50",
+      "coefficient_abs_bound": "1"
+    },
+    {
+      "L": 7,
+      "Lp": 9,
+      "r": 4,
+      "dimension": 15,
+      "residual_component_bound": "1/10^50",
+      "coefficient_abs_bound": "1"
+    },
+    {
+      "L": 7,
+      "Lp": 10,
+      "r": 3,
+      "dimension": 15,
+      "residual_component_bound": "1/10^50",
+      "coefficient_abs_bound": "1"
+    },
+    {
+      "L": 7,
+      "Lp": 10,
+      "r": 4,
+      "dimension": 15,
+      "residual_component_bound": "1/10^50",
+      "coefficient_abs_bound": "1"
+    },
+    {
+      "L": 7,
+      "Lp": 11,
+      "r": 4,
+      "dimension": 15,
+      "residual_component_bound": "1/10^50",
+      "coefficient_abs_bound": "1"
+    },
+    {
+      "L": 8,
+      "Lp": 8,
+      "r": 0,
+      "dimension": 17,
+      "residual_component_bound": "1/10^50",
+      "coefficient_abs_bound": "1"
+    },
+    {
+      "L": 8,
+      "Lp": 8,
+      "r": 1,
+      "dimension": 17,
+      "residual_component_bound": "1/10^50",
+      "coefficient_abs_bound": "1"
+    },
+    {
+      "L": 8,
+      "Lp": 8,
+      "r": 2,
+      "dimension": 17,
+      "residual_component_bound": "1/10^50",
+      "coefficient_abs_bound": "1"
+    },
+    {
+      "L": 8,
+      "Lp": 8,
+      "r": 3,
+      "dimension": 17,
+      "residual_component_bound": "1/10^50",
+      "coefficient_abs_bound": "1"
+    },
+    {
+      "L": 8,
+      "Lp": 8,
+      "r": 4,
+      "dimension": 17,
+      "residual_component_bound": "1/10^50",
+      "coefficient_abs_bound": "1"
+    },
+    {
+      "L": 8,
+      "Lp": 9,
+      "r": 1,
+      "dimension": 17,
+      "residual_component_bound": "1/10^50",
+      "coefficient_abs_bound": "1"
+    },
+    {
+      "L": 8,
+      "Lp": 9,
+      "r": 2,
+      "dimension": 17,
+      "residual_component_bound": "1/10^50",
+      "coefficient_abs_bound": "1"
+    },
+    {
+      "L": 8,
+      "Lp": 9,
+      "r": 3,
+      "dimension": 17,
+      "residual_component_bound": "1/10^50",
+      "coefficient_abs_bound": "1"
+    },
+    {
+      "L": 8,
+      "Lp": 9,
+      "r": 4,
+      "dimension": 17,
+      "residual_component_bound": "1/10^50",
+      "coefficient_abs_bound": "1"
+    },
+    {
+      "L": 8,
+      "Lp": 10,
+      "r": 2,
+      "dimension": 17,
+      "residual_component_bound": "1/10^50",
+      "coefficient_abs_bound": "1"
+    },
+    {
+      "L": 8,
+      "Lp": 10,
+      "r": 3,
+      "dimension": 17,
+      "residual_component_bound": "1/10^50",
+      "coefficient_abs_bound": "1"
+    },
+    {
+      "L": 8,
+      "Lp": 10,
+      "r": 4,
+      "dimension": 17,
+      "residual_component_bound": "1/10^50",
+      "coefficient_abs_bound": "1"
+    },
+    {
+      "L": 8,
+      "Lp": 11,
+      "r": 3,
+      "dimension": 16,
+      "residual_component_bound": "1/10^50",
+      "coefficient_abs_bound": "1"
+    },
+    {
+      "L": 8,
+      "Lp": 11,
+      "r": 4,
+      "dimension": 16,
+      "residual_component_bound": "1/10^50",
+      "coefficient_abs_bound": "1"
+    },
+    {
+      "L": 8,
+      "Lp": 12,
+      "r": 4,
+      "dimension": 15,
+      "residual_component_bound": "1/10^50",
+      "coefficient_abs_bound": "1"
+    },
+    {
+      "L": 9,
+      "Lp": 9,
+      "r": 0,
+      "dimension": 19,
+      "residual_component_bound": "1/10^50",
+      "coefficient_abs_bound": "1"
+    },
+    {
+      "L": 9,
+      "Lp": 9,
+      "r": 1,
+      "dimension": 19,
+      "residual_component_bound": "1/10^50",
+      "coefficient_abs_bound": "1"
+    },
+    {
+      "L": 9,
+      "Lp": 9,
+      "r": 2,
+      "dimension": 19,
+      "residual_component_bound": "1/10^50",
+      "coefficient_abs_bound": "1"
+    },
+    {
+      "L": 9,
+      "Lp": 9,
+      "r": 3,
+      "dimension": 19,
+      "residual_component_bound": "1/10^50",
+      "coefficient_abs_bound": "1"
+    },
+    {
+      "L": 9,
+      "Lp": 9,
+      "r": 4,
+      "dimension": 19,
+      "residual_component_bound": "1/10^50",
+      "coefficient_abs_bound": "1"
+    },
+    {
+      "L": 9,
+      "Lp": 10,
+      "r": 1,
+      "dimension": 18,
+      "residual_component_bound": "1/10^50",
+      "coefficient_abs_bound": "1"
+    },
+    {
+      "L": 9,
+      "Lp": 10,
+      "r": 2,
+      "dimension": 18,
+      "residual_component_bound": "1/10^50",
+      "coefficient_abs_bound": "1"
+    },
+    {
+      "L": 9,
+      "Lp": 10,
+      "r": 3,
+      "dimension": 18,
+      "residual_component_bound": "1/10^50",
+      "coefficient_abs_bound": "1"
+    },
+    {
+      "L": 9,
+      "Lp": 10,
+      "r": 4,
+      "dimension": 18,
+      "residual_component_bound": "1/10^50",
+      "coefficient_abs_bound": "1"
+    },
+    {
+      "L": 9,
+      "Lp": 11,
+      "r": 2,
+      "dimension": 17,
+      "residual_component_bound": "1/10^50",
+      "coefficient_abs_bound": "1"
+    },
+    {
+      "L": 9,
+      "Lp": 11,
+      "r": 3,
+      "dimension": 17,
+      "residual_component_bound": "1/10^50",
+      "coefficient_abs_bound": "1"
+    },
+    {
+      "L": 9,
+      "Lp": 11,
+      "r": 4,
+      "dimension": 17,
+      "residual_component_bound": "1/10^50",
+      "coefficient_abs_bound": "1"
+    },
+    {
+      "L": 9,
+      "Lp": 12,
+      "r": 3,
+      "dimension": 16,
+      "residual_component_bound": "1/10^50",
+      "coefficient_abs_bound": "1"
+    },
+    {
+      "L": 9,
+      "Lp": 12,
+      "r": 4,
+      "dimension": 16,
+      "residual_component_bound": "1/10^50",
+      "coefficient_abs_bound": "1"
+    },
+    {
+      "L": 9,
+      "Lp": 13,
+      "r": 4,
+      "dimension": 15,
+      "residual_component_bound": "1/10^50",
+      "coefficient_abs_bound": "1"
+    },
+    {
+      "L": 10,
+      "Lp": 10,
+      "r": 0,
+      "dimension": 19,
+      "residual_component_bound": "1/10^50",
+      "coefficient_abs_bound": "1"
+    },
+    {
+      "L": 10,
+      "Lp": 10,
+      "r": 1,
+      "dimension": 19,
+      "residual_component_bound": "1/10^50",
+      "coefficient_abs_bound": "1"
+    },
+    {
+      "L": 10,
+      "Lp": 10,
+      "r": 2,
+      "dimension": 19,
+      "residual_component_bound": "1/10^50",
+      "coefficient_abs_bound": "1"
+    },
+    {
+      "L": 10,
+      "Lp": 10,
+      "r": 3,
+      "dimension": 19,
+      "residual_component_bound": "1/10^50",
+      "coefficient_abs_bound": "1"
+    },
+    {
+      "L": 10,
+      "Lp": 10,
+      "r": 4,
+      "dimension": 19,
+      "residual_component_bound": "1/10^50",
+      "coefficient_abs_bound": "1"
+    },
+    {
+      "L": 10,
+      "Lp": 11,
+      "r": 1,
+      "dimension": 18,
+      "residual_component_bound": "1/10^50",
+      "coefficient_abs_bound": "1"
+    },
+    {
+      "L": 10,
+      "Lp": 11,
+      "r": 2,
+      "dimension": 18,
+      "residual_component_bound": "1/10^50",
+      "coefficient_abs_bound": "1"
+    },
+    {
+      "L": 10,
+      "Lp": 11,
+      "r": 3,
+      "dimension": 18,
+      "residual_component_bound": "1/10^50",
+      "coefficient_abs_bound": "1"
+    },
+    {
+      "L": 10,
+      "Lp": 11,
+      "r": 4,
+      "dimension": 18,
+      "residual_component_bound": "1/10^50",
+      "coefficient_abs_bound": "1"
+    },
+    {
+      "L": 10,
+      "Lp": 12,
+      "r": 2,
+      "dimension": 17,
+      "residual_component_bound": "1/10^50",
+      "coefficient_abs_bound": "1"
+    },
+    {
+      "L": 10,
+      "Lp": 12,
+      "r": 3,
+      "dimension": 17,
+      "residual_component_bound": "1/10^50",
+      "coefficient_abs_bound": "1"
+    },
+    {
+      "L": 10,
+      "Lp": 12,
+      "r": 4,
+      "dimension": 17,
+      "residual_component_bound": "1/10^50",
+      "coefficient_abs_bound": "1"
+    },
+    {
+      "L": 10,
+      "Lp": 13,
+      "r": 3,
+      "dimension": 16,
+      "residual_component_bound": "1/10^50",
+      "coefficient_abs_bound": "1"
+    },
+    {
+      "L": 10,
+      "Lp": 13,
+      "r": 4,
+      "dimension": 16,
+      "residual_component_bound": "1/10^50",
+      "coefficient_abs_bound": "1"
+    },
+    {
+      "L": 10,
+      "Lp": 14,
+      "r": 4,
+      "dimension": 15,
+      "residual_component_bound": "1/10^50",
+      "coefficient_abs_bound": "1"
+    },
+    {
+      "L": 11,
+      "Lp": 11,
+      "r": 0,
+      "dimension": 19,
+      "residual_component_bound": "1/10^50",
+      "coefficient_abs_bound": "1"
+    },
+    {
+      "L": 11,
+      "Lp": 11,
+      "r": 1,
+      "dimension": 19,
+      "residual_component_bound": "1/10^50",
+      "coefficient_abs_bound": "1"
+    },
+    {
+      "L": 11,
+      "Lp": 11,
+      "r": 2,
+      "dimension": 19,
+      "residual_component_bound": "1/10^50",
+      "coefficient_abs_bound": "1"
+    },
+    {
+      "L": 11,
+      "Lp": 11,
+      "r": 3,
+      "dimension": 19,
+      "residual_component_bound": "1/10^50",
+      "coefficient_abs_bound": "1"
+    },
+    {
+      "L": 11,
+      "Lp": 11,
+      "r": 4,
+      "dimension": 19,
+      "residual_component_bound": "1/10^50",
+      "coefficient_abs_bound": "1"
+    },
+    {
+      "L": 11,
+      "Lp": 12,
+      "r": 1,
+      "dimension": 18,
+      "residual_component_bound": "1/10^50",
+      "coefficient_abs_bound": "1"
+    },
+    {
+      "L": 11,
+      "Lp": 12,
+      "r": 2,
+      "dimension": 18,
+      "residual_component_bound": "1/10^50",
+      "coefficient_abs_bound": "1"
+    },
+    {
+      "L": 11,
+      "Lp": 12,
+      "r": 3,
+      "dimension": 18,
+      "residual_component_bound": "1/10^50",
+      "coefficient_abs_bound": "1"
+    },
+    {
+      "L": 11,
+      "Lp": 12,
+      "r": 4,
+      "dimension": 18,
+      "residual_component_bound": "1/10^50",
+      "coefficient_abs_bound": "1"
+    },
+    {
+      "L": 11,
+      "Lp": 13,
+      "r": 2,
+      "dimension": 17,
+      "residual_component_bound": "1/10^50",
+      "coefficient_abs_bound": "1"
+    },
+    {
+      "L": 11,
+      "Lp": 13,
+      "r": 3,
+      "dimension": 17,
+      "residual_component_bound": "1/10^50",
+      "coefficient_abs_bound": "1"
+    },
+    {
+      "L": 11,
+      "Lp": 13,
+      "r": 4,
+      "dimension": 17,
+      "residual_component_bound": "1/10^50",
+      "coefficient_abs_bound": "1"
+    },
+    {
+      "L": 11,
+      "Lp": 14,
+      "r": 3,
+      "dimension": 16,
+      "residual_component_bound": "1/10^50",
+      "coefficient_abs_bound": "1"
+    },
+    {
+      "L": 11,
+      "Lp": 14,
+      "r": 4,
+      "dimension": 16,
+      "residual_component_bound": "1/10^50",
+      "coefficient_abs_bound": "1"
+    },
+    {
+      "L": 11,
+      "Lp": 15,
+      "r": 4,
+      "dimension": 15,
+      "residual_component_bound": "1/10^50",
+      "coefficient_abs_bound": "1"
+    },
+    {
+      "L": 12,
+      "Lp": 12,
+      "r": 0,
+      "dimension": 19,
+      "residual_component_bound": "1/10^50",
+      "coefficient_abs_bound": "1"
+    },
+    {
+      "L": 12,
+      "Lp": 12,
+      "r": 1,
+      "dimension": 19,
+      "residual_component_bound": "1/10^50",
+      "coefficient_abs_bound": "1"
+    },
+    {
+      "L": 12,
+      "Lp": 12,
+      "r": 2,
+      "dimension": 19,
+      "residual_component_bound": "1/10^50",
+      "coefficient_abs_bound": "1"
+    },
+    {
+      "L": 12,
+      "Lp": 12,
+      "r": 3,
+      "dimension": 19,
+      "residual_component_bound": "1/10^50",
+      "coefficient_abs_bound": "1"
+    },
+    {
+      "L": 12,
+      "Lp": 12,
+      "r": 4,
+      "dimension": 19,
+      "residual_component_bound": "1/10^50",
+      "coefficient_abs_bound": "1"
+    },
+    {
+      "L": 12,
+      "Lp": 13,
+      "r": 1,
+      "dimension": 18,
+      "residual_component_bound": "1/10^50",
+      "coefficient_abs_bound": "1"
+    },
+    {
+      "L": 12,
+      "Lp": 13,
+      "r": 2,
+      "dimension": 18,
+      "residual_component_bound": "1/10^50",
+      "coefficient_abs_bound": "1"
+    },
+    {
+      "L": 12,
+      "Lp": 13,
+      "r": 3,
+      "dimension": 18,
+      "residual_component_bound": "1/10^50",
+      "coefficient_abs_bound": "1"
+    },
+    {
+      "L": 12,
+      "Lp": 13,
+      "r": 4,
+      "dimension": 18,
+      "residual_component_bound": "1/10^50",
+      "coefficient_abs_bound": "1"
+    },
+    {
+      "L": 12,
+      "Lp": 14,
+      "r": 2,
+      "dimension": 17,
+      "residual_component_bound": "1/10^50",
+      "coefficient_abs_bound": "1"
+    },
+    {
+      "L": 12,
+      "Lp": 14,
+      "r": 3,
+      "dimension": 17,
+      "residual_component_bound": "1/10^50",
+      "coefficient_abs_bound": "1"
+    },
+    {
+      "L": 12,
+      "Lp": 14,
+      "r": 4,
+      "dimension": 17,
+      "residual_component_bound": "1/10^50",
+      "coefficient_abs_bound": "1"
+    },
+    {
+      "L": 12,
+      "Lp": 15,
+      "r": 3,
+      "dimension": 16,
+      "residual_component_bound": "1/10^50",
+      "coefficient_abs_bound": "1"
+    },
+    {
+      "L": 12,
+      "Lp": 15,
+      "r": 4,
+      "dimension": 16,
+      "residual_component_bound": "1/10^50",
+      "coefficient_abs_bound": "1"
+    },
+    {
+      "L": 12,
+      "Lp": 16,
+      "r": 4,
+      "dimension": 15,
+      "residual_component_bound": "1/10^50",
+      "coefficient_abs_bound": "1"
+    },
+    {
+      "L": 13,
+      "Lp": 13,
+      "r": 0,
+      "dimension": 19,
+      "residual_component_bound": "1/10^50",
+      "coefficient_abs_bound": "1"
+    },
+    {
+      "L": 13,
+      "Lp": 13,
+      "r": 1,
+      "dimension": 19,
+      "residual_component_bound": "1/10^50",
+      "coefficient_abs_bound": "1"
+    },
+    {
+      "L": 13,
+      "Lp": 13,
+      "r": 2,
+      "dimension": 19,
+      "residual_component_bound": "1/10^50",
+      "coefficient_abs_bound": "1"
+    },
+    {
+      "L": 13,
+      "Lp": 13,
+      "r": 3,
+      "dimension": 19,
+      "residual_component_bound": "1/10^50",
+      "coefficient_abs_bound": "1"
+    },
+    {
+      "L": 13,
+      "Lp": 13,
+      "r": 4,
+      "dimension": 19,
+      "residual_component_bound": "1/10^50",
+      "coefficient_abs_bound": "1"
+    },
+    {
+      "L": 13,
+      "Lp": 14,
+      "r": 1,
+      "dimension": 18,
+      "residual_component_bound": "1/10^50",
+      "coefficient_abs_bound": "1"
+    },
+    {
+      "L": 13,
+      "Lp": 14,
+      "r": 2,
+      "dimension": 18,
+      "residual_component_bound": "1/10^50",
+      "coefficient_abs_bound": "1"
+    },
+    {
+      "L": 13,
+      "Lp": 14,
+      "r": 3,
+      "dimension": 18,
+      "residual_component_bound": "1/10^50",
+      "coefficient_abs_bound": "1"
+    },
+    {
+      "L": 13,
+      "Lp": 14,
+      "r": 4,
+      "dimension": 18,
+      "residual_component_bound": "1/10^50",
+      "coefficient_abs_bound": "1"
+    },
+    {
+      "L": 13,
+      "Lp": 15,
+      "r": 2,
+      "dimension": 17,
+      "residual_component_bound": "1/10^50",
+      "coefficient_abs_bound": "1"
+    },
+    {
+      "L": 13,
+      "Lp": 15,
+      "r": 3,
+      "dimension": 17,
+      "residual_component_bound": "1/10^50",
+      "coefficient_abs_bound": "1"
+    },
+    {
+      "L": 13,
+      "Lp": 15,
+      "r": 4,
+      "dimension": 17,
+      "residual_component_bound": "1/10^50",
+      "coefficient_abs_bound": "1"
+    },
+    {
+      "L": 13,
+      "Lp": 16,
+      "r": 3,
+      "dimension": 16,
+      "residual_component_bound": "1/10^50",
+      "coefficient_abs_bound": "1"
+    },
+    {
+      "L": 13,
+      "Lp": 16,
+      "r": 4,
+      "dimension": 16,
+      "residual_component_bound": "1/10^50",
+      "coefficient_abs_bound": "1"
+    },
+    {
+      "L": 13,
+      "Lp": 17,
+      "r": 4,
+      "dimension": 15,
+      "residual_component_bound": "1/10^50",
+      "coefficient_abs_bound": "1"
+    },
+    {
+      "L": 14,
+      "Lp": 14,
+      "r": 0,
+      "dimension": 19,
+      "residual_component_bound": "1/10^50",
+      "coefficient_abs_bound": "1"
+    },
+    {
+      "L": 14,
+      "Lp": 14,
+      "r": 1,
+      "dimension": 19,
+      "residual_component_bound": "1/10^50",
+      "coefficient_abs_bound": "1"
+    },
+    {
+      "L": 14,
+      "Lp": 14,
+      "r": 2,
+      "dimension": 19,
+      "residual_component_bound": "1/10^50",
+      "coefficient_abs_bound": "1"
+    },
+    {
+      "L": 14,
+      "Lp": 14,
+      "r": 3,
+      "dimension": 19,
+      "residual_component_bound": "1/10^50",
+      "coefficient_abs_bound": "1"
+    },
+    {
+      "L": 14,
+      "Lp": 14,
+      "r": 4,
+      "dimension": 19,
+      "residual_component_bound": "1/10^50",
+      "coefficient_abs_bound": "1"
+    },
+    {
+      "L": 14,
+      "Lp": 15,
+      "r": 1,
+      "dimension": 18,
+      "residual_component_bound": "1/10^50",
+      "coefficient_abs_bound": "1"
+    },
+    {
+      "L": 14,
+      "Lp": 15,
+      "r": 2,
+      "dimension": 18,
+      "residual_component_bound": "1/10^50",
+      "coefficient_abs_bound": "1"
+    },
+    {
+      "L": 14,
+      "Lp": 15,
+      "r": 3,
+      "dimension": 18,
+      "residual_component_bound": "1/10^50",
+      "coefficient_abs_bound": "1"
+    },
+    {
+      "L": 14,
+      "Lp": 15,
+      "r": 4,
+      "dimension": 18,
+      "residual_component_bound": "1/10^50",
+      "coefficient_abs_bound": "1"
+    },
+    {
+      "L": 14,
+      "Lp": 16,
+      "r": 2,
+      "dimension": 17,
+      "residual_component_bound": "1/10^50",
+      "coefficient_abs_bound": "1"
+    },
+    {
+      "L": 14,
+      "Lp": 16,
+      "r": 3,
+      "dimension": 17,
+      "residual_component_bound": "1/10^50",
+      "coefficient_abs_bound": "1"
+    },
+    {
+      "L": 14,
+      "Lp": 16,
+      "r": 4,
+      "dimension": 17,
+      "residual_component_bound": "1/10^50",
+      "coefficient_abs_bound": "1"
+    },
+    {
+      "L": 14,
+      "Lp": 17,
+      "r": 3,
+      "dimension": 16,
+      "residual_component_bound": "1/10^50",
+      "coefficient_abs_bound": "1"
+    },
+    {
+      "L": 14,
+      "Lp": 17,
+      "r": 4,
+      "dimension": 16,
+      "residual_component_bound": "1/10^50",
+      "coefficient_abs_bound": "1"
+    },
+    {
+      "L": 14,
+      "Lp": 18,
+      "r": 4,
+      "dimension": 15,
+      "residual_component_bound": "1/10^50",
+      "coefficient_abs_bound": "1"
+    },
+    {
+      "L": 15,
+      "Lp": 15,
+      "r": 0,
+      "dimension": 19,
+      "residual_component_bound": "1/10^50",
+      "coefficient_abs_bound": "1"
+    },
+    {
+      "L": 15,
+      "Lp": 15,
+      "r": 1,
+      "dimension": 19,
+      "residual_component_bound": "1/10^50",
+      "coefficient_abs_bound": "1"
+    },
+    {
+      "L": 15,
+      "Lp": 15,
+      "r": 2,
+      "dimension": 19,
+      "residual_component_bound": "1/10^50",
+      "coefficient_abs_bound": "1"
+    },
+    {
+      "L": 15,
+      "Lp": 15,
+      "r": 3,
+      "dimension": 19,
+      "residual_component_bound": "1/10^50",
+      "coefficient_abs_bound": "1"
+    },
+    {
+      "L": 15,
+      "Lp": 15,
+      "r": 4,
+      "dimension": 19,
+      "residual_component_bound": "1/10^50",
+      "coefficient_abs_bound": "1"
+    },
+    {
+      "L": 15,
+      "Lp": 16,
+      "r": 1,
+      "dimension": 18,
+      "residual_component_bound": "1/10^50",
+      "coefficient_abs_bound": "1"
+    },
+    {
+      "L": 15,
+      "Lp": 16,
+      "r": 2,
+      "dimension": 18,
+      "residual_component_bound": "1/10^50",
+      "coefficient_abs_bound": "1"
+    },
+    {
+      "L": 15,
+      "Lp": 16,
+      "r": 3,
+      "dimension": 18,
+      "residual_component_bound": "1/10^50",
+      "coefficient_abs_bound": "1"
+    },
+    {
+      "L": 15,
+      "Lp": 16,
+      "r": 4,
+      "dimension": 18,
+      "residual_component_bound": "1/10^50",
+      "coefficient_abs_bound": "1"
+    },
+    {
+      "L": 15,
+      "Lp": 17,
+      "r": 2,
+      "dimension": 17,
+      "residual_component_bound": "1/10^50",
+      "coefficient_abs_bound": "1"
+    },
+    {
+      "L": 15,
+      "Lp": 17,
+      "r": 3,
+      "dimension": 17,
+      "residual_component_bound": "1/10^50",
+      "coefficient_abs_bound": "1"
+    },
+    {
+      "L": 15,
+      "Lp": 17,
+      "r": 4,
+      "dimension": 17,
+      "residual_component_bound": "1/10^50",
+      "coefficient_abs_bound": "1"
+    },
+    {
+      "L": 15,
+      "Lp": 18,
+      "r": 3,
+      "dimension": 16,
+      "residual_component_bound": "1/10^50",
+      "coefficient_abs_bound": "1"
+    },
+    {
+      "L": 15,
+      "Lp": 18,
+      "r": 4,
+      "dimension": 16,
+      "residual_component_bound": "1/10^50",
+      "coefficient_abs_bound": "1"
+    },
+    {
+      "L": 16,
+      "Lp": 16,
+      "r": 0,
+      "dimension": 19,
+      "residual_component_bound": "1/10^50",
+      "coefficient_abs_bound": "1"
+    },
+    {
+      "L": 16,
+      "Lp": 16,
+      "r": 1,
+      "dimension": 19,
+      "residual_component_bound": "1/10^50",
+      "coefficient_abs_bound": "1"
+    },
+    {
+      "L": 16,
+      "Lp": 16,
+      "r": 2,
+      "dimension": 19,
+      "residual_component_bound": "1/10^50",
+      "coefficient_abs_bound": "1"
+    },
+    {
+      "L": 16,
+      "Lp": 16,
+      "r": 3,
+      "dimension": 19,
+      "residual_component_bound": "1/10^50",
+      "coefficient_abs_bound": "1"
+    },
+    {
+      "L": 16,
+      "Lp": 16,
+      "r": 4,
+      "dimension": 19,
+      "residual_component_bound": "1/10^50",
+      "coefficient_abs_bound": "1"
+    },
+    {
+      "L": 16,
+      "Lp": 17,
+      "r": 1,
+      "dimension": 18,
+      "residual_component_bound": "1/10^50",
+      "coefficient_abs_bound": "1"
+    },
+    {
+      "L": 16,
+      "Lp": 17,
+      "r": 2,
+      "dimension": 18,
+      "residual_component_bound": "1/10^50",
+      "coefficient_abs_bound": "1"
+    },
+    {
+      "L": 16,
+      "Lp": 17,
+      "r": 3,
+      "dimension": 18,
+      "residual_component_bound": "1/10^50",
+      "coefficient_abs_bound": "1"
+    },
+    {
+      "L": 16,
+      "Lp": 17,
+      "r": 4,
+      "dimension": 18,
+      "residual_component_bound": "1/10^50",
+      "coefficient_abs_bound": "1"
+    },
+    {
+      "L": 16,
+      "Lp": 18,
+      "r": 2,
+      "dimension": 17,
+      "residual_component_bound": "1/10^50",
+      "coefficient_abs_bound": "1"
+    },
+    {
+      "L": 16,
+      "Lp": 18,
+      "r": 3,
+      "dimension": 17,
+      "residual_component_bound": "1/10^50",
+      "coefficient_abs_bound": "1"
+    },
+    {
+      "L": 16,
+      "Lp": 18,
+      "r": 4,
+      "dimension": 17,
+      "residual_component_bound": "1/10^50",
+      "coefficient_abs_bound": "1"
+    },
+    {
+      "L": 17,
+      "Lp": 17,
+      "r": 0,
+      "dimension": 19,
+      "residual_component_bound": "1/10^50",
+      "coefficient_abs_bound": "1"
+    },
+    {
+      "L": 17,
+      "Lp": 17,
+      "r": 1,
+      "dimension": 19,
+      "residual_component_bound": "1/10^50",
+      "coefficient_abs_bound": "1"
+    },
+    {
+      "L": 17,
+      "Lp": 17,
+      "r": 2,
+      "dimension": 19,
+      "residual_component_bound": "1/10^50",
+      "coefficient_abs_bound": "1"
+    },
+    {
+      "L": 17,
+      "Lp": 17,
+      "r": 3,
+      "dimension": 19,
+      "residual_component_bound": "1/10^50",
+      "coefficient_abs_bound": "1"
+    },
+    {
+      "L": 17,
+      "Lp": 17,
+      "r": 4,
+      "dimension": 19,
+      "residual_component_bound": "1/10^50",
+      "coefficient_abs_bound": "1"
+    },
+    {
+      "L": 17,
+      "Lp": 18,
+      "r": 1,
+      "dimension": 18,
+      "residual_component_bound": "1/10^50",
+      "coefficient_abs_bound": "1"
+    },
+    {
+      "L": 17,
+      "Lp": 18,
+      "r": 2,
+      "dimension": 18,
+      "residual_component_bound": "1/10^50",
+      "coefficient_abs_bound": "1"
+    },
+    {
+      "L": 17,
+      "Lp": 18,
+      "r": 3,
+      "dimension": 18,
+      "residual_component_bound": "1/10^50",
+      "coefficient_abs_bound": "1"
+    },
+    {
+      "L": 17,
+      "Lp": 18,
+      "r": 4,
+      "dimension": 18,
+      "residual_component_bound": "1/10^50",
+      "coefficient_abs_bound": "1"
+    },
+    {
+      "L": 18,
+      "Lp": 18,
+      "r": 0,
+      "dimension": 19,
+      "residual_component_bound": "1/10^50",
+      "coefficient_abs_bound": "1"
+    },
+    {
+      "L": 18,
+      "Lp": 18,
+      "r": 1,
+      "dimension": 19,
+      "residual_component_bound": "1/10^50",
+      "coefficient_abs_bound": "1"
+    },
+    {
+      "L": 18,
+      "Lp": 18,
+      "r": 2,
+      "dimension": 19,
+      "residual_component_bound": "1/10^50",
+      "coefficient_abs_bound": "1"
+    },
+    {
+      "L": 18,
+      "Lp": 18,
+      "r": 3,
+      "dimension": 19,
+      "residual_component_bound": "1/10^50",
+      "coefficient_abs_bound": "1"
+    },
+    {
+      "L": 18,
+      "Lp": 18,
+      "r": 4,
+      "dimension": 19,
+      "residual_component_bound": "1/10^50",
+      "coefficient_abs_bound": "1"
+    }
+  ]
+}

@@ -1,0 +1,19 @@
+{
+  "passed": true,
+  "sha256": "8a034a56d2722a73643ed6949d7818ae6bacbe684dac240e877deacaf473f920",
+  "states": 243,
+  "outside_words": 16430,
+  "factorized_minimum_outside_conflicts": 2,
+  "outside_words_needing_component_test": 60,
+  "private_histogram": {
+    "5": 32,
+    "6": 80,
+    "7": 80,
+    "8": 40,
+    "9": 10,
+    "10": 1
+  },
+  "seconds": 2.7127044200897217,
+  "scope": "Entire fixed-size single-word-exchange component; not global C7^5 optimality",
+  "proof": "Independent direct coordinate distance and separable minimum over five P4 choices; no worker imports"
+}

@@ -1,0 +1,26 @@
+# Local environments and caches
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.venv/
+venv/
+.DS_Store
+*.swp
+*~
+
+# LaTeX intermediates (only reviewed PDFs and source dependencies are tracked)
+*.aux
+*.log
+*.out
+*.blg
+*.synctex.gz
+*.fdb_latexmk
+*.fls
+*.toc
+*.lof
+*.lot
+
+# Reproducible local test reports, not source evidence
+verification-results.json
+resistance-fault-diagnosis/research/**/*.json
+resistance-fault-diagnosis/research/**/*.jsonl

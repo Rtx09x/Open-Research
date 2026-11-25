@@ -1,0 +1,596 @@
+{
+  "packing-selection.json": {
+    "kept": [
+      "online-bin-packing/phase3/FINAL_REPLAY.log",
+      "online-bin-packing/phase3/HANDOFF.md",
+      "online-bin-packing/phase3/NEXT_STRUCTURAL_TARGET.md",
+      "online-bin-packing/phase3/README.md",
+      "online-bin-packing/phase3/bf_type/TYPE_MIXTURE_THEOREM.md",
+      "online-bin-packing/phase3/bf_type/check_all_mixture.py",
+      "online-bin-packing/phase3/bf_type/explore_type_charge.py",
+      "online-bin-packing/phase3/bf_type/family_optimum_verification.json",
+      "online-bin-packing/phase3/bf_type/fixed_mixture_optimum.json",
+      "online-bin-packing/phase3/bf_type/independent_mixture_verification.json",
+      "online-bin-packing/phase3/bf_type/mix_pricing.py",
+      "online-bin-packing/phase3/bf_type/optimize_fixed_mixture.py",
+      "online-bin-packing/phase3/bf_type/type_charge_exploration.json",
+      "online-bin-packing/phase3/bf_type/type_mixture_certificate.json",
+      "online-bin-packing/phase3/bf_type/type_pricing.py",
+      "online-bin-packing/phase3/bf_type/verify_family_optimum.py",
+      "online-bin-packing/phase3/bf_type/verify_mixture_independent.py",
+      "online-bin-packing/phase3/independent_audit_references.json",
+      "online-bin-packing/phase3/literature.md",
+      "online-bin-packing/phase3/lower_shared/SHARED_FORK_OBSTRUCTION.md",
+      "online-bin-packing/phase3/lower_shared/shared_fork_verification.json",
+      "online-bin-packing/phase3/lower_shared/verification.log",
+      "online-bin-packing/phase3/lower_shared/verify_shared_fork.py",
+      "online-bin-packing/phase3/result_summary.json",
+      "online-bin-packing/phase3/successor_cutoff/check_all.py",
+      "online-bin-packing/phase3/successor_cutoff/independent_verification.json",
+      "online-bin-packing/phase3/successor_cutoff/pricing.py",
+      "online-bin-packing/phase3/successor_cutoff/refine.py",
+      "online-bin-packing/phase3/successor_cutoff/refined_candidate.json",
+      "online-bin-packing/phase3/successor_cutoff/successor_certificate.json",
+      "online-bin-packing/phase3/successor_cutoff/verify_independent.py",
+      "online-bin-packing/phase3/successor_mixture/SUCCESSOR_MIXTURE_THEOREM.md",
+      "online-bin-packing/phase3/successor_mixture/check_all.py",
+      "online-bin-packing/phase3/successor_mixture/check_chronology.py",
+      "online-bin-packing/phase3/successor_mixture/check_mixed_chronology.py",
+      "online-bin-packing/phase3/successor_mixture/chronology_control.json",
+      "online-bin-packing/phase3/successor_mixture/family_verification.json",
+      "online-bin-packing/phase3/successor_mixture/independent_verification.json",
+      "online-bin-packing/phase3/successor_mixture/mixed_chronology_control.json",
+      "online-bin-packing/phase3/successor_mixture/optimize.py",
+      "online-bin-packing/phase3/successor_mixture/refined_candidate.json",
+      "online-bin-packing/phase3/successor_mixture/successor_mixture_certificate.json",
+      "online-bin-packing/phase3/successor_mixture/verify_family.py",
+      "online-bin-packing/phase3/successor_mixture/verify_independent.py",
+      "online-bin-packing/phase3/two_cutoff/TWO_CUTOFF_THEOREM.md",
+      "online-bin-packing/phase3/two_cutoff/check_all.py",
+      "online-bin-packing/phase3/two_cutoff/exploration.json",
+      "online-bin-packing/phase3/two_cutoff/explore.py",
+      "online-bin-packing/phase3/two_cutoff/independent_verification.json",
+      "online-bin-packing/phase3/two_cutoff/pricing.py",
+      "online-bin-packing/phase3/two_cutoff/refine.py",
+      "online-bin-packing/phase3/two_cutoff/refined_candidate.json",
+      "online-bin-packing/phase3/two_cutoff/two_cutoff_certificate.json",
+      "online-bin-packing/phase3/two_cutoff/verify_independent.py"
+    ],
+    "excluded": [
+      "online-bin-packing/phase3/EXTERNAL_LOWER_NEXT_PROMPT.md",
+      "online-bin-packing/phase3/external_submission/launch_record.json",
+      "online-bin-packing/phase3/external_submission/mode_evidence.txt",
+      "online-bin-packing/phase3/external_submission/send_receipt.txt",
+      "online-bin-packing/phase3/external_submission/status_at_handoff.json",
+      "online-bin-packing/phase3/external_submission/submitted_prompt.txt",
+      "online-bin-packing/phase3/research_log.md"
+    ],
+    "source_manifest_sha256": "8335396ead837cbaf6ecb6d62247a3c65e06db869de6cf8c105bfb765c4b5ef9"
+  },
+  "quantum-selection.json": {
+    "files": [
+      "symmetric-quantum-codes/phase3/t3_verified_bracket.md",
+      "symmetric-quantum-codes/phase3/code37_root_certificate.json",
+      "symmetric-quantum-codes/phase3/code37_kl_reduction.json",
+      "symmetric-quantum-codes/phase3/scalar_exact_t3.json",
+      "symmetric-quantum-codes/phase3/general_dual_n33_t3.json",
+      "symmetric-quantum-codes/phase3/general_dual_n33_t3_verified.json",
+      "symmetric-quantum-codes/phase3/check_general_dual.py",
+      "symmetric-quantum-codes/phase3/reduced_t2_candidate.json",
+      "symmetric-quantum-codes/phase3/reduced_t2_verification.json",
+      "symmetric-quantum-codes/phase3/check_reduced_t2.py",
+      "symmetric-quantum-codes/phase3/general_lift_and_faces.md",
+      "symmetric-quantum-codes/phase3/complement_rank_counting.md",
+      "symmetric-quantum-codes/phase3/complement_rank_counting_checks.json",
+      "symmetric-quantum-codes/phase3/KL_is_not_anticoherence.md",
+      "symmetric-quantum-codes/phase3/check_non_anticoherence37.py",
+      "symmetric-quantum-codes/phase3/non_anticoherence37.json",
+      "symmetric-quantum-codes/phase3/test_logical_face_inverse.py",
+      "symmetric-quantum-codes/phase3/test_logical_face_inverse.json",
+      "symmetric-quantum-codes/phase3/provenance/approved_checkpoint_2318.json",
+      "advisor/phase3/check_quantum_general_independent.py",
+      "advisor/phase3/quantum_general_n33_t3_audit.json",
+      "advisor/phase3/quantum_general_model_audit.md",
+      "advisor/phase3/check_code37_independent.py",
+      "advisor/phase3/check_code37_independent.json",
+      "advisor/phase3/check_t3_scalar_hypergeom.py",
+      "advisor/phase3/check_t3_scalar_hypergeom.json",
+      "advisor/phase3/complement_counting_audit.md",
+      "advisor/phase3/check_packing_successor_mixture.py",
+      "advisor/phase3/packing_successor_mixture_audit.json",
+      "advisor/phase3/packing_successor_mixture_audit.md",
+      "advisor/phase3/check_c7_component_independent.py",
+      "advisor/phase3/check_c7_component_independent.json",
+      "advisor/phase3/check_c7_escape_independent.py",
+      "advisor/phase3/check_c7_escape_independent.json",
+      "advisor/phase3/check_c7_second_boundary_independent.py",
+      "advisor/phase3/c7_second_boundary_independent_audit.json",
+      "advisor/phase3/check_deletion_cg_independent.py",
+      "advisor/phase3/deletion_cg_best_dual_audit.json",
+      "advisor/phase3/hss_coordinate_extension_audit.md",
+      "advisor/phase3/star_probing_noise_lemma.md",
+      "advisor/phase3/hss_greedy_bridge_audit.md",
+      "advisor/phase3/fresh_source_scope_notes.md"
+    ],
+    "adaptations": [
+      {
+        "path": "advisor/phase3/check_quantum_general_independent.py",
+        "source_sha256": "5c37ce465fb336a5cb7ac4ff18a45be377ae510b747d0d21ee18ff0f813aae00",
+        "curated_sha256": "d25a73814af88294f41db877b79cf72ec7e1224ce500198a4bfdd42ee17771f7",
+        "reason": "Repository-relative fixed witness path; arithmetic unchanged."
+      }
+    ],
+    "status": "Frozen n33/37 checkpoint; n34 absent pending root final verdict"
+  },
+  "remaining-selection.json": {
+    "files": [
+      "hss-probe-reuse/phase3/README.md",
+      "hss-probe-reuse/phase3/REPLAY.md",
+      "hss-probe-reuse/phase3/advisor_audits/hss_coordinate_extension_audit.md",
+      "hss-probe-reuse/phase3/advisor_audits/hss_dense_fixed_basis_audit.md",
+      "hss-probe-reuse/phase3/advisor_audits/hss_forest_audit.md",
+      "hss-probe-reuse/phase3/advisor_audits/hss_greedy_bridge_audit.md",
+      "hss-probe-reuse/phase3/common_optimum_target.md",
+      "hss-probe-reuse/phase3/coordinate_observation_forest.log",
+      "hss-probe-reuse/phase3/coordinate_observation_forest.md",
+      "hss-probe-reuse/phase3/coordinate_observation_forest.py",
+      "hss-probe-reuse/phase3/coordinate_observation_forest_results.json",
+      "hss-probe-reuse/phase3/coordinate_star_probing.log",
+      "hss-probe-reuse/phase3/coordinate_star_probing.py",
+      "hss-probe-reuse/phase3/coordinate_star_probing_results.json",
+      "hss-probe-reuse/phase3/coordinate_star_probing_theorem.md",
+      "hss-probe-reuse/phase3/coordinate_star_search_limit.md",
+      "hss-probe-reuse/phase3/dense_envelope_clique.log",
+      "hss-probe-reuse/phase3/dense_envelope_clique_results.json",
+      "hss-probe-reuse/phase3/dense_envelope_coloring_obstruction.md",
+      "hss-probe-reuse/phase3/external_continuation_audit.md",
+      "hss-probe-reuse/phase3/finite_orientation_variant.md",
+      "hss-probe-reuse/phase3/fixed_basis_algorithm.py",
+      "hss-probe-reuse/phase3/fixed_basis_bound.md",
+      "hss-probe-reuse/phase3/greedy_bridge_independent_results.json",
+      "hss-probe-reuse/phase3/greedy_coefficient_independent_results.json",
+      "hss-probe-reuse/phase3/literature_phase2.md",
+      "hss-probe-reuse/phase3/matrix_one_bank_verification.json",
+      "hss-probe-reuse/phase3/matrix_one_bank_verification.log",
+      "hss-probe-reuse/phase3/one_bank_sharpness_results.json",
+      "hss-probe-reuse/phase3/path_global_ls_inverse.log",
+      "hss-probe-reuse/phase3/path_global_ls_inverse.md",
+      "hss-probe-reuse/phase3/path_global_ls_inverse_results.json",
+      "hss-probe-reuse/phase3/path_global_ls_robustness.log",
+      "hss-probe-reuse/phase3/path_global_ls_robustness.md",
+      "hss-probe-reuse/phase3/path_global_ls_robustness_results.json",
+      "hss-probe-reuse/phase3/path_ls_gauge_exact.log",
+      "hss-probe-reuse/phase3/path_ls_gauge_exact_results.json",
+      "hss-probe-reuse/phase3/test_finite_orientation_variant.py",
+      "hss-probe-reuse/phase3/test_fixed_basis_algorithm.py",
+      "hss-probe-reuse/phase3/test_path_global_ls_inverse.py",
+      "hss-probe-reuse/phase3/test_path_global_ls_robustness.py",
+      "hss-probe-reuse/phase3/three_color_forest.py",
+      "hss-probe-reuse/phase3/three_color_forest_results.json",
+      "hss-probe-reuse/phase3/three_color_forest_theorem.md",
+      "hss-probe-reuse/phase3/triangular_regression_exact_results.json",
+      "hss-probe-reuse/phase3/triangular_regression_identity.md",
+      "hss-probe-reuse/phase3/verify_dense_envelope_clique.py",
+      "hss-probe-reuse/phase3/verify_greedy_bridge_independent.py",
+      "hss-probe-reuse/phase3/verify_greedy_coefficient_identity.py",
+      "hss-probe-reuse/phase3/verify_matrix_one_bank_bound.py",
+      "hss-probe-reuse/phase3/verify_one_bank_sharpness.py",
+      "hss-probe-reuse/phase3/verify_path_ls_gauge_exact.py",
+      "hss-probe-reuse/phase3/verify_three_color_forest.py",
+      "hss-probe-reuse/phase3/verify_triangular_regression_exact.py",
+      "hss-probe-reuse/phase3/verify_wide_haar_coercivity.py",
+      "hss-probe-reuse/phase3/wide_common_quadratic_obstruction.md",
+      "hss-probe-reuse/phase3/wide_haar_coercivity_results.json",
+      "hss-probe-reuse/phase3/wide_haar_coercivity_verifier.log",
+      "hss-probe-reuse/phase3/wide_haar_pointwise_obstruction.md",
+      "hss-probe-reuse/phase3/provenance/original_manifest.json",
+      "seven-cycle-capacity/phase3/VERIFIED_PHYSICAL_RESULTS.md",
+      "seven-cycle-capacity/phase3/independent_advisor/c7_second_boundary_independent_audit.json",
+      "seven-cycle-capacity/phase3/independent_advisor/check_c7_component_independent.json",
+      "seven-cycle-capacity/phase3/independent_advisor/check_c7_component_independent.py",
+      "seven-cycle-capacity/phase3/independent_advisor/check_c7_escape_independent.json",
+      "seven-cycle-capacity/phase3/independent_advisor/check_c7_escape_independent.py",
+      "seven-cycle-capacity/phase3/independent_advisor/check_c7_second_boundary_independent.py",
+      "seven-cycle-capacity/phase3/physical_iteration/auxiliary_orbit_milp.py",
+      "seven-cycle-capacity/phase3/physical_iteration/classify_second_boundary_maxima.py",
+      "seven-cycle-capacity/phase3/physical_iteration/core_boundary_cover_audit.json",
+      "seven-cycle-capacity/phase3/physical_iteration/core_cycle_family.json",
+      "seven-cycle-capacity/phase3/physical_iteration/core_cycle_family.py",
+      "seven-cycle-capacity/phase3/physical_iteration/cycle_flip_base_c7.json",
+      "seven-cycle-capacity/phase3/physical_iteration/cycle_flip_certificate_replay.log",
+      "seven-cycle-capacity/phase3/physical_iteration/cycle_flip_recomputed_ledger.json",
+      "seven-cycle-capacity/phase3/physical_iteration/cycle_flip_recomputed_result.json",
+      "seven-cycle-capacity/phase3/physical_iteration/cycle_flip_replay_resources.json",
+      "seven-cycle-capacity/phase3/physical_iteration/first_core_boundary_certificate.json",
+      "seven-cycle-capacity/phase3/physical_iteration/independent_physical_audit.json",
+      "seven-cycle-capacity/phase3/physical_iteration/independent_physical_certificate.json",
+      "seven-cycle-capacity/phase3/physical_iteration/new_367_core_escape.json",
+      "seven-cycle-capacity/phase3/physical_iteration/new_core_overlap_probe.json",
+      "seven-cycle-capacity/phase3/physical_iteration/new_core_overlap_probe.py",
+      "seven-cycle-capacity/phase3/physical_iteration/physical_graph.py",
+      "seven-cycle-capacity/phase3/physical_iteration/private_component_closure.json",
+      "seven-cycle-capacity/phase3/physical_iteration/replay_cycle_flip_certificates.py",
+      "seven-cycle-capacity/phase3/physical_iteration/second_boundary_maxima_classification.json",
+      "seven-cycle-capacity/phase3/physical_iteration/second_core_boundary_capacity_cover.json",
+      "seven-cycle-capacity/phase3/physical_iteration/verify_core_boundary_covers.py",
+      "seven-cycle-capacity/phase3/published/LICENSE",
+      "seven-cycle-capacity/phase3/published/NOTICE",
+      "seven-cycle-capacity/phase3/published/data/base_c7.json",
+      "seven-cycle-capacity/phase3/provenance/original_manifest.json",
+      "deletion-code-optimality/phase2/certificate_bundle_k6/parts/part-000.bin",
+      "deletion-code-optimality/phase2/certificate_bundle_k6/parts/part-001.bin",
+      "deletion-code-optimality/phase2/certificate_bundle_k6/parts/part-002.bin",
+      "deletion-code-optimality/phase2/certificate_bundle_k6/parts/part-003.bin",
+      "deletion-code-optimality/phase2/certificate_bundle_k6/parts/part-004.bin",
+      "deletion-code-optimality/phase2/certificate_bundle_k6/parts/part-005.bin",
+      "deletion-code-optimality/phase2/certificate_bundle_k6/parts/part-006.bin",
+      "deletion-code-optimality/phase2/certificate_bundle_k6/parts/part-007.bin",
+      "deletion-code-optimality/phase2/certificate_bundle_k6/parts/part-008.bin",
+      "deletion-code-optimality/phase2/certificate_bundle_k6/parts/part-009.bin",
+      "deletion-code-optimality/phase2/certificate_bundle_k6/parts/part-010.bin",
+      "deletion-code-optimality/phase2/certificate_bundle_k6/parts/part-011.bin",
+      "deletion-code-optimality/phase2/certificate_bundle_k6/parts/part-012.bin",
+      "deletion-code-optimality/phase2/certificate_bundle_k6/parts/part-013.bin",
+      "deletion-code-optimality/phase2/certificate_bundle_k6/parts/part-014.bin",
+      "deletion-code-optimality/phase2/certificate_bundle_k6/parts/part-015.bin",
+      "deletion-code-optimality/phase2/certificate_bundle_k6/parts/part-016.bin",
+      "deletion-code-optimality/phase2/certificate_bundle_k6/parts/part-017.bin",
+      "deletion-code-optimality/phase2/certificate_bundle_k6/parts/part-018.bin",
+      "deletion-code-optimality/phase2/certificate_bundle_k6/parts/part-019.bin",
+      "deletion-code-optimality/phase2/certificate_bundle_k6/parts/part-020.bin",
+      "deletion-code-optimality/phase2/certificate_bundle_k6/parts/part-021.bin",
+      "deletion-code-optimality/phase2/certificate_bundle_k6/parts/part-022.bin",
+      "deletion-code-optimality/phase2/certificate_bundle_k6/parts/part-023.bin",
+      "deletion-code-optimality/phase2/certificate_bundle_k6/parts/part-024.bin",
+      "deletion-code-optimality/phase2/certificate_bundle_k6/parts/part-025.bin",
+      "deletion-code-optimality/phase2/certificate_bundle_k6/parts/part-026.bin",
+      "deletion-code-optimality/phase2/certificate_bundle_k6/parts/part-027.bin",
+      "deletion-code-optimality/phase2/certificate_bundle_k6/parts/part-028.bin",
+      "deletion-code-optimality/phase2/certificate_bundle_k6/parts/part-029.bin",
+      "deletion-code-optimality/phase2/certificate_bundle_k6/parts/part-030.bin",
+      "deletion-code-optimality/phase2/certificate_bundle_k6/parts/part-031.bin",
+      "deletion-code-optimality/phase2/certificate_bundle_k6/parts/part-032.bin",
+      "deletion-code-optimality/phase2/certificate_bundle_k6/parts/part-033.bin",
+      "deletion-code-optimality/phase2/certificate_bundle_k6/parts/part-034.bin",
+      "deletion-code-optimality/phase2/certificate_bundle_k6/parts/part-035.bin",
+      "deletion-code-optimality/phase2/certificate_bundle_k6/parts/part-036.bin",
+      "deletion-code-optimality/phase2/certificate_bundle_k6/parts/part-037.bin",
+      "deletion-code-optimality/phase2/certificate_bundle_k6/parts/part-038.bin",
+      "deletion-code-optimality/phase2/certificate_bundle_k6/parts/part-039.bin",
+      "deletion-code-optimality/phase2/certificate_bundle_k6/parts/part-040.bin",
+      "deletion-code-optimality/phase2/certificate_bundle_k6/parts/part-041.bin",
+      "deletion-code-optimality/phase2/certificate_bundle_k6/parts/part-042.bin",
+      "deletion-code-optimality/phase2/certificate_bundle_k6/parts/part-043.bin",
+      "deletion-code-optimality/phase2/certificate_bundle_k6/parts/part-044.bin",
+      "deletion-code-optimality/phase2/certificate_bundle_k6/parts/part-045.bin",
+      "deletion-code-optimality/phase2/certificate_bundle_k6/parts/part-046.bin",
+      "deletion-code-optimality/phase2/certificate_bundle_k6/manifest.json",
+      "deletion-code-optimality/phase2/checksum_support_theorem.md",
+      "deletion-code-optimality/phase2/literature_followup.md",
+      "deletion-code-optimality/continuation/release_20261025/MANIFEST.json",
+      "deletion-code-optimality/continuation/release_20261025/README.md",
+      "deletion-code-optimality/continuation/release_20261025/evidence/best_dual.json",
+      "deletion-code-optimality/continuation/release_20261025/evidence/dual_audit.json",
+      "deletion-code-optimality/continuation/release_20261025/evidence/exact_fractional_root.json",
+      "deletion-code-optimality/continuation/release_20261025/evidence/negative_controls.json",
+      "deletion-code-optimality/continuation/release_20261025/evidence/primal_audit.json",
+      "deletion-code-optimality/continuation/release_20261025/scripts/negative_controls.py",
+      "deletion-code-optimality/continuation/release_20261025/scripts/verify_cg_hierarchy.py",
+      "deletion-code-optimality/continuation/release_20261025/scripts/verify_fractional_root.py",
+      "advisor/phase3/check_deletion_six_supports.py",
+      "advisor/phase3/check_deletion_six_supports.json",
+      "symmetric-quantum-codes/phase3/priority/PRIORITY_REPORT.md",
+      "symmetric-quantum-codes/phase3/priority/CITATION_ADDENDUM.md",
+      "symmetric-quantum-codes/phase3/priority/arxiv_version_histories.json",
+      "reports/2026-10-25-2207/Rudra_research_update_2026-10-25.pdf",
+      "reports/2026-10-25-2207/evidence_index.json"
+    ],
+    "adaptations": [
+      {
+        "path": "hss-probe-reuse/phase3/external_continuation_audit.md",
+        "source_sha256": "7d1a08f830bdf65f62430343997bd2f9f01dbbc029c71cf3d4cd0e5407d0e2d3",
+        "curated_sha256": "562b6a9a2dbe13d6a13243c9c175c28b386673cc58a84aeaa7dd7150b857c5f4",
+        "reason": "Remove private consultation URL; retain mathematical audit."
+      },
+      {
+        "path": "seven-cycle-capacity/phase3/independent_advisor/check_c7_escape_independent.py",
+        "source_sha256": "ad418eeffc989d5ed42ea239a73b2f92a2f28067e4fbb040e650f0eb483a1af4",
+        "curated_sha256": "10d7e921b4975b82d048502760b42be77a114d852e415f54d2b6278a4ae77f08",
+        "reason": "Isolated checkpoint-relative data paths; mathematical code unchanged."
+      },
+      {
+        "path": "seven-cycle-capacity/phase3/independent_advisor/check_c7_second_boundary_independent.py",
+        "source_sha256": "302deec0705605e3c535333aca9a490bf0371a4eefb3c4dc2daceeeebe9b833f",
+        "curated_sha256": "b4c06ebc67345262ccbce65989af507bf3d8ebfbe8fbf3e1c8bb995792287b3d",
+        "reason": "Isolated checkpoint-relative data paths; mathematical code unchanged."
+      },
+      {
+        "path": "seven-cycle-capacity/phase3/independent_advisor/check_c7_component_independent.py",
+        "source_sha256": "c1a08714629b81138ccd8d0203b0b0f048c2beaef750ac6cdea347ddfcb57233",
+        "curated_sha256": "33c82d9ddbed2140d84b12fc52c99a4e6b0cb35366c3ba7faae3ce5c22f96369",
+        "reason": "Isolated checkpoint-relative data paths; mathematical code unchanged."
+      },
+      {
+        "path": "advisor/phase3/check_deletion_six_supports.py",
+        "source_sha256": "49fcad740fc55f587982ca6b442d3f1797d871bfadbfac2dabf55c952304a92e",
+        "curated_sha256": "316d02bc2a39c919e68f04d37dadcc25e75a3112c245e511426ea98c631c6cd2",
+        "reason": "Accept extracted certificate-directory argument instead of a live workspace absolute path; arithmetic unchanged."
+      },
+      {
+        "path": "online-bin-packing/phase3/README.md",
+        "source_sha256": "e7a723852e91427d189da7adcc6c53924e4a23175c82e1a4a8c97d88ab53b2f8",
+        "curated_sha256": "d977bfe8833931f712371608a824fcb905f9e850e807034665138399f9f86bc9",
+        "reason": "Remove operational consultation section and private conversation metadata."
+      },
+      {
+        "path": "online-bin-packing/phase3/HANDOFF.md",
+        "source_sha256": "7891285a0f2267fa3e39f5b688d7959b2a3855061c5dd05a1dc0e7f493f11daa",
+        "curated_sha256": "d3cd7aa7f5160339f68a6c6d602f9383aee1ebfec82b04e2cf88782d62c02620",
+        "reason": "Remove operational consultation section; preserve next mathematical target and proof limits."
+      },
+      {
+        "path": "online-bin-packing/phase3/independent_audit_references.json",
+        "source_sha256": "cd9ea8248a9076fa121c3e140f03ae905488a735164d898b42a722c4f3f8e250",
+        "curated_sha256": "88b98a54f3df4d4f9dc0e17cb1534f88706c4d69153a556368ff0582961172a1",
+        "reason": "Portable audit locators; original source hashes retained as provenance."
+      },
+      {
+        "path": "advisor/phase3/check_c7_escape_independent.py",
+        "source_sha256": "ad418eeffc989d5ed42ea239a73b2f92a2f28067e4fbb040e650f0eb483a1af4",
+        "curated_sha256": "bbf46fc4afe0800cf78d178cef12ebe9cfdba9df461c67207cb4c435fac257e3",
+        "reason": "Portable repository paths; packing source audit reuses already integrated factual tables rather than full article HTML."
+      },
+      {
+        "path": "advisor/phase3/check_packing_successor_mixture.py",
+        "source_sha256": "14a1af4bb4324043e0929097a5a69f196816c3b00b68fd01d58ce8695f987517",
+        "curated_sha256": "87cab10d4ed34efe9e3fe13483c7ad3b34e6ced6d4410483b2eabefe401c3ec0",
+        "reason": "Portable repository paths; packing source audit reuses already integrated factual tables rather than full article HTML."
+      },
+      {
+        "path": "advisor/phase3/check_c7_second_boundary_independent.py",
+        "source_sha256": "302deec0705605e3c535333aca9a490bf0371a4eefb3c4dc2daceeeebe9b833f",
+        "curated_sha256": "578054ee6effa9616f7b4a6e7ec4750fae0bde6c8da893c74b40f79bf8a4c7e4",
+        "reason": "Portable repository paths; packing source audit reuses already integrated factual tables rather than full article HTML."
+      },
+      {
+        "path": "advisor/phase3/check_c7_component_independent.py",
+        "source_sha256": "c1a08714629b81138ccd8d0203b0b0f048c2beaef750ac6cdea347ddfcb57233",
+        "curated_sha256": "8039044515e2b859a1f99025de50ea139ffc82ef515b431b12f3037999c44d88",
+        "reason": "Portable repository paths; packing source audit reuses already integrated factual tables rather than full article HTML."
+      },
+      {
+        "path": "advisor/phase3/check_code37_independent.py",
+        "source_sha256": "5dffc544fdb18ffb9191fc366e2889eec0d2403bce27eb93a4160c2eb0ae5384",
+        "curated_sha256": "f0ca2a207dc2afae11a23fa8d3744d49b106f6e7a7955f9df3f5f7dc8cbeb8f3",
+        "reason": "Portable repository paths; packing source audit reuses already integrated factual tables rather than full article HTML."
+      },
+      {
+        "path": "symmetric-quantum-codes/phase3/priority/PRIORITY_REPORT.md",
+        "source_sha256": "69aa153518f94968980c55c9b5c0cc31496f68df1f18cdbcf8a4c8e7530f6d8b",
+        "curated_sha256": "1547e7025d2942470b65235cbadda5771d5552af09e5ae3b7773ce42a7048a28",
+        "reason": "Clarify deliberate exclusion of full downloaded papers and source caches."
+      },
+      {
+        "path": "advisor/phase3/check_t3_scalar_hypergeom.py",
+        "source_sha256": "3d80574f03de94d1b6edf77c8dbf56ffb16f2fe411c83773ea6711d406c33956",
+        "curated_sha256": "d6690f729def8615db92d00197ac4be93cfc001d1bfc5d6ca82901e18d1c7754",
+        "reason": "Portable path to scalar exact certificate; arithmetic unchanged."
+      },
+      {
+        "path": "online-bin-packing/phase3/result_summary.json",
+        "source_sha256": "0b1142bbe58bf2138af6dc2c7de3e03ae995d7f3fc9ba092fda44c64c1afe190",
+        "curated_sha256": "8d11fa3f174d581e0b5eacf7484ff3460bea83bdc5cc212dd8f52462a5ab94f3",
+        "reason": "Remove operational external-run status."
+      }
+    ]
+  },
+  "n34-selection.json": {
+    "files": [
+      "symmetric-quantum-codes/phase3/general_dual_n34_t3.json",
+      "symmetric-quantum-codes/phase3/general_dual_n34_t3_verified.json",
+      "symmetric-quantum-codes/phase3/check_general_dual_tight.py",
+      "symmetric-quantum-codes/phase3/t3_verified_bracket.md",
+      "symmetric-quantum-codes/phase3/README.md",
+      "symmetric-quantum-codes/phase3/terminology_clarification.md",
+      "symmetric-quantum-codes/phase3/provenance/approved_n34_addendum_2327.json",
+      "advisor/phase3/check_quantum_general_tight_independent.py",
+      "advisor/phase3/quantum_general_n34_t3_audit.json"
+    ],
+    "adaptations": [
+      {
+        "path": "advisor/phase3/check_quantum_general_tight_independent.py",
+        "source_sha256": "47be85db3f23c8b2ebfe2302ca51dd9eefb0b749fed5a6be670dae897ceb38be",
+        "curated_sha256": "a52bd974afa09b9fe0c742d3cfaa3431bb69a590c41646740a9c8ca2d2dfc34b",
+        "reason": "Portable witness path; independent tight arithmetic unchanged."
+      }
+    ],
+    "root_verdict": "Terminal independently checked35\u201337 bracket; all-t/minimum37 remain open"
+  },
+  "barrier-selection.json": {
+    "adaptations": [
+      {
+        "path": "advisor/phase3/check_deletion_branch26_barrier_independent.py",
+        "source_sha256": "4274a87d7ea569044e80127fe22d7233fd9102f9ed04e154ed1eadcb7ce7ecb5",
+        "curated_sha256": "20b793b694654436a67cdee1eae5927b4ac84496e9fc9a12936f10e77be7641d",
+        "reason": "Portable path and removal of unused state.json read only; independent mathematics unchanged."
+      }
+    ],
+    "excluded": [
+      "state.json",
+      "leaf proofs",
+      "tree/frontier files"
+    ]
+  },
+  "oct26-selection.json": [
+    {
+      "source": "symmetric-quantum-codes/phase3/validated_no_perfect_rank_two_20261026_0117",
+      "destination": "symmetric-quantum-codes/checkpoints/2026-10-26-all-t-volume",
+      "files": 37,
+      "bytes": 91157,
+      "source_manifest_sha256": "8fd983602f88d09f9a9d0940e1e90ca41c8cb83c902e3d78818865e131fb73c2"
+    },
+    {
+      "source": "hss-probe-reuse/phase2/verified_mixing_complex_20261026_0233",
+      "destination": "hss-probe-reuse/checkpoints/2026-10-26-scalar-mixing",
+      "files": 48,
+      "bytes": 188832,
+      "source_manifest_sha256": "2e5203726c5af0138f3c774d8b4e8aca1e9f9565b263915ac53055c63dba12cc"
+    },
+    {
+      "source": "hss-probe-reuse/phase2/verified_structural_supplement_20261026_0144",
+      "destination": "hss-probe-reuse/checkpoints/2026-10-26-structural-controls",
+      "files": 21,
+      "bytes": 50370,
+      "source_manifest_sha256": "90d5ea46662512444276bd751ee2ce2634a6dff443c8deeccc11b6565a50e75f"
+    },
+    {
+      "source": "seven-cycle-capacity/checkpoint_fiber_gate_20261026",
+      "destination": "seven-cycle-capacity/checkpoints/checkpoint_fiber_gate_20261026",
+      "files": 10,
+      "bytes": 192638,
+      "source_manifest_sha256": "0e9ea88710c172e27c2477e8fd649efbf01d538b6f9a40c6be352ad8f4fff731"
+    },
+    {
+      "source": "seven-cycle-capacity/checkpoint_reservoir_gates_20261026",
+      "destination": "seven-cycle-capacity/checkpoints/checkpoint_reservoir_gates_20261026",
+      "files": 12,
+      "bytes": 2582160,
+      "source_manifest_sha256": "72edef2bd7cfea3179f0bf5b36cee87fdb9440a3b08a9f2c802e9f5885172473"
+    },
+    {
+      "source": "seven-cycle-capacity/checkpoint_multireservoir_gate_20261026",
+      "destination": "seven-cycle-capacity/checkpoints/checkpoint_multireservoir_gate_20261026",
+      "files": 13,
+      "bytes": 366745,
+      "source_manifest_sha256": "722ccbe6c6220578c989345c516f496a5fb93966855a03803df1a2edc5394cc8"
+    },
+    {
+      "source": "seven-cycle-capacity/checkpoint_multireservoir_diagnosis_20261026",
+      "destination": "seven-cycle-capacity/checkpoints/checkpoint_multireservoir_diagnosis_20261026",
+      "files": 22,
+      "bytes": 852755,
+      "source_manifest_sha256": "ad103db14fbc28c8b26322f7680dbb847ef6611f9f5060d073b762a143d180ae"
+    }
+  ],
+  "packing-final-selection.json": {
+    "files": [
+      {
+        "path": "online-bin-packing/phase4/retune_two/TWO_COORDINATE_THEOREM.md",
+        "source_sha256": "528a3dcefb712b3c5ec1bac80d82ff994ab9c719a10171267f6d47de09268493",
+        "bytes": 6359
+      },
+      {
+        "path": "online-bin-packing/phase4/retune_two/retuned_certificate.json",
+        "source_sha256": "c8559b05ef4fd6373ad391504fc93d931651ea550ab61c998eb4f0ebe52868bd",
+        "bytes": 438990
+      },
+      {
+        "path": "online-bin-packing/phase4/retune_two/candidate.json",
+        "source_sha256": "fa53980ce05f3de927a2235c50875a6d53b0ac313f0e3c471f6d12dc07522ce2",
+        "bytes": 5947
+      },
+      {
+        "path": "online-bin-packing/phase4/retune_two/verify_independent.py",
+        "source_sha256": "351e53e91aec877f8ccc49a528d44ea9b5ba82f9a13bc89b67a5395fc8a59d30",
+        "bytes": 4406
+      },
+      {
+        "path": "online-bin-packing/phase4/retune_two/verify_active_face.py",
+        "source_sha256": "48f27ac4db1eea13a0267e1f77d9affc3f759ec755acb6dd04a1ce631b8880e8",
+        "bytes": 2315
+      },
+      {
+        "path": "online-bin-packing/phase4/retune_two/active_face_certificate.json",
+        "source_sha256": "b2b844447f803c95b15635b3a5f01990f3beadf81dc8e37bbae5f92d0b679d39",
+        "bytes": 979
+      },
+      {
+        "path": "online-bin-packing/phase4/ordered_suffix/ORDERED_SUFFIX_THEOREM.md",
+        "source_sha256": "5d07aa3f12c4699097c1ff20666dc8704fc4f9fffd8ca9f712e8d9a68b6c8e9d",
+        "bytes": 10425
+      },
+      {
+        "path": "online-bin-packing/phase4/ordered_suffix/ordered_suffix_certificate.json",
+        "source_sha256": "465170f48decd50fe3be2df0a2b59a62af85db1a2931942f1ed89878c56981f2",
+        "bytes": 424791
+      },
+      {
+        "path": "online-bin-packing/phase7/actual_floor/ACTUAL_ALGORITHM_FLOOR.md",
+        "source_sha256": "c89bb1a0427e6c0a3444197a3489f68780a8838a124c18ef98561f093f9b6d34",
+        "bytes": 10680
+      },
+      {
+        "path": "online-bin-packing/phase7/actual_floor/verify_actual_floor.py",
+        "source_sha256": "3308d51099e8cb35d6415ab47b621a2fc1bdebf6ffb44d5d539c43dd2c072fe2",
+        "bytes": 5333
+      },
+      {
+        "path": "online-bin-packing/phase7/actual_floor/actual_floor_certificate.json",
+        "source_sha256": "75eb8252024061302c16ce52a1f4faeefa4be626cb8875cc18e5c7a190b75dd6",
+        "bytes": 4543
+      },
+      {
+        "path": "advisor/phase3/check_packing_actual_floor_independent.py",
+        "source_sha256": "dcb34ad988693b5c021a409a2387ebad74f4f5617fc2c2af8a22637797446969",
+        "curated_sha256": "ef0320db0e3f5861489ffcf25dcbe9dd8d5dfc2f30d231579a9c611d7f4b3ae9",
+        "adaptation": "Portable paths/source-derived snapshot loader only; original primary-derived audit preserved"
+      },
+      {
+        "path": "advisor/phase3/check_packing_actual_floor_independent.json",
+        "source_sha256": "8a67a5d8ec8851c973a7005ffe2feed9c14ef56ca089358db8313d0384c857a0",
+        "curated_sha256": "8a67a5d8ec8851c973a7005ffe2feed9c14ef56ca089358db8313d0384c857a0",
+        "adaptation": null
+      },
+      {
+        "path": "advisor/phase3/packing_actual_algorithm_floor_audit.md",
+        "source_sha256": "5afd49e2ad85d13e2a3b36d24ad1a18b323dbda2b06a52fc270b12de5342553b",
+        "curated_sha256": "5afd49e2ad85d13e2a3b36d24ad1a18b323dbda2b06a52fc270b12de5342553b",
+        "adaptation": null
+      },
+      {
+        "path": "advisor/phase3/packing_best_fit_audit.md",
+        "source_sha256": "bfa125c8b6fd87b4c5a4ddd7d18f3585e6d9169ca3a121d621d63994fb30cc07",
+        "curated_sha256": "bfa125c8b6fd87b4c5a4ddd7d18f3585e6d9169ca3a121d621d63994fb30cc07",
+        "adaptation": null
+      },
+      {
+        "path": "advisor/phase3/packing_portability_audit.md",
+        "source_sha256": "e772a1a11c8aadf6600ac0247e085737ae87014011946fd9698612637a13b2c9",
+        "curated_sha256": "e772a1a11c8aadf6600ac0247e085737ae87014011946fd9698612637a13b2c9",
+        "adaptation": null
+      },
+      {
+        "path": "advisor/phase3/packing_ordered_suffix_audit.md",
+        "source_sha256": "0f074750437eda823e79cb4ec4bd5525321234d3d83f6f6d828749ef6d29fc67",
+        "curated_sha256": "0f074750437eda823e79cb4ec4bd5525321234d3d83f6f6d828749ef6d29fc67",
+        "adaptation": null
+      },
+      {
+        "path": "advisor/phase3/packing_retune_two_audit.md",
+        "source_sha256": "bc2fd33aa0eb6f2a8cfe89de854733592cbb9182116859bf713b5e8b095943d6",
+        "curated_sha256": "bc2fd33aa0eb6f2a8cfe89de854733592cbb9182116859bf713b5e8b095943d6",
+        "adaptation": null
+      },
+      {
+        "path": "advisor/phase3/packing_retune_two_audit.json",
+        "source_sha256": "e68e6b96bb78f5babd434fd587d163dc988989bd70a34ae2f0674a7d823acbcf",
+        "curated_sha256": "e68e6b96bb78f5babd434fd587d163dc988989bd70a34ae2f0674a7d823acbcf",
+        "adaptation": null
+      },
+      {
+        "path": "advisor/phase3/check_packing_retune_two.py",
+        "source_sha256": "b2c2d90340bbcb32c2e2d96f28369bb09994c8cd641b0a58dde6fdb96415873b",
+        "curated_sha256": "177bd3c6f92d28d339415acac8576187782b7a5680269799d02b72c7535493df",
+        "adaptation": "Portable paths/source-derived snapshot loader only; original primary-derived audit preserved"
+      }
+    ],
+    "original_handoff_sha256": "02ae6880294ffd5ff3b529efd552d7b2f091bafc497501ec0d17469fafac58d2",
+    "excluded": [
+      "phase5",
+      "phase6",
+      "phase7/type_roles",
+      "operational logs",
+      "raw article HTML"
+    ]
+  }
+}

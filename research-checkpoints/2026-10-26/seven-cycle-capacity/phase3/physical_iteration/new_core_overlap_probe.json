@@ -1,0 +1,301 @@
+{
+  "records": [
+    {
+      "main": "original",
+      "C1_pre_exchange": 27480,
+      "all_original_exchanges_valid": true,
+      "exchange_checks": [
+        {
+          "removed": [
+            3660,
+            6494
+          ],
+          "inserted": [
+            6110,
+            4092
+          ],
+          "neighbors": [
+            [
+              3660,
+              6494
+            ]
+          ],
+          "valid": true
+        },
+        {
+          "removed": [
+            16388,
+            6494
+          ],
+          "inserted": [
+            16046,
+            4092
+          ],
+          "neighbors": [
+            [
+              16388,
+              6494
+            ]
+          ],
+          "valid": true
+        },
+        {
+          "removed": [
+            6494,
+            3660
+          ],
+          "inserted": [
+            6494,
+            6110
+          ],
+          "neighbors": [
+            [
+              6494,
+              3660
+            ]
+          ],
+          "valid": true
+        },
+        {
+          "removed": [
+            15643,
+            3660
+          ],
+          "inserted": [
+            15643,
+            6110
+          ],
+          "neighbors": [
+            [
+              15643,
+              3660
+            ]
+          ],
+          "valid": true
+        },
+        {
+          "removed": [
+            3660,
+            15643
+          ],
+          "inserted": [
+            6110,
+            15685
+          ],
+          "neighbors": [
+            [
+              3660,
+              15643
+            ]
+          ],
+          "valid": true
+        },
+        {
+          "removed": [
+            16388,
+            15643
+          ],
+          "inserted": [
+            16046,
+            15685
+          ],
+          "neighbors": [
+            [
+              16388,
+              15643
+            ]
+          ],
+          "valid": true
+        },
+        {
+          "removed": [
+            6494,
+            16388
+          ],
+          "inserted": [
+            6494,
+            16046
+          ],
+          "neighbors": [
+            [
+              6494,
+              16388
+            ]
+          ],
+          "valid": true
+        },
+        {
+          "removed": [
+            15643,
+            16388
+          ],
+          "inserted": [
+            15643,
+            16046
+          ],
+          "neighbors": [
+            [
+              15643,
+              16388
+            ]
+          ],
+          "valid": true
+        }
+      ],
+      "C1_after_exchange": 27488
+    },
+    {
+      "main": "cycle_flip",
+      "C1_pre_exchange": 25344,
+      "all_original_exchanges_valid": true,
+      "exchange_checks": [
+        {
+          "removed": [
+            3660,
+            6494
+          ],
+          "inserted": [
+            6110,
+            4092
+          ],
+          "neighbors": [
+            [
+              3660,
+              6494
+            ]
+          ],
+          "valid": true
+        },
+        {
+          "removed": [
+            16388,
+            6494
+          ],
+          "inserted": [
+            16046,
+            4092
+          ],
+          "neighbors": [
+            [
+              16388,
+              6494
+            ]
+          ],
+          "valid": true
+        },
+        {
+          "removed": [
+            6494,
+            3660
+          ],
+          "inserted": [
+            6494,
+            6110
+          ],
+          "neighbors": [
+            [
+              6494,
+              3660
+            ]
+          ],
+          "valid": true
+        },
+        {
+          "removed": [
+            15643,
+            3660
+          ],
+          "inserted": [
+            15643,
+            6110
+          ],
+          "neighbors": [
+            [
+              15643,
+              3660
+            ]
+          ],
+          "valid": true
+        },
+        {
+          "removed": [
+            3660,
+            15643
+          ],
+          "inserted": [
+            6110,
+            15685
+          ],
+          "neighbors": [
+            [
+              3660,
+              15643
+            ]
+          ],
+          "valid": true
+        },
+        {
+          "removed": [
+            16388,
+            15643
+          ],
+          "inserted": [
+            16046,
+            15685
+          ],
+          "neighbors": [
+            [
+              16388,
+              15643
+            ]
+          ],
+          "valid": true
+        },
+        {
+          "removed": [
+            6494,
+            16388
+          ],
+          "inserted": [
+            6494,
+            16046
+          ],
+          "neighbors": [
+            [
+              6494,
+              16388
+            ]
+          ],
+          "valid": true
+        },
+        {
+          "removed": [
+            15643,
+            16388
+          ],
+          "inserted": [
+            15643,
+            16046
+          ],
+          "neighbors": [
+            [
+              15643,
+              16388
+            ]
+          ],
+          "valid": true
+        }
+      ],
+      "C1_after_exchange": 25352
+    }
+  ],
+  "seconds": 1.887813183999242,
+  "maxRSS_KiB": 155324,
+  "scope": "C1 only; no C2-C4 or q15 certificate reused",
+  "interpretation_correction": "Smaller q is not beneficial: published HetGao neutral count is o=J0.o0*oR+JH.q*hR+JV.q*vR. The earlier verbal interpretation was reversed and is superseded.",
+  "full_replay_result": {
+    "rate": "3.25882526526239299780486462617970298999132893693143",
+    "improved_bound": false,
+    "counts_file": "cycle_flip_recomputed_result.json"
+  }
+}

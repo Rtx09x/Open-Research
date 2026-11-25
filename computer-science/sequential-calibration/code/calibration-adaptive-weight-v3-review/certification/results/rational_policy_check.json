@@ -1,0 +1,20 @@
+{
+  "all_checks_passed": true,
+  "closed_cells_checked": 4988,
+  "exact_boundary_midpoint_lookups_checked": 14964,
+  "backend": "standard-library dyadic rational intervals; exact integer nth roots",
+  "precision_bits": 80,
+  "minimum_certified_margin_exact_lower": {
+    "persistent_minus": "1329825/604462909807314587353088",
+    "persistent_plus": "69424978536335265/1208925819614629174706176",
+    "total_plus": "2631244090332145409/604462909807314587353088",
+    "q_upper": "7718523122032060661/1208925819614629174706176"
+  },
+  "policy_sha256": "34c50a47fc2fd67ef398977186af8d4f41c60628140150d4c229934f12085cc8",
+  "source_certificate_sha256": "77b562eb5a30a53c5bdfeab47ca58838348255d0efa36d072a74b7f1e0ded396",
+  "rational_power_endpoint_calls": 29932,
+  "wall_seconds": 52.72918930400192,
+  "maxrss_kib": 17520,
+  "script_sha256": "b58a67d147cd1b7e634d7e9c8643bf20f165a3a95179cda2328835c0ad8ef867",
+  "scope": "Each selected rational q satisfies all required inequalities on its whole closed cell. Coverage and exact first-containing-row lookup are sound; no efficient-forecaster complexity claim."
+}

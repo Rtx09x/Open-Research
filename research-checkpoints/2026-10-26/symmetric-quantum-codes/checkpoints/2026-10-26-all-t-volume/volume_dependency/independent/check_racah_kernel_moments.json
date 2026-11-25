@@ -1,0 +1,12 @@
+{
+  "passed": true,
+  "rows": 414,
+  "n_range": [
+    1,
+    14
+  ],
+  "a_r_up_to": 5,
+  "method": "independent SymPy exact6j squared, both spin parities",
+  "scope": "finite normalization/drift controls supplement CP-channel and6j recoupling proof",
+  "seconds": 0.9046108449983876
+}

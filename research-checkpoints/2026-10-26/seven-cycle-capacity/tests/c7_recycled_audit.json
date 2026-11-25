@@ -1,0 +1,13 @@
+{
+  "exact": true,
+  "base_family_axioms": true,
+  "base_main_aux_provenance": true,
+  "S2a_admissibility": true,
+  "recurrences_replayed": 8,
+  "dimension": 128000,
+  "M_sha256": "fb0dabd8e8a4f4887be97c8d476d2774c78190b130b2727ac3be62dbc06613d2",
+  "strictly_exceeds_published_bound": true,
+  "certified_lower_bound": "3.258832624209610237867099424184",
+  "seconds": 4.997535943984985,
+  "scope": "exact finite code using independently established published125-dimensional inputs; literature novelty unconfirmed"
+}

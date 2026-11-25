@@ -1,0 +1,17 @@
+{
+  "status": "PASS",
+  "exact": true,
+  "source_parameters_independently_parsed": true,
+  "all_modified_parameters_matched": true,
+  "all_analysis_weights_match_primary_paper": true,
+  "complete_partition_intervals": 402,
+  "large_validity_inequalities": 492,
+  "strict_knapsack_cases": 804,
+  "independent_pricing_nodes": 22779,
+  "fractional_prunes": 7010,
+  "bound": "1848920194883516152323541607/1171513518439186595284254720",
+  "bound_decimal": 1.5782320611603713,
+  "gain_over_published_exact_bound": "52970480514705773020251207803/921315719333166392502587007959040",
+  "seconds": 1.697953701019287,
+  "scope": "new admissible parameter choice of existing AH framework; no reliance on printed old scenario upper bounds; novelty not established"
+}

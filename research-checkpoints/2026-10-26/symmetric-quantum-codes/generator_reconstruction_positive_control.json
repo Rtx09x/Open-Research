@@ -1,0 +1,6 @@
+{
+  "code_first_two_coordinate_error": 2.4361809033238127e-16,
+  "max_degree_one_closure_error": 2.6645352591003757e-15,
+  "max_low_shell_boundary_error": 5.570261576140558e-15,
+  "unitarity_error": 1.6128725904880626e-15
+}

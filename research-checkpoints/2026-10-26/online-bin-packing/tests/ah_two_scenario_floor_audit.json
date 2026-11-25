@@ -1,0 +1,17 @@
+{
+  "status": "PASS",
+  "exact": true,
+  "same_physical_pattern": [
+    1,
+    165,
+    172
+  ],
+  "strict_infimum_feasibility": true,
+  "two_affine_lines_independently_derived": true,
+  "positive_dual": [
+    "40073570314217/61943480870889",
+    "21869910556672/61943480870889"
+  ],
+  "intersection": "1848920194883516152323541607/1171513518439186595284254720",
+  "scope": "floor for fixed published weight-function analysis with classes167,172,179 transfers only; not an algorithm lower bound or global AH optimum"
+}

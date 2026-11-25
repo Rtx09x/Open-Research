@@ -1,0 +1,10 @@
+{
+  "status": "EXACT_FRACTION_PASS",
+  "N": 8,
+  "L": 2,
+  "width": 3,
+  "complete_ad_columns": 8,
+  "original_sample_inverse_column_equals_pure_anchor": true,
+  "whole_physical_sector_equals_first_source_plus_correlated_anchor": true,
+  "scope": "Finite identity controls; no independence between anchor amplitude and inverse column assumed"
+}

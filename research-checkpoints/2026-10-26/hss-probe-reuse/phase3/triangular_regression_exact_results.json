@@ -1,0 +1,12 @@
+{
+  "status": "PASS",
+  "arithmetic": "Fraction only",
+  "N": 8,
+  "k": 1,
+  "L": 2,
+  "width": 3,
+  "coefficient_dimension": 22,
+  "strict_ancestor": true,
+  "K_cubed_zero": true,
+  "original_sample_solve_equals_LM": true
+}

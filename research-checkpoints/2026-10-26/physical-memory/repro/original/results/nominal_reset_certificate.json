@@ -1,0 +1,471 @@
+[
+  {
+    "model": "six_hysteron_uniform_pairwise_decimal",
+    "reset_field": -40,
+    "ordinary_pulses_after_purge": 6,
+    "all_baseline_stable_states": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      8,
+      9,
+      12,
+      16,
+      17,
+      18,
+      20,
+      24,
+      32,
+      33,
+      34,
+      36,
+      40,
+      48
+    ],
+    "target_mask": 3,
+    "trace_from_zero": [
+      {
+        "from": 0,
+        "peak": 53,
+        "to": 48,
+        "up_events": [
+          {
+            "from_mask": 0,
+            "to_mask": 1,
+            "hysteron": 1,
+            "field": "7501/100",
+            "direction": "up"
+          },
+          {
+            "from_mask": 1,
+            "to_mask": 5,
+            "hysteron": 3,
+            "field": "8503/100",
+            "direction": "up"
+          },
+          {
+            "from_mask": 5,
+            "to_mask": 37,
+            "hysteron": 6,
+            "field": "5103/50",
+            "direction": "up"
+          },
+          {
+            "from_mask": 37,
+            "to_mask": 53,
+            "hysteron": 5,
+            "field": "2101/20",
+            "direction": "up"
+          }
+        ],
+        "down_events": [
+          {
+            "from_mask": 53,
+            "to_mask": 52,
+            "hysteron": 1,
+            "field": "2901/100",
+            "direction": "down"
+          },
+          {
+            "from_mask": 52,
+            "to_mask": 48,
+            "hysteron": 3,
+            "field": "803/100",
+            "direction": "down"
+          }
+        ]
+      },
+      {
+        "from": 48,
+        "peak": 56,
+        "to": 24,
+        "up_events": [
+          {
+            "from_mask": 48,
+            "to_mask": 56,
+            "hysteron": 4,
+            "field": "2551/25",
+            "direction": "up"
+          }
+        ],
+        "down_events": [
+          {
+            "from_mask": 56,
+            "to_mask": 24,
+            "hysteron": 6,
+            "field": "253/50",
+            "direction": "down"
+          }
+        ]
+      },
+      {
+        "from": 24,
+        "peak": 25,
+        "to": 17,
+        "up_events": [
+          {
+            "from_mask": 24,
+            "to_mask": 25,
+            "hysteron": 1,
+            "field": "9001/100",
+            "direction": "up"
+          }
+        ],
+        "down_events": [
+          {
+            "from_mask": 25,
+            "to_mask": 17,
+            "hysteron": 4,
+            "field": "301/25",
+            "direction": "down"
+          }
+        ]
+      },
+      {
+        "from": 17,
+        "peak": 21,
+        "to": 20,
+        "up_events": [
+          {
+            "from_mask": 17,
+            "to_mask": 21,
+            "hysteron": 3,
+            "field": "10203/100",
+            "direction": "up"
+          }
+        ],
+        "down_events": [
+          {
+            "from_mask": 21,
+            "to_mask": 20,
+            "hysteron": 1,
+            "field": "501/100",
+            "direction": "down"
+          }
+        ]
+      },
+      {
+        "from": 20,
+        "peak": 22,
+        "to": 18,
+        "up_events": [
+          {
+            "from_mask": 20,
+            "to_mask": 22,
+            "hysteron": 2,
+            "field": "4601/50",
+            "direction": "up"
+          }
+        ],
+        "down_events": [
+          {
+            "from_mask": 22,
+            "to_mask": 18,
+            "hysteron": 3,
+            "field": "503/100",
+            "direction": "down"
+          }
+        ]
+      },
+      {
+        "from": 18,
+        "peak": 19,
+        "to": 3,
+        "up_events": [
+          {
+            "from_mask": 18,
+            "to_mask": 19,
+            "hysteron": 1,
+            "field": "10201/100",
+            "direction": "up"
+          }
+        ],
+        "down_events": [
+          {
+            "from_mask": 19,
+            "to_mask": 3,
+            "hysteron": 5,
+            "field": "161/20",
+            "direction": "down"
+          }
+        ]
+      }
+    ],
+    "limitation": "Nominal exact global reset only. Switching budget and stated operational perturbation bound do not cover reset."
+  },
+  {
+    "model": "five_hysteron_three_body_decimal",
+    "reset_field": -3,
+    "ordinary_pulses_after_purge": 10,
+    "all_baseline_stable_states": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      8,
+      9,
+      10,
+      12,
+      16,
+      17,
+      18,
+      20,
+      24
+    ],
+    "target_mask": 3,
+    "trace_from_zero": [
+      {
+        "from": 0,
+        "peak": 7,
+        "to": 6,
+        "up_events": [
+          {
+            "from_mask": 0,
+            "to_mask": 1,
+            "hysteron": 1,
+            "field": "1201/100",
+            "direction": "up"
+          },
+          {
+            "from_mask": 1,
+            "to_mask": 3,
+            "hysteron": 2,
+            "field": "601/50",
+            "direction": "up"
+          },
+          {
+            "from_mask": 3,
+            "to_mask": 7,
+            "hysteron": 3,
+            "field": "1203/100",
+            "direction": "up"
+          }
+        ],
+        "down_events": [
+          {
+            "from_mask": 7,
+            "to_mask": 6,
+            "hysteron": 1,
+            "field": "201/100",
+            "direction": "down"
+          }
+        ]
+      },
+      {
+        "from": 6,
+        "peak": 14,
+        "to": 12,
+        "up_events": [
+          {
+            "from_mask": 6,
+            "to_mask": 14,
+            "hysteron": 4,
+            "field": "301/25",
+            "direction": "up"
+          }
+        ],
+        "down_events": [
+          {
+            "from_mask": 14,
+            "to_mask": 12,
+            "hysteron": 2,
+            "field": "101/50",
+            "direction": "down"
+          }
+        ]
+      },
+      {
+        "from": 12,
+        "peak": 13,
+        "to": 5,
+        "up_events": [
+          {
+            "from_mask": 12,
+            "to_mask": 13,
+            "hysteron": 1,
+            "field": "1201/100",
+            "direction": "up"
+          }
+        ],
+        "down_events": [
+          {
+            "from_mask": 13,
+            "to_mask": 5,
+            "hysteron": 4,
+            "field": "51/25",
+            "direction": "down"
+          }
+        ]
+      },
+      {
+        "from": 5,
+        "peak": 21,
+        "to": 17,
+        "up_events": [
+          {
+            "from_mask": 5,
+            "to_mask": 21,
+            "hysteron": 5,
+            "field": "241/20",
+            "direction": "up"
+          }
+        ],
+        "down_events": [
+          {
+            "from_mask": 21,
+            "to_mask": 17,
+            "hysteron": 3,
+            "field": "203/100",
+            "direction": "down"
+          }
+        ]
+      },
+      {
+        "from": 17,
+        "peak": 25,
+        "to": 9,
+        "up_events": [
+          {
+            "from_mask": 17,
+            "to_mask": 25,
+            "hysteron": 4,
+            "field": "301/25",
+            "direction": "up"
+          }
+        ],
+        "down_events": [
+          {
+            "from_mask": 25,
+            "to_mask": 9,
+            "hysteron": 5,
+            "field": "41/20",
+            "direction": "down"
+          }
+        ]
+      },
+      {
+        "from": 9,
+        "peak": 11,
+        "to": 10,
+        "up_events": [
+          {
+            "from_mask": 9,
+            "to_mask": 11,
+            "hysteron": 2,
+            "field": "601/50",
+            "direction": "up"
+          }
+        ],
+        "down_events": [
+          {
+            "from_mask": 11,
+            "to_mask": 10,
+            "hysteron": 1,
+            "field": "201/100",
+            "direction": "down"
+          }
+        ]
+      },
+      {
+        "from": 10,
+        "peak": 26,
+        "to": 24,
+        "up_events": [
+          {
+            "from_mask": 10,
+            "to_mask": 26,
+            "hysteron": 5,
+            "field": "241/20",
+            "direction": "up"
+          }
+        ],
+        "down_events": [
+          {
+            "from_mask": 26,
+            "to_mask": 24,
+            "hysteron": 2,
+            "field": "101/50",
+            "direction": "down"
+          }
+        ]
+      },
+      {
+        "from": 24,
+        "peak": 28,
+        "to": 20,
+        "up_events": [
+          {
+            "from_mask": 24,
+            "to_mask": 28,
+            "hysteron": 3,
+            "field": "1203/100",
+            "direction": "up"
+          }
+        ],
+        "down_events": [
+          {
+            "from_mask": 28,
+            "to_mask": 20,
+            "hysteron": 4,
+            "field": "51/25",
+            "direction": "down"
+          }
+        ]
+      },
+      {
+        "from": 20,
+        "peak": 22,
+        "to": 18,
+        "up_events": [
+          {
+            "from_mask": 20,
+            "to_mask": 22,
+            "hysteron": 2,
+            "field": "601/50",
+            "direction": "up"
+          }
+        ],
+        "down_events": [
+          {
+            "from_mask": 22,
+            "to_mask": 18,
+            "hysteron": 3,
+            "field": "203/100",
+            "direction": "down"
+          }
+        ]
+      },
+      {
+        "from": 18,
+        "peak": 19,
+        "to": 3,
+        "up_events": [
+          {
+            "from_mask": 18,
+            "to_mask": 19,
+            "hysteron": 1,
+            "field": "1201/100",
+            "direction": "up"
+          }
+        ],
+        "down_events": [
+          {
+            "from_mask": 19,
+            "to_mask": 3,
+            "hysteron": 5,
+            "field": "41/20",
+            "direction": "down"
+          }
+        ]
+      }
+    ],
+    "limitation": "Nominal exact global reset only. Switching budget and stated operational perturbation bound do not cover reset."
+  }
+]

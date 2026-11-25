@@ -1,0 +1,13 @@
+{
+  "n": 18,
+  "exact": true,
+  "method": "unnormalized spin-ladder tensor operators, commutators and HS norms; no 6j/Racah formula",
+  "c": [
+    "9/19",
+    "91/285",
+    "288199/1187025",
+    "33176/237405",
+    "10120/142443"
+  ],
+  "matches_worker": true
+}

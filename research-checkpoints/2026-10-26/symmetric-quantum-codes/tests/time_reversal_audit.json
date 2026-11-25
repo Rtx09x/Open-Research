@@ -1,0 +1,8 @@
+{
+  "exact": true,
+  "method": "stdlib Fraction terminating hypergeometric transform",
+  "scope": "time-reversal-invariant code projector only; NOT real-Dicke amplitudes",
+  "necessary_weighted_odd_moment_lower_bound": "1",
+  "odd_moment_sum_lower_bound": "1311/1996",
+  "time_reversal_overlap_upper_bound": "860/499"
+}

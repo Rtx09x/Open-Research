@@ -1,0 +1,19 @@
+{
+  "PASS": true,
+  "source_sha256": "2395d9ce16e068010a5f2a57f3fbfec5a607fa9272b02afd6c9e4a95fc70016b",
+  "certificate_sha256": "1560f166ec9f804319b1713c7f686b23d17d8fb91f5630db9abb96c6c079c4a3",
+  "alphabet_size": 273778,
+  "clique_count": 135033,
+  "clique_size_histogram": {
+    "1": 1304,
+    "2": 128713,
+    "3": 5016
+  },
+  "independent_lower": 134753,
+  "restricted_macro_capacity_upper": 135033,
+  "normalized_rate_upper_strict": "3.258698",
+  "target135093_excluded": true,
+  "seconds": 3.917899567997665,
+  "maxRSS_KiB": 117500,
+  "scope": "Only the simultaneous alphabet I0^2 union Z union T(Z); no global C7 upper bound and no new lower bound."
+}

@@ -1,0 +1,31 @@
+{
+  "purpose": "Primary seven-cycle research deliverables; exploratory scripts/logs remain alongside these files.",
+  "files": {
+    "README.md": "d088c5a0a4e66a485d9159d001a069c3ef98410cc153704958676e62c2e192af",
+    "result_proof.md": "ed24b4444698fadde0f29c644532be4514b9f4bb8bb07bb006015a597ea70ccb",
+    "literature.md": "197879d783798e9230d915f244d64f99e619027631106de5608115b5433e628c",
+    "research_log.md": "18515b506e4ac504988bd1c8760969ab161be3a0bbaa59804dd003fb013ac2ca",
+    "source_provenance.json": "bc4b52ce40ccf5ffd37e883e7bae57ecdb990ee6fb236f43d20a4a2def9ec9d9",
+    "recycled_quaternary_rule.json": "df1071ff02891cb93124edb46deff96bcd4413e376b5af7a302f5e404c8e2438",
+    "terminal_recycled_base.json": "b0ae2dd8aebd6c4b5d4da828462ed8542624097a436f0a5cc0729b93e880b751",
+    "recycled_terminal_certificate.json": "1ce5b83eb0ef9af2cdd64a6a6fc0b7c77944a61a46577ce96bdbbc91e64a4905",
+    "optimized_recycle_certificate.json": "b881a676f4e8eda4fa66add95e488d01008a4b7b17a9aad945e23daa9746b883",
+    "weighted_terminal_improvement.json": "60f9b23d6813c3555cc454a73b87dec837497154124c0e3a9363e1c6d3a94515",
+    "weighted_terminal_independent_verification.json": "23f306afbea16c799529aaa285180acf4e44fb285322142b089d963d0acd5b73",
+    "verification_recycled_terminal_certificate.json": "51f423d341d191e560d3d758912c021f4e63e70c21a5b90d01466dcdc7007943",
+    "verification_optimized_recycle_certificate.json": "0a70112eb9538aa69f8dcf3f3e979a6e7e0d9bdcb3bf81099c51094aefeabe66",
+    "verify_recycled_certificate.py": "07e4128102d09c58441ed781b22162c71091262e5343bd69a30bcb9ee2a91ca7",
+    "verify_weighted_terminal_independent.py": "e09aaef9d497b305c4e00a11f41397829f3892c30456b0149cb27565b146a758",
+    "verify_base.py": "4116b149e3b52becb952848ae55e56ce2a7b74f3ddfd82caa6f46204ca233041",
+    "replay_wrapper.py": "aab8e630d128579091ce872ecc84edf1067ef2d35a260be86315ef3b8cb636b1",
+    "base_verification.json": "3f9e085ff8313f8a6732ebde01ecba20dccb8252018462ab236560c1f778e209",
+    "certificate_replay.txt": "ddeeb1d70c1703abae312d04d3cf4b77e028c1236b4ba76c5753d6097471beb1",
+    "certificate_resources.json": "2f88c52bfd0777d342a04d26203e1cad7900f6f00bf521d751c275b3b49c08a4",
+    "recycle_terminal.py": "d0a419eaf1868e93f676df0cb637adda69c1397389b5ca2a125ac57f53c605ae",
+    "certify_optimized_tree.py": "ad090bfe4f2279504445ae25bc0020305ecc7355a173f85065067ecfe6bf7b2d",
+    "binary_dp_screen.py": "81c3b27a3c575913b31f0ef71f2e0facb6b7faaa9da99aff5eaec9250cbbd5ad",
+    "terminal_multi_pairs.py": "adad7f952e7e20d29ea5da52d63c85c1f1fe246af71ab8950849b60eda523b31",
+    "terminal_weighted_gadget.py": "f5376ac2b60cd5d39cfd55e806ee2378eb904a38a889524a229e6a256007931d",
+    "pro_brief.md": "a37e99afe17162cf179d6a7b8c7217e4853fe85674526585a1a6b98399d3618c"
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "README.md": "28572dad0fe28c89fb2ddbf21542de709b56cc72f6ad1655f9098d545ae5f32f",
+  "advisor/check_c7_attachment_hall_independent.json": "5702e131d5fa35ad3490318e196aa371a66b06c8cf3c8bd93c12f9790de16993",
+  "advisor/check_c7_attachment_hall_independent.py": "d8e36420889b83f2170699462cd44c88f54aa33fe1348df2c3983080153e5215",
+  "advisor/check_c7_hall_seed_independent.json": "faa0d6eb6ddbc38bd622e34a67c7013da509185f206947b5c3e2cca1e16628a3",
+  "advisor/check_c7_hall_seed_independent.py": "9568e4ecc75d74d14a1644575036ce62c455e2bb9ffce0c59fd433cad1365de2",
+  "advisor/check_c7_multireservoir_independent.py": "f19e4227f841b74dae4ddc1117661da44e38aeb43872e220bae36e891b001bd2",
+  "advisor/originals/check_c7_multireservoir_independent.py": "dc8d1977d60452e0e92d9016c42238319756e5e3108139876a817680033c2967",
+  "physical_iteration/diagnose_multireservoir_hall.py": "71bc49b99a3c5306e1870879721eaf4f608c4bb2ff2b47615027f9a973a3d120",
+  "physical_iteration/hall_shadow_seed_audit.json": "cfc220e2f3562f22e130d6ecb9ca704d4ea0298be0744c8d1f1b1ed73094b953",
+  "physical_iteration/hall_shadow_seed_control.json.gz": "1e6c0136787701aa8ac1fc5b73e8ad932a6be814c5549aaadfa00913b72a28c1",
+  "physical_iteration/multireservoir_hall_diagnosis.json.gz": "3fbd8a228a1830b23a1097c7976e7ababd6f668f16df8d84cd142fe522253ec8",
+  "physical_iteration/multireservoir_repaired_cover_full.json.gz": "1560f166ec9f804319b1713c7f686b23d17d8fb91f5630db9abb96c6c079c4a3",
+  "physical_iteration/multireservoir_structural_diagnosis.md": "b5135f1e18ffc6e2ff6b758be7ed12f8ee1f505bf6ca81ef3925ff48d83be55c",
+  "physical_iteration/physical_graph.py": "f8b1b415545730c6db038d9abbcc6e10f281ab90ce6f4a453664a75313164b53",
+  "physical_iteration/reservoir_escape_control_stdlib.json.gz": "fd1b49b7ff07f95070a4aeb6b2c58e11afff3f2bed1014143b28d5bb14282142",
+  "physical_iteration/reservoir_escape_gate.py": "13f50e2d31d639412d88404b487ccebe00d64cbed97b8046a9ff07fd912e8c9b",
+  "physical_iteration/test_hall_shadow_seed.py": "1f67094299408794e506fb2dfe8654d24ab8192feee8a4e3643f5a465db60faf",
+  "physical_iteration/verify_hall_shadow_seed.py": "e991127302777442d779583b736b9d406368244215685242222d93280dbc90a5",
+  "published/LICENSE": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4",
+  "published/NOTICE": "359e841fec992d2e6df7c44e4e700f94fd1241673a1e10efe15b6dd1787e3a7d",
+  "published/data/base_c7.json": "2395d9ce16e068010a5f2a57f3fbfec5a607fa9272b02afd6c9e4a95fc70016b"
+}

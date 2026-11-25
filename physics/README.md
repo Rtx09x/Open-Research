@@ -5,3 +5,8 @@ Fundamental and theoretical physics, quantum information and related physical ph
 No research projects have been added yet.
 
 Propose new research through the [contribution guidelines](../CONTRIBUTING.md). Cross-disciplinary projects may be linked here while retaining one primary home.
+
+## Founding projects
+
+- [Symmetric quantum error correction](symmetric-quantum-error-correction/)
+- [Quantum channel capacity](quantum-channel-capacity/)

@@ -1,0 +1,18 @@
+{
+  "PASS": true,
+  "certificate_sha256": "1560f166ec9f804319b1713c7f686b23d17d8fb91f5630db9abb96c6c079c4a3",
+  "base_sha256": "2395d9ce16e068010a5f2a57f3fbfec5a607fa9272b02afd6c9e4a95fc70016b",
+  "alphabet": 273778,
+  "reservoir_outside": 133729,
+  "core_outside": 5296,
+  "core_attached": 5016,
+  "core_singletons": 280,
+  "triple_cliques": 5016,
+  "partition_size": 135033,
+  "known_independent_lower": 134753,
+  "all_macro_lengths_capacity_upper": 135033,
+  "target_3_258841_excluded": true,
+  "scope": "Only alphabet I0^2 union Z union T(Z); no global capacity bound, no new lower bound, exactalpha not determined",
+  "seconds": 1.0762125520013797,
+  "maxRSS_KiB": 107688
+}

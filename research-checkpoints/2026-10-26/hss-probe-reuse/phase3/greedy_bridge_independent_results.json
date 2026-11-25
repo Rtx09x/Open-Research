@@ -1,0 +1,1172 @@
+{
+  "status": "PASS",
+  "arithmetic": "Fraction sparse exact covariance selection",
+  "external_claim_independently_implemented": true,
+  "results": [
+    {
+      "L": 3,
+      "N": 16,
+      "optimum_squared": "9/4",
+      "level_losses": [
+        "1",
+        "1",
+        "1"
+      ],
+      "greedy_error_squared": "3",
+      "weighted_ledger": "129",
+      "ratio_weighted_over_L_optimum": "172/9",
+      "decisions": [
+        {
+          "level": 1,
+          "row_competitions": [
+            [
+              0,
+              "9/4",
+              "1",
+              0
+            ]
+          ],
+          "column_competitions": []
+        },
+        {
+          "level": 2,
+          "row_competitions": [
+            [
+              0,
+              "9/4",
+              "1",
+              0
+            ]
+          ],
+          "column_competitions": []
+        },
+        {
+          "level": 3,
+          "row_competitions": [
+            [
+              0,
+              "9/4",
+              "1",
+              0
+            ]
+          ],
+          "column_competitions": [
+            [
+              1,
+              "1",
+              "9/4",
+              1
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "L": 4,
+      "N": 32,
+      "optimum_squared": "9/4",
+      "level_losses": [
+        "1",
+        "1",
+        "1",
+        "1"
+      ],
+      "greedy_error_squared": "4",
+      "weighted_ledger": "212",
+      "ratio_weighted_over_L_optimum": "212/9",
+      "decisions": [
+        {
+          "level": 1,
+          "row_competitions": [
+            [
+              0,
+              "9/4",
+              "1",
+              0
+            ]
+          ],
+          "column_competitions": []
+        },
+        {
+          "level": 2,
+          "row_competitions": [
+            [
+              0,
+              "9/4",
+              "1",
+              0
+            ]
+          ],
+          "column_competitions": []
+        },
+        {
+          "level": 3,
+          "row_competitions": [
+            [
+              0,
+              "9/4",
+              "1",
+              0
+            ]
+          ],
+          "column_competitions": []
+        },
+        {
+          "level": 4,
+          "row_competitions": [
+            [
+              0,
+              "9/4",
+              "1",
+              0
+            ]
+          ],
+          "column_competitions": [
+            [
+              1,
+              "1",
+              "9/4",
+              1
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "L": 5,
+      "N": 64,
+      "optimum_squared": "9/4",
+      "level_losses": [
+        "1",
+        "1",
+        "1",
+        "1",
+        "1"
+      ],
+      "greedy_error_squared": "5",
+      "weighted_ledger": "315",
+      "ratio_weighted_over_L_optimum": "28",
+      "decisions": [
+        {
+          "level": 1,
+          "row_competitions": [
+            [
+              0,
+              "9/4",
+              "1",
+              0
+            ]
+          ],
+          "column_competitions": []
+        },
+        {
+          "level": 2,
+          "row_competitions": [
+            [
+              0,
+              "9/4",
+              "1",
+              0
+            ]
+          ],
+          "column_competitions": []
+        },
+        {
+          "level": 3,
+          "row_competitions": [
+            [
+              0,
+              "9/4",
+              "1",
+              0
+            ]
+          ],
+          "column_competitions": []
+        },
+        {
+          "level": 4,
+          "row_competitions": [
+            [
+              0,
+              "9/4",
+              "1",
+              0
+            ]
+          ],
+          "column_competitions": []
+        },
+        {
+          "level": 5,
+          "row_competitions": [
+            [
+              0,
+              "9/4",
+              "1",
+              0
+            ]
+          ],
+          "column_competitions": [
+            [
+              1,
+              "1",
+              "9/4",
+              1
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "L": 6,
+      "N": 128,
+      "optimum_squared": "9/4",
+      "level_losses": [
+        "1",
+        "1",
+        "1",
+        "1",
+        "1",
+        "1"
+      ],
+      "greedy_error_squared": "6",
+      "weighted_ledger": "438",
+      "ratio_weighted_over_L_optimum": "292/9",
+      "decisions": [
+        {
+          "level": 1,
+          "row_competitions": [
+            [
+              0,
+              "9/4",
+              "1",
+              0
+            ]
+          ],
+          "column_competitions": []
+        },
+        {
+          "level": 2,
+          "row_competitions": [
+            [
+              0,
+              "9/4",
+              "1",
+              0
+            ]
+          ],
+          "column_competitions": []
+        },
+        {
+          "level": 3,
+          "row_competitions": [
+            [
+              0,
+              "9/4",
+              "1",
+              0
+            ]
+          ],
+          "column_competitions": []
+        },
+        {
+          "level": 4,
+          "row_competitions": [
+            [
+              0,
+              "9/4",
+              "1",
+              0
+            ]
+          ],
+          "column_competitions": []
+        },
+        {
+          "level": 5,
+          "row_competitions": [
+            [
+              0,
+              "9/4",
+              "1",
+              0
+            ]
+          ],
+          "column_competitions": []
+        },
+        {
+          "level": 6,
+          "row_competitions": [
+            [
+              0,
+              "9/4",
+              "1",
+              0
+            ]
+          ],
+          "column_competitions": [
+            [
+              1,
+              "1",
+              "9/4",
+              1
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "L": 7,
+      "N": 256,
+      "optimum_squared": "9/4",
+      "level_losses": [
+        "1",
+        "1",
+        "1",
+        "1",
+        "1",
+        "1",
+        "1"
+      ],
+      "greedy_error_squared": "7",
+      "weighted_ledger": "581",
+      "ratio_weighted_over_L_optimum": "332/9",
+      "decisions": [
+        {
+          "level": 1,
+          "row_competitions": [
+            [
+              0,
+              "9/4",
+              "1",
+              0
+            ]
+          ],
+          "column_competitions": []
+        },
+        {
+          "level": 2,
+          "row_competitions": [
+            [
+              0,
+              "9/4",
+              "1",
+              0
+            ]
+          ],
+          "column_competitions": []
+        },
+        {
+          "level": 3,
+          "row_competitions": [
+            [
+              0,
+              "9/4",
+              "1",
+              0
+            ]
+          ],
+          "column_competitions": []
+        },
+        {
+          "level": 4,
+          "row_competitions": [
+            [
+              0,
+              "9/4",
+              "1",
+              0
+            ]
+          ],
+          "column_competitions": []
+        },
+        {
+          "level": 5,
+          "row_competitions": [
+            [
+              0,
+              "9/4",
+              "1",
+              0
+            ]
+          ],
+          "column_competitions": []
+        },
+        {
+          "level": 6,
+          "row_competitions": [
+            [
+              0,
+              "9/4",
+              "1",
+              0
+            ]
+          ],
+          "column_competitions": []
+        },
+        {
+          "level": 7,
+          "row_competitions": [
+            [
+              0,
+              "9/4",
+              "1",
+              0
+            ]
+          ],
+          "column_competitions": [
+            [
+              1,
+              "1",
+              "9/4",
+              1
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "L": 8,
+      "N": 512,
+      "optimum_squared": "9/4",
+      "level_losses": [
+        "1",
+        "1",
+        "1",
+        "1",
+        "1",
+        "1",
+        "1",
+        "1"
+      ],
+      "greedy_error_squared": "8",
+      "weighted_ledger": "744",
+      "ratio_weighted_over_L_optimum": "124/3",
+      "decisions": [
+        {
+          "level": 1,
+          "row_competitions": [
+            [
+              0,
+              "9/4",
+              "1",
+              0
+            ]
+          ],
+          "column_competitions": []
+        },
+        {
+          "level": 2,
+          "row_competitions": [
+            [
+              0,
+              "9/4",
+              "1",
+              0
+            ]
+          ],
+          "column_competitions": []
+        },
+        {
+          "level": 3,
+          "row_competitions": [
+            [
+              0,
+              "9/4",
+              "1",
+              0
+            ]
+          ],
+          "column_competitions": []
+        },
+        {
+          "level": 4,
+          "row_competitions": [
+            [
+              0,
+              "9/4",
+              "1",
+              0
+            ]
+          ],
+          "column_competitions": []
+        },
+        {
+          "level": 5,
+          "row_competitions": [
+            [
+              0,
+              "9/4",
+              "1",
+              0
+            ]
+          ],
+          "column_competitions": []
+        },
+        {
+          "level": 6,
+          "row_competitions": [
+            [
+              0,
+              "9/4",
+              "1",
+              0
+            ]
+          ],
+          "column_competitions": []
+        },
+        {
+          "level": 7,
+          "row_competitions": [
+            [
+              0,
+              "9/4",
+              "1",
+              0
+            ]
+          ],
+          "column_competitions": []
+        },
+        {
+          "level": 8,
+          "row_competitions": [
+            [
+              0,
+              "9/4",
+              "1",
+              0
+            ]
+          ],
+          "column_competitions": [
+            [
+              1,
+              "1",
+              "9/4",
+              1
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "L": 9,
+      "N": 1024,
+      "optimum_squared": "9/4",
+      "level_losses": [
+        "1",
+        "1",
+        "1",
+        "1",
+        "1",
+        "1",
+        "1",
+        "1",
+        "1"
+      ],
+      "greedy_error_squared": "9",
+      "weighted_ledger": "927",
+      "ratio_weighted_over_L_optimum": "412/9",
+      "decisions": [
+        {
+          "level": 1,
+          "row_competitions": [
+            [
+              0,
+              "9/4",
+              "1",
+              0
+            ]
+          ],
+          "column_competitions": []
+        },
+        {
+          "level": 2,
+          "row_competitions": [
+            [
+              0,
+              "9/4",
+              "1",
+              0
+            ]
+          ],
+          "column_competitions": []
+        },
+        {
+          "level": 3,
+          "row_competitions": [
+            [
+              0,
+              "9/4",
+              "1",
+              0
+            ]
+          ],
+          "column_competitions": []
+        },
+        {
+          "level": 4,
+          "row_competitions": [
+            [
+              0,
+              "9/4",
+              "1",
+              0
+            ]
+          ],
+          "column_competitions": []
+        },
+        {
+          "level": 5,
+          "row_competitions": [
+            [
+              0,
+              "9/4",
+              "1",
+              0
+            ]
+          ],
+          "column_competitions": []
+        },
+        {
+          "level": 6,
+          "row_competitions": [
+            [
+              0,
+              "9/4",
+              "1",
+              0
+            ]
+          ],
+          "column_competitions": []
+        },
+        {
+          "level": 7,
+          "row_competitions": [
+            [
+              0,
+              "9/4",
+              "1",
+              0
+            ]
+          ],
+          "column_competitions": []
+        },
+        {
+          "level": 8,
+          "row_competitions": [
+            [
+              0,
+              "9/4",
+              "1",
+              0
+            ]
+          ],
+          "column_competitions": []
+        },
+        {
+          "level": 9,
+          "row_competitions": [
+            [
+              0,
+              "9/4",
+              "1",
+              0
+            ]
+          ],
+          "column_competitions": [
+            [
+              1,
+              "1",
+              "9/4",
+              1
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "L": 10,
+      "N": 2048,
+      "optimum_squared": "9/4",
+      "level_losses": [
+        "1",
+        "1",
+        "1",
+        "1",
+        "1",
+        "1",
+        "1",
+        "1",
+        "1",
+        "1"
+      ],
+      "greedy_error_squared": "10",
+      "weighted_ledger": "1130",
+      "ratio_weighted_over_L_optimum": "452/9",
+      "decisions": [
+        {
+          "level": 1,
+          "row_competitions": [
+            [
+              0,
+              "9/4",
+              "1",
+              0
+            ]
+          ],
+          "column_competitions": []
+        },
+        {
+          "level": 2,
+          "row_competitions": [
+            [
+              0,
+              "9/4",
+              "1",
+              0
+            ]
+          ],
+          "column_competitions": []
+        },
+        {
+          "level": 3,
+          "row_competitions": [
+            [
+              0,
+              "9/4",
+              "1",
+              0
+            ]
+          ],
+          "column_competitions": []
+        },
+        {
+          "level": 4,
+          "row_competitions": [
+            [
+              0,
+              "9/4",
+              "1",
+              0
+            ]
+          ],
+          "column_competitions": []
+        },
+        {
+          "level": 5,
+          "row_competitions": [
+            [
+              0,
+              "9/4",
+              "1",
+              0
+            ]
+          ],
+          "column_competitions": []
+        },
+        {
+          "level": 6,
+          "row_competitions": [
+            [
+              0,
+              "9/4",
+              "1",
+              0
+            ]
+          ],
+          "column_competitions": []
+        },
+        {
+          "level": 7,
+          "row_competitions": [
+            [
+              0,
+              "9/4",
+              "1",
+              0
+            ]
+          ],
+          "column_competitions": []
+        },
+        {
+          "level": 8,
+          "row_competitions": [
+            [
+              0,
+              "9/4",
+              "1",
+              0
+            ]
+          ],
+          "column_competitions": []
+        },
+        {
+          "level": 9,
+          "row_competitions": [
+            [
+              0,
+              "9/4",
+              "1",
+              0
+            ]
+          ],
+          "column_competitions": []
+        },
+        {
+          "level": 10,
+          "row_competitions": [
+            [
+              0,
+              "9/4",
+              "1",
+              0
+            ]
+          ],
+          "column_competitions": [
+            [
+              1,
+              "1",
+              "9/4",
+              1
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "L": 11,
+      "N": 4096,
+      "optimum_squared": "9/4",
+      "level_losses": [
+        "1",
+        "1",
+        "1",
+        "1",
+        "1",
+        "1",
+        "1",
+        "1",
+        "1",
+        "1",
+        "1"
+      ],
+      "greedy_error_squared": "11",
+      "weighted_ledger": "1353",
+      "ratio_weighted_over_L_optimum": "164/3",
+      "decisions": [
+        {
+          "level": 1,
+          "row_competitions": [
+            [
+              0,
+              "9/4",
+              "1",
+              0
+            ]
+          ],
+          "column_competitions": []
+        },
+        {
+          "level": 2,
+          "row_competitions": [
+            [
+              0,
+              "9/4",
+              "1",
+              0
+            ]
+          ],
+          "column_competitions": []
+        },
+        {
+          "level": 3,
+          "row_competitions": [
+            [
+              0,
+              "9/4",
+              "1",
+              0
+            ]
+          ],
+          "column_competitions": []
+        },
+        {
+          "level": 4,
+          "row_competitions": [
+            [
+              0,
+              "9/4",
+              "1",
+              0
+            ]
+          ],
+          "column_competitions": []
+        },
+        {
+          "level": 5,
+          "row_competitions": [
+            [
+              0,
+              "9/4",
+              "1",
+              0
+            ]
+          ],
+          "column_competitions": []
+        },
+        {
+          "level": 6,
+          "row_competitions": [
+            [
+              0,
+              "9/4",
+              "1",
+              0
+            ]
+          ],
+          "column_competitions": []
+        },
+        {
+          "level": 7,
+          "row_competitions": [
+            [
+              0,
+              "9/4",
+              "1",
+              0
+            ]
+          ],
+          "column_competitions": []
+        },
+        {
+          "level": 8,
+          "row_competitions": [
+            [
+              0,
+              "9/4",
+              "1",
+              0
+            ]
+          ],
+          "column_competitions": []
+        },
+        {
+          "level": 9,
+          "row_competitions": [
+            [
+              0,
+              "9/4",
+              "1",
+              0
+            ]
+          ],
+          "column_competitions": []
+        },
+        {
+          "level": 10,
+          "row_competitions": [
+            [
+              0,
+              "9/4",
+              "1",
+              0
+            ]
+          ],
+          "column_competitions": []
+        },
+        {
+          "level": 11,
+          "row_competitions": [
+            [
+              0,
+              "9/4",
+              "1",
+              0
+            ]
+          ],
+          "column_competitions": [
+            [
+              1,
+              "1",
+              "9/4",
+              1
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "L": 12,
+      "N": 8192,
+      "optimum_squared": "9/4",
+      "level_losses": [
+        "1",
+        "1",
+        "1",
+        "1",
+        "1",
+        "1",
+        "1",
+        "1",
+        "1",
+        "1",
+        "1",
+        "1"
+      ],
+      "greedy_error_squared": "12",
+      "weighted_ledger": "1596",
+      "ratio_weighted_over_L_optimum": "532/9",
+      "decisions": [
+        {
+          "level": 1,
+          "row_competitions": [
+            [
+              0,
+              "9/4",
+              "1",
+              0
+            ]
+          ],
+          "column_competitions": []
+        },
+        {
+          "level": 2,
+          "row_competitions": [
+            [
+              0,
+              "9/4",
+              "1",
+              0
+            ]
+          ],
+          "column_competitions": []
+        },
+        {
+          "level": 3,
+          "row_competitions": [
+            [
+              0,
+              "9/4",
+              "1",
+              0
+            ]
+          ],
+          "column_competitions": []
+        },
+        {
+          "level": 4,
+          "row_competitions": [
+            [
+              0,
+              "9/4",
+              "1",
+              0
+            ]
+          ],
+          "column_competitions": []
+        },
+        {
+          "level": 5,
+          "row_competitions": [
+            [
+              0,
+              "9/4",
+              "1",
+              0
+            ]
+          ],
+          "column_competitions": []
+        },
+        {
+          "level": 6,
+          "row_competitions": [
+            [
+              0,
+              "9/4",
+              "1",
+              0
+            ]
+          ],
+          "column_competitions": []
+        },
+        {
+          "level": 7,
+          "row_competitions": [
+            [
+              0,
+              "9/4",
+              "1",
+              0
+            ]
+          ],
+          "column_competitions": []
+        },
+        {
+          "level": 8,
+          "row_competitions": [
+            [
+              0,
+              "9/4",
+              "1",
+              0
+            ]
+          ],
+          "column_competitions": []
+        },
+        {
+          "level": 9,
+          "row_competitions": [
+            [
+              0,
+              "9/4",
+              "1",
+              0
+            ]
+          ],
+          "column_competitions": []
+        },
+        {
+          "level": 10,
+          "row_competitions": [
+            [
+              0,
+              "9/4",
+              "1",
+              0
+            ]
+          ],
+          "column_competitions": []
+        },
+        {
+          "level": 11,
+          "row_competitions": [
+            [
+              0,
+              "9/4",
+              "1",
+              0
+            ]
+          ],
+          "column_competitions": []
+        },
+        {
+          "level": 12,
+          "row_competitions": [
+            [
+              0,
+              "9/4",
+              "1",
+              0
+            ]
+          ],
+          "column_competitions": [
+            [
+              1,
+              "1",
+              "9/4",
+              1
+            ]
+          ]
+        }
+      ]
+    }
+  ]
+}

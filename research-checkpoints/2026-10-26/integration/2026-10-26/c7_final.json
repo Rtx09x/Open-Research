@@ -1,0 +1,114 @@
+{
+  "all_passed": true,
+  "network_used": false,
+  "checks": [
+    {
+      "group": "c7",
+      "cwd": "seven-cycle-capacity/checkpoints/checkpoint_fiber_gate_20261026/physical_iteration",
+      "command": "python verify_c30_fiber_pair_gate.py",
+      "passed": true,
+      "returncode": 0,
+      "output": "{\n  \"PASS\": true,\n  \"port_vertices\": 46,\n  \"outer_labels\": 367,\n  \"base_square\": 118336,\n  \"selected_outer_pairs\": 35,\n  \"diagonal_bound\": 135138,\n  \"additional_pair_deficit\": 78,\n  \"final_dimension10_upper\": 135060,\n  \"target\": 135093,\n  \"target_excluded\": true,\n  \"P_intersection_X_empty\": true,\n  \"scope\": \"B\\u00d7B plus arbitrary independent P-fibers in two directions indexed by the fixed independent X; all crossing conflicts and overlaps can only reduce cardinality\"\n}\n",
+      "seconds": 0.13163840700144647
+    },
+    {
+      "group": "c7",
+      "cwd": "seven-cycle-capacity/checkpoints/checkpoint_fiber_gate_20261026/independent_advisor",
+      "command": "python check_relocated.py",
+      "passed": true,
+      "returncode": 0,
+      "output": "{\n  \"verified\": true,\n  \"certificate_sha256\": \"c251119f52e7123b6fa27c8e0434836334779ff119694701dff9e500c210a8a3\",\n  \"instance_sha256\": \"615f7afc1578432a663992b25c0419cf80e66cafa09e5e37ce63e74dcc022c08\",\n  \"physical_dimension\": 10,\n  \"base_cardinality\": 118336,\n  \"self_crossing_upper\": 135138,\n  \"disjoint_pairs\": 35,\n  \"additional_deficit\": 78,\n  \"upper\": 135060,\n  \"target\": 135093,\n  \"cover_witnesses\": 118,\n  \"seconds\": 0.08796858787536621,\n  \"scope\": \"Fixed B,P,X two-direction variable fibers only; no unrestricted capacity upper and no optimality claim for the matching.\"\n}\n",
+      "seconds": 0.11683418099710252
+    },
+    {
+      "group": "c7",
+      "cwd": "seven-cycle-capacity/checkpoints/checkpoint_reservoir_gates_20261026/physical_iteration",
+      "command": "python verify_reservoir_matching_gate.py --compact",
+      "passed": true,
+      "returncode": 0,
+      "output": "{\n  \"PASS\": true,\n  \"certificate\": \"reservoir_orbit_compact.json.gz\",\n  \"sha256\": \"a7961fa477d3d4ad6bacb875de2568cc27741d38294850c4003683913c88bb61\",\n  \"records\": [\n    {\n      \"name\": \"published\",\n      \"maximum_code_size\": 134753,\n      \"deficiency\": 64,\n      \"reservoir_count\": 5360,\n      \"matching_size\": 5296\n    },\n    {\n      \"name\": \"published_T1\",\n      \"maximum_code_size\": 134753,\n      \"deficiency\": 64,\n      \"reservoir_count\": 133729,\n      \"matching_size\": 133665\n    },\n    {\n      \"name\": \"published_J_exchange\",\n      \"maximum_code_size\": 134753,\n      \"deficiency\": 64,\n      \"reservoir_count\": 133729,\n      \"matching_size\": 133665\n    },\n    {\n      \"name\": \"published_T2\",\n      \"maximum_code_size\": 134753,\n      \"deficiency\": 64,\n      \"reservoir_count\": 133665,\n      \"matching_size\": 133601\n    },\n    {\n      \"name\": \"published_T3\",\n      \"maximum_code_size\": 134753,\n      \"deficiency\": 64,\n      \"reservoir_count\": 133685,\n      \"matching_size\": 133621\n    },\n    {\n      \"name\": \"cycle_flip\",\n      \"maximum_code_size\": 134753,\n      \"deficiency\": 64,\n      \"reservoir_count\": 15905,\n      \"matching_size\": 15841\n    },\n    {\n      \"name\": \"cycle_flip_T1\",\n      \"maximum_code_size\": 134753,\n      \"deficiency\": 64,\n      \"reservoir_count\": 133729,\n      \"matching_size\": 133665\n    },\n    {\n      \"name\": \"cycle_flip_J_exchange\",\n      \"maximum_code_size\": 134753,\n      \"deficiency\": 64,\n      \"reservoir_count\": 133729,\n      \"matching_size\": 133665\n    },\n    {\n      \"name\": \"cycle_flip_T2\",\n      \"maximum_code_size\": 134753,\n      \"deficiency\": 64,\n      \"reservoir_count\": 133665,\n      \"matching_size\": 133601\n    },\n    {\n      \"name\": \"cycle_flip_T3\",\n      \"maximum_code_size\": 134753,\n      \"deficiency\": 64,\n      \"reservoir_count\": 133685,\n      \"matching_size\": 133621\n    }\n  ],\n  \"seconds\": 8.812913697998738,\n  \"scope\": \"Exact maximum within I0^2 union each specified independent reservoir, not global C7^10 optimality.\"\n}\n",
+      "seconds": 8.870477944998129
+    },
+    {
+      "group": "c7",
+      "cwd": "seven-cycle-capacity/checkpoints/checkpoint_reservoir_gates_20261026/independent_advisor",
+      "command": "python check_relocated.py",
+      "passed": true,
+      "returncode": 0,
+      "output": "{\n  \"status\": \"PASS\",\n  \"certificate_sha256\": \"a7961fa477d3d4ad6bacb875de2568cc27741d38294850c4003683913c88bb61\",\n  \"cases\": [\n    {\n      \"name\": \"published\",\n      \"alphabet\": 140049,\n      \"matching\": 5296,\n      \"clique_partition\": 134753,\n      \"independent_lower\": 134753\n    },\n    {\n      \"name\": \"published_T1\",\n      \"alphabet\": 268418,\n      \"matching\": 133665,\n      \"clique_partition\": 134753,\n      \"independent_lower\": 134753\n    },\n    {\n      \"name\": \"published_J_exchange\",\n      \"alphabet\": 268418,\n      \"matching\": 133665,\n      \"clique_partition\": 134753,\n      \"independent_lower\": 134753\n    },\n    {\n      \"name\": \"published_T2\",\n      \"alphabet\": 268354,\n      \"matching\": 133601,\n      \"clique_partition\": 134753,\n      \"independent_lower\": 134753\n    },\n    {\n      \"name\": \"published_T3\",\n      \"alphabet\": 268374,\n      \"matching\": 133621,\n      \"clique_partition\": 134753,\n      \"independent_lower\": 134753\n    },\n    {\n      \"name\": \"cycle_flip\",\n      \"alphabet\": 150594,\n      \"matching\": 15841,\n      \"clique_partition\": 134753,\n      \"independent_lower\": 134753\n    },\n    {\n      \"name\": \"cycle_flip_T1\",\n      \"alphabet\": 268418,\n      \"matching\": 133665,\n      \"clique_partition\": 134753,\n      \"independent_lower\": 134753\n    },\n    {\n      \"name\": \"cycle_flip_J_exchange\",\n      \"alphabet\": 268418,\n      \"matching\": 133665,\n      \"clique_partition\": 134753,\n      \"independent_lower\": 134753\n    },\n    {\n      \"name\": \"cycle_flip_T2\",\n      \"alphabet\": 268354,\n      \"matching\": 133601,\n      \"clique_partition\": 134753,\n      \"independent_lower\": 134753\n    },\n    {\n      \"name\": \"cycle_flip_T3\",\n      \"alphabet\": 268374,\n      \"matching\": 133621,\n      \"clique_partition\": 134753,\n      \"independent_lower\": 134753\n    }\n  ],\n  \"seconds\": 4.158910274505615,\n  \"scope\": \"Each specified I0^2 union single reservoir has exact independence number and all-macro-length Shannon capacity134753; not simultaneous3+reservoir union or full C7 capacity\"\n}\n",
+      "seconds": 4.3039815240044845
+    },
+    {
+      "group": "c7",
+      "cwd": "seven-cycle-capacity/checkpoints/checkpoint_multireservoir_gate_20261026",
+      "command": "python physical_iteration/verify_multireservoir_final.py",
+      "passed": true,
+      "returncode": 0,
+      "output": "{\n  \"PASS\": true,\n  \"source_sha256\": \"2395d9ce16e068010a5f2a57f3fbfec5a607fa9272b02afd6c9e4a95fc70016b\",\n  \"certificate_sha256\": \"1560f166ec9f804319b1713c7f686b23d17d8fb91f5630db9abb96c6c079c4a3\",\n  \"alphabet_size\": 273778,\n  \"clique_count\": 135033,\n  \"clique_size_histogram\": {\n    \"1\": 1304,\n    \"2\": 128713,\n    \"3\": 5016\n  },\n  \"independent_lower\": 134753,\n  \"restricted_macro_capacity_upper\": 135033,\n  \"normalized_rate_upper_strict\": \"3.258698\",\n  \"target135093_excluded\": true,\n  \"seconds\": 4.654108192997228,\n  \"maxRSS_KiB\": 117544,\n  \"scope\": \"Only the simultaneous alphabet I0^2 union Z union T(Z); no global C7 upper bound and no new lower bound.\"\n}\n",
+      "seconds": 4.750119453005027
+    },
+    {
+      "group": "c7",
+      "cwd": "seven-cycle-capacity/checkpoints/checkpoint_multireservoir_gate_20261026",
+      "command": "python advisor/check_c7_multireservoir_portable.py",
+      "passed": true,
+      "returncode": 0,
+      "output": "{\n  \"PASS\": true,\n  \"certificate_sha256\": \"1560f166ec9f804319b1713c7f686b23d17d8fb91f5630db9abb96c6c079c4a3\",\n  \"base_sha256\": \"2395d9ce16e068010a5f2a57f3fbfec5a607fa9272b02afd6c9e4a95fc70016b\",\n  \"alphabet\": 273778,\n  \"reservoir_outside\": 133729,\n  \"core_outside\": 5296,\n  \"core_attached\": 5016,\n  \"core_singletons\": 280,\n  \"triple_cliques\": 5016,\n  \"partition_size\": 135033,\n  \"known_independent_lower\": 134753,\n  \"all_macro_lengths_capacity_upper\": 135033,\n  \"target_3_258841_excluded\": true,\n  \"scope\": \"Only alphabet I0^2 union Z union T(Z); no global capacity bound, no new lower bound, exactalpha not determined\",\n  \"seconds\": 1.24482416799583,\n  \"maxRSS_KiB\": 107684\n}\n",
+      "seconds": 1.4553296200028853
+    },
+    {
+      "group": "c7",
+      "cwd": "seven-cycle-capacity/checkpoints/checkpoint_multireservoir_diagnosis_20261026",
+      "command": "python physical_iteration/verify_hall_shadow_seed.py",
+      "passed": true,
+      "returncode": 0,
+      "output": "{\n  \"PASS\": true,\n  \"certificate_sha256\": \"1e6c0136787701aa8ac1fc5b73e8ad932a6be814c5549aaadfa00913b72a28c1\",\n  \"seed_size\": 133777,\n  \"admissible_reservoir_words\": 112769,\n  \"matching_size\": 112718,\n  \"hall_selected\": 53,\n  \"hall_deleted\": 2,\n  \"hall_surplus\": 51,\n  \"zero_cost_selected\": 50,\n  \"nonzero_selected_words\": [\n    [\n      13358,\n      9676\n    ],\n    [\n      13358,\n      11980\n    ],\n    [\n      13358,\n      14233\n    ]\n  ],\n  \"deleted_Z_words\": [\n    [\n      13065,\n      11685\n    ],\n    [\n      13065,\n      14177\n    ]\n  ],\n  \"exact_forced_core_maximum\": 133828,\n  \"required_surplus\": 1316,\n  \"target_shortfall\": 1265,\n  \"seconds\": 2.9388062939979136,\n  \"maxRSS_KiB\": 182100,\n  \"scope\": \"Only codes retaining all prescribed4272 core words and using Z/T(Z) otherwise. Not the unconstrained joint alphabet or global C7.\"\n}\n",
+      "seconds": 3.0314113140047994
+    },
+    {
+      "group": "c7",
+      "cwd": "seven-cycle-capacity/checkpoints/checkpoint_multireservoir_diagnosis_20261026",
+      "command": "python advisor/check_c7_attachment_hall_independent.py",
+      "passed": true,
+      "returncode": 0,
+      "output": "{\n  \"PASS\": true,\n  \"certificate_sha256\": \"3fbd8a228a1830b23a1097c7976e7ababd6f668f16df8d84cd142fe522253ec8\",\n  \"left\": 5296,\n  \"matching\": 5016,\n  \"hall_left\": 4272,\n  \"complete_hall_neighbors\": 3992,\n  \"deficiency\": 280,\n  \"isolated_left\": 30,\n  \"nonisolated_deficit\": 250,\n  \"components\": 203,\n  \"large_component_deficiencies\": [\n    184,\n    22,\n    22,\n    18\n  ],\n  \"seconds\": 0.6739850329977344,\n  \"scope\": \"Optimal core attachment only for the fixed Z/T(Z) pairing; not optimal global clique cover or actual independence number\"\n}\n",
+      "seconds": 2.049749319005059
+    },
+    {
+      "group": "c7",
+      "cwd": "seven-cycle-capacity/checkpoints/checkpoint_multireservoir_diagnosis_20261026",
+      "command": "python advisor/check_c7_hall_seed_independent.py",
+      "passed": true,
+      "returncode": 0,
+      "output": "{\n  \"PASS\": true,\n  \"certificate_sha256\": \"1e6c0136787701aa8ac1fc5b73e8ad932a6be814c5549aaadfa00913b72a28c1\",\n  \"forced_core\": 4272,\n  \"complete_removed_Z_neighborhood\": 5248,\n  \"admissible_T_outsiders\": 112769,\n  \"matching\": 112718,\n  \"Hall_selected\": 53,\n  \"complete_Hall_deleted\": 2,\n  \"exact_optimum_with_forced_core\": 133828,\n  \"target_shortfall\": 1265,\n  \"seconds\": 1.543208085000515,\n  \"scope\": \"Must retain all4272 specified core words; only Z/T(Z) otherwise. No unrestricted alphabet/capacity or global bound.\"\n}\n",
+      "seconds": 3.1436205259960843
+    },
+    {
+      "group": "c7",
+      "cwd": "seven-cycle-capacity/checkpoints/checkpoint_multireservoir_diagnosis_20261026",
+      "command": "python physical_iteration/reservoir_escape_gate.py --output diagnostic_control.json.gz",
+      "passed": true,
+      "returncode": 0,
+      "output": "{\n  \"complete\": true,\n  \"reservoir_size\": 134689,\n  \"outside_size\": 5296,\n  \"edges\": 31792,\n  \"matching_size\": 5296,\n  \"hall_deficiency\": 0,\n  \"maximum_code_size_in_union\": 134753,\n  \"target135093_reached\": false,\n  \"scope\": \"Exact independent-set size and clique-cover capacity in Z union this single supplied independent reservoir. No claim about other reservoirs or global C7.\",\n  \"source_base_sha256\": \"2395d9ce16e068010a5f2a57f3fbfec5a607fa9272b02afd6c9e4a95fc70016b\",\n  \"seconds\": 1.351405118999537,\n  \"maxRSS_KiB\": 78372\n}\n",
+      "seconds": 1.4365423300041584
+    },
+    {
+      "group": "c7",
+      "cwd": "seven-cycle-capacity/checkpoints/checkpoint_finite_subgroup_gate_20261026",
+      "command": "python advisor/check_c7_circular_range_independent.py",
+      "passed": true,
+      "returncode": 0,
+      "output": "368 PASS\n369 PASS\n370 PASS\n371 PASS\n372 PASS\n373 PASS\n374 PASS\n375 PASS\n376 PASS\n377 PASS\n378 PASS\n379 PASS\n380 PASS\n381 PASS\n382 PASS\n383 PASS\n384 PASS\n385 PASS\n386 PASS\n387 PASS\n388 PASS\n389 PASS\n390 PASS\n391 PASS\n392 PASS\n393 PASS\n394 PASS\n395 PASS\n396 PASS\n397 PASS\n398 PASS\n399 PASS\n400 PASS\n401 PASS\n{\n  \"PASS\": true,\n  \"cases\": 211,\n  \"seconds\": 70.21881336499791,\n  \"peak_rss_KiB\": 14796,\n  \"scope\": \"Rank-one circular templates only; all n368..401 direct ceil(2n/7) thresholds. Zero coordinates reduce to repeated nonzero coordinates. Not nonlinear codes.\"\n}\n",
+      "seconds": 70.26239466499828
+    },
+    {
+      "group": "c7",
+      "cwd": "seven-cycle-capacity/checkpoints/checkpoint_finite_subgroup_gate_20261026",
+      "command": "python advisor/check_c7_abelian_subgroups_independent.py",
+      "passed": true,
+      "returncode": 0,
+      "output": "(2, 184) True exhaustive\n(2, 184) False uncovered\n(4, 92) True exhaustive\n(4, 92) False uncovered\n(3, 123) True exhaustive\n(3, 123) False uncovered\n(2, 186) True exhaustive\n(2, 186) False exhaustive\n(5, 75) True exhaustive\n(5, 75) False uncovered\n(2, 188) True exhaustive\n(2, 188) False uncovered\n(3, 126) True exhaustive\n(3, 126) False exhaustive\n(2, 190) True exhaustive\n(2, 190) False exhaustive\n(2, 192) True exhaustive\n(2, 192) False exhaustive\n(4, 96) True exhaustive\n(4, 96) False exhaustive\n(8, 48) True exhaustive\n(8, 48) False exhaustive\n(3, 129) True exhaustive\n(3, 129) False uncovered\n(2, 194) True exhaustive\n(2, 194) False uncovered\n(2, 196) True exhaustive\n(2, 196) False exhaustive\n(7, 56) True exhaustive\n(7, 56) False uncovered\n(14, 28) True exhaustive\n(14, 28) False uncovered\n(2, 198) True exhaustive\n(2, 198) False exhaustive\n(3, 132) True exhaustive\n(3, 132) False exhaustive\n(6, 66) True exhaustive\n(6, 66) False exhaustive\n(2, 200) True exhaustive\n(2, 200) False exhaustive\n(4, 100) True exhaustive\n(4, 100) False exhaustive\n(5, 80) True exhaustive\n(5, 80) False exhaustive\n(10, 40) True theta\n(10, 40) False theta\n(20, 20) True theta\n(20, 20) False theta\n(2, 2, 92) True exhaustive\n(2, 2, 92) False uncovered\n(5, 5, 15) True theta\n(5, 5, 15) False theta\n(2, 2, 94) True exhaustive\n(2, 2, 94) False uncovered\n(3, 3, 42) True exhaustive\n(3, 3, 42) False exhaustive\n(2, 2, 96) True exhaustive\n(2, 2, 96) False exhaustive\n(2, 4, 48) True exhaustive\n(2, 4, 48) False uncovered\n(2, 8, 24) True exhaustive\n(2, 8, 24) False uncovered\n(4, 4, 24) True uncovered\n(4, 4, 24) False uncovered\n(2, 2, 98) True exhaustive\n(2, 2, 98) False exhaustive\n(2, 14, 14) True exhaustive\n(2, 14, 14) False uncovered\n(2, 2, 100) True exhaustive\n(2, 2, 100) False exhaustive\n(2, 10, 20) True theta\n(2, 10, 20) False theta\n(2, 2, 2, 46) True theta\n(2, 2, 2, 46) False theta\n(2, 2, 2, 48) True exhaustive\n(2, 2, 2, 48) False uncovered\n(2, 2, 4, 24) True uncovered\n(2, 2, 4, 24) False uncovered\n(2, 4, 4, 12) True theta\n(2, 4, 4, 12) False theta\n(2, 2, 2, 50) True theta\n(2, 2, 2, 50) False theta\n(2, 2, 10, 10) True theta\n(2, 2, 10, 10) False theta\n(2, 2, 2, 2, 24) True uncovered\n(2, 2, 2, 2, 24) False uncovered\n(2, 2, 2, 4, 12) True theta\n(2, 2, 2, 4, 12) False theta\nPASS 96.8085103859994\n",
+      "seconds": 96.86126873600006
+    }
+  ]
+}

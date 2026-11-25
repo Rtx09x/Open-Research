@@ -1,0 +1,50 @@
+[
+  {
+    "L": 1,
+    "n": 4,
+    "sign_assignments": 256,
+    "total_integer_squared_error": 15872,
+    "exact_expected_error": 62,
+    "identity_pass": true
+  },
+  {
+    "L": 2,
+    "n": 8,
+    "sign_assignments": 65536,
+    "total_integer_squared_error": 23199744,
+    "exact_expected_error": 354,
+    "identity_pass": true
+  },
+  {
+    "L": 1,
+    "n": 4,
+    "sharp_error": 4,
+    "tree_optimal_error": 1,
+    "full_HSS_optimal_error": 0,
+    "twenty_sign_trials_pass": true
+  },
+  {
+    "L": 2,
+    "n": 8,
+    "sharp_error": 6,
+    "tree_optimal_error": 1,
+    "full_HSS_optimal_error": 0,
+    "twenty_sign_trials_pass": true
+  },
+  {
+    "L": 4,
+    "n": 32,
+    "sharp_error": 10,
+    "tree_optimal_error": 1,
+    "full_HSS_optimal_error": 0,
+    "twenty_sign_trials_pass": true
+  },
+  {
+    "L": 7,
+    "n": 256,
+    "sharp_error": 16,
+    "tree_optimal_error": 1,
+    "full_HSS_optimal_error": 0,
+    "twenty_sign_trials_pass": true
+  }
+]

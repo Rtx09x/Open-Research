@@ -1,0 +1,25 @@
+{
+  "model": "classic deterministic online 1D unit-bin packing; asymptotic worst-case ratio",
+  "preferred_result": {
+    "algorithm": "frozen three-transfer AH with tiny Best Fit across all existing advertised tiny containers",
+    "upper_bound": "174191383514152461065273968497444592350661/110371486054812972793114744355465098952704",
+    "decimal": 1.5782281252210837,
+    "status": "worker and independent primary-derived advisor analytic/source/arithmetic audits PASS",
+    "all_input_scenarios": 402,
+    "strict_knapsacks": 804,
+    "actual_ratio_tightness": "not established",
+    "certificate_sha256": "efd98b3ab6c17d81ad14da565410c47de2490b99c8c4742c9e3ebde183a8e315"
+  },
+  "preserved_one_open_result": {
+    "algorithm": "same parameters, one-open delayed tiny closure",
+    "exact_asymptotic_ratio": "23211234258164394107066141961880719040528132151/14707121654123980930208343329037931077093556224",
+    "status": "all-input upper proof plus explicit algorithm-specific saturation family, independently audited"
+  },
+  "source_AH_exact_certificate": "10060574276093395247/6374352691333693440",
+  "upper_bound_improvement_over_source": "119972964831999924865849567211117944065407999/1952992541723820205941783329241535395740390522880",
+  "improvement_decimal": 6.143032411486072e-05,
+  "universal_lower_bound": "published approximately1.54278090647; not improved by these algorithm-specific results",
+  "priority_and_external_review": "not established",
+  "entrypoint": "phase2/HANDOFF.md",
+  "phase1_modified": false
+}

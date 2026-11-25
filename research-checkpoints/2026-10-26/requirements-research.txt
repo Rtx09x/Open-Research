@@ -1,0 +1,4 @@
+# Observed integration environment; optional for standard-library-only checkers.
+numpy==2.3.5
+scipy==1.17.0
+sympy==1.14.0

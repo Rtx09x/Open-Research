@@ -1,0 +1,8 @@
+{
+  "version": "clarified v3 review",
+  "date": "2026-10-26",
+  "frozen_internal_v3_archive_sha256": "3e1a4eb8e534769e5022904a03061b81a90ac3485e551a53e873d6e9e0360903",
+  "scientific_content": "Canonical theorem, erratum, local-trace addendum, exact policy/runtime, numerical scripts/results and semantic audits preserved byte-for-byte",
+  "editorial_changes": "New START_HERE and SOURCES, shortened source-comparison logistics, regenerated packaging manifests",
+  "excluded": "Third-party full source copies, browser transcripts, prompts, account/permission details, routine logs, exploratory post-v3 research, caches"
+}

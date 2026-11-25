@@ -1,0 +1,12 @@
+{
+  "exact": true,
+  "method": "independent stdlib rational polynomial/Jacobian/Hessian and reduced-Gram reconstruction",
+  "root_contraction": true,
+  "all_50_KL_reductions": true,
+  "eta_matches": true,
+  "L_matches": true,
+  "eta_float": 2.6635894829537045e-66,
+  "L_times_radius_float": 1.9458912325014366e-36,
+  "seconds": 0.07640266418457031,
+  "scope": "replication of known19 positive control, not new code"
+}

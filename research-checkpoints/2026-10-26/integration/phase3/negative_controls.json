@@ -1,0 +1,33 @@
+{
+  "all_rejected": true,
+  "checks": [
+    {
+      "name": "packing_false_target",
+      "rejected": true,
+      "returncode": 1,
+      "seconds": 0.2195646440013661,
+      "output": "Traceback (most recent call last):\n  File \"/tmp/research-p3-corrupt-qp57_q2q/online-bin-packing/phase3/successor_mixture/verify_independent.py\", line 72, in <module>\n    ns=[verify(normal,F(1),terms,0,R),verify(huge,y,terms,1,R)]\n        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/tmp/research-p3-corrupt-qp57_q2q/online-bin-packing/phase3/successor_mixture/verify_independent.py\", line 52, in verify\n    dfs(0,capacity,F(0));return nodes\n    ^^^^^^^^^^^^^^^^^^^^\n  File \"/tmp/research-p3-corrupt-qp57_q2q/online-bin-packing/phase3/successor_mixture/verify_independent.py\", line 47, in dfs\n    nodes+=1;assert offset+value+fill(room,terms)<=R\n                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError\n"
+    },
+    {
+      "name": "quantum_negative_multiplier",
+      "rejected": true,
+      "returncode": 1,
+      "seconds": 34.08734588800144,
+      "output": "Traceback (most recent call last):\n  File \"/tmp/research-p3-corrupt-v_uxecm3/symmetric-quantum-codes/phase3/check_general_dual_tight.py\", line 49, in <module>\n    z=[aq(rq(v))for v in c['enumerator_inequality_dual']];assert all(int(v)>=0 for v in c['enumerator_inequality_dual']);at=0\n                                                                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError\n"
+    },
+    {
+      "name": "c7_duplicate_word",
+      "rejected": true,
+      "returncode": 1,
+      "seconds": 0.15777093799988506,
+      "output": "Traceback (most recent call last):\n  File \"/tmp/research-p3-corrupt-22e3lwe_/seven-cycle-capacity/phase3/independent_advisor/check_c7_escape_independent.py\", line 13, in <module>\n    h=profile(code);H0=profile(base['I0']);HX=profile(base['X'])\n      ^^^^^^^^^^^^^\n  File \"/tmp/research-p3-corrupt-22e3lwe_/seven-cycle-capacity/phase3/independent_advisor/check_c7_escape_independent.py\", line 7, in profile\n    assert len(c)==len(set(c))==367\n           ^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError\n"
+    },
+    {
+      "name": "deletion_corrupted_part",
+      "rejected": true,
+      "returncode": 1,
+      "seconds": 0.1708328389977396,
+      "output": "Traceback (most recent call last):\n  File \"/tmp/research-p3-corrupt-tuss_fbw/deletion-code-optimality/phase2/replay_k6.py\", line 34, in <module>\n    if __name__=='__main__':main()\n                            ^^^^^^\n  File \"/tmp/research-p3-corrupt-tuss_fbw/deletion-code-optimality/phase2/replay_k6.py\", line 22, in main\n    ap=argparse.ArgumentParser();ap.add_argument('--independent',action='store_true');ap.add_argument('--negative',action='store_true');a=ap.parse_args();raw=reconstruct()\n                                                                                                                                                              ^^^^^^^^^^^^^\n  File \"/tmp/research-p3-corrupt-tuss_fbw/deletion-code-optimality/phase2/replay_k6.py\", line 10, in reconstruct\n    p=root/row['file'];b=p.read_bytes();assert len(b)==row['bytes'] and hashlib.sha256(b).hexdigest()==row['sha256'],row['file'];parts.append(b)\n                                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError: parts/part-000.bin\n"
+    }
+  ]
+}

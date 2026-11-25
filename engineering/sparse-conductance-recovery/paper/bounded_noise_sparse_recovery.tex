@@ -1,0 +1,137 @@
+\documentclass[11pt,letterpaper]{article}
+\usepackage[margin=0.95in]{geometry}
+\usepackage{amsmath,amssymb,hyperref,microtype}
+\hypersetup{colorlinks=true,allcolors=black,pdftitle={Stable Sparse Recovery from Noisy Resistance Measurements}}
+\title{Stable Sparse Recovery from Noisy Resistance Measurements}
+\author{Research supplement prepared for Rudra Tiwari}
+\date{8 October 2026}
+\begin{document}
+\maketitle
+
+Small measurement errors need not destroy sparse fault recovery. For a known product-weight complete graph, sufficiently accurate resistance measurements recover exactly which conductances changed, while estimating their new values with a proved error bound. The number of distinct measurements remains $O(n+k^2)$ for $k$ changes. This guarantee requires a minimum change size and a bound on the target conductance scale. It does not promise exact real-valued weights from noisy data.
+
+\paragraph{Scope and status.} This supplement gives a sufficient stability condition for connected targets, alongside examples showing why some assumptions are necessary. It separates query count, measurement precision and computation. The condition is not claimed optimal. This AI-assisted research draft is unsubmitted and has not been peer reviewed or independently reviewed by a human specialist. The proofs, rather than numerical tests, support the mathematical statements; no comprehensive priority claim is made.
+
+\section{Model and stability theorem}
+Let $n\ge2$. The known baseline has conductances $w_{ij}=a_i a_j$ for $i\ne j$, with $a_i>0$ and $A=\sum_i a_i$. Its Laplacian is $L=A\operatorname{diag}(a)-aa^{\mathsf T}$. The connected target has nonnegative conductances $w'_{ij}$ and changes $k$ distinct pairs, all increases or all decreases. Every nonzero change has magnitude at least a supplied $\delta>0$. A supplied $\Lambda>0$ bounds the largest eigenvalue of the target Laplacian $L'$. These are model promises, not facts certified from the noisy observations. For example, $w'_{ij}\le C$ implies $\Lambda=nC$ is valid.
+
+Each unordered-pair query returns a scalar $z_{uv}$ satisfying $|z_{uv}-R'_{uv}|\le\eta$. Errors may be adversarial and depend on the preceding transcript. Repeated observations need not have independent errors. Cache the first response to each queried pair. Baseline weights are known exactly. Define
+\[
+ \beta=\frac{1}{A\max_i a_i},\qquad
+ R_{\max}=\max_{i\ne j}\frac{1/a_i+1/a_j}{A},\qquad
+ \gamma=\frac{\delta\beta^2}{1+\delta R_{\max}}.
+\]
+
+\paragraph{Theorem 1.} If $\eta<\gamma/2$, the adaptive algorithm below exactly locates every vertex incident to a changed edge whenever it finds a healthy anchor. In every branch it constructs a core $T$ containing all changed endpoints, without knowing $k$ or the direction of change. If $k=0$, it returns the baseline. Otherwise let $m=|T|\ge2$ and
+\[
+ e=\frac{(m-1)\eta}{2},\qquad
+ h=\frac{\Lambda^2e}{1-\Lambda e}.
+\]
+If $\Lambda e<1$, the candidate weights have entrywise absolute error at most $h$. If also $h<\delta/2$, thresholding and nonnegative clipping give the exact changed-edge support and weight error at most $h$. The number of distinct scalar pair queries satisfies
+\[
+ Q\le\min\left\{\binom n2,\ \max\{n+2k^2+k,\ 8k^2+2k\}\right\}.
+\]
+A sufficient precision requirement for exact support is therefore
+\[
+ \eta<\min\left\{\frac\gamma2,
+ \frac{2\delta}{(m-1)\Lambda(2\Lambda+\delta)}\right\}.
+\]
+The first inequality controls affected-vertex discovery; the second controls changed-edge recovery. They are different requirements. The observed core size is trustworthy only under the discovery condition. If a budget $K\ge k$, $K\ge1$, is supplied, replacing $m-1$ by $\min(n-1,4K)$ gives an a priori sufficient condition. A promised $K=0$ permits returning the baseline without measurements.
+
+\paragraph{Unit clique.} For $a_i=1$, the discovery gap is
+\[
+ \gamma=\frac{\delta}{n(n+2\delta)}.
+\]
+If target weights are at most $C\ge1$, use $\Lambda=nC$. Thus precision of order $\delta/(mn^2C^2)$, together with the displayed discovery condition, is sufficient. The factor $m$ arises from a worst-case matrix-norm bound and is not claimed necessary.
+
+\section{Adaptive measurements and reconstruction}
+Declare a tested pair changed when $|z_{uv}-R_{uv}|>\gamma/2$.
+\begin{enumerate}
+\item Test a fixed disjoint matching until an unchanged pair appears or the matching is exhausted.
+\item If no unchanged pair appears, set $T=V$ and query all remaining pairs.
+\item Otherwise choose an endpoint $o$ of the unchanged pair. Query its star. Let $S$ be the vertices whose star tests are changed. If $S$ is empty, return the baseline. Otherwise set $T=S\cup\{o\}$ and query every missing pair inside $T$.
+\end{enumerate}
+Let $I$ be the vertices outside $T$. Form the known baseline Schur complement
+\[
+ H=L_{TT}-L_{TI}L_{II}^{-1}L_{IT},
+\]
+with $H=L$ when $I$ is empty. Let $Z$ be the symmetric matrix of measured core resistances with zero diagonal, and set
+\[
+ J=I_m-\frac{\mathbf1\mathbf1^{\mathsf T}}m,\qquad
+ \widehat P=-\tfrac12 JZJ,\qquad
+ \widehat H=\left(\widehat P+\frac{\mathbf1\mathbf1^{\mathsf T}}m\right)^{-1}
+       -\frac{\mathbf1\mathbf1^{\mathsf T}}m.
+\]
+Lift to $\widehat L=L+\operatorname{pad}_T(\widehat H-H)$, where padding inserts a core matrix in the $TT$ block and zero elsewhere. Candidate weights are $\widehat w_{ij}=-\widehat L_{ij}$. Mark a pair changed when $|\widehat w_{ij}-w_{ij}|>\delta/2$. Reset all unmarked weights to baseline; on marked pairs replace negative candidate weights by zero. This postprocessing is essential: a noisy inverse need not itself have Laplacian off-diagonal signs.
+
+\section{Proof of the discovery guarantee}
+For a pair injection $b=e_u-e_v$, baseline voltages are $\phi_i=b_i/(Aa_i)$ up to a constant. A changed edge avoiding both endpoints has zero voltage drop, whereas an incident changed edge has absolute drop at least $\beta$.
+
+If neither endpoint is affected, every change annihilates $\phi$, so $L'\phi=b$ and the resistance is unchanged. For an affected pair under increases, select an incident changed edge $f$ with magnitude $t\ge\delta$. Rayleigh monotonicity and the rank-one inverse formula give
+\[
+ R_{uv}-R'_{uv}\ge
+ \frac{t(b_f^{\mathsf T}L^+b)^2}{1+tR_f}
+ \ge\frac{\delta\beta^2}{1+\delta R_{\max}}=\gamma.
+\]
+Here $t/(1+tR_f)$ increases with $t$. For decreases write $L'=L-D$, where $D$ is positive semidefinite. Evaluating the variational resistance formula at $\phi$ gives
+\[
+ R'_{uv}-R_{uv}\ge\phi^{\mathsf T}D\phi\ge\delta\beta^2\ge\gamma.
+\]
+Thus every truly unchanged pair has observed difference at most $\eta<\gamma/2$, and every affected pair has observed difference at least $\gamma-\eta>\gamma/2$. Every branch decision is exact. In particular, discovery does not require an upper bound on change severity.
+
+Write $s=|S|\le2k$. In the healthy-anchor branch, at most $s+1$ matching tests precede and include the unchanged pair, since each earlier disjoint pair contains a distinct affected vertex. Including the star and core queries gives
+\[
+ Q\le(n-1)+(s+1)+\binom s2
+   =n+\frac{s(s+1)}2\le n+2k^2+k,
+ \qquad m=s+1\le2k+1.
+\]
+If the matching is exhausted, every tested pair touches the affected set, so $\operatorname{floor}(n/2)\le2k$ and $n\le4k+1$. All-pairs recovery then uses at most $8k^2+2k$ queries. Caching gives the automatic all-pairs cap. This also proves $m-1\le\min(n-1,4k)$ for $k>0$.
+
+\section{Proof of stable reconstruction}
+All changed edges lie in $T$, so only the $TT$ Laplacian block changes. The baseline grounded block $L_{II}$ is positive definite when nonempty. The target Schur complement satisfies
+\[
+ H'=L'_{TT}-L'_{TI}(L'_{II})^{-1}L'_{IT},
+ \qquad H'-H=L'_{TT}-L_{TT}.
+\]
+Kron reduction preserves resistance between core vertices. Since the target is connected, $H'$ is connected and
+\[
+ P=(H')^+=-\tfrac12 JR'_TJ.
+\]
+The error matrix $Z-R'_T$ is symmetric, has zero diagonal, and has absolute row sums at most $(m-1)\eta$. Consequently
+\[
+ \|\widehat P-P\|_2\le\frac{(m-1)\eta}{2}=e.
+\]
+Schur-complement energy minimization gives $x^{\mathsf T}H'x\le x^{\mathsf T}L'_{TT}x\le\Lambda\|x\|^2$. Thus the smallest eigenvalue of $P$ on $\mathbf1^\perp$ is at least $1/\Lambda$. When $\Lambda e<1$, $\widehat P$ is positive definite on this subspace, and the inverse perturbation identity yields
+\[
+ \|\widehat H-H'\|_2
+ \le\frac{\Lambda^2e}{1-\Lambda e}=h.
+\]
+Lifting changes no other blocks, so every weight error is at most $h$. An unchanged edge has estimated change at most $h<\delta/2$; a changed edge has estimated change at least $\delta-h>\delta/2$. Thresholding therefore recovers exact support. Resetting healthy pairs is exact, while projection onto nonnegative weights cannot increase error. For an increase the candidate remains strictly above baseline; for a decrease it remains strictly below the positive baseline, even after clipping. Hence clipping preserves the recovered change support. This proves Theorem 1.
+
+\section{Three limits that no query strategy can remove}
+\paragraph{Arbitrarily small changes.} Add $t>0$ to one edge $f$ of a unit clique. For query incidence $b$, the resistance decrease is
+\[
+ \frac{t(b_f^{\mathsf T}b)^2}{n(n+2t)},
+ \qquad\max_b(R_b-R'_b)=\frac{4t}{n(n+2t)}.
+\]
+If the maximum is at most $2\eta$, the coordinatewise midpoint of the two full resistance vectors is an admissible transcript for both the healthy and faulty graph. This defeats adaptive queries and repetition as well as all-pairs measurement. A positive noise bound cannot uniformly distinguish arbitrary nonzero severities.
+
+\paragraph{Unbounded upper conductance scales.} Starting from $K_3$, one target adds $M$ to pairs $\{12,23\}$ and another to $\{12,13\}$. Both have two increases of magnitude at least $\delta$ when $M\ge\delta$, but their supports differ. Each contains a spanning path with edge conductances $1+M$, so all pair resistances lie between zero and $2/(1+M)$. For $M\ge1/\eta-1$, the midpoint of their resistance vectors is admissible for both. A uniform support guarantee based only on $n,k,\delta,\eta$ is therefore impossible without controlling the upper conductance scale.
+
+\paragraph{Exact weights under positive noise.} On two vertices, conductances $c$ and $c+q$ differ in resistance by $q/[c(c+q)]$. Distinct allowed weights can be arbitrarily close, even inside a finite conductance interval with changes exceeding $\delta$. If this difference is at most $2\eta$, their midpoint is admissible for both. Exact real-valued weight recovery is impossible without additional discrete structure; an error guarantee is the appropriate conclusion.
+
+\section{Scope computation and extension}
+The scalar-query bound does not count the effort needed to achieve precision $\eta$. Adversarial errors cannot generally be reduced by averaging. Generic dense Schur-complement formation and inversion take at most $O(n^3+m^3)$ arithmetic operations. The mathematical bound assumes exact arithmetic on the observed values; roundoff needs a separate error budget. No lower bound on target algebraic connectivity is required for the absolute perturbation theorem, but finite-bit magnitude bounds would require additional control when resistances become arbitrarily large. Baseline uncertainty and disconnected targets are not covered here.
+
+For a known connected weighted blow-up with $t$ classes, $w_{ij}=a_i a_jc_{p(i),p(j)}$, put $A_b=\sum_{j:p(j)=b}a_j$ and $d_a=\sum_b c_{ab}A_b$. Same-class injections have voltages supported on their two endpoints, with values $1/(a_i d_{p(i)})$. Using $\beta=\min_i1/(a_i d_{p(i)})$ and the maximum baseline pair resistance gives the same discovery-gap proof, including additions at zero baseline positions. Apply matching and star tests within each class, keeping a healthy representative and its affected vertices when possible, or the entire class otherwise. This produces $m\le\min(n,4k+t)$; the same Kron proof gives weight error $h$, with query cost $O(n+(k+t)^2)$. This extension does not establish a universal sparse-recovery bound for arbitrary baselines.
+
+\section{Verification and relation to prior work}
+A seeded full-network numerical suite passed 484 cases, including every one of the 64 bounded-error corners in a four-vertex example. It checks healthy returns, endpoint localization, support, clipping, weight bounds and query counts; the weight-error tests use no additive tolerance. A second implementation checked 8,111 endpoint and query-count patterns and 432 noisy reconstructions. In that audit, 40 individual tight-bound floating-point comparisons exceeded their mathematical bounds by at most $1.81\times10^{-13}$ relatively. These excesses are reported, and the corresponding model inequalities were replayed in exact rational arithmetic; this does not certify those floating-point outputs against an unbudgeted exact bound. Separate gap, Schur-identity and eigenvalue diagnostics retain numerical tolerances and are not exact certificates. Separate fresh rational tests passed 153 structured cases and 202 noisy cases, including full error-box corners, $10^{-20}$ change magnitudes, $10^{-20}$ surviving conductances, nonuniform weights and additions at zero baseline positions. The numerical verifier now rejects rather than silently accepts an error above its reported bound. An exact replay confirms that a previously accepted small-budget numerical case has zero mathematical reconstruction error, while the numerical oracle generation itself exceeds its measurement-error budget. These checks supplement the proofs and do not certify optimal precision, finite-arithmetic stability or priority. Reproduction commands and sources accompany this supplement.
+
+Hoskins et al. explicitly formulate graph reconstruction from partial, noisy effective resistances, including additive random errors and optimization approaches \cite{hoskins}. Warton et al. distinguish exact unweighted reconstruction and approximate numerical weighted completion with missing edge locations supplied \cite{warton}. Neither comparison is a claim that noisy resistance inference or its standard matrix tools originate here. This supplement combines structured endpoint discovery with standard monotonicity, Schur complements and inverse perturbation bounds to state a specific sufficient adversarial-error guarantee.
+
+\begin{thebibliography}{9}
+\bibitem{hoskins} J. Hoskins, C. Musco, C. Musco and C. Tsourakakis. Inferring Networks From Random Walk-Based Node Similarities. NeurIPS 2018. \url{https://papers.neurips.cc/paper_files/paper/2018/hash/2f25f6e326adb93c5787175dda209ab6-Abstract.html}.
+\bibitem{warton} E. Warton, H. Bennett, M. Black and A. Nayyeri. Graph Inference with Effective Resistance Queries. ALT 2026, PMLR 313. \url{https://proceedings.mlr.press/v313/warton26a.html}.
+\end{thebibliography}
+\end{document}

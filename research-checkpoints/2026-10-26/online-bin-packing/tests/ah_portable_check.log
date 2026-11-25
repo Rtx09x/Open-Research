@@ -1,0 +1,15 @@
+{
+  "status": "PASS",
+  "parameters_and_weights_from_independent_primary_extraction": true,
+  "facts_sha256": "99a00d0648429fd93d0c56c79c4351cf7a3dff967a104f70b0e75979c8af3dad",
+  "primary_HTML_sha256": "f4b6144a688e5dc36f5a8014a9bde2e335a02f53865f713476e601f8aed5f914",
+  "exact_modified_parameters_match": true,
+  "scenarios": 402,
+  "strict_knapsacks": 804,
+  "large_balance_inequalities": 492,
+  "integer_lattice_nodes_no_dominance_pruning": 109845241,
+  "target": "1848920194883516152323541607/1171513518439186595284254720",
+  "seconds": 94.77134995300003,
+  "maxrss_kib": 13056,
+  "endpoint_convention": "threshold chosen at interior midpoint for scenario classification; separate proof establishes applicability to every input"
+}

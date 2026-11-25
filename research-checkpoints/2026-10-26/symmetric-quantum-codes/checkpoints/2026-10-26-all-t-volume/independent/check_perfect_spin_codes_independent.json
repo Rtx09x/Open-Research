@@ -1,0 +1,195 @@
+{
+  "PASS": true,
+  "scope": "No K2 code saturates n+1=2(t+1)^2 for any integer t>=2, conditional only on separately audited all-t volume/equality-quadrature theorem; not full3t\u00b2+3t+1 conjecture",
+  "symbolic_third_Newton_coefficient": "t**2*(t - 2)*(t - 1)**2*(t + 1)*(t + 2)*(2*t + 5)*(2*t**2 + 3*t + 2)*(2*t**2 + 3*t + 3)*(2*t**2 + 3*t + 4)*(2*t**2 + 5*t + 1)/(12*(2*t - 1))",
+  "P_degree": 16,
+  "P_at_half": "-2025/2",
+  "congruence": "2^16 P(t) = -2025*2^15 mod(2t-1); odd divisor permits cancellation",
+  "all_positive_divisors_2025": [
+    1,
+    3,
+    5,
+    9,
+    15,
+    25,
+    27,
+    45,
+    75,
+    81,
+    135,
+    225,
+    405,
+    675,
+    2025
+  ],
+  "remaining_t_ge3": [
+    3,
+    5,
+    8,
+    13,
+    14,
+    23,
+    38,
+    41,
+    68,
+    113,
+    203,
+    338,
+    1013
+  ],
+  "finite_cases": [
+    {
+      "t": 3,
+      "reason": "monic_polynomial_not_completely_split_mod_prime",
+      "prime": 19,
+      "polynomial_mod_p": [
+        2,
+        1,
+        0,
+        1
+      ],
+      "remaining_root_free_factor": [
+        2,
+        18,
+        1
+      ]
+    },
+    {
+      "t": 5,
+      "reason": "monic_polynomial_not_completely_split_mod_prime",
+      "prime": 23,
+      "polynomial_mod_p": [
+        0,
+        13,
+        9,
+        16,
+        12,
+        1
+      ],
+      "remaining_root_free_factor": [
+        3,
+        20,
+        1
+      ]
+    },
+    {
+      "t": 8,
+      "reason": "monic_polynomial_not_completely_split_mod_prime",
+      "prime": 23,
+      "polynomial_mod_p": [
+        0,
+        13,
+        16,
+        11,
+        10,
+        14,
+        3,
+        19,
+        1
+      ],
+      "remaining_root_free_factor": [
+        14,
+        17,
+        9,
+        21,
+        13,
+        1
+      ]
+    },
+    {
+      "t": 13,
+      "reason": "noninteger_monic_Newton_coefficient",
+      "index": 8,
+      "coefficient": "-62640798173132090888989172160/23",
+      "distance_from_top": 5
+    },
+    {
+      "t": 14,
+      "reason": "monic_polynomial_not_completely_split_mod_prime",
+      "prime": 3,
+      "polynomial_mod_p": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        2,
+        2,
+        1,
+        1,
+        0,
+        1,
+        2,
+        1
+      ],
+      "remaining_root_free_factor": [
+        2,
+        0,
+        1,
+        1
+      ]
+    },
+    {
+      "t": 23,
+      "reason": "noninteger_monic_Newton_coefficient",
+      "index": 18,
+      "coefficient": "-164763929362082778525588174191808000/43",
+      "distance_from_top": 5
+    },
+    {
+      "t": 38,
+      "reason": "noninteger_monic_Newton_coefficient",
+      "index": 33,
+      "coefficient": "-72404273175484224811607485312967209451520/73",
+      "distance_from_top": 5
+    },
+    {
+      "t": 41,
+      "reason": "noninteger_monic_Newton_coefficient",
+      "index": 38,
+      "coefficient": "-7701911611944670158438400/3",
+      "distance_from_top": 3
+    },
+    {
+      "t": 68,
+      "reason": "noninteger_monic_Newton_coefficient",
+      "index": 63,
+      "coefficient": "-36501536664708988493209049738995944418986393600/19",
+      "distance_from_top": 5
+    },
+    {
+      "t": 113,
+      "reason": "noninteger_monic_Newton_coefficient",
+      "index": 108,
+      "coefficient": "-134575779756826411454474475746639595738693280772336640/223",
+      "distance_from_top": 5
+    },
+    {
+      "t": 203,
+      "reason": "noninteger_monic_Newton_coefficient",
+      "index": 200,
+      "coefficient": "-171257613089023749394177211483404880/3",
+      "distance_from_top": 3
+    },
+    {
+      "t": 338,
+      "reason": "noninteger_monic_Newton_coefficient",
+      "index": 333,
+      "coefficient": "-306490160194219378187023106781518649894639178653095148227584327680/673",
+      "distance_from_top": 5
+    },
+    {
+      "t": 1013,
+      "reason": "noninteger_monic_Newton_coefficient",
+      "index": 1010,
+      "coefficient": "-4898419009273752654682012951495852486658224768/3",
+      "distance_from_top": 3
+    }
+  ],
+  "t2": "114 is not r(r+1), while272=16*17",
+  "t1_positive_control": "root42=6*7 remains possible",
+  "resulting_integer_length_bound": "n>=2t^2+4t+2 for K2,t>=2",
+  "seconds": 0.04052974000296672
+}

@@ -1,0 +1,10 @@
+\begin{tikzpicture}[x=1cm,y=1cm,font=\small]
+\foreach \arity/\K/\yy in {pairwise/30/3.6,three-body/15/2.65,four-body/10/1.7,seven-body/5/.75}{
+ \node[anchor=east,font=\small] at (2.65,\yy) {\arity};
+ \draw[fill=papergray,draw=none,rounded corners=2pt] (2.95,\yy-.17) rectangle (10.25,\yy+.17);
+ \pgfmathsetmacro{\w}{\K/30*7.30}
+ \draw[fill=jade,draw=none,rounded corners=2pt] (2.95,\yy-.17) rectangle ({2.95+\w},\yy+.17);
+ \node[anchor=west,font=\small\bfseries] at ({3.07+\w},\yy) {\K};
+}
+\node[anchor=west,font=\footnotesize,text=black!75] at (2.95,.15) {$R_{37}$ on 11 switches: minimum directed interaction terms};
+\end{tikzpicture}

@@ -1,0 +1,195 @@
+{
+  "implementation_independence": "tuple+combinations checker; no solver import",
+  "runs": [
+    {
+      "n": 1,
+      "bellman_equations_checked": 48,
+      "legal_response_values_checked": 32,
+      "independent_solver_values_compared": 51,
+      "all_checks_passed": true,
+      "whole_table_fixed_point_at_h": 1,
+      "empty_all_horizon_value": 1,
+      "sign_reversal_alone_counterexample": null,
+      "lead_file_sha256": "b1febf55dfc5ea39f93d16b32eb0010a22ae3e4d88fdd88f1e13ead6d52f0e24",
+      "own_csv_sha256": "93566d24cbcd479c171bc72ef052b510dc05c8bf0a193b692520ecf24c1aba93",
+      "seconds": 0.0004421580015332438,
+      "maxrss_kib": 9728
+    },
+    {
+      "n": 2,
+      "bellman_equations_checked": 144,
+      "legal_response_values_checked": 256,
+      "independent_solver_values_compared": 153,
+      "all_checks_passed": true,
+      "whole_table_fixed_point_at_h": 1,
+      "empty_all_horizon_value": 1,
+      "sign_reversal_alone_counterexample": {
+        "board": [
+          -1,
+          0
+        ],
+        "h": 1,
+        "v": 1,
+        "inverted_v": 2
+      },
+      "lead_file_sha256": "4523fd4bf67ebb533883926987c462bca8bd3be347defd6979e8cca16894a828",
+      "own_csv_sha256": "17c261a40025ce70c2b95a5b7a69f7b75ed0ac5ac69cafdf1cc19019e09af6fd",
+      "seconds": 0.0004379110032459721,
+      "maxrss_kib": 9728
+    },
+    {
+      "n": 3,
+      "bellman_equations_checked": 432,
+      "legal_response_values_checked": 1536,
+      "independent_solver_values_compared": 459,
+      "all_checks_passed": true,
+      "whole_table_fixed_point_at_h": 2,
+      "empty_all_horizon_value": 2,
+      "sign_reversal_alone_counterexample": {
+        "board": [
+          -1,
+          0,
+          0
+        ],
+        "h": 1,
+        "v": 1,
+        "inverted_v": 2
+      },
+      "lead_file_sha256": "151994f5b7486aa38d9a545277a8ed7e69c9886320fec62aef61493cf26f7945",
+      "own_csv_sha256": "b13586095f87c973bae2f6d090bf34e9411957e519b9709d1849136e90fae95e",
+      "seconds": 0.0011367059996700846,
+      "maxrss_kib": 9856
+    },
+    {
+      "n": 4,
+      "bellman_equations_checked": 1296,
+      "legal_response_values_checked": 8192,
+      "independent_solver_values_compared": 1377,
+      "all_checks_passed": true,
+      "whole_table_fixed_point_at_h": 2,
+      "empty_all_horizon_value": 2,
+      "sign_reversal_alone_counterexample": {
+        "board": [
+          -1,
+          0,
+          0,
+          0
+        ],
+        "h": 1,
+        "v": 1,
+        "inverted_v": 2
+      },
+      "lead_file_sha256": "47b064be42ce9f15091721c999468b78c97eeb1e52fd21b63becfdd0ec232167",
+      "own_csv_sha256": "85588fbd8192b8809bec64f89b9fd7a1721ec217b619f37c5f467e76a5f90724",
+      "seconds": 0.0035813779977615923,
+      "maxrss_kib": 9984
+    },
+    {
+      "n": 5,
+      "bellman_equations_checked": 3888,
+      "legal_response_values_checked": 40960,
+      "independent_solver_values_compared": 4131,
+      "all_checks_passed": true,
+      "whole_table_fixed_point_at_h": 4,
+      "empty_all_horizon_value": 3,
+      "sign_reversal_alone_counterexample": {
+        "board": [
+          -1,
+          0,
+          0,
+          0,
+          0
+        ],
+        "h": 1,
+        "v": 1,
+        "inverted_v": 2
+      },
+      "lead_file_sha256": "0afd8f6a1f9058b9053591edeb4e92fdcece63dbe51f6e12d639d304fc10968c",
+      "own_csv_sha256": "c0deb9b736fb78144f8ace863917196393712fae2d0771d98881488babe40bab",
+      "seconds": 0.012026491000142414,
+      "maxrss_kib": 10112
+    },
+    {
+      "n": 6,
+      "bellman_equations_checked": 11664,
+      "legal_response_values_checked": 196608,
+      "independent_solver_values_compared": 12393,
+      "all_checks_passed": true,
+      "whole_table_fixed_point_at_h": 4,
+      "empty_all_horizon_value": 3,
+      "sign_reversal_alone_counterexample": {
+        "board": [
+          -1,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "h": 1,
+        "v": 1,
+        "inverted_v": 2
+      },
+      "lead_file_sha256": "b4cb89497cbb524d865580e9c202a5f4696e54f3a9646aac7b740f76768578f7",
+      "own_csv_sha256": "9a966c9a6e53ec752560cb7b5e0e42ac12f785fa5c96f1899a0cfca016787a96",
+      "seconds": 0.04330388199741719,
+      "maxrss_kib": 10496
+    },
+    {
+      "n": 7,
+      "bellman_equations_checked": 34992,
+      "legal_response_values_checked": 917504,
+      "independent_solver_values_compared": 37179,
+      "all_checks_passed": true,
+      "whole_table_fixed_point_at_h": 7,
+      "empty_all_horizon_value": 4,
+      "sign_reversal_alone_counterexample": {
+        "board": [
+          -1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "h": 1,
+        "v": 1,
+        "inverted_v": 2
+      },
+      "lead_file_sha256": "922b3b14fcd234c44277879e5477605fe8b30cd1b597fef67bf977e55b1d7521",
+      "own_csv_sha256": "ce84d17ff06a1ccb123e099b089b5eed073fc416a183181724aec57cc70b7775",
+      "seconds": 0.17394530000456143,
+      "maxrss_kib": 11648
+    },
+    {
+      "n": 8,
+      "bellman_equations_checked": 104976,
+      "legal_response_values_checked": 4194304,
+      "independent_solver_values_compared": 111537,
+      "all_checks_passed": true,
+      "whole_table_fixed_point_at_h": 7,
+      "empty_all_horizon_value": 4,
+      "sign_reversal_alone_counterexample": {
+        "board": [
+          -1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "h": 1,
+        "v": 1,
+        "inverted_v": 2
+      },
+      "lead_file_sha256": "ff5efb6489963db414c49bf56cec6cfca118b6d13bbe3c441dec9c7f7b34b4ac",
+      "own_csv_sha256": "b0b80821a58998ca2a3ea4f7d55543484acf3866d1dd4e9d27bf6d8131cb41d0",
+      "seconds": 0.7276576049989671,
+      "maxrss_kib": 14720
+    }
+  ],
+  "seconds": 0.9629425120001542
+}

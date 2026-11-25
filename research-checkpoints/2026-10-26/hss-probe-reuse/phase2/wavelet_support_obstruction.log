@@ -1,0 +1,150 @@
+{
+  "status": "PASS",
+  "arithmetic": "exact rational",
+  "N": 8,
+  "k": 1,
+  "L": 2,
+  "true_subspace_dimension": 22,
+  "coordinate_envelope_dimension": 30,
+  "forest_support_maximum_dimension": 22,
+  "left_coarse_active": [
+    "3/5",
+    "4/5"
+  ],
+  "right_coarse_active": [
+    "5/13",
+    "12/13"
+  ],
+  "first_atom_nonzero": {
+    "(4, 0)": "-4/5",
+    "(6, 0)": "3/5"
+  },
+  "envelope_atom_squared_distance_to_true_class": "9/25",
+  "triangle_vertices": [
+    0,
+    4,
+    6
+  ],
+  "support": [
+    [
+      0,
+      0
+    ],
+    [
+      0,
+      4
+    ],
+    [
+      0,
+      6
+    ],
+    [
+      1,
+      1
+    ],
+    [
+      1,
+      4
+    ],
+    [
+      1,
+      6
+    ],
+    [
+      2,
+      2
+    ],
+    [
+      2,
+      5
+    ],
+    [
+      2,
+      7
+    ],
+    [
+      3,
+      3
+    ],
+    [
+      3,
+      5
+    ],
+    [
+      3,
+      7
+    ],
+    [
+      4,
+      0
+    ],
+    [
+      4,
+      1
+    ],
+    [
+      4,
+      4
+    ],
+    [
+      4,
+      6
+    ],
+    [
+      5,
+      2
+    ],
+    [
+      5,
+      3
+    ],
+    [
+      5,
+      5
+    ],
+    [
+      5,
+      7
+    ],
+    [
+      6,
+      0
+    ],
+    [
+      6,
+      1
+    ],
+    [
+      6,
+      4
+    ],
+    [
+      6,
+      6
+    ],
+    [
+      6,
+      7
+    ],
+    [
+      7,
+      2
+    ],
+    [
+      7,
+      3
+    ],
+    [
+      7,
+      5
+    ],
+    [
+      7,
+      6
+    ],
+    [
+      7,
+      7
+    ]
+  ]
+}

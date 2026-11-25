@@ -1,0 +1,68 @@
+{
+  "status": "PASS exact structural probe; no new all-input bound claimed",
+  "tau": "1/100000000",
+  "results": [
+    {
+      "source_tiny_containers": 10,
+      "offline_OPT": 14064,
+      "source_type_counts": [
+        4,
+        6
+      ],
+      "best_fit_type_counts": [
+        4,
+        6
+      ],
+      "best_fit_tiny_containers": 10,
+      "items": 14073,
+      "source_positive_tiny_containers": 6,
+      "best_fit_positive_tiny_containers": 6,
+      "positive_count_reduction": 0,
+      "remaining_gaps": 10,
+      "max_final_gap": "9409492403/40850000000",
+      "tiny_volume": "8655200627/1254000000"
+    },
+    {
+      "source_tiny_containers": 100,
+      "offline_OPT": 137615,
+      "source_type_counts": [
+        42,
+        58
+      ],
+      "best_fit_type_counts": [
+        41,
+        56
+      ],
+      "best_fit_tiny_containers": 97,
+      "items": 137714,
+      "source_positive_tiny_containers": 58,
+      "best_fit_positive_tiny_containers": 56,
+      "positive_count_reduction": 2,
+      "remaining_gaps": 97,
+      "max_final_gap": "69656462369/2625150000000",
+      "tiny_volume": "8475460627/125400000"
+    },
+    {
+      "source_tiny_containers": 1000,
+      "offline_OPT": 1374639,
+      "source_type_counts": [
+        421,
+        579
+      ],
+      "best_fit_type_counts": [
+        407,
+        560
+      ],
+      "best_fit_tiny_containers": 967,
+      "items": 1375638,
+      "source_positive_tiny_containers": 579,
+      "best_fit_positive_tiny_containers": 560,
+      "positive_count_reduction": 19,
+      "remaining_gaps": 967,
+      "max_final_gap": "33973002743/238650000000",
+      "tiny_volume": "8466473627/12540000"
+    }
+  ],
+  "seconds": 1.1100122928619385,
+  "scope": "only tiny insertions, same source saturation inputs; matching and full AH not simulated"
+}

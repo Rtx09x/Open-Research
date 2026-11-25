@@ -1,0 +1,78 @@
+{
+  "status": "PASS",
+  "certificate_sha256": "a7961fa477d3d4ad6bacb875de2568cc27741d38294850c4003683913c88bb61",
+  "cases": [
+    {
+      "name": "published",
+      "alphabet": 140049,
+      "matching": 5296,
+      "clique_partition": 134753,
+      "independent_lower": 134753
+    },
+    {
+      "name": "published_T1",
+      "alphabet": 268418,
+      "matching": 133665,
+      "clique_partition": 134753,
+      "independent_lower": 134753
+    },
+    {
+      "name": "published_J_exchange",
+      "alphabet": 268418,
+      "matching": 133665,
+      "clique_partition": 134753,
+      "independent_lower": 134753
+    },
+    {
+      "name": "published_T2",
+      "alphabet": 268354,
+      "matching": 133601,
+      "clique_partition": 134753,
+      "independent_lower": 134753
+    },
+    {
+      "name": "published_T3",
+      "alphabet": 268374,
+      "matching": 133621,
+      "clique_partition": 134753,
+      "independent_lower": 134753
+    },
+    {
+      "name": "cycle_flip",
+      "alphabet": 150594,
+      "matching": 15841,
+      "clique_partition": 134753,
+      "independent_lower": 134753
+    },
+    {
+      "name": "cycle_flip_T1",
+      "alphabet": 268418,
+      "matching": 133665,
+      "clique_partition": 134753,
+      "independent_lower": 134753
+    },
+    {
+      "name": "cycle_flip_J_exchange",
+      "alphabet": 268418,
+      "matching": 133665,
+      "clique_partition": 134753,
+      "independent_lower": 134753
+    },
+    {
+      "name": "cycle_flip_T2",
+      "alphabet": 268354,
+      "matching": 133601,
+      "clique_partition": 134753,
+      "independent_lower": 134753
+    },
+    {
+      "name": "cycle_flip_T3",
+      "alphabet": 268374,
+      "matching": 133621,
+      "clique_partition": 134753,
+      "independent_lower": 134753
+    }
+  ],
+  "seconds": 4.741409540176392,
+  "scope": "Each specified I0^2 union single reservoir has exact independence number and all-macro-length Shannon capacity134753; not simultaneous3+reservoir union or full C7 capacity"
+}

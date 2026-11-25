@@ -1,0 +1,31 @@
+{
+  "passed": true,
+  "returncode": 0,
+  "seconds": 1055.5621983189994,
+  "command": "python advisor/phase3/check_quantum_general_independent.py 33 3",
+  "limits": {
+    "address_space_bytes": 2147483648,
+    "cpu_seconds": 1800,
+    "cpus": 1
+  },
+  "host_utc_finished": "2026-10-25T23:38:41.030315+00:00",
+  "output": "Independent cone coefficients ready 960.4620943069458\n{\n  \"passed\": true,\n  \"n\": 33,\n  \"t\": 3,\n  \"certificate_sha256\": \"49fb069b0eaf9a25be58aa079aa31cf101d2f9ac248401b7532d08b3c6cd51a0\",\n  \"constant_exact\": \"-169973/6250000000\",\n  \"main_residual_budget\": \"289/100000000\",\n  \"extra_KL_defect_bound\": \"7790165137445589407/5630625000000000000000000000000000000000000000000000000000000000000\",\n  \"extra_KL_defect_less_than\": \"1e-35\",\n  \"strict_upper_using_coarse_KL_bound\": \"-2430567999999999999999999999999/100000000000000000000000000000000000\",\n  \"KL_vectors_checked\": 516,\n  \"diagnostic_max_KL_eigenresidual\": 5.046901909036575e-74,\n  \"diagnostic_max_moment_residual\": 1.6110243551572512e-11,\n  \"diagnostic_max_enum_residual\": 2.466776239907728e-10,\n  \"seconds\": 1052.118210554123,\n  \"arithmetic\": \"Independent SymPy exact6j to256bit Arb; declarative full-space collection; no worker imports\",\n  \"scope\": \"Finite necessary relaxation exclusion, conditional only on audited representation-theoretic identities, not novelty.\"\n}\n",
+  "result": {
+    "passed": true,
+    "n": 33,
+    "t": 3,
+    "certificate_sha256": "49fb069b0eaf9a25be58aa079aa31cf101d2f9ac248401b7532d08b3c6cd51a0",
+    "constant_exact": "-169973/6250000000",
+    "main_residual_budget": "289/100000000",
+    "extra_KL_defect_bound": "7790165137445589407/5630625000000000000000000000000000000000000000000000000000000000000",
+    "extra_KL_defect_less_than": "1e-35",
+    "strict_upper_using_coarse_KL_bound": "-2430567999999999999999999999999/100000000000000000000000000000000000",
+    "KL_vectors_checked": 516,
+    "diagnostic_max_KL_eigenresidual": 5.046901909036575e-74,
+    "diagnostic_max_moment_residual": 1.6110243551572512e-11,
+    "diagnostic_max_enum_residual": 2.466776239907728e-10,
+    "seconds": 1052.118210554123,
+    "arithmetic": "Independent SymPy exact6j to256bit Arb; declarative full-space collection; no worker imports",
+    "scope": "Finite necessary relaxation exclusion, conditional only on audited representation-theoretic identities, not novelty."
+  }
+}

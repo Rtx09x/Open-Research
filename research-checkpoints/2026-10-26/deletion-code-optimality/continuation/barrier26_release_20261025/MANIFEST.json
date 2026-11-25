@@ -1,0 +1,36 @@
+{
+  "frozen": true,
+  "classification": "Fractional-relaxation obstruction only; NOT a code or global bound",
+  "files": [
+    {
+      "path": "README.md",
+      "bytes": 2025,
+      "sha256": "4883e791cf225518ee6f51958fac8d5f3e31752a504f1cc337617945704afa11"
+    },
+    {
+      "path": "audit.json",
+      "bytes": 392,
+      "sha256": "941065ddf2e878e7fcbc17c74b442ad3402a925802cfdd8e06ea83b838a99c16"
+    },
+    {
+      "path": "negative_controls.json",
+      "bytes": 128,
+      "sha256": "e91c54ebaa16aae26bb4ef348bebaa67c5c86115f5451780ef38134e64c20d3f"
+    },
+    {
+      "path": "negative_controls.py",
+      "bytes": 833,
+      "sha256": "87fb1fec1b0a5c0712467c9b3dc55c6ffe28647709ddd68d764592f5917c51d5"
+    },
+    {
+      "path": "point.json",
+      "bytes": 163178,
+      "sha256": "5b021de198f8e2f17a15cfe2e26e3970d1f394f9fd29e532512dd4432200c963"
+    },
+    {
+      "path": "verify.py",
+      "bytes": 3338,
+      "sha256": "dd737664ecee2c1fea961807fde13b0953dd7f4d8bbbf548d6f1db731d0d7e9c"
+    }
+  ]
+}

@@ -1,0 +1,12 @@
+=== verify_three_color_tree.py ===
+{'parents': [None, 0, 0, 2], 'k': 2, 'colors': [0, 1, 1, 2], 'sign_cases': 256, 'residual_norm_squared': 333, 'mean_error_squared': '494', 'exact_identity_verified': True, 'exact_model_recovery_all_signs': True}
+{'parents': [None, 0, 1, 2], 'k': 1, 'colors': [0, 1, 2, 0], 'sign_cases': 256, 'residual_norm_squared': 51, 'mean_error_squared': '89', 'exact_identity_verified': True, 'exact_model_recovery_all_signs': True}
+{'parents': [1, 2, None, 2], 'k': 2, 'colors': [2, 1, 0, 1], 'sign_cases': 256, 'residual_norm_squared': 314, 'mean_error_squared': '558', 'exact_identity_verified': True, 'exact_model_recovery_all_signs': True}
+=== verify_scattering_identities.py ===
+{"J_initial": "73469419/289578289", "all_coordinate_and_expectation_identities_exact": true, "cases": [{"J_next": "252704568619/1223468271025", "h_next": "46434/14379365", "sigma": -1, "tau": -1}, {"J_next": "240560148331/1223468271025", "h_next": "-263694/14379365", "sigma": -1, "tau": 1}, {"J_next": "129054962539/1223468271025", "h_next": "-118374/14379365", "sigma": 1, "tau": -1}, {"J_next": "304222787371/1223468271025", "h_next": "672234/14379365", "sigma": 1, "tau": 1}], "check": "scalar_branch_s2", "mean_J_next": "46327123343/244693654205", "mean_h_next": "90/15379", "sign_cases": 4}
+{"channel_recursion_exact": true, "check": "local_flux_s2", "flux_projection_and_dissipation_exact": true, "observed_energy_relation_exact": true, "sibling_and_level_ledger_exact": true, "sign_cases": 4}
+{"channel_recursion_exact": true, "check": "local_flux_s3", "flux_projection_and_dissipation_exact": true, "observed_energy_relation_exact": true, "sibling_and_level_ledger_exact": true, "sign_cases": 4}
+PASS: all checks used exact fractions.Fraction arithmetic.
+=== verify_matrix_branch.py ===
+{"arithmetic": "fractions.Fraction", "check": "matrix_branch_k2_s4", "conditional_flux_dissipation_exact": true, "coordinate_formulas_exact": true, "general_linear_operator_mixed_moment_exact": true, "orientation_cases": 4}
+PASS: noncommuting rational k=2 transfer blocks checked exactly.

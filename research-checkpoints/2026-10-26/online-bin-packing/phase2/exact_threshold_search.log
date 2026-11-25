@@ -1,0 +1,13 @@
+scenario 49/320 1/6 round 0 patterns 2 gap 0.7560876897140195
+scenario 49/320 1/6 round 1 patterns 3 gap 0.0022959274632364415
+scenario 49/320 1/6 round 2 patterns 4 gap 4.285346466663853e-05
+scenario 49/320 1/6 round 3 patterns 5 gap 0.0
+scenario 533/1600 1/3 round 0 patterns 2 gap 0.009836884343720174
+scenario 533/1600 1/3 round 1 patterns 3 gap 0.0022672965823539097
+scenario 533/1600 1/3 round 2 patterns 4 gap 0.0
+scenario 3/7 1/2 round 0 patterns 2 gap 0.24302279699202378
+scenario 3/7 1/2 round 1 patterns 4 gap 0.03201540941287766
+scenario 3/7 1/2 round 2 patterns 6 gap 0.0014046843245181743
+scenario 3/7 1/2 round 3 patterns 8 gap 0.0005121722860063978
+scenario 3/7 1/2 round 4 patterns 10 gap 0.0
+PASS 1.5782309281201736 0.11420702934265137

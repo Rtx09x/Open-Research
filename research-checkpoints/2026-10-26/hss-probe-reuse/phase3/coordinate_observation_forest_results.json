@@ -1,0 +1,90 @@
+{
+  "status": "EXACT_INTEGER_PASS",
+  "exhaustive": [
+    {
+      "L": 1,
+      "n": 4,
+      "basis_pairs": 16,
+      "all_matrix_units_per_pair": 16,
+      "max_coefficient_weight": 3
+    },
+    {
+      "L": 2,
+      "n": 8,
+      "basis_pairs": 4096,
+      "all_matrix_units_per_pair": 64,
+      "max_coefficient_weight": 5
+    }
+  ],
+  "greedy_family": [
+    {
+      "L": 3,
+      "signal_coefficient_weights": [
+        3,
+        3,
+        3
+      ],
+      "actual_expected_total_error": 12
+    },
+    {
+      "L": 4,
+      "signal_coefficient_weights": [
+        3,
+        3,
+        3,
+        3
+      ],
+      "actual_expected_total_error": 16
+    },
+    {
+      "L": 5,
+      "signal_coefficient_weights": [
+        3,
+        3,
+        3,
+        3,
+        3
+      ],
+      "actual_expected_total_error": 20
+    },
+    {
+      "L": 6,
+      "signal_coefficient_weights": [
+        3,
+        3,
+        3,
+        3,
+        3,
+        3
+      ],
+      "actual_expected_total_error": 24
+    },
+    {
+      "L": 7,
+      "signal_coefficient_weights": [
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3
+      ],
+      "actual_expected_total_error": 28
+    },
+    {
+      "L": 8,
+      "signal_coefficient_weights": [
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3
+      ],
+      "actual_expected_total_error": 32
+    }
+  ]
+}

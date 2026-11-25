@@ -1,0 +1,35 @@
+{
+  "all_checks_passed": true,
+  "runs": [
+    {
+      "n": 1,
+      "depth": 6,
+      "edges": 6,
+      "local_projected_responses": 6,
+      "external_erasure_projections": 0,
+      "calls_after_previous_owned_fullness": 5,
+      "new_instances_with_foreign_signs": 0
+    },
+    {
+      "n": 2,
+      "depth": 6,
+      "edges": 913,
+      "local_projected_responses": 1967,
+      "external_erasure_projections": 3482,
+      "calls_after_previous_owned_fullness": 775,
+      "new_instances_with_foreign_signs": 35
+    },
+    {
+      "n": 4,
+      "depth": 4,
+      "edges": 2192,
+      "local_projected_responses": 7090,
+      "external_erasure_projections": 10200,
+      "calls_after_previous_owned_fullness": 278,
+      "new_instances_with_foreign_signs": 272
+    }
+  ],
+  "wall_seconds": 0.4422290639995481,
+  "scope": "Complete arbitrary-erasure subsets and empty-cell requests to the stated bounded depths, with exact rational v2 runtime. Every instance projection is a valid extended owned-sign trace; full local instances may resume after erasure. Root ordinary SPR remains terminal-full.",
+  "proof_caveat": "Operational controls only; deletion-robust uniform induction is documented separately."
+}

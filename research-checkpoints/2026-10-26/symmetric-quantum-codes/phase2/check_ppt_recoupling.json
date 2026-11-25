@@ -1,0 +1,242 @@
+[
+  {
+    "j": "1/2",
+    "L": 0,
+    "Lp": 1,
+    "J": "1/2",
+    "K": "1/2",
+    "direct": "-1",
+    "predicted": "-1",
+    "pass": true
+  },
+  {
+    "j": "1",
+    "L": 0,
+    "Lp": 1,
+    "J": "1",
+    "K": "1",
+    "direct": "-1",
+    "predicted": "-1",
+    "pass": true
+  },
+  {
+    "j": "1",
+    "L": 1,
+    "Lp": 1,
+    "J": "0",
+    "K": "0",
+    "direct": "1/3",
+    "predicted": "1/3",
+    "pass": true
+  },
+  {
+    "j": "1",
+    "L": 1,
+    "Lp": 1,
+    "J": "0",
+    "K": "1",
+    "direct": "-1/3",
+    "predicted": "-1/3",
+    "pass": true
+  },
+  {
+    "j": "1",
+    "L": 1,
+    "Lp": 1,
+    "J": "0",
+    "K": "2",
+    "direct": "1/3",
+    "predicted": "1/3",
+    "pass": true
+  },
+  {
+    "j": "1",
+    "L": 1,
+    "Lp": 1,
+    "J": "1",
+    "K": "0",
+    "direct": "-1",
+    "predicted": "-1",
+    "pass": true
+  },
+  {
+    "j": "1",
+    "L": 1,
+    "Lp": 1,
+    "J": "1",
+    "K": "1",
+    "direct": "1/2",
+    "predicted": "1/2",
+    "pass": true
+  },
+  {
+    "j": "1",
+    "L": 1,
+    "Lp": 1,
+    "J": "1",
+    "K": "2",
+    "direct": "1/2",
+    "predicted": "1/2",
+    "pass": true
+  },
+  {
+    "j": "1",
+    "L": 1,
+    "Lp": 1,
+    "J": "2",
+    "K": "0",
+    "direct": "5/3",
+    "predicted": "5/3",
+    "pass": true
+  },
+  {
+    "j": "1",
+    "L": 1,
+    "Lp": 1,
+    "J": "2",
+    "K": "1",
+    "direct": "5/6",
+    "predicted": "5/6",
+    "pass": true
+  },
+  {
+    "j": "1",
+    "L": 1,
+    "Lp": 1,
+    "J": "2",
+    "K": "2",
+    "direct": "1/6",
+    "predicted": "1/6",
+    "pass": true
+  },
+  {
+    "j": "1",
+    "L": 1,
+    "Lp": 2,
+    "J": "1",
+    "K": "1",
+    "direct": "1/2",
+    "predicted": "1/2",
+    "pass": true
+  },
+  {
+    "j": "1",
+    "L": 1,
+    "Lp": 2,
+    "J": "1",
+    "K": "2",
+    "direct": "-3*sqrt(5)/10",
+    "predicted": "-3*sqrt(5)/10",
+    "pass": true
+  },
+  {
+    "j": "1",
+    "L": 1,
+    "Lp": 2,
+    "J": "2",
+    "K": "1",
+    "direct": "-sqrt(5)/2",
+    "predicted": "-sqrt(5)/2",
+    "pass": true
+  },
+  {
+    "j": "1",
+    "L": 1,
+    "Lp": 2,
+    "J": "2",
+    "K": "2",
+    "direct": "-1/2",
+    "predicted": "-1/2",
+    "pass": true
+  },
+  {
+    "j": "3/2",
+    "L": 1,
+    "Lp": 2,
+    "J": "1/2",
+    "K": "1/2",
+    "direct": "-1/2",
+    "predicted": "-1/2",
+    "pass": true
+  },
+  {
+    "j": "3/2",
+    "L": 1,
+    "Lp": 2,
+    "J": "1/2",
+    "K": "3/2",
+    "direct": "sqrt(5)/5",
+    "predicted": "sqrt(5)/5",
+    "pass": true
+  },
+  {
+    "j": "3/2",
+    "L": 1,
+    "Lp": 2,
+    "J": "1/2",
+    "K": "5/2",
+    "direct": "-sqrt(105)/30",
+    "predicted": "-sqrt(105)/30",
+    "pass": true
+  },
+  {
+    "j": "3/2",
+    "L": 1,
+    "Lp": 2,
+    "J": "3/2",
+    "K": "1/2",
+    "direct": "2*sqrt(5)/5",
+    "predicted": "2*sqrt(5)/5",
+    "pass": true
+  },
+  {
+    "j": "3/2",
+    "L": 1,
+    "Lp": 2,
+    "J": "3/2",
+    "K": "3/2",
+    "direct": "-1/5",
+    "predicted": "-1/5",
+    "pass": true
+  },
+  {
+    "j": "3/2",
+    "L": 1,
+    "Lp": 2,
+    "J": "3/2",
+    "K": "5/2",
+    "direct": "-2*sqrt(21)/15",
+    "predicted": "-2*sqrt(21)/15",
+    "pass": true
+  },
+  {
+    "j": "3/2",
+    "L": 1,
+    "Lp": 2,
+    "J": "5/2",
+    "K": "1/2",
+    "direct": "-sqrt(105)/10",
+    "predicted": "-sqrt(105)/10",
+    "pass": true
+  },
+  {
+    "j": "3/2",
+    "L": 1,
+    "Lp": 2,
+    "J": "5/2",
+    "K": "3/2",
+    "direct": "-sqrt(21)/5",
+    "predicted": "-sqrt(21)/5",
+    "pass": true
+  },
+  {
+    "j": "3/2",
+    "L": 1,
+    "Lp": 2,
+    "J": "5/2",
+    "K": "5/2",
+    "direct": "-3/10",
+    "predicted": "-3/10",
+    "pass": true
+  }
+]

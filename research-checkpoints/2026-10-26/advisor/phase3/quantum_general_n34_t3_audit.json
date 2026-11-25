@@ -1,0 +1,20 @@
+{
+  "passed": true,
+  "n": 34,
+  "t": 3,
+  "certificate_sha256": "04ca5f383f77f8168d3989cb2b67a13ae51a82648518ec75d0f6407c1fb392ba",
+  "constant_exact": "-2785623/2000000000000",
+  "main_residual_budget": "119/400000000",
+  "extra_KL_defect_bound": "175520817638704151/160875000000000000000000000000000000000000000000000000000000000000",
+  "extra_KL_defect_less_than": "1e-35",
+  "strict_upper_using_coarse_KL_bound": "-109531149999999999999999999999/100000000000000000000000000000000000",
+  "KL_vectors_checked": 535,
+  "diagnostic_max_KL_eigenresidual": 5.3266001780387965e-74,
+  "diagnostic_max_moment_residual": 5.11661419798823e-11,
+  "diagnostic_max_enum_residual": 8.508424489795918e-10,
+  "seconds": 934.9094352722168,
+  "max_RSS_KiB": 235772,
+  "entry_tolerance": "1/1000000000",
+  "arithmetic": "Independent SymPy exact6j to256bit Arb; declarative full-space collection; no worker imports",
+  "scope": "Finite necessary relaxation exclusion, conditional only on audited representation-theoretic identities, not novelty."
+}

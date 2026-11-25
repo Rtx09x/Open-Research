@@ -1,0 +1,9 @@
+{
+  "status": "EXACT_FRACTION_PASS",
+  "n": 4,
+  "width": 5,
+  "coefficient_count": 10,
+  "sign_gauges": 256,
+  "exact_gauge_average": "475317846093481214189/23550433729225205140",
+  "scope": "Finite algebra control; not the continuous inverse-moment proof"
+}

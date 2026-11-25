@@ -1,0 +1,30 @@
+{
+  "passed": true,
+  "python": "3.12.14",
+  "sympy": "1.14.0",
+  "threads": 1,
+  "runs": [
+    {
+      "script": "check_spin_hamming.py",
+      "returncode": 0,
+      "wall_seconds": 2.187518232000002
+    },
+    {
+      "script": "independent/check_racah_kernel_moments.py",
+      "returncode": 0,
+      "wall_seconds": 1.36970485799975
+    },
+    {
+      "script": "independent/check_quantum_critical_escape_polynomial.py",
+      "returncode": 0,
+      "wall_seconds": 0.6250998789982987
+    },
+    {
+      "script": "independent/check_quantum_lp_length_monotonicity.py",
+      "returncode": 0,
+      "wall_seconds": 0.4645095340019907
+    }
+  ],
+  "total_seconds": 4.6468325030000415,
+  "finite_controls_are_not_all_t_sampling_proof": true
+}

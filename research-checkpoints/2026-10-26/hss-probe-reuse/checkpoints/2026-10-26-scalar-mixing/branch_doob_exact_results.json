@@ -1,0 +1,12 @@
+{
+  "status": "EXACT_FRACTION_PASS",
+  "d": 2,
+  "boundary_assignments": 64,
+  "root_assignments": 8,
+  "total_paths": 512,
+  "future_mean_passive_independent": true,
+  "doob_difference_linear_distinguished_components": true,
+  "predictable_variation_flux_only": true,
+  "variance_identity": true,
+  "scope": "Finite algebra control; all-depth Haar theorem is analytic"
+}

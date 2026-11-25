@@ -1,0 +1,25 @@
+{
+  "symbolic_signed_diagonal_identity": true,
+  "exact_factor_tests": [
+    {
+      "d": 1,
+      "determinant": "0",
+      "matches": true
+    },
+    {
+      "d": 2,
+      "determinant": "153664",
+      "matches": true
+    },
+    {
+      "d": 3,
+      "determinant": "1317244",
+      "matches": true
+    },
+    {
+      "d": 5,
+      "determinant": "5226948",
+      "matches": true
+    }
+  ]
+}

@@ -1,0 +1,25 @@
+{
+  "status": "PASS",
+  "references": [
+    {
+      "path": "advisor/phase3/check_packing_successor_mixture.py",
+      "sha256": "14a1af4bb4324043e0929097a5a69f196816c3b00b68fd01d58ce8695f987517",
+      "bytes": 6154
+    },
+    {
+      "path": "advisor/phase3/packing_successor_mixture_audit.json",
+      "sha256": "2d2f27a5edec15fd565eb3174c4fe46fe4a417163b4dcfe020c3f8b14394a722",
+      "bytes": 61438
+    },
+    {
+      "path": "advisor/phase3/packing_successor_mixture_audit.md",
+      "sha256": "318a999ddfdcb895a20954395d3a00a79a24acf101eedcfacade8f6f4d2348d3",
+      "bytes": 2541
+    },
+    {
+      "path": "advisor/phase3/packing_shared_and_type_audit.md",
+      "sha256": "9494c108376ad154b06abd4bc6aae2f0e611594e47c1a5012190caccbc8eff87",
+      "bytes": 4363
+    }
+  ]
+}

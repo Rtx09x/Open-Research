@@ -1,0 +1,3884 @@
+{
+  "status": "PASS",
+  "exact_integer_arithmetic": true,
+  "all_labeled_rooted_forests_on_four_vertices": 125,
+  "cases": 274,
+  "executions": 88576,
+  "sharp_rank_one_scope_counterexample": {
+    "parent": [
+      -1,
+      0,
+      1,
+      2
+    ],
+    "k": 1,
+    "sign_assignments": 256,
+    "error_sum": 512,
+    "expected_error": 2,
+    "optimum": 1,
+    "query_count_each_execution": 6
+  },
+  "seconds": 6.737643413000114,
+  "results": [
+    {
+      "parent": [
+        -1,
+        -1,
+        -1,
+        -1
+      ],
+      "k": 1,
+      "sign_assignments": 256,
+      "error_sum": 20992,
+      "expected_error": 82,
+      "optimum": 41,
+      "query_count_each_execution": 6
+    },
+    {
+      "parent": [
+        -1,
+        -1,
+        -1,
+        -1
+      ],
+      "k": 2,
+      "sign_assignments": 256,
+      "error_sum": 98304,
+      "expected_error": 384,
+      "optimum": 192,
+      "query_count_each_execution": 12
+    },
+    {
+      "parent": [
+        -1,
+        -1,
+        -1,
+        0
+      ],
+      "k": 1,
+      "sign_assignments": 256,
+      "error_sum": 16896,
+      "expected_error": 66,
+      "optimum": 33,
+      "query_count_each_execution": 6
+    },
+    {
+      "parent": [
+        -1,
+        -1,
+        -1,
+        0
+      ],
+      "k": 2,
+      "sign_assignments": 256,
+      "error_sum": 77312,
+      "expected_error": 302,
+      "optimum": 151,
+      "query_count_each_execution": 12
+    },
+    {
+      "parent": [
+        -1,
+        -1,
+        -1,
+        1
+      ],
+      "k": 1,
+      "sign_assignments": 256,
+      "error_sum": 14848,
+      "expected_error": 58,
+      "optimum": 29,
+      "query_count_each_execution": 6
+    },
+    {
+      "parent": [
+        -1,
+        -1,
+        -1,
+        1
+      ],
+      "k": 2,
+      "sign_assignments": 256,
+      "error_sum": 95232,
+      "expected_error": 372,
+      "optimum": 186,
+      "query_count_each_execution": 12
+    },
+    {
+      "parent": [
+        -1,
+        -1,
+        -1,
+        2
+      ],
+      "k": 1,
+      "sign_assignments": 256,
+      "error_sum": 24064,
+      "expected_error": 94,
+      "optimum": 47,
+      "query_count_each_execution": 6
+    },
+    {
+      "parent": [
+        -1,
+        -1,
+        -1,
+        2
+      ],
+      "k": 2,
+      "sign_assignments": 256,
+      "error_sum": 71680,
+      "expected_error": 280,
+      "optimum": 140,
+      "query_count_each_execution": 12
+    },
+    {
+      "parent": [
+        -1,
+        -1,
+        0,
+        -1
+      ],
+      "k": 1,
+      "sign_assignments": 256,
+      "error_sum": 14336,
+      "expected_error": 56,
+      "optimum": 28,
+      "query_count_each_execution": 6
+    },
+    {
+      "parent": [
+        -1,
+        -1,
+        0,
+        -1
+      ],
+      "k": 2,
+      "sign_assignments": 256,
+      "error_sum": 86528,
+      "expected_error": 338,
+      "optimum": 169,
+      "query_count_each_execution": 12
+    },
+    {
+      "parent": [
+        -1,
+        -1,
+        0,
+        0
+      ],
+      "k": 1,
+      "sign_assignments": 256,
+      "error_sum": 11264,
+      "expected_error": 44,
+      "optimum": 22,
+      "query_count_each_execution": 6
+    },
+    {
+      "parent": [
+        -1,
+        -1,
+        0,
+        0
+      ],
+      "k": 2,
+      "sign_assignments": 256,
+      "error_sum": 62976,
+      "expected_error": 246,
+      "optimum": 123,
+      "query_count_each_execution": 12
+    },
+    {
+      "parent": [
+        -1,
+        -1,
+        0,
+        1
+      ],
+      "k": 1,
+      "sign_assignments": 256,
+      "error_sum": 20480,
+      "expected_error": 80,
+      "optimum": 40,
+      "query_count_each_execution": 6
+    },
+    {
+      "parent": [
+        -1,
+        -1,
+        0,
+        1
+      ],
+      "k": 2,
+      "sign_assignments": 256,
+      "error_sum": 74752,
+      "expected_error": 292,
+      "optimum": 146,
+      "query_count_each_execution": 12
+    },
+    {
+      "parent": [
+        -1,
+        -1,
+        0,
+        2
+      ],
+      "k": 1,
+      "sign_assignments": 256,
+      "error_sum": 14848,
+      "expected_error": 58,
+      "optimum": 40,
+      "query_count_each_execution": 6
+    },
+    {
+      "parent": [
+        -1,
+        -1,
+        0,
+        2
+      ],
+      "k": 2,
+      "sign_assignments": 256,
+      "error_sum": 52224,
+      "expected_error": 204,
+      "optimum": 127,
+      "query_count_each_execution": 12
+    },
+    {
+      "parent": [
+        -1,
+        -1,
+        1,
+        -1
+      ],
+      "k": 1,
+      "sign_assignments": 256,
+      "error_sum": 23040,
+      "expected_error": 90,
+      "optimum": 45,
+      "query_count_each_execution": 6
+    },
+    {
+      "parent": [
+        -1,
+        -1,
+        1,
+        -1
+      ],
+      "k": 2,
+      "sign_assignments": 256,
+      "error_sum": 77312,
+      "expected_error": 302,
+      "optimum": 151,
+      "query_count_each_execution": 12
+    },
+    {
+      "parent": [
+        -1,
+        -1,
+        1,
+        0
+      ],
+      "k": 1,
+      "sign_assignments": 256,
+      "error_sum": 25088,
+      "expected_error": 98,
+      "optimum": 49,
+      "query_count_each_execution": 6
+    },
+    {
+      "parent": [
+        -1,
+        -1,
+        1,
+        0
+      ],
+      "k": 2,
+      "sign_assignments": 256,
+      "error_sum": 51200,
+      "expected_error": 200,
+      "optimum": 100,
+      "query_count_each_execution": 12
+    },
+    {
+      "parent": [
+        -1,
+        -1,
+        1,
+        1
+      ],
+      "k": 1,
+      "sign_assignments": 256,
+      "error_sum": 16384,
+      "expected_error": 64,
+      "optimum": 32,
+      "query_count_each_execution": 6
+    },
+    {
+      "parent": [
+        -1,
+        -1,
+        1,
+        1
+      ],
+      "k": 2,
+      "sign_assignments": 256,
+      "error_sum": 63488,
+      "expected_error": 248,
+      "optimum": 124,
+      "query_count_each_execution": 12
+    },
+    {
+      "parent": [
+        -1,
+        -1,
+        1,
+        2
+      ],
+      "k": 1,
+      "sign_assignments": 256,
+      "error_sum": 11776,
+      "expected_error": 46,
+      "optimum": 29,
+      "query_count_each_execution": 6
+    },
+    {
+      "parent": [
+        -1,
+        -1,
+        1,
+        2
+      ],
+      "k": 2,
+      "sign_assignments": 256,
+      "error_sum": 56064,
+      "expected_error": 219,
+      "optimum": 150,
+      "query_count_each_execution": 12
+    },
+    {
+      "parent": [
+        -1,
+        -1,
+        3,
+        -1
+      ],
+      "k": 1,
+      "sign_assignments": 256,
+      "error_sum": 23040,
+      "expected_error": 90,
+      "optimum": 45,
+      "query_count_each_execution": 6
+    },
+    {
+      "parent": [
+        -1,
+        -1,
+        3,
+        -1
+      ],
+      "k": 2,
+      "sign_assignments": 256,
+      "error_sum": 82432,
+      "expected_error": 322,
+      "optimum": 161,
+      "query_count_each_execution": 12
+    },
+    {
+      "parent": [
+        -1,
+        -1,
+        3,
+        0
+      ],
+      "k": 1,
+      "sign_assignments": 256,
+      "error_sum": 14848,
+      "expected_error": 58,
+      "optimum": 38,
+      "query_count_each_execution": 6
+    },
+    {
+      "parent": [
+        -1,
+        -1,
+        3,
+        0
+      ],
+      "k": 2,
+      "sign_assignments": 256,
+      "error_sum": 51712,
+      "expected_error": 202,
+      "optimum": 146,
+      "query_count_each_execution": 12
+    },
+    {
+      "parent": [
+        -1,
+        -1,
+        3,
+        1
+      ],
+      "k": 1,
+      "sign_assignments": 256,
+      "error_sum": 7424,
+      "expected_error": 29,
+      "optimum": 17,
+      "query_count_each_execution": 6
+    },
+    {
+      "parent": [
+        -1,
+        -1,
+        3,
+        1
+      ],
+      "k": 2,
+      "sign_assignments": 256,
+      "error_sum": 51712,
+      "expected_error": 202,
+      "optimum": 136,
+      "query_count_each_execution": 12
+    },
+    {
+      "parent": [
+        -1,
+        0,
+        -1,
+        -1
+      ],
+      "k": 1,
+      "sign_assignments": 256,
+      "error_sum": 19456,
+      "expected_error": 76,
+      "optimum": 38,
+      "query_count_each_execution": 6
+    },
+    {
+      "parent": [
+        -1,
+        0,
+        -1,
+        -1
+      ],
+      "k": 2,
+      "sign_assignments": 256,
+      "error_sum": 86016,
+      "expected_error": 336,
+      "optimum": 168,
+      "query_count_each_execution": 12
+    },
+    {
+      "parent": [
+        -1,
+        0,
+        -1,
+        0
+      ],
+      "k": 1,
+      "sign_assignments": 256,
+      "error_sum": 16384,
+      "expected_error": 64,
+      "optimum": 32,
+      "query_count_each_execution": 6
+    },
+    {
+      "parent": [
+        -1,
+        0,
+        -1,
+        0
+      ],
+      "k": 2,
+      "sign_assignments": 256,
+      "error_sum": 55808,
+      "expected_error": 218,
+      "optimum": 109,
+      "query_count_each_execution": 12
+    },
+    {
+      "parent": [
+        -1,
+        0,
+        -1,
+        1
+      ],
+      "k": 1,
+      "sign_assignments": 256,
+      "error_sum": 9984,
+      "expected_error": 39,
+      "optimum": 27,
+      "query_count_each_execution": 6
+    },
+    {
+      "parent": [
+        -1,
+        0,
+        -1,
+        1
+      ],
+      "k": 2,
+      "sign_assignments": 256,
+      "error_sum": 55552,
+      "expected_error": 217,
+      "optimum": 144,
+      "query_count_each_execution": 12
+    },
+    {
+      "parent": [
+        -1,
+        0,
+        -1,
+        2
+      ],
+      "k": 1,
+      "sign_assignments": 256,
+      "error_sum": 8192,
+      "expected_error": 32,
+      "optimum": 16,
+      "query_count_each_execution": 6
+    },
+    {
+      "parent": [
+        -1,
+        0,
+        -1,
+        2
+      ],
+      "k": 2,
+      "sign_assignments": 256,
+      "error_sum": 61952,
+      "expected_error": 242,
+      "optimum": 121,
+      "query_count_each_execution": 12
+    },
+    {
+      "parent": [
+        -1,
+        0,
+        0,
+        -1
+      ],
+      "k": 1,
+      "sign_assignments": 256,
+      "error_sum": 11264,
+      "expected_error": 44,
+      "optimum": 22,
+      "query_count_each_execution": 6
+    },
+    {
+      "parent": [
+        -1,
+        0,
+        0,
+        -1
+      ],
+      "k": 2,
+      "sign_assignments": 256,
+      "error_sum": 58368,
+      "expected_error": 228,
+      "optimum": 114,
+      "query_count_each_execution": 12
+    },
+    {
+      "parent": [
+        -1,
+        0,
+        0,
+        0
+      ],
+      "k": 1,
+      "sign_assignments": 256,
+      "error_sum": 7680,
+      "expected_error": 30,
+      "optimum": 15,
+      "query_count_each_execution": 6
+    },
+    {
+      "parent": [
+        -1,
+        0,
+        0,
+        0
+      ],
+      "k": 2,
+      "sign_assignments": 256,
+      "error_sum": 61952,
+      "expected_error": 242,
+      "optimum": 121,
+      "query_count_each_execution": 12
+    },
+    {
+      "parent": [
+        -1,
+        0,
+        0,
+        1
+      ],
+      "k": 1,
+      "sign_assignments": 256,
+      "error_sum": 6400,
+      "expected_error": 25,
+      "optimum": 17,
+      "query_count_each_execution": 6
+    },
+    {
+      "parent": [
+        -1,
+        0,
+        0,
+        1
+      ],
+      "k": 2,
+      "sign_assignments": 256,
+      "error_sum": 51200,
+      "expected_error": 200,
+      "optimum": 118,
+      "query_count_each_execution": 12
+    },
+    {
+      "parent": [
+        -1,
+        0,
+        0,
+        2
+      ],
+      "k": 1,
+      "sign_assignments": 256,
+      "error_sum": 5376,
+      "expected_error": 21,
+      "optimum": 11,
+      "query_count_each_execution": 6
+    },
+    {
+      "parent": [
+        -1,
+        0,
+        0,
+        2
+      ],
+      "k": 2,
+      "sign_assignments": 256,
+      "error_sum": 34048,
+      "expected_error": 133,
+      "optimum": 80,
+      "query_count_each_execution": 12
+    },
+    {
+      "parent": [
+        -1,
+        0,
+        1,
+        -1
+      ],
+      "k": 1,
+      "sign_assignments": 256,
+      "error_sum": 16896,
+      "expected_error": 66,
+      "optimum": 40,
+      "query_count_each_execution": 6
+    },
+    {
+      "parent": [
+        -1,
+        0,
+        1,
+        -1
+      ],
+      "k": 2,
+      "sign_assignments": 256,
+      "error_sum": 40192,
+      "expected_error": 157,
+      "optimum": 111,
+      "query_count_each_execution": 12
+    },
+    {
+      "parent": [
+        -1,
+        0,
+        1,
+        0
+      ],
+      "k": 1,
+      "sign_assignments": 256,
+      "error_sum": 12288,
+      "expected_error": 48,
+      "optimum": 26,
+      "query_count_each_execution": 6
+    },
+    {
+      "parent": [
+        -1,
+        0,
+        1,
+        0
+      ],
+      "k": 2,
+      "sign_assignments": 256,
+      "error_sum": 39680,
+      "expected_error": 155,
+      "optimum": 92,
+      "query_count_each_execution": 12
+    },
+    {
+      "parent": [
+        -1,
+        0,
+        1,
+        1
+      ],
+      "k": 1,
+      "sign_assignments": 256,
+      "error_sum": 6656,
+      "expected_error": 26,
+      "optimum": 16,
+      "query_count_each_execution": 6
+    },
+    {
+      "parent": [
+        -1,
+        0,
+        1,
+        1
+      ],
+      "k": 2,
+      "sign_assignments": 256,
+      "error_sum": 29440,
+      "expected_error": 115,
+      "optimum": 91,
+      "query_count_each_execution": 12
+    },
+    {
+      "parent": [
+        -1,
+        0,
+        1,
+        2
+      ],
+      "k": 1,
+      "sign_assignments": 256,
+      "error_sum": 6144,
+      "expected_error": 24,
+      "optimum": 17,
+      "query_count_each_execution": 6
+    },
+    {
+      "parent": [
+        -1,
+        0,
+        1,
+        2
+      ],
+      "k": 2,
+      "sign_assignments": 256,
+      "error_sum": 34304,
+      "expected_error": 134,
+      "optimum": 83,
+      "query_count_each_execution": 12
+    },
+    {
+      "parent": [
+        -1,
+        0,
+        3,
+        -1
+      ],
+      "k": 1,
+      "sign_assignments": 256,
+      "error_sum": 23552,
+      "expected_error": 92,
+      "optimum": 46,
+      "query_count_each_execution": 6
+    },
+    {
+      "parent": [
+        -1,
+        0,
+        3,
+        -1
+      ],
+      "k": 2,
+      "sign_assignments": 256,
+      "error_sum": 67072,
+      "expected_error": 262,
+      "optimum": 131,
+      "query_count_each_execution": 12
+    },
+    {
+      "parent": [
+        -1,
+        0,
+        3,
+        0
+      ],
+      "k": 1,
+      "sign_assignments": 256,
+      "error_sum": 8448,
+      "expected_error": 33,
+      "optimum": 23,
+      "query_count_each_execution": 6
+    },
+    {
+      "parent": [
+        -1,
+        0,
+        3,
+        0
+      ],
+      "k": 2,
+      "sign_assignments": 256,
+      "error_sum": 51712,
+      "expected_error": 202,
+      "optimum": 107,
+      "query_count_each_execution": 12
+    },
+    {
+      "parent": [
+        -1,
+        0,
+        3,
+        1
+      ],
+      "k": 1,
+      "sign_assignments": 256,
+      "error_sum": 11776,
+      "expected_error": 46,
+      "optimum": 28,
+      "query_count_each_execution": 6
+    },
+    {
+      "parent": [
+        -1,
+        0,
+        3,
+        1
+      ],
+      "k": 2,
+      "sign_assignments": 256,
+      "error_sum": 44288,
+      "expected_error": 173,
+      "optimum": 101,
+      "query_count_each_execution": 12
+    },
+    {
+      "parent": [
+        -1,
+        2,
+        -1,
+        -1
+      ],
+      "k": 1,
+      "sign_assignments": 256,
+      "error_sum": 25600,
+      "expected_error": 100,
+      "optimum": 50,
+      "query_count_each_execution": 6
+    },
+    {
+      "parent": [
+        -1,
+        2,
+        -1,
+        -1
+      ],
+      "k": 2,
+      "sign_assignments": 256,
+      "error_sum": 96768,
+      "expected_error": 378,
+      "optimum": 189,
+      "query_count_each_execution": 12
+    },
+    {
+      "parent": [
+        -1,
+        2,
+        -1,
+        0
+      ],
+      "k": 1,
+      "sign_assignments": 256,
+      "error_sum": 14336,
+      "expected_error": 56,
+      "optimum": 28,
+      "query_count_each_execution": 6
+    },
+    {
+      "parent": [
+        -1,
+        2,
+        -1,
+        0
+      ],
+      "k": 2,
+      "sign_assignments": 256,
+      "error_sum": 62976,
+      "expected_error": 246,
+      "optimum": 123,
+      "query_count_each_execution": 12
+    },
+    {
+      "parent": [
+        -1,
+        2,
+        -1,
+        1
+      ],
+      "k": 1,
+      "sign_assignments": 256,
+      "error_sum": 14592,
+      "expected_error": 57,
+      "optimum": 37,
+      "query_count_each_execution": 6
+    },
+    {
+      "parent": [
+        -1,
+        2,
+        -1,
+        1
+      ],
+      "k": 2,
+      "sign_assignments": 256,
+      "error_sum": 53504,
+      "expected_error": 209,
+      "optimum": 145,
+      "query_count_each_execution": 12
+    },
+    {
+      "parent": [
+        -1,
+        2,
+        -1,
+        2
+      ],
+      "k": 1,
+      "sign_assignments": 256,
+      "error_sum": 29696,
+      "expected_error": 116,
+      "optimum": 58,
+      "query_count_each_execution": 6
+    },
+    {
+      "parent": [
+        -1,
+        2,
+        -1,
+        2
+      ],
+      "k": 2,
+      "sign_assignments": 256,
+      "error_sum": 40448,
+      "expected_error": 158,
+      "optimum": 79,
+      "query_count_each_execution": 12
+    },
+    {
+      "parent": [
+        -1,
+        2,
+        0,
+        -1
+      ],
+      "k": 1,
+      "sign_assignments": 256,
+      "error_sum": 8704,
+      "expected_error": 34,
+      "optimum": 22,
+      "query_count_each_execution": 6
+    },
+    {
+      "parent": [
+        -1,
+        2,
+        0,
+        -1
+      ],
+      "k": 2,
+      "sign_assignments": 256,
+      "error_sum": 41728,
+      "expected_error": 163,
+      "optimum": 100,
+      "query_count_each_execution": 12
+    },
+    {
+      "parent": [
+        -1,
+        2,
+        0,
+        0
+      ],
+      "k": 1,
+      "sign_assignments": 256,
+      "error_sum": 4864,
+      "expected_error": 19,
+      "optimum": 12,
+      "query_count_each_execution": 6
+    },
+    {
+      "parent": [
+        -1,
+        2,
+        0,
+        0
+      ],
+      "k": 2,
+      "sign_assignments": 256,
+      "error_sum": 47104,
+      "expected_error": 184,
+      "optimum": 119,
+      "query_count_each_execution": 12
+    },
+    {
+      "parent": [
+        -1,
+        2,
+        0,
+        1
+      ],
+      "k": 1,
+      "sign_assignments": 256,
+      "error_sum": 6912,
+      "expected_error": 27,
+      "optimum": 14,
+      "query_count_each_execution": 6
+    },
+    {
+      "parent": [
+        -1,
+        2,
+        0,
+        1
+      ],
+      "k": 2,
+      "sign_assignments": 256,
+      "error_sum": 37632,
+      "expected_error": 147,
+      "optimum": 82,
+      "query_count_each_execution": 12
+    },
+    {
+      "parent": [
+        -1,
+        2,
+        0,
+        2
+      ],
+      "k": 1,
+      "sign_assignments": 256,
+      "error_sum": 8960,
+      "expected_error": 35,
+      "optimum": 25,
+      "query_count_each_execution": 6
+    },
+    {
+      "parent": [
+        -1,
+        2,
+        0,
+        2
+      ],
+      "k": 2,
+      "sign_assignments": 256,
+      "error_sum": 26368,
+      "expected_error": 103,
+      "optimum": 79,
+      "query_count_each_execution": 12
+    },
+    {
+      "parent": [
+        -1,
+        2,
+        3,
+        -1
+      ],
+      "k": 1,
+      "sign_assignments": 256,
+      "error_sum": 13824,
+      "expected_error": 54,
+      "optimum": 36,
+      "query_count_each_execution": 6
+    },
+    {
+      "parent": [
+        -1,
+        2,
+        3,
+        -1
+      ],
+      "k": 2,
+      "sign_assignments": 256,
+      "error_sum": 49920,
+      "expected_error": 195,
+      "optimum": 135,
+      "query_count_each_execution": 12
+    },
+    {
+      "parent": [
+        -1,
+        2,
+        3,
+        0
+      ],
+      "k": 1,
+      "sign_assignments": 256,
+      "error_sum": 12032,
+      "expected_error": 47,
+      "optimum": 24,
+      "query_count_each_execution": 6
+    },
+    {
+      "parent": [
+        -1,
+        2,
+        3,
+        0
+      ],
+      "k": 2,
+      "sign_assignments": 256,
+      "error_sum": 49408,
+      "expected_error": 193,
+      "optimum": 113,
+      "query_count_each_execution": 12
+    },
+    {
+      "parent": [
+        -1,
+        3,
+        -1,
+        -1
+      ],
+      "k": 1,
+      "sign_assignments": 256,
+      "error_sum": 15872,
+      "expected_error": 62,
+      "optimum": 31,
+      "query_count_each_execution": 6
+    },
+    {
+      "parent": [
+        -1,
+        3,
+        -1,
+        -1
+      ],
+      "k": 2,
+      "sign_assignments": 256,
+      "error_sum": 76800,
+      "expected_error": 300,
+      "optimum": 150,
+      "query_count_each_execution": 12
+    },
+    {
+      "parent": [
+        -1,
+        3,
+        -1,
+        0
+      ],
+      "k": 1,
+      "sign_assignments": 256,
+      "error_sum": 13056,
+      "expected_error": 51,
+      "optimum": 32,
+      "query_count_each_execution": 6
+    },
+    {
+      "parent": [
+        -1,
+        3,
+        -1,
+        0
+      ],
+      "k": 2,
+      "sign_assignments": 256,
+      "error_sum": 41984,
+      "expected_error": 164,
+      "optimum": 112,
+      "query_count_each_execution": 12
+    },
+    {
+      "parent": [
+        -1,
+        3,
+        -1,
+        2
+      ],
+      "k": 1,
+      "sign_assignments": 256,
+      "error_sum": 10240,
+      "expected_error": 40,
+      "optimum": 25,
+      "query_count_each_execution": 6
+    },
+    {
+      "parent": [
+        -1,
+        3,
+        -1,
+        2
+      ],
+      "k": 2,
+      "sign_assignments": 256,
+      "error_sum": 49408,
+      "expected_error": 193,
+      "optimum": 132,
+      "query_count_each_execution": 12
+    },
+    {
+      "parent": [
+        -1,
+        3,
+        0,
+        -1
+      ],
+      "k": 1,
+      "sign_assignments": 256,
+      "error_sum": 22016,
+      "expected_error": 86,
+      "optimum": 43,
+      "query_count_each_execution": 6
+    },
+    {
+      "parent": [
+        -1,
+        3,
+        0,
+        -1
+      ],
+      "k": 2,
+      "sign_assignments": 256,
+      "error_sum": 78848,
+      "expected_error": 308,
+      "optimum": 154,
+      "query_count_each_execution": 12
+    },
+    {
+      "parent": [
+        -1,
+        3,
+        0,
+        0
+      ],
+      "k": 1,
+      "sign_assignments": 256,
+      "error_sum": 12800,
+      "expected_error": 50,
+      "optimum": 30,
+      "query_count_each_execution": 6
+    },
+    {
+      "parent": [
+        -1,
+        3,
+        0,
+        0
+      ],
+      "k": 2,
+      "sign_assignments": 256,
+      "error_sum": 32512,
+      "expected_error": 127,
+      "optimum": 84,
+      "query_count_each_execution": 12
+    },
+    {
+      "parent": [
+        -1,
+        3,
+        0,
+        2
+      ],
+      "k": 1,
+      "sign_assignments": 256,
+      "error_sum": 12032,
+      "expected_error": 47,
+      "optimum": 24,
+      "query_count_each_execution": 6
+    },
+    {
+      "parent": [
+        -1,
+        3,
+        0,
+        2
+      ],
+      "k": 2,
+      "sign_assignments": 256,
+      "error_sum": 51968,
+      "expected_error": 203,
+      "optimum": 114,
+      "query_count_each_execution": 12
+    },
+    {
+      "parent": [
+        -1,
+        3,
+        1,
+        -1
+      ],
+      "k": 1,
+      "sign_assignments": 256,
+      "error_sum": 13312,
+      "expected_error": 52,
+      "optimum": 29,
+      "query_count_each_execution": 6
+    },
+    {
+      "parent": [
+        -1,
+        3,
+        1,
+        -1
+      ],
+      "k": 2,
+      "sign_assignments": 256,
+      "error_sum": 65536,
+      "expected_error": 256,
+      "optimum": 178,
+      "query_count_each_execution": 12
+    },
+    {
+      "parent": [
+        -1,
+        3,
+        1,
+        0
+      ],
+      "k": 1,
+      "sign_assignments": 256,
+      "error_sum": 14592,
+      "expected_error": 57,
+      "optimum": 31,
+      "query_count_each_execution": 6
+    },
+    {
+      "parent": [
+        -1,
+        3,
+        1,
+        0
+      ],
+      "k": 2,
+      "sign_assignments": 256,
+      "error_sum": 40448,
+      "expected_error": 158,
+      "optimum": 92,
+      "query_count_each_execution": 12
+    },
+    {
+      "parent": [
+        -1,
+        3,
+        3,
+        -1
+      ],
+      "k": 1,
+      "sign_assignments": 256,
+      "error_sum": 10240,
+      "expected_error": 40,
+      "optimum": 20,
+      "query_count_each_execution": 6
+    },
+    {
+      "parent": [
+        -1,
+        3,
+        3,
+        -1
+      ],
+      "k": 2,
+      "sign_assignments": 256,
+      "error_sum": 69632,
+      "expected_error": 272,
+      "optimum": 136,
+      "query_count_each_execution": 12
+    },
+    {
+      "parent": [
+        -1,
+        3,
+        3,
+        0
+      ],
+      "k": 1,
+      "sign_assignments": 256,
+      "error_sum": 8192,
+      "expected_error": 32,
+      "optimum": 24,
+      "query_count_each_execution": 6
+    },
+    {
+      "parent": [
+        -1,
+        3,
+        3,
+        0
+      ],
+      "k": 2,
+      "sign_assignments": 256,
+      "error_sum": 27392,
+      "expected_error": 107,
+      "optimum": 89,
+      "query_count_each_execution": 12
+    },
+    {
+      "parent": [
+        1,
+        -1,
+        -1,
+        -1
+      ],
+      "k": 1,
+      "sign_assignments": 256,
+      "error_sum": 23040,
+      "expected_error": 90,
+      "optimum": 45,
+      "query_count_each_execution": 6
+    },
+    {
+      "parent": [
+        1,
+        -1,
+        -1,
+        -1
+      ],
+      "k": 2,
+      "sign_assignments": 256,
+      "error_sum": 71680,
+      "expected_error": 280,
+      "optimum": 140,
+      "query_count_each_execution": 12
+    },
+    {
+      "parent": [
+        1,
+        -1,
+        -1,
+        0
+      ],
+      "k": 1,
+      "sign_assignments": 256,
+      "error_sum": 15104,
+      "expected_error": 59,
+      "optimum": 32,
+      "query_count_each_execution": 6
+    },
+    {
+      "parent": [
+        1,
+        -1,
+        -1,
+        0
+      ],
+      "k": 2,
+      "sign_assignments": 256,
+      "error_sum": 41472,
+      "expected_error": 162,
+      "optimum": 109,
+      "query_count_each_execution": 12
+    },
+    {
+      "parent": [
+        1,
+        -1,
+        -1,
+        1
+      ],
+      "k": 1,
+      "sign_assignments": 256,
+      "error_sum": 18944,
+      "expected_error": 74,
+      "optimum": 37,
+      "query_count_each_execution": 6
+    },
+    {
+      "parent": [
+        1,
+        -1,
+        -1,
+        1
+      ],
+      "k": 2,
+      "sign_assignments": 256,
+      "error_sum": 73216,
+      "expected_error": 286,
+      "optimum": 143,
+      "query_count_each_execution": 12
+    },
+    {
+      "parent": [
+        1,
+        -1,
+        -1,
+        2
+      ],
+      "k": 1,
+      "sign_assignments": 256,
+      "error_sum": 11264,
+      "expected_error": 44,
+      "optimum": 22,
+      "query_count_each_execution": 6
+    },
+    {
+      "parent": [
+        1,
+        -1,
+        -1,
+        2
+      ],
+      "k": 2,
+      "sign_assignments": 256,
+      "error_sum": 65536,
+      "expected_error": 256,
+      "optimum": 128,
+      "query_count_each_execution": 12
+    },
+    {
+      "parent": [
+        1,
+        -1,
+        0,
+        -1
+      ],
+      "k": 1,
+      "sign_assignments": 256,
+      "error_sum": 7424,
+      "expected_error": 29,
+      "optimum": 20,
+      "query_count_each_execution": 6
+    },
+    {
+      "parent": [
+        1,
+        -1,
+        0,
+        -1
+      ],
+      "k": 2,
+      "sign_assignments": 256,
+      "error_sum": 35584,
+      "expected_error": 139,
+      "optimum": 90,
+      "query_count_each_execution": 12
+    },
+    {
+      "parent": [
+        1,
+        -1,
+        0,
+        0
+      ],
+      "k": 1,
+      "sign_assignments": 256,
+      "error_sum": 11008,
+      "expected_error": 43,
+      "optimum": 33,
+      "query_count_each_execution": 6
+    },
+    {
+      "parent": [
+        1,
+        -1,
+        0,
+        0
+      ],
+      "k": 2,
+      "sign_assignments": 256,
+      "error_sum": 26112,
+      "expected_error": 102,
+      "optimum": 77,
+      "query_count_each_execution": 12
+    },
+    {
+      "parent": [
+        1,
+        -1,
+        0,
+        1
+      ],
+      "k": 1,
+      "sign_assignments": 256,
+      "error_sum": 8704,
+      "expected_error": 34,
+      "optimum": 21,
+      "query_count_each_execution": 6
+    },
+    {
+      "parent": [
+        1,
+        -1,
+        0,
+        1
+      ],
+      "k": 2,
+      "sign_assignments": 256,
+      "error_sum": 47104,
+      "expected_error": 184,
+      "optimum": 113,
+      "query_count_each_execution": 12
+    },
+    {
+      "parent": [
+        1,
+        -1,
+        0,
+        2
+      ],
+      "k": 1,
+      "sign_assignments": 256,
+      "error_sum": 11008,
+      "expected_error": 43,
+      "optimum": 28,
+      "query_count_each_execution": 6
+    },
+    {
+      "parent": [
+        1,
+        -1,
+        0,
+        2
+      ],
+      "k": 2,
+      "sign_assignments": 256,
+      "error_sum": 46592,
+      "expected_error": 182,
+      "optimum": 96,
+      "query_count_each_execution": 12
+    },
+    {
+      "parent": [
+        1,
+        -1,
+        1,
+        -1
+      ],
+      "k": 1,
+      "sign_assignments": 256,
+      "error_sum": 25088,
+      "expected_error": 98,
+      "optimum": 49,
+      "query_count_each_execution": 6
+    },
+    {
+      "parent": [
+        1,
+        -1,
+        1,
+        -1
+      ],
+      "k": 2,
+      "sign_assignments": 256,
+      "error_sum": 63488,
+      "expected_error": 248,
+      "optimum": 124,
+      "query_count_each_execution": 12
+    },
+    {
+      "parent": [
+        1,
+        -1,
+        1,
+        0
+      ],
+      "k": 1,
+      "sign_assignments": 256,
+      "error_sum": 14592,
+      "expected_error": 57,
+      "optimum": 31,
+      "query_count_each_execution": 6
+    },
+    {
+      "parent": [
+        1,
+        -1,
+        1,
+        0
+      ],
+      "k": 2,
+      "sign_assignments": 256,
+      "error_sum": 36096,
+      "expected_error": 141,
+      "optimum": 87,
+      "query_count_each_execution": 12
+    },
+    {
+      "parent": [
+        1,
+        -1,
+        1,
+        1
+      ],
+      "k": 1,
+      "sign_assignments": 256,
+      "error_sum": 11776,
+      "expected_error": 46,
+      "optimum": 23,
+      "query_count_each_execution": 6
+    },
+    {
+      "parent": [
+        1,
+        -1,
+        1,
+        1
+      ],
+      "k": 2,
+      "sign_assignments": 256,
+      "error_sum": 44544,
+      "expected_error": 174,
+      "optimum": 87,
+      "query_count_each_execution": 12
+    },
+    {
+      "parent": [
+        1,
+        -1,
+        1,
+        2
+      ],
+      "k": 1,
+      "sign_assignments": 256,
+      "error_sum": 12800,
+      "expected_error": 50,
+      "optimum": 30,
+      "query_count_each_execution": 6
+    },
+    {
+      "parent": [
+        1,
+        -1,
+        1,
+        2
+      ],
+      "k": 2,
+      "sign_assignments": 256,
+      "error_sum": 48384,
+      "expected_error": 189,
+      "optimum": 120,
+      "query_count_each_execution": 12
+    },
+    {
+      "parent": [
+        1,
+        -1,
+        3,
+        -1
+      ],
+      "k": 1,
+      "sign_assignments": 256,
+      "error_sum": 16384,
+      "expected_error": 64,
+      "optimum": 32,
+      "query_count_each_execution": 6
+    },
+    {
+      "parent": [
+        1,
+        -1,
+        3,
+        -1
+      ],
+      "k": 2,
+      "sign_assignments": 256,
+      "error_sum": 73728,
+      "expected_error": 288,
+      "optimum": 144,
+      "query_count_each_execution": 12
+    },
+    {
+      "parent": [
+        1,
+        -1,
+        3,
+        0
+      ],
+      "k": 1,
+      "sign_assignments": 256,
+      "error_sum": 3584,
+      "expected_error": 14,
+      "optimum": 12,
+      "query_count_each_execution": 6
+    },
+    {
+      "parent": [
+        1,
+        -1,
+        3,
+        0
+      ],
+      "k": 2,
+      "sign_assignments": 256,
+      "error_sum": 25088,
+      "expected_error": 98,
+      "optimum": 63,
+      "query_count_each_execution": 12
+    },
+    {
+      "parent": [
+        1,
+        -1,
+        3,
+        1
+      ],
+      "k": 1,
+      "sign_assignments": 256,
+      "error_sum": 16384,
+      "expected_error": 64,
+      "optimum": 37,
+      "query_count_each_execution": 6
+    },
+    {
+      "parent": [
+        1,
+        -1,
+        3,
+        1
+      ],
+      "k": 2,
+      "sign_assignments": 256,
+      "error_sum": 42240,
+      "expected_error": 165,
+      "optimum": 100,
+      "query_count_each_execution": 12
+    },
+    {
+      "parent": [
+        1,
+        2,
+        -1,
+        -1
+      ],
+      "k": 1,
+      "sign_assignments": 256,
+      "error_sum": 10752,
+      "expected_error": 42,
+      "optimum": 34,
+      "query_count_each_execution": 6
+    },
+    {
+      "parent": [
+        1,
+        2,
+        -1,
+        -1
+      ],
+      "k": 2,
+      "sign_assignments": 256,
+      "error_sum": 67584,
+      "expected_error": 264,
+      "optimum": 158,
+      "query_count_each_execution": 12
+    },
+    {
+      "parent": [
+        1,
+        2,
+        -1,
+        0
+      ],
+      "k": 1,
+      "sign_assignments": 256,
+      "error_sum": 15360,
+      "expected_error": 60,
+      "optimum": 32,
+      "query_count_each_execution": 6
+    },
+    {
+      "parent": [
+        1,
+        2,
+        -1,
+        0
+      ],
+      "k": 2,
+      "sign_assignments": 256,
+      "error_sum": 41472,
+      "expected_error": 162,
+      "optimum": 92,
+      "query_count_each_execution": 12
+    },
+    {
+      "parent": [
+        1,
+        2,
+        -1,
+        1
+      ],
+      "k": 1,
+      "sign_assignments": 256,
+      "error_sum": 3840,
+      "expected_error": 15,
+      "optimum": 14,
+      "query_count_each_execution": 6
+    },
+    {
+      "parent": [
+        1,
+        2,
+        -1,
+        1
+      ],
+      "k": 2,
+      "sign_assignments": 256,
+      "error_sum": 20992,
+      "expected_error": 82,
+      "optimum": 64,
+      "query_count_each_execution": 12
+    },
+    {
+      "parent": [
+        1,
+        2,
+        -1,
+        2
+      ],
+      "k": 1,
+      "sign_assignments": 256,
+      "error_sum": 8704,
+      "expected_error": 34,
+      "optimum": 22,
+      "query_count_each_execution": 6
+    },
+    {
+      "parent": [
+        1,
+        2,
+        -1,
+        2
+      ],
+      "k": 2,
+      "sign_assignments": 256,
+      "error_sum": 30976,
+      "expected_error": 121,
+      "optimum": 66,
+      "query_count_each_execution": 12
+    },
+    {
+      "parent": [
+        1,
+        2,
+        3,
+        -1
+      ],
+      "k": 1,
+      "sign_assignments": 256,
+      "error_sum": 12288,
+      "expected_error": 48,
+      "optimum": 33,
+      "query_count_each_execution": 6
+    },
+    {
+      "parent": [
+        1,
+        2,
+        3,
+        -1
+      ],
+      "k": 2,
+      "sign_assignments": 256,
+      "error_sum": 32000,
+      "expected_error": 125,
+      "optimum": 82,
+      "query_count_each_execution": 12
+    },
+    {
+      "parent": [
+        1,
+        3,
+        -1,
+        -1
+      ],
+      "k": 1,
+      "sign_assignments": 256,
+      "error_sum": 13824,
+      "expected_error": 54,
+      "optimum": 36,
+      "query_count_each_execution": 6
+    },
+    {
+      "parent": [
+        1,
+        3,
+        -1,
+        -1
+      ],
+      "k": 2,
+      "sign_assignments": 256,
+      "error_sum": 63488,
+      "expected_error": 248,
+      "optimum": 158,
+      "query_count_each_execution": 12
+    },
+    {
+      "parent": [
+        1,
+        3,
+        -1,
+        2
+      ],
+      "k": 1,
+      "sign_assignments": 256,
+      "error_sum": 8704,
+      "expected_error": 34,
+      "optimum": 17,
+      "query_count_each_execution": 6
+    },
+    {
+      "parent": [
+        1,
+        3,
+        -1,
+        2
+      ],
+      "k": 2,
+      "sign_assignments": 256,
+      "error_sum": 39168,
+      "expected_error": 153,
+      "optimum": 92,
+      "query_count_each_execution": 12
+    },
+    {
+      "parent": [
+        1,
+        3,
+        0,
+        -1
+      ],
+      "k": 1,
+      "sign_assignments": 256,
+      "error_sum": 3072,
+      "expected_error": 12,
+      "optimum": 7,
+      "query_count_each_execution": 6
+    },
+    {
+      "parent": [
+        1,
+        3,
+        0,
+        -1
+      ],
+      "k": 2,
+      "sign_assignments": 256,
+      "error_sum": 34048,
+      "expected_error": 133,
+      "optimum": 80,
+      "query_count_each_execution": 12
+    },
+    {
+      "parent": [
+        1,
+        3,
+        1,
+        -1
+      ],
+      "k": 1,
+      "sign_assignments": 256,
+      "error_sum": 11264,
+      "expected_error": 44,
+      "optimum": 31,
+      "query_count_each_execution": 6
+    },
+    {
+      "parent": [
+        1,
+        3,
+        1,
+        -1
+      ],
+      "k": 2,
+      "sign_assignments": 256,
+      "error_sum": 37632,
+      "expected_error": 147,
+      "optimum": 117,
+      "query_count_each_execution": 12
+    },
+    {
+      "parent": [
+        1,
+        3,
+        3,
+        -1
+      ],
+      "k": 1,
+      "sign_assignments": 256,
+      "error_sum": 10752,
+      "expected_error": 42,
+      "optimum": 30,
+      "query_count_each_execution": 6
+    },
+    {
+      "parent": [
+        1,
+        3,
+        3,
+        -1
+      ],
+      "k": 2,
+      "sign_assignments": 256,
+      "error_sum": 42240,
+      "expected_error": 165,
+      "optimum": 102,
+      "query_count_each_execution": 12
+    },
+    {
+      "parent": [
+        2,
+        -1,
+        -1,
+        -1
+      ],
+      "k": 1,
+      "sign_assignments": 256,
+      "error_sum": 24576,
+      "expected_error": 96,
+      "optimum": 48,
+      "query_count_each_execution": 6
+    },
+    {
+      "parent": [
+        2,
+        -1,
+        -1,
+        -1
+      ],
+      "k": 2,
+      "sign_assignments": 256,
+      "error_sum": 90624,
+      "expected_error": 354,
+      "optimum": 177,
+      "query_count_each_execution": 12
+    },
+    {
+      "parent": [
+        2,
+        -1,
+        -1,
+        0
+      ],
+      "k": 1,
+      "sign_assignments": 256,
+      "error_sum": 8704,
+      "expected_error": 34,
+      "optimum": 28,
+      "query_count_each_execution": 6
+    },
+    {
+      "parent": [
+        2,
+        -1,
+        -1,
+        0
+      ],
+      "k": 2,
+      "sign_assignments": 256,
+      "error_sum": 47616,
+      "expected_error": 186,
+      "optimum": 119,
+      "query_count_each_execution": 12
+    },
+    {
+      "parent": [
+        2,
+        -1,
+        -1,
+        1
+      ],
+      "k": 1,
+      "sign_assignments": 256,
+      "error_sum": 11776,
+      "expected_error": 46,
+      "optimum": 23,
+      "query_count_each_execution": 6
+    },
+    {
+      "parent": [
+        2,
+        -1,
+        -1,
+        1
+      ],
+      "k": 2,
+      "sign_assignments": 256,
+      "error_sum": 53760,
+      "expected_error": 210,
+      "optimum": 105,
+      "query_count_each_execution": 12
+    },
+    {
+      "parent": [
+        2,
+        -1,
+        -1,
+        2
+      ],
+      "k": 1,
+      "sign_assignments": 256,
+      "error_sum": 9216,
+      "expected_error": 36,
+      "optimum": 18,
+      "query_count_each_execution": 6
+    },
+    {
+      "parent": [
+        2,
+        -1,
+        -1,
+        2
+      ],
+      "k": 2,
+      "sign_assignments": 256,
+      "error_sum": 60416,
+      "expected_error": 236,
+      "optimum": 118,
+      "query_count_each_execution": 12
+    },
+    {
+      "parent": [
+        2,
+        -1,
+        1,
+        -1
+      ],
+      "k": 1,
+      "sign_assignments": 256,
+      "error_sum": 7168,
+      "expected_error": 28,
+      "optimum": 23,
+      "query_count_each_execution": 6
+    },
+    {
+      "parent": [
+        2,
+        -1,
+        1,
+        -1
+      ],
+      "k": 2,
+      "sign_assignments": 256,
+      "error_sum": 58368,
+      "expected_error": 228,
+      "optimum": 153,
+      "query_count_each_execution": 12
+    },
+    {
+      "parent": [
+        2,
+        -1,
+        1,
+        0
+      ],
+      "k": 1,
+      "sign_assignments": 256,
+      "error_sum": 11008,
+      "expected_error": 43,
+      "optimum": 26,
+      "query_count_each_execution": 6
+    },
+    {
+      "parent": [
+        2,
+        -1,
+        1,
+        0
+      ],
+      "k": 2,
+      "sign_assignments": 256,
+      "error_sum": 35072,
+      "expected_error": 137,
+      "optimum": 86,
+      "query_count_each_execution": 12
+    },
+    {
+      "parent": [
+        2,
+        -1,
+        1,
+        1
+      ],
+      "k": 1,
+      "sign_assignments": 256,
+      "error_sum": 6144,
+      "expected_error": 24,
+      "optimum": 17,
+      "query_count_each_execution": 6
+    },
+    {
+      "parent": [
+        2,
+        -1,
+        1,
+        1
+      ],
+      "k": 2,
+      "sign_assignments": 256,
+      "error_sum": 44544,
+      "expected_error": 174,
+      "optimum": 98,
+      "query_count_each_execution": 12
+    },
+    {
+      "parent": [
+        2,
+        -1,
+        1,
+        2
+      ],
+      "k": 1,
+      "sign_assignments": 256,
+      "error_sum": 11520,
+      "expected_error": 45,
+      "optimum": 27,
+      "query_count_each_execution": 6
+    },
+    {
+      "parent": [
+        2,
+        -1,
+        1,
+        2
+      ],
+      "k": 2,
+      "sign_assignments": 256,
+      "error_sum": 29440,
+      "expected_error": 115,
+      "optimum": 90,
+      "query_count_each_execution": 12
+    },
+    {
+      "parent": [
+        2,
+        -1,
+        3,
+        -1
+      ],
+      "k": 1,
+      "sign_assignments": 256,
+      "error_sum": 17152,
+      "expected_error": 67,
+      "optimum": 44,
+      "query_count_each_execution": 6
+    },
+    {
+      "parent": [
+        2,
+        -1,
+        3,
+        -1
+      ],
+      "k": 2,
+      "sign_assignments": 256,
+      "error_sum": 52224,
+      "expected_error": 204,
+      "optimum": 145,
+      "query_count_each_execution": 12
+    },
+    {
+      "parent": [
+        2,
+        -1,
+        3,
+        1
+      ],
+      "k": 1,
+      "sign_assignments": 256,
+      "error_sum": 8960,
+      "expected_error": 35,
+      "optimum": 20,
+      "query_count_each_execution": 6
+    },
+    {
+      "parent": [
+        2,
+        -1,
+        3,
+        1
+      ],
+      "k": 2,
+      "sign_assignments": 256,
+      "error_sum": 43008,
+      "expected_error": 168,
+      "optimum": 97,
+      "query_count_each_execution": 12
+    },
+    {
+      "parent": [
+        2,
+        0,
+        -1,
+        -1
+      ],
+      "k": 1,
+      "sign_assignments": 256,
+      "error_sum": 11264,
+      "expected_error": 44,
+      "optimum": 25,
+      "query_count_each_execution": 6
+    },
+    {
+      "parent": [
+        2,
+        0,
+        -1,
+        -1
+      ],
+      "k": 2,
+      "sign_assignments": 256,
+      "error_sum": 33536,
+      "expected_error": 131,
+      "optimum": 108,
+      "query_count_each_execution": 12
+    },
+    {
+      "parent": [
+        2,
+        0,
+        -1,
+        0
+      ],
+      "k": 1,
+      "sign_assignments": 256,
+      "error_sum": 11264,
+      "expected_error": 44,
+      "optimum": 31,
+      "query_count_each_execution": 6
+    },
+    {
+      "parent": [
+        2,
+        0,
+        -1,
+        0
+      ],
+      "k": 2,
+      "sign_assignments": 256,
+      "error_sum": 35584,
+      "expected_error": 139,
+      "optimum": 113,
+      "query_count_each_execution": 12
+    },
+    {
+      "parent": [
+        2,
+        0,
+        -1,
+        1
+      ],
+      "k": 1,
+      "sign_assignments": 256,
+      "error_sum": 11776,
+      "expected_error": 46,
+      "optimum": 28,
+      "query_count_each_execution": 6
+    },
+    {
+      "parent": [
+        2,
+        0,
+        -1,
+        1
+      ],
+      "k": 2,
+      "sign_assignments": 256,
+      "error_sum": 50944,
+      "expected_error": 199,
+      "optimum": 113,
+      "query_count_each_execution": 12
+    },
+    {
+      "parent": [
+        2,
+        0,
+        -1,
+        2
+      ],
+      "k": 1,
+      "sign_assignments": 256,
+      "error_sum": 12032,
+      "expected_error": 47,
+      "optimum": 26,
+      "query_count_each_execution": 6
+    },
+    {
+      "parent": [
+        2,
+        0,
+        -1,
+        2
+      ],
+      "k": 2,
+      "sign_assignments": 256,
+      "error_sum": 37632,
+      "expected_error": 147,
+      "optimum": 87,
+      "query_count_each_execution": 12
+    },
+    {
+      "parent": [
+        2,
+        0,
+        3,
+        -1
+      ],
+      "k": 1,
+      "sign_assignments": 256,
+      "error_sum": 11776,
+      "expected_error": 46,
+      "optimum": 28,
+      "query_count_each_execution": 6
+    },
+    {
+      "parent": [
+        2,
+        0,
+        3,
+        -1
+      ],
+      "k": 2,
+      "sign_assignments": 256,
+      "error_sum": 43008,
+      "expected_error": 168,
+      "optimum": 101,
+      "query_count_each_execution": 12
+    },
+    {
+      "parent": [
+        2,
+        2,
+        -1,
+        -1
+      ],
+      "k": 1,
+      "sign_assignments": 256,
+      "error_sum": 24064,
+      "expected_error": 94,
+      "optimum": 47,
+      "query_count_each_execution": 6
+    },
+    {
+      "parent": [
+        2,
+        2,
+        -1,
+        -1
+      ],
+      "k": 2,
+      "sign_assignments": 256,
+      "error_sum": 68096,
+      "expected_error": 266,
+      "optimum": 133,
+      "query_count_each_execution": 12
+    },
+    {
+      "parent": [
+        2,
+        2,
+        -1,
+        0
+      ],
+      "k": 1,
+      "sign_assignments": 256,
+      "error_sum": 16128,
+      "expected_error": 63,
+      "optimum": 32,
+      "query_count_each_execution": 6
+    },
+    {
+      "parent": [
+        2,
+        2,
+        -1,
+        0
+      ],
+      "k": 2,
+      "sign_assignments": 256,
+      "error_sum": 38400,
+      "expected_error": 150,
+      "optimum": 92,
+      "query_count_each_execution": 12
+    },
+    {
+      "parent": [
+        2,
+        2,
+        -1,
+        1
+      ],
+      "k": 1,
+      "sign_assignments": 256,
+      "error_sum": 10496,
+      "expected_error": 41,
+      "optimum": 23,
+      "query_count_each_execution": 6
+    },
+    {
+      "parent": [
+        2,
+        2,
+        -1,
+        1
+      ],
+      "k": 2,
+      "sign_assignments": 256,
+      "error_sum": 43776,
+      "expected_error": 171,
+      "optimum": 92,
+      "query_count_each_execution": 12
+    },
+    {
+      "parent": [
+        2,
+        2,
+        -1,
+        2
+      ],
+      "k": 1,
+      "sign_assignments": 256,
+      "error_sum": 13824,
+      "expected_error": 54,
+      "optimum": 27,
+      "query_count_each_execution": 6
+    },
+    {
+      "parent": [
+        2,
+        2,
+        -1,
+        2
+      ],
+      "k": 2,
+      "sign_assignments": 256,
+      "error_sum": 58368,
+      "expected_error": 228,
+      "optimum": 114,
+      "query_count_each_execution": 12
+    },
+    {
+      "parent": [
+        2,
+        2,
+        3,
+        -1
+      ],
+      "k": 1,
+      "sign_assignments": 256,
+      "error_sum": 7424,
+      "expected_error": 29,
+      "optimum": 25,
+      "query_count_each_execution": 6
+    },
+    {
+      "parent": [
+        2,
+        2,
+        3,
+        -1
+      ],
+      "k": 2,
+      "sign_assignments": 256,
+      "error_sum": 25344,
+      "expected_error": 99,
+      "optimum": 76,
+      "query_count_each_execution": 12
+    },
+    {
+      "parent": [
+        2,
+        3,
+        -1,
+        -1
+      ],
+      "k": 1,
+      "sign_assignments": 256,
+      "error_sum": 14848,
+      "expected_error": 58,
+      "optimum": 29,
+      "query_count_each_execution": 6
+    },
+    {
+      "parent": [
+        2,
+        3,
+        -1,
+        -1
+      ],
+      "k": 2,
+      "sign_assignments": 256,
+      "error_sum": 62976,
+      "expected_error": 246,
+      "optimum": 123,
+      "query_count_each_execution": 12
+    },
+    {
+      "parent": [
+        2,
+        3,
+        -1,
+        0
+      ],
+      "k": 1,
+      "sign_assignments": 256,
+      "error_sum": 4864,
+      "expected_error": 19,
+      "optimum": 16,
+      "query_count_each_execution": 6
+    },
+    {
+      "parent": [
+        2,
+        3,
+        -1,
+        0
+      ],
+      "k": 2,
+      "sign_assignments": 256,
+      "error_sum": 28672,
+      "expected_error": 112,
+      "optimum": 69,
+      "query_count_each_execution": 12
+    },
+    {
+      "parent": [
+        2,
+        3,
+        -1,
+        2
+      ],
+      "k": 1,
+      "sign_assignments": 256,
+      "error_sum": 11264,
+      "expected_error": 44,
+      "optimum": 23,
+      "query_count_each_execution": 6
+    },
+    {
+      "parent": [
+        2,
+        3,
+        -1,
+        2
+      ],
+      "k": 2,
+      "sign_assignments": 256,
+      "error_sum": 43520,
+      "expected_error": 170,
+      "optimum": 103,
+      "query_count_each_execution": 12
+    },
+    {
+      "parent": [
+        2,
+        3,
+        1,
+        -1
+      ],
+      "k": 1,
+      "sign_assignments": 256,
+      "error_sum": 2816,
+      "expected_error": 11,
+      "optimum": 6,
+      "query_count_each_execution": 6
+    },
+    {
+      "parent": [
+        2,
+        3,
+        1,
+        -1
+      ],
+      "k": 2,
+      "sign_assignments": 256,
+      "error_sum": 52736,
+      "expected_error": 206,
+      "optimum": 121,
+      "query_count_each_execution": 12
+    },
+    {
+      "parent": [
+        2,
+        3,
+        3,
+        -1
+      ],
+      "k": 1,
+      "sign_assignments": 256,
+      "error_sum": 10240,
+      "expected_error": 40,
+      "optimum": 29,
+      "query_count_each_execution": 6
+    },
+    {
+      "parent": [
+        2,
+        3,
+        3,
+        -1
+      ],
+      "k": 2,
+      "sign_assignments": 256,
+      "error_sum": 47104,
+      "expected_error": 184,
+      "optimum": 113,
+      "query_count_each_execution": 12
+    },
+    {
+      "parent": [
+        3,
+        -1,
+        -1,
+        -1
+      ],
+      "k": 1,
+      "sign_assignments": 256,
+      "error_sum": 13312,
+      "expected_error": 52,
+      "optimum": 26,
+      "query_count_each_execution": 6
+    },
+    {
+      "parent": [
+        3,
+        -1,
+        -1,
+        -1
+      ],
+      "k": 2,
+      "sign_assignments": 256,
+      "error_sum": 77824,
+      "expected_error": 304,
+      "optimum": 152,
+      "query_count_each_execution": 12
+    },
+    {
+      "parent": [
+        3,
+        -1,
+        -1,
+        1
+      ],
+      "k": 1,
+      "sign_assignments": 256,
+      "error_sum": 19200,
+      "expected_error": 75,
+      "optimum": 49,
+      "query_count_each_execution": 6
+    },
+    {
+      "parent": [
+        3,
+        -1,
+        -1,
+        1
+      ],
+      "k": 2,
+      "sign_assignments": 256,
+      "error_sum": 42496,
+      "expected_error": 166,
+      "optimum": 104,
+      "query_count_each_execution": 12
+    },
+    {
+      "parent": [
+        3,
+        -1,
+        -1,
+        2
+      ],
+      "k": 1,
+      "sign_assignments": 256,
+      "error_sum": 7168,
+      "expected_error": 28,
+      "optimum": 21,
+      "query_count_each_execution": 6
+    },
+    {
+      "parent": [
+        3,
+        -1,
+        -1,
+        2
+      ],
+      "k": 2,
+      "sign_assignments": 256,
+      "error_sum": 60160,
+      "expected_error": 235,
+      "optimum": 157,
+      "query_count_each_execution": 12
+    },
+    {
+      "parent": [
+        3,
+        -1,
+        0,
+        -1
+      ],
+      "k": 1,
+      "sign_assignments": 256,
+      "error_sum": 11520,
+      "expected_error": 45,
+      "optimum": 28,
+      "query_count_each_execution": 6
+    },
+    {
+      "parent": [
+        3,
+        -1,
+        0,
+        -1
+      ],
+      "k": 2,
+      "sign_assignments": 256,
+      "error_sum": 49408,
+      "expected_error": 193,
+      "optimum": 131,
+      "query_count_each_execution": 12
+    },
+    {
+      "parent": [
+        3,
+        -1,
+        0,
+        1
+      ],
+      "k": 1,
+      "sign_assignments": 256,
+      "error_sum": 15872,
+      "expected_error": 62,
+      "optimum": 40,
+      "query_count_each_execution": 6
+    },
+    {
+      "parent": [
+        3,
+        -1,
+        0,
+        1
+      ],
+      "k": 2,
+      "sign_assignments": 256,
+      "error_sum": 40704,
+      "expected_error": 159,
+      "optimum": 102,
+      "query_count_each_execution": 12
+    },
+    {
+      "parent": [
+        3,
+        -1,
+        1,
+        -1
+      ],
+      "k": 1,
+      "sign_assignments": 256,
+      "error_sum": 22016,
+      "expected_error": 86,
+      "optimum": 43,
+      "query_count_each_execution": 6
+    },
+    {
+      "parent": [
+        3,
+        -1,
+        1,
+        -1
+      ],
+      "k": 2,
+      "sign_assignments": 256,
+      "error_sum": 69120,
+      "expected_error": 270,
+      "optimum": 135,
+      "query_count_each_execution": 12
+    },
+    {
+      "parent": [
+        3,
+        -1,
+        1,
+        1
+      ],
+      "k": 1,
+      "sign_assignments": 256,
+      "error_sum": 4608,
+      "expected_error": 18,
+      "optimum": 14,
+      "query_count_each_execution": 6
+    },
+    {
+      "parent": [
+        3,
+        -1,
+        1,
+        1
+      ],
+      "k": 2,
+      "sign_assignments": 256,
+      "error_sum": 47616,
+      "expected_error": 186,
+      "optimum": 110,
+      "query_count_each_execution": 12
+    },
+    {
+      "parent": [
+        3,
+        -1,
+        1,
+        2
+      ],
+      "k": 1,
+      "sign_assignments": 256,
+      "error_sum": 9728,
+      "expected_error": 38,
+      "optimum": 24,
+      "query_count_each_execution": 6
+    },
+    {
+      "parent": [
+        3,
+        -1,
+        1,
+        2
+      ],
+      "k": 2,
+      "sign_assignments": 256,
+      "error_sum": 32256,
+      "expected_error": 126,
+      "optimum": 79,
+      "query_count_each_execution": 12
+    },
+    {
+      "parent": [
+        3,
+        -1,
+        3,
+        -1
+      ],
+      "k": 1,
+      "sign_assignments": 256,
+      "error_sum": 11776,
+      "expected_error": 46,
+      "optimum": 23,
+      "query_count_each_execution": 6
+    },
+    {
+      "parent": [
+        3,
+        -1,
+        3,
+        -1
+      ],
+      "k": 2,
+      "sign_assignments": 256,
+      "error_sum": 74240,
+      "expected_error": 290,
+      "optimum": 145,
+      "query_count_each_execution": 12
+    },
+    {
+      "parent": [
+        3,
+        -1,
+        3,
+        1
+      ],
+      "k": 1,
+      "sign_assignments": 256,
+      "error_sum": 5632,
+      "expected_error": 22,
+      "optimum": 17,
+      "query_count_each_execution": 6
+    },
+    {
+      "parent": [
+        3,
+        -1,
+        3,
+        1
+      ],
+      "k": 2,
+      "sign_assignments": 256,
+      "error_sum": 28416,
+      "expected_error": 111,
+      "optimum": 86,
+      "query_count_each_execution": 12
+    },
+    {
+      "parent": [
+        3,
+        0,
+        -1,
+        -1
+      ],
+      "k": 1,
+      "sign_assignments": 256,
+      "error_sum": 11264,
+      "expected_error": 44,
+      "optimum": 29,
+      "query_count_each_execution": 6
+    },
+    {
+      "parent": [
+        3,
+        0,
+        -1,
+        -1
+      ],
+      "k": 2,
+      "sign_assignments": 256,
+      "error_sum": 57856,
+      "expected_error": 226,
+      "optimum": 149,
+      "query_count_each_execution": 12
+    },
+    {
+      "parent": [
+        3,
+        0,
+        -1,
+        2
+      ],
+      "k": 1,
+      "sign_assignments": 256,
+      "error_sum": 11776,
+      "expected_error": 46,
+      "optimum": 28,
+      "query_count_each_execution": 6
+    },
+    {
+      "parent": [
+        3,
+        0,
+        -1,
+        2
+      ],
+      "k": 2,
+      "sign_assignments": 256,
+      "error_sum": 45568,
+      "expected_error": 178,
+      "optimum": 108,
+      "query_count_each_execution": 12
+    },
+    {
+      "parent": [
+        3,
+        0,
+        0,
+        -1
+      ],
+      "k": 1,
+      "sign_assignments": 256,
+      "error_sum": 10240,
+      "expected_error": 40,
+      "optimum": 30,
+      "query_count_each_execution": 6
+    },
+    {
+      "parent": [
+        3,
+        0,
+        0,
+        -1
+      ],
+      "k": 2,
+      "sign_assignments": 256,
+      "error_sum": 30720,
+      "expected_error": 120,
+      "optimum": 95,
+      "query_count_each_execution": 12
+    },
+    {
+      "parent": [
+        3,
+        0,
+        1,
+        -1
+      ],
+      "k": 1,
+      "sign_assignments": 256,
+      "error_sum": 6400,
+      "expected_error": 25,
+      "optimum": 19,
+      "query_count_each_execution": 6
+    },
+    {
+      "parent": [
+        3,
+        0,
+        1,
+        -1
+      ],
+      "k": 2,
+      "sign_assignments": 256,
+      "error_sum": 45312,
+      "expected_error": 177,
+      "optimum": 110,
+      "query_count_each_execution": 12
+    },
+    {
+      "parent": [
+        3,
+        0,
+        3,
+        -1
+      ],
+      "k": 1,
+      "sign_assignments": 256,
+      "error_sum": 12800,
+      "expected_error": 50,
+      "optimum": 27,
+      "query_count_each_execution": 6
+    },
+    {
+      "parent": [
+        3,
+        0,
+        3,
+        -1
+      ],
+      "k": 2,
+      "sign_assignments": 256,
+      "error_sum": 38912,
+      "expected_error": 152,
+      "optimum": 91,
+      "query_count_each_execution": 12
+    },
+    {
+      "parent": [
+        3,
+        2,
+        -1,
+        -1
+      ],
+      "k": 1,
+      "sign_assignments": 256,
+      "error_sum": 21504,
+      "expected_error": 84,
+      "optimum": 42,
+      "query_count_each_execution": 6
+    },
+    {
+      "parent": [
+        3,
+        2,
+        -1,
+        -1
+      ],
+      "k": 2,
+      "sign_assignments": 256,
+      "error_sum": 61440,
+      "expected_error": 240,
+      "optimum": 120,
+      "query_count_each_execution": 12
+    },
+    {
+      "parent": [
+        3,
+        2,
+        -1,
+        1
+      ],
+      "k": 1,
+      "sign_assignments": 256,
+      "error_sum": 13824,
+      "expected_error": 54,
+      "optimum": 36,
+      "query_count_each_execution": 6
+    },
+    {
+      "parent": [
+        3,
+        2,
+        -1,
+        1
+      ],
+      "k": 2,
+      "sign_assignments": 256,
+      "error_sum": 47104,
+      "expected_error": 184,
+      "optimum": 112,
+      "query_count_each_execution": 12
+    },
+    {
+      "parent": [
+        3,
+        2,
+        -1,
+        2
+      ],
+      "k": 1,
+      "sign_assignments": 256,
+      "error_sum": 7680,
+      "expected_error": 30,
+      "optimum": 20,
+      "query_count_each_execution": 6
+    },
+    {
+      "parent": [
+        3,
+        2,
+        -1,
+        2
+      ],
+      "k": 2,
+      "sign_assignments": 256,
+      "error_sum": 34560,
+      "expected_error": 135,
+      "optimum": 79,
+      "query_count_each_execution": 12
+    },
+    {
+      "parent": [
+        3,
+        2,
+        0,
+        -1
+      ],
+      "k": 1,
+      "sign_assignments": 256,
+      "error_sum": 14336,
+      "expected_error": 56,
+      "optimum": 33,
+      "query_count_each_execution": 6
+    },
+    {
+      "parent": [
+        3,
+        2,
+        0,
+        -1
+      ],
+      "k": 2,
+      "sign_assignments": 256,
+      "error_sum": 34816,
+      "expected_error": 136,
+      "optimum": 82,
+      "query_count_each_execution": 12
+    },
+    {
+      "parent": [
+        3,
+        2,
+        3,
+        -1
+      ],
+      "k": 1,
+      "sign_assignments": 256,
+      "error_sum": 3328,
+      "expected_error": 13,
+      "optimum": 7,
+      "query_count_each_execution": 6
+    },
+    {
+      "parent": [
+        3,
+        2,
+        3,
+        -1
+      ],
+      "k": 2,
+      "sign_assignments": 256,
+      "error_sum": 37632,
+      "expected_error": 147,
+      "optimum": 88,
+      "query_count_each_execution": 12
+    },
+    {
+      "parent": [
+        3,
+        3,
+        -1,
+        -1
+      ],
+      "k": 1,
+      "sign_assignments": 256,
+      "error_sum": 15360,
+      "expected_error": 60,
+      "optimum": 30,
+      "query_count_each_execution": 6
+    },
+    {
+      "parent": [
+        3,
+        3,
+        -1,
+        -1
+      ],
+      "k": 2,
+      "sign_assignments": 256,
+      "error_sum": 66560,
+      "expected_error": 260,
+      "optimum": 130,
+      "query_count_each_execution": 12
+    },
+    {
+      "parent": [
+        3,
+        3,
+        -1,
+        2
+      ],
+      "k": 1,
+      "sign_assignments": 256,
+      "error_sum": 7680,
+      "expected_error": 30,
+      "optimum": 25,
+      "query_count_each_execution": 6
+    },
+    {
+      "parent": [
+        3,
+        3,
+        -1,
+        2
+      ],
+      "k": 2,
+      "sign_assignments": 256,
+      "error_sum": 36608,
+      "expected_error": 143,
+      "optimum": 109,
+      "query_count_each_execution": 12
+    },
+    {
+      "parent": [
+        3,
+        3,
+        0,
+        -1
+      ],
+      "k": 1,
+      "sign_assignments": 256,
+      "error_sum": 5632,
+      "expected_error": 22,
+      "optimum": 12,
+      "query_count_each_execution": 6
+    },
+    {
+      "parent": [
+        3,
+        3,
+        0,
+        -1
+      ],
+      "k": 2,
+      "sign_assignments": 256,
+      "error_sum": 59648,
+      "expected_error": 233,
+      "optimum": 134,
+      "query_count_each_execution": 12
+    },
+    {
+      "parent": [
+        3,
+        3,
+        1,
+        -1
+      ],
+      "k": 1,
+      "sign_assignments": 256,
+      "error_sum": 9216,
+      "expected_error": 36,
+      "optimum": 22,
+      "query_count_each_execution": 6
+    },
+    {
+      "parent": [
+        3,
+        3,
+        1,
+        -1
+      ],
+      "k": 2,
+      "sign_assignments": 256,
+      "error_sum": 43264,
+      "expected_error": 169,
+      "optimum": 95,
+      "query_count_each_execution": 12
+    },
+    {
+      "parent": [
+        3,
+        3,
+        3,
+        -1
+      ],
+      "k": 1,
+      "sign_assignments": 256,
+      "error_sum": 10240,
+      "expected_error": 40,
+      "optimum": 20,
+      "query_count_each_execution": 6
+    },
+    {
+      "parent": [
+        3,
+        3,
+        3,
+        -1
+      ],
+      "k": 2,
+      "sign_assignments": 256,
+      "error_sum": 38912,
+      "expected_error": 152,
+      "optimum": 76,
+      "query_count_each_execution": 12
+    },
+    {
+      "parent": [
+        -1,
+        0,
+        1,
+        2,
+        3
+      ],
+      "k": 1,
+      "sign_assignments": 1024,
+      "error_sum": 88064,
+      "expected_error": 86,
+      "optimum": 48,
+      "query_count_each_execution": 6
+    },
+    {
+      "parent": [
+        -1,
+        0,
+        1,
+        2,
+        3
+      ],
+      "k": 1,
+      "sign_assignments": 1024,
+      "error_sum": 0,
+      "expected_error": 0,
+      "optimum": 0,
+      "query_count_each_execution": 6
+    },
+    {
+      "parent": [
+        -1,
+        0,
+        1,
+        2,
+        3
+      ],
+      "k": 2,
+      "sign_assignments": 1024,
+      "error_sum": 344064,
+      "expected_error": 336,
+      "optimum": 185,
+      "query_count_each_execution": 12
+    },
+    {
+      "parent": [
+        -1,
+        0,
+        1,
+        2,
+        3
+      ],
+      "k": 2,
+      "sign_assignments": 1024,
+      "error_sum": 0,
+      "expected_error": 0,
+      "optimum": 0,
+      "query_count_each_execution": 12
+    },
+    {
+      "parent": [
+        -1,
+        0,
+        1,
+        2,
+        3
+      ],
+      "k": 3,
+      "sign_assignments": 1024,
+      "error_sum": 747520,
+      "expected_error": 730,
+      "optimum": 392,
+      "query_count_each_execution": 18
+    },
+    {
+      "parent": [
+        -1,
+        0,
+        1,
+        2,
+        3
+      ],
+      "k": 3,
+      "sign_assignments": 1024,
+      "error_sum": 0,
+      "expected_error": 0,
+      "optimum": 0,
+      "query_count_each_execution": 18
+    },
+    {
+      "parent": [
+        -1,
+        0,
+        0,
+        0,
+        0
+      ],
+      "k": 1,
+      "sign_assignments": 1024,
+      "error_sum": 114688,
+      "expected_error": 112,
+      "optimum": 56,
+      "query_count_each_execution": 6
+    },
+    {
+      "parent": [
+        -1,
+        0,
+        0,
+        0,
+        0
+      ],
+      "k": 1,
+      "sign_assignments": 1024,
+      "error_sum": 0,
+      "expected_error": 0,
+      "optimum": 0,
+      "query_count_each_execution": 6
+    },
+    {
+      "parent": [
+        -1,
+        0,
+        0,
+        0,
+        0
+      ],
+      "k": 2,
+      "sign_assignments": 1024,
+      "error_sum": 425984,
+      "expected_error": 416,
+      "optimum": 208,
+      "query_count_each_execution": 12
+    },
+    {
+      "parent": [
+        -1,
+        0,
+        0,
+        0,
+        0
+      ],
+      "k": 2,
+      "sign_assignments": 1024,
+      "error_sum": 0,
+      "expected_error": 0,
+      "optimum": 0,
+      "query_count_each_execution": 12
+    },
+    {
+      "parent": [
+        -1,
+        0,
+        0,
+        0,
+        0
+      ],
+      "k": 3,
+      "sign_assignments": 1024,
+      "error_sum": 786432,
+      "expected_error": 768,
+      "optimum": 384,
+      "query_count_each_execution": 18
+    },
+    {
+      "parent": [
+        -1,
+        0,
+        0,
+        0,
+        0
+      ],
+      "k": 3,
+      "sign_assignments": 1024,
+      "error_sum": 0,
+      "expected_error": 0,
+      "optimum": 0,
+      "query_count_each_execution": 18
+    },
+    {
+      "parent": [
+        -1,
+        0,
+        -1,
+        2,
+        -1
+      ],
+      "k": 1,
+      "sign_assignments": 1024,
+      "error_sum": 131072,
+      "expected_error": 128,
+      "optimum": 64,
+      "query_count_each_execution": 6
+    },
+    {
+      "parent": [
+        -1,
+        0,
+        -1,
+        2,
+        -1
+      ],
+      "k": 1,
+      "sign_assignments": 1024,
+      "error_sum": 0,
+      "expected_error": 0,
+      "optimum": 0,
+      "query_count_each_execution": 6
+    },
+    {
+      "parent": [
+        -1,
+        0,
+        -1,
+        2,
+        -1
+      ],
+      "k": 2,
+      "sign_assignments": 1024,
+      "error_sum": 602112,
+      "expected_error": 588,
+      "optimum": 294,
+      "query_count_each_execution": 12
+    },
+    {
+      "parent": [
+        -1,
+        0,
+        -1,
+        2,
+        -1
+      ],
+      "k": 2,
+      "sign_assignments": 1024,
+      "error_sum": 0,
+      "expected_error": 0,
+      "optimum": 0,
+      "query_count_each_execution": 12
+    },
+    {
+      "parent": [
+        -1,
+        0,
+        -1,
+        2,
+        -1
+      ],
+      "k": 3,
+      "sign_assignments": 1024,
+      "error_sum": 1146880,
+      "expected_error": 1120,
+      "optimum": 560,
+      "query_count_each_execution": 18
+    },
+    {
+      "parent": [
+        -1,
+        0,
+        -1,
+        2,
+        -1
+      ],
+      "k": 3,
+      "sign_assignments": 1024,
+      "error_sum": 0,
+      "expected_error": 0,
+      "optimum": 0,
+      "query_count_each_execution": 18
+    },
+    {
+      "parent": [
+        3,
+        0,
+        1,
+        -1,
+        3
+      ],
+      "k": 1,
+      "sign_assignments": 1024,
+      "error_sum": 71680,
+      "expected_error": 70,
+      "optimum": 40,
+      "query_count_each_execution": 6
+    },
+    {
+      "parent": [
+        3,
+        0,
+        1,
+        -1,
+        3
+      ],
+      "k": 1,
+      "sign_assignments": 1024,
+      "error_sum": 0,
+      "expected_error": 0,
+      "optimum": 0,
+      "query_count_each_execution": 6
+    },
+    {
+      "parent": [
+        3,
+        0,
+        1,
+        -1,
+        3
+      ],
+      "k": 2,
+      "sign_assignments": 1024,
+      "error_sum": 374784,
+      "expected_error": 366,
+      "optimum": 197,
+      "query_count_each_execution": 12
+    },
+    {
+      "parent": [
+        3,
+        0,
+        1,
+        -1,
+        3
+      ],
+      "k": 2,
+      "sign_assignments": 1024,
+      "error_sum": 0,
+      "expected_error": 0,
+      "optimum": 0,
+      "query_count_each_execution": 12
+    },
+    {
+      "parent": [
+        3,
+        0,
+        1,
+        -1,
+        3
+      ],
+      "k": 3,
+      "sign_assignments": 1024,
+      "error_sum": 792576,
+      "expected_error": 774,
+      "optimum": 416,
+      "query_count_each_execution": 18
+    },
+    {
+      "parent": [
+        3,
+        0,
+        1,
+        -1,
+        3
+      ],
+      "k": 3,
+      "sign_assignments": 1024,
+      "error_sum": 0,
+      "expected_error": 0,
+      "optimum": 0,
+      "query_count_each_execution": 18
+    }
+  ]
+}

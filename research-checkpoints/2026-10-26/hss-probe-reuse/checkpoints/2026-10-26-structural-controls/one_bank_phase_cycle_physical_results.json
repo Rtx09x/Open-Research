@@ -1,0 +1,31 @@
+{
+  "status": "EXACT_FRACTION_PASS",
+  "width": 3,
+  "checks": [
+    {
+      "m": 4,
+      "full_covariance_and_unused_passive": true,
+      "exact_cycle": true,
+      "cost": 0.9939241508571428
+    },
+    {
+      "m": 8,
+      "full_covariance_and_unused_passive": true,
+      "exact_cycle": true,
+      "cost": 1.0916114659157814
+    },
+    {
+      "m": 16,
+      "full_covariance_and_unused_passive": true,
+      "exact_cycle": true,
+      "cost": 1.131224257010705
+    },
+    {
+      "m": 32,
+      "full_covariance_and_unused_passive": true,
+      "exact_cycle": true,
+      "cost": 1.1424397424593196
+    }
+  ],
+  "scope": "Full conditional moment cycle identity, not an unconditional algorithm lower bound"
+}

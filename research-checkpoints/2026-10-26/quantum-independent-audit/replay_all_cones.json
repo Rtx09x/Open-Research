@@ -1,0 +1,1762 @@
+{
+  "status": "NUMERICAL_CONTROL_PASS",
+  "n": 19,
+  "actual_known19_x": true,
+  "constraints_tested": 290,
+  "min_by_kind": {
+    "PPP": -1.7054411041967466e-18,
+    "PT_PPP": -7.972280572159362e-18,
+    "PPQ": -6.759278137815106e-14,
+    "PQQ": 1.5233689341435434e-13,
+    "QQQ": 0.7016803334483395,
+    "PT_PPQ_1": -6.759180404959126e-14,
+    "PT_PPQ_2": -6.758448595997481e-14,
+    "PT_PQQ_1": 1.5234471339498623e-13,
+    "PT_PQQ_2": 1.5235568010840685e-13,
+    "PT_QQQ": 0.7016803334483396
+  },
+  "equality_residual": 1.6079582110251067e-11,
+  "seconds": 27.056743383407593,
+  "rows": [
+    {
+      "J2": 1,
+      "kind": "PPP",
+      "min_eig": 7.08172983086904e-05,
+      "symmetry_error": 0.0
+    },
+    {
+      "J2": 1,
+      "kind": "PT_PPP",
+      "min_eig": 7.081729830868866e-05,
+      "symmetry_error": 0.0
+    },
+    {
+      "J2": 1,
+      "kind": "PPQ",
+      "min_eig": 0.008716134509596726,
+      "symmetry_error": 0.0
+    },
+    {
+      "J2": 1,
+      "kind": "PQQ",
+      "min_eig": 0.06809385359705755,
+      "symmetry_error": 8.673617379884035e-19
+    },
+    {
+      "J2": 1,
+      "kind": "QQQ",
+      "min_eig": 0.7406930982108477,
+      "symmetry_error": 0.0
+    },
+    {
+      "J2": 1,
+      "kind": "PT_PPQ_1",
+      "min_eig": 0.008716134509596728,
+      "symmetry_error": 0.0
+    },
+    {
+      "J2": 1,
+      "kind": "PT_PPQ_2",
+      "min_eig": 0.008716134509596726,
+      "symmetry_error": 0.0
+    },
+    {
+      "J2": 1,
+      "kind": "PT_PQQ_1",
+      "min_eig": 0.06809385359705757,
+      "symmetry_error": 0.0
+    },
+    {
+      "J2": 1,
+      "kind": "PT_PQQ_2",
+      "min_eig": 0.06809385359705755,
+      "symmetry_error": 0.0
+    },
+    {
+      "J2": 1,
+      "kind": "PT_QQQ",
+      "min_eig": 0.7406930982108478,
+      "symmetry_error": 0.0
+    },
+    {
+      "J2": 3,
+      "kind": "PPP",
+      "min_eig": -2.0696720670566795e-19,
+      "symmetry_error": 6.617444900424222e-24
+    },
+    {
+      "J2": 3,
+      "kind": "PT_PPP",
+      "min_eig": -6.4089953860608584e-18,
+      "symmetry_error": 0.0
+    },
+    {
+      "J2": 3,
+      "kind": "PPQ",
+      "min_eig": 0.00037621094029622514,
+      "symmetry_error": 6.617444900424222e-24
+    },
+    {
+      "J2": 3,
+      "kind": "PQQ",
+      "min_eig": 0.07299676856615765,
+      "symmetry_error": 3.2526065174565133e-19
+    },
+    {
+      "J2": 3,
+      "kind": "QQQ",
+      "min_eig": 0.7200887650001372,
+      "symmetry_error": 6.505213034913027e-19
+    },
+    {
+      "J2": 3,
+      "kind": "PT_PPQ_1",
+      "min_eig": 0.0003762109402962258,
+      "symmetry_error": 0.0
+    },
+    {
+      "J2": 3,
+      "kind": "PT_PPQ_2",
+      "min_eig": 0.0003762109402962255,
+      "symmetry_error": 4.336808689942018e-19
+    },
+    {
+      "J2": 3,
+      "kind": "PT_PQQ_1",
+      "min_eig": 0.07299676856615768,
+      "symmetry_error": 4.336808689942018e-19
+    },
+    {
+      "J2": 3,
+      "kind": "PT_PQQ_2",
+      "min_eig": 0.07299676856615765,
+      "symmetry_error": 3.2526065174565133e-19
+    },
+    {
+      "J2": 3,
+      "kind": "PT_QQQ",
+      "min_eig": 0.7200887650001373,
+      "symmetry_error": 3.2526065174565133e-19
+    },
+    {
+      "J2": 5,
+      "kind": "PPP",
+      "min_eig": -6.839798198926278e-20,
+      "symmetry_error": 2.168404344971009e-19
+    },
+    {
+      "J2": 5,
+      "kind": "PT_PPP",
+      "min_eig": -2.4888005213232715e-18,
+      "symmetry_error": 0.0
+    },
+    {
+      "J2": 5,
+      "kind": "PPQ",
+      "min_eig": 0.0003542030446528257,
+      "symmetry_error": 2.168404344971009e-19
+    },
+    {
+      "J2": 5,
+      "kind": "PQQ",
+      "min_eig": 0.0697214850435408,
+      "symmetry_error": 4.336808689942018e-19
+    },
+    {
+      "J2": 5,
+      "kind": "QQQ",
+      "min_eig": 0.7146578076880596,
+      "symmetry_error": 8.673617379884035e-19
+    },
+    {
+      "J2": 5,
+      "kind": "PT_PPQ_1",
+      "min_eig": 0.0003542030446528271,
+      "symmetry_error": 0.0
+    },
+    {
+      "J2": 5,
+      "kind": "PT_PPQ_2",
+      "min_eig": 0.0003542030446528235,
+      "symmetry_error": 8.673617379884035e-19
+    },
+    {
+      "J2": 5,
+      "kind": "PT_PQQ_1",
+      "min_eig": 0.06972148504354081,
+      "symmetry_error": 8.673617379884035e-19
+    },
+    {
+      "J2": 5,
+      "kind": "PT_PQQ_2",
+      "min_eig": 0.06972148504354073,
+      "symmetry_error": 1.734723475976807e-18
+    },
+    {
+      "J2": 5,
+      "kind": "PT_QQQ",
+      "min_eig": 0.7146578076880591,
+      "symmetry_error": 1.734723475976807e-18
+    },
+    {
+      "J2": 7,
+      "kind": "PPP",
+      "min_eig": 2.0188812285113512e-19,
+      "symmetry_error": 2.168404344971009e-19
+    },
+    {
+      "J2": 7,
+      "kind": "PT_PPP",
+      "min_eig": 8.198749533829593e-19,
+      "symmetry_error": 0.0
+    },
+    {
+      "J2": 7,
+      "kind": "PPQ",
+      "min_eig": 0.00017500532306947476,
+      "symmetry_error": 2.168404344971009e-19
+    },
+    {
+      "J2": 7,
+      "kind": "PQQ",
+      "min_eig": 0.07291536454362967,
+      "symmetry_error": 8.673617379884035e-19
+    },
+    {
+      "J2": 7,
+      "kind": "QQQ",
+      "min_eig": 0.7169503286070519,
+      "symmetry_error": 1.5178830414797062e-18
+    },
+    {
+      "J2": 7,
+      "kind": "PT_PPQ_1",
+      "min_eig": 0.0001750053230694741,
+      "symmetry_error": 0.0
+    },
+    {
+      "J2": 7,
+      "kind": "PT_PPQ_2",
+      "min_eig": 0.00017500532306947083,
+      "symmetry_error": 6.505213034913027e-19
+    },
+    {
+      "J2": 7,
+      "kind": "PT_PQQ_1",
+      "min_eig": 0.07291536454362971,
+      "symmetry_error": 6.505213034913027e-19
+    },
+    {
+      "J2": 7,
+      "kind": "PT_PQQ_2",
+      "min_eig": 0.07291536454362968,
+      "symmetry_error": 8.673617379884035e-19
+    },
+    {
+      "J2": 7,
+      "kind": "PT_QQQ",
+      "min_eig": 0.7169503286070524,
+      "symmetry_error": 8.673617379884035e-19
+    },
+    {
+      "J2": 9,
+      "kind": "PPP",
+      "min_eig": 1.380799800334981e-19,
+      "symmetry_error": 2.168404344971009e-19
+    },
+    {
+      "J2": 9,
+      "kind": "PT_PPP",
+      "min_eig": -2.5469703292035438e-18,
+      "symmetry_error": 0.0
+    },
+    {
+      "J2": 9,
+      "kind": "PPQ",
+      "min_eig": 9.708525115553683e-05,
+      "symmetry_error": 2.168404344971009e-19
+    },
+    {
+      "J2": 9,
+      "kind": "PQQ",
+      "min_eig": 0.05348513873504422,
+      "symmetry_error": 1.734723475976807e-18
+    },
+    {
+      "J2": 9,
+      "kind": "QQQ",
+      "min_eig": 0.7016803334483395,
+      "symmetry_error": 3.469446951953614e-18
+    },
+    {
+      "J2": 9,
+      "kind": "PT_PPQ_1",
+      "min_eig": 9.708525115554014e-05,
+      "symmetry_error": 0.0
+    },
+    {
+      "J2": 9,
+      "kind": "PT_PPQ_2",
+      "min_eig": 9.70852511555397e-05,
+      "symmetry_error": 1.734723475976807e-18
+    },
+    {
+      "J2": 9,
+      "kind": "PT_PQQ_1",
+      "min_eig": 0.05348513873504422,
+      "symmetry_error": 1.734723475976807e-18
+    },
+    {
+      "J2": 9,
+      "kind": "PT_PQQ_2",
+      "min_eig": 0.05348513873504422,
+      "symmetry_error": 3.469446951953614e-18
+    },
+    {
+      "J2": 9,
+      "kind": "PT_QQQ",
+      "min_eig": 0.7016803334483396,
+      "symmetry_error": 3.469446951953614e-18
+    },
+    {
+      "J2": 11,
+      "kind": "PPP",
+      "min_eig": -6.771540456078254e-19,
+      "symmetry_error": 4.336808689942018e-19
+    },
+    {
+      "J2": 11,
+      "kind": "PT_PPP",
+      "min_eig": -1.4000398161541936e-18,
+      "symmetry_error": 0.0
+    },
+    {
+      "J2": 11,
+      "kind": "PPQ",
+      "min_eig": 9.946824557917809e-06,
+      "symmetry_error": 4.336808689942018e-19
+    },
+    {
+      "J2": 11,
+      "kind": "PQQ",
+      "min_eig": 0.05305677367370101,
+      "symmetry_error": 1.734723475976807e-18
+    },
+    {
+      "J2": 11,
+      "kind": "QQQ",
+      "min_eig": 0.703944847742033,
+      "symmetry_error": 2.6020852139652106e-18
+    },
+    {
+      "J2": 11,
+      "kind": "PT_PPQ_1",
+      "min_eig": 9.946824557917909e-06,
+      "symmetry_error": 0.0
+    },
+    {
+      "J2": 11,
+      "kind": "PT_PPQ_2",
+      "min_eig": 9.946824557914622e-06,
+      "symmetry_error": 1.734723475976807e-18
+    },
+    {
+      "J2": 11,
+      "kind": "PT_PQQ_1",
+      "min_eig": 0.053056773673700985,
+      "symmetry_error": 1.734723475976807e-18
+    },
+    {
+      "J2": 11,
+      "kind": "PT_PQQ_2",
+      "min_eig": 0.053056773673700944,
+      "symmetry_error": 3.469446951953614e-18
+    },
+    {
+      "J2": 11,
+      "kind": "PT_QQQ",
+      "min_eig": 0.7039448477420326,
+      "symmetry_error": 3.469446951953614e-18
+    },
+    {
+      "J2": 13,
+      "kind": "PPP",
+      "min_eig": -9.977001206504062e-20,
+      "symmetry_error": 3.2526065174565133e-19
+    },
+    {
+      "J2": 13,
+      "kind": "PT_PPP",
+      "min_eig": -2.125115693278074e-18,
+      "symmetry_error": 0.0
+    },
+    {
+      "J2": 13,
+      "kind": "PPQ",
+      "min_eig": 8.868745132488105e-14,
+      "symmetry_error": 3.2526065174565133e-19
+    },
+    {
+      "J2": 13,
+      "kind": "PQQ",
+      "min_eig": 0.04970507591965216,
+      "symmetry_error": 8.673617379884035e-19
+    },
+    {
+      "J2": 13,
+      "kind": "QQQ",
+      "min_eig": 0.7018051055483596,
+      "symmetry_error": 1.734723475976807e-18
+    },
+    {
+      "J2": 13,
+      "kind": "PT_PPQ_1",
+      "min_eig": 8.868747633948732e-14,
+      "symmetry_error": 0.0
+    },
+    {
+      "J2": 13,
+      "kind": "PT_PPQ_2",
+      "min_eig": 8.869271072743204e-14,
+      "symmetry_error": 1.734723475976807e-18
+    },
+    {
+      "J2": 13,
+      "kind": "PT_PQQ_1",
+      "min_eig": 0.049705075919652196,
+      "symmetry_error": 1.734723475976807e-18
+    },
+    {
+      "J2": 13,
+      "kind": "PT_PQQ_2",
+      "min_eig": 0.049705075919652134,
+      "symmetry_error": 3.469446951953614e-18
+    },
+    {
+      "J2": 13,
+      "kind": "PT_QQQ",
+      "min_eig": 0.7018051055483597,
+      "symmetry_error": 3.469446951953614e-18
+    },
+    {
+      "J2": 15,
+      "kind": "PPP",
+      "min_eig": -5.522333307925976e-19,
+      "symmetry_error": 8.673617379884035e-19
+    },
+    {
+      "J2": 15,
+      "kind": "PT_PPP",
+      "min_eig": -3.0620769211782665e-18,
+      "symmetry_error": 0.0
+    },
+    {
+      "J2": 15,
+      "kind": "PPQ",
+      "min_eig": 8.868989262108705e-14,
+      "symmetry_error": 8.673617379884035e-19
+    },
+    {
+      "J2": 15,
+      "kind": "PQQ",
+      "min_eig": 0.05367836251957104,
+      "symmetry_error": 1.3010426069826053e-18
+    },
+    {
+      "J2": 15,
+      "kind": "QQQ",
+      "min_eig": 0.7019273223919075,
+      "symmetry_error": 1.734723475976807e-18
+    },
+    {
+      "J2": 15,
+      "kind": "PT_PPQ_1",
+      "min_eig": 8.868695863356522e-14,
+      "symmetry_error": 0.0
+    },
+    {
+      "J2": 15,
+      "kind": "PT_PPQ_2",
+      "min_eig": 8.869096846041609e-14,
+      "symmetry_error": 1.5178830414797062e-18
+    },
+    {
+      "J2": 15,
+      "kind": "PT_PQQ_1",
+      "min_eig": 0.053678362519571005,
+      "symmetry_error": 1.5178830414797062e-18
+    },
+    {
+      "J2": 15,
+      "kind": "PT_PQQ_2",
+      "min_eig": 0.05367836251957099,
+      "symmetry_error": 1.734723475976807e-18
+    },
+    {
+      "J2": 15,
+      "kind": "PT_QQQ",
+      "min_eig": 0.7019273223919074,
+      "symmetry_error": 1.734723475976807e-18
+    },
+    {
+      "J2": 17,
+      "kind": "PPP",
+      "min_eig": -4.339925573384497e-19,
+      "symmetry_error": 2.439454888092385e-19
+    },
+    {
+      "J2": 17,
+      "kind": "PT_PPP",
+      "min_eig": -3.3656646270259965e-18,
+      "symmetry_error": 0.0
+    },
+    {
+      "J2": 17,
+      "kind": "PPQ",
+      "min_eig": -6.759178442020203e-14,
+      "symmetry_error": 2.439454888092385e-19
+    },
+    {
+      "J2": 17,
+      "kind": "PQQ",
+      "min_eig": 0.050601274613182756,
+      "symmetry_error": 2.6020852139652106e-18
+    },
+    {
+      "J2": 17,
+      "kind": "QQQ",
+      "min_eig": 0.7033623953486322,
+      "symmetry_error": 1.734723475976807e-18
+    },
+    {
+      "J2": 17,
+      "kind": "PT_PPQ_1",
+      "min_eig": -6.759175822271371e-14,
+      "symmetry_error": 0.0
+    },
+    {
+      "J2": 17,
+      "kind": "PT_PPQ_2",
+      "min_eig": -6.758146761899813e-14,
+      "symmetry_error": 1.734723475976807e-18
+    },
+    {
+      "J2": 17,
+      "kind": "PT_PQQ_1",
+      "min_eig": 0.05060127461318276,
+      "symmetry_error": 1.734723475976807e-18
+    },
+    {
+      "J2": 17,
+      "kind": "PT_PQQ_2",
+      "min_eig": 0.05060127461318275,
+      "symmetry_error": 3.469446951953614e-18
+    },
+    {
+      "J2": 17,
+      "kind": "PT_QQQ",
+      "min_eig": 0.7033623953486323,
+      "symmetry_error": 3.469446951953614e-18
+    },
+    {
+      "J2": 19,
+      "kind": "PPP",
+      "min_eig": -1.7054411041967466e-18,
+      "symmetry_error": 8.673617379884035e-19
+    },
+    {
+      "J2": 19,
+      "kind": "PT_PPP",
+      "min_eig": -7.972280572159362e-18,
+      "symmetry_error": 0.0
+    },
+    {
+      "J2": 19,
+      "kind": "PPQ",
+      "min_eig": -6.759278137815106e-14,
+      "symmetry_error": 8.673617379884035e-19
+    },
+    {
+      "J2": 19,
+      "kind": "PQQ",
+      "min_eig": 1.5233689341435434e-13,
+      "symmetry_error": 5.204170427930421e-18
+    },
+    {
+      "J2": 19,
+      "kind": "QQQ",
+      "min_eig": 0.7069562225121712,
+      "symmetry_error": 6.938893903907228e-18
+    },
+    {
+      "J2": 19,
+      "kind": "PT_PPQ_1",
+      "min_eig": -6.759129737533701e-14,
+      "symmetry_error": 0.0
+    },
+    {
+      "J2": 19,
+      "kind": "PT_PPQ_2",
+      "min_eig": -6.758448595997481e-14,
+      "symmetry_error": 5.204170427930421e-18
+    },
+    {
+      "J2": 19,
+      "kind": "PT_PQQ_1",
+      "min_eig": 1.5234471339498623e-13,
+      "symmetry_error": 5.204170427930421e-18
+    },
+    {
+      "J2": 19,
+      "kind": "PT_PQQ_2",
+      "min_eig": 1.5235568010840685e-13,
+      "symmetry_error": 5.204170427930421e-18
+    },
+    {
+      "J2": 19,
+      "kind": "PT_QQQ",
+      "min_eig": 0.7069562225121704,
+      "symmetry_error": 5.204170427930421e-18
+    },
+    {
+      "J2": 21,
+      "kind": "PPP",
+      "min_eig": -7.357580936475911e-20,
+      "symmetry_error": 8.673617379884035e-19
+    },
+    {
+      "J2": 21,
+      "kind": "PT_PPP",
+      "min_eig": -3.9714552749694706e-18,
+      "symmetry_error": 0.0
+    },
+    {
+      "J2": 21,
+      "kind": "PPQ",
+      "min_eig": -6.759178034711201e-14,
+      "symmetry_error": 8.673617379884035e-19
+    },
+    {
+      "J2": 21,
+      "kind": "PQQ",
+      "min_eig": 0.05345685041529093,
+      "symmetry_error": 2.6020852139652106e-18
+    },
+    {
+      "J2": 21,
+      "kind": "QQQ",
+      "min_eig": 0.7088316544892581,
+      "symmetry_error": 5.204170427930421e-18
+    },
+    {
+      "J2": 21,
+      "kind": "PT_PPQ_1",
+      "min_eig": -6.759180404959126e-14,
+      "symmetry_error": 0.0
+    },
+    {
+      "J2": 21,
+      "kind": "PT_PPQ_2",
+      "min_eig": -6.758261054414753e-14,
+      "symmetry_error": 1.734723475976807e-18
+    },
+    {
+      "J2": 21,
+      "kind": "PT_PQQ_1",
+      "min_eig": 0.05345685041529093,
+      "symmetry_error": 1.734723475976807e-18
+    },
+    {
+      "J2": 21,
+      "kind": "PT_PQQ_2",
+      "min_eig": 0.05345685041529098,
+      "symmetry_error": 3.469446951953614e-18
+    },
+    {
+      "J2": 21,
+      "kind": "PT_QQQ",
+      "min_eig": 0.7088316544892574,
+      "symmetry_error": 3.469446951953614e-18
+    },
+    {
+      "J2": 23,
+      "kind": "PPP",
+      "min_eig": -7.908080194832275e-19,
+      "symmetry_error": 4.336808689942018e-19
+    },
+    {
+      "J2": 23,
+      "kind": "PT_PPP",
+      "min_eig": -1.6507400295601018e-18,
+      "symmetry_error": 0.0
+    },
+    {
+      "J2": 23,
+      "kind": "PPQ",
+      "min_eig": 8.868889078535354e-14,
+      "symmetry_error": 4.336808689942018e-19
+    },
+    {
+      "J2": 23,
+      "kind": "PQQ",
+      "min_eig": 0.052055161541734195,
+      "symmetry_error": 1.734723475976807e-18
+    },
+    {
+      "J2": 23,
+      "kind": "QQQ",
+      "min_eig": 0.7039012044615166,
+      "symmetry_error": 3.469446951953614e-18
+    },
+    {
+      "J2": 23,
+      "kind": "PT_PPQ_1",
+      "min_eig": 8.868781332041611e-14,
+      "symmetry_error": 0.0
+    },
+    {
+      "J2": 23,
+      "kind": "PT_PPQ_2",
+      "min_eig": 8.868798521432253e-14,
+      "symmetry_error": 1.734723475976807e-18
+    },
+    {
+      "J2": 23,
+      "kind": "PT_PQQ_1",
+      "min_eig": 0.05205516154173428,
+      "symmetry_error": 1.734723475976807e-18
+    },
+    {
+      "J2": 23,
+      "kind": "PT_PQQ_2",
+      "min_eig": 0.052055161541734195,
+      "symmetry_error": 3.469446951953614e-18
+    },
+    {
+      "J2": 23,
+      "kind": "PT_QQQ",
+      "min_eig": 0.7039012044615169,
+      "symmetry_error": 3.469446951953614e-18
+    },
+    {
+      "J2": 25,
+      "kind": "PPP",
+      "min_eig": -3.135600322126888e-19,
+      "symmetry_error": 4.336808689942018e-19
+    },
+    {
+      "J2": 25,
+      "kind": "PT_PPP",
+      "min_eig": -2.7447656064159122e-18,
+      "symmetry_error": 0.0
+    },
+    {
+      "J2": 25,
+      "kind": "PPQ",
+      "min_eig": 8.868749043776322e-14,
+      "symmetry_error": 4.336808689942018e-19
+    },
+    {
+      "J2": 25,
+      "kind": "PQQ",
+      "min_eig": 0.05399963875871843,
+      "symmetry_error": 2.6020852139652106e-18
+    },
+    {
+      "J2": 25,
+      "kind": "QQQ",
+      "min_eig": 0.7097408008545467,
+      "symmetry_error": 3.469446951953614e-18
+    },
+    {
+      "J2": 25,
+      "kind": "PT_PPQ_1",
+      "min_eig": 8.868743059970817e-14,
+      "symmetry_error": 0.0
+    },
+    {
+      "J2": 25,
+      "kind": "PT_PPQ_2",
+      "min_eig": 8.869221170055025e-14,
+      "symmetry_error": 1.734723475976807e-18
+    },
+    {
+      "J2": 25,
+      "kind": "PT_PQQ_1",
+      "min_eig": 0.05399963875871833,
+      "symmetry_error": 1.734723475976807e-18
+    },
+    {
+      "J2": 25,
+      "kind": "PT_PQQ_2",
+      "min_eig": 0.053999638758718396,
+      "symmetry_error": 1.734723475976807e-18
+    },
+    {
+      "J2": 25,
+      "kind": "PT_QQQ",
+      "min_eig": 0.7097408008545475,
+      "symmetry_error": 1.734723475976807e-18
+    },
+    {
+      "J2": 27,
+      "kind": "PPP",
+      "min_eig": -7.135615940271796e-20,
+      "symmetry_error": 4.336808689942018e-19
+    },
+    {
+      "J2": 27,
+      "kind": "PT_PPP",
+      "min_eig": -1.8694819768058672e-18,
+      "symmetry_error": 0.0
+    },
+    {
+      "J2": 27,
+      "kind": "PPQ",
+      "min_eig": 9.899953757215001e-06,
+      "symmetry_error": 4.336808689942018e-19
+    },
+    {
+      "J2": 27,
+      "kind": "PQQ",
+      "min_eig": 0.054810777872954776,
+      "symmetry_error": 9.215718466126788e-19
+    },
+    {
+      "J2": 27,
+      "kind": "QQQ",
+      "min_eig": 0.7020558088783275,
+      "symmetry_error": 3.469446951953614e-18
+    },
+    {
+      "J2": 27,
+      "kind": "PT_PPQ_1",
+      "min_eig": 9.89995375721488e-06,
+      "symmetry_error": 0.0
+    },
+    {
+      "J2": 27,
+      "kind": "PT_PPQ_2",
+      "min_eig": 9.899953757214874e-06,
+      "symmetry_error": 2.6020852139652106e-18
+    },
+    {
+      "J2": 27,
+      "kind": "PT_PQQ_1",
+      "min_eig": 0.05481077787295471,
+      "symmetry_error": 2.6020852139652106e-18
+    },
+    {
+      "J2": 27,
+      "kind": "PT_PQQ_2",
+      "min_eig": 0.05481077787295473,
+      "symmetry_error": 3.469446951953614e-18
+    },
+    {
+      "J2": 27,
+      "kind": "PT_QQQ",
+      "min_eig": 0.7020558088783274,
+      "symmetry_error": 3.469446951953614e-18
+    },
+    {
+      "J2": 29,
+      "kind": "PPP",
+      "min_eig": -3.657245906337619e-20,
+      "symmetry_error": 4.336808689942018e-19
+    },
+    {
+      "J2": 29,
+      "kind": "PT_PPP",
+      "min_eig": -6.1824241184205735e-19,
+      "symmetry_error": 0.0
+    },
+    {
+      "J2": 29,
+      "kind": "PPQ",
+      "min_eig": 0.00026735675162122425,
+      "symmetry_error": 4.336808689942018e-19
+    },
+    {
+      "J2": 29,
+      "kind": "PQQ",
+      "min_eig": 0.0534279485477981,
+      "symmetry_error": 1.3010426069826053e-18
+    },
+    {
+      "J2": 29,
+      "kind": "QQQ",
+      "min_eig": 0.7100752670255743,
+      "symmetry_error": 1.734723475976807e-18
+    },
+    {
+      "J2": 29,
+      "kind": "PT_PPQ_1",
+      "min_eig": 0.00026735675162122506,
+      "symmetry_error": 0.0
+    },
+    {
+      "J2": 29,
+      "kind": "PT_PPQ_2",
+      "min_eig": 0.0002673567516212235,
+      "symmetry_error": 1.3010426069826053e-18
+    },
+    {
+      "J2": 29,
+      "kind": "PT_PQQ_1",
+      "min_eig": 0.05342794854779808,
+      "symmetry_error": 1.3010426069826053e-18
+    },
+    {
+      "J2": 29,
+      "kind": "PT_PQQ_2",
+      "min_eig": 0.05342794854779815,
+      "symmetry_error": 3.469446951953614e-18
+    },
+    {
+      "J2": 29,
+      "kind": "PT_QQQ",
+      "min_eig": 0.7100752670255743,
+      "symmetry_error": 3.469446951953614e-18
+    },
+    {
+      "J2": 31,
+      "kind": "PPP",
+      "min_eig": -2.777552150791405e-19,
+      "symmetry_error": 4.336808689942018e-19
+    },
+    {
+      "J2": 31,
+      "kind": "PT_PPP",
+      "min_eig": -1.2943169963954036e-18,
+      "symmetry_error": 0.0
+    },
+    {
+      "J2": 31,
+      "kind": "PPQ",
+      "min_eig": 0.0002715847656221906,
+      "symmetry_error": 4.336808689942018e-19
+    },
+    {
+      "J2": 31,
+      "kind": "PQQ",
+      "min_eig": 0.0665116404025994,
+      "symmetry_error": 8.673617379884035e-19
+    },
+    {
+      "J2": 31,
+      "kind": "QQQ",
+      "min_eig": 0.7034006812195297,
+      "symmetry_error": 1.734723475976807e-18
+    },
+    {
+      "J2": 31,
+      "kind": "PT_PPQ_1",
+      "min_eig": 0.0002715847656221903,
+      "symmetry_error": 0.0
+    },
+    {
+      "J2": 31,
+      "kind": "PT_PPQ_2",
+      "min_eig": 0.0002715847656221929,
+      "symmetry_error": 1.3010426069826053e-18
+    },
+    {
+      "J2": 31,
+      "kind": "PT_PQQ_1",
+      "min_eig": 0.0665116404025994,
+      "symmetry_error": 1.3010426069826053e-18
+    },
+    {
+      "J2": 31,
+      "kind": "PT_PQQ_2",
+      "min_eig": 0.06651164040259938,
+      "symmetry_error": 2.6020852139652106e-18
+    },
+    {
+      "J2": 31,
+      "kind": "PT_QQQ",
+      "min_eig": 0.7034006812195298,
+      "symmetry_error": 2.6020852139652106e-18
+    },
+    {
+      "J2": 33,
+      "kind": "PPP",
+      "min_eig": -3.170206187059799e-19,
+      "symmetry_error": 2.168404344971009e-19
+    },
+    {
+      "J2": 33,
+      "kind": "PT_PPP",
+      "min_eig": -9.888403421972342e-19,
+      "symmetry_error": 0.0
+    },
+    {
+      "J2": 33,
+      "kind": "PPQ",
+      "min_eig": 0.000319879799901161,
+      "symmetry_error": 2.168404344971009e-19
+    },
+    {
+      "J2": 33,
+      "kind": "PQQ",
+      "min_eig": 0.0666133431295521,
+      "symmetry_error": 6.505213034913027e-19
+    },
+    {
+      "J2": 33,
+      "kind": "QQQ",
+      "min_eig": 0.7073331736244425,
+      "symmetry_error": 1.3010426069826053e-18
+    },
+    {
+      "J2": 33,
+      "kind": "PT_PPQ_1",
+      "min_eig": 0.0003198797999011534,
+      "symmetry_error": 0.0
+    },
+    {
+      "J2": 33,
+      "kind": "PT_PPQ_2",
+      "min_eig": 0.000319879799901145,
+      "symmetry_error": 1.0842021724855044e-18
+    },
+    {
+      "J2": 33,
+      "kind": "PT_PQQ_1",
+      "min_eig": 0.06661334312955204,
+      "symmetry_error": 1.0842021724855044e-18
+    },
+    {
+      "J2": 33,
+      "kind": "PT_PQQ_2",
+      "min_eig": 0.06661334312955206,
+      "symmetry_error": 1.734723475976807e-18
+    },
+    {
+      "J2": 33,
+      "kind": "PT_QQQ",
+      "min_eig": 0.707333173624442,
+      "symmetry_error": 1.734723475976807e-18
+    },
+    {
+      "J2": 35,
+      "kind": "PPP",
+      "min_eig": -1.5551490137098067e-19,
+      "symmetry_error": 2.168404344971009e-19
+    },
+    {
+      "J2": 35,
+      "kind": "PT_PPP",
+      "min_eig": -1.3621840173520885e-18,
+      "symmetry_error": 0.0
+    },
+    {
+      "J2": 35,
+      "kind": "PPQ",
+      "min_eig": 0.0003345037135485485,
+      "symmetry_error": 2.168404344971009e-19
+    },
+    {
+      "J2": 35,
+      "kind": "PQQ",
+      "min_eig": 0.06770066385967159,
+      "symmetry_error": 7.453889935837843e-19
+    },
+    {
+      "J2": 35,
+      "kind": "QQQ",
+      "min_eig": 0.7058637680440488,
+      "symmetry_error": 8.673617379884035e-19
+    },
+    {
+      "J2": 35,
+      "kind": "PT_PPQ_1",
+      "min_eig": 0.00033450371354854836,
+      "symmetry_error": 0.0
+    },
+    {
+      "J2": 35,
+      "kind": "PT_PPQ_2",
+      "min_eig": 0.0003345037135485436,
+      "symmetry_error": 1.3010426069826053e-18
+    },
+    {
+      "J2": 35,
+      "kind": "PT_PQQ_1",
+      "min_eig": 0.0677006638596716,
+      "symmetry_error": 1.3010426069826053e-18
+    },
+    {
+      "J2": 35,
+      "kind": "PT_PQQ_2",
+      "min_eig": 0.0677006638596716,
+      "symmetry_error": 1.734723475976807e-18
+    },
+    {
+      "J2": 35,
+      "kind": "PT_QQQ",
+      "min_eig": 0.7058637680440489,
+      "symmetry_error": 1.734723475976807e-18
+    },
+    {
+      "J2": 37,
+      "kind": "PPP",
+      "min_eig": -3.041009857047483e-19,
+      "symmetry_error": 4.336808689942018e-19
+    },
+    {
+      "J2": 37,
+      "kind": "PT_PPP",
+      "min_eig": -1.9384928979559343e-18,
+      "symmetry_error": 0.0
+    },
+    {
+      "J2": 37,
+      "kind": "PPQ",
+      "min_eig": 0.0006744747323066541,
+      "symmetry_error": 4.336808689942018e-19
+    },
+    {
+      "J2": 37,
+      "kind": "PQQ",
+      "min_eig": 0.06767714060698524,
+      "symmetry_error": 1.3010426069826053e-18
+    },
+    {
+      "J2": 37,
+      "kind": "QQQ",
+      "min_eig": 0.7204814114782891,
+      "symmetry_error": 1.734723475976807e-18
+    },
+    {
+      "J2": 37,
+      "kind": "PT_PPQ_1",
+      "min_eig": 0.0006744747323066539,
+      "symmetry_error": 0.0
+    },
+    {
+      "J2": 37,
+      "kind": "PT_PPQ_2",
+      "min_eig": 0.0006744747323066529,
+      "symmetry_error": 1.3010426069826053e-18
+    },
+    {
+      "J2": 37,
+      "kind": "PT_PQQ_1",
+      "min_eig": 0.06767714060698524,
+      "symmetry_error": 1.3010426069826053e-18
+    },
+    {
+      "J2": 37,
+      "kind": "PT_PQQ_2",
+      "min_eig": 0.06767714060698524,
+      "symmetry_error": 2.3852447794681098e-18
+    },
+    {
+      "J2": 37,
+      "kind": "PT_QQQ",
+      "min_eig": 0.7204814114782887,
+      "symmetry_error": 2.3852447794681098e-18
+    },
+    {
+      "J2": 39,
+      "kind": "PPP",
+      "min_eig": -3.5560597546963157e-19,
+      "symmetry_error": 2.168404344971009e-19
+    },
+    {
+      "J2": 39,
+      "kind": "PT_PPP",
+      "min_eig": -1.7226353788078368e-18,
+      "symmetry_error": 0.0
+    },
+    {
+      "J2": 39,
+      "kind": "PPQ",
+      "min_eig": 0.0006554524069284011,
+      "symmetry_error": 2.168404344971009e-19
+    },
+    {
+      "J2": 39,
+      "kind": "PQQ",
+      "min_eig": 0.06698499899944009,
+      "symmetry_error": 8.673617379884035e-19
+    },
+    {
+      "J2": 39,
+      "kind": "QQQ",
+      "min_eig": 0.7075674613552378,
+      "symmetry_error": 1.734723475976807e-18
+    },
+    {
+      "J2": 39,
+      "kind": "PT_PPQ_1",
+      "min_eig": 0.000655452406928403,
+      "symmetry_error": 0.0
+    },
+    {
+      "J2": 39,
+      "kind": "PT_PPQ_2",
+      "min_eig": 0.0006554524069284028,
+      "symmetry_error": 1.3010426069826053e-18
+    },
+    {
+      "J2": 39,
+      "kind": "PT_PQQ_1",
+      "min_eig": 0.0669849989994401,
+      "symmetry_error": 1.3010426069826053e-18
+    },
+    {
+      "J2": 39,
+      "kind": "PT_PQQ_2",
+      "min_eig": 0.06698499899944009,
+      "symmetry_error": 3.469446951953614e-18
+    },
+    {
+      "J2": 39,
+      "kind": "PT_QQQ",
+      "min_eig": 0.7075674613552378,
+      "symmetry_error": 3.469446951953614e-18
+    },
+    {
+      "J2": 41,
+      "kind": "PPP",
+      "min_eig": -5.997711616962643e-20,
+      "symmetry_error": 2.168404344971009e-19
+    },
+    {
+      "J2": 41,
+      "kind": "PT_PPP",
+      "min_eig": -1.1313425058336337e-18,
+      "symmetry_error": 0.0
+    },
+    {
+      "J2": 41,
+      "kind": "PPQ",
+      "min_eig": 0.0006746302779206528,
+      "symmetry_error": 2.168404344971009e-19
+    },
+    {
+      "J2": 41,
+      "kind": "PQQ",
+      "min_eig": 0.06749160001399321,
+      "symmetry_error": 8.673617379884035e-19
+    },
+    {
+      "J2": 41,
+      "kind": "QQQ",
+      "min_eig": 0.7186167657664535,
+      "symmetry_error": 1.734723475976807e-18
+    },
+    {
+      "J2": 41,
+      "kind": "PT_PPQ_1",
+      "min_eig": 0.0006746302779206462,
+      "symmetry_error": 0.0
+    },
+    {
+      "J2": 41,
+      "kind": "PT_PPQ_2",
+      "min_eig": 0.0006746302779206461,
+      "symmetry_error": 1.3010426069826053e-18
+    },
+    {
+      "J2": 41,
+      "kind": "PT_PQQ_1",
+      "min_eig": 0.06749160001399321,
+      "symmetry_error": 1.3010426069826053e-18
+    },
+    {
+      "J2": 41,
+      "kind": "PT_PQQ_2",
+      "min_eig": 0.06749160001399325,
+      "symmetry_error": 1.734723475976807e-18
+    },
+    {
+      "J2": 41,
+      "kind": "PT_QQQ",
+      "min_eig": 0.7186167657664533,
+      "symmetry_error": 1.734723475976807e-18
+    },
+    {
+      "J2": 43,
+      "kind": "PPP",
+      "min_eig": -3.7067235866253493e-19,
+      "symmetry_error": 2.168404344971009e-19
+    },
+    {
+      "J2": 43,
+      "kind": "PT_PPP",
+      "min_eig": -1.0131903596361019e-18,
+      "symmetry_error": 0.0
+    },
+    {
+      "J2": 43,
+      "kind": "PPQ",
+      "min_eig": 0.0006590991485631276,
+      "symmetry_error": 2.168404344971009e-19
+    },
+    {
+      "J2": 43,
+      "kind": "PQQ",
+      "min_eig": 0.0689031953433587,
+      "symmetry_error": 1.734723475976807e-18
+    },
+    {
+      "J2": 43,
+      "kind": "QQQ",
+      "min_eig": 0.7192376076925767,
+      "symmetry_error": 1.734723475976807e-18
+    },
+    {
+      "J2": 43,
+      "kind": "PT_PPQ_1",
+      "min_eig": 0.0006590991485631275,
+      "symmetry_error": 0.0
+    },
+    {
+      "J2": 43,
+      "kind": "PT_PPQ_2",
+      "min_eig": 0.0006590991485631215,
+      "symmetry_error": 6.505213034913027e-19
+    },
+    {
+      "J2": 43,
+      "kind": "PT_PQQ_1",
+      "min_eig": 0.06890319534335872,
+      "symmetry_error": 6.505213034913027e-19
+    },
+    {
+      "J2": 43,
+      "kind": "PT_PQQ_2",
+      "min_eig": 0.06890319534335869,
+      "symmetry_error": 1.734723475976807e-18
+    },
+    {
+      "J2": 43,
+      "kind": "PT_QQQ",
+      "min_eig": 0.7192376076925766,
+      "symmetry_error": 1.734723475976807e-18
+    },
+    {
+      "J2": 45,
+      "kind": "PPP",
+      "min_eig": -1.52279585656525e-20,
+      "symmetry_error": 2.168404344971009e-19
+    },
+    {
+      "J2": 45,
+      "kind": "PT_PPP",
+      "min_eig": 8.401069948834978e-20,
+      "symmetry_error": 0.0
+    },
+    {
+      "J2": 45,
+      "kind": "PPQ",
+      "min_eig": 0.0006877331590443084,
+      "symmetry_error": 2.168404344971009e-19
+    },
+    {
+      "J2": 45,
+      "kind": "PQQ",
+      "min_eig": 0.06654346517062741,
+      "symmetry_error": 1.3010426069826053e-18
+    },
+    {
+      "J2": 45,
+      "kind": "QQQ",
+      "min_eig": 0.7085477556086542,
+      "symmetry_error": 2.6020852139652106e-18
+    },
+    {
+      "J2": 45,
+      "kind": "PT_PPQ_1",
+      "min_eig": 0.0006877331590443073,
+      "symmetry_error": 0.0
+    },
+    {
+      "J2": 45,
+      "kind": "PT_PPQ_2",
+      "min_eig": 0.0006877331590443082,
+      "symmetry_error": 8.673617379884035e-19
+    },
+    {
+      "J2": 45,
+      "kind": "PT_PQQ_1",
+      "min_eig": 0.06654346517062731,
+      "symmetry_error": 8.673617379884035e-19
+    },
+    {
+      "J2": 45,
+      "kind": "PT_PQQ_2",
+      "min_eig": 0.06654346517062733,
+      "symmetry_error": 1.734723475976807e-18
+    },
+    {
+      "J2": 45,
+      "kind": "PT_QQQ",
+      "min_eig": 0.7085477556086534,
+      "symmetry_error": 1.734723475976807e-18
+    },
+    {
+      "J2": 47,
+      "kind": "PPP",
+      "min_eig": 1.407249191344132e-20,
+      "symmetry_error": 1.3552527156068805e-20
+    },
+    {
+      "J2": 47,
+      "kind": "PT_PPP",
+      "min_eig": -4.1019506170975545e-19,
+      "symmetry_error": 0.0
+    },
+    {
+      "J2": 47,
+      "kind": "PPQ",
+      "min_eig": 0.0006795218005060767,
+      "symmetry_error": 1.3552527156068805e-20
+    },
+    {
+      "J2": 47,
+      "kind": "PQQ",
+      "min_eig": 0.06743710929312025,
+      "symmetry_error": 8.673617379884035e-19
+    },
+    {
+      "J2": 47,
+      "kind": "QQQ",
+      "min_eig": 0.7163783974636613,
+      "symmetry_error": 1.734723475976807e-18
+    },
+    {
+      "J2": 47,
+      "kind": "PT_PPQ_1",
+      "min_eig": 0.0006795218005060766,
+      "symmetry_error": 0.0
+    },
+    {
+      "J2": 47,
+      "kind": "PT_PPQ_2",
+      "min_eig": 0.000679521800506074,
+      "symmetry_error": 8.673617379884035e-19
+    },
+    {
+      "J2": 47,
+      "kind": "PT_PQQ_1",
+      "min_eig": 0.06743710929312029,
+      "symmetry_error": 8.673617379884035e-19
+    },
+    {
+      "J2": 47,
+      "kind": "PT_PQQ_2",
+      "min_eig": 0.06743710929312031,
+      "symmetry_error": 1.734723475976807e-18
+    },
+    {
+      "J2": 47,
+      "kind": "PT_QQQ",
+      "min_eig": 0.7163783974636612,
+      "symmetry_error": 1.734723475976807e-18
+    },
+    {
+      "J2": 49,
+      "kind": "PPP",
+      "min_eig": 9.723708263316855e-05,
+      "symmetry_error": 2.168404344971009e-19
+    },
+    {
+      "J2": 49,
+      "kind": "PT_PPP",
+      "min_eig": 9.723708263316823e-05,
+      "symmetry_error": 0.0
+    },
+    {
+      "J2": 49,
+      "kind": "PPQ",
+      "min_eig": 0.0012503681520280663,
+      "symmetry_error": 2.168404344971009e-19
+    },
+    {
+      "J2": 49,
+      "kind": "PQQ",
+      "min_eig": 0.06925955921603064,
+      "symmetry_error": 9.215718466126788e-19
+    },
+    {
+      "J2": 49,
+      "kind": "QQQ",
+      "min_eig": 0.7203301329534171,
+      "symmetry_error": 1.6263032587282567e-18
+    },
+    {
+      "J2": 49,
+      "kind": "PT_PPQ_1",
+      "min_eig": 0.0012503681520280698,
+      "symmetry_error": 0.0
+    },
+    {
+      "J2": 49,
+      "kind": "PT_PPQ_2",
+      "min_eig": 0.0012503681520280668,
+      "symmetry_error": 8.538092108323347e-19
+    },
+    {
+      "J2": 49,
+      "kind": "PT_PQQ_1",
+      "min_eig": 0.06925955921603064,
+      "symmetry_error": 8.538092108323347e-19
+    },
+    {
+      "J2": 49,
+      "kind": "PT_PQQ_2",
+      "min_eig": 0.0692595592160306,
+      "symmetry_error": 7.589415207398531e-19
+    },
+    {
+      "J2": 49,
+      "kind": "PT_QQQ",
+      "min_eig": 0.7203301329534166,
+      "symmetry_error": 7.589415207398531e-19
+    },
+    {
+      "J2": 51,
+      "kind": "PPP",
+      "min_eig": -6.098637220230962e-20,
+      "symmetry_error": 0.0
+    },
+    {
+      "J2": 51,
+      "kind": "PT_PPP",
+      "min_eig": 7.047314121155779e-19,
+      "symmetry_error": 0.0
+    },
+    {
+      "J2": 51,
+      "kind": "PPQ",
+      "min_eig": 0.001224728946925191,
+      "symmetry_error": 0.0
+    },
+    {
+      "J2": 51,
+      "kind": "PQQ",
+      "min_eig": 0.07602354277698144,
+      "symmetry_error": 8.673617379884035e-19
+    },
+    {
+      "J2": 51,
+      "kind": "QQQ",
+      "min_eig": 0.7215567929097948,
+      "symmetry_error": 1.734723475976807e-18
+    },
+    {
+      "J2": 51,
+      "kind": "PT_PPQ_1",
+      "min_eig": 0.0012247289469251908,
+      "symmetry_error": 0.0
+    },
+    {
+      "J2": 51,
+      "kind": "PT_PPQ_2",
+      "min_eig": 0.0012247289469251902,
+      "symmetry_error": 8.673617379884035e-19
+    },
+    {
+      "J2": 51,
+      "kind": "PT_PQQ_1",
+      "min_eig": 0.07602354277698152,
+      "symmetry_error": 8.673617379884035e-19
+    },
+    {
+      "J2": 51,
+      "kind": "PT_PQQ_2",
+      "min_eig": 0.07602354277698142,
+      "symmetry_error": 1.734723475976807e-18
+    },
+    {
+      "J2": 51,
+      "kind": "PT_QQQ",
+      "min_eig": 0.7215567929097948,
+      "symmetry_error": 1.734723475976807e-18
+    },
+    {
+      "J2": 53,
+      "kind": "PPP",
+      "min_eig": 0.001208460480732626,
+      "symmetry_error": 0.0
+    },
+    {
+      "J2": 53,
+      "kind": "PT_PPP",
+      "min_eig": 0.0012084604807326245,
+      "symmetry_error": 0.0
+    },
+    {
+      "J2": 53,
+      "kind": "PPQ",
+      "min_eig": 0.00792423087303776,
+      "symmetry_error": 0.0
+    },
+    {
+      "J2": 53,
+      "kind": "PQQ",
+      "min_eig": 0.07697400075797262,
+      "symmetry_error": 1.0842021724855044e-18
+    },
+    {
+      "J2": 53,
+      "kind": "QQQ",
+      "min_eig": 0.7304961069865004,
+      "symmetry_error": 0.0
+    },
+    {
+      "J2": 53,
+      "kind": "PT_PPQ_1",
+      "min_eig": 0.007924230873037758,
+      "symmetry_error": 0.0
+    },
+    {
+      "J2": 53,
+      "kind": "PT_PPQ_2",
+      "min_eig": 0.007924230873037758,
+      "symmetry_error": 8.673617379884035e-19
+    },
+    {
+      "J2": 53,
+      "kind": "PT_PQQ_1",
+      "min_eig": 0.07697400075797264,
+      "symmetry_error": 8.673617379884035e-19
+    },
+    {
+      "J2": 53,
+      "kind": "PT_PQQ_2",
+      "min_eig": 0.07697400075797264,
+      "symmetry_error": 0.0
+    },
+    {
+      "J2": 53,
+      "kind": "PT_QQQ",
+      "min_eig": 0.7304961069865004,
+      "symmetry_error": 0.0
+    },
+    {
+      "J2": 55,
+      "kind": "PPP",
+      "min_eig": 0.0009337329004719877,
+      "symmetry_error": 0.0
+    },
+    {
+      "J2": 55,
+      "kind": "PT_PPP",
+      "min_eig": 0.0009337329004719889,
+      "symmetry_error": 0.0
+    },
+    {
+      "J2": 55,
+      "kind": "PPQ",
+      "min_eig": 0.008198958453298398,
+      "symmetry_error": 0.0
+    },
+    {
+      "J2": 55,
+      "kind": "PQQ",
+      "min_eig": 0.08073719959158787,
+      "symmetry_error": 3.2526065174565133e-19
+    },
+    {
+      "J2": 55,
+      "kind": "QQQ",
+      "min_eig": 0.7283954917621824,
+      "symmetry_error": 0.0
+    },
+    {
+      "J2": 55,
+      "kind": "PT_PPQ_1",
+      "min_eig": 0.008198958453298398,
+      "symmetry_error": 0.0
+    },
+    {
+      "J2": 55,
+      "kind": "PT_PPQ_2",
+      "min_eig": 0.008198958453298395,
+      "symmetry_error": 4.336808689942018e-19
+    },
+    {
+      "J2": 55,
+      "kind": "PT_PQQ_1",
+      "min_eig": 0.0807371995915879,
+      "symmetry_error": 4.336808689942018e-19
+    },
+    {
+      "J2": 55,
+      "kind": "PT_PQQ_2",
+      "min_eig": 0.0807371995915879,
+      "symmetry_error": 0.0
+    },
+    {
+      "J2": 55,
+      "kind": "PT_QQQ",
+      "min_eig": 0.7283954917621824,
+      "symmetry_error": 0.0
+    },
+    {
+      "J2": 57,
+      "kind": "PPP",
+      "min_eig": 0.0011251869233645348,
+      "symmetry_error": 0.0
+    },
+    {
+      "J2": 57,
+      "kind": "PT_PPP",
+      "min_eig": 0.0011251869233645337,
+      "symmetry_error": 0.0
+    },
+    {
+      "J2": 57,
+      "kind": "PPQ",
+      "min_eig": 0.00929493816463474,
+      "symmetry_error": 0.0
+    },
+    {
+      "J2": 57,
+      "kind": "PQQ",
+      "min_eig": 0.08028493674736599,
+      "symmetry_error": 0.0
+    },
+    {
+      "J2": 57,
+      "kind": "QQQ",
+      "min_eig": 0.7301351883406333,
+      "symmetry_error": 0.0
+    },
+    {
+      "J2": 57,
+      "kind": "PT_PPQ_1",
+      "min_eig": 0.00929493816463474,
+      "symmetry_error": 0.0
+    },
+    {
+      "J2": 57,
+      "kind": "PT_PPQ_2",
+      "min_eig": 0.009294938164634739,
+      "symmetry_error": 0.0
+    },
+    {
+      "J2": 57,
+      "kind": "PT_PQQ_1",
+      "min_eig": 0.08028493674736599,
+      "symmetry_error": 0.0
+    },
+    {
+      "J2": 57,
+      "kind": "PT_PQQ_2",
+      "min_eig": 0.08028493674736599,
+      "symmetry_error": 0.0
+    },
+    {
+      "J2": 57,
+      "kind": "PT_QQQ",
+      "min_eig": 0.7301351883406333,
+      "symmetry_error": 0.0
+    }
+  ]
+}

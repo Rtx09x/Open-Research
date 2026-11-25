@@ -1,0 +1,8 @@
+{
+  "scope": "Exact rational policy operational invariants and legal normal-form transcripts only; does not prove asymptotic bound.",
+  "all_checks_passed": true,
+  "exhaustive_edges": 1346,
+  "random_edges": 37161,
+  "max_exhaustive_signs": 4,
+  "seconds": 1.2675958219988388
+}

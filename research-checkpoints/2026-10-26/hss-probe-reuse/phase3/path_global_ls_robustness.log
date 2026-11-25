@@ -1,0 +1,45 @@
+{
+  "status": "NUMERICAL_CONTROLS_NOT_PROOF",
+  "results": [
+    {
+      "n": 4,
+      "trials": 200,
+      "total_scalar_queries": 10,
+      "max_on_model_error": 3.3306690738754696e-16,
+      "max_empirical_unit_input_error_factor": 1.2993708838696592,
+      "max_empirical_inverse_square_diagonal": 0.3842126138740987,
+      "proven_error_factor": 85,
+      "proven_inverse_square_diagonal": 2.3333333333333335
+    },
+    {
+      "n": 8,
+      "trials": 200,
+      "total_scalar_queries": 10,
+      "max_on_model_error": 4.440892098500626e-16,
+      "max_empirical_unit_input_error_factor": 1.3936642907810919,
+      "max_empirical_inverse_square_diagonal": 0.4176446102581558,
+      "proven_error_factor": 85,
+      "proven_inverse_square_diagonal": 2.3333333333333335
+    },
+    {
+      "n": 16,
+      "trials": 200,
+      "total_scalar_queries": 10,
+      "max_on_model_error": 6.661338147750939e-16,
+      "max_empirical_unit_input_error_factor": 1.4102125121141498,
+      "max_empirical_inverse_square_diagonal": 0.4476080623792034,
+      "proven_error_factor": 85,
+      "proven_inverse_square_diagonal": 2.3333333333333335
+    },
+    {
+      "n": 32,
+      "trials": 200,
+      "total_scalar_queries": 10,
+      "max_on_model_error": 4.440892098500626e-16,
+      "max_empirical_unit_input_error_factor": 1.4324230091167545,
+      "max_empirical_inverse_square_diagonal": 0.45051432645541306,
+      "proven_error_factor": 85,
+      "proven_inverse_square_diagonal": 2.3333333333333335
+    }
+  ]
+}

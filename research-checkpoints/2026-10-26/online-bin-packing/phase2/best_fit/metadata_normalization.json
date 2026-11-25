@@ -1,0 +1,8 @@
+{
+  "status": "PASS exact byte-hash bridge",
+  "previous_independently_audited_certificate_sha256": "890d0f6d2d36feba638194590d130c8503371a9b73bca0957860c72319b9b4d6",
+  "stable_certificate_sha256": "efd98b3ab6c17d81ad14da565410c47de2490b99c8c4742c9e3ebde183a8e315",
+  "sole_change": "remove runtime metadata field seconds",
+  "removed_value": 2.2343578338623047,
+  "mathematical_payload_identical": true
+}

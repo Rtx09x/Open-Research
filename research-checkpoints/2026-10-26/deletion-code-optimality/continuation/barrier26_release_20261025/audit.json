@@ -1,0 +1,16 @@
+{
+  "passed": true,
+  "objective_exact": "32021514469/100000000",
+  "objective_decimal": 320.21514469,
+  "selected_binary_words": 26,
+  "selected_ones": [
+    1625
+  ],
+  "fractional_word_coordinates": 2362,
+  "CG_nodes": 783,
+  "CG_transports_checked": 3132,
+  "maximal_cliques_enumerated": 155496,
+  "not_a_code": true,
+  "global_bound_improvement": false,
+  "seconds": 2.557529165998858
+}

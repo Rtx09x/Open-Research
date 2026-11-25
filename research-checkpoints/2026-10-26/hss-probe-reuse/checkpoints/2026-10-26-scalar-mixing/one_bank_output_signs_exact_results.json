@@ -1,0 +1,11 @@
+{
+  "status": "EXACT_FRACTION_PASS",
+  "N": 8,
+  "L": 2,
+  "width": 3,
+  "row_sign_assignments": 64,
+  "deterministic_wavelet_inputs": 8,
+  "forward_dependent_unit_q": true,
+  "expected_total_output_cross_birth_Gram_offdiagonal": "exactly zero",
+  "scope": "Sign cancellation only; norm estimate uses unconditional full-Haar inverse-column theorem"
+}

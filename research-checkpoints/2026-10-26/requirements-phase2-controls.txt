@@ -1,0 +1,3 @@
+# Optional numerical quantum controls only; not rigorous witness verification.
+-r requirements-phase2.txt
+cvxpy==1.9.3

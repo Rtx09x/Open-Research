@@ -1,0 +1,57 @@
+{
+  "date": "2026-10-25",
+  "status": "both fresh numerical checks PASS; portable AH replay PASS; AH endpoint convention documented",
+  "files": {
+    "AH_ENDPOINT_CONVENTION.md": "44e025b2cd86414091f36ad7283fe975cff1443d1211cc5f7ca051be88b26638",
+    "AUDIT_FINDINGS.md": "45080736528f80fa1956f87944ba4b849575b5ada5cceaf9d498e2acaec906c4",
+    "ah_fact_extraction.log": "9dfbd9ce6af9f3a96e03503babb75e65a0c2f8af99ccd3ac29d002e803146929",
+    "ah_fresh_check.log": "0f7b047f130d1d6b65dfae804a8372b2e83ef44532f863080b5e0de4cce55c7e",
+    "ah_fresh_check.py": "493108cfd77bd54800e45c06fe0e62699b062f5e01c9d492ed7fcd17c9db3e13",
+    "ah_portable_check.log": "3014629f90b536008c34725f20e6bb7594bff1d9c6361cda3d4dc7569d0307ec",
+    "ah_portable_check.py": "f9af7efa65dfb39bf64d923a267a4479ee047977d8715921a69dd122aec35382",
+    "ah_primary_numerical_facts.json": "99a00d0648429fd93d0c56c79c4351cf7a3dff967a104f70b0e75979c8af3dad",
+    "c7_fresh_check.log": "d7228ed9c4bbf12069408196ad4245fa69b0b52af45205036145c710b606056f",
+    "c7_fresh_check.py": "6684f71e1f8cb530cf400ba54c2a2fc717e3e10b9e6c90d3177c164914b44c79",
+    "c7_portable_check.py": "66a1a4a39b02ecf6d71940a2a298d65d7bce333f84dd8a2e7564e06426c9aacf",
+    "extract_ah_primary_facts.py": "cc306f25821d0ed4e6c4a0cb1b4a083974cb2ce99a48526d996b2c4ac0f4dcc5"
+  },
+  "input_sha256": {
+    "c7_base": {
+      "path": "/workspace/shared/research-active/seven-cycle-capacity/terminal_recycled_base.json",
+      "sha256": "b0ae2dd8aebd6c4b5d4da828462ed8542624097a436f0a5cc0729b93e880b751"
+    },
+    "c7_128k": {
+      "path": "/workspace/shared/research-active/seven-cycle-capacity/recycled_terminal_certificate.json",
+      "sha256": "1ce5b83eb0ef9af2cdd64a6a6fc0b7c77944a61a46577ce96bdbbc91e64a4905"
+    },
+    "c7_768k": {
+      "path": "/workspace/shared/research-active/seven-cycle-capacity/optimized_recycle_certificate.json",
+      "sha256": "b881a676f4e8eda4fa66add95e488d01008a4b7b17a9aad945e23daa9746b883"
+    },
+    "c7_Lean_terminal": {
+      "path": "/workspace/shared/research-active/seven-cycle-capacity/published/upstream/TerminalCodes.lean",
+      "sha256": "f3b082926f921fd28a2a413aaeeee26d95931e0a3098929c19355c5a21dfda03"
+    },
+    "ah_primary_HTML": {
+      "path": "/workspace/shared/research-active/online-bin-packing/paper1707.html",
+      "sha256": "f4b6144a688e5dc36f5a8014a9bde2e335a02f53865f713476e601f8aed5f914"
+    },
+    "ah_certificate": {
+      "path": "/workspace/shared/research-active/online-bin-packing/ah_three_parameter_full_certificate.json",
+      "sha256": "39da513da04fa7d8722ca6e1f14406d6d04962ad9d11f77a0fc52810295f96e7"
+    }
+  },
+  "resource_limits": "each job one CPU, 2 GiB address space, 295 second wall timeout",
+  "limitations": [
+    "C7 inherited Tandon realization replayed using upstream source, not re-proved or Lean kernel-checked",
+    "AH theorem proof audited at applicability/threshold level, not proof-assistant formalized",
+    "Priority not established; restricted three-transfer optimum not independently audited here"
+  ],
+  "script_paths": "Frozen fresh checkers use original absolute paths. Portable copies support --track-root, with sibling-track defaults; AH --facts defaults to the extracted JSON beside its checker.",
+  "portable_files": {
+    "c7_portable_check.py": "CLI path-only change from passing fresh checker; syntax checked",
+    "ah_portable_check.py": "full extracted-facts replay PASS, 94.77 seconds, same 109845241 nodes",
+    "extract_ah_primary_facts.py": "standalone primary-HTML numerical extractor",
+    "ah_primary_numerical_facts.json": "211 original classes, 198 explicit weight intervals and two special ranges; no source prose"
+  }
+}

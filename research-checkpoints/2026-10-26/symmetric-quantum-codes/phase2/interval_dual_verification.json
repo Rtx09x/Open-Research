@@ -1,0 +1,14 @@
+{
+  "rigorously_verified": true,
+  "arithmetic": "Arb outward-rounded balls,256bits; rational Gram PSD factors",
+  "candidate_sha256": "201e1acd2e8616807d98d07038174559cc4480aba1cca8b2d736997e251c7a79",
+  "constant_exact": "-1930688571530266893851/19000000000000000000000000",
+  "constant_upper": "-1/10000",
+  "each_residual_entry_bound": "1/100000000",
+  "residual_bound_exact": "323/200000000",
+  "strict_negative_upper": "-19677/200000000",
+  "diagnostic_max_Z_residual_float": 2.7978353619520472e-12,
+  "diagnostic_max_a_residual_float": 5.669696119634611e-11,
+  "elapsed_seconds": 1.5209987163543701,
+  "scope": "Necessary three-copy relaxation for unrestricted complex symmetric18-qubit rank2 distance5 codes; physical/model applicability must be independently audited."
+}

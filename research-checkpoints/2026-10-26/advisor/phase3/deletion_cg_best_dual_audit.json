@@ -1,0 +1,16 @@
+{
+  "passed": true,
+  "certificate": "/workspace/shared/research-active/deletion-code-optimality/continuation/evidence/best_dual.json",
+  "sha256": "1d1793b7996d2e4dec16361b4fbed9417d18ff8d46ed5c2ce07e4b8141d40dc5",
+  "numerator": 320497437108,
+  "denominator": 1000000000,
+  "exact_upper": "80124359277/250000000",
+  "upper_float": 320.497437108,
+  "integer_upper": 320,
+  "full_word_coverage_checks": 4096,
+  "cliques_checked": 599,
+  "nodes_expanded": 52,
+  "maximum_CG_rank": 1,
+  "seconds": 0.04915428161621094,
+  "method": "independent insertion-first string geometry; explicit four group transports; no worker imports"
+}

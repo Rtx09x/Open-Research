@@ -1,0 +1,191 @@
+{
+  "all_passed": true,
+  "controls": [
+    {
+      "scripts": [
+        "advisor/phase2/check_local_casimir.py"
+      ],
+      "scope": "supplemental exact algebra or numerical model controls; not an exclusion proof",
+      "executions": [
+        {
+          "script": "advisor/phase2/check_local_casimir.py",
+          "returncode": 0,
+          "output": "{\n  \"status\": \"PASS\",\n  \"exact_channel_coefficients\": 24,\n  \"all_channel_reconstructions\": true,\n  \"all_local_casimir_spectra\": true,\n  \"exact_racah_eigenvector_formula\": true,\n  \"seconds\": 0.43544602394104004\n}\n",
+          "passed": true
+        }
+      ],
+      "passed": true,
+      "seconds": 0.961
+    },
+    {
+      "scripts": [
+        "advisor/phase2/check_three_copy_pair_map.py"
+      ],
+      "scope": "supplemental exact algebra or numerical model controls; not an exclusion proof",
+      "executions": [
+        {
+          "script": "advisor/phase2/check_three_copy_pair_map.py",
+          "returncode": 0,
+          "output": "{\n  \"status\": \"PASS\",\n  \"controls\": [\n    {\n      \"n\": 2,\n      \"nonzero_pair_spin_weights\": [\n        [\n          0,\n          \"1/3\"\n        ],\n        [\n          1,\n          \"1\"\n        ],\n        [\n          2,\n          \"8/3\"\n        ]\n      ]\n    },\n    {\n      \"n\": 3,\n      \"nonzero_pair_spin_weights\": [\n        [\n          1,\n          \"2/5\"\n        ],\n        [\n          2,\n          \"1\"\n        ],\n        [\n          3,\n          \"13/5\"\n        ]\n      ]\n    },\n    {\n      \"n\": 6,\n      \"nonzero_pair_spin_weights\": [\n        [\n          4,\n          \"5/11\"\n        ],\n        [\n          5,\n          \"1\"\n        ],\n        [\n          6,\n          \"28/11\"\n        ]\n      ]\n    },\n    {\n      \"n\": 18,\n      \"nonzero_pair_spin_weights\": [\n        [\n          16,\n          \"17/35\"\n        ],\n        [\n          17,\n          \"1\"\n        ],\n        [\n          18,\n          \"88/35\"\n        ]\n      ]\n    },\n    {\n      \"n\": 19,\n      \"nonzero_pair_spin_weights\": [\n        [\n          17,\n          \"18/37\"\n        ],\n        [\n          18,\n          \"1\"\n        ],\n        [\n          19,\n          \"93/37\"\n        ]\n      ]\n    }\n  ],\n  \"seconds\": 0.07264375686645508,\n  \"scope\": \"pair-spin transform normalization for exact rank2 noncode projectors; not a three-copy SDP feasibility result\"\n}\n",
+          "passed": true
+        }
+      ],
+      "passed": true,
+      "seconds": 0.112
+    },
+    {
+      "scripts": [
+        "advisor/phase2/check_spinor_compression.py"
+      ],
+      "scope": "supplemental exact algebra or numerical model controls; not an exclusion proof",
+      "executions": [
+        {
+          "script": "advisor/phase2/check_spinor_compression.py",
+          "returncode": 0,
+          "output": "{\n  \"exact_coherent_controls_n1_to24\": true,\n  \"random_n18\": {\n    \"n\": 18,\n    \"W_dimension\": 18,\n    \"T_factor_error\": 1.8884271766178982e-14,\n    \"T_positive_eigenvalues\": [\n      8.080119660214,\n      11.919880339785982,\n      18.999999999999986,\n      18.99999999999999,\n      18.99999999999999,\n      18.99999999999999,\n      18.999999999999993,\n      18.999999999999996,\n      18.999999999999996,\n      18.999999999999996,\n      18.999999999999996,\n      19.0,\n      19.000000000000004,\n      19.00000000000001,\n      19.00000000000001,\n      19.000000000000014,\n      19.000000000000014,\n      19.000000000000018\n    ],\n    \"T_rank_numeric\": 18,\n    \"T_min_eigenvalue\": -1.1763695160706699e-14,\n    \"Schur_positive_eigenvalues\": [],\n    \"Schur_norm\": 1.1485044221640623e-12,\n    \"spectrum_formula_error\": 5.3545643956773166e-14,\n    \"forced_K_error\": 9.269782802466927e-14,\n    \"R_K_trace_power_errors\": [\n      2.8421951175466806e-13,\n      4.0978338596963605e-12,\n      1.8958086833592507e-10\n    ]\n  },\n  \"known19\": {\n    \"n\": 19,\n    \"W_dimension\": 18,\n    \"T_factor_error\": 5.0088419889831534e-14,\n    \"T_positive_eigenvalues\": [\n      0.15529785049900013,\n      10.451658691253863,\n      12.418549193665465,\n      18.97449426458165,\n      19.999999999999982,\n      19.999999999999993,\n      19.999999999999993,\n      19.999999999999996,\n      20.0,\n      20.0,\n      20.0,\n      20.000000000000007,\n      20.00000000000001,\n      20.00000000000001,\n      20.000000000000014,\n      20.000000000000014,\n      20.000000000000018,\n      20.000000000000018,\n      20.000000000000032\n    ],\n    \"T_rank_numeric\": 19,\n    \"T_min_eigenvalue\": -1.5761426905237625e-14,\n    \"Schur_positive_eigenvalues\": [\n      0.7134540293864902\n    ],\n    \"Schur_norm\": 0.7134540293864885\n  },\n  \"scope\": \"analytic Schwinger theorem plus exact coherent controls; generic and known19 numerical controls only; no n18 exclusion\"\n}\n",
+          "passed": true
+        }
+      ],
+      "passed": true,
+      "seconds": 0.107
+    },
+    {
+      "scripts": [
+        "advisor/phase2/check_quaternion_invariant.py"
+      ],
+      "scope": "supplemental exact algebra or numerical model controls; not an exclusion proof",
+      "executions": [
+        {
+          "script": "advisor/phase2/check_quaternion_invariant.py",
+          "returncode": 0,
+          "output": "{\n  \"status\": \"PASS\",\n  \"exact_integer_complex_tests\": 20,\n  \"sign_calibration_delta\": -8,\n  \"seconds\": 0.9801316261291504,\n  \"scope\": \"exact identity controls plus separate analytic proof; no quantum-code feasibility result\"\n}\n",
+          "passed": true
+        }
+      ],
+      "passed": true,
+      "seconds": 1.014
+    },
+    {
+      "scripts": [
+        "advisor/phase2/check_rational_moment_export.py"
+      ],
+      "scope": "supplemental exact algebra or numerical model controls; not an exclusion proof",
+      "executions": [
+        {
+          "script": "advisor/phase2/check_rational_moment_export.py",
+          "returncode": 0,
+          "output": "{\n  \"status\": \"PASS\",\n  \"source_sha256\": \"a4466307e109fac0200426b08a4d9c96e8379421cf9218d5387f54a288f90d4a\",\n  \"basis_count\": 36,\n  \"exact_product_expansions\": 324,\n  \"annihilation_span_rank\": 12,\n  \"creation_span_rank\": 12,\n  \"coefficient_kernel_dimensions\": [\n    6,\n    6\n  ],\n  \"combined_kernel_rank\": 12,\n  \"operator_metric_orthogonality_checks\": 36,\n  \"seconds\": 0.9172401428222656,\n  \"scope\": \"exact export and universal syzygies; no code feasibility claim\"\n}\n",
+          "passed": true
+        }
+      ],
+      "passed": true,
+      "seconds": 0.96
+    },
+    {
+      "scripts": [
+        "symmetric-quantum-codes/phase2/check_ppt_recoupling.py"
+      ],
+      "scope": "supplemental exact algebra or numerical model controls; not an exclusion proof",
+      "executions": [
+        {
+          "script": "symmetric-quantum-codes/phase2/check_ppt_recoupling.py",
+          "returncode": 0,
+          "output": "[{'j': '1/2', 'L': 0, 'Lp': 1, 'J': '1/2', 'K': '1/2', 'direct': '-1', 'predicted': '-1', 'pass': True}, {'j': '1', 'L': 0, 'Lp': 1, 'J': '1', 'K': '1', 'direct': '-1', 'predicted': '-1', 'pass': True}, {'j': '1', 'L': 1, 'Lp': 1, 'J': '0', 'K': '0', 'direct': '1/3', 'predicted': '1/3', 'pass': True}, {'j': '1', 'L': 1, 'Lp': 1, 'J': '0', 'K': '1', 'direct': '-1/3', 'predicted': '-1/3', 'pass': True}, {'j': '1', 'L': 1, 'Lp': 1, 'J': '0', 'K': '2', 'direct': '1/3', 'predicted': '1/3', 'pass': True}, {'j': '1', 'L': 1, 'Lp': 1, 'J': '1', 'K': '0', 'direct': '-1', 'predicted': '-1', 'pass': True}, {'j': '1', 'L': 1, 'Lp': 1, 'J': '1', 'K': '1', 'direct': '1/2', 'predicted': '1/2', 'pass': True}, {'j': '1', 'L': 1, 'Lp': 1, 'J': '1', 'K': '2', 'direct': '1/2', 'predicted': '1/2', 'pass': True}, {'j': '1', 'L': 1, 'Lp': 1, 'J': '2', 'K': '0', 'direct': '5/3', 'predicted': '5/3', 'pass': True}, {'j': '1', 'L': 1, 'Lp': 1, 'J': '2', 'K': '1', 'direct': '5/6', 'predicted': '5/6', 'pass': True}, {'j': '1', 'L': 1, 'Lp': 1, 'J': '2', 'K': '2', 'direct': '1/6', 'predicted': '1/6', 'pass': True}, {'j': '1', 'L': 1, 'Lp': 2, 'J': '1', 'K': '1', 'direct': '1/2', 'predicted': '1/2', 'pass': True}, {'j': '1', 'L': 1, 'Lp': 2, 'J': '1', 'K': '2', 'direct': '-3*sqrt(5)/10', 'predicted': '-3*sqrt(5)/10', 'pass': True}, {'j': '1', 'L': 1, 'Lp': 2, 'J': '2', 'K': '1', 'direct': '-sqrt(5)/2', 'predicted': '-sqrt(5)/2', 'pass': True}, {'j': '1', 'L': 1, 'Lp': 2, 'J': '2', 'K': '2', 'direct': '-1/2', 'predicted': '-1/2', 'pass': True}, {'j': '3/2', 'L': 1, 'Lp': 2, 'J': '1/2', 'K': '1/2', 'direct': '-1/2', 'predicted': '-1/2', 'pass': True}, {'j': '3/2', 'L': 1, 'Lp': 2, 'J': '1/2', 'K': '3/2', 'direct': 'sqrt(5)/5', 'predicted': 'sqrt(5)/5', 'pass': True}, {'j': '3/2', 'L': 1, 'Lp': 2, 'J': '1/2', 'K': '5/2', 'direct': '-sqrt(105)/30', 'predicted': '-sqrt(105)/30', 'pass': True}, {'j': '3/2', 'L': 1, 'Lp': 2, 'J': '3/2', 'K': '1/2', 'direct': '2*sqrt(5)/5', 'predicted': '2*sqrt(5)/5', 'pass': True}, {'j': '3/2', 'L': 1, 'Lp': 2, 'J': '3/2', 'K': '3/2', 'direct': '-1/5', 'predicted': '-1/5', 'pass': True}, {'j': '3/2', 'L': 1, 'Lp': 2, 'J': '3/2', 'K': '5/2', 'direct': '-2*sqrt(21)/15', 'predicted': '-2*sqrt(21)/15', 'pass': True}, {'j': '3/2', 'L': 1, 'Lp': 2, 'J': '5/2', 'K': '1/2', 'direct': '-sqrt(105)/10', 'predicted': '-sqrt(105)/10', 'pass': True}, {'j': '3/2', 'L': 1, 'Lp': 2, 'J': '5/2', 'K': '3/2', 'direct': '-sqrt(21)/5', 'predicted': '-sqrt(21)/5', 'pass': True}, {'j': '3/2', 'L': 1, 'Lp': 2, 'J': '5/2', 'K': '5/2', 'direct': '-3/10', 'predicted': '-3/10', 'pass': True}]\n",
+          "passed": true
+        }
+      ],
+      "passed": true,
+      "seconds": 2.19
+    },
+    {
+      "scripts": [
+        "symmetric-quantum-codes/phase2/orientation_exact.py"
+      ],
+      "scope": "supplemental exact algebra or numerical model controls; not an exclusion proof",
+      "executions": [
+        {
+          "script": "symmetric-quantum-codes/phase2/orientation_exact.py",
+          "returncode": 0,
+          "output": "[{'d': 1, 'determinant': '0', 'matches': True}, {'d': 2, 'determinant': '153664', 'matches': True}, {'d': 3, 'determinant': '1317244', 'matches': True}, {'d': 5, 'determinant': '5226948', 'matches': True}]\n",
+          "passed": true
+        }
+      ],
+      "passed": true,
+      "seconds": 11.673
+    },
+    {
+      "scripts": [
+        "symmetric-quantum-codes/phase2/spinor_exact_controls.py"
+      ],
+      "scope": "supplemental exact algebra or numerical model controls; not an exclusion proof",
+      "executions": [
+        {
+          "script": "symmetric-quantum-codes/phase2/spinor_exact_controls.py",
+          "returncode": 0,
+          "output": "{\n  \"coherent\": {\n    \"rankT\": 18,\n    \"rankS\": 1,\n    \"e3\": \"0\",\n    \"cubic_branch\": \"0\",\n    \"orientation_F\": \"0\",\n    \"traceS\": \"18\"\n  },\n  \"m_zero\": {\n    \"rankT\": 18,\n    \"rankS\": 2,\n    \"e3\": \"0\",\n    \"cubic_branch\": \"0\",\n    \"orientation_F\": \"0\",\n    \"traceS\": \"180\"\n  },\n  \"rank3_generic_rational_q\": {\n    \"rankT\": 18,\n    \"rankS\": 2,\n    \"e3\": \"0\",\n    \"cubic_branch\": \"0\",\n    \"orientation_F\": \"0\",\n    \"traceS\": \"6532/361\"\n  },\n  \"elapsed_seconds\": 0.06681370735168457\n}\n",
+          "passed": true
+        }
+      ],
+      "passed": true,
+      "seconds": 0.394
+    },
+    {
+      "scripts": [
+        "quantum-independent-audit/complex_projector_controls.py"
+      ],
+      "scope": "supplemental exact algebra or numerical model controls; not an exclusion proof",
+      "executions": [
+        {
+          "script": "quantum-independent-audit/complex_projector_controls.py",
+          "returncode": 0,
+          "output": "PPT coefficients through K2 0\n{\"n\": 2, \"seed\": 1939, \"time_reversal_violation\": 1.3023549337858273, \"imaginary_moment_size\": 5.275078099918517e-18, \"complex_crossing_error\": 2.220446049250313e-16, \"real_S3_reconstruction_error\": 4.440892098500626e-16, \"reduced_PPT_error\": 2.7755575615628914e-16, \"PT_Swap23_commutator\": 0.8193078423701897, \"mixed_formula_errors\": {\"PPP\": 0.0, \"PT_PPP\": 2.220446049250313e-16, \"PPQ\": 1.110333252063126e-16, \"PT_PPQ\": 2.0470432683393744e-16, \"PQQ\": 2.0914782697758582e-16, \"PT_PQQ\": 2.9143781041702156e-16, \"QQQ\": 3.1483456688359725e-16, \"PT_QQQ\": 2.7755649220464067e-16}, \"cone_minima\": {\"PPP\": 1.965249154448796e-17, \"PT_PPP\": 0.14346238754812396, \"PPQ\": 0.04852691465551901, \"PT_PPQ\": -3.125408262982959e-17, \"PQQ\": 0.0, \"PT_PQQ\": 6.453908294712205e-18, \"QQQ\": -1.0009640738755756e-17, \"PT_QQQ\": -2.443282732557963e-17}, \"seconds\": 0.0598444938659668}\nPPT coefficients through K2 1\n{\"n\": 3, \"seed\": 1940, \"time_reversal_violation\": 1.963605338718139, \"imaginary_moment_size\": 2.9846323437086278e-18, \"complex_crossing_error\": 5.551115123125783e-17, \"real_S3_reconstruction_error\": 2.220446049250313e-16, \"reduced_PPT_error\": 6.938893903907228e-17, \"PT_Swap23_commutator\": 0.8727697076199792, \"mixed_formula_errors\": {\"PPP\": 0.0, \"PT_PPP\": 5.551115123125783e-17, \"PPQ\": 5.551416410911151e-17, \"PT_PPQ\": 1.110405639193471e-16, \"PQQ\": 5.551625973461283e-17, \"PT_PQQ\": 8.326774228755407e-17, \"QQQ\": 1.8041146933258479e-16, \"PT_QQQ\": 1.6653366333471559e-16}, \"cone_minima\": {\"PPP\": -1.0408340855860843e-17, \"PT_PPP\": 0.008928316170039467, \"PPQ\": 0.008928316170039464, \"PT_PPQ\": -8.822167035483924e-34, \"PQQ\": 0.008928316170039516, \"PT_PQQ\": 5.551115123125783e-17, \"QQQ\": 1.3877787807814457e-17, \"PT_QQQ\": 0.00892831617003947}, \"seconds\": 0.18193817138671875}\nPPT coefficients through K2 0\nPPT coefficients through K2 10\n{\"n\": 4, \"seed\": 1941, \"time_reversal_violation\": 1.4177559283424577, \"imaginary_moment_size\": 0.00013114879400052056, \"complex_crossing_error\": 6.938893944912872e-17, \"real_S3_reconstruction_error\": 4.440892098500626e-16, \"reduced_PPT_error\": 8.326672684688674e-17, \"PT_Swap23_commutator\": 0.4545031894794424, \"mixed_formula_errors\": {\"PPP\": 0.0, \"PT_PPP\": 6.938893944912872e-17, \"PPQ\": 2.786138869510439e-17, \"PT_PPQ\": 1.388030430459437e-16, \"PQQ\": 2.2204899621727126e-16, \"PT_PQQ\": 2.4980517544931347e-16, \"QQQ\": 4.440892146422398e-16, \"PT_QQQ\": 5.551120436227514e-16}, \"cone_minima\": {\"PPP\": -1.734723475976807e-18, \"PT_PPP\": 0.011860049969683466, \"PPQ\": 0.032961786618752986, \"PT_PPQ\": 3.5941301981747503e-17, \"PQQ\": 0.07717389654993712, \"PT_PQQ\": 1.942890293094024e-16, \"QQQ\": 0.08718880204741475, \"PT_QQQ\": 0.1330806478099454}, \"seconds\": 0.3598501682281494}\nPPT coefficients through K2 1\nPPT coefficients through K2 11\n{\"n\": 5, \"seed\": 1942, \"time_reversal_violation\": 1.5737292472707933, \"imaginary_moment_size\": 0.0046508812967621825, \"complex_crossing_error\": 1.3878587889100063e-17, \"real_S3_reconstruction_error\": 4.440892098500626e-16, \"reduced_PPT_error\": 4.85722573273506e-17, \"PT_Swap23_commutator\": 0.33378533636017216, \"mixed_formula_errors\": {\"PPP\": 0.0, \"PT_PPP\": 1.3878587889100063e-17, \"PPQ\": 2.779241299357193e-17, \"PT_PPQ\": 6.939547788914748e-17, \"PQQ\": 8.327223953642913e-17, \"PT_PQQ\": 1.1104170916153775e-16, \"QQQ\": 1.6653345424522724e-16, \"PT_QQQ\": 1.9429430793040558e-16}, \"cone_minima\": {\"PPP\": -1.6046192152785638e-17, \"PT_PPP\": 0.005049297553056338, \"PPQ\": 0.01720369861263297, \"PT_PPQ\": 1.3835851786212702e-17, \"PQQ\": 0.0788293778181775, \"PT_PQQ\": -4.4858864886587746e-17, \"QQQ\": 0.14408495983181835, \"PT_QQQ\": 0.20913828252001632}, \"seconds\": 1.2849934101104736}\nPPT coefficients through K2 0\nPPT coefficients through K2 10\n{\"n\": 6, \"seed\": 1943, \"time_reversal_violation\": 1.6602057036182118, \"imaginary_moment_size\": 0.002292037334887768, \"complex_crossing_error\": 1.387806856834964e-17, \"real_S3_reconstruction_error\": 2.220446049250313e-16, \"reduced_PPT_error\": 2.7755575615628914e-17, \"PT_Swap23_commutator\": 0.35540906136235056, \"mixed_formula_errors\": {\"PPP\": 0.0, \"PT_PPP\": 1.387806856834964e-17, \"PPQ\": 2.778347428953058e-17, \"PT_PPQ\": 4.165787397012807e-17, \"PQQ\": 8.327633384231082e-17, \"PT_PQQ\": 1.3877828121220666e-16, \"QQQ\": 3.3307938111191265e-16, \"PT_QQQ\": 4.440961010916176e-16}, \"cone_minima\": {\"PPP\": -4.547322078328402e-18, \"PT_PPP\": 0.006421297616257093, \"PPQ\": 0.019963567904022476, \"PT_PPQ\": 2.5891697462463563e-17, \"PQQ\": 0.10826464427487766, \"PT_PQQ\": 6.482308734623678e-17, \"QQQ\": 0.24427028118677832, \"PT_QQQ\": 0.31085733256166453}, \"seconds\": 2.2945778369903564}\n",
+          "passed": true
+        }
+      ],
+      "passed": true,
+      "seconds": 5.515
+    },
+    {
+      "scripts": [
+        "quantum-independent-audit/generic_n18_control.py"
+      ],
+      "scope": "supplemental exact algebra or numerical model controls; not an exclusion proof",
+      "executions": [
+        {
+          "script": "quantum-independent-audit/generic_n18_control.py",
+          "returncode": 0,
+          "output": "PPT coefficients through K2 0\nPPT coefficients through K2 10\nPPT coefficients through K2 20\nPPT coefficients through K2 30\nPPT coefficients through K2 40\nPPT coefficients through K2 50\n{\n  \"n\": 18,\n  \"arbitrary_complex_rank2\": true,\n  \"time_reversal_violation\": 1.7089295805037898,\n  \"weighted_imaginary_moment_max\": 0.00628996727781904,\n  \"S3_real_reconstruction_error\": 1.942890293094024e-16,\n  \"pair_map_error\": 5.94246873930615e-12,\n  \"MacWilliams_transform_error\": 1.0551204354669608e-10,\n  \"enumerator_sum_error\": 1.34701139131721e-11,\n  \"all_universal_marginal_error\": 7.923078859661814e-12,\n  \"PPT_min_eigenvalue\": 7.898524135864928e-05,\n  \"KL_was_not_imposed\": true,\n  \"seconds\": 16.741058588027954\n}\n",
+          "passed": true
+        }
+      ],
+      "passed": true,
+      "seconds": 17.967
+    },
+    {
+      "scripts": [
+        "symmetric-quantum-codes/phase2/three_copy_known19_direct.py",
+        "quantum-independent-audit/replay_all_cones.py"
+      ],
+      "scope": "supplemental exact algebra or numerical model controls; not an exclusion proof",
+      "executions": [
+        {
+          "script": "symmetric-quantum-codes/phase2/three_copy_known19_direct.py",
+          "returncode": 0,
+          "output": "PPT coefficients through K2 1\nPPT coefficients through K2 11\nPPT coefficients through K2 21\nPPT coefficients through K2 31\nPPT coefficients through K2 41\nPPT coefficients through K2 51\n{'n': 19, 'actual_P_tensor3_twirl_constructed': True, 'equality_error': 1.6079582110251067e-11, 'lifted_KL_error': 1.5577816814271728e-15, 'standard_copy_error': 1.8041124150158794e-16, 'PPT_min': -9.693409137438058e-18, 'elapsed_seconds': 30.93276619911194}\n",
+          "passed": true
+        },
+        {
+          "script": "quantum-independent-audit/replay_all_cones.py",
+          "returncode": 0,
+          "output": "PPT coefficients through K2 1\nPPT coefficients through K2 11\nPPT coefficients through K2 21\nPPT coefficients through K2 31\nPPT coefficients through K2 41\nPPT coefficients through K2 51\n{\n  \"status\": \"NUMERICAL_CONTROL_PASS\",\n  \"n\": 19,\n  \"actual_known19_x\": true,\n  \"constraints_tested\": 290,\n  \"min_by_kind\": {\n    \"PPP\": -1.7054411041967466e-18,\n    \"PT_PPP\": -7.972280572159362e-18,\n    \"PPQ\": -6.759278137815106e-14,\n    \"PQQ\": 1.5233689341435434e-13,\n    \"QQQ\": 0.7016803334483395,\n    \"PT_PPQ_1\": -6.759180404959126e-14,\n    \"PT_PPQ_2\": -6.758448595997481e-14,\n    \"PT_PQQ_1\": 1.5234471339498623e-13,\n    \"PT_PQQ_2\": 1.5235568010840685e-13,\n    \"PT_QQQ\": 0.7016803334483396\n  },\n  \"equality_residual\": 1.6079582110251067e-11,\n  \"seconds\": 28.00942897796631\n}\n",
+          "passed": true
+        }
+      ],
+      "passed": true,
+      "seconds": 61.445
+    }
+  ],
+  "utc": "2026-10-25T22:02:08.296274+00:00",
+  "network_used": false,
+  "scope": "supplemental original-model controls, distinct from the standalone rigorous verifiers"
+}

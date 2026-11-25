@@ -1,0 +1,108 @@
+{
+  "host_utc_started": "2026-10-25T23:39:09.624611+00:00",
+  "network_used": false,
+  "slow_included": false,
+  "checks": [
+    {
+      "group": "deletion",
+      "cwd": "deletion-code-optimality/phase2",
+      "command": "python replay_k6.py --independent",
+      "scope": "complete868 duals/1716 supports; two implementations",
+      "cpu_limit_seconds": 300,
+      "passed": true,
+      "returncode": 0,
+      "output": "{\n  \"verified\": true,\n  \"complete\": true,\n  \"k\": 6,\n  \"certificates_checked\": 868,\n  \"representatives_required\": 868,\n  \"supports_after_verified_complement_transport\": 1716,\n  \"all_supports\": 1716,\n  \"kind_counts\": {\n    \"received\": 866,\n    \"cliques\": 2\n  },\n  \"integer_word_coverage_checks\": 1640916,\n  \"distinct_original_cliques_checked\": 2352,\n  \"maximum_certificate_cost\": \"316999169717/1000000000\",\n  \"maximum_cost_support\": [\n    0,\n    2,\n    4,\n    6,\n    9,\n    11\n  ],\n  \"maximum_nonzero_support_cost\": \"31624393067/100000000\",\n  \"seconds\": 3.0137753790004354,\n  \"theorem\": \"Every binary length-12 single-deletion code of size >= 317 uses at least 7 VT checksum classes.\",\n  \"scope\": \"Necessary support condition only; global 316-320 interval unchanged; novelty unverified.\",\n  \"source_clique_file_sha256\": \"311de6870eeee97bc4510a69cb948c7b21f0c9d399024276b6de9db17a59792b\"\n}\n{\n  \"PASS\": true,\n  \"independent_insertion_incidence\": true,\n  \"worker_imports\": false,\n  \"representatives\": 868,\n  \"all_six_supports\": 1716,\n  \"integer_coverage_checks\": 1640916,\n  \"kinds\": {\n    \"received\": 866,\n    \"cliques\": 2\n  },\n  \"checked_cliques\": 2352,\n  \"largest_exact_cover_cost\": \"316999169717/1000000000\",\n  \"seconds\": 2.4659347534179688,\n  \"scope\": \"Every length12 binary one-deletion code with>=317 words uses at least7 VT classes; not a global upper bound improvement.\"\n}\nPASS: exact original ZIP restored, complete seven-class theorem replayed; global optimum remains316\u2013320.\n",
+      "seconds": 5.731
+    },
+    {
+      "group": "deletion",
+      "cwd": "deletion-code-optimality/phase2",
+      "command": "python replay_k6.py --negative",
+      "scope": "deliberately omitted canonical support must be rejected",
+      "cpu_limit_seconds": 300,
+      "passed": true,
+      "returncode": 0,
+      "output": "PASS: missing canonical support rejected.\n",
+      "seconds": 0.211
+    },
+    {
+      "group": "deletion",
+      "cwd": "deletion-code-optimality/continuation/release_20261025",
+      "command": "python scripts/verify_cg_hierarchy.py evidence/best_dual.json",
+      "scope": "exact global upper/fractional relaxation and deliberate corruptions; integer interval remains316\u2013320",
+      "cpu_limit_seconds": 300,
+      "passed": true,
+      "returncode": 0,
+      "output": "{\n  \"passed\": true,\n  \"numerator\": 320497437108,\n  \"denominator\": 1000000000,\n  \"upper\": 320.497437108,\n  \"integer_upper\": 320,\n  \"dual_cliques\": 578,\n  \"dual_CG_nodes\": 52,\n  \"expanded_ancestor_nodes\": 52,\n  \"maximum_CG_rank\": 1,\n  \"coverage_checks\": 1056,\n  \"rounded_cap_ancestor\": null,\n  \"cap_proof\": null,\n  \"checked_cliques\": 599,\n  \"seconds\": 0.029965257999720052\n}\n",
+      "seconds": 0.099
+    },
+    {
+      "group": "deletion",
+      "cwd": "deletion-code-optimality/continuation/release_20261025",
+      "command": "python scripts/verify_fractional_root.py",
+      "scope": "exact global upper/fractional relaxation and deliberate corruptions; integer interval remains316\u2013320",
+      "cpu_limit_seconds": 300,
+      "passed": true,
+      "returncode": 0,
+      "output": "{\n  \"passed\": true,\n  \"uncapped_fractional_lower_numerator\": 320497435475376,\n  \"uncapped_fractional_lower_denominator\": 1000000000000,\n  \"uncapped_fractional_lower\": 320.497435475376,\n  \"certified_upper\": 320.497437108,\n  \"scaled_fractional_feasible_size_exact\": 320,\n  \"all_maximal_cliques_independently_enumerated\": 155496,\n  \"CG_nodes_checked\": 786,\n  \"cap_in_scaled_model\": true,\n  \"not_a_code\": true,\n  \"seconds\": 2.183507178000582\n}\n",
+      "seconds": 2.259
+    },
+    {
+      "group": "deletion",
+      "cwd": "deletion-code-optimality/continuation/release_20261025",
+      "command": "python scripts/negative_controls.py",
+      "scope": "exact global upper/fractional relaxation and deliberate corruptions; integer interval remains316\u2013320",
+      "cpu_limit_seconds": 300,
+      "passed": true,
+      "returncode": 0,
+      "output": "{\"passed\": true, \"rejected_mutations\": [\"wrong_numerator\", \"uncovered_objective\", \"negative_dual_weight\", \"invalid_CG_divisor\", \"nonclique_geometry\"]}\n",
+      "seconds": 0.344
+    },
+    {
+      "group": "deletion",
+      "cwd": "advisor/phase3",
+      "command": "python check_deletion_cg_independent.py ../../deletion-code-optimality/continuation/release_20261025/evidence/best_dual.json",
+      "scope": "independent4096-word transport and exact CG dual",
+      "cpu_limit_seconds": 300,
+      "passed": true,
+      "returncode": 0,
+      "output": "{\n  \"passed\": true,\n  \"certificate\": \"../../deletion-code-optimality/continuation/release_20261025/evidence/best_dual.json\",\n  \"sha256\": \"1d1793b7996d2e4dec16361b4fbed9417d18ff8d46ed5c2ce07e4b8141d40dc5\",\n  \"numerator\": 320497437108,\n  \"denominator\": 1000000000,\n  \"exact_upper\": \"80124359277/250000000\",\n  \"upper_float\": 320.497437108,\n  \"integer_upper\": 320,\n  \"full_word_coverage_checks\": 4096,\n  \"cliques_checked\": 599,\n  \"nodes_expanded\": 52,\n  \"maximum_CG_rank\": 1,\n  \"seconds\": 0.0563359260559082,\n  \"method\": \"independent insertion-first string geometry; explicit four group transports; no worker imports\"\n}\n",
+      "seconds": 0.145
+    },
+    {
+      "group": "deletion",
+      "cwd": "deletion-code-optimality/continuation/barrier26_release_20261025",
+      "command": "python verify.py",
+      "scope": "exact fractional selected-integrality obstruction and four corruptions; not a code",
+      "cpu_limit_seconds": 300,
+      "passed": true,
+      "returncode": 0,
+      "output": "{\n  \"passed\": true,\n  \"objective_exact\": \"32021514469/100000000\",\n  \"objective_decimal\": 320.21514469,\n  \"selected_binary_words\": 26,\n  \"selected_ones\": [\n    1625\n  ],\n  \"fractional_word_coordinates\": 2362,\n  \"CG_nodes\": 783,\n  \"CG_transports_checked\": 3132,\n  \"maximal_cliques_enumerated\": 155496,\n  \"not_a_code\": true,\n  \"global_bound_improvement\": false,\n  \"seconds\": 2.3985052579992043\n}\n",
+      "seconds": 2.479
+    },
+    {
+      "group": "deletion",
+      "cwd": "deletion-code-optimality/continuation/barrier26_release_20261025",
+      "command": "python negative_controls.py",
+      "scope": "exact fractional selected-integrality obstruction and four corruptions; not a code",
+      "cpu_limit_seconds": 300,
+      "passed": true,
+      "returncode": 0,
+      "output": "{\"passed\": true, \"rejected_mutations\": [\"wrong_total\", \"invalid_word_bound\", \"lost_selected_integrality\", \"invalid_CG_parent\"]}\n",
+      "seconds": 0.293
+    },
+    {
+      "group": "deletion",
+      "cwd": "advisor/phase3",
+      "command": "python check_deletion_branch26_barrier_independent.py",
+      "scope": "independent literal-deletion geometry,155496 cliques and783CG nodes; fractional obstruction only",
+      "cpu_limit_seconds": 300,
+      "passed": true,
+      "returncode": 0,
+      "output": "{\n  \"passed\": true,\n  \"barrier_sha256\": \"5041bacecb6b875752d6c2d752214629f217e9f7a18d565b9940ec2903ed8059\",\n  \"model_sha256\": \"5be7bd0a81b888cad6ee1dfd0d83aa9a4bd2f07427663c342140d711fccd149d\",\n  \"exact_mass\": \"32021514469/100000000\",\n  \"mass_float\": 320.21514469,\n  \"binary_selected_words\": 26,\n  \"selected_ones\": [\n    1625\n  ],\n  \"CG_nodes\": 783,\n  \"model_rows\": 5837,\n  \"maximal_cliques_enumerated\": 155496,\n  \"maximum_clique_mass\": \"1\",\n  \"actual_code\": false,\n  \"seconds\": 2.4927005959980306,\n  \"scope\": \"Exact partial-integrality barrier, not a320-word code or a universal impossibility of branching.\"\n}\n",
+      "seconds": 2.588
+    }
+  ],
+  "all_passed": true,
+  "host_utc_finished": "2026-10-25T23:39:23.777617+00:00"
+}

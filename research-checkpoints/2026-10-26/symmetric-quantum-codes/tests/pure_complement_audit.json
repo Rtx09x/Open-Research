@@ -1,0 +1,9 @@
+{
+  "exact": true,
+  "method": "stdlib Fraction terminating hypergeometric transform; independent affine and rank verification",
+  "equality_rank": 18,
+  "lower": "133545301843278520173986684081/784303781203066926115600000000",
+  "upper": "23408350603368311128956445043/147056958975575048646675000000",
+  "lower_exceeds_upper": true,
+  "scope": "n18,d5,K2 with a1=a2=a3=a4=0 only"
+}

@@ -1,0 +1,9 @@
+\begin{tikzpicture}[>=Latex,font=\small,x=1cm,y=1cm]
+\tikzset{b/.style={draw=grayline,line width=.85pt,rounded corners=4pt,fill=papergray,minimum height=1.4cm,align=center,inner sep=6pt},a/.style={-{Latex[length=3mm]},line width=1.25pt,draw=azure}}
+\node[b,text width=3.0cm] (a) at (0,0) {\textbf{Transition map}\\[-1pt]$f:X\rightarrow X$};
+\node[b,text width=3.1cm] (b) at (4.15,0) {\textbf{Physical rules}\\[-1pt]pulse, flips, couplings};
+\node[b,text width=3.15cm,draw=jade!65,fill=jade!7] (c) at (8.4,0) {\textbf{Resource profile}\\[-1pt]$(n,d,K,I)$};
+\draw[a] (a.east)--(b.west);
+\draw[a] (b.east)--(c.west);
+\node[font=\footnotesize,align=center,text=black!72] at (4.2,-1.27) {Different transition rules can require different physical resources,\\even when they have the same number of logical states.};
+\end{tikzpicture}

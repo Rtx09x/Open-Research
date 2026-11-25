@@ -1,0 +1,142 @@
+[
+  {
+    "t": 1,
+    "active_dimension": 8,
+    "endpoint_counts_vacuous_from_c": 5,
+    "conjectured_c": 0,
+    "one_below_conjecture_counts_vacuous": false
+  },
+  {
+    "t": 2,
+    "active_dimension": 12,
+    "endpoint_counts_vacuous_from_c": 7,
+    "conjectured_c": 2,
+    "one_below_conjecture_counts_vacuous": false
+  },
+  {
+    "t": 3,
+    "active_dimension": 16,
+    "endpoint_counts_vacuous_from_c": 9,
+    "conjectured_c": 6,
+    "one_below_conjecture_counts_vacuous": false
+  },
+  {
+    "t": 4,
+    "active_dimension": 20,
+    "endpoint_counts_vacuous_from_c": 11,
+    "conjectured_c": 12,
+    "one_below_conjecture_counts_vacuous": true
+  },
+  {
+    "t": 5,
+    "active_dimension": 24,
+    "endpoint_counts_vacuous_from_c": 13,
+    "conjectured_c": 20,
+    "one_below_conjecture_counts_vacuous": true
+  },
+  {
+    "t": 6,
+    "active_dimension": 28,
+    "endpoint_counts_vacuous_from_c": 15,
+    "conjectured_c": 30,
+    "one_below_conjecture_counts_vacuous": true
+  },
+  {
+    "t": 7,
+    "active_dimension": 32,
+    "endpoint_counts_vacuous_from_c": 17,
+    "conjectured_c": 42,
+    "one_below_conjecture_counts_vacuous": true
+  },
+  {
+    "t": 8,
+    "active_dimension": 36,
+    "endpoint_counts_vacuous_from_c": 19,
+    "conjectured_c": 56,
+    "one_below_conjecture_counts_vacuous": true
+  },
+  {
+    "t": 9,
+    "active_dimension": 40,
+    "endpoint_counts_vacuous_from_c": 21,
+    "conjectured_c": 72,
+    "one_below_conjecture_counts_vacuous": true
+  },
+  {
+    "t": 10,
+    "active_dimension": 44,
+    "endpoint_counts_vacuous_from_c": 23,
+    "conjectured_c": 90,
+    "one_below_conjecture_counts_vacuous": true
+  },
+  {
+    "t": 11,
+    "active_dimension": 48,
+    "endpoint_counts_vacuous_from_c": 25,
+    "conjectured_c": 110,
+    "one_below_conjecture_counts_vacuous": true
+  },
+  {
+    "t": 12,
+    "active_dimension": 52,
+    "endpoint_counts_vacuous_from_c": 27,
+    "conjectured_c": 132,
+    "one_below_conjecture_counts_vacuous": true
+  },
+  {
+    "t": 13,
+    "active_dimension": 56,
+    "endpoint_counts_vacuous_from_c": 29,
+    "conjectured_c": 156,
+    "one_below_conjecture_counts_vacuous": true
+  },
+  {
+    "t": 14,
+    "active_dimension": 60,
+    "endpoint_counts_vacuous_from_c": 31,
+    "conjectured_c": 182,
+    "one_below_conjecture_counts_vacuous": true
+  },
+  {
+    "t": 15,
+    "active_dimension": 64,
+    "endpoint_counts_vacuous_from_c": 33,
+    "conjectured_c": 210,
+    "one_below_conjecture_counts_vacuous": true
+  },
+  {
+    "t": 16,
+    "active_dimension": 68,
+    "endpoint_counts_vacuous_from_c": 35,
+    "conjectured_c": 240,
+    "one_below_conjecture_counts_vacuous": true
+  },
+  {
+    "t": 17,
+    "active_dimension": 72,
+    "endpoint_counts_vacuous_from_c": 37,
+    "conjectured_c": 272,
+    "one_below_conjecture_counts_vacuous": true
+  },
+  {
+    "t": 18,
+    "active_dimension": 76,
+    "endpoint_counts_vacuous_from_c": 39,
+    "conjectured_c": 306,
+    "one_below_conjecture_counts_vacuous": true
+  },
+  {
+    "t": 19,
+    "active_dimension": 80,
+    "endpoint_counts_vacuous_from_c": 41,
+    "conjectured_c": 342,
+    "one_below_conjecture_counts_vacuous": true
+  },
+  {
+    "t": 20,
+    "active_dimension": 84,
+    "endpoint_counts_vacuous_from_c": 43,
+    "conjectured_c": 380,
+    "one_below_conjecture_counts_vacuous": true
+  }
+]

@@ -1,0 +1,24 @@
+{
+  "backend": "stdlib integer dyadic arithmetic with exactly checked integer nth roots",
+  "dyadic_precision_bits": 80,
+  "all_checks_passed": true,
+  "covering_boxes_checked": 4988,
+  "rational_power_endpoint_calls": 29972,
+  "scalar_margins_exact_lower": {
+    "persistent_rounding": "12088749764936982101/1208925819614629174706176",
+    "total_rounding": "120892067980075169973/1208925819614629174706176",
+    "live_induction": "55167863182588329447/302231454903657293676544",
+    "minus_monotonicity": "567137569159773744297281/1208925819614629174706176"
+  },
+  "box_margin_exact_min_lower": {
+    "denominator": "246830335567535953551383/302231454903657293676544",
+    "q_upper": "7718523123785604643/1208925819614629174706176",
+    "persistent_plus": "69424978536335265/1208925819614629174706176",
+    "total_plus": "2631244090862322793/604462909807314587353088"
+  },
+  "conditional_exponent_exact": "20423/30846",
+  "wall_seconds": 27.099792097003956,
+  "maxrss_kib": 24576,
+  "input_certificate_sha256": "77b562eb5a30a53c5bdfeab47ca58838348255d0efa36d072a74b7f1e0ded396",
+  "script_sha256": "e556834a93ff46d39a7f6d49cce9efdcf5b7ca8a1e770908ab2e61a0db49d46c"
+}

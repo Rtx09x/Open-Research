@@ -1,0 +1,13 @@
+{
+  "passed": true,
+  "cover_sha256": "812f16eae44cd0597dc7ccf5a6c0147762f639dfce224050095440014a0d752b",
+  "classification_sha256": "485e4ee45bc0b4d6d400008f63e9cc68da0ae93b211d4c28838323ab99b48bf9",
+  "alphabet_size": 842,
+  "maximum_size": 367,
+  "maximum_code_count": 486,
+  "maximum_support_size": 392,
+  "graph": "342 isolated vertices + five P4 + one C30",
+  "nodes": 745,
+  "seconds": 3.777837051999086,
+  "scope": "Exact within the core-conflict-at-most-two alphabet, not global C7^5 or capacity improvement."
+}

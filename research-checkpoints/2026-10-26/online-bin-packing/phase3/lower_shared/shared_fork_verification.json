@@ -1,0 +1,29 @@
+{
+  "status": "PASS restricted causal obstruction, not a global online algorithm",
+  "ratio": "3857/2500",
+  "surviving_f_interval": [
+    "1263/8095",
+    "403/1250"
+  ],
+  "selected_f": "1/5",
+  "B_margin": "153/5000",
+  "C_uniform_cone_margin": "89/8750",
+  "D_constant_margin": "1357/45000",
+  "D_slope_margin": "357/5000",
+  "uniform_B_deficit_bound": "1/10000",
+  "causal_separator_items": 10,
+  "causal_separator_marked": 4,
+  "natural_counts": {
+    "b": "13643/15000",
+    "h": "13643/37500",
+    "e": "13643/75000",
+    "D": "95501/150000",
+    "C": "133001/150000",
+    "ALG_B": "79499/150000",
+    "ALG_E": "46571/75000",
+    "ALG_C": "20107/15000",
+    "ALG_D": "149927/150000",
+    "C_actual_OPT_slack": "3436619/125000000"
+  },
+  "scope": "fixed nine-state prefix; common B history branches to arbitrary D, or E prefixes up to(b-h)/3 followed by arbitrary near-half C; actual OPT lower bounds used"
+}

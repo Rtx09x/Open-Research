@@ -26,9 +26,22 @@ Anyone is welcome to contribute, regardless of their academic background or prof
 
 The first collection draws on independent research by [Rudra Tiwari](https://github.com/Rtx09x), the founder of Open Research.
 
-It covers problems in quantum error correction, physical computing, electrical network diagnosis, information theory, numerical linear algebra and the analysis of algorithms. The collection is currently being prepared for release. Each project will document its findings, supporting evidence and outstanding questions, alongside a manuscript or technical report where appropriate.
+The founding collection contains ten AI-assisted research projects, with manuscripts, proofs, code, certificates or scoped technical notes. Internal checks are recorded in the underlying materials; none of these status labels implies independent peer review or established priority. Several original questions remain open.
 
-The individual projects will be linked here as they become available.
+| Project | Area | Current scope |
+| :--- | :--- | :--- |
+| [Hysteretic state machines](applied-physics/hysteretic-state-machines/) | Physical computing | Manuscript and exact resource models |
+| [Resistance-based fault diagnosis](engineering/resistance-fault-diagnosis/) | Electrical networks | Single-fault diagnosis manuscript and tests |
+| [Sparse conductance recovery](engineering/sparse-conductance-recovery/) | Inverse problems | Multi-change reconstruction and lower bounds |
+| [Symmetric quantum error correction](physics/symmetric-quantum-error-correction/) | Quantum information | Bounds and computer-assisted certificates |
+| [Sequential calibration](computer-science/sequential-calibration/) | Online learning | Candidate adaptive-weight theorem and erratum |
+| [Online bin packing](computer-science/online-bin-packing/) | Algorithms | Algorithm-specific competitive-ratio bracket |
+| [Hierarchical matrix recovery](mathematics/hierarchical-matrix-recovery/) | Numerical linear algebra | Restricted fixed-basis reconstruction |
+| [Binary single-deletion codes](mathematics/binary-single-deletion-codes/) | Coding theory | Finite exclusions; global problem open |
+| [Seven-cycle Shannon capacity](mathematics/seven-cycle-shannon-capacity/) | Zero-error information | Finite constructions and restricted obstructions |
+| [Quantum channel capacity](physics/quantum-channel-capacity/) | Quantum information | Restricted architecture obstructions |
+
+The shared [26 October checkpoint](research-checkpoints/) preserves the proofs, dependencies and replay tools used across several tracks. Read the project pages for model assumptions, verification status and what remains open. The [release validation record](RELEASE_VALIDATION.md) lists the checks actually run.
 
 ### Research domains
 

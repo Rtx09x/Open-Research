@@ -1,0 +1,45 @@
+{
+  "PASS": true,
+  "method": "own actual sample coefficient/subtraction decoder, full six-dimensional exact covariance, eight forward orientations per step; no worker imports",
+  "physical_checks": [
+    {
+      "m": 4,
+      "physical_covariance_cycle": true,
+      "nonzero_initial_xi_u_correlation": true
+    },
+    {
+      "m": 8,
+      "physical_covariance_cycle": true,
+      "nonzero_initial_xi_u_correlation": true
+    },
+    {
+      "m": 16,
+      "physical_covariance_cycle": true,
+      "nonzero_initial_xi_u_correlation": true
+    }
+  ],
+  "finite_pure_source_lower_bounds": [
+    {
+      "m": 16,
+      "ancestor_depth": 272,
+      "integer_lower": 5
+    },
+    {
+      "m": 32,
+      "ancestor_depth": 1056,
+      "integer_lower": 8
+    },
+    {
+      "m": 64,
+      "ancestor_depth": 4160,
+      "integer_lower": 14
+    },
+    {
+      "m": 128,
+      "ancestor_depth": 16512,
+      "integer_lower": 26
+    }
+  ],
+  "scope": "Refutes uniform one-bank conditional source bound at fixed finitewidth; not unconditional scalar theorem or full HSS",
+  "seconds": 74.33819568400213
+}

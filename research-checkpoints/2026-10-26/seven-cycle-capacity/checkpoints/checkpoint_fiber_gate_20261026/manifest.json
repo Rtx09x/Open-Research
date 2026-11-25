@@ -1,0 +1,50 @@
+{
+  "scope": "Fixed B/P/X variable-fiber gate only",
+  "files": [
+    {
+      "path": "README.md",
+      "bytes": 972,
+      "sha256": "6deb85c90d6d4152ddfa47d3251bb399f6b2a3ad1e837b910edc788319ee06d0"
+    },
+    {
+      "path": "independent_advisor/c7_fiber_pair_independent_audit.json",
+      "bytes": 580,
+      "sha256": "fd79138fbfc0685725ab1130993fec8d70aedbb4fc23f0149efae0063fda94a1"
+    },
+    {
+      "path": "independent_advisor/check_c7_fiber_pair_independent.py",
+      "bytes": 3209,
+      "sha256": "8a5c367de978073c7b7b4ab12558ceb7046e767e5514501b1d528446e73ffd93"
+    },
+    {
+      "path": "independent_advisor/check_relocated.py",
+      "bytes": 3175,
+      "sha256": "2930461c764d080edfa0dce1d201113bb0fe38bf930c7a678eb4a1c6168be5e4"
+    },
+    {
+      "path": "physical_iteration/c30_fiber_pair_gate.json",
+      "bytes": 163708,
+      "sha256": "c251119f52e7123b6fa27c8e0434836334779ff119694701dff9e500c210a8a3"
+    },
+    {
+      "path": "physical_iteration/c30_fiber_pair_gate_audit.json",
+      "bytes": 476,
+      "sha256": "99818702e55e5ac10585a20fdc814598cad308a0e52e281140beb72102b3ecd4"
+    },
+    {
+      "path": "physical_iteration/c30_plus_eight_port_instance.json",
+      "bytes": 12727,
+      "sha256": "615f7afc1578432a663992b25c0419cf80e66cafa09e5e37ce63e74dcc022c08"
+    },
+    {
+      "path": "physical_iteration/c30_variable_fiber_gate_proof.md",
+      "bytes": 3241,
+      "sha256": "99ad4a1015063a9ce8984f33b91df167ca90435abff230492753cf7517c90a7c"
+    },
+    {
+      "path": "physical_iteration/verify_c30_fiber_pair_gate.py",
+      "bytes": 2864,
+      "sha256": "156dd4bd8c1423befff50b39b38e471936ef99b21133405ceaa08fdb3a9964ea"
+    }
+  ]
+}

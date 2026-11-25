@@ -1,0 +1,195 @@
+{
+  "scope": "Curated portable checkpoint; original approved source manifests retained as provenance where available.",
+  "files": [
+    {
+      "path": "c7_second_boundary_independent_audit.json",
+      "bytes": 521,
+      "sha256": "e2246adc5895bdfa3882d313bc062c21aeb401e1e764f74cbda8d978502cbfc1"
+    },
+    {
+      "path": "check_c7_component_independent.json",
+      "bytes": 581,
+      "sha256": "3c8d24827841bf646a569377bfb94816664b377467c4849e43aac2c4fa5ede4e"
+    },
+    {
+      "path": "check_c7_component_independent.py",
+      "bytes": 2805,
+      "sha256": "8039044515e2b859a1f99025de50ea139ffc82ef515b431b12f3037999c44d88"
+    },
+    {
+      "path": "check_c7_escape_independent.json",
+      "bytes": 616,
+      "sha256": "c79fed237b02ac18b04b35f3a7f912f6dc81c3b81045e533c7a0412a8a926e51"
+    },
+    {
+      "path": "check_c7_escape_independent.py",
+      "bytes": 1691,
+      "sha256": "bbf46fc4afe0800cf78d178cef12ebe9cfdba9df461c67207cb4c435fac257e3"
+    },
+    {
+      "path": "check_c7_second_boundary_independent.py",
+      "bytes": 3967,
+      "sha256": "578054ee6effa9616f7b4a6e7ec4750fae0bde6c8da893c74b40f79bf8a4c7e4"
+    },
+    {
+      "path": "check_code37_independent.json",
+      "bytes": 7180,
+      "sha256": "4699762463beb47d4bae64a1184d4aa5561a51f233feb906680078834dcea11c"
+    },
+    {
+      "path": "check_code37_independent.py",
+      "bytes": 4568,
+      "sha256": "f0ca2a207dc2afae11a23fa8d3744d49b106f6e7a7955f9df3f5f7dc8cbeb8f3"
+    },
+    {
+      "path": "check_deletion_branch26_barrier_independent.py",
+      "bytes": 3881,
+      "sha256": "20b793b694654436a67cdee1eae5927b4ac84496e9fc9a12936f10e77be7641d"
+    },
+    {
+      "path": "check_deletion_cg_independent.py",
+      "bytes": 3253,
+      "sha256": "5c515a5cdb952e8ffdaf2b38c250b1b53aca2e2361c7421166d13da752173e35"
+    },
+    {
+      "path": "check_deletion_six_supports.json",
+      "bytes": 76903,
+      "sha256": "eedad065728850e6ce74f39945423781bbf97c9078e450ad8413c9cd571dcdb9"
+    },
+    {
+      "path": "check_deletion_six_supports.py",
+      "bytes": 3347,
+      "sha256": "316d02bc2a39c919e68f04d37dadcc25e75a3112c245e511426ea98c631c6cd2"
+    },
+    {
+      "path": "check_packing_actual_floor_independent.json",
+      "bytes": 1285,
+      "sha256": "8a67a5d8ec8851c973a7005ffe2feed9c14ef56ca089358db8313d0384c857a0"
+    },
+    {
+      "path": "check_packing_actual_floor_independent.py",
+      "bytes": 4354,
+      "sha256": "ef0320db0e3f5861489ffcf25dcbe9dd8d5dfc2f30d231579a9c611d7f4b3ae9"
+    },
+    {
+      "path": "check_packing_retune_two.py",
+      "bytes": 6475,
+      "sha256": "177bd3c6f92d28d339415acac8576187782b7a5680269799d02b72c7535493df"
+    },
+    {
+      "path": "check_packing_successor_mixture.py",
+      "bytes": 6203,
+      "sha256": "87cab10d4ed34efe9e3fe13483c7ad3b34e6ced6d4410483b2eabefe401c3ec0"
+    },
+    {
+      "path": "check_quantum_general_independent.py",
+      "bytes": 6859,
+      "sha256": "d25a73814af88294f41db877b79cf72ec7e1224ce500198a4bfdd42ee17771f7"
+    },
+    {
+      "path": "check_quantum_general_tight_independent.py",
+      "bytes": 7091,
+      "sha256": "a52bd974afa09b9fe0c742d3cfaa3431bb69a590c41646740a9c8ca2d2dfc34b"
+    },
+    {
+      "path": "check_t3_scalar_hypergeom.json",
+      "bytes": 2950,
+      "sha256": "85ffc8dab77f56e6dd2beb7148c96472ed8d09f9f0bb7c8573eed5781f1f430b"
+    },
+    {
+      "path": "check_t3_scalar_hypergeom.py",
+      "bytes": 1960,
+      "sha256": "d6690f729def8615db92d00197ac4be93cfc001d1bfc5d6ca82901e18d1c7754"
+    },
+    {
+      "path": "complement_counting_audit.md",
+      "bytes": 1744,
+      "sha256": "665637603b30afb7c786751748483159804a914ad515c0aa7fa5b16e0f75f509"
+    },
+    {
+      "path": "deletion_branch26_barrier_audit.json",
+      "bytes": 610,
+      "sha256": "b6116ea048d2f9df996a377395e55140399247dfa6dd61bddc67c64467db8eb1"
+    },
+    {
+      "path": "deletion_cg_best_dual_audit.json",
+      "bytes": 628,
+      "sha256": "55b873a7baed8019c5e9bff3ab22b1b2906a0631b31f6558311ec35deed62631"
+    },
+    {
+      "path": "fresh_source_scope_notes.md",
+      "bytes": 1701,
+      "sha256": "be9c4ab3c1b88fbb1cf642a2cad48b2f34efc8321707b9c7c1ec21ff7778fcea"
+    },
+    {
+      "path": "hss_coordinate_extension_audit.md",
+      "bytes": 1867,
+      "sha256": "253736f60db9b4ca75f5f023ece9d2f8124f8999024dc0eb8f71d0dcaa845321"
+    },
+    {
+      "path": "hss_greedy_bridge_audit.md",
+      "bytes": 3468,
+      "sha256": "7e48348f40e0b11099e6eebd8ab711083c3d3c1f870e18abe5d6fd98036229dd"
+    },
+    {
+      "path": "packing_actual_algorithm_floor_audit.md",
+      "bytes": 3732,
+      "sha256": "5afd49e2ad85d13e2a3b36d24ad1a18b323dbda2b06a52fc270b12de5342553b"
+    },
+    {
+      "path": "packing_best_fit_audit.md",
+      "bytes": 4177,
+      "sha256": "bfa125c8b6fd87b4c5a4ddd7d18f3585e6d9169ca3a121d621d63994fb30cc07"
+    },
+    {
+      "path": "packing_ordered_suffix_audit.md",
+      "bytes": 3146,
+      "sha256": "0f074750437eda823e79cb4ec4bd5525321234d3d83f6f6d828749ef6d29fc67"
+    },
+    {
+      "path": "packing_portability_audit.md",
+      "bytes": 2811,
+      "sha256": "e772a1a11c8aadf6600ac0247e085737ae87014011946fd9698612637a13b2c9"
+    },
+    {
+      "path": "packing_retune_two_audit.json",
+      "bytes": 55653,
+      "sha256": "e68e6b96bb78f5babd434fd587d163dc988989bd70a34ae2f0674a7d823acbcf"
+    },
+    {
+      "path": "packing_retune_two_audit.md",
+      "bytes": 2106,
+      "sha256": "bc2fd33aa0eb6f2a8cfe89de854733592cbb9182116859bf713b5e8b095943d6"
+    },
+    {
+      "path": "packing_successor_mixture_audit.json",
+      "bytes": 61438,
+      "sha256": "2d2f27a5edec15fd565eb3174c4fe46fe4a417163b4dcfe020c3f8b14394a722"
+    },
+    {
+      "path": "packing_successor_mixture_audit.md",
+      "bytes": 2541,
+      "sha256": "318a999ddfdcb895a20954395d3a00a79a24acf101eedcfacade8f6f4d2348d3"
+    },
+    {
+      "path": "quantum_general_model_audit.md",
+      "bytes": 4303,
+      "sha256": "e2e28b26fa3b1fed73c36f41324fbccc4f65ae334689da98e76eca370d6c0e7a"
+    },
+    {
+      "path": "quantum_general_n33_t3_audit.json",
+      "bytes": 971,
+      "sha256": "f3acf444069bc77f139a75594fc34c3007c411ee0c8edb44c4e6acef28ac4401"
+    },
+    {
+      "path": "quantum_general_n34_t3_audit.json",
+      "bytes": 1033,
+      "sha256": "e9bca11caf753aa8c630e78cc19ebf6aed8de9ff01aac4110c80986812e3f24e"
+    },
+    {
+      "path": "star_probing_noise_lemma.md",
+      "bytes": 2974,
+      "sha256": "f793424510877a0e78c3b7a81dee65250203a68f389f19036e5987e6adcad21c"
+    }
+  ]
+}

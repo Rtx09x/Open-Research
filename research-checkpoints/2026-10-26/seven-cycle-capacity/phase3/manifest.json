@@ -1,0 +1,170 @@
+{
+  "scope": "Curated portable checkpoint; original approved source manifests retained as provenance where available.",
+  "files": [
+    {
+      "path": "VERIFIED_PHYSICAL_RESULTS.md",
+      "bytes": 3483,
+      "sha256": "df42ad927dfa371bd94eded6195d26e04dc56956514b8ecdb8237b3c08b27be9"
+    },
+    {
+      "path": "independent_advisor/c7_second_boundary_independent_audit.json",
+      "bytes": 521,
+      "sha256": "e2246adc5895bdfa3882d313bc062c21aeb401e1e764f74cbda8d978502cbfc1"
+    },
+    {
+      "path": "independent_advisor/check_c7_component_independent.json",
+      "bytes": 581,
+      "sha256": "3c8d24827841bf646a569377bfb94816664b377467c4849e43aac2c4fa5ede4e"
+    },
+    {
+      "path": "independent_advisor/check_c7_component_independent.py",
+      "bytes": 2773,
+      "sha256": "33c82d9ddbed2140d84b12fc52c99a4e6b0cb35366c3ba7faae3ce5c22f96369"
+    },
+    {
+      "path": "independent_advisor/check_c7_escape_independent.json",
+      "bytes": 616,
+      "sha256": "c79fed237b02ac18b04b35f3a7f912f6dc81c3b81045e533c7a0412a8a926e51"
+    },
+    {
+      "path": "independent_advisor/check_c7_escape_independent.py",
+      "bytes": 1659,
+      "sha256": "10d7e921b4975b82d048502760b42be77a114d852e415f54d2b6278a4ae77f08"
+    },
+    {
+      "path": "independent_advisor/check_c7_second_boundary_independent.py",
+      "bytes": 3935,
+      "sha256": "b4c06ebc67345262ccbce65989af507bf3d8ebfbe8fbf3e1c8bb995792287b3d"
+    },
+    {
+      "path": "physical_iteration/auxiliary_orbit_milp.py",
+      "bytes": 3657,
+      "sha256": "cf969c2a15807d1f13574346ef5cc4924551c2150ed2dbf165ec86fa7c330390"
+    },
+    {
+      "path": "physical_iteration/classify_second_boundary_maxima.py",
+      "bytes": 5081,
+      "sha256": "62fcec9c3f1668c4a6be8c1f6e640436bb7aa067c46353fd9ef86e5f95037cc9"
+    },
+    {
+      "path": "physical_iteration/core_boundary_cover_audit.json",
+      "bytes": 421,
+      "sha256": "50b0b0d9e2b1dc26291273c6ca7f33a0c7ed735054ec76334791eb27532121d2"
+    },
+    {
+      "path": "physical_iteration/core_cycle_family.json",
+      "bytes": 10426,
+      "sha256": "21bb68aef731d03b62750b2f1e7cbf711183ad85db45e8b11892d6bdc5250434"
+    },
+    {
+      "path": "physical_iteration/core_cycle_family.py",
+      "bytes": 2848,
+      "sha256": "e4afab7c88db42df6f98c629895983d4225b463acdebd62d0f03afd96f982e64"
+    },
+    {
+      "path": "physical_iteration/cycle_flip_base_c7.json",
+      "bytes": 10831,
+      "sha256": "ec4bb61b92e8193f884dfcc19c393cc066a27f136f26116878d7178e4cb742bf"
+    },
+    {
+      "path": "physical_iteration/cycle_flip_certificate_replay.log",
+      "bytes": 1581,
+      "sha256": "70d04fbc9295fa32fce398f33c49304a884f78a8be65d3ece0b860d84a91b9d8"
+    },
+    {
+      "path": "physical_iteration/cycle_flip_recomputed_ledger.json",
+      "bytes": 5065,
+      "sha256": "70880112201e33fa6453e32fe318d7bab6b65295128eee31b635df97f3eb951b"
+    },
+    {
+      "path": "physical_iteration/cycle_flip_recomputed_result.json",
+      "bytes": 1845,
+      "sha256": "536df822650c46fdc0ab72b0735b9ca5b9e92266977e521cc65a49aae04b372d"
+    },
+    {
+      "path": "physical_iteration/cycle_flip_replay_resources.json",
+      "bytes": 103,
+      "sha256": "c732ffe091edfca7bb4a2c9a263d86112d308f3827b198455698379d7b7534ee"
+    },
+    {
+      "path": "physical_iteration/first_core_boundary_certificate.json",
+      "bytes": 30066,
+      "sha256": "c29dedf5b2736ebcbfe199db16037a409774e817db374bc7f5626a778b4f7769"
+    },
+    {
+      "path": "physical_iteration/independent_physical_audit.json",
+      "bytes": 441,
+      "sha256": "6e92ff387a9434a7f5497699d8f9cda0413b0875bc3ef355a02344ab7e9695b7"
+    },
+    {
+      "path": "physical_iteration/independent_physical_certificate.json",
+      "bytes": 379644,
+      "sha256": "e758c83f5da2e8da93dce7ab4c15d209bf581847106ae944851d4aa6ebb407dd"
+    },
+    {
+      "path": "physical_iteration/new_367_core_escape.json",
+      "bytes": 4112,
+      "sha256": "e64181dcab35a7982620ea216098fcb7223dda15ada3433bc2ce6b478d65bbd8"
+    },
+    {
+      "path": "physical_iteration/new_core_overlap_probe.json",
+      "bytes": 5614,
+      "sha256": "666adc2eb816e64bde36a9846d5d1a5286b6a3cf982cafd9ebda015d504f0bfa"
+    },
+    {
+      "path": "physical_iteration/new_core_overlap_probe.py",
+      "bytes": 2663,
+      "sha256": "f2ef25ff7d2b9c03cf9bb0557eaa4f3bb03b776e69b37e8940809759d456ba1c"
+    },
+    {
+      "path": "physical_iteration/physical_graph.py",
+      "bytes": 3499,
+      "sha256": "f8b1b415545730c6db038d9abbcc6e10f281ab90ce6f4a453664a75313164b53"
+    },
+    {
+      "path": "physical_iteration/private_component_closure.json",
+      "bytes": 68685,
+      "sha256": "8a034a56d2722a73643ed6949d7818ae6bacbe684dac240e877deacaf473f920"
+    },
+    {
+      "path": "physical_iteration/replay_cycle_flip_certificates.py",
+      "bytes": 2373,
+      "sha256": "003269e198f025bdde9bb9518cba61ee070e62f77f5fef0add31a3be6cec6765"
+    },
+    {
+      "path": "physical_iteration/second_boundary_maxima_classification.json",
+      "bytes": 66746,
+      "sha256": "485e4ee45bc0b4d6d400008f63e9cc68da0ae93b211d4c28838323ab99b48bf9"
+    },
+    {
+      "path": "physical_iteration/second_core_boundary_capacity_cover.json",
+      "bytes": 46887,
+      "sha256": "812f16eae44cd0597dc7ccf5a6c0147762f639dfce224050095440014a0d752b"
+    },
+    {
+      "path": "physical_iteration/verify_core_boundary_covers.py",
+      "bytes": 1990,
+      "sha256": "4f9a116963179243d4dbc0e2c3535bed51f79afd584fddc2f0cb7b1b661f4af1"
+    },
+    {
+      "path": "provenance/original_manifest.json",
+      "bytes": 6769,
+      "sha256": "a03239ecaddcb37d1378aaf3ac32b16ff030c6d2df2af460c877e0f2f9158b3e"
+    },
+    {
+      "path": "published/LICENSE",
+      "bytes": 11357,
+      "sha256": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4"
+    },
+    {
+      "path": "published/NOTICE",
+      "bytes": 1267,
+      "sha256": "359e841fec992d2e6df7c44e4e700f94fd1241673a1e10efe15b6dd1787e3a7d"
+    },
+    {
+      "path": "published/data/base_c7.json",
+      "bytes": 8200,
+      "sha256": "2395d9ce16e068010a5f2a57f3fbfec5a607fa9272b02afd6c9e4a95fc70016b"
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "PASS": true,
+  "theta_upper_exact": "30-12sqrt(5)",
+  "theta_upper_rational_strict": "16/5",
+  "fifth_power_integer_upper": 335,
+  "fourier_dual_nonzero_modes": [
+    1,
+    2,
+    5
+  ],
+  "dual_weights": [
+    "60-20sqrt(5)",
+    "140-60sqrt(5)",
+    "90-40sqrt(5)"
+  ],
+  "scope": "All codes in E(20/6)^5 or E(10/3)^5; not all finite-torus denominators or C7 codes."
+}

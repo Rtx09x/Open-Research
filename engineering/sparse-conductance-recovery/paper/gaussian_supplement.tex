@@ -1,0 +1,572 @@
+\documentclass[11pt,letterpaper]{article}
+\usepackage[margin=0.95in]{geometry}
+\usepackage{amsmath,amssymb,amsthm,hyperref,microtype}
+\hypersetup{colorlinks=true,linkcolor=black,citecolor=black,urlcolor=black,pdftitle={Gaussian Noise and Adaptivity in Resistance Based Fault Diagnosis}}
+\newtheorem{theorem}{Theorem}
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{corollary}[theorem]{Corollary}
+\newcommand{\ceil}[1]{\left\lceil #1\right\rceil}
+\newcommand{\floor}[1]{\left\lfloor #1\right\rfloor}
+\newcommand{\one}{\mathbf 1}
+\DeclareMathOperator{\KL}{KL}
+\DeclareMathOperator{\kl}{kl}
+\DeclareMathOperator{\Var}{Var}
+\DeclareMathOperator{\tr}{tr}
+\title{Gaussian Noise and Adaptivity in Resistance Based Fault Diagnosis}
+\author{Research supplement prepared for Rudra Tiwari}
+\date{8 October 2026}
+\begin{document}
+\maketitle
+\begin{abstract}
+We study one-edge deletion diagnosis in known weighted resistor networks with fresh Gaussian measurements. Electrical energy and standard adaptive change of measure give a lower bound through a squared leverage-slack budget. A descending-leverage sequence of endpoint tests attains a matching order with an explicit deterministic sample cap. A weighted-prior Fano argument also proves a sharp nonadaptive lower bound, matched by fixed endpoint repetitions. For simple graph families with all nonbridges as candidates, candidate endpoint access, linear cycle rank, uniformly bounded weighted-degree-to-minimum-conductance ratio, and fixed positive noise, the adaptive and nonadaptive hard-budget complexities are respectively $\Theta(m\log(1/\delta))$ and $\Theta(m[\log m+\log(1/\delta)])$, uniformly for $0<\delta\le1/16$. Their ratio is $\Theta(1+\log m/\log(1/\delta))$. Both intact-baseline-scaled and post-fault-scaled variance are covered. The nonadaptive lower bound permits randomized fault-independent schedules and early stopping along them, but not data-dependent allocation.
+\end{abstract}
+
+\noindent\textbf{Status and relation to the main manuscript.} This is a self-contained supplement to \emph{Structure and Uncertainty in Resistance Based Fault Diagnosis}. It treats fresh stochastic noise separately from the main manuscript's bounded adversarial-error model. This AI-assisted research draft is unsubmitted and has not been peer reviewed or independently reviewed by a human specialist. Its mathematical arguments are stated as proofs; numerical checks are not used to establish its theorems. Exhaustive priority certification has not occurred.
+
+\section{Model and objective}\label{sec:model}
+Let $G=(V,E)$ be a known finite connected loopless undirected graph with $n$ vertices, $m$ edges, and known positive conductances $c_e$. Fix an orientation to define edge incidence vectors $b_e$; all conclusions are orientation independent. Write
+\[
+ L=\sum_{e\in E}c_e b_e b_e^{\mathsf T},\qquad
+ R_q=b_q^{\mathsf T}L^+b_q,
+\]
+where $L^+$ is the Moore--Penrose inverse, $q$ is an unordered pair of distinct vertices, and $b_q$ is its incidence vector. A nonempty family $\mathcal Q$ specifies the permitted queries. Exactly one edge $e$ in a known candidate set $S$ is completely deleted and remains deleted throughout testing. Every candidate is a nonbridge, so the deleted graph remains connected and every post-fault resistance $R_q^e$ is finite and positive. Put $M=|S|\ge2$; if $M=1$, no query is needed.
+
+A query returns one scalar sample. Repetitions are permitted. Conditional on the chosen query and the fixed fault, each sample is fresh and independent of all preceding noise. For known $\sigma>0$, we consider two different experiments:
+\[
+ \begin{aligned}
+ \text{Model A:}\quad Y\mid(q,e)&\sim N(R_q^e,\sigma^2R_q^2),\\
+ \text{Model B:}\quad Y\mid(q,e)&\sim N(R_q^e,\sigma^2(R_q^e)^2).
+ \end{aligned}
+\]
+Model A scales noise by the known intact response. Model B scales it by the unknown true post-fault response, so its variance also carries information about the fault. The analysis does not identify these experiments with one another.
+
+For $0<\delta<1$, a strategy is $\delta$-correct if its output equals $e$ with probability at least $1-\delta$ under every $e\in S$. It may randomize and choose queries using preceding samples. Its \emph{hard sample budget} $t$ means that it stops after at most $t$ individual samples on every history. Denote the least such budget by $T^*_{\mathrm A}(\delta)$ or $T^*_{\mathrm B}(\delta)$, with value infinity if identification is impossible. All logarithms are natural.
+
+A \emph{nonadaptive} strategy preselects its entire finite query schedule $q_1(U),\ldots,q_t(U)$ from private randomness $U$ independent of the unknown fault, before seeing any measurement. Its final decision may be randomized. A seed-dependent shorter planned schedule is allowed, as is observation-dependent early stopping along the preselected schedule. Data-dependent skipping, reordering, or allocation of repetitions is adaptive and is not included. In particular, a fixed list of candidate tests with adaptively chosen durations is an adaptive design. All probability guarantees average over private randomness and noise, with a worst case over candidate faults. Neither complexity class here is defined by an expected sample budget.
+
+The lower bounds hold for arbitrary permitted pairs and do not require a simple graph. The upper bound assumes a simple graph, access to each candidate's endpoint pair, conductances $c_e\ge c_{\min}>0$, and maximum weighted degree
+\[
+ D=\max_{v\in V}\sum_{e\ni v}c_e.
+\]
+No genericity assumption on the conductances is needed. The cost counts observations, not preprocessing, arithmetic, or physical setup time.
+
+\section{A weighted information lower bound}
+For each edge define its electrical leverage $\tau_e$ and slack $s_e$ by
+\[
+ \tau_e=c_e b_e^{\mathsf T}L^+b_e,\qquad s_e=1-\tau_e.
+\]
+For nonbridges $0<s_e<1$; bridges have $s_e=0$. For the candidate set write
+\[
+ w_e=s_e^2,\qquad W_2=\sum_{e\in S}w_e,\qquad
+ w_{\max}=\max_{e\in S}w_e.
+\]
+The square in this weighting matches the Gaussian mean-shift information.
+
+\begin{lemma}[Electrical budget]\label{lem:budget}
+For a query $q$ and a nonbridge $e$, set
+\[
+ x_{qe}=\frac{R_q^e-R_q}{R_q},\qquad
+ T_{qe}=b_q^{\mathsf T}L^+b_e.
+\]
+Then $x_{qe}\ge0$ and
+\[
+ x_{qe}=\frac{c_eT_{qe}^2}{s_eR_q},\qquad
+ \sum_{e\in S}s_ex_{qe}\le1,\qquad
+ \sum_{e\in S}s_e^2x_{qe}^2\le1.
+\]
+Moreover $\sum_{e\in E}\tau_e=n-1$. If $S$ contains all nonbridges and $r=m-n+1$, then $W_2\ge r^2/m$.
+\end{lemma}
+\begin{proof}
+On $\one^\perp$, both $L$ and $L-c_eb_eb_e^{\mathsf T}$ are positive definite for a nonbridge deletion. The rank-one inverse formula gives
+\[
+ R_q^e-R_q=\frac{c_eT_{qe}^2}{1-c_eb_e^{\mathsf T}L^+b_e}.
+\]
+The energy identity is
+\[
+ \sum_{e\in E}c_eT_{qe}^2
+ =b_q^{\mathsf T}L^+LL^+b_q=R_q.
+\]
+Dividing by $R_q$ and retaining only candidates proves the first budget inequality. All its summands are nonnegative, so
+\[
+ \sum_{e\in S}(s_ex_{qe})^2
+ \le\left(\sum_{e\in S}s_ex_{qe}\right)^2\le1.
+\]
+The trace identity gives $\sum_e\tau_e=\tr(L^+L)=n-1$. The direct edge is a feasible unit-current route between its endpoints, so $R_e\le1/c_e$. An alternate path makes this inequality strict by splitting off a small positive current; for a bridge, the full current crosses that edge and $R_e=1/c_e$. Consequently $\sum_es_e=r$, including zero bridge slacks. Cauchy--Schwarz now yields $r^2\le m\sum_es_e^2=mW_2$.
+\end{proof}
+
+\begin{theorem}[Hard-budget lower bounds]\label{thm:lower}
+Every $\delta$-correct strategy of hard budget $t$ satisfies, in Model A,
+\[
+ t\ge 2\sigma^2\left[(W_2-w_{\max})\log(1/\delta)-W_2\log2\right].
+\]
+In Model B it satisfies
+\[
+ t\ge \frac{2\sigma^2}{1+2\sigma^2}
+ \left[(W_2-w_{\max})\log(1/\delta)-W_2\log2\right].
+\]
+A negative right side is vacuous. If $W_2\ge2w_{\max}$ and $\delta\le1/16$, the respective bounds simplify to
+\[
+ t\ge\frac{\sigma^2}{2}W_2\log(1/\delta),\qquad
+ t\ge\frac{\sigma^2}{2(1+2\sigma^2)}W_2\log(1/\delta).
+\]
+\end{theorem}
+\begin{proof}
+Run the same strategy, including its internal random seed, under a reference law $P_0$ that supplies intact observations $N(R_q,\sigma^2R_q^2)$. The intact network need not be an allowed hypothesis and no success requirement is imposed under $P_0$. Let $P_e$ denote the transcript law under fault $e$. Include the output in the transcript; pad an early stop to $t$ stages with a common dummy symbol, not physical measurements. The hard cap therefore bounds the number of active stages under the reference law as well.
+
+At each history the query-selection and stopping kernels are the same under all laws and contribute zero conditional relative entropy. The adaptive chain rule takes its expectation under $P_0$. In Model A the one-sample reverse relative entropy is
+\[
+ \KL\bigl(N(R_q,\sigma^2R_q^2)\,\|\,N(R_q^e,\sigma^2R_q^2)\bigr)
+ =\frac{x_{qe}^2}{2\sigma^2}.
+\]
+Thus Lemma~\ref{lem:budget}, applied pointwise to the query selected at each active stage, gives
+\[
+ \sum_{e\in S}w_e\KL(P_0\|P_e)
+ =\mathbb E_0\sum_{i\le t:\,i\text{ active}}
+   \sum_{e\in S}\frac{w_ex_{q_i e}^2}{2\sigma^2}
+ \le\frac{t}{2\sigma^2}.
+\]
+This uses one common distribution of histories for all candidates. It remains valid for randomized policies and repeated measurements. Gaussian densities are positive; histories of measure zero can be assigned arbitrary legal continuation rules.
+
+For each $e$, let $A_e$ be the event that the output is $e$, and set $p_e=P_0(A_e)$, $q_e=P_e(A_e)\ge1-\delta$. The events $A_e$ are disjoint, so $\sum_ep_e\le1$, even if a failure output is allowed. Binary data processing and the binary entropy bound $h(p)\le\log2$ imply
+\[
+ \KL(P_0\|P_e)\ge\kl(p_e,q_e),
+\]
+\[
+ \kl(p_e,q_e)=-h(p_e)-p_e\log q_e-(1-p_e)\log(1-q_e)
+ \ge(1-p_e)\log(1/\delta)-\log2.
+\]
+The inequality uses $q_e\ge1-\delta$ directly and does not assume $p_e\le q_e$. After multiplication by $w_e$ and summation, $\sum_ew_ep_e\le w_{\max}$ gives
+\[
+ \sum_ew_e\KL(P_0\|P_e)
+ \ge(W_2-w_{\max})\log(1/\delta)-W_2\log2.
+\]
+Combining the two estimates proves the Model A bound.
+
+For Model B the reference law is unchanged. With $x=x_{qe}\ge0$, the reverse one-sample relative entropy equals
+\[
+ k_\sigma(x)=\log(1+x)+\frac{1+x^2/\sigma^2}{2(1+x)^2}-\frac12.
+\]
+Write $u(x)=\log(1+x)+1/[2(1+x)^2]-1/2$. Then $u(0)=0$ and
+\[
+ u'(x)=\frac{x(2+x)}{(1+x)^3}\le2x.
+\]
+Integration gives $u(x)\le x^2$, and the remaining mean-shift term is at most $x^2/(2\sigma^2)$. Hence
+\[
+ k_\sigma(x)\le\left(1+\frac{1}{2\sigma^2}\right)x^2.
+\]
+The weighted chain rule is now bounded by $t(1+1/(2\sigma^2))$. The same output-event argument proves the Model B bound. Finally, $W_2-w_{\max}\ge W_2/2$ and $\log(1/\delta)\ge4\log2$ make the common bracket at least $W_2\log(1/\delta)/4$, proving both simplifications.
+\end{proof}
+
+The reference-law argument is a hard-budget argument. An expected stopping-time guarantee under the fault laws alone does not bound $\mathbb E_0T$ and cannot be substituted into this proof. A policy capped almost surely under every fault can instead be truncated at that cap on all histories without changing its fault-law guarantees.
+
+\section{A nonadaptive lower bound from weighted entropy}\label{sec:nonadaptive-lower}
+The electrical budget also yields a sharper obstruction for a preselected measurement schedule. Define the fault prior and its entropy by
+\[
+ p_e=\frac{w_e}{W_2},\qquad
+ H(p)=-\sum_{e\in S}p_e\log p_e,\qquad
+ h(u)=-u\log u-(1-u)\log(1-u),
+\]
+with the usual convention $0\log0=0$. These $p_e$ are prior probabilities; the output-event probabilities in the preceding proof were local to that argument. Since $0<w_e\le1$, we have $p_e\le1/W_2$.
+
+\begin{theorem}[Weighted entropy bound]\label{thm:nonadaptive}
+Every nonadaptive $\delta$-correct strategy of hard budget $t$ satisfies, in Model A,
+\[
+ t\ge2\sigma^2W_2\left[H(p)-h(\delta)-\delta\log(M-1)\right],
+\]
+and, in Model B,
+\[
+ t\ge\frac{2\sigma^2}{1+2\sigma^2}W_2
+       \left[H(p)-h(\delta)-\delta\log(M-1)\right].
+\]
+These inequalities hold for $0<\delta\le1-1/M$; a negative right side is vacuous. They cover randomized fault-independent schedules and data-dependent early stopping along a preselected schedule as defined in Section~\ref{sec:model}. They require neither a degree bound nor endpoint-query access.
+\end{theorem}
+\begin{proof}
+Let $U$ include all private randomization, including decoder randomization. It is independent of the fault. Pad the seed-dependent planned schedule with arbitrary legal queries to length $t$. Given $U=u$, generate all $t$ independent potential samples. If the original strategy stops early, its output depends only on the corresponding prefix of this full data. Thus the full experiment reproduces its decision and can only make decoding easier. Padding here is for analysis, not a claim that the stopped strategy takes additional physical samples.
+
+Let $P_e^u$ be the law of these $t$ samples under fault $e$, and let $P_0^u$ supply intact reference observations $N(R_q,\sigma^2R_q^2)$ along the same fixed schedule. The intact graph need not be an admissible fault. Product additivity of relative entropy gives
+\[
+ \KL(P_e^u\|P_0^u)=\sum_{i=1}^t d_\sigma(x_{q_i(u),e}).
+\]
+In Model A, the forward one-sample relative entropy is $d_\sigma(x)=x^2/(2\sigma^2)$. In Model B the Gaussian formula gives exactly
+\[
+ \begin{aligned}
+ d_\sigma(x)
+ &= -\log(1+x)+\frac{(1+x)^2+x^2/\sigma^2}{2}-\frac12\\
+ d_\sigma(x)&= x-\log(1+x)+\frac{x^2}{2}+\frac{x^2}{2\sigma^2}.
+ \end{aligned}
+\]
+For $x\ge0$, the function $x^2/2-x+\log(1+x)$ vanishes at zero and has derivative $x^2/(1+x)\ge0$. Hence $x-\log(1+x)\le x^2/2$ and, in both models,
+\[
+ d_\sigma(x)\le C_\sigma x^2,\qquad
+ C_\sigma=
+ \begin{cases}
+ (2\sigma^2)^{-1},&\text{Model A},\\
+ 1+(2\sigma^2)^{-1},&\text{Model B}.
+ \end{cases}
+\]
+This is forward relative entropy. The adaptive lower bound in Theorem~\ref{thm:lower} instead used reverse relative entropy. In Model B, both directions admit the displayed quadratic upper constant, although their exact formulas differ.
+
+Draw the fault $F$ from the nonuniform prior $p$, independently of $U$, and put $P_p^u=\sum_ep_eP_e^u$. Write $Z=(U,Y_1,\ldots,Y_t)$ for the full data including the seed. The reference-mixture identity is
+\[
+ \sum_ep_e\KL(P_e^u\|P_0^u)
+ =I(F;Y_1,\ldots,Y_t\mid U=u)+\KL(P_p^u\|P_0^u).
+\]
+It follows by writing the log density ratio as
+\[
+ \log\frac{dP_e^u}{dP_0^u}
+ =\log\frac{dP_e^u}{dP_p^u}+\log\frac{dP_p^u}{dP_0^u}
+\]
+and averaging first over $P_e^u$ and then over $p$. Drop the nonnegative mixture term. Since $F$ and $U$ are independent, Lemma~\ref{lem:budget} now gives
+\[
+ \begin{aligned}
+ I(F;Z)
+ &\le\mathbb E_U\sum_ep_e\KL(P_e^U\|P_0^U)\\
+ I(F;Z)&\le\frac{C_\sigma}{W_2}\mathbb E_U
+       \sum_{i=1}^t\sum_ew_ex_{q_i(U),e}^2\\
+ I(F;Z)&\le\frac{tC_\sigma}{W_2}.
+ \end{aligned}
+\]
+This conditioning argument allows an arbitrary random seed, not just a finite-valued seed. It does not assert that a particular deterministic seed has small worst-case error.
+
+For completeness, apply the classical nonuniform form of Fano's inequality. Let $\widehat F$ be the original decision computed from its possibly stopped prefix. Replace any failure symbol by a fixed candidate, which cannot increase the error. Let $J=\mathbf 1\{\widehat F\ne F\}$ and let $\varepsilon=\Pr(J=1)\le\delta$ be the Bayes error. Given $Z$ and $J=0$, the fault is determined. Given $Z$ and $J=1$, it has at most $M-1$ possible values. Consequently
+\[
+ \begin{aligned}
+ H(F\mid Z)
+ &\le H(J\mid Z)+H(F\mid J,Z)\\
+ H(F\mid Z)&\le h(\varepsilon)+\varepsilon\log(M-1)\\
+ H(F\mid Z)&\le h(\delta)+\delta\log(M-1).
+ \end{aligned}
+\]
+The last step uses monotonicity of $h(u)+u\log(M-1)$ on $[0,1-1/M]$. No uniform prior is assumed. It follows that
+\[
+ I(F;Z)\ge H(p)-h(\delta)-\delta\log(M-1).
+\]
+Combine the information upper and lower bounds and substitute the two values of $C_\sigma$.
+\end{proof}
+
+The common preselected schedule is essential. For an adaptive schedule, forward relative entropy averages each candidate's expenditure under that candidate's own history law. Those laws differ, so the pointwise electrical budget cannot be summed in the preceding manner. Theorem~\ref{thm:nonadaptive} therefore does not cover data-dependent allocation, skipping, or reordering, including sequential tests performed in a fixed candidate order.
+
+\begin{corollary}[Nonadaptive graph size obstruction]\label{cor:nonadaptive-size}
+Suppose all nonbridges are candidates and $r\ge\gamma m$ for fixed $0<\gamma\le1$. If
+\[
+ m\ge m_0(\gamma):=
+ \exp\left[\frac{16}{7}\left(\log2-2\log\gamma\right)\right],
+\]
+then uniformly for $0<\delta\le1/16$, every nonadaptive $\delta$-correct strategy satisfies
+\[
+ \begin{aligned}
+ \text{Model A:}\quad t&\ge\sigma^2\gamma^2m\log m,\\
+ \text{Model B:}\quad t&\ge\frac{\sigma^2\gamma^2}{1+2\sigma^2}m\log m.
+ \end{aligned}
+\]
+\end{corollary}
+\begin{proof}
+Lemma~\ref{lem:budget} gives $W_2\ge\gamma^2m$. Since $w_e\le1$, each $p_e\le1/W_2$, and therefore
+\[
+ H(p)=\sum_ep_e\log(1/p_e)\ge\log W_2
+ \ge\log m+2\log\gamma.
+\]
+Also $M\le m$, $h(\delta)\le\log2$, and $\delta\le1/16$. Thus the bracket in Theorem~\ref{thm:nonadaptive} is at least
+\[
+ \frac{15}{16}\log m+2\log\gamma-\log2
+ \ge\frac12\log m,
+\]
+where the stated threshold ensures the last inequality. Substitute this and $W_2\ge\gamma^2m$ into that theorem.
+\end{proof}
+
+The threshold is independent of $\delta$ and $\sigma$ and is deliberately conservative. On general graphs $\log W_2$ may be negative; the finite weighted-entropy theorem remains valid, but this simplification then provides no generic $\log m$ conclusion. Linear cycle rank supplies the required spread of prior mass.
+
+\section{Directed separation from leverage order}
+Assume now the simple-graph, degree, conductance, and endpoint-access conditions of Section~\ref{sec:model}. The following proof gives the precise one-sided separation needed by the sequential procedure. Pairwise distinguishability at an unspecified query would not suffice.
+
+\begin{lemma}[Ordered endpoint separation]\label{lem:ordered}
+Suppose $G$ is simple, $c_e\ge c_{\min}$, and its maximum weighted degree is at most $D$. Put
+\[
+ \eta=\frac{3c_{\min}^3}{8D^3},\qquad
+ g=\frac{2\eta}{1+\eta}.
+\]
+Order candidates $e_1,\ldots,e_M$ by nonincreasing $\tau_e$, with ties fixed before sampling. Let $q_i$ be the endpoints of $e_i$ and let
+\[
+ H_i=R_{q_i}^{e_i}=\frac{R_{q_i}}{1-\tau_{e_i}}.
+\]
+Then $0<g<1$, and for every $i<j$,
+\[
+ \frac{H_i-R_{q_i}^{e_j}}{H_i+R_{q_i}^{e_j}}\ge\eta,
+ \qquad \frac{R_{q_i}^{e_j}}{H_i}\le1-g.
+\]
+Under either noise model, $X=Y/H_i$ has mean $1$ under $e_i$, mean at most $1-g$ under any later $e_j$, and variance at most $\sigma^2$ in these cases.
+\end{lemma}
+\begin{proof}
+Take distinct candidates $e,f$ with $\tau_e\ge\tau_f$. Define
+\[
+ R_e=b_e^{\mathsf T}L^+b_e,\quad R_f=b_f^{\mathsf T}L^+b_f,\quad
+ T=b_e^{\mathsf T}L^+b_f,\quad \kappa=\frac{T^2}{R_eR_f}.
+\]
+Write $\beta_e=\tau_e/(1-\tau_e)$ and $\beta_f=\tau_f/(1-\tau_f)$, so $\beta_e\ge\beta_f$. At the endpoints of $e$, the two fault responses are $R_e(1+\beta_e)$ and $R_e(1+\beta_f\kappa)$. Since $0\le\kappa\le1$,
+\[
+ \frac{\beta_e-\beta_f\kappa}{2+\beta_e+\beta_f\kappa}
+ \ge\frac{\beta_e(1-\kappa)}{2+2\beta_e}
+ =\frac{\tau_e(1-\kappa)}2.
+\]
+Every nonzero eigenvalue of $L$ is at most $2D$, so $L^+\succeq(2D)^{-1}I$ on $\one^\perp$. The $2$ by $2$ Gram matrix of $b_e,b_f$ in this quadratic form therefore dominates $(2D)^{-1}$ times their Euclidean Gram matrix. The latter has determinant $3$ when the edges share an endpoint and $4$ when they are disjoint. Positivity and determinant monotonicity give
+\[
+ R_eR_f-T^2\ge\frac{3}{4D^2}.
+\]
+Also $R_e\le1/c_e$, $R_f\le1/c_f$, and $R_e\ge\|b_e\|^2/(2D)=1/D$. It follows that
+\[
+ 1-\kappa\ge\frac{3c_ec_f}{4D^2},\qquad
+ \tau_e\ge\frac{c_e}{D},\qquad
+ \frac{\tau_e(1-\kappa)}2\ge\eta.
+\]
+Rearranging the resulting relative-gap bound gives the response ratio $(1-\eta)/(1+\eta)=1-g$. Since $c_{\min}\le D$, we have $0<\eta\le3/8<1$, hence $0<g<1$.
+
+For the variance assertion, Model A gives $\Var(X)=\sigma^2(R_{q_i}/H_i)^2\le\sigma^2$. Model B gives $\Var(X)=\sigma^2(R_{q_i}^{e_j}/H_i)^2\le\sigma^2$ for $j>i$, and exactly $\sigma^2$ for $j=i$. Its variance need not have this bound under an earlier fault. No such bound is used below.
+\end{proof}
+
+\section{A nonadaptive strategy by endpoint repetitions}\label{sec:nonadaptive-upper}
+The ordered separation lemma also supplies a simple fixed-design upper bound. For every two different candidates, query the endpoints of the earlier one in leverage order. Their two responses at that pair have symmetric relative gap at least $\eta$. Hence the dictionary of all $M$ candidate endpoint queries separates every pair in this quantitative sense.
+
+\begin{theorem}[Nonadaptive upper bound]\label{thm:nonadaptive-upper}
+Under the assumptions of Lemma~\ref{lem:ordered}, with every candidate endpoint query permitted, both models admit a nonadaptive $\delta$-correct strategy with hard budget
+\[
+ T_{\mathrm{fixed}}=M\max\left\{1,
+ \ceil{8\sigma^2\eta^{-2}\log(2M/\delta)}\right\}.
+\]
+\end{theorem}
+\begin{proof}
+Set $\alpha=\eta/2$ and take
+\[
+ k=\max\left\{1,\ceil{8\sigma^2\eta^{-2}\log(2M/\delta)}\right\}
+\]
+independent samples at each candidate endpoint pair. This entire schedule, including repetitions, is fixed before observations. For a query $q$, write $\overline Y_q$ for its sample mean. Under any true fault $e$, its variance is at most $\sigma^2(R_q^e)^2/k$: this is equality in Model B and follows from $R_q\le R_q^e$ in Model A. The Gaussian tail bound gives
+\[
+ \Pr_e\left\{|\overline Y_q-R_q^e|>\alpha R_q^e\right\}
+ \le2\exp\left(-\frac{k\alpha^2}{2\sigma^2}\right)
+ \le\frac\delta M.
+\]
+A union bound shows that all queried sample means lie in their true-fault intervals with probability at least $1-\delta$.
+
+Output the unique candidate $f$ satisfying
+\[
+ |\overline Y_q-R_q^f|\le\alpha R_q^f
+ \quad\text{for every queried endpoint pair }q.
+\]
+If no unique compatible candidate exists, output any fixed candidate. On the preceding good event the true fault is compatible. Suppose two candidates $e,f$ were both compatible. At their separating endpoint pair, the triangle inequality would imply
+\[
+ |R_q^e-R_q^f|\le\alpha(R_q^e+R_q^f),
+\]
+contradicting the relative gap at least $\eta>\alpha$. Thus compatibility is unique on the good event, proving the error bound. The sample count is the deterministic product $Mk$.
+\end{proof}
+
+This construction will match the nonadaptive lower order. It does not adapt its sample allocation. The sequential procedure in the next section uses fewer samples at many rejected candidates and belongs to the adaptive class even though its candidate order is fixed.
+
+\section{A sequential strategy with a hard cap}\label{sec:upper}
+Maintain the fixed leverage ordering and notation of Lemma~\ref{lem:ordered}. Define the positive drift scale and thresholds
+\[
+ a=\frac{g^2}{2\sigma^2},\qquad
+ B=\log(4/\delta),\qquad A=\log(4M/\delta),
+\]
+\[
+ H=(M-1)B+A=MB+\log M.
+\]
+At candidate $i$, reset a score $Z=0$. Repeatedly query $q_i$, normalize each sample as $X=Y/H_i$, and add
+\[
+ \ell(X)=\frac{g}{\sigma^2}\left(X-1+\frac g2\right)
+\]
+to $Z$. If $Z\ge A$, output $e_i$ and stop. If $Z\le-B$, reject that candidate and move to $i+1$. If every candidate is rejected, output any fixed candidate. Impose the global sample cap
+\[
+ T_{\mathrm{cap}}=
+ \ceil{2M+\frac{2H}{a}
+       +\frac{32}{a}\left(M\log2+\log\frac2\delta\right)}.
+\]
+On reaching this cap, stop on every history and output any fixed candidate unless the last permitted sample has already produced a decision. Thus the cap is deterministic by construction.
+
+\begin{theorem}[Adaptive upper bound]\label{thm:upper}
+Under either Model A or Model B, the preceding strategy is $\delta$-correct. In particular,
+\[
+ T^*_{\mathrm A}(\delta),\ T^*_{\mathrm B}(\delta)
+ \le T_{\mathrm{cap}}
+ =O\left(M\left[1+\frac{\sigma^2}{\eta^2}\right]\log\frac4\delta\right).
+\]
+The constant in this upper estimate is absolute. The bound holds for every positive weighting satisfying the stated degree and conductance conditions.
+\end{theorem}
+
+We give the decision-error and duration arguments separately. This distinction avoids converting an expected-cost bound into an unproved hard-budget claim.
+
+\subsection{Decision errors}
+Fix the true candidate $e_j$. For each preceding candidate $i<j$, Lemma~\ref{lem:ordered} gives Gaussian increments with
+\[
+ \mathbb E\ell\le-a,\qquad \Var(\ell)\le2a,\qquad
+ \mathbb E e^{\ell}=e^{\mathbb E\ell+\Var(\ell)/2}\le1.
+\]
+At the true candidate $i=j$,
+\[
+ \mathbb E\ell=a,\qquad \Var(\ell)\le2a,\qquad
+ \mathbb E e^{-\ell}\le1.
+\]
+Consequently $e^Z$ is a nonnegative supermartingale on each false preceding test, and $e^{-Z}$ is one on the true test. Both start at one. The maximal inequality follows by stopping at the first crossing or a finite horizon and applying the supermartingale expectation inequality, then letting the horizon increase. It yields
+\[
+ \Pr(\text{false preceding score ever reaches }A)\le e^{-A}=\frac{\delta}{4M},
+\]
+\[
+ \Pr(\text{true score ever reaches }-B)\le e^{-B}=\frac\delta4.
+\]
+A union bound over at most $M-1$ false preceding tests and the true test bounds these decision errors by less than $\delta/2$. The bounds may be applied to independent, preassigned streams for every endpoint test, including tests that are never reached. Fresh sampling makes this construction equivalent to the physical observation law.
+
+The score $\ell$ is the exact log likelihood ratio for the boundary pair $N(1,\sigma^2)$ and $N(1-g,\sigma^2)$. For the actual fault-dependent distributions it is a robust score justified by the displayed exponential inequalities; it is not asserted to be their exact likelihood ratio. If Model B reaches a test after the true candidate, the true candidate has already been rejected, an event already counted as an error.
+
+\subsection{A discrete hitting time bound}
+\begin{lemma}[One-sided Gaussian hitting time]\label{lem:hitting}
+Let $U_1,U_2,\ldots$ be independent identically distributed Gaussian variables with mean $\mu\ge a>0$ and variance $v\le2a$. For $b>0$, put
+\[
+ T_b=\inf\left\{t\ge1:\sum_{k=1}^tU_k\ge b\right\},\qquad
+ d_b=\ceil{2b/a},\qquad \lambda=a/32.
+\]
+Then $T_b$ is finite almost surely and
+\[
+ \mathbb E\exp\bigl(\lambda(T_b-d_b-1)\bigr)\le2.
+\]
+\end{lemma}
+\begin{proof}
+For an integer $t$ with $at\ge2b$, failure to cross by $t$ implies the sum at $t$ is below $b$. The Gaussian tail bound therefore gives
+\[
+ \Pr(T_b>t)
+ \le\Pr\left(\sum_{k=1}^tU_k<b\right)
+ \le\exp\left(-\frac{(at-b)^2}{4at}\right)
+ \le e^{-at/16}.
+\]
+Crossing earlier and then returning below $b$ does not affect this one-way implication. The estimate tends to zero, proving almost-sure finiteness. If $E$ is exponential of rate $a/16$, then
+\[
+ T_b\ \le_{\mathrm{st}}\ d_b+1+E,
+\]
+where the notation means domination of upper tails. Indeed, for real $u\ge d_b+1$, the preceding estimate applies at $\floor{u}\ge d_b$ and
+\[
+ \Pr(T_b>u)\le e^{-a\floor{u}/16}
+ \le e^{-a(u-d_b-1)/16}.
+\]
+For smaller $u$, the dominating variable has tail one. Applying the increasing exponential function and using $\mathbb E e^{(a/32)E}=2$ proves the moment bound. No continuous-time approximation or overshoot estimate is needed.
+\end{proof}
+
+\subsection{Total duration and completion of the proof}
+Under true fault $e_j$, preassign mutually independent infinite Gaussian streams to all candidate endpoint tests. Revealing only the observations actually used reproduces fresh adaptive sampling exactly. For $i<j,$ let $T_i$ be the first time the hypothetical score $-Z_i$ reaches $B$. For $i=j,$ let $T_j$ be the first time $Z_j$ reaches $A$. Each signed stream has mean increment at least $a$ and variance at most $2a$. These hitting times are independent because they are functions of different streams.
+
+Every actual two-sided test stops no later than the corresponding one-sided hitting time, pathwise. On the event that no preceding candidate is accepted and the true candidate is not rejected, the uncapped procedure returns $e_j$ after at most $\sum_{i\le j}T_i$ samples. We do not condition the hitting times on this decision-success event.
+
+Set $b_i=B$ for $i<j$, $b_j=A$, and
+\[
+ D_j=\sum_{i\le j}\left(\ceil{2b_i/a}+1\right).
+\]
+Independence, Lemma~\ref{lem:hitting}, and Markov's inequality applied to the exponential give
+\[
+ \mathbb E\exp\left(\frac a{32}\left[\sum_{i\le j}T_i-D_j\right]\right)\le2^j,
+\]
+\[
+ \Pr\left\{\sum_{i\le j}T_i>D_j+
+ \frac{32}{a}\left[j\log2+\log\frac2\delta\right]\right\}\le\frac\delta2.
+\]
+Since $\ceil{x}\le x+1$,
+\[
+ D_j\le\frac{2[(j-1)B+A]}a+2j\le\frac{2H}a+2M.
+\]
+The remaining term is also no greater than its value at $j=M$. Thus $\Pr(\sum_{i\le j}T_i>T_{\mathrm{cap}})\le\delta/2$. Outside this duration event and the decision-error events, the capped strategy returns $e_j$. Its total error is at most
+\[
+ (M-1)\frac\delta{4M}+\frac\delta4+\frac\delta2<\delta.
+\]
+This proves the probability guarantee in Theorem~\ref{thm:upper} together with its deterministic cap.
+
+Using $H=MB+\log M$, $\log M\le M$, and $B\ge\log4$, we obtain
+\[
+ T_{\mathrm{cap}}\le1+2M+104M\sigma^2g^{-2}\log(4/\delta).
+\]
+Because $g\ge\eta$, this proves the stated rate. In particular, $\log M$ does not multiply $M$. The residual $2M$ term prevents a spurious zero-sample conclusion as $\sigma$ tends to zero.
+
+\section{Matching orders and the adaptivity gap}
+\begin{corollary}[Linear cycle rank]\label{cor:matching}
+Consider any family of connected weighted simple graphs for which
+\[
+ r=m-n+1\ge\gamma m,\qquad D/c_{\min}\le K,
+\]
+with fixed $\gamma>0$ and finite $K$. Let every nonbridge be a candidate and permit every candidate's endpoint query. For each fixed $\sigma>0$, both noise models satisfy, uniformly for $0<\delta\le1/16$ and all sufficiently large $m$,
+\[
+ T^*_{\mathrm A}(\delta)=\Theta\bigl(m\log(1/\delta)\bigr),\qquad
+ T^*_{\mathrm B}(\delta)=\Theta\bigl(m\log(1/\delta)\bigr).
+\]
+The hidden constants may depend on $\sigma$, $\gamma$, and $K$.
+\end{corollary}
+\begin{proof}
+Lemma~\ref{lem:budget} gives $W_2\ge r^2/m\ge\gamma^2m$, while $w_{\max}\le1$. Hence $W_2\ge2w_{\max}$ for sufficiently large $m$. Theorem~\ref{thm:lower} gives the respective explicit lower bounds
+\[
+ T^*_{\mathrm A}(\delta)\ge\frac{\sigma^2\gamma^2}2m\log(1/\delta),\qquad
+ T^*_{\mathrm B}(\delta)\ge\frac{\sigma^2\gamma^2}{2(1+2\sigma^2)}m\log(1/\delta).
+\]
+Also $M\le m$, $\eta\ge3/(8K^3)$, and $\log(4/\delta)\le(3/2)\log(1/\delta)$ when $\delta\le1/16$. Apply Theorem~\ref{thm:upper} for the matching upper order. For fixed positive $\sigma$, both lower prefactors are positive constants.
+\end{proof}
+
+\begin{theorem}[Sharp confidence dependent adaptivity gap]\label{thm:gap}
+Fix $0<\gamma\le1$, $K<\infty$, and $\sigma>0$. Consider connected weighted simple graphs with $m$ edges, cycle rank $r\ge\gamma m$, and $D/c_{\min}\le K$. Let all nonbridges be candidates and allow every candidate endpoint query. For either one of the two Gaussian models, let $A_\delta(G)$ and $N_\delta(G)$ be the least hard budgets for adaptive and nonadaptive $\delta$-correct identification, respectively. If
+\[
+ m\ge\max\{m_0(\gamma),\,2/\gamma^2\},
+\]
+then uniformly for $0<\delta\le1/16$,
+\[
+ \begin{aligned}
+ A_\delta(G)&=\Theta\left(m\log(1/\delta)\right),\\
+ N_\delta(G)&=\Theta\left(m[\log m+\log(1/\delta)]\right),\\
+ \frac{N_\delta(G)}{A_\delta(G)}
+ &=\Theta\left(1+\frac{\log m}{\log(1/\delta)}\right).
+ \end{aligned}
+\]
+The hidden positive constants may depend on $\gamma,K,\sigma$ and the chosen model, but not on $m$, $\delta$, or the particular graph. Nonadaptive includes randomized preselected schedules and early stopping along them, and excludes adaptive allocation.
+\end{theorem}
+\begin{proof}
+Corollary~\ref{cor:matching} proves the adaptive rate, with $m\ge2/\gamma^2$ ensuring $W_2\ge2w_{\max}$. Every nonadaptive strategy is also an adaptive strategy, so Theorem~\ref{thm:lower} gives its lower bound of order $m\log(1/\delta)$. Corollary~\ref{cor:nonadaptive-size} independently gives the order $m\log m$ lower bound. The inequality $\max\{a,b\}\ge(a+b)/2$ combines them. In particular, in Model A,
+\[
+ N_\delta(G)\ge\frac{\sigma^2\gamma^2}{4}
+ m[\log m+\log(1/\delta)],
+\]
+and in Model B,
+\[
+ N_\delta(G)\ge\frac{\sigma^2\gamma^2}{4(1+2\sigma^2)}
+ m[\log m+\log(1/\delta)].
+\]
+For the reverse bound, $M\le m$ and $\eta\ge3/(8K^3)$ in Theorem~\ref{thm:nonadaptive-upper}, so its deterministic budget is
+\[
+ O_{K,\sigma}\left(m[\log m+\log(1/\delta)]\right).
+\]
+The constants and the displayed graph-size threshold are independent of $\delta$ throughout the stated interval. Dividing the two uniform positive upper and lower orders proves the ratio formula.
+\end{proof}
+
+At fixed confidence $\delta\in(0,1/16]$, the sample advantage of adaptation is $\Theta(\log m)$. This factor is not uniform in confidence. If $\log(1/\delta)=o(\log m)$, the advantage grows like $\log m/\log(1/\delta)$. If $\delta=m^{-a}$ for fixed $a>0$, or if $\log(1/\delta)$ is still larger, the ratio is of constant order. The statement $\Theta(1)$ does not claim that its exact limit is one.
+
+These are minimax counts of individual physical samples, including repeated queries. They do not compare the number of distinct queried pairs, computational preprocessing, arithmetic precision, or expected stopping times. The sequential upper procedure has a predetermined candidate order but allocates samples using observed scores, so it is adaptive in precisely the sense excluded from the fixed-schedule lower bound.
+
+Connected cubic simple graphs have $r=m/3+1$, so bounded conductance ratios put them within this scope. Bounded degree alone does not ensure linear cycle rank: trees have $r=0$ and long cycles have $r=1$. Restricted terminal access preserves the lower bounds but can prevent the upper construction or make identification impossible.
+
+Several qualifications are material. The Model B lower prefactor saturates as $\sigma$ grows; the theorems do not assert uniform $\Omega(\sigma^2m\log(1/\delta))$ adaptive or $\Omega(\sigma^2m\log m)$ nonadaptive lower bounds for that model. For Model A, the displayed upper and lower bounds also match the $\sigma^2$ dependence when $\sigma$ is bounded away from zero and the geometric constants are fixed. Uniform small-noise optimality is not asserted for either experiment, and uniform large-noise optimality is not asserted for Model B.
+
+These are idealized Gaussian experiments: samples can be negative even though effective resistance is positive. The proofs assume a known baseline, calibrated noise, one fixed nonbridge deletion, independent fresh samples, and exact access to computed responses and leverages. Correlated or systematic error, uncertain intact weights, multiple faults, changing faults, bridge-induced disconnection, measurement quantization, and implementation precision require additional analysis.
+
+\section{Prior work and attribution}
+Fiedorowicz and Basu~\cite{FB} formulate the known-network single-edge deletion problem with scalar effective-resistance queries and analyze nonadaptive exact measurement sets. Their stated model is a direct antecedent of the hypothesis class studied here. Hoskins et al.~\cite{HMMT} study graph inference from incomplete or noisy effective-resistance information, including Gaussian noise; noisy resistance inference itself is therefore not a new subject. Their graph-learning objective differs from the known-baseline, single-deletion, hard-budget experiment above. Classical electrical energy and inverse identities underlie Lemmas~\ref{lem:budget} and~\ref{lem:ordered}; see Doyle and Snell~\cite{DS} for the electrical framework.
+
+The statistical lower-bound methods are established. Fano's inequality and the reference-mixture relative-entropy identity used in Theorem~\ref{thm:nonadaptive} are classical; the proof includes their required nonuniform-prior form and conditioning on randomized designs. Castro~\cite{Castro} uses a null-reference adaptive transcript, Gaussian information, and a sensing-energy budget to derive adaptive sensing lower bounds. Kaufmann, Capp\'e, and Garivier~\cite{KCG} provide a general adaptive change-of-measure inequality connecting observation allocations to binary-event relative entropy. The resistance-specific step here is the squared leverage-slack budget and its cycle-rank consequence, not a new KL chain rule or a new general adaptive-information technique.
+
+Sequential probability ratio testing is classical~\cite{Wald}. Malloy, Tang, and Nowak~\cite{MTN} analyze searches through multiple populations using successive sequential tests. Malloy and Nowak~\cite{MN} study coordinate-wise sequential testing and its dimension dependence in sparse recovery. These are close precedents for the asymmetric scan; generic removal of a logarithmic dimension factor by sequential testing is not claimed as new. Haupt, Castro, and Nowak~\cite{HCN} also establish adaptive sparse-recovery gains through selective sampling. The proposed graph-specific contribution here is the combination of leverage-slack weighting, the diffuse fault prior supplied by linear cycle rank, directed endpoint separation from leverage order, and matching adaptive and nonadaptive hard-budget orders. The weighted-prior proof is not a new form of Fano, and the logarithmic adaptivity phenomenon is not claimed as new in general. The stopping-time proof is included so that the hard cap does not rest on an expected-cost result from a different experiment. Specialist review and a broader literature comparison remain necessary before making a priority claim.
+
+\section{Numerical falsification checks}
+The new nonadaptive calculations were checked in floating-point arithmetic on all 626 connected labeled simple graphs with 3--5 vertices and at least two nonbridge candidates, using seeded positive conductances in $[0.4,1.6]$. Across 6,165 allowed vertex-pair queries, direct post-deletion pseudoinverses agreed with the perturbation formula to maximum normalized discrepancy below $9.8\times10^{-15}$. All 36,990 weighted forward-relative-entropy budget checks passed across six noise levels. Further tests covered 1,000 scalar Model B shifts, 500 highly uneven positive weight vectors for the entropy bound, and 500 parameter settings for the uniform-confidence threshold.
+
+The preceding adaptive work also checked the ordered endpoint separation on 626 graph instances and 7,602 ordered candidate pairs. These are numerical falsification tests, not exact proofs or certification of all designs. They do not establish Fano's inequality, randomized-schedule coverage, stopping-rule validity, or the hard-cap theorem. Those statements rest on the analytic arguments above. None of these computations certifies priority or replaces specialist review.
+
+\begin{thebibliography}{9}
+\bibitem{FB} B. Fiedorowicz and A. Basu. \emph{Identifying faulty edges in resistive electrical networks}. arXiv:2512.23527v3, 2 October 2026. \href{https://arxiv.org/abs/2512.23527v3}{Primary preprint}.
+\bibitem{HMMT} J. G. Hoskins, C. Musco, C. Musco, and C. E. Tsourakakis. \emph{Inferring Networks From Random Walk-Based Node Similarities}. Advances in Neural Information Processing Systems 31, 2018. \href{https://papers.neurips.cc/paper_files/paper/2018/hash/2f25f6e326adb93c5787175dda209ab6-Abstract.html}{Publisher record}.
+\bibitem{DS} P. G. Doyle and J. L. Snell. \emph{Random Walks and Electric Networks}. Mathematical Association of America, 1984. \href{https://math.dartmouth.edu/~doyle/docs/walkspdf/walks.pdf}{Author version}.
+\bibitem{Castro} R. M. Castro. \emph{Adaptive sensing performance lower bounds for sparse signal detection and support estimation}. Bernoulli 20(4), 2217--2246, 2014. \href{https://arxiv.org/abs/1206.0648}{Primary preprint}; \href{https://doi.org/10.3150/13-BEJ555}{publisher DOI}.
+\bibitem{KCG} E. Kaufmann, O. Capp\'e, and A. Garivier. \emph{On the Complexity of Best-Arm Identification in Multi-Armed Bandit Models}. Journal of Machine Learning Research 17(1), 1--42, 2016. \href{https://www.jmlr.org/beta/papers/v17/kaufman16a.html}{Publisher record}.
+\bibitem{Wald} A. Wald. \emph{Sequential Tests of Statistical Hypotheses}. Annals of Mathematical Statistics 16(2), 117--186, 1945. \href{https://doi.org/10.1214/aoms/1177731118}{Publisher DOI}.
+\bibitem{MTN} M. L. Malloy, G. Tang, and R. D. Nowak. \emph{The Sample Complexity of Search over Multiple Populations}. arXiv:1209.1380v2, 2013. \href{https://arxiv.org/abs/1209.1380}{Primary preprint}; \href{https://doi.org/10.1109/TIT.2013.2258071}{publisher DOI}.
+\bibitem{MN} M. L. Malloy and R. Nowak. \emph{Sequential Testing for Sparse Recovery}. arXiv:1212.1801v2, 2014. \href{https://arxiv.org/abs/1212.1801}{Primary preprint}.
+\bibitem{HCN} J. Haupt, R. Castro, and R. Nowak. \emph{Distilled sensing: selective sampling for sparse signal recovery}. Proceedings of the Twelfth International Conference on Artificial Intelligence and Statistics, PMLR 5, 216--223, 2009. \href{https://proceedings.mlr.press/v5/haupt09a.html}{Publisher record}.
+\end{thebibliography}
+\end{document}

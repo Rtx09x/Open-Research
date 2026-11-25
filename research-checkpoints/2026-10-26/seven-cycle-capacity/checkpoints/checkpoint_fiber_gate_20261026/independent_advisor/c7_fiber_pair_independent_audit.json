@@ -1,0 +1,15 @@
+{
+  "verified": true,
+  "certificate_sha256": "c251119f52e7123b6fa27c8e0434836334779ff119694701dff9e500c210a8a3",
+  "instance_sha256": "615f7afc1578432a663992b25c0419cf80e66cafa09e5e37ce63e74dcc022c08",
+  "physical_dimension": 10,
+  "base_cardinality": 118336,
+  "self_crossing_upper": 135138,
+  "disjoint_pairs": 35,
+  "additional_deficit": 78,
+  "upper": 135060,
+  "target": 135093,
+  "cover_witnesses": 118,
+  "seconds": 0.1577742099761963,
+  "scope": "Fixed B,P,X two-direction variable fibers only; no unrestricted capacity upper and no optimality claim for the matching."
+}

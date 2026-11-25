@@ -1,0 +1,1 @@
+{"passed": true, "rejected_mutations": ["wrong_numerator", "uncovered_objective", "negative_dual_weight", "invalid_CG_divisor", "nonclique_geometry"]}

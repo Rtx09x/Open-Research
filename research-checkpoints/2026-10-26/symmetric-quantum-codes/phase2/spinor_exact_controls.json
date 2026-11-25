@@ -1,0 +1,27 @@
+{
+  "coherent": {
+    "rankT": 18,
+    "rankS": 1,
+    "e3": "0",
+    "cubic_branch": "0",
+    "orientation_F": "0",
+    "traceS": "18"
+  },
+  "m_zero": {
+    "rankT": 18,
+    "rankS": 2,
+    "e3": "0",
+    "cubic_branch": "0",
+    "orientation_F": "0",
+    "traceS": "180"
+  },
+  "rank3_generic_rational_q": {
+    "rankT": 18,
+    "rankS": 2,
+    "e3": "0",
+    "cubic_branch": "0",
+    "orientation_F": "0",
+    "traceS": "6532/361"
+  },
+  "elapsed_seconds": 0.08007097244262695
+}

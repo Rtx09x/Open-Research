@@ -1,0 +1,14 @@
+{
+  "README.md": "51a2998f70f822f81e1dbd6411ea20570998051f1d700e7805772dfd4b9ab357",
+  "advisor/check_c7_multireservoir_independent.json": "e1b9f5df52b183e981d2dfe856273045453391c0c4a27c95f40728635f6854de",
+  "advisor/check_c7_multireservoir_independent.py": "dc8d1977d60452e0e92d9016c42238319756e5e3108139876a817680033c2967",
+  "advisor/check_c7_multireservoir_portable.py": "f19e4227f841b74dae4ddc1117661da44e38aeb43872e220bae36e891b001bd2",
+  "physical_iteration/multireservoir_final_audit.json": "ae943bf9a32092fecd3d6fd3c316e3af8dbbf1c69dd1987d28cad2bd46964412",
+  "physical_iteration/multireservoir_gate_proof.md": "af70366279faed1b89f4a62103e4b4e7828defef16caabb72b951e61a799be0b",
+  "physical_iteration/multireservoir_model.md": "f0082f094ea2f5f05000dacff8adbc760486b336b05f149699e6565a9557c516",
+  "physical_iteration/multireservoir_repaired_cover_full.json.gz": "1560f166ec9f804319b1713c7f686b23d17d8fb91f5630db9abb96c6c079c4a3",
+  "physical_iteration/verify_multireservoir_final.py": "1df21547f7c9e7b7268f8ce3309ebfa279cc82e8ed08a9fd1e1cf1e429bb13b5",
+  "published/LICENSE": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4",
+  "published/NOTICE": "359e841fec992d2e6df7c44e4e700f94fd1241673a1e10efe15b6dd1787e3a7d",
+  "published/data/base_c7.json": "2395d9ce16e068010a5f2a57f3fbfec5a607fa9272b02afd6c9e4a95fc70016b"
+}

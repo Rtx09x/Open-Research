@@ -1,0 +1,22 @@
+{
+  "n": 6,
+  "complete": true,
+  "maximum_code_size": 10,
+  "incumbent_size": 10,
+  "vt_size": 10,
+  "witness": [
+    "111100",
+    "101010",
+    "111111",
+    "110000",
+    "110011",
+    "010001",
+    "011101",
+    "001100",
+    "001011",
+    "000000"
+  ],
+  "search_nodes": 100,
+  "seconds": 0.001501037999332766,
+  "method": "exact maximum clique on compatibility graph; each coloring class is an upper-bound conflict clique"
+}

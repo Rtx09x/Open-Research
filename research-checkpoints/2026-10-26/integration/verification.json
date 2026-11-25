@@ -1,0 +1,292 @@
+{
+  "utc_started": "2026-10-25T20:24:50.341210+00:00",
+  "python": "3.12.14 (main, Aug 25 2026, 14:00:49) [Clang 22.1.3 ]",
+  "platform": "Linux-6.18.55-x86_64-with-glibc2.41",
+  "mode": "full",
+  "network_used": false,
+  "limits": {
+    "address_space_bytes": 2147483648,
+    "cpu_seconds_per_check": 300,
+    "blas_threads": 1,
+    "concurrent_checks": 1
+  },
+  "checks": [
+    {
+      "track": "deletion-code-optimality",
+      "command": "python scripts/baseline.py 12",
+      "scope": "baseline reconstruction",
+      "returncode": 0,
+      "output": "{\n  \"n\": 12,\n  \"size\": 316,\n  \"deletion_outputs_covered\": 2048,\n  \"total_outputs\": 2048,\n  \"independent_string_check\": true,\n  \"degree_counts\": {\n    \"2\": 72,\n    \"3\": 288,\n    \"4\": 556,\n    \"5\": 808,\n    \"6\": 830,\n    \"7\": 764,\n    \"8\": 336,\n    \"9\": 108,\n    \"10\": 14,\n    \"11\": 4\n  },\n  \"run_counts\": {\n    \"1\": 2,\n    \"3\": 10,\n    \"4\": 20,\n    \"5\": 60,\n    \"6\": 70,\n    \"7\": 64,\n    \"8\": 54,\n    \"9\": 26,\n    \"10\": 8,\n    \"11\": 2\n  },\n  \"sha256\": \"738e49ed18d9601031104fd94b72bee32a02320f4951d4979e9993713fb4fca2\"\n}\n",
+      "passed": true,
+      "wall_seconds": 0.261
+    },
+    {
+      "track": "deletion-code-optimality",
+      "command": "python scripts/small_exact_control.py --n 6",
+      "scope": "small exact positive control",
+      "returncode": 0,
+      "output": "{\n  \"n\": 6,\n  \"complete\": true,\n  \"maximum_code_size\": 10,\n  \"incumbent_size\": 10,\n  \"vt_size\": 10,\n  \"witness\": [\n    \"111100\",\n    \"101010\",\n    \"111111\",\n    \"110000\",\n    \"110011\",\n    \"010001\",\n    \"011101\",\n    \"001100\",\n    \"001011\",\n    \"000000\"\n  ],\n  \"search_nodes\": 100,\n  \"seconds\": 0.001439288000256056,\n  \"method\": \"exact maximum clique on compatibility graph; each coloring class is an upper-bound conflict clique\"\n}\n",
+      "passed": true,
+      "structured_result_checked": true,
+      "wall_seconds": 0.034
+    },
+    {
+      "track": "deletion-code-optimality",
+      "command": "python scripts/trades.py --n 6 --k 2 --seconds 30",
+      "scope": "known neutral-switch positive control",
+      "returncode": 0,
+      "output": "{\"removed_count\": 1, \"connected_supports\": 2, \"sha256\": \"ffc22fec512b91211c1d8bf3777304fa89db911d3cf8c23f97c5b6637e4a2b0a\"}\n{\"removed_count\": 2, \"connected_supports\": 8, \"sha256\": \"dafbb41406074184a9840877063d874e7c271b6f951d69e7ba0496549f4548d0\"}\n{\n  \"complete\": true,\n  \"n\": 6,\n  \"k\": 2,\n  \"connected_supports\": [\n    {\n      \"removed_count\": 1,\n      \"connected_supports\": 2,\n      \"sha256\": \"ffc22fec512b91211c1d8bf3777304fa89db911d3cf8c23f97c5b6637e4a2b0a\"\n    },\n    {\n      \"removed_count\": 2,\n      \"connected_supports\": 8,\n      \"sha256\": \"dafbb41406074184a9840877063d874e7c271b6f951d69e7ba0496549f4548d0\"\n    }\n  ],\n  \"checked\": 10,\n  \"eligible_improvement_tests\": 0,\n  \"positive\": [],\n  \"neutral_examples\": [\n    {\n      \"removed\": [\n        11\n      ],\n      \"added\": [\n        7\n      ]\n    },\n    {\n      \"removed\": [\n        52\n      ],\n      \"added\": [\n        56\n      ]\n    }\n  ],\n  \"seconds\": 0.00048610600060783327,\n  \"claim\": \"No improving trade removing at most 2 words of VT0(6)\"\n}\n",
+      "passed": true,
+      "structured_result_checked": true,
+      "wall_seconds": 0.254
+    },
+    {
+      "track": "symmetric-quantum-codes",
+      "command": "python tests/check_quantum_farkas.py",
+      "scope": "exact certificate",
+      "returncode": 0,
+      "output": "[\n  {\n    \"n\": 9,\n    \"d\": 5,\n    \"exact_farkas_valid\": true\n  },\n  {\n    \"n\": 10,\n    \"d\": 5,\n    \"exact_farkas_valid\": true\n  },\n  {\n    \"n\": 11,\n    \"d\": 5,\n    \"exact_farkas_valid\": true\n  },\n  {\n    \"n\": 12,\n    \"d\": 5,\n    \"exact_farkas_valid\": true\n  },\n  {\n    \"n\": 13,\n    \"d\": 5,\n    \"exact_farkas_valid\": true\n  },\n  {\n    \"n\": 14,\n    \"d\": 5,\n    \"exact_farkas_valid\": true\n  },\n  {\n    \"n\": 15,\n    \"d\": 5,\n    \"exact_farkas_valid\": true\n  },\n  {\n    \"n\": 16,\n    \"d\": 5,\n    \"exact_farkas_valid\": true\n  },\n  {\n    \"n\": 17,\n    \"d\": 5,\n    \"exact_farkas_valid\": true\n  }\n]\n",
+      "passed": true,
+      "wall_seconds": 0.056
+    },
+    {
+      "track": "symmetric-quantum-codes",
+      "command": "python tests/check_quantum_gram_bound.py",
+      "scope": "exact certificate",
+      "returncode": 0,
+      "output": "{\n  \"coefficients\": [\n    \"9/19\",\n    \"91/285\",\n    \"288199/1187025\",\n    \"33176/237405\",\n    \"10120/142443\"\n  ],\n  \"dual_certificate\": \"exactly verified\",\n  \"upper_bound\": \"1/722\",\n  \"strictly_below_singular_threshold\": true,\n  \"limitations\": \"Representation identity and scientific novelty require separate audit.\"\n}\n",
+      "passed": true,
+      "wall_seconds": 0.033
+    },
+    {
+      "track": "symmetric-quantum-codes",
+      "command": "python tests/audit_code19.py",
+      "scope": "exact certificate",
+      "returncode": 0,
+      "output": "{\n  \"exact\": true,\n  \"method\": \"independent stdlib rational polynomial/Jacobian/Hessian and reduced-Gram reconstruction\",\n  \"root_contraction\": true,\n  \"all_50_KL_reductions\": true,\n  \"eta_matches\": true,\n  \"L_matches\": true,\n  \"eta_float\": 2.6635894829537045e-66,\n  \"L_times_radius_float\": 1.9458912325014366e-36,\n  \"seconds\": 0.06445622444152832,\n  \"scope\": \"replication of known19 positive control, not new code\"\n}\n",
+      "passed": true,
+      "wall_seconds": 0.094
+    },
+    {
+      "track": "symmetric-quantum-codes",
+      "command": "python tests/audit_pure_complement.py",
+      "scope": "exact certificate",
+      "returncode": 0,
+      "output": "{\n  \"exact\": true,\n  \"method\": \"stdlib Fraction terminating hypergeometric transform; independent affine and rank verification\",\n  \"equality_rank\": 18,\n  \"lower\": \"133545301843278520173986684081/784303781203066926115600000000\",\n  \"upper\": \"23408350603368311128956445043/147056958975575048646675000000\",\n  \"lower_exceeds_upper\": true,\n  \"scope\": \"n18,d5,K2 with a1=a2=a3=a4=0 only\"\n}\n",
+      "passed": true,
+      "wall_seconds": 0.052
+    },
+    {
+      "track": "symmetric-quantum-codes",
+      "command": "python tests/audit_time_reversal.py",
+      "scope": "exact certificate",
+      "returncode": 0,
+      "output": "{\n  \"exact\": true,\n  \"method\": \"stdlib Fraction terminating hypergeometric transform\",\n  \"scope\": \"time-reversal-invariant code projector only; NOT real-Dicke amplitudes\",\n  \"necessary_weighted_odd_moment_lower_bound\": \"1\",\n  \"odd_moment_sum_lower_bound\": \"1311/1996\",\n  \"time_reversal_overlap_upper_bound\": \"860/499\"\n}\n",
+      "passed": true,
+      "wall_seconds": 0.039
+    },
+    {
+      "track": "symmetric-quantum-codes",
+      "command": "python tests/audit_robust_pure_gap.py",
+      "scope": "exact certificate",
+      "returncode": 0,
+      "output": "{\n  \"exact\": true,\n  \"short_Farkas_identity\": true,\n  \"analytic_argument\": \"HS self-adjoint twirl norm; rank-one Q MacWilliams identity; ||R-Q||F\\u00b2=2N\\u00b2nu; triangle/Cauchy-Schwarz\",\n  \"A_matches\": true,\n  \"w_matches\": true,\n  \"contradiction_bound\": \"3146129664606981651889659/7386807976480762375000000\",\n  \"necessary_strict_variance_lower_bound\": \"1/100000000\",\n  \"scope\": \"unrestricted hypothetical n18 code; weak structural bound, not exclusion; novelty unconfirmed\"\n}\n",
+      "passed": true,
+      "wall_seconds": 0.036
+    },
+    {
+      "track": "symmetric-quantum-codes",
+      "command": "python tests/audit_optimized_robust_gap.py",
+      "scope": "exact certificate",
+      "returncode": 0,
+      "output": "{\n  \"exact\": true,\n  \"all_complement_Farkas_identity\": true,\n  \"dual_rows\": 29,\n  \"nonnegative_inequalities\": 33,\n  \"analytic_argument\": \"Previously audited HS self-adjoint twirl norm argument; conservative 2sqrt(2)<=3\",\n  \"constant_bounds_verified\": true,\n  \"contradiction_bound\": \"65698050151273136192929353339197247938103421957111/67424635934883922686328359201262934851338400768000\",\n  \"necessary_strict_variance_lower_bound\": \"1/102400\",\n  \"scope\": \"unrestricted hypothetical n18 code; structural lower bound, not exclusion; novelty unconfirmed\"\n}\n",
+      "passed": true,
+      "wall_seconds": 0.044
+    },
+    {
+      "track": "symmetric-quantum-codes",
+      "command": "python tests/audit_gram_map_exact.py",
+      "scope": "exact certificate",
+      "returncode": 0,
+      "output": "{\n  \"n\": 18,\n  \"exact\": true,\n  \"method\": \"unnormalized spin-ladder tensor operators, commutators and HS norms; no 6j/Racah formula\",\n  \"c\": [\n    \"9/19\",\n    \"91/285\",\n    \"288199/1187025\",\n    \"33176/237405\",\n    \"10120/142443\"\n  ],\n  \"matches_worker\": true\n}\n",
+      "passed": true,
+      "wall_seconds": 0.541
+    },
+    {
+      "track": "hss-probe-reuse",
+      "command": "python verify_rational_potential.py",
+      "scope": "exact 4096-sign proof-route counterexample",
+      "returncode": 0,
+      "output": "PASS: independent exact rational verification over4096 sign choices.\nExpected final-level energy increase = 1332320221605268852341561872186637436659319/10388101485192678619556757712323030625000000\nDecimal (display only) = 0.128254447985936 elapsed seconds = 2.024\nScope: disproves the monotone-energy shortcut only; no counterexample to RE-02 or to the uniform-energy bound.\n",
+      "passed": true,
+      "wall_seconds": 2.057
+    },
+    {
+      "track": "hss-probe-reuse",
+      "command": "python verify_results.py",
+      "scope": "stored-result consistency, not independent regeneration",
+      "returncode": 0,
+      "output": "PASS: query counts, exact finite-sign identities, HSS rank checks, dependence controls, and failed-potential-route flags are consistent.\nNOT CLAIMED: full RE-02; dense fixed-basis variance theorem; exact arithmetic certification of floating-point spectra; novelty.\n",
+      "passed": true,
+      "wall_seconds": 0.027
+    },
+    {
+      "track": "hss-probe-reuse",
+      "command": "python exact_tree_test.py",
+      "scope": "finite exhaustive integer-valued NumPy controls",
+      "returncode": 0,
+      "output": "{'L': 1, 'n': 4, 'sign_assignments': 256, 'total_integer_squared_error': 15872, 'exact_expected_error': 62, 'identity_pass': True}\n{'L': 2, 'n': 8, 'sign_assignments': 65536, 'total_integer_squared_error': 23199744, 'exact_expected_error': 354, 'identity_pass': True}\n{'L': 1, 'n': 4, 'sharp_error': 4, 'tree_optimal_error': 1, 'full_HSS_optimal_error': 0, 'twenty_sign_trials_pass': True}\n{'L': 2, 'n': 8, 'sharp_error': 6, 'tree_optimal_error': 1, 'full_HSS_optimal_error': 0, 'twenty_sign_trials_pass': True}\n{'L': 4, 'n': 32, 'sharp_error': 10, 'tree_optimal_error': 1, 'full_HSS_optimal_error': 0, 'twenty_sign_trials_pass': True}\n{'L': 7, 'n': 256, 'sharp_error': 16, 'tree_optimal_error': 1, 'full_HSS_optimal_error': 0, 'twenty_sign_trials_pass': True}\n",
+      "passed": true,
+      "wall_seconds": 12.479
+    },
+    {
+      "track": "seven-cycle-capacity",
+      "command": "python verify_base.py",
+      "scope": "exact certificate",
+      "returncode": 0,
+      "output": "{\n  \"I0\": {\n    \"words\": 367,\n    \"dimension\": 5,\n    \"pair_comparisons\": 67161,\n    \"disjoint_cube_points\": 11744,\n    \"sha256\": \"2878df7a30e260db83f2e4b409ac2b92055a4f034ccca3c3f7efe54960bdfb2a\"\n  },\n  \"X\": {\n    \"words\": 367,\n    \"dimension\": 5,\n    \"pair_comparisons\": 67161,\n    \"disjoint_cube_points\": 11744,\n    \"sha256\": \"cff9b7c4f9a2c7a61cb826afc90e410623bb63b2b2f3683c789d7e5fdbbff6c0\"\n  }\n}\n",
+      "passed": true,
+      "wall_seconds": 0.118
+    },
+    {
+      "track": "seven-cycle-capacity",
+      "command": "python replay_wrapper.py",
+      "scope": "exact certificate",
+      "returncode": 0,
+      "output": "\nCertificate ledger (derived live from data/base_c7.json)\n--------------------------------------------------------\n  C1                27488   |J^+ \\ N(X_10^0)|\n  C2             12839823   |J_15 \\ N(X_15^{0,X})|\n  C3             14045805   |X_15 \\ N(X_15^{0,X})|\n  C4      841760069965664   |J_30^{++} \\ N(X_30^{0,L})|\n  q15            12872271   |J_15 \\ N(X_15^0)|\n\n  base gadget  pi(G5) = (367, 8, 367, 322, 26, 19)\n\nPublished baselines, recomputed from scratch\n--------------------------------------------\n  Gao [8]                  3.25878915390869101619676501552067694008291485058374\n  BPZ v1 [9]               3.25880536988546557258297503062380675385567149800296\n  BPZ v2 [10]              3.25882798592000703452647896579422134484566287064872\n\nThis paper\n----------\n  Section 3.1 (d = 200)    3.25882367442758194333443604377650938139598658004953\n  Theorem 2   (d = 500)    3.25883262035326630912153905181047543760538759432195\n\n  |I| in C_7^500 has 257 decimal digits\n\nTheorem 1 applications (codebooks used at each step)\n----------------------------------------------------\noutput                left            right           (j0, o0, h0, v0)                                   (jH, qH)                    (jV, qV)                    cert\nG15^het               G10             G5              (134689, 105709, 14490, 14490)                     (134753, 27488)             (134753, 27488)             C1,C1\nG15^{A,het}           G10^A           G5              (134689, 105709, 12236, 16744)                     (134753, 27488)             (134689, 28980)             C1\nG15^{D,het}           G10^D           sG5             (134689, 105709, 16744, 12236)                     (134689, 28980)             (134753, 27488)             C1\nG30^(6)               G15^X           G15^het         (49433743, 35275258, 6703815, 7454670)             (49495055, 12839823)        (49495055, 12839823)        C2,C2\nG25^(8)               G15^{A,X}       G10^D           (49432527, 35303606, 5948463, 8180458)             (49495055, 12839823)        (49495055, 12839823)        C2,C2\nG40^(8)               G15^{D,X}       G25^(8)         (49432527, 35303606, 8180458, 5948463)             (49433743, 14045805)        (49495055, 12839823)        C3,C2\nGhat30                G15^{A,X}       sigma(G15^{A,het}) (49432527, 35303606, 5948463, 8180458)             (49495055, 12839823)        (49430863, 14088465)        C2\nGhat25                G15^{A,X}       G10^D           (49432527, 35303606, 5948463, 8180458)             (49495055, 12839823)        (49433743, 14045805)        C2,C3\nG55                   G30^L           G25^R           (2444076335041121, 1435184942161465, 420235140891852, 588656251987804) (2455726444728097, 841760069965664) (2455726444728097, 841760069965664) C4,C4\n\nChecks against data/paper_claims.json\n-------------------------------------\n  all headline claims reproduce exactly\n  (run `python3 -m pytest tests` for the full check)\n",
+      "passed": true,
+      "wall_seconds": 76.048
+    },
+    {
+      "track": "seven-cycle-capacity",
+      "command": "python verify_weighted_terminal_independent.py",
+      "scope": "exact certificate",
+      "returncode": 0,
+      "output": "{\n  \"valid\": true,\n  \"label_words\": 2402,\n  \"label_length\": 8,\n  \"original_channel_dimension\": 1000,\n  \"pair_comparisons\": 2883601,\n  \"M\": 1153599067459632535054725600830065590361110314622553431306052629246795312544863843231869604563412171825481008359691953629422161638003572019627822178288590293111599649120187654106662460251880243792029639135003015371654600466879287832956539870909016872322264087041138476392598386408748583495599414052174278628112202921425671211707873365806578158921718155078427392614110268392668705216790308981487901566683403020450837881272247327333781716069110718432564537058185246823709537895350824252155182401147763379615618200961,\n  \"strictly_exceeds_published_square\": true,\n  \"certified_truncated_bound\": \"3.2588326205256572611311934895149315124207868954257033080668591747269859\",\n  \"sha256_code\": \"caf3e58301834d02e6aae17babf44c8fc7615bb63b070f86c91651c4d400e420\",\n  \"elapsed_seconds\": 5.104455803999372\n}\n",
+      "passed": true,
+      "wall_seconds": 5.168
+    },
+    {
+      "track": "seven-cycle-capacity",
+      "command": "python verify_recycled_certificate.py",
+      "scope": "exact certificate",
+      "returncode": 0,
+      "output": "{\n  \"verified\": true,\n  \"certificate\": \"recycled_terminal_certificate.json\",\n  \"dimension\": 128000,\n  \"certified_lower_bound\": \"3.258832624209610237867099424184\",\n  \"finite_family_checks\": true,\n  \"literal_S2a_admissible\": true,\n  \"exact_arithmetic_and_root_bracket\": true,\n  \"strict_rate_gain_over_published_construction\": true,\n  \"elapsed_seconds\": 10.04602912900009\n}\n",
+      "passed": true,
+      "wall_seconds": 10.119
+    },
+    {
+      "track": "seven-cycle-capacity",
+      "command": "python tests/audit_c7_optimized.py",
+      "scope": "exact certificate",
+      "returncode": 0,
+      "output": "{\n  \"exact\": true,\n  \"base_family_axioms\": true,\n  \"base_main_aux_provenance\": true,\n  \"S2a_admissibility\": true,\n  \"recurrences_replayed\": 8,\n  \"dimension\": 128000,\n  \"M_sha256\": \"fb0dabd8e8a4f4887be97c8d476d2774c78190b130b2727ac3be62dbc06613d2\",\n  \"strictly_exceeds_published_bound\": true,\n  \"certified_lower_bound\": \"3.258832624209610237867099424184\",\n  \"seconds\": 9.78305697441101,\n  \"scope\": \"exact finite code using independently established published125-dimensional inputs; literature novelty unconfirmed\"\n}\n{\n  \"exact\": true,\n  \"method\": \"independent seven-family/DAG recurrence; rational atanh logarithm bounds with explicit remainder\",\n  \"nodes\": 12,\n  \"dimension\": 768000,\n  \"leaf_count\": 1536,\n  \"strict_improvement_over_128000\": true,\n  \"certified_lower_bound\": \"3.258832624232849476\",\n  \"root_log_lower_margin_positive\": true,\n  \"root_log_upper_margin_positive\": true,\n  \"root_log_lower_margin_float\": 5.36529213320826e-14,\n  \"root_log_upper_margin_float\": 1.8201429099699252e-13,\n  \"seconds\": 13.26053786277771,\n  \"scope\": \"exact finite-code lower bound, not full capacity; novelty unconfirmed\"\n}\n",
+      "passed": true,
+      "wall_seconds": 13.318
+    },
+    {
+      "track": "seven-cycle-capacity",
+      "command": "python verify_recycled_certificate.py optimized_recycle_certificate.json",
+      "scope": "exact giant-integer-power root bracket",
+      "returncode": 0,
+      "output": "{\n  \"verified\": true,\n  \"certificate\": \"optimized_recycle_certificate.json\",\n  \"dimension\": 768000,\n  \"certified_lower_bound\": \"3.258832624232849476\",\n  \"finite_family_checks\": true,\n  \"literal_S2a_admissible\": true,\n  \"exact_arithmetic_and_root_bracket\": true,\n  \"strict_rate_gain_over_published_construction\": true,\n  \"elapsed_seconds\": 38.77705883099952\n}\n",
+      "passed": true,
+      "wall_seconds": 38.811
+    },
+    {
+      "track": "online-bin-packing",
+      "command": "python verify_ah_source_delta.py",
+      "scope": "exact certificate",
+      "returncode": 0,
+      "output": "{\n  \"status\": \"PASS\",\n  \"changed_classes\": [\n    167,\n    172,\n    179\n  ],\n  \"unchanged_published_analysis_scenarios\": 402,\n  \"source\": \"https://arxiv.org/html/1707.01728v1\"\n}\n",
+      "passed": true,
+      "wall_seconds": 0.047
+    },
+    {
+      "track": "online-bin-packing",
+      "command": "python verify_ah_full.py ah_three_parameter_full_certificate.json ah_three_parameter_full_verification.json",
+      "scope": "exact certificate",
+      "returncode": 0,
+      "output": "{\n  \"status\": \"PASS\",\n  \"all_scenarios\": 402,\n  \"target\": \"1848920194883516152323541607/1171513518439186595284254720\",\n  \"target_decimal\": 1.5782320611603713,\n  \"improvement_over_published\": \"52970480514705773020251207803/921315719333166392502587007959040\",\n  \"nodes\": 25252,\n  \"seconds\": 5.983963489532471,\n  \"certificate\": \"ah_three_parameter_full_certificate.json\"\n}\n",
+      "passed": true,
+      "wall_seconds": 6.036
+    },
+    {
+      "track": "online-bin-packing",
+      "command": "python verify_ah_three_parameter_algebra.py",
+      "scope": "exact certificate",
+      "returncode": 0,
+      "output": "{\n  \"status\": \"PASS\",\n  \"target\": \"1848920194883516152323541607/1171513518439186595284254720\",\n  \"dual\": [\n    \"40073570314217/61943480870889\",\n    \"21869910556672/61943480870889\"\n  ],\n  \"scope\": \"optimal fixed-published-weight upper certificate inside three-transfer family; not an algorithm-cost lower bound\"\n}\n",
+      "passed": true,
+      "wall_seconds": 0.063
+    },
+    {
+      "track": "online-bin-packing",
+      "command": "python tests/audit_ah_three_parameter.py",
+      "scope": "exact certificate",
+      "returncode": 0,
+      "output": "{\n  \"status\": \"PASS\",\n  \"exact\": true,\n  \"source_parameters_from_independent_numeric_transcription\": true,\n  \"all_modified_parameters_matched\": true,\n  \"all_analysis_weights_match_primary_paper\": true,\n  \"complete_partition_intervals\": 402,\n  \"large_validity_inequalities\": 492,\n  \"strict_knapsack_cases\": 804,\n  \"independent_pricing_nodes\": 22779,\n  \"fractional_prunes\": 7010,\n  \"bound\": \"1848920194883516152323541607/1171513518439186595284254720\",\n  \"bound_decimal\": 1.5782320611603713,\n  \"gain_over_published_exact_bound\": \"52970480514705773020251207803/921315719333166392502587007959040\",\n  \"seconds\": 1.8403139114379883,\n  \"scope\": \"new admissible parameter choice of existing AH framework; no reliance on printed old scenario upper bounds; novelty not established\"\n}\n",
+      "passed": true,
+      "wall_seconds": 1.879
+    },
+    {
+      "track": "online-bin-packing",
+      "command": "python tests/audit_ah_two_scenario_floor.py",
+      "scope": "exact certificate",
+      "returncode": 0,
+      "output": "{\n  \"status\": \"PASS\",\n  \"exact\": true,\n  \"same_physical_pattern\": [\n    1,\n    165,\n    172\n  ],\n  \"strict_infimum_feasibility\": true,\n  \"two_affine_lines_independently_derived\": true,\n  \"positive_dual\": [\n    \"40073570314217/61943480870889\",\n    \"21869910556672/61943480870889\"\n  ],\n  \"intersection\": \"1848920194883516152323541607/1171513518439186595284254720\",\n  \"scope\": \"floor for fixed published weight-function analysis with classes167,172,179 transfers only; not an algorithm lower bound or global AH optimum\"\n}\n",
+      "passed": true,
+      "wall_seconds": 0.039
+    },
+    {
+      "track": "online-bin-packing",
+      "command": "python verify_ah_full.py ah_two_parameter_published_weights_certificate.json ah_two_parameter_published_weights_verification.json",
+      "scope": "exact certificate",
+      "returncode": 0,
+      "output": "{\n  \"status\": \"PASS\",\n  \"all_scenarios\": 402,\n  \"target\": \"288133180542317449599574241/182565559983001943628840960\",\n  \"target_decimal\": 1.578244990835865,\n  \"improvement_over_published\": \"6398395900211954902386288349/143575398468552184531916653854720\",\n  \"nodes\": 24615,\n  \"seconds\": 5.836275577545166,\n  \"certificate\": \"ah_two_parameter_published_weights_certificate.json\"\n}\n",
+      "passed": true,
+      "wall_seconds": 5.871
+    },
+    {
+      "track": "online-bin-packing",
+      "command": "python verify_ah_three_face_algebra.py",
+      "scope": "exact certificate",
+      "returncode": 0,
+      "output": "{\n  \"status\": \"PASS\",\n  \"target\": \"288133180542317449599574241/182565559983001943628840960\",\n  \"dual\": [\n    \"83427088/608146399\",\n    \"333708352/608146399\",\n    \"191010959/608146399\"\n  ],\n  \"scope\": \"restricted certificate-family optimum, not lower bound on algorithm cost\"\n}\n",
+      "passed": true,
+      "wall_seconds": 0.035
+    },
+    {
+      "track": "online-bin-packing",
+      "command": "python verify_ah_full.py ah_variant_full_certificate.json ah_variant_full_verification.json",
+      "scope": "exact certificate",
+      "returncode": 0,
+      "output": "{\n  \"status\": \"PASS\",\n  \"all_scenarios\": 402,\n  \"target\": \"470739775199623/298261319516160\",\n  \"target_decimal\": 1.5782796641658323,\n  \"improvement_over_published\": \"42458638136912341/4292489102344109162496\",\n  \"nodes\": 24688,\n  \"seconds\": 5.653300046920776,\n  \"certificate\": \"ah_variant_full_certificate.json\"\n}\n",
+      "passed": true,
+      "wall_seconds": 5.688
+    },
+    {
+      "track": "deletion-code-optimality",
+      "command": "python scripts/trades.py --n 12 --k 9 --seconds 280",
+      "scope": "exhaustive local barrier",
+      "returncode": 0,
+      "output": "{\"removed_count\": 1, \"connected_supports\": 0, \"sha256\": \"e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855\"}\n{\"removed_count\": 2, \"connected_supports\": 68, \"sha256\": \"a03f51d4e2d8c69249a5a1fea57c7918d8c0bd787d75fd376d63a833abc5670a\"}\n{\"removed_count\": 3, \"connected_supports\": 376, \"sha256\": \"a0092e8b72dd63d25c4dc37ffbd61a1cd4f5f589db571a978465085851971be5\"}\n{\"removed_count\": 4, \"connected_supports\": 1358, \"sha256\": \"a2bfd613080d131efcba81ce417b2d7f55e4370dc020a48c9d353d0a3fdd0d9b\"}\n{\"removed_count\": 5, \"connected_supports\": 5474, \"sha256\": \"d9afc97a67f25d2fe548cec39fb23a28c62801badb3441211fae530035bfd395\"}\n{\"removed_count\": 6, \"connected_supports\": 23132, \"sha256\": \"4106216cfe6d5aa78b418e34358fd1ed7bbd96d182c7bc3973db794acca8f287\"}\n{\"removed_count\": 7, \"connected_supports\": 102660, \"sha256\": \"81d182d92e31147221fc6b156bd775c223d079356a9bbcbee21ca2e7a2a355e6\"}\n{\"removed_count\": 8, \"connected_supports\": 463558, \"sha256\": \"709807deaaa27cd39e1ae49cb9c9d543ca24fc90fac03cd13366bfef02d19896\"}\n{\"removed_count\": 9, \"connected_supports\": 2136830, \"sha256\": \"9183e7bf5df7d6d1f8e4b2e98cfc4179732ae5f2bcce919868400b149149f35d\"}\n{\n  \"complete\": true,\n  \"n\": 12,\n  \"k\": 9,\n  \"connected_supports\": [\n    {\n      \"removed_count\": 1,\n      \"connected_supports\": 0,\n      \"sha256\": \"e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855\"\n    },\n    {\n      \"removed_count\": 2,\n      \"connected_supports\": 68,\n      \"sha256\": \"a03f51d4e2d8c69249a5a1fea57c7918d8c0bd787d75fd376d63a833abc5670a\"\n    },\n    {\n      \"removed_count\": 3,\n      \"connected_supports\": 376,\n      \"sha256\": \"a0092e8b72dd63d25c4dc37ffbd61a1cd4f5f589db571a978465085851971be5\"\n    },\n    {\n      \"removed_count\": 4,\n      \"connected_supports\": 1358,\n      \"sha256\": \"a2bfd613080d131efcba81ce417b2d7f55e4370dc020a48c9d353d0a3fdd0d9b\"\n    },\n    {\n      \"removed_count\": 5,\n      \"connected_supports\": 5474,\n      \"sha256\": \"d9afc97a67f25d2fe548cec39fb23a28c62801badb3441211fae530035bfd395\"\n    },\n    {\n      \"removed_count\": 6,\n      \"connected_supports\": 23132,\n      \"sha256\": \"4106216cfe6d5aa78b418e34358fd1ed7bbd96d182c7bc3973db794acca8f287\"\n    },\n    {\n      \"removed_count\": 7,\n      \"connected_supports\": 102660,\n      \"sha256\": \"81d182d92e31147221fc6b156bd775c223d079356a9bbcbee21ca2e7a2a355e6\"\n    },\n    {\n      \"removed_count\": 8,\n      \"connected_supports\": 463558,\n      \"sha256\": \"709807deaaa27cd39e1ae49cb9c9d543ca24fc90fac03cd13366bfef02d19896\"\n    },\n    {\n      \"removed_count\": 9,\n      \"connected_supports\": 2136830,\n      \"sha256\": \"9183e7bf5df7d6d1f8e4b2e98cfc4179732ae5f2bcce919868400b149149f35d\"\n    }\n  ],\n  \"checked\": 2733456,\n  \"eligible_improvement_tests\": 249548,\n  \"positive\": [],\n  \"neutral_examples\": [],\n  \"seconds\": 258.45800833999965,\n  \"claim\": \"No improving trade removing at most 9 words of VT0(12)\"\n}\n",
+      "passed": true,
+      "structured_result_checked": true,
+      "wall_seconds": 259.208
+    },
+    {
+      "track": "deletion-code-optimality",
+      "command": "python scripts/verify_trades_independent.py --n 12 --k 9 --seconds 280",
+      "scope": "independently implemented exhaustive local barrier",
+      "returncode": 0,
+      "output": "{'removed_count': 1, 'connected_supports': 0, 'sha256': 'e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855'}\n{'removed_count': 2, 'connected_supports': 68, 'sha256': 'a03f51d4e2d8c69249a5a1fea57c7918d8c0bd787d75fd376d63a833abc5670a'}\n{'removed_count': 3, 'connected_supports': 376, 'sha256': 'a0092e8b72dd63d25c4dc37ffbd61a1cd4f5f589db571a978465085851971be5'}\n{'removed_count': 4, 'connected_supports': 1358, 'sha256': 'a2bfd613080d131efcba81ce417b2d7f55e4370dc020a48c9d353d0a3fdd0d9b'}\n{'removed_count': 5, 'connected_supports': 5474, 'sha256': 'd9afc97a67f25d2fe548cec39fb23a28c62801badb3441211fae530035bfd395'}\n{'removed_count': 6, 'connected_supports': 23132, 'sha256': '4106216cfe6d5aa78b418e34358fd1ed7bbd96d182c7bc3973db794acca8f287'}\n{'removed_count': 7, 'connected_supports': 102660, 'sha256': '81d182d92e31147221fc6b156bd775c223d079356a9bbcbee21ca2e7a2a355e6'}\n{'removed_count': 8, 'connected_supports': 463558, 'sha256': '709807deaaa27cd39e1ae49cb9c9d543ca24fc90fac03cd13366bfef02d19896'}\n{'removed_count': 9, 'connected_supports': 2136830, 'sha256': '9183e7bf5df7d6d1f8e4b2e98cfc4179732ae5f2bcce919868400b149149f35d'}\n{\n  \"n\": 12,\n  \"k\": 9,\n  \"complete\": true,\n  \"method\": \"independent string descendants; exact conflict-clique covers, each checked pairwise\",\n  \"support_records\": [\n    {\n      \"removed_count\": 1,\n      \"connected_supports\": 0,\n      \"sha256\": \"e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855\"\n    },\n    {\n      \"removed_count\": 2,\n      \"connected_supports\": 68,\n      \"sha256\": \"a03f51d4e2d8c69249a5a1fea57c7918d8c0bd787d75fd376d63a833abc5670a\"\n    },\n    {\n      \"removed_count\": 3,\n      \"connected_supports\": 376,\n      \"sha256\": \"a0092e8b72dd63d25c4dc37ffbd61a1cd4f5f589db571a978465085851971be5\"\n    },\n    {\n      \"removed_count\": 4,\n      \"connected_supports\": 1358,\n      \"sha256\": \"a2bfd613080d131efcba81ce417b2d7f55e4370dc020a48c9d353d0a3fdd0d9b\"\n    },\n    {\n      \"removed_count\": 5,\n      \"connected_supports\": 5474,\n      \"sha256\": \"d9afc97a67f25d2fe548cec39fb23a28c62801badb3441211fae530035bfd395\"\n    },\n    {\n      \"removed_count\": 6,\n      \"connected_supports\": 23132,\n      \"sha256\": \"4106216cfe6d5aa78b418e34358fd1ed7bbd96d182c7bc3973db794acca8f287\"\n    },\n    {\n      \"removed_count\": 7,\n      \"connected_supports\": 102660,\n      \"sha256\": \"81d182d92e31147221fc6b156bd775c223d079356a9bbcbee21ca2e7a2a355e6\"\n    },\n    {\n      \"removed_count\": 8,\n      \"connected_supports\": 463558,\n      \"sha256\": \"709807deaaa27cd39e1ae49cb9c9d543ca24fc90fac03cd13366bfef02d19896\"\n    },\n    {\n      \"removed_count\": 9,\n      \"connected_supports\": 2136830,\n      \"sha256\": \"9183e7bf5df7d6d1f8e4b2e98cfc4179732ae5f2bcce919868400b149149f35d\"\n    }\n  ],\n  \"hard_cover_tests\": 416412,\n  \"uncovered_cases\": [],\n  \"seconds\": 193.37893591799912,\n  \"no_neutral_or_improving_trade\": true\n}\n",
+      "passed": true,
+      "structured_result_checked": true,
+      "wall_seconds": 193.862
+    }
+  ],
+  "all_passed": true,
+  "utc_finished": "2026-10-25T20:35:22.700513+00:00",
+  "independent_radius9_hashes_match": true
+}

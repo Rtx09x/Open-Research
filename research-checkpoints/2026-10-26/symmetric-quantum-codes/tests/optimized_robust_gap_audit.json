@@ -1,0 +1,11 @@
+{
+  "exact": true,
+  "all_complement_Farkas_identity": true,
+  "dual_rows": 29,
+  "nonnegative_inequalities": 33,
+  "analytic_argument": "Previously audited HS self-adjoint twirl norm argument; conservative 2sqrt(2)<=3",
+  "constant_bounds_verified": true,
+  "contradiction_bound": "65698050151273136192929353339197247938103421957111/67424635934883922686328359201262934851338400768000",
+  "necessary_strict_variance_lower_bound": "1/102400",
+  "scope": "unrestricted hypothetical n18 code; structural lower bound, not exclusion; novelty unconfirmed"
+}

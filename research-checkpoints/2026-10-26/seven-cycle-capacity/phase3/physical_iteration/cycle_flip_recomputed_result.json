@@ -1,0 +1,56 @@
+{
+  "derived": {
+    "base_profile": [
+      367,
+      8,
+      367,
+      322,
+      26,
+      19
+    ],
+    "base_axioms": {
+      "I independent": true,
+      "X independent": true,
+      "private pairs valid": true,
+      "endpoint-disjoint": true,
+      "P^H independent": true,
+      "P^V independent": true,
+      "complementary transversals": true,
+      "X cap N(P^H) cap N(P^V) empty": true,
+      "T is a bijection": true,
+      "T preserves confusability": true
+    },
+    "C1_pre_exchange": 25344,
+    "C1": 25352,
+    "C3": 13949685,
+    "C2": 11698980,
+    "q15": 11899740,
+    "C4_components": {
+      "B15 x B15": 727450292253552,
+      "R15 x X15^0": 6686033813632,
+      "P15^H x X15^H": 196167577504,
+      "P15^V x X15^V": 196167577504,
+      "X15^0 x R15": 6760282252288,
+      "X15^H x P15^V": 198342875104,
+      "X15^V x P15^H": 198342875104
+    },
+    "C4": 741685629224688,
+    "component_sizes": {
+      "B15 x B15": 2208101357412721,
+      "R15 x X15^0": 88110231901008,
+      "P15^H x X15^H": 16892129645784,
+      "P15^V x X15^V": 18810182110896,
+      "X15^0 x R15": 88110231901008,
+      "X15^H x P15^V": 16892129645784,
+      "X15^V x P15^H": 18810182110896
+    },
+    "I30pp": 2455726444728097,
+    "X30_0L": 1445588544660365
+  },
+  "M500": 33926365851728950101255194806029306467832764507883692675651276084635924228994990630115883809360412660935458044711162213141567340482212438530509035713697182422575214021583269629325511179465174002903229739717813587442880621591217802364499212409322356625716801,
+  "rate": "3.25882526526239299780486462617970298999132893693143",
+  "target_exceeded": false,
+  "base_sha256": "ec4bb61b92e8193f884dfcc19c393cc066a27f136f26116878d7178e4cb742bf",
+  "upstream_attribution": "../published/NOTICE; pinned inspected source, unchanged",
+  "status": "full recomputation completed"
+}

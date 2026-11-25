@@ -1,0 +1,12 @@
+verified 1 scenarios; nodes 194
+verified 51 scenarios; nodes 13157
+verified 101 scenarios; nodes 13976
+verified 151 scenarios; nodes 14526
+verified 201 scenarios; nodes 15288
+verified 251 scenarios; nodes 18575
+verified 301 scenarios; nodes 20346
+verified 351 scenarios; nodes 21592
+verified 401 scenarios; nodes 22611
+{'pass': True, 'source_mode': 'numeric_snapshot', 'target': '87931323061219230147063794829048504459349/55715094120735551199336133222286481162240', 'old_target': '1848920194883516152323541607/1171513518439186595284254720', 'improvement': '158532437284962118811333725388338513/356576602372707527675751252622633479438336', 'scenarios': 402, 'cases': 804, 'nodes': 29867, 'seconds': 9.266153573989868}
+PASS: 9 prefix patterns, 34 branch patterns; all 8 exact stop costs; robust capacities and base-volume dual.
+Exact macroblock period: 2418150000000

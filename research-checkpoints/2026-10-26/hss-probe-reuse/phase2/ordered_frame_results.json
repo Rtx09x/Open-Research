@@ -1,0 +1,42 @@
+[
+  {
+    "L": 1,
+    "n": 4,
+    "reps": 16,
+    "basis": "dense",
+    "exhaustive_signs": true,
+    "maximum_expected_error_eigenvalue": 2.0000000000000004,
+    "mean_symmetry_defect": 2.269844151993272e-16,
+    "seconds": 0.003915847000826034
+  },
+  {
+    "L": 2,
+    "n": 8,
+    "reps": 4096,
+    "basis": "coordinate",
+    "exhaustive_signs": true,
+    "maximum_expected_error_eigenvalue": 3.0,
+    "mean_symmetry_defect": 0.0,
+    "seconds": 2.397536398999364
+  },
+  {
+    "L": 2,
+    "n": 8,
+    "reps": 4096,
+    "basis": "dense",
+    "exhaustive_signs": true,
+    "maximum_expected_error_eigenvalue": 3.91848669117309,
+    "mean_symmetry_defect": 8.041538842489497e-14,
+    "seconds": 2.3590486209996016
+  },
+  {
+    "L": 3,
+    "n": 16,
+    "reps": 500,
+    "basis": "dense",
+    "exhaustive_signs": false,
+    "maximum_expected_error_eigenvalue": 4.319713005858459,
+    "mean_symmetry_defect": 0.9482863169837601,
+    "seconds": 1.837418813000113
+  }
+]

@@ -1,0 +1,16 @@
+{
+  "status": "PASS",
+  "arithmetic": "fractions.Fraction",
+  "input_energy": "1",
+  "final_energy": "913/625",
+  "final_energy_minus_input": "288/625",
+  "active_sign_cases": 16,
+  "inactive_signs": 26,
+  "full_sign_distribution_accounted_for": "2^30",
+  "all_cut_energies": [
+    "1",
+    "1",
+    "1",
+    "913/625"
+  ]
+}

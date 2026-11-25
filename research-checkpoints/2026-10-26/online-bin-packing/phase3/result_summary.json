@@ -1,0 +1,20 @@
+{
+  "status": "completed independently audited checkpoint",
+  "model": "classic deterministic online one-dimensional unit-bin packing; no advice/lookahead/repacking/extra capacity",
+  "algorithm": "unchanged phase2 tiny Best Fit AH variant",
+  "upper_bound": "17309229457317341044853136044527531250227952497/10967548450040323523815819160873924866844131328",
+  "upper_bound_decimal": 1.5782222924443705,
+  "universal_lower_bound_improved": false,
+  "full_gap_solved": false,
+  "true_algorithm_ratio_proved": false,
+  "family_optimum_proved": "entire finite convex mixture family of disjoint-successor two-cutoff charges, fixed algorithm and non-tiny weights",
+  "scenarios": 402,
+  "strict_knapsacks": 804,
+  "certificate": "phase3/successor_mixture/successor_mixture_certificate.json",
+  "certificate_sha256": "48d1e32cefcb5f2c999de480684332a4c2b2b411c4912ffb7e8754ea9f56d64d",
+  "theorem": "phase3/successor_mixture/SUCCESSOR_MIXTURE_THEOREM.md",
+  "lower_obstruction": "restricted shared marked-B D-versus-E-then-C fork, surviving paired fraction interval(1263/8095,403/1250)",
+  "next_native_target": "terminal creation epochs, inherited type quotas, and large-birth count budgets",
+  "external_message_id": "91277b18-2147-4364-82df-21eea0d6d935",
+  "no_more_external_sends_authorized": true
+}

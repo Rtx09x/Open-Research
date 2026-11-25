@@ -1,0 +1,64 @@
+{
+  "status": "PASS",
+  "arithmetic": "int64; values far below overflow",
+  "numerical_sign_sampling_only": true,
+  "pointwise_formula": "L+2(sum_j tau_j)^2",
+  "results": [
+    {
+      "L": 3,
+      "trials": 80,
+      "pointwise_identity_pass": true,
+      "exact_expectation_by_independent_sign_identity": 9,
+      "numerical_mean_coefficient_energy": 8.4
+    },
+    {
+      "L": 4,
+      "trials": 80,
+      "pointwise_identity_pass": true,
+      "exact_expectation_by_independent_sign_identity": 12,
+      "numerical_mean_coefficient_energy": 12.0
+    },
+    {
+      "L": 5,
+      "trials": 80,
+      "pointwise_identity_pass": true,
+      "exact_expectation_by_independent_sign_identity": 15,
+      "numerical_mean_coefficient_energy": 16.0
+    },
+    {
+      "L": 6,
+      "trials": 80,
+      "pointwise_identity_pass": true,
+      "exact_expectation_by_independent_sign_identity": 18,
+      "numerical_mean_coefficient_energy": 17.5
+    },
+    {
+      "L": 7,
+      "trials": 80,
+      "pointwise_identity_pass": true,
+      "exact_expectation_by_independent_sign_identity": 21,
+      "numerical_mean_coefficient_energy": 19.2
+    },
+    {
+      "L": 8,
+      "trials": 80,
+      "pointwise_identity_pass": true,
+      "exact_expectation_by_independent_sign_identity": 24,
+      "numerical_mean_coefficient_energy": 25.7
+    },
+    {
+      "L": 9,
+      "trials": 80,
+      "pointwise_identity_pass": true,
+      "exact_expectation_by_independent_sign_identity": 27,
+      "numerical_mean_coefficient_energy": 24.6
+    },
+    {
+      "L": 10,
+      "trials": 80,
+      "pointwise_identity_pass": true,
+      "exact_expectation_by_independent_sign_identity": 30,
+      "numerical_mean_coefficient_energy": 29.0
+    }
+  ]
+}

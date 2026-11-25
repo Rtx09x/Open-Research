@@ -1,0 +1,18 @@
+{
+  "passed": true,
+  "barrier_sha256": "5041bacecb6b875752d6c2d752214629f217e9f7a18d565b9940ec2903ed8059",
+  "model_sha256": "5be7bd0a81b888cad6ee1dfd0d83aa9a4bd2f07427663c342140d711fccd149d",
+  "exact_mass": "32021514469/100000000",
+  "mass_float": 320.21514469,
+  "binary_selected_words": 26,
+  "selected_ones": [
+    1625
+  ],
+  "CG_nodes": 783,
+  "model_rows": 5837,
+  "maximal_cliques_enumerated": 155496,
+  "maximum_clique_mass": "1",
+  "actual_code": false,
+  "seconds": 2.500790969999798,
+  "scope": "Exact partial-integrality barrier, not a320-word code or a universal impossibility of branching."
+}

@@ -1,0 +1,152 @@
+{
+  "utc_started": "2026-10-25T21:54:36.147184+00:00",
+  "python": "3.12.14 (main, Aug 25 2026, 14:00:49) [Clang 22.1.3 ]",
+  "platform": "Linux-6.18.55-x86_64-with-glibc2.41",
+  "network_used": false,
+  "quantum_included": false,
+  "limits": {
+    "address_space_bytes": 2147483648,
+    "cpu_seconds_per_check": 300,
+    "blas_threads": 1,
+    "concurrent_checks": 1
+  },
+  "checks": [
+    {
+      "cwd": "online-bin-packing",
+      "command": "python phase2/exact_threshold_search.py",
+      "scope": "exact rational finite certificate; analytic applicability remains in theorem/audit notes",
+      "returncode": 0,
+      "output": "scenario 49/320 1/6 round 0 patterns 2 gap 0.7560876897140195\nscenario 49/320 1/6 round 1 patterns 3 gap 0.0022959274632364415\nscenario 49/320 1/6 round 2 patterns 4 gap 4.285346466663853e-05\nscenario 49/320 1/6 round 3 patterns 5 gap 0.0\nscenario 533/1600 1/3 round 0 patterns 2 gap 0.009836884343720174\nscenario 533/1600 1/3 round 1 patterns 3 gap 0.0022672965823539097\nscenario 533/1600 1/3 round 2 patterns 4 gap 0.0\nscenario 3/7 1/2 round 0 patterns 2 gap 0.24302279699202378\nscenario 3/7 1/2 round 1 patterns 4 gap 0.03201540941287766\nscenario 3/7 1/2 round 2 patterns 6 gap 0.0014046843245181743\nscenario 3/7 1/2 round 3 patterns 8 gap 0.0005121722860063978\nscenario 3/7 1/2 round 4 patterns 10 gap 0.0\nPASS 1.5782309281201736 0.11278009414672852\n",
+      "passed": true,
+      "wall_seconds": 0.167
+    },
+    {
+      "cwd": "online-bin-packing",
+      "command": "python phase2/verify_single_thresholds.py",
+      "scope": "exact rational finite certificate; analytic applicability remains in theorem/audit notes",
+      "returncode": 0,
+      "output": "{'status': 'PASS', 'target': '23211234258164394107066141961880719040528132151/14707121654123980930208343329037931077093556224', 'target_decimal': 1.5782309281201736, 'improvement_over_Pro': '2082286183529394866413390639486845738546097777799462459/3024624791249538735410637654307389416946815854420315015741440', 'scenarios': 402, 'knapsacks': 804, 'continuous_family_optimum_certificates': [{'x': '49/320', 'y': '1/6', 'target': '2116764902259762883965542175237776591152210514383995379/1341238508556567043361369584387597521189357087419793408', 'continuous_c_breakpoints': 4}, {'x': '533/1600', 'y': '1/3', 'target': '472714563547790280609301762391567/299525043523083017930196402307072', 'continuous_c_breakpoints': 4}, {'x': '3/7', 'y': '1/2', 'target': '23211234258164394107066141961880719040528132151/14707121654123980930208343329037931077093556224', 'continuous_c_breakpoints': 4}], 'nodes': 29899, 'seconds': 1.9702742099761963}\n",
+      "passed": true,
+      "wall_seconds": 2.017
+    },
+    {
+      "cwd": "online-bin-packing",
+      "command": "python phase2/coupled/check_saturation.py",
+      "scope": "exact rational finite certificate; analytic applicability remains in theorem/audit notes",
+      "returncode": 0,
+      "output": "{'status': 'PASS', 'claimed_asymptotic_algorithm_ratio': '23211234258164394107066141961880719040528132151/14707121654123980930208343329037931077093556224', 'P_residual': '997/2100120', 'Q_residual': '29/1254', 'B': '22748825579/32568497273', 'b': '18866629793/32568497273', 'limiting_Q_fraction': '616945043842439/848239837141104679', 'K_P': '3039661924025609862963147485/1926488896988884623356329984', 'K_Q': '350934298064558974481767473469/225399200947699500932690608128', 'count_error_constant': '1413539207612313536008874798413/112699600473849750466345304064', 'negative_container_density': '230487254900905735985588211189464890158255762091/955962907518058760463542316387465520011081154560', 'tau_upper': '1/1000000', 'seconds': 0.55377197265625, 'scope': 'explicit offline and tiny-execution certificates; full AH cost lower bound uses source Lemma5/Corollary6 and small-class quota invariants'}\nfinite traces [(1, 501, 1.5539043667908927), (10, 14064, 1.5773300135965316), (100, 137615, 1.5781394179657442), (1000, 1374639, 1.5782218819957325)]\n",
+      "passed": true,
+      "wall_seconds": 0.599
+    },
+    {
+      "cwd": "online-bin-packing",
+      "command": "python phase2/best_fit/check_all_cases.py",
+      "scope": "exact rational finite certificate; analytic applicability remains in theorem/audit notes",
+      "returncode": 0,
+      "output": "PASS 174191383514152461065273968497444592350661/110371486054812972793114744355465098952704 1.5782281252210837 seconds 2.3879823684692383 nodes 67462\nbottlenecks [('3/7', '1/2', '1/60')]\n",
+      "passed": true,
+      "wall_seconds": 2.436
+    },
+    {
+      "cwd": "online-bin-packing",
+      "command": "python phase2/best_fit/verify_step_independent.py",
+      "scope": "exact rational finite certificate; analytic applicability remains in theorem/audit notes",
+      "returncode": 0,
+      "output": "{'status': 'PASS', 'target': '174191383514152461065273968497444592350661/110371486054812972793114744355465098952704', 'target_decimal': 1.5782281252210837, 'scenarios': 402, 'knapsacks': 804, 'nodes': 29963, 'seconds': 1.779963731765747}\n",
+      "passed": true,
+      "wall_seconds": 1.829
+    },
+    {
+      "cwd": "online-bin-packing",
+      "command": "python phase2/best_fit/stress_gap_lemma.py",
+      "scope": "finite falsification controls, not universal proof",
+      "returncode": 0,
+      "output": "{'status': 'PASS', 'tiny_items': 25000, 'created_containers': 451, 'gap_and_charge_checks': 2500, 'exact_envelope_constructions': 6114, 'seconds': 0.7003324031829834, 'scope': 'finite falsification tests, not a substitute for universal theorem'}\n",
+      "passed": true,
+      "wall_seconds": 0.744
+    },
+    {
+      "cwd": "advisor/phase2",
+      "command": "python check_packing_single_thresholds.py",
+      "scope": "independent exact pricing using integrated source-derived factual tables",
+      "returncode": 0,
+      "output": "{\n  \"status\": \"PASS\",\n  \"source_derived_factual_tables_and_parameters_replayed\": true,\n  \"all_published_analysis_weights_preserved\": true,\n  \"exact_bound\": \"23211234258164394107066141961880719040528132151/14707121654123980930208343329037931077093556224\",\n  \"decimal_bound\": 1.5782309281201736,\n  \"certificate_sha256\": \"82e0291a83739bb44749a76e9f6b52cfe335d062cbcaa36235bd4d8b86060474\",\n  \"scenarios\": 402,\n  \"strict_knapsacks\": 804,\n  \"pricing_nodes\": 23037,\n  \"dual_certificates\": [\n    {\n      \"interval\": [\n        \"49/320\",\n        \"1/6\"\n      ],\n      \"threshold\": \"17247296633919791170832825010809060697177/766453998323196903862779518275925184912115\",\n      \"continuous_dual_endpoints\": 4,\n      \"optimum_within_charge_family\": \"2116764902259762883965542175237776591152210514383995379/1341238508556567043361369584387597521189357087419793408\"\n    },\n    {\n      \"interval\": [\n        \"533/1600\",\n        \"1/3\"\n      ],\n      \"threshold\": \"6816573536910587603199009980750685989373/302853064410090280348279687624368940731775\",\n      \"continuous_dual_endpoints\": 4,\n      \"optimum_within_charge_family\": \"472714563547790280609301762391567/299525043523083017930196402307072\"\n    },\n    {\n      \"interval\": [\n        \"3/7\",\n        \"1/2\"\n      ],\n      \"threshold\": \"6457829887103011780070333/302161914769161593191102655\",\n      \"continuous_dual_endpoints\": 4,\n      \"optimum_within_charge_family\": \"23211234258164394107066141961880719040528132151/14707121654123980930208343329037931077093556224\"\n    }\n  ],\n  \"seconds\": 2.201791524887085,\n  \"scope\": \"delayed-tiny AH variant; continuous threshold analysis optimality for three scenarios only; no global algorithm optimality\"\n}\n",
+      "passed": true,
+      "wall_seconds": 2.244
+    },
+    {
+      "cwd": "advisor/phase2",
+      "command": "python check_packing_best_fit.py",
+      "scope": "independent exact pricing using integrated source-derived factual tables",
+      "returncode": 0,
+      "output": "{\n  \"status\": \"PASS\",\n  \"source_derived_factual_tables_and_parameters_replayed\": true,\n  \"all_published_analysis_weights_preserved\": true,\n  \"exact_bound\": \"174191383514152461065273968497444592350661/110371486054812972793114744355465098952704\",\n  \"decimal_bound\": 1.5782281252210837,\n  \"certificate_sha256\": \"efd98b3ab6c17d81ad14da565410c47de2490b99c8c4742c9e3ebde183a8e315\",\n  \"scenarios\": 402,\n  \"strict_knapsacks\": 804,\n  \"pricing_nodes\": 23108,\n  \"seconds\": 2.6162919998168945,\n  \"scope\": \"all-container tiny Best Fit AH variant; step-charge upper bound, not tightness\"\n}\n",
+      "passed": true,
+      "wall_seconds": 2.66
+    },
+    {
+      "cwd": "hss-probe-reuse/phase2",
+      "command": "python verify_one_bank_counterexample.py",
+      "scope": "exact rational controls supporting separately audited analytic fixed-basis theorem",
+      "returncode": 0,
+      "output": "{\n  \"status\": \"PASS\",\n  \"arithmetic\": \"fractions.Fraction\",\n  \"input_energy\": \"1\",\n  \"final_energy\": \"913/625\",\n  \"final_energy_minus_input\": \"288/625\",\n  \"active_sign_cases\": 16,\n  \"inactive_signs\": 26,\n  \"full_sign_distribution_accounted_for\": \"2^30\",\n  \"all_cut_energies\": [\n    \"1\",\n    \"1\",\n    \"1\",\n    \"913/625\"\n  ]\n}\n",
+      "passed": true,
+      "wall_seconds": 0.058
+    },
+    {
+      "cwd": "hss-probe-reuse/phase2",
+      "command": "python verify_matrix_one_bank_bound.py",
+      "scope": "exact rational controls supporting separately audited analytic fixed-basis theorem",
+      "returncode": 0,
+      "output": "{\n  \"status\": \"PASS\",\n  \"arithmetic\": \"fractions.Fraction\",\n  \"k\": 2,\n  \"local_orientation_design\": \"all 8 signed permutations\",\n  \"results\": [\n    {\n      \"step\": 1,\n      \"exact_orientation_histories\": 8,\n      \"covariance_cap_psd\": true,\n      \"pointwise_flux_cap\": true,\n      \"expected_energy_ratio\": 0.7066298405543799\n    },\n    {\n      \"step\": 2,\n      \"exact_orientation_histories\": 64,\n      \"covariance_cap_psd\": true,\n      \"pointwise_flux_cap\": true,\n      \"expected_energy_ratio\": 0.5059474948410871\n    },\n    {\n      \"step\": 3,\n      \"exact_orientation_histories\": 512,\n      \"covariance_cap_psd\": true,\n      \"pointwise_flux_cap\": true,\n      \"expected_energy_ratio\": 0.40974997264706764\n    }\n  ]\n}\n",
+      "passed": true,
+      "wall_seconds": 0.53
+    },
+    {
+      "cwd": "hss-probe-reuse/phase2",
+      "command": "python verify_one_bank_sharpness.py",
+      "scope": "exact rational controls supporting separately audited analytic fixed-basis theorem",
+      "returncode": 0,
+      "output": "{\n  \"status\": \"PASS\",\n  \"arithmetic\": \"fractions.Fraction\",\n  \"sharp_limit\": 5,\n  \"results\": [\n    {\n      \"rotation_half_angle_tangent\": \"1/4\",\n      \"ancestors\": 7,\n      \"exact_gain\": \"1380834955229761/582622237229761\",\n      \"gain_float\": 2.3700347617957798,\n      \"exact_gain_below5\": true\n    },\n    {\n      \"rotation_half_angle_tangent\": \"1/8\",\n      \"ancestors\": 14,\n      \"exact_gain\": null,\n      \"gain_float\": 3.2140893394211223,\n      \"exact_gain_below5\": true\n    },\n    {\n      \"rotation_half_angle_tangent\": \"1/32\",\n      \"ancestors\": 51,\n      \"exact_gain\": null,\n      \"gain_float\": 4.458794971952354,\n      \"exact_gain_below5\": true\n    },\n    {\n      \"rotation_half_angle_tangent\": \"1/128\",\n      \"ancestors\": 202,\n      \"exact_gain\": null,\n      \"gain_float\": 4.855748468446957,\n      \"exact_gain_below5\": true\n    },\n    {\n      \"rotation_half_angle_tangent\": \"1/512\",\n      \"ancestors\": 805,\n      \"exact_gain\": null,\n      \"gain_float\": 4.963382303869948,\n      \"exact_gain_below5\": true\n    }\n  ]\n}\n",
+      "passed": true,
+      "wall_seconds": 0.589
+    },
+    {
+      "cwd": "hss-probe-reuse/phase2",
+      "command": "python wavelet_support_obstruction.py",
+      "scope": "exact rational controls supporting separately audited analytic fixed-basis theorem",
+      "returncode": 0,
+      "output": "{\n  \"status\": \"PASS\",\n  \"arithmetic\": \"exact rational\",\n  \"N\": 8,\n  \"k\": 1,\n  \"L\": 2,\n  \"true_subspace_dimension\": 22,\n  \"coordinate_envelope_dimension\": 30,\n  \"forest_support_maximum_dimension\": 22,\n  \"left_coarse_active\": [\n    \"3/5\",\n    \"4/5\"\n  ],\n  \"right_coarse_active\": [\n    \"5/13\",\n    \"12/13\"\n  ],\n  \"first_atom_nonzero\": {\n    \"(4, 0)\": \"-4/5\",\n    \"(6, 0)\": \"3/5\"\n  },\n  \"envelope_atom_squared_distance_to_true_class\": \"9/25\",\n  \"triangle_vertices\": [\n    0,\n    4,\n    6\n  ],\n  \"support\": [\n    [\n      0,\n      0\n    ],\n    [\n      0,\n      4\n    ],\n    [\n      0,\n      6\n    ],\n    [\n      1,\n      1\n    ],\n    [\n      1,\n      4\n    ],\n    [\n      1,\n      6\n    ],\n    [\n      2,\n      2\n    ],\n    [\n      2,\n      5\n    ],\n    [\n      2,\n      7\n    ],\n    [\n      3,\n      3\n    ],\n    [\n      3,\n      5\n    ],\n    [\n      3,\n      7\n    ],\n    [\n      4,\n      0\n    ],\n    [\n      4,\n      1\n    ],\n    [\n      4,\n      4\n    ],\n    [\n      4,\n      6\n    ],\n    [\n      5,\n      2\n    ],\n    [\n      5,\n      3\n    ],\n    [\n      5,\n      5\n    ],\n    [\n      5,\n      7\n    ],\n    [\n      6,\n      0\n    ],\n    [\n      6,\n      1\n    ],\n    [\n      6,\n      4\n    ],\n    [\n      6,\n      6\n    ],\n    [\n      6,\n      7\n    ],\n    [\n      7,\n      2\n    ],\n    [\n      7,\n      3\n    ],\n    [\n      7,\n      5\n    ],\n    [\n      7,\n      6\n    ],\n    [\n      7,\n      7\n    ]\n  ]\n}\n",
+      "passed": true,
+      "wall_seconds": 0.087
+    },
+    {
+      "cwd": "hss-probe-reuse/phase2",
+      "command": "python verify_three_color_forest.py",
+      "scope": "finite exhaustive integer-valued controls; NumPy int64 values remain within range",
+      "returncode": 0,
+      "output": "{\n  \"status\": \"PASS\",\n  \"exact_integer_arithmetic\": true,\n  \"all_labeled_rooted_forests_on_four_vertices\": 125,\n  \"cases\": 274,\n  \"executions\": 88576,\n  \"sharp_rank_one_scope_counterexample\": {\n    \"parent\": [\n      -1,\n      0,\n      1,\n      2\n    ],\n    \"k\": 1,\n    \"sign_assignments\": 256,\n    \"error_sum\": 512,\n    \"expected_error\": 2,\n    \"optimum\": 1,\n    \"query_count_each_execution\": 6\n  },\n  \"seconds\": 6.953741395998804\n}\n",
+      "passed": true,
+      "wall_seconds": 7.04
+    },
+    {
+      "cwd": "hss-probe-reuse/phase2",
+      "command": "python test_fixed_basis_algorithm.py",
+      "scope": "supplemental numerical callback/query-count and model-recovery checks, not proof",
+      "returncode": 0,
+      "output": "{\"k\": 1, \"L\": 1, \"n\": 4, \"trials\": 25, \"queries_each_execution\": 4, \"mean_error_ratio\": 2.4811384448252665, \"max_error_ratio\": 2.481138444825579, \"theorem_mean_bound\": 23, \"mean_residual_cut_energies\": [1.9999999999999998, 1.2405692224125964], \"exact_model_relative_error\": 5.183999460974761e-16}\n{\"k\": 1, \"L\": 2, \"n\": 8, \"trials\": 25, \"queries_each_execution\": 4, \"mean_error_ratio\": 2.598652508410841, \"max_error_ratio\": 3.949124451704055, \"theorem_mean_bound\": 43, \"mean_residual_cut_energies\": [2.1107940469074586, 1.711084441325262, 1.1102895041405114], \"exact_model_relative_error\": 1.0479858493929396e-15}\n{\"k\": 1, \"L\": 3, \"n\": 16, \"trials\": 25, \"queries_each_execution\": 4, \"mean_error_ratio\": 2.9242174698014525, \"max_error_ratio\": 4.182104727608663, \"theorem_mean_bound\": 63, \"mean_residual_cut_energies\": [1.894477679075364, 1.3499209649187665, 0.950319274068342, 0.6861121628931813], \"exact_model_relative_error\": 7.401410972207832e-16}\n{\"k\": 1, \"L\": 4, \"n\": 32, \"trials\": 25, \"queries_each_execution\": 4, \"mean_error_ratio\": 3.19922883029014, \"max_error_ratio\": 4.167608683723959, \"theorem_mean_bound\": 83, \"mean_residual_cut_energies\": [2.0473628668991197, 1.5706971549272004, 1.153808540181824, 0.8318135408389596, 0.4898444504588597], \"exact_model_relative_error\": 7.821622350627566e-16}\n{\"k\": 2, \"L\": 1, \"n\": 8, \"trials\": 25, \"queries_each_execution\": 8, \"mean_error_ratio\": 2.7719360560526103, \"max_error_ratio\": 2.7719360560528887, \"theorem_mean_bound\": 23, \"mean_residual_cut_energies\": [2.0, 1.385968028026298], \"exact_model_relative_error\": 3.830396495982058e-16}\n{\"k\": 2, \"L\": 2, \"n\": 16, \"trials\": 25, \"queries_each_execution\": 8, \"mean_error_ratio\": 3.068639355435172, \"max_error_ratio\": 3.7720528037288443, \"theorem_mean_bound\": 43, \"mean_residual_cut_energies\": [2.0054395958494204, 1.472304721696507, 0.9690907237658386], \"exact_model_relative_error\": 9.537590056237349e-16}\n{\"k\": 2, \"L\": 3, \"n\": 32, \"trials\": 25, \"queries_each_execution\": 8, \"mean_error_ratio\": 3.1604385259225904, \"max_error_ratio\": 4.06403850778063, \"theorem_mean_bound\": 63, \"mean_residual_cut_energies\": [1.9632157234929446, 1.4468043212269892, 1.0596855867093282, 0.7246445688879914], \"exact_model_relative_error\": 8.816939259223678e-16}\n{\"k\": 2, \"L\": 4, \"n\": 64, \"trials\": 25, \"queries_each_execution\": 8, \"mean_error_ratio\": 3.422927622969384, \"max_error_ratio\": 3.941364985814821, \"theorem_mean_bound\": 83, \"mean_residual_cut_energies\": [1.9771288128703504, 1.4566185747592642, 1.066963238312158, 0.7436370880829979, 0.5181201042135772], \"exact_model_relative_error\": 9.85866095366169e-16}\n{\"k\": 3, \"L\": 1, \"n\": 12, \"trials\": 25, \"queries_each_execution\": 12, \"mean_error_ratio\": 2.663446254034062, \"max_error_ratio\": 2.663446254034538, \"theorem_mean_bound\": 23, \"mean_residual_cut_energies\": [2.0, 1.331723127017015], \"exact_model_relative_error\": 8.129736536001395e-16}\n{\"k\": 3, \"L\": 2, \"n\": 24, \"trials\": 25, \"queries_each_execution\": 12, \"mean_error_ratio\": 2.818771223456988, \"max_error_ratio\": 3.259445601210379, \"theorem_mean_bound\": 43, \"mean_residual_cut_energies\": [1.9530921629308546, 1.4692557580049597, 0.9805108875472563], \"exact_model_relative_error\": 9.2039971476454e-16}\n{\"k\": 3, \"L\": 3, \"n\": 48, \"trials\": 25, \"queries_each_execution\": 12, \"mean_error_ratio\": 3.1733340118901925, \"max_error_ratio\": 3.635487112603712, \"theorem_mean_bound\": 63, \"mean_residual_cut_energies\": [1.993976801748189, 1.4625379027718746, 1.0532933043987478, 0.6960793088744813], \"exact_model_relative_error\": 1.1356536720937859e-15}\n{\"k\": 3, \"L\": 4, \"n\": 96, \"trials\": 25, \"queries_each_execution\": 12, \"mean_error_ratio\": 3.29078387939674, \"max_error_ratio\": 3.7097061879445357, \"theorem_mean_bound\": 83, \"mean_residual_cut_energies\": [1.9839483723822837, 1.493394810943733, 1.1209786006059814, 0.8253147387224739, 0.5573311558139983], \"exact_model_relative_error\": 1.0641191048748145e-15}\n",
+      "passed": true,
+      "wall_seconds": 1.453
+    },
+    {
+      "cwd": "hss-probe-reuse/phase2",
+      "command": "python test_finite_orientation_variant.py",
+      "scope": "supplemental numerical callback/query-count and model-recovery checks, not proof",
+      "returncode": 0,
+      "output": "{\"k\": 1, \"L\": 1, \"n\": 4, \"trials\": 30, \"query_count\": 4, \"mean_error_ratio\": 3.806224355075321, \"exact_model_error\": 4.3097683900059457e-16}\n{\"k\": 1, \"L\": 2, \"n\": 8, \"trials\": 30, \"query_count\": 4, \"mean_error_ratio\": 3.1452135632721516, \"exact_model_error\": 7.02820689981329e-16}\n{\"k\": 1, \"L\": 3, \"n\": 16, \"trials\": 30, \"query_count\": 4, \"mean_error_ratio\": 2.993302859166704, \"exact_model_error\": 1.0967068441645022e-15}\n{\"k\": 1, \"L\": 4, \"n\": 32, \"trials\": 30, \"query_count\": 4, \"mean_error_ratio\": 3.1212083252214438, \"exact_model_error\": 9.390621384522105e-16}\n{\"k\": 2, \"L\": 1, \"n\": 8, \"trials\": 30, \"query_count\": 8, \"mean_error_ratio\": 2.3276443205583, \"exact_model_error\": 2.458582930688054e-16}\n{\"k\": 2, \"L\": 2, \"n\": 16, \"trials\": 30, \"query_count\": 8, \"mean_error_ratio\": 2.824033937792211, \"exact_model_error\": 1.0974808512200029e-15}\n{\"k\": 2, \"L\": 3, \"n\": 32, \"trials\": 30, \"query_count\": 8, \"mean_error_ratio\": 3.079017314597393, \"exact_model_error\": 9.714896834694337e-16}\n{\"k\": 2, \"L\": 4, \"n\": 64, \"trials\": 30, \"query_count\": 8, \"mean_error_ratio\": 3.318737487504825, \"exact_model_error\": 9.674659048160588e-16}\n{\"k\": 3, \"L\": 1, \"n\": 12, \"trials\": 30, \"query_count\": 12, \"mean_error_ratio\": 3.0166529586730233, \"exact_model_error\": 7.021236094470166e-16}\n{\"k\": 3, \"L\": 2, \"n\": 24, \"trials\": 30, \"query_count\": 12, \"mean_error_ratio\": 2.9730093731767937, \"exact_model_error\": 7.38344111615119e-16}\n{\"k\": 3, \"L\": 3, \"n\": 48, \"trials\": 30, \"query_count\": 12, \"mean_error_ratio\": 3.1051314712100746, \"exact_model_error\": 9.277573415031908e-16}\n{\"k\": 3, \"L\": 4, \"n\": 96, \"trials\": 30, \"query_count\": 12, \"mean_error_ratio\": 3.3485469374614905, \"exact_model_error\": 1.159135966447251e-15}\n",
+      "passed": true,
+      "wall_seconds": 1.049
+    }
+  ],
+  "all_passed": true,
+  "utc_finished": "2026-10-25T21:54:59.658913+00:00"
+}

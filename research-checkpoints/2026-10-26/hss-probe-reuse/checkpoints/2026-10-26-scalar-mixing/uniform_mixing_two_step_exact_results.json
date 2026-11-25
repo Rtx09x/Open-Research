@@ -1,0 +1,34 @@
+{
+  "status": "EXACT_FRACTION_PASS",
+  "k": 2,
+  "s": 6,
+  "d": 4,
+  "delta": "3/5",
+  "seconds": 2.049854516000778,
+  "design_first_and_second_moments": true,
+  "results": [
+    {
+      "direction": "forward_fresh",
+      "orientations": 1024,
+      "opposite_bank_fixed": true,
+      "initial_flux": "7665577/1587600",
+      "mean_first_loss": "27806913035911710349450290519285869/15040768630569800734519958496093750",
+      "mean_two_step_loss_ratio": 0.5394040930377375,
+      "proved_minimum_ratio": "81/1250",
+      "exact_two_step_inequality": true,
+      "pointwise_cost_and_flux_checks": true
+    },
+    {
+      "direction": "transpose_fresh",
+      "orientations": 1024,
+      "opposite_bank_fixed": true,
+      "initial_flux": "7665577/1587600",
+      "mean_first_loss": "4971542015184756254791703/2464279532432556152343750",
+      "mean_two_step_loss_ratio": 0.6531212618084192,
+      "proved_minimum_ratio": "81/1250",
+      "exact_two_step_inequality": true,
+      "pointwise_cost_and_flux_checks": true
+    }
+  ],
+  "scope": "Finite physical-model/algebra control; all-depth theorem is analytic"
+}

@@ -1,0 +1,15 @@
+\begin{tikzpicture}[>=Latex,x=1cm,y=1cm,font=\small]
+\fill[papergray,rounded corners=5pt] (0,0) rectangle (11.7,3.25);
+\draw[black!22] (.70,.66)--(11.1,.66);
+\draw[azure,line width=1.9pt,line cap=round,line join=round] (.77,.75)--(5.85,2.63)--(10.98,.75);
+\fill[azure] (.77,.75) circle (1.8pt);
+\fill[azure] (5.85,2.63) circle (1.8pt);
+\fill[azure] (10.98,.75) circle (1.8pt);
+\node[above,text=ink,font=\bfseries\small] at (5.85,2.65) {Field $H$};
+\node[below,text=ink] at (.85,.68) {$L$};
+\node[below,text=ink] at (10.92,.68) {$L$};
+\node[rotate=0,anchor=center,font=\small\bfseries,text=azure] at (2.34,2.42) {rising field};
+\node[anchor=east,font=\small\bfseries,text=azure] at (9.35,2.42) {falling field};
+\node[font=\footnotesize,text=black!74] at (2.58,.35) {at most one $0\to1$};
+\node[font=\footnotesize,text=black!74] at (9.14,.35) {at most one $1\to0$};
+\end{tikzpicture}

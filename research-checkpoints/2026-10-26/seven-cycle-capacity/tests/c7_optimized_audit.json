@@ -1,0 +1,15 @@
+{
+  "exact": true,
+  "method": "independent seven-family/DAG recurrence; rational atanh logarithm bounds with explicit remainder",
+  "nodes": 12,
+  "dimension": 768000,
+  "leaf_count": 1536,
+  "strict_improvement_over_128000": true,
+  "certified_lower_bound": "3.258832624232849476",
+  "root_log_lower_margin_positive": true,
+  "root_log_upper_margin_positive": true,
+  "root_log_lower_margin_float": 5.36529213320826e-14,
+  "root_log_upper_margin_float": 1.8201429099699252e-13,
+  "seconds": 7.021179437637329,
+  "scope": "exact finite-code lower bound, not full capacity; novelty unconfirmed"
+}

@@ -1,0 +1,14 @@
+{
+  "status": "PASS",
+  "upstream_five_certificates_recomputed": true,
+  "primary_Lean_K4a": true,
+  "family_cross_pairs_checked": 1776,
+  "fresh_recipe_integer_root_checks": [
+    128000,
+    768000
+  ],
+  "strict_gain_checked": true,
+  "source_theorem_dependency": "Tandon theorem2 implementation replayed, not a new independent proof or Lean kernel replay",
+  "seconds": 85.60237147600128,
+  "maxrss_kib": 751856
+}

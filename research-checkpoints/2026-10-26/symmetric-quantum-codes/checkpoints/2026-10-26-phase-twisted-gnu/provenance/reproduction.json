@@ -1,0 +1,13 @@
+{
+  "status": "PASS",
+  "commands": [
+    "python check_phase_twisted_gnu.py",
+    "python independent/check_quantum_phase_gnu_independent.py"
+  ],
+  "seconds": 0.2802026229983312,
+  "dependencies": "Python standard library only",
+  "independent_adaptation": "source path only; no arithmetic or mathematical change",
+  "audited_source_sha256": "61cc32b4e1d1d15207d7b8fd5dbbb32fc7780714c49ec7aa68eb39194a12b0a6",
+  "external_review": "unresolved",
+  "priority": "unresolved"
+}

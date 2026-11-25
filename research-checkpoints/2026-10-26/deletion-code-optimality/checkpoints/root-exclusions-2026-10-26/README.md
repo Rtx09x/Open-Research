@@ -1,0 +1,7 @@
+# Two exact normalized root-case exclusions — 26 October 2026
+
+The complete, independently replayable proofs exclude normalized size-320 binary length-12 single-deletion codes containing word 5 or word 11 under the stated normalization with constants. These close two of the 13 receiver-3 root choices, not the entire problem. **The global integer interval remains 316–320; there is no global 319 proof.**
+
+The two frozen expansions total 88,223,467 bytes and 296 files. Their deterministic solid archive is only 2,786,468 bytes, SHA-256 `9e587b09e06368b18fe05361b94a36d8d1acd26cddd86a4fbc88426d6a8009ff`. It is stored once in bounded hash-bound parts under the root replay-assets manifest. `archive_inventory.json` binds every extracted member and both original manifests. No live frontier/tree state or heuristic solver output is included.
+
+Use `python run_checkpoint_20261026.py --only deletion` from repository root. The runner reconstructs the archive only in a disposable copy. `replay.py` verifies every member before safe temporary extraction, runs both primary checkers including corruption controls, then reruns both independent advisor implementations and all required ancestors. The independent parent5 verifier explicitly checks common normalization across the first-level cases; no saved PASS JSON is treated as proof. Standard library only, assertions enabled; no network or optimizer.

@@ -1,0 +1,29 @@
+{
+  "primary_dependency": {
+    "authors": "Manes, Subramanian, Jiang",
+    "arxiv": "2610.00561v1",
+    "url": "https://arxiv.org/html/2610.00561v1",
+    "locator": "Supplement VIII.2, Lemmas 31\u201335 and Theorem 6",
+    "cached_html_sha256": "65a8f3d00b0de4f9e15ebc51c680ca3d77f37511fa14a4d6fcae3c73503158a3",
+    "used_for": "Ordinary intrinsic LP feasibility is monotone under n\u2192n+1; not physical-code padding."
+  },
+  "antecedents": [
+    {
+      "arxiv": "2502.14165v1",
+      "url": "https://arxiv.org/pdf/2502.14165v1",
+      "locator": "Okada \u00a73.4, printed p. 89 (PDF page 93)",
+      "used_for": "Explicit numerical observation/conjectural suggestion that volume bound may hold for degenerate su(2) codes; not cited as proof."
+    },
+    {
+      "arxiv": "1205.4517v1",
+      "url": "https://arxiv.org/abs/1205.4517",
+      "used_for": "Intrinsic quantum metric/MacWilliams framework; null-error quotient caveat."
+    },
+    {
+      "arxiv": "2606.22538v2",
+      "url": "https://arxiv.org/html/2606.22538v2",
+      "used_for": "Lloyd-square method in physical Hamming space, not this spin-metric theorem."
+    }
+  ],
+  "priority": "No exhaustive priority claim; no external review or acceptance."
+}

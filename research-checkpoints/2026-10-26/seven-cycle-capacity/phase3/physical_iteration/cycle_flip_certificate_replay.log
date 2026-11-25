@@ -1,0 +1,35 @@
+Base gadget (d = 5)
+  [ok] I independent
+  [ok] X independent
+  [ok] private pairs valid
+  [ok] endpoint-disjoint
+  [ok] P^H independent
+  [ok] P^V independent
+  [ok] complementary transversals
+  [ok] X cap N(P^H) cap N(P^V) empty
+  [ok] T is a bijection
+  [ok] T preserves confusability
+  profile (367, 8, 367, 322, 26, 19)
+  d=2k: |I|=134753 |X^0|=105709 |X^H|=14490 |X^V|=14490
+        oriented A: |X^0|=105709 |X^H|=12236 |X^V|=16744
+        |J^+|=134753  |Jq|=25352  |J^+ cap N(X^0)|=109401  (pre-exchange 25344)
+
+  C1 = |J^+ \ N(X_10^0)| = 25352  (25344 before the exchanges)
+
+  |I_15| = 49495055   |X_15| = 49433743
+  C3  = |X_15 \ N(X_15^{0,X})| = 13949685
+  C2  = |J_15 \ N(X_15^{0,X})| = 11698980
+  q15 = |J_15 \ N(X_15^0)|      = 11899740
+
+  |I_30^{++}| = 2455726444728097
+  |X_30^{0,L}| = 1445588544660365
+    B15 x B15        size    2208101357412721  contribution    727450292253552
+    R15 x X15^0      size      88110231901008  contribution      6686033813632
+    P15^H x X15^H    size      16892129645784  contribution       196167577504
+    P15^V x X15^V    size      18810182110896  contribution       196167577504
+    X15^0 x R15      size      88110231901008  contribution      6760282252288
+    X15^H x P15^V    size      16892129645784  contribution       198342875104
+    X15^V x P15^H    size      18810182110896  contribution       198342875104
+  C4 = 741685629224688
+RESULT 3.25882526526239299780486462617970298999132893693143 TARGET_EXCEEDED False
+RESOURCES {'seconds': 41.54369824699825, 'maxRSS_KiB': 752164, 'status': 'full recomputation completed'}

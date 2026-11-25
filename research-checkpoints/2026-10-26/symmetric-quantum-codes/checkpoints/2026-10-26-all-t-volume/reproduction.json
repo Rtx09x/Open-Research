@@ -1,0 +1,19 @@
+{
+  "passed": true,
+  "worker_checker_dependencies": "Python standard library only",
+  "independent_checker_dependencies": "SymPy1.14.0 plus standard library",
+  "runs": [
+    {
+      "script": "check_no_perfect_rank_two.py",
+      "passed": true,
+      "seconds": 0.025529858001391403
+    },
+    {
+      "script": "independent/check_perfect_spin_codes_independent.py",
+      "passed": true,
+      "seconds": 0.3480969360025483
+    }
+  ],
+  "original_volume_manifest_sha256": "ba09eec34f2f2994072aff489a6b616482aab7711b4c9c620e3f774685bb4d14",
+  "scope": "No K2 equality code for any t>=2; not the constant3 minimum conjecture"
+}

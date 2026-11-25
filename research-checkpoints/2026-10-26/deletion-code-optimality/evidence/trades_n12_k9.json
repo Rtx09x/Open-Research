@@ -1,0 +1,58 @@
+{
+  "complete": true,
+  "n": 12,
+  "k": 9,
+  "connected_supports": [
+    {
+      "removed_count": 1,
+      "connected_supports": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "removed_count": 2,
+      "connected_supports": 68,
+      "sha256": "a03f51d4e2d8c69249a5a1fea57c7918d8c0bd787d75fd376d63a833abc5670a"
+    },
+    {
+      "removed_count": 3,
+      "connected_supports": 376,
+      "sha256": "a0092e8b72dd63d25c4dc37ffbd61a1cd4f5f589db571a978465085851971be5"
+    },
+    {
+      "removed_count": 4,
+      "connected_supports": 1358,
+      "sha256": "a2bfd613080d131efcba81ce417b2d7f55e4370dc020a48c9d353d0a3fdd0d9b"
+    },
+    {
+      "removed_count": 5,
+      "connected_supports": 5474,
+      "sha256": "d9afc97a67f25d2fe548cec39fb23a28c62801badb3441211fae530035bfd395"
+    },
+    {
+      "removed_count": 6,
+      "connected_supports": 23132,
+      "sha256": "4106216cfe6d5aa78b418e34358fd1ed7bbd96d182c7bc3973db794acca8f287"
+    },
+    {
+      "removed_count": 7,
+      "connected_supports": 102660,
+      "sha256": "81d182d92e31147221fc6b156bd775c223d079356a9bbcbee21ca2e7a2a355e6"
+    },
+    {
+      "removed_count": 8,
+      "connected_supports": 463558,
+      "sha256": "709807deaaa27cd39e1ae49cb9c9d543ca24fc90fac03cd13366bfef02d19896"
+    },
+    {
+      "removed_count": 9,
+      "connected_supports": 2136830,
+      "sha256": "9183e7bf5df7d6d1f8e4b2e98cfc4179732ae5f2bcce919868400b149149f35d"
+    }
+  ],
+  "checked": 2733456,
+  "eligible_improvement_tests": 249548,
+  "positive": [],
+  "neutral_examples": [],
+  "seconds": 216.92289984299896,
+  "claim": "No improving trade removing at most 9 words of VT0(12)"
+}

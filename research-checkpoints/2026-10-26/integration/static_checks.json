@@ -1,0 +1,14 @@
+{
+  "passed": true,
+  "python_sources_parse": 95,
+  "json_artifacts_parse": 82,
+  "bundled_upstream_files_byte_identical": 36,
+  "full_paper_html_pdf_and_large_array_caches_absent": true,
+  "absolute_workspace_paths_in_python_absent": true,
+  "network_and_dependency_downloads_during_replay": false,
+  "replay_commands_passed": 30,
+  "negative_controls_rejected": 4,
+  "upstream_transcription_tests_passed": 4,
+  "numerical_positive_controls_passed": 2,
+  "note": "Fresh frontier primary-source and portable AH audit logs are also bundled; source-theorem validity and novelty are separate assumptions."
+}

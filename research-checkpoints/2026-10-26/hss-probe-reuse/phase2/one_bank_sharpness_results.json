@@ -1,0 +1,42 @@
+{
+  "status": "PASS",
+  "arithmetic": "fractions.Fraction",
+  "sharp_limit": 5,
+  "results": [
+    {
+      "rotation_half_angle_tangent": "1/4",
+      "ancestors": 7,
+      "exact_gain": "1380834955229761/582622237229761",
+      "gain_float": 2.3700347617957798,
+      "exact_gain_below5": true
+    },
+    {
+      "rotation_half_angle_tangent": "1/8",
+      "ancestors": 14,
+      "exact_gain": null,
+      "gain_float": 3.2140893394211223,
+      "exact_gain_below5": true
+    },
+    {
+      "rotation_half_angle_tangent": "1/32",
+      "ancestors": 51,
+      "exact_gain": null,
+      "gain_float": 4.458794971952354,
+      "exact_gain_below5": true
+    },
+    {
+      "rotation_half_angle_tangent": "1/128",
+      "ancestors": 202,
+      "exact_gain": null,
+      "gain_float": 4.855748468446957,
+      "exact_gain_below5": true
+    },
+    {
+      "rotation_half_angle_tangent": "1/512",
+      "ancestors": 805,
+      "exact_gain": null,
+      "gain_float": 4.963382303869948,
+      "exact_gain_below5": true
+    }
+  ]
+}

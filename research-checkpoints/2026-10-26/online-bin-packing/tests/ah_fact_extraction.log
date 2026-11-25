@@ -1,0 +1,7 @@
+{
+  "status": "EXTRACTED",
+  "classes": 211,
+  "explicit_weight_intervals": 198,
+  "source_sha256": "f4b6144a688e5dc36f5a8014a9bde2e335a02f53865f713476e601f8aed5f914",
+  "output": "/workspace/shared/research-active/frontier-audit/ah_primary_numerical_facts.json"
+}

@@ -1,0 +1,12 @@
+{
+  "PASS": true,
+  "pi_lower_bound": "314159/100000",
+  "theta_C7_upper_numerator": "14659283623036993583748209108942437668267887736672647",
+  "theta_C7_upper_denominator": "4418551137919570511964029872706062524038269676667521",
+  "theta_C7_fifth_power_strictly_below": 402,
+  "remaining_integer_orders": [
+    368,
+    401
+  ],
+  "scope": "Dimension-five finite-subgroup torus construction with distance>=2/7; does not bound all independent codes by367."
+}

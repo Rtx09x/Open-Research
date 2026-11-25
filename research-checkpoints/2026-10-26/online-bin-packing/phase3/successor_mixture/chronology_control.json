@@ -1,0 +1,56 @@
+{
+  "status": "PASS finite falsification control only",
+  "size_unit": "1/60",
+  "capacities": [
+    18,
+    30
+  ],
+  "sizes": [
+    3,
+    6,
+    12,
+    15
+  ],
+  "maximum_item": 15,
+  "sequence_length": 9,
+  "cuts": [
+    [
+      0,
+      0
+    ],
+    [
+      0,
+      6
+    ],
+    [
+      3,
+      6
+    ],
+    [
+      3,
+      12
+    ],
+    [
+      6,
+      12
+    ],
+    [
+      6,
+      15
+    ],
+    [
+      12,
+      15
+    ],
+    [
+      15,
+      15
+    ]
+  ],
+  "sequences": 262144,
+  "cutoff_checks": 2097152,
+  "S_targets": 0,
+  "N_targets": 649564,
+  "nontrivial_both_classes": 0,
+  "seconds": 11.97813105583191
+}

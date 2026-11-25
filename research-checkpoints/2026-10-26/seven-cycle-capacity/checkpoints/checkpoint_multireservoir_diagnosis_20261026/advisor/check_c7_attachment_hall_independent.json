@@ -1,0 +1,20 @@
+{
+  "PASS": true,
+  "certificate_sha256": "3fbd8a228a1830b23a1097c7976e7ababd6f668f16df8d84cd142fe522253ec8",
+  "left": 5296,
+  "matching": 5016,
+  "hall_left": 4272,
+  "complete_hall_neighbors": 3992,
+  "deficiency": 280,
+  "isolated_left": 30,
+  "nonisolated_deficit": 250,
+  "components": 203,
+  "large_component_deficiencies": [
+    184,
+    22,
+    22,
+    18
+  ],
+  "seconds": 0.5474307549993682,
+  "scope": "Optimal core attachment only for the fixed Z/T(Z) pairing; not optimal global clique cover or actual independence number"
+}

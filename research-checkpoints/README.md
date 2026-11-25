@@ -1,0 +1,5 @@
+# Research checkpoints
+
+[26 October 2026 frozen checkpoint](2026-10-26/) was reconstructed from the private research repository at commit `5ceb361c54bfa0d58ca13da5851ded3bab273079` (tree `f9107c73e3722e66c8e662666d131e62568c98a5`) and preserves the original directory layout, proofs, audit scripts, fixtures, historical notes, and replay runners needed across several projects. Its original README and dated documents describe the status at that time, not a new claim of review or priority. The checkpoint retains upstream licences and notices; its own historical licensing statements are preserved as provenance. The repository [licensing policy](../LICENSE.md) applies only to rights the author is authorised to grant.
+
+From the checkpoint directory, `python verify_manifest.py` verifies the frozen integrated files. `python run_checkpoint_20261026.py --help` lists selected scoped replays. Work in a disposable copy and use the requirements in the relevant track. These checks do not replace external review of the analytic arguments.

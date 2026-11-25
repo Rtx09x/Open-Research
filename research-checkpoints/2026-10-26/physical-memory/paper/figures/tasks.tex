@@ -1,0 +1,10 @@
+\begin{tikzpicture}[x=1cm,y=1cm,font=\small]
+\foreach \lab/\val/\yy in {Hold/6/3.6,Cycle/7/2.65,Reset/11/1.7,Merge/13/.75}{
+ \node[anchor=east,font=\small] at (2.0,\yy) {\lab};
+ \draw[fill=papergray,draw=none,rounded corners=2pt] (2.35,\yy-.17) rectangle (10.1,\yy+.17);
+ \pgfmathsetmacro{\w}{\val/13*7.75}
+ \draw[fill=azure,draw=none,rounded corners=2pt] (2.35,\yy-.17) rectangle ({2.35+\w},\yy+.17);
+ \node[anchor=west,font=\small\bfseries] at ({2.46+\w},\yy) {\val};
+}
+\node[anchor=west,font=\footnotesize,text=black!75] at (2.35,.15) {Exactly 35 states in each separately realized task};
+\end{tikzpicture}

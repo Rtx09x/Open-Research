@@ -1,0 +1,129 @@
+{
+  "status": "PASS",
+  "exact_integer_complex_tests": 20,
+  "sign_calibration_delta": -8,
+  "seconds": 0.84889817237854,
+  "checks": [
+    {
+      "d": 1,
+      "case": 0,
+      "determinant": "0",
+      "delta": -1500
+    },
+    {
+      "d": 1,
+      "case": 1,
+      "determinant": "0",
+      "delta": -260
+    },
+    {
+      "d": 1,
+      "case": 2,
+      "determinant": "0",
+      "delta": -160
+    },
+    {
+      "d": 1,
+      "case": 3,
+      "determinant": "0",
+      "delta": -1200
+    },
+    {
+      "d": 2,
+      "case": 0,
+      "determinant": "16",
+      "delta": -1984
+    },
+    {
+      "d": 2,
+      "case": 1,
+      "determinant": "256",
+      "delta": -5292
+    },
+    {
+      "d": 2,
+      "case": 2,
+      "determinant": "2304",
+      "delta": -6048
+    },
+    {
+      "d": 2,
+      "case": 3,
+      "determinant": "13456",
+      "delta": -416
+    },
+    {
+      "d": 3,
+      "case": 0,
+      "determinant": "356",
+      "delta": -512
+    },
+    {
+      "d": 3,
+      "case": 1,
+      "determinant": "99185",
+      "delta": 800
+    },
+    {
+      "d": 3,
+      "case": 2,
+      "determinant": "58409",
+      "delta": 1040
+    },
+    {
+      "d": 3,
+      "case": 3,
+      "determinant": "36585",
+      "delta": 336
+    },
+    {
+      "d": 5,
+      "case": 0,
+      "determinant": "1515029",
+      "delta": -8820
+    },
+    {
+      "d": 5,
+      "case": 1,
+      "determinant": "200164",
+      "delta": -10448
+    },
+    {
+      "d": 5,
+      "case": 2,
+      "determinant": "525144",
+      "delta": -556
+    },
+    {
+      "d": 5,
+      "case": 3,
+      "determinant": "260028",
+      "delta": -1152
+    },
+    {
+      "d": 18,
+      "case": 0,
+      "determinant": "394693145",
+      "delta": -254632
+    },
+    {
+      "d": 18,
+      "case": 1,
+      "determinant": "375310312",
+      "delta": -8856
+    },
+    {
+      "d": 18,
+      "case": 2,
+      "determinant": "481308049",
+      "delta": -69584
+    },
+    {
+      "d": 18,
+      "case": 3,
+      "determinant": "429196272",
+      "delta": 16320
+    }
+  ],
+  "scope": "exact identity controls plus separate analytic proof; no quantum-code feasibility result"
+}

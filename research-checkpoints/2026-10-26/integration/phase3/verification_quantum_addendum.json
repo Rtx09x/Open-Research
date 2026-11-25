@@ -1,0 +1,86 @@
+{
+  "host_utc_started": "2026-10-25T23:37:43.389262+00:00",
+  "network_used": false,
+  "slow_included": false,
+  "checks": [
+    {
+      "group": "quantum",
+      "cwd": "symmetric-quantum-codes/phase3",
+      "command": "python check_reduced_t2.py",
+      "scope": "rigorous finite certificate arithmetic; scope/necessity in separate theorem and audits",
+      "cpu_limit_seconds": 300,
+      "passed": true,
+      "returncode": 0,
+      "output": "cone lift done; seconds 2.1939423084259033\n{\n  \"rigorously_verified\": true,\n  \"arithmetic\": \"Arb outward-rounded balls,256bits; rational Gram PSD factors\",\n  \"candidate_sha256\": \"1a592107cfbd2c27a2b89404732a294a05d723ea28354fe61bbffd3ca39153c8\",\n  \"constant_exact\": \"-101616931/1000000000000\",\n  \"constant_upper\": \"-1/10000\",\n  \"each_residual_entry_bound\": \"1/10000000\",\n  \"residual_bound_exact\": \"323/20000000\",\n  \"strict_negative_upper\": \"-1677/20000000\",\n  \"diagnostic_max_Z_residual_float\": 7.345135080829484e-11,\n  \"diagnostic_max_a_residual_float\": 1.57766297322253e-09,\n  \"elapsed_seconds\": 2.5682742595672607,\n  \"scope\": \"Necessary three-copy relaxation for unrestricted complex symmetric18-qubit rank2 distance5 codes; physical/model applicability must be independently audited.\"\n}\n",
+      "seconds": 2.812
+    },
+    {
+      "group": "quantum",
+      "cwd": "symmetric-quantum-codes/phase3",
+      "command": "python check_general_dual.py 33 3",
+      "scope": "rigorous finite certificate arithmetic; scope/necessity in separate theorem and audits",
+      "cpu_limit_seconds": 300,
+      "passed": true,
+      "returncode": 0,
+      "output": "PPT lift seconds 42.624945402145386\n{\n  \"n\": 33,\n  \"t\": 3,\n  \"rigorously_verified\": true,\n  \"witness_sha256\": \"49fb069b0eaf9a25be58aa079aa31cf101d2f9ac248401b7532d08b3c6cd51a0\",\n  \"constant_exact\": \"-169973/6250000000\",\n  \"each_residual_entry_bound\": \"1/100000000\",\n  \"residual_budget_exact\": \"289/100000000\",\n  \"strict_negative_upper_exact\": \"-303821/12500000000\",\n  \"diagnostic_max_Z_residual\": 1.6110243551572512e-11,\n  \"diagnostic_max_a_residual\": 2.466776239907728e-10,\n  \"seconds\": 48.00838041305542,\n  \"scope\": \"Unrestricted complex symmetric rank2 code, distance2t+1; independent arithmetic and model audits remain separate.\"\n}\n",
+      "seconds": 48.274
+    },
+    {
+      "group": "quantum",
+      "cwd": "symmetric-quantum-codes/phase3",
+      "command": "python check_general_dual_tight.py 34 3",
+      "scope": "rigorous finite certificate arithmetic; scope/necessity in separate theorem and audits",
+      "cpu_limit_seconds": 300,
+      "passed": true,
+      "returncode": 0,
+      "output": "PPT lift seconds 29.29451084136963\n{\n  \"n\": 34,\n  \"t\": 3,\n  \"rigorously_verified\": true,\n  \"witness_sha256\": \"04ca5f383f77f8168d3989cb2b67a13ae51a82648518ec75d0f6407c1fb392ba\",\n  \"constant_exact\": \"-2785623/2000000000000\",\n  \"each_residual_entry_bound\": \"1/1000000000\",\n  \"residual_budget_exact\": \"119/400000000\",\n  \"strict_negative_upper_exact\": \"-2190623/2000000000000\",\n  \"diagnostic_max_Z_residual\": 5.11661419798823e-11,\n  \"diagnostic_max_a_residual\": 8.508424489795918e-10,\n  \"seconds\": 32.19886231422424,\n  \"scope\": \"Unrestricted complex symmetric rank2 code, distance2t+1; independent arithmetic and model audits remain separate.\"\n}\n",
+      "seconds": 32.428
+    },
+    {
+      "group": "quantum",
+      "cwd": "symmetric-quantum-codes/phase3",
+      "command": "python check_non_anticoherence37.py",
+      "scope": "rigorous finite certificate arithmetic; scope/necessity in separate theorem and audits",
+      "cpu_limit_seconds": 300,
+      "passed": true,
+      "returncode": 0,
+      "output": "{'exact_interval_excludes_zero': True, 'approx_difference': -27.027173324420136, 'meaning': 'Exact distance7 code37 is not2-anticoherent. KL scalar compressions are not forced zero.'}\n",
+      "seconds": 0.074
+    },
+    {
+      "group": "quantum",
+      "cwd": "advisor/phase3",
+      "command": "python check_code37_independent.py",
+      "scope": "independent exact37 root/all98KL or scalar exclusions",
+      "cpu_limit_seconds": 300,
+      "passed": true,
+      "returncode": 0,
+      "output": "Contraction PASS 3.58696087531312e-86 8.933021654892217e-41\n{'passed': True, 'n': 37, 't': 3, 'distance': 7, 'root_sha256': 'd23d7c1af1e44f9cb4643ee8e6c8d0c7e627d0ce7297c91591638cfd340f3bd2', 'kl_sha256': 'eb56348cd7966f32f7839d701ba0a98a5b45a4648583e60a15a1ddd3c8b6f248', 'variables': 18, 'exact_KL_polynomials': 98, 'radius': '1/100000000000000000000000000000000000000000000000000', 'eta_float': 3.58696087531312e-86, 'Lr_float': 8.933021654892217e-41, 'existence': True, 'contraction': True, 'seconds': 2.000328540802002, 'method': 'stdlib ast sparse polynomials + Fraction Gauss-Jordan; no worker imports, no floating proof arithmetic', 'scope': 'Existence of real fully symmetric two-dimensional n37 code correcting arbitrary three-qubit errors; not minimality or novelty.'}\n",
+      "seconds": 2.086
+    },
+    {
+      "group": "quantum",
+      "cwd": "advisor/phase3",
+      "command": "python check_t3_scalar_hypergeom.py",
+      "scope": "independent exact37 root/all98KL or scalar exclusions",
+      "cpu_limit_seconds": 300,
+      "passed": true,
+      "returncode": 0,
+      "output": "{\n  \"status\": \"PASS\",\n  \"matrix_method\": \"terminating rational4F3, no worker/SymPy imports\",\n  \"certificate_sha256\": \"c64e18a88fb449675df89f6b813afd6d43ba23a9ae58613ba8e3f426453dde85\",\n  \"results\": [\n    {\n      \"n\": 13,\n      \"t\": 3,\n      \"exact_Farkas\": \"PASS\",\n      \"rhs_dot_y\": \"-1\",\n      \"positive_dual_terms\": 7\n    },\n    {\n      \"n\": 14,\n      \"t\": 3,\n      \"exact_Farkas\": \"PASS\",\n      \"rhs_dot_y\": \"-1\",\n      \"positive_dual_terms\": 8\n    },\n    {\n      \"n\": 15,\n      \"t\": 3,\n      \"exact_Farkas\": \"PASS\",\n      \"rhs_dot_y\": \"-1\",\n      \"positive_dual_terms\": 9\n    },\n    {\n      \"n\": 16,\n      \"t\": 3,\n      \"exact_Farkas\": \"PASS\",\n      \"rhs_dot_y\": \"-1\",\n      \"positive_dual_terms\": 10\n    },\n    {\n      \"n\": 17,\n      \"t\": 3,\n      \"exact_Farkas\": \"PASS\",\n      \"rhs_dot_y\": \"-1\",\n      \"positive_dual_terms\": 11\n    },\n    {\n      \"n\": 18,\n      \"t\": 3,\n      \"exact_Farkas\": \"PASS\",\n      \"rhs_dot_y\": \"-1\",\n      \"positive_dual_terms\": 12\n    },\n    {\n      \"n\": 19,\n      \"t\": 3,\n      \"exact_Farkas\": \"PASS\",\n      \"rhs_dot_y\": \"-1\",\n      \"positive_dual_terms\": 13\n    },\n    {\n      \"n\": 20,\n      \"t\": 3,\n      \"exact_Farkas\": \"PASS\",\n      \"rhs_dot_y\": \"-1\",\n      \"positive_dual_terms\": 14\n    },\n    {\n      \"n\": 21,\n      \"t\": 3,\n      \"exact_Farkas\": \"PASS\",\n      \"rhs_dot_y\": \"-1\",\n      \"positive_dual_terms\": 15\n    },\n    {\n      \"n\": 22,\n      \"t\": 3,\n      \"exact_Farkas\": \"PASS\",\n      \"rhs_dot_y\": \"-1\",\n      \"positive_dual_terms\": 16\n    },\n    {\n      \"n\": 23,\n      \"t\": 3,\n      \"exact_Farkas\": \"PASS\",\n      \"rhs_dot_y\": \"-1\",\n      \"positive_dual_terms\": 17\n    },\n    {\n      \"n\": 24,\n      \"t\": 3,\n      \"exact_Farkas\": \"PASS\",\n      \"rhs_dot_y\": \"-1\",\n      \"positive_dual_terms\": 18\n    },\n    {\n      \"n\": 25,\n      \"t\": 3,\n      \"exact_Farkas\": \"PASS\",\n      \"rhs_dot_y\": \"-1\",\n      \"positive_dual_terms\": 19\n    },\n    {\n      \"n\": 26,\n      \"t\": 3,\n      \"exact_Farkas\": \"PASS\",\n      \"rhs_dot_y\": \"-1\",\n      \"positive_dual_terms\": 20\n    },\n    {\n      \"n\": 27,\n      \"t\": 3,\n      \"exact_Farkas\": \"PASS\",\n      \"rhs_dot_y\": \"-1\",\n      \"positive_dual_terms\": 21\n    },\n    {\n      \"n\": 28,\n      \"t\": 3,\n      \"exact_Farkas\": \"PASS\",\n      \"rhs_dot_y\": \"-1\",\n      \"positive_dual_terms\": 22\n    },\n    {\n      \"n\": 29,\n      \"t\": 3,\n      \"exact_Farkas\": \"PASS\",\n      \"rhs_dot_y\": \"-1\",\n      \"positive_dual_terms\": 23\n    },\n    {\n      \"n\": 30,\n      \"t\": 3,\n      \"exact_Farkas\": \"PASS\",\n      \"rhs_dot_y\": \"-1\",\n      \"positive_dual_terms\": 24\n    },\n    {\n      \"n\": 31,\n      \"t\": 3,\n      \"exact_Farkas\": \"PASS\",\n      \"rhs_dot_y\": \"-1\",\n      \"positive_dual_terms\": 25\n    },\n    {\n      \"n\": 32,\n      \"t\": 3,\n      \"exact_Farkas\": \"PASS\",\n      \"rhs_dot_y\": \"-1\",\n      \"positive_dual_terms\": 26\n    }\n  ],\n  \"seconds\": 0.26541224399989005,\n  \"applicability\": \"Uses intrinsic LP plus time-reversal cross-enumerator positivity; no nondegeneracy assumption. Novelty separate.\"\n}\n",
+      "seconds": 0.345
+    },
+    {
+      "group": "quantum",
+      "cwd": "symmetric-quantum-codes/phase3",
+      "command": "python test_logical_face_inverse.py",
+      "scope": "small-spin complex numerical algebra control, not proof",
+      "cpu_limit_seconds": 300,
+      "passed": true,
+      "returncode": 0,
+      "output": "[\n  {\n    \"N\": 2,\n    \"K\": 2,\n    \"inverse_A\": 1.7431527984210495e-32,\n    \"inverse_R\": 1.7431527984210495e-32,\n    \"involution\": 0.0,\n    \"D_projector\": 1.266940774644117e-16,\n    \"D_trace\": 6.0,\n    \"D_min\": -1.6248411159539164e-20,\n    \"R_trace\": 4.0\n  },\n  {\n    \"N\": 3,\n    \"K\": 2,\n    \"inverse_A\": 1.1102230246251565e-16,\n    \"inverse_R\": 1.1102230246251565e-16,\n    \"involution\": 0.0,\n    \"D_projector\": 1.6653345811944838e-16,\n    \"D_trace\": 6.000000000000002,\n    \"D_min\": -3.5881267918304393e-16,\n    \"R_trace\": 4.000000000000001\n  },\n  {\n    \"N\": 3,\n    \"K\": 3,\n    \"inverse_A\": 7.326286716089295e-32,\n    \"inverse_R\": 7.326286716089295e-32,\n    \"involution\": 0.0,\n    \"D_projector\": 6.667907935964923e-16,\n    \"D_trace\": 24.00000000000001,\n    \"D_min\": -2.2210058148742455e-16,\n    \"R_trace\": 9.000000000000004\n  },\n  {\n    \"N\": 4,\n    \"K\": 2,\n    \"inverse_A\": 5.551115123125783e-17,\n    \"inverse_R\": 5.551115123125783e-17,\n    \"involution\": 0.0,\n    \"D_projector\": 1.6697558267765785e-16,\n    \"D_trace\": 5.9999999999999964,\n    \"D_min\": -6.57341607022909e-16,\n    \"R_trace\": 3.9999999999999973\n  },\n  {\n    \"N\": 4,\n    \"K\": 3,\n    \"inverse_A\": 1.1102230246251565e-16,\n    \"inverse_R\": 1.1102230246251565e-16,\n    \"involution\": 0.0,\n    \"D_projector\": 9.99200722164271e-16,\n    \"D_trace\": 24.00000000000001,\n    \"D_min\": -7.595880810048499e-16,\n    \"R_trace\": 9.000000000000004\n  },\n  {\n    \"N\": 5,\n    \"K\": 2,\n    \"inverse_A\": 5.551115123125783e-17,\n    \"inverse_R\": 5.551115123125783e-17,\n    \"involution\": 0.0,\n    \"D_projector\": 2.220767470817363e-16,\n    \"D_trace\": 6.000000000000006,\n    \"D_min\": -6.513508853789519e-16,\n    \"R_trace\": 4.0000000000000036\n  },\n  {\n    \"N\": 5,\n    \"K\": 3,\n    \"inverse_A\": 5.551115123125783e-17,\n    \"inverse_R\": 5.551115123125783e-17,\n    \"involution\": 0.0,\n    \"D_projector\": 2.221189122246135e-16,\n    \"D_trace\": 24.0,\n    \"D_min\": -9.240122243009485e-16,\n    \"R_trace\": 9.0\n  }\n]\n",
+      "seconds": 0.162
+    }
+  ],
+  "all_passed": true,
+  "host_utc_finished": "2026-10-25T23:39:09.574344+00:00"
+}

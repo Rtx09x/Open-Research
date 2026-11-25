@@ -1,0 +1,571 @@
+{
+  "status": "PASS",
+  "parent": 11,
+  "bundle_manifest_sha256": "75dfbeb05aa15b14a3e6f26b33b7ef94d7ca67c5339216246cc9fddb34c162e1",
+  "ancestors_recomputed": true,
+  "steps": [
+    "check_deletion_forced_receivers_independent.py",
+    "check_deletion_parent11_independent.py"
+  ],
+  "results": {
+    "check_deletion_parent11_independent.json": {
+      "PASS": true,
+      "method": "Own literal deletion, CG/fixed-prefix rebuild, exact dual costs and recursive forced-clique partition; no worker code imports",
+      "manifest_sha256": "75dfbeb05aa15b14a3e6f26b33b7ef94d7ca67c5339216246cc9fddb34c162e1",
+      "nodes": 61,
+      "direct_exact_leaves": 49,
+      "independently_bound_Farkas_leaves": [],
+      "forced_partitions": [
+        {
+          "path": "evidence/case/forced_clique1136/partition.json",
+          "children": [
+            518,
+            531,
+            547,
+            579,
+            643,
+            771,
+            1283,
+            2307
+          ],
+          "gap": 120480421,
+          "multiplier": 141621028
+        },
+        {
+          "path": "evidence/case/forced_clique1136/parent_518/forced_clique1068/partition.json",
+          "children": [
+            240,
+            248,
+            376,
+            488,
+            496
+          ],
+          "gap": 17848561,
+          "multiplier": 29665472
+        },
+        {
+          "path": "evidence/case/forced_clique1136/parent_531/forced_clique1959/partition.json",
+          "children": [
+            1030,
+            1091,
+            1155,
+            1539,
+            2563
+          ],
+          "gap": 21954519,
+          "multiplier": 117771896
+        },
+        {
+          "path": "evidence/case/forced_clique1136/parent_579/forced_clique614/partition.json",
+          "children": [
+            262,
+            275,
+            387,
+            2179
+          ],
+          "gap": 48207869,
+          "multiplier": 136058024
+        },
+        {
+          "path": "evidence/case/forced_clique1136/parent_643/forced_clique176/partition.json",
+          "children": [
+            70,
+            83,
+            99,
+            163,
+            1059,
+            2083
+          ],
+          "gap": 32698294,
+          "multiplier": 119339164
+        },
+        {
+          "path": "evidence/case/forced_clique1136/parent_771/forced_clique614/partition.json",
+          "children": [
+            262,
+            275,
+            291,
+            323,
+            1155,
+            2179
+          ],
+          "gap": 85789775,
+          "multiplier": 141374550
+        },
+        {
+          "path": "evidence/case/forced_clique1136/parent_771/forced_clique614/parent_291/forced_clique94/partition.json",
+          "children": [
+            38,
+            51,
+            1043,
+            2067
+          ],
+          "gap": 13126667,
+          "multiplier": 127170340
+        },
+        {
+          "path": "evidence/case/forced_clique1136/parent_1283/forced_clique614/partition.json",
+          "children": [
+            262,
+            275,
+            291,
+            323,
+            387,
+            2179
+          ],
+          "gap": 36439260,
+          "multiplier": 158076620
+        },
+        {
+          "path": "evidence/case/forced_clique1136/parent_2307/forced_clique614/partition.json",
+          "children": [
+            262,
+            275,
+            291,
+            323,
+            387
+          ],
+          "gap": 76684070,
+          "multiplier": 129676549
+        },
+        {
+          "path": "evidence/case/forced_clique1136/parent_2307/forced_clique614/parent_291/forced_clique330/partition.json",
+          "children": [
+            134,
+            195,
+            1091
+          ],
+          "gap": 3872563,
+          "multiplier": 143586240
+        },
+        {
+          "path": "evidence/case/forced_clique1136/parent_2307/forced_clique614/parent_323/forced_clique1959/partition.json",
+          "children": [
+            1030,
+            1043,
+            1059,
+            1539
+          ],
+          "gap": 709488,
+          "multiplier": 169539656
+        },
+        {
+          "path": "evidence/case/forced_clique1136/parent_2307/forced_clique614/parent_387/forced_clique330/partition.json",
+          "children": [
+            134,
+            147,
+            163,
+            1091
+          ],
+          "gap": 14695817,
+          "multiplier": 122444458
+        }
+      ],
+      "root_receiver3_parent": 11,
+      "claim": "Normalized target320 code with constants cannot contain word11",
+      "global_upper319": false,
+      "seconds": 4.730796803996782,
+      "node_checks": [
+        {
+          "path": "evidence/case",
+          "numerator": 320120480421,
+          "scale": 1000000000,
+          "direct_prune": false
+        },
+        {
+          "path": "evidence/case/forced_clique1136/parent_518",
+          "numerator": 320017848561,
+          "scale": 1000000000,
+          "direct_prune": false
+        },
+        {
+          "path": "evidence/case/forced_clique1136/parent_518/forced_clique1068/parent_240",
+          "numerator": 319994619493,
+          "scale": 1000000000,
+          "direct_prune": true
+        },
+        {
+          "path": "evidence/case/forced_clique1136/parent_518/forced_clique1068/parent_248",
+          "numerator": 319988971960,
+          "scale": 1000000000,
+          "direct_prune": true
+        },
+        {
+          "path": "evidence/case/forced_clique1136/parent_518/forced_clique1068/parent_376",
+          "numerator": 319797420709,
+          "scale": 1000000000,
+          "direct_prune": true
+        },
+        {
+          "path": "evidence/case/forced_clique1136/parent_518/forced_clique1068/parent_488",
+          "numerator": 319810073141,
+          "scale": 1000000000,
+          "direct_prune": true
+        },
+        {
+          "path": "evidence/case/forced_clique1136/parent_518/forced_clique1068/parent_496",
+          "numerator": 319989384017,
+          "scale": 1000000000,
+          "direct_prune": true
+        },
+        {
+          "path": "evidence/case/forced_clique1136/parent_531",
+          "numerator": 320021954519,
+          "scale": 1000000000,
+          "direct_prune": false
+        },
+        {
+          "path": "evidence/case/forced_clique1136/parent_531/forced_clique1959/parent_1030",
+          "numerator": 319893763812,
+          "scale": 1000000000,
+          "direct_prune": true
+        },
+        {
+          "path": "evidence/case/forced_clique1136/parent_531/forced_clique1959/parent_1091",
+          "numerator": 319914332443,
+          "scale": 1000000000,
+          "direct_prune": true
+        },
+        {
+          "path": "evidence/case/forced_clique1136/parent_531/forced_clique1959/parent_1155",
+          "numerator": 319956649006,
+          "scale": 1000000000,
+          "direct_prune": true
+        },
+        {
+          "path": "evidence/case/forced_clique1136/parent_531/forced_clique1959/parent_1539",
+          "numerator": 319947169390,
+          "scale": 1000000000,
+          "direct_prune": true
+        },
+        {
+          "path": "evidence/case/forced_clique1136/parent_531/forced_clique1959/parent_2563",
+          "numerator": 319807172599,
+          "scale": 1000000000,
+          "direct_prune": true
+        },
+        {
+          "path": "evidence/case/forced_clique1136/parent_547",
+          "numerator": 319997957089,
+          "scale": 1000000000,
+          "direct_prune": true
+        },
+        {
+          "path": "evidence/case/forced_clique1136/parent_579",
+          "numerator": 320048207869,
+          "scale": 1000000000,
+          "direct_prune": false
+        },
+        {
+          "path": "evidence/case/forced_clique1136/parent_579/forced_clique614/parent_262",
+          "numerator": 319900665255,
+          "scale": 1000000000,
+          "direct_prune": true
+        },
+        {
+          "path": "evidence/case/forced_clique1136/parent_579/forced_clique614/parent_275",
+          "numerator": 319977221522,
+          "scale": 1000000000,
+          "direct_prune": true
+        },
+        {
+          "path": "evidence/case/forced_clique1136/parent_579/forced_clique614/parent_387",
+          "numerator": 319984315598,
+          "scale": 1000000000,
+          "direct_prune": true
+        },
+        {
+          "path": "evidence/case/forced_clique1136/parent_579/forced_clique614/parent_2179",
+          "numerator": 319976249162,
+          "scale": 1000000000,
+          "direct_prune": true
+        },
+        {
+          "path": "evidence/case/forced_clique1136/parent_643",
+          "numerator": 320032698294,
+          "scale": 1000000000,
+          "direct_prune": false
+        },
+        {
+          "path": "evidence/case/forced_clique1136/parent_643/forced_clique176/parent_70",
+          "numerator": 319932540718,
+          "scale": 1000000000,
+          "direct_prune": true
+        },
+        {
+          "path": "evidence/case/forced_clique1136/parent_643/forced_clique176/parent_83",
+          "numerator": 319907859247,
+          "scale": 1000000000,
+          "direct_prune": true
+        },
+        {
+          "path": "evidence/case/forced_clique1136/parent_643/forced_clique176/parent_99",
+          "numerator": 319996327170,
+          "scale": 1000000000,
+          "direct_prune": true
+        },
+        {
+          "path": "evidence/case/forced_clique1136/parent_643/forced_clique176/parent_163",
+          "numerator": 319931655182,
+          "scale": 1000000000,
+          "direct_prune": true
+        },
+        {
+          "path": "evidence/case/forced_clique1136/parent_643/forced_clique176/parent_1059",
+          "numerator": 319931550513,
+          "scale": 1000000000,
+          "direct_prune": true
+        },
+        {
+          "path": "evidence/case/forced_clique1136/parent_643/forced_clique176/parent_2083",
+          "numerator": 319998982611,
+          "scale": 1000000000,
+          "direct_prune": true
+        },
+        {
+          "path": "evidence/case/forced_clique1136/parent_771",
+          "numerator": 320085789775,
+          "scale": 1000000000,
+          "direct_prune": false
+        },
+        {
+          "path": "evidence/case/forced_clique1136/parent_771/forced_clique614/parent_262",
+          "numerator": 319957875675,
+          "scale": 1000000000,
+          "direct_prune": true
+        },
+        {
+          "path": "evidence/case/forced_clique1136/parent_771/forced_clique614/parent_275",
+          "numerator": 319997172524,
+          "scale": 1000000000,
+          "direct_prune": true
+        },
+        {
+          "path": "evidence/case/forced_clique1136/parent_771/forced_clique614/parent_291",
+          "numerator": 320013126667,
+          "scale": 1000000000,
+          "direct_prune": false
+        },
+        {
+          "path": "evidence/case/forced_clique1136/parent_771/forced_clique614/parent_291/forced_clique94/parent_38",
+          "numerator": 319809803477,
+          "scale": 1000000000,
+          "direct_prune": true
+        },
+        {
+          "path": "evidence/case/forced_clique1136/parent_771/forced_clique614/parent_291/forced_clique94/parent_51",
+          "numerator": 319937892125,
+          "scale": 1000000000,
+          "direct_prune": true
+        },
+        {
+          "path": "evidence/case/forced_clique1136/parent_771/forced_clique614/parent_291/forced_clique94/parent_1043",
+          "numerator": 319917940558,
+          "scale": 1000000000,
+          "direct_prune": true
+        },
+        {
+          "path": "evidence/case/forced_clique1136/parent_771/forced_clique614/parent_291/forced_clique94/parent_2067",
+          "numerator": 319973632642,
+          "scale": 1000000000,
+          "direct_prune": true
+        },
+        {
+          "path": "evidence/case/forced_clique1136/parent_771/forced_clique614/parent_323",
+          "numerator": 319993802708,
+          "scale": 1000000000,
+          "direct_prune": true
+        },
+        {
+          "path": "evidence/case/forced_clique1136/parent_771/forced_clique614/parent_1155",
+          "numerator": 319996595676,
+          "scale": 1000000000,
+          "direct_prune": true
+        },
+        {
+          "path": "evidence/case/forced_clique1136/parent_771/forced_clique614/parent_2179",
+          "numerator": 319998528859,
+          "scale": 1000000000,
+          "direct_prune": true
+        },
+        {
+          "path": "evidence/case/forced_clique1136/parent_1283",
+          "numerator": 320036439260,
+          "scale": 1000000000,
+          "direct_prune": false
+        },
+        {
+          "path": "evidence/case/forced_clique1136/parent_1283/forced_clique614/parent_262",
+          "numerator": 319927170978,
+          "scale": 1000000000,
+          "direct_prune": true
+        },
+        {
+          "path": "evidence/case/forced_clique1136/parent_1283/forced_clique614/parent_275",
+          "numerator": 319965690784,
+          "scale": 1000000000,
+          "direct_prune": true
+        },
+        {
+          "path": "evidence/case/forced_clique1136/parent_1283/forced_clique614/parent_291",
+          "numerator": 319933845205,
+          "scale": 1000000000,
+          "direct_prune": true
+        },
+        {
+          "path": "evidence/case/forced_clique1136/parent_1283/forced_clique614/parent_323",
+          "numerator": 319961948188,
+          "scale": 1000000000,
+          "direct_prune": true
+        },
+        {
+          "path": "evidence/case/forced_clique1136/parent_1283/forced_clique614/parent_387",
+          "numerator": 319964585764,
+          "scale": 1000000000,
+          "direct_prune": true
+        },
+        {
+          "path": "evidence/case/forced_clique1136/parent_1283/forced_clique614/parent_2179",
+          "numerator": 319947504515,
+          "scale": 1000000000,
+          "direct_prune": true
+        },
+        {
+          "path": "evidence/case/forced_clique1136/parent_2307",
+          "numerator": 320076684070,
+          "scale": 1000000000,
+          "direct_prune": false
+        },
+        {
+          "path": "evidence/case/forced_clique1136/parent_2307/forced_clique614/parent_262",
+          "numerator": 319944399090,
+          "scale": 1000000000,
+          "direct_prune": true
+        },
+        {
+          "path": "evidence/case/forced_clique1136/parent_2307/forced_clique614/parent_275",
+          "numerator": 319999865169,
+          "scale": 1000000000,
+          "direct_prune": true
+        },
+        {
+          "path": "evidence/case/forced_clique1136/parent_2307/forced_clique614/parent_291",
+          "numerator": 320003872563,
+          "scale": 1000000000,
+          "direct_prune": false
+        },
+        {
+          "path": "evidence/case/forced_clique1136/parent_2307/forced_clique614/parent_291/forced_clique330/parent_134",
+          "numerator": 319858946497,
+          "scale": 1000000000,
+          "direct_prune": true
+        },
+        {
+          "path": "evidence/case/forced_clique1136/parent_2307/forced_clique614/parent_291/forced_clique330/parent_195",
+          "numerator": 319924507213,
+          "scale": 1000000000,
+          "direct_prune": true
+        },
+        {
+          "path": "evidence/case/forced_clique1136/parent_2307/forced_clique614/parent_291/forced_clique330/parent_1091",
+          "numerator": 319900926485,
+          "scale": 1000000000,
+          "direct_prune": true
+        },
+        {
+          "path": "evidence/case/forced_clique1136/parent_2307/forced_clique614/parent_323",
+          "numerator": 320000709488,
+          "scale": 1000000000,
+          "direct_prune": false
+        },
+        {
+          "path": "evidence/case/forced_clique1136/parent_2307/forced_clique614/parent_323/forced_clique1959/parent_1030",
+          "numerator": 319719796748,
+          "scale": 1000000000,
+          "direct_prune": true
+        },
+        {
+          "path": "evidence/case/forced_clique1136/parent_2307/forced_clique614/parent_323/forced_clique1959/parent_1043",
+          "numerator": 319902335028,
+          "scale": 1000000000,
+          "direct_prune": true
+        },
+        {
+          "path": "evidence/case/forced_clique1136/parent_2307/forced_clique614/parent_323/forced_clique1959/parent_1059",
+          "numerator": 319900612550,
+          "scale": 1000000000,
+          "direct_prune": true
+        },
+        {
+          "path": "evidence/case/forced_clique1136/parent_2307/forced_clique614/parent_323/forced_clique1959/parent_1539",
+          "numerator": 319865984022,
+          "scale": 1000000000,
+          "direct_prune": true
+        },
+        {
+          "path": "evidence/case/forced_clique1136/parent_2307/forced_clique614/parent_387",
+          "numerator": 320014695817,
+          "scale": 1000000000,
+          "direct_prune": false
+        },
+        {
+          "path": "evidence/case/forced_clique1136/parent_2307/forced_clique614/parent_387/forced_clique330/parent_134",
+          "numerator": 319893394706,
+          "scale": 1000000000,
+          "direct_prune": true
+        },
+        {
+          "path": "evidence/case/forced_clique1136/parent_2307/forced_clique614/parent_387/forced_clique330/parent_147",
+          "numerator": 319972678164,
+          "scale": 1000000000,
+          "direct_prune": true
+        },
+        {
+          "path": "evidence/case/forced_clique1136/parent_2307/forced_clique614/parent_387/forced_clique330/parent_163",
+          "numerator": 319898084639,
+          "scale": 1000000000,
+          "direct_prune": true
+        },
+        {
+          "path": "evidence/case/forced_clique1136/parent_2307/forced_clique614/parent_387/forced_clique330/parent_1091",
+          "numerator": 319898192709,
+          "scale": 1000000000,
+          "direct_prune": true
+        }
+      ]
+    },
+    "check_deletion_forced_receivers_independent.json": {
+      "PASS": true,
+      "independent_global_dual": true,
+      "gap": 497437108,
+      "scale": 1000000000,
+      "required_receiver_count": 16,
+      "parents_per_receiver": 13,
+      "strict_multiplier_margins": [
+        15223544,
+        2562892,
+        2562892,
+        2562892
+      ],
+      "certificate_sha256": "2784a559893740026e5d290b4d6a177167c262345c14976382de3e28b5fe6299",
+      "scope": "Every hypothetical320 code covers these16 outputs exactly once; not a global319 bound."
+    },
+    "deletion_cg_global_dual_audit.json": {
+      "passed": true,
+      "certificate": "/tmp/advisor-deletion-relocation/parent11/evidence/required_receivers320/global_dual.json",
+      "sha256": "1d1793b7996d2e4dec16361b4fbed9417d18ff8d46ed5c2ce07e4b8141d40dc5",
+      "numerator": 320497437108,
+      "denominator": 1000000000,
+      "exact_upper": "80124359277/250000000",
+      "upper_float": 320.497437108,
+      "integer_upper": 320,
+      "full_word_coverage_checks": 4096,
+      "cliques_checked": 599,
+      "nodes_expanded": 52,
+      "maximum_CG_rank": 1,
+      "seconds": 0.045174360275268555,
+      "method": "independent insertion-first string geometry; explicit four group transports; no worker imports"
+    }
+  },
+  "scope": "Normalized size320 code cannot contain word11; not global319."
+}

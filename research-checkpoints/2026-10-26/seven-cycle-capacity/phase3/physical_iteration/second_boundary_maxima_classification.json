@@ -1,0 +1,4966 @@
+{
+  "cover_sha256": "812f16eae44cd0597dc7ccf5a6c0147762f639dfce224050095440014a0d752b",
+  "initial_alphabet_size": 842,
+  "multi_covered_forbidden": [
+    222,
+    327,
+    866,
+    1202,
+    1209,
+    1216,
+    1247,
+    1254,
+    1326,
+    1353,
+    1517,
+    1546,
+    1559,
+    1560,
+    1590,
+    1595,
+    1970,
+    1986,
+    2331,
+    2525,
+    2827,
+    3011,
+    3072,
+    3373,
+    3421,
+    3422,
+    3697,
+    3723,
+    3763,
+    3764,
+    3765,
+    3947,
+    3954,
+    4045,
+    4052,
+    4059,
+    4066,
+    4075,
+    4107,
+    4499,
+    5071,
+    5125,
+    5808,
+    6060,
+    6085,
+    6103,
+    6144,
+    6151,
+    6152,
+    6159,
+    6166,
+    6438,
+    6445,
+    6452,
+    6453,
+    6460,
+    6501,
+    6512,
+    6796,
+    6839,
+    6887,
+    7131,
+    7335,
+    8114,
+    8206,
+    8307,
+    8314,
+    8497,
+    8522,
+    8538,
+    8545,
+    8552,
+    8559,
+    8834,
+    8839,
+    8840,
+    8881,
+    8895,
+    8899,
+    8900,
+    8902,
+    9182,
+    9183,
+    9231,
+    9245,
+    9434,
+    9532,
+    9586,
+    9973,
+    10266,
+    10664,
+    10701,
+    10757,
+    10758,
+    10894,
+    10909,
+    11000,
+    11007,
+    11059,
+    11067,
+    11227,
+    11244,
+    11276,
+    11646,
+    11913,
+    12032,
+    12326,
+    12337,
+    12339,
+    12346,
+    12373,
+    12452,
+    12513,
+    12618,
+    12667,
+    12738,
+    12763,
+    12815,
+    12830,
+    12921,
+    12941,
+    12982,
+    12983,
+    13031,
+    13032,
+    13033,
+    13040,
+    13080,
+    13091,
+    13096,
+    13114,
+    13159,
+    13172,
+    13183,
+    13259,
+    13282,
+    13284,
+    13310,
+    13324,
+    13334,
+    13341,
+    13359,
+    13365,
+    13382,
+    13383,
+    13394,
+    13401,
+    13516,
+    13546,
+    13551,
+    13558,
+    13565,
+    13578,
+    13595,
+    13596,
+    13627,
+    13638,
+    13644,
+    13645,
+    13652,
+    13675,
+    13676,
+    13683,
+    13684,
+    14020,
+    14026,
+    14035,
+    14041,
+    14258,
+    14280,
+    14284,
+    14285,
+    14287,
+    14330,
+    14334,
+    14335,
+    14369,
+    14370,
+    14378,
+    14379,
+    14384,
+    14573,
+    14635,
+    14725,
+    14726,
+    14727,
+    14774,
+    14781,
+    14810,
+    14824,
+    15025,
+    15041,
+    15042,
+    15068,
+    15074,
+    15343,
+    15383,
+    15385,
+    15441,
+    15465,
+    15466,
+    15515,
+    15560,
+    15575,
+    15654,
+    15660,
+    15667,
+    15680,
+    15686,
+    15703,
+    15711,
+    15721,
+    15727,
+    15728,
+    15735,
+    15759,
+    15760,
+    15761,
+    15766,
+    15782,
+    15802,
+    15818,
+    15829,
+    15896,
+    15903,
+    15923,
+    15947,
+    15952,
+    15959,
+    15970,
+    15972,
+    15981,
+    15997,
+    16027,
+    16039,
+    16069,
+    16070,
+    16078,
+    16080,
+    16088,
+    16145,
+    16298,
+    16378,
+    16389,
+    16396,
+    16421,
+    16567,
+    16688,
+    16737,
+    16739,
+    16786
+  ],
+  "arc_consistency_trace": [
+    [
+      {
+        "word": 278,
+        "incompatible_entire_clique": 9
+      },
+      {
+        "word": 965,
+        "incompatible_entire_clique": 303
+      },
+      {
+        "word": 1201,
+        "incompatible_entire_clique": 33
+      },
+      {
+        "word": 1279,
+        "incompatible_entire_clique": 305
+      },
+      {
+        "word": 1310,
+        "incompatible_entire_clique": 44
+      },
+      {
+        "word": 1315,
+        "incompatible_entire_clique": 303
+      },
+      {
+        "word": 1497,
+        "incompatible_entire_clique": 34
+      },
+      {
+        "word": 1503,
+        "incompatible_entire_clique": 50
+      },
+      {
+        "word": 1504,
+        "incompatible_entire_clique": 50
+      },
+      {
+        "word": 1638,
+        "incompatible_entire_clique": 53
+      },
+      {
+        "word": 1658,
+        "incompatible_entire_clique": 105
+      },
+      {
+        "word": 1972,
+        "incompatible_entire_clique": 326
+      },
+      {
+        "word": 3413,
+        "incompatible_entire_clique": 138
+      },
+      {
+        "word": 3702,
+        "incompatible_entire_clique": 53
+      },
+      {
+        "word": 3709,
+        "incompatible_entire_clique": 53
+      },
+      {
+        "word": 3813,
+        "incompatible_entire_clique": 50
+      },
+      {
+        "word": 6061,
+        "incompatible_entire_clique": 96
+      },
+      {
+        "word": 6104,
+        "incompatible_entire_clique": 96
+      },
+      {
+        "word": 6150,
+        "incompatible_entire_clique": 204
+      },
+      {
+        "word": 6200,
+        "incompatible_entire_clique": 204
+      },
+      {
+        "word": 6447,
+        "incompatible_entire_clique": 96
+      },
+      {
+        "word": 6493,
+        "incompatible_entire_clique": 204
+      },
+      {
+        "word": 6844,
+        "incompatible_entire_clique": 97
+      },
+      {
+        "word": 8448,
+        "incompatible_entire_clique": 192
+      },
+      {
+        "word": 8826,
+        "incompatible_entire_clique": 259
+      },
+      {
+        "word": 9184,
+        "incompatible_entire_clique": 104
+      },
+      {
+        "word": 9252,
+        "incompatible_entire_clique": 165
+      },
+      {
+        "word": 9876,
+        "incompatible_entire_clique": 283
+      },
+      {
+        "word": 9882,
+        "incompatible_entire_clique": 226
+      },
+      {
+        "word": 9925,
+        "incompatible_entire_clique": 283
+      },
+      {
+        "word": 10632,
+        "incompatible_entire_clique": 296
+      },
+      {
+        "word": 10702,
+        "incompatible_entire_clique": 244
+      },
+      {
+        "word": 10715,
+        "incompatible_entire_clique": 245
+      },
+      {
+        "word": 10764,
+        "incompatible_entire_clique": 245
+      },
+      {
+        "word": 10860,
+        "incompatible_entire_clique": 202
+      },
+      {
+        "word": 10908,
+        "incompatible_entire_clique": 318
+      },
+      {
+        "word": 10946,
+        "incompatible_entire_clique": 187
+      },
+      {
+        "word": 11045,
+        "incompatible_entire_clique": 244
+      },
+      {
+        "word": 11052,
+        "incompatible_entire_clique": 255
+      },
+      {
+        "word": 11164,
+        "incompatible_entire_clique": 315
+      },
+      {
+        "word": 11395,
+        "incompatible_entire_clique": 255
+      },
+      {
+        "word": 12186,
+        "incompatible_entire_clique": 281
+      },
+      {
+        "word": 12227,
+        "incompatible_entire_clique": 225
+      },
+      {
+        "word": 12270,
+        "incompatible_entire_clique": 273
+      },
+      {
+        "word": 12276,
+        "incompatible_entire_clique": 9
+      },
+      {
+        "word": 12283,
+        "incompatible_entire_clique": 9
+      },
+      {
+        "word": 12284,
+        "incompatible_entire_clique": 226
+      },
+      {
+        "word": 12320,
+        "incompatible_entire_clique": 220
+      },
+      {
+        "word": 12822,
+        "incompatible_entire_clique": 245
+      },
+      {
+        "word": 13015,
+        "incompatible_entire_clique": 285
+      },
+      {
+        "word": 13053,
+        "incompatible_entire_clique": 244
+      },
+      {
+        "word": 13066,
+        "incompatible_entire_clique": 205
+      },
+      {
+        "word": 13067,
+        "incompatible_entire_clique": 205
+      },
+      {
+        "word": 13109,
+        "incompatible_entire_clique": 310
+      },
+      {
+        "word": 13116,
+        "incompatible_entire_clique": 245
+      },
+      {
+        "word": 13157,
+        "incompatible_entire_clique": 298
+      },
+      {
+        "word": 13165,
+        "incompatible_entire_clique": 245
+      },
+      {
+        "word": 13309,
+        "incompatible_entire_clique": 327
+      },
+      {
+        "word": 13340,
+        "incompatible_entire_clique": 311
+      },
+      {
+        "word": 13499,
+        "incompatible_entire_clique": 298
+      },
+      {
+        "word": 13500,
+        "incompatible_entire_clique": 245
+      },
+      {
+        "word": 13508,
+        "incompatible_entire_clique": 245
+      },
+      {
+        "word": 13594,
+        "incompatible_entire_clique": 257
+      },
+      {
+        "word": 13643,
+        "incompatible_entire_clique": 325
+      },
+      {
+        "word": 13659,
+        "incompatible_entire_clique": 332
+      },
+      {
+        "word": 13685,
+        "incompatible_entire_clique": 328
+      },
+      {
+        "word": 13701,
+        "incompatible_entire_clique": 332
+      },
+      {
+        "word": 13789,
+        "incompatible_entire_clique": 324
+      },
+      {
+        "word": 13986,
+        "incompatible_entire_clique": 325
+      },
+      {
+        "word": 14019,
+        "incompatible_entire_clique": 311
+      },
+      {
+        "word": 14021,
+        "incompatible_entire_clique": 328
+      },
+      {
+        "word": 14033,
+        "incompatible_entire_clique": 336
+      },
+      {
+        "word": 14034,
+        "incompatible_entire_clique": 336
+      },
+      {
+        "word": 14244,
+        "incompatible_entire_clique": 281
+      },
+      {
+        "word": 14383,
+        "incompatible_entire_clique": 220
+      },
+      {
+        "word": 14666,
+        "incompatible_entire_clique": 342
+      },
+      {
+        "word": 14683,
+        "incompatible_entire_clique": 9
+      },
+      {
+        "word": 14684,
+        "incompatible_entire_clique": 9
+      },
+      {
+        "word": 14732,
+        "incompatible_entire_clique": 363
+      },
+      {
+        "word": 14740,
+        "incompatible_entire_clique": 9
+      },
+      {
+        "word": 15026,
+        "incompatible_entire_clique": 9
+      },
+      {
+        "word": 15027,
+        "incompatible_entire_clique": 9
+      },
+      {
+        "word": 15028,
+        "incompatible_entire_clique": 303
+      },
+      {
+        "word": 15076,
+        "incompatible_entire_clique": 303
+      },
+      {
+        "word": 15077,
+        "incompatible_entire_clique": 303
+      },
+      {
+        "word": 15125,
+        "incompatible_entire_clique": 310
+      },
+      {
+        "word": 15370,
+        "incompatible_entire_clique": 320
+      },
+      {
+        "word": 15377,
+        "incompatible_entire_clique": 320
+      },
+      {
+        "word": 15378,
+        "incompatible_entire_clique": 308
+      },
+      {
+        "word": 15418,
+        "incompatible_entire_clique": 310
+      },
+      {
+        "word": 15467,
+        "incompatible_entire_clique": 31
+      },
+      {
+        "word": 15510,
+        "incompatible_entire_clique": 310
+      },
+      {
+        "word": 15517,
+        "incompatible_entire_clique": 310
+      },
+      {
+        "word": 15636,
+        "incompatible_entire_clique": 35
+      },
+      {
+        "word": 15637,
+        "incompatible_entire_clique": 35
+      },
+      {
+        "word": 15653,
+        "incompatible_entire_clique": 327
+      },
+      {
+        "word": 15745,
+        "incompatible_entire_clique": 321
+      },
+      {
+        "word": 15752,
+        "incompatible_entire_clique": 307
+      },
+      {
+        "word": 15904,
+        "incompatible_entire_clique": 323
+      },
+      {
+        "word": 15979,
+        "incompatible_entire_clique": 35
+      },
+      {
+        "word": 15995,
+        "incompatible_entire_clique": 53
+      },
+      {
+        "word": 16001,
+        "incompatible_entire_clique": 53
+      },
+      {
+        "word": 16015,
+        "incompatible_entire_clique": 35
+      },
+      {
+        "word": 16028,
+        "incompatible_entire_clique": 261
+      },
+      {
+        "word": 16071,
+        "incompatible_entire_clique": 355
+      },
+      {
+        "word": 16246,
+        "incompatible_entire_clique": 48
+      },
+      {
+        "word": 16253,
+        "incompatible_entire_clique": 48
+      },
+      {
+        "word": 16330,
+        "incompatible_entire_clique": 326
+      },
+      {
+        "word": 16373,
+        "incompatible_entire_clique": 328
+      },
+      {
+        "word": 16379,
+        "incompatible_entire_clique": 261
+      },
+      {
+        "word": 16412,
+        "incompatible_entire_clique": 319
+      },
+      {
+        "word": 16422,
+        "incompatible_entire_clique": 328
+      },
+      {
+        "word": 16428,
+        "incompatible_entire_clique": 261
+      },
+      {
+        "word": 16793,
+        "incompatible_entire_clique": 333
+      }
+    ],
+    [
+      {
+        "word": 321,
+        "incompatible_entire_clique": 10
+      },
+      {
+        "word": 328,
+        "incompatible_entire_clique": 27
+      },
+      {
+        "word": 642,
+        "incompatible_entire_clique": 286
+      },
+      {
+        "word": 958,
+        "incompatible_entire_clique": 303
+      },
+      {
+        "word": 1552,
+        "incompatible_entire_clique": 48
+      },
+      {
+        "word": 1602,
+        "incompatible_entire_clique": 41
+      },
+      {
+        "word": 1651,
+        "incompatible_entire_clique": 41
+      },
+      {
+        "word": 2288,
+        "incompatible_entire_clique": 5
+      },
+      {
+        "word": 6074,
+        "incompatible_entire_clique": 39
+      },
+      {
+        "word": 6097,
+        "incompatible_entire_clique": 36
+      },
+      {
+        "word": 6117,
+        "incompatible_entire_clique": 188
+      },
+      {
+        "word": 6146,
+        "incompatible_entire_clique": 146
+      },
+      {
+        "word": 6187,
+        "incompatible_entire_clique": 195
+      },
+      {
+        "word": 6451,
+        "incompatible_entire_clique": 97
+      },
+      {
+        "word": 6487,
+        "incompatible_entire_clique": 60
+      },
+      {
+        "word": 7124,
+        "incompatible_entire_clique": 60
+      },
+      {
+        "word": 8698,
+        "incompatible_entire_clique": 149
+      },
+      {
+        "word": 10659,
+        "incompatible_entire_clique": 309
+      },
+      {
+        "word": 10666,
+        "incompatible_entire_clique": 190
+      },
+      {
+        "word": 10709,
+        "incompatible_entire_clique": 245
+      },
+      {
+        "word": 10953,
+        "incompatible_entire_clique": 309
+      },
+      {
+        "word": 11289,
+        "incompatible_entire_clique": 336
+      },
+      {
+        "word": 11298,
+        "incompatible_entire_clique": 329
+      },
+      {
+        "word": 12278,
+        "incompatible_entire_clique": 283
+      },
+      {
+        "word": 12611,
+        "incompatible_entire_clique": 225
+      },
+      {
+        "word": 12916,
+        "incompatible_entire_clique": 318
+      },
+      {
+        "word": 13297,
+        "incompatible_entire_clique": 309
+      },
+      {
+        "word": 13342,
+        "incompatible_entire_clique": 329
+      },
+      {
+        "word": 13407,
+        "incompatible_entire_clique": 307
+      },
+      {
+        "word": 13408,
+        "incompatible_entire_clique": 307
+      },
+      {
+        "word": 13509,
+        "incompatible_entire_clique": 245
+      },
+      {
+        "word": 13614,
+        "incompatible_entire_clique": 41
+      },
+      {
+        "word": 13690,
+        "incompatible_entire_clique": 336
+      },
+      {
+        "word": 13693,
+        "incompatible_entire_clique": 329
+      },
+      {
+        "word": 13851,
+        "incompatible_entire_clique": 322
+      },
+      {
+        "word": 13942,
+        "incompatible_entire_clique": 325
+      },
+      {
+        "word": 14336,
+        "incompatible_entire_clique": 283
+      },
+      {
+        "word": 14734,
+        "incompatible_entire_clique": 283
+      },
+      {
+        "word": 15126,
+        "incompatible_entire_clique": 310
+      },
+      {
+        "word": 15216,
+        "incompatible_entire_clique": 288
+      },
+      {
+        "word": 15217,
+        "incompatible_entire_clique": 23
+      },
+      {
+        "word": 15279,
+        "incompatible_entire_clique": 299
+      },
+      {
+        "word": 15369,
+        "incompatible_entire_clique": 294
+      },
+      {
+        "word": 15559,
+        "incompatible_entire_clique": 48
+      },
+      {
+        "word": 15909,
+        "incompatible_entire_clique": 48
+      },
+      {
+        "word": 16045,
+        "incompatible_entire_clique": 329
+      },
+      {
+        "word": 16094,
+        "incompatible_entire_clique": 329
+      },
+      {
+        "word": 16095,
+        "incompatible_entire_clique": 307
+      },
+      {
+        "word": 16107,
+        "incompatible_entire_clique": 41
+      }
+    ],
+    [
+      {
+        "word": 1687,
+        "incompatible_entire_clique": 53
+      },
+      {
+        "word": 6011,
+        "incompatible_entire_clique": 144
+      },
+      {
+        "word": 9875,
+        "incompatible_entire_clique": 164
+      },
+      {
+        "word": 10910,
+        "incompatible_entire_clique": 205
+      },
+      {
+        "word": 11053,
+        "incompatible_entire_clique": 255
+      },
+      {
+        "word": 11287,
+        "incompatible_entire_clique": 250
+      },
+      {
+        "word": 11639,
+        "incompatible_entire_clique": 164
+      },
+      {
+        "word": 12180,
+        "incompatible_entire_clique": 292
+      },
+      {
+        "word": 12271,
+        "incompatible_entire_clique": 292
+      },
+      {
+        "word": 12939,
+        "incompatible_entire_clique": 293
+      },
+      {
+        "word": 13468,
+        "incompatible_entire_clique": 357
+      },
+      {
+        "word": 15342,
+        "incompatible_entire_clique": 293
+      },
+      {
+        "word": 15454,
+        "incompatible_entire_clique": 309
+      },
+      {
+        "word": 16062,
+        "incompatible_entire_clique": 320
+      }
+    ],
+    [
+      {
+        "word": 3556,
+        "incompatible_entire_clique": 100
+      },
+      {
+        "word": 8605,
+        "incompatible_entire_clique": 254
+      },
+      {
+        "word": 13064,
+        "incompatible_entire_clique": 254
+      },
+      {
+        "word": 13316,
+        "incompatible_entire_clique": 304
+      },
+      {
+        "word": 13852,
+        "incompatible_entire_clique": 280
+      },
+      {
+        "word": 13943,
+        "incompatible_entire_clique": 280
+      },
+      {
+        "word": 15719,
+        "incompatible_entire_clique": 304
+      },
+      {
+        "word": 16147,
+        "incompatible_entire_clique": 336
+      }
+    ],
+    [
+      {
+        "word": 1299,
+        "incompatible_entire_clique": 320
+      },
+      {
+        "word": 4492,
+        "incompatible_entire_clique": 55
+      },
+      {
+        "word": 6500,
+        "incompatible_entire_clique": 196
+      },
+      {
+        "word": 10959,
+        "incompatible_entire_clique": 196
+      },
+      {
+        "word": 13250,
+        "incompatible_entire_clique": 325
+      }
+    ],
+    [
+      {
+        "word": 1627,
+        "incompatible_entire_clique": 40
+      },
+      {
+        "word": 10618,
+        "incompatible_entire_clique": 205
+      },
+      {
+        "word": 12514,
+        "incompatible_entire_clique": 302
+      }
+    ],
+    [
+      {
+        "word": 8163,
+        "incompatible_entire_clique": 242
+      }
+    ]
+  ],
+  "arc_consistency_rounds": 7,
+  "forced_after_arc_consistency": [
+    45,
+    56,
+    137,
+    148,
+    229,
+    289,
+    314,
+    373,
+    404,
+    440,
+    464,
+    525,
+    556,
+    617,
+    655,
+    700,
+    781,
+    792,
+    859,
+    873,
+    884,
+    951,
+    983,
+    1035,
+    1048,
+    1109,
+    1169,
+    1200,
+    1261,
+    1292,
+    1360,
+    1393,
+    1485,
+    1566,
+    1577,
+    1644,
+    1728,
+    1741,
+    1802,
+    1813,
+    1894,
+    1954,
+    1985,
+    2069,
+    2129,
+    2161,
+    2197,
+    2221,
+    2282,
+    2313,
+    2380,
+    2433,
+    2493,
+    2524,
+    2585,
+    2603,
+    2677,
+    2695,
+    2760,
+    2821,
+    2852,
+    2912,
+    2944,
+    3004,
+    3043,
+    3079,
+    3088,
+    3169,
+    3229,
+    3247,
+    3321,
+    3332,
+    3420,
+    3465,
+    3496,
+    3557,
+    3588,
+    3648,
+    3680,
+    3747,
+    3781,
+    3862,
+    3873,
+    3940,
+    4014,
+    4025,
+    4106,
+    4158,
+    4189,
+    4250,
+    4281,
+    4373,
+    4409,
+    4506,
+    4517,
+    4584,
+    4609,
+    4669,
+    4750,
+    4768,
+    4820,
+    4881,
+    4912,
+    4948,
+    4972,
+    5033,
+    5064,
+    5132,
+    5148,
+    5208,
+    5289,
+    5300,
+    5392,
+    5466,
+    5525,
+    5543,
+    5556,
+    5617,
+    5677,
+    5769,
+    5807,
+    5852,
+    5884,
+    5944,
+    6012,
+    6025,
+    6036,
+    6135,
+    6218,
+    6236,
+    6249,
+    6310,
+    6321,
+    6402,
+    6462,
+    6577,
+    6637,
+    6669,
+    6705,
+    6729,
+    6790,
+    6828,
+    6880,
+    6954,
+    6965,
+    7046,
+    7057,
+    7138,
+    7156,
+    7208,
+    7268,
+    7329,
+    7360,
+    7420,
+    7452,
+    7519,
+    7585,
+    7596,
+    7677,
+    7737,
+    7755,
+    7829,
+    7847,
+    7912,
+    7973,
+    8004,
+    8065,
+    8096,
+    8195,
+    8231,
+    8240,
+    8321,
+    8332,
+    8399,
+    8473,
+    8491,
+    8572,
+    8606,
+    8666,
+    8697,
+    8758,
+    8789,
+    8850,
+    8875,
+    8933,
+    9014,
+    9025,
+    9092,
+    9117,
+    9177,
+    9216,
+    9261,
+    9342,
+    9402,
+    9433,
+    9494,
+    9512,
+    9525,
+    9593,
+    9631,
+    9656,
+    9716,
+    9797,
+    9808,
+    9889,
+    9907,
+    9972,
+    10033,
+    10051,
+    10064,
+    10125,
+    10185,
+    10217,
+    10284,
+    10300,
+    10360,
+    10392,
+    10452,
+    10520,
+    10533,
+    10612,
+    10677,
+    10695,
+    10769,
+    10861,
+    10960,
+    10993,
+    11054,
+    11145,
+    11177,
+    11213,
+    11237,
+    11305,
+    11321,
+    11388,
+    11402,
+    11462,
+    11473,
+    11554,
+    11653,
+    11698,
+    11729,
+    11790,
+    11821,
+    11857,
+    11881,
+    11942,
+    11980,
+    12012,
+    12104,
+    12185,
+    12245,
+    12263,
+    12344,
+    12360,
+    12420,
+    12512,
+    12573,
+    12604,
+    12672,
+    12737,
+    12739,
+    12748,
+    12829,
+    12840,
+    12907,
+    12981,
+    12999,
+    13156,
+    13248,
+    13266,
+    13347,
+    13381,
+    13441,
+    13522,
+    13533,
+    13600,
+    13625,
+    13692,
+    13758,
+    13769,
+    13850,
+    13910,
+    13941,
+    14002,
+    14040,
+    14085,
+    14117,
+    14177,
+    14238,
+    14269,
+    14368,
+    14415,
+    14482,
+    14507,
+    14567,
+    14648,
+    14659,
+    14747,
+    14792,
+    14823,
+    14884,
+    14902,
+    14976,
+    15036,
+    15120,
+    15151,
+    15211,
+    15243,
+    15303,
+    15371,
+    15402,
+    15468,
+    15528,
+    15546,
+    15620,
+    15631,
+    15712,
+    15730,
+    15795,
+    15813,
+    15905,
+    16064,
+    16161,
+    16172,
+    16239,
+    16313,
+    16324,
+    16329,
+    16405,
+    16423,
+    16488,
+    16549,
+    16641,
+    16708,
+    16732,
+    16800
+  ],
+  "components": [
+    {
+      "clique_indices": [
+        4,
+        42,
+        46,
+        52,
+        62,
+        74,
+        90,
+        110,
+        136,
+        153,
+        168,
+        186,
+        241,
+        246,
+        248,
+        260,
+        277,
+        278,
+        300,
+        364
+      ],
+      "domains": [
+        [
+          215,
+          14572
+        ],
+        [
+          1376,
+          1669
+        ],
+        [
+          1425,
+          15887
+        ],
+        [
+          4342,
+          4391
+        ],
+        [
+          2046,
+          2053
+        ],
+        [
+          2616,
+          5367
+        ],
+        [
+          5374,
+          5381
+        ],
+        [
+          4440,
+          6546
+        ],
+        [
+          5708,
+          5709
+        ],
+        [
+          6545,
+          6894
+        ],
+        [
+          7244,
+          9645
+        ],
+        [
+          8157,
+          10551
+        ],
+        [
+          10544,
+          10879
+        ],
+        [
+          11085,
+          13486
+        ],
+        [
+          10780,
+          10829
+        ],
+        [
+          11222,
+          11565
+        ],
+        [
+          12093,
+          12094
+        ],
+        [
+          12095,
+          12481
+        ],
+        [
+          12824,
+          13174
+        ],
+        [
+          16237,
+          16580
+        ]
+      ],
+      "solutions": [
+        [
+          215,
+          1376,
+          2053,
+          4342,
+          4440,
+          5367,
+          5381,
+          5708,
+          6545,
+          7244,
+          10551,
+          10780,
+          10879,
+          11085,
+          11565,
+          12093,
+          12095,
+          12824,
+          15887,
+          16580
+        ],
+        [
+          1425,
+          1669,
+          2046,
+          2616,
+          4342,
+          5381,
+          5709,
+          6546,
+          6894,
+          8157,
+          9645,
+          10544,
+          10829,
+          11085,
+          11565,
+          12093,
+          12481,
+          13174,
+          14572,
+          16237
+        ]
+      ]
+    },
+    {
+      "clique_indices": [
+        9,
+        283
+      ],
+      "domains": [
+        [
+          14733,
+          15075
+        ],
+        [
+          12277,
+          14329
+        ]
+      ],
+      "solutions": [
+        [
+          14329,
+          14733
+        ],
+        [
+          12277,
+          15075
+        ],
+        [
+          14329,
+          15075
+        ]
+      ]
+    },
+    {
+      "clique_indices": [
+        48,
+        245
+      ],
+      "domains": [
+        [
+          1553,
+          15910
+        ],
+        [
+          10708,
+          13158
+        ]
+      ],
+      "solutions": [
+        [
+          1553,
+          10708
+        ],
+        [
+          1553,
+          13158
+        ],
+        [
+          10708,
+          15910
+        ]
+      ]
+    },
+    {
+      "clique_indices": [
+        96,
+        204
+      ],
+      "domains": [
+        [
+          3716,
+          6110
+        ],
+        [
+          6494,
+          8888
+        ]
+      ],
+      "solutions": [
+        [
+          3716,
+          6494
+        ],
+        [
+          3716,
+          8888
+        ],
+        [
+          6110,
+          8888
+        ]
+      ]
+    },
+    {
+      "clique_indices": [
+        261,
+        305
+      ],
+      "domains": [
+        [
+          13677,
+          14027
+        ],
+        [
+          15384,
+          15685
+        ]
+      ],
+      "solutions": [
+        [
+          13677,
+          15384
+        ],
+        [
+          14027,
+          15384
+        ],
+        [
+          14027,
+          15685
+        ]
+      ]
+    },
+    {
+      "clique_indices": [
+        307,
+        327
+      ],
+      "domains": [
+        [
+          13065,
+          13358
+        ],
+        [
+          15996,
+          16046
+        ]
+      ],
+      "solutions": [
+        [
+          13065,
+          15996
+        ],
+        [
+          13065,
+          16046
+        ],
+        [
+          13358,
+          15996
+        ]
+      ]
+    }
+  ],
+  "enumeration_nodes": 28,
+  "maximum_code_size": 367,
+  "maximum_code_count": 486,
+  "support_of_all_maximum_codes": [
+    45,
+    56,
+    137,
+    148,
+    215,
+    229,
+    289,
+    314,
+    373,
+    404,
+    440,
+    464,
+    525,
+    556,
+    617,
+    655,
+    700,
+    781,
+    792,
+    859,
+    873,
+    884,
+    951,
+    983,
+    1035,
+    1048,
+    1109,
+    1169,
+    1200,
+    1261,
+    1292,
+    1360,
+    1376,
+    1393,
+    1425,
+    1485,
+    1553,
+    1566,
+    1577,
+    1644,
+    1669,
+    1728,
+    1741,
+    1802,
+    1813,
+    1894,
+    1954,
+    1985,
+    2046,
+    2053,
+    2069,
+    2129,
+    2161,
+    2197,
+    2221,
+    2282,
+    2313,
+    2380,
+    2433,
+    2493,
+    2524,
+    2585,
+    2603,
+    2616,
+    2677,
+    2695,
+    2760,
+    2821,
+    2852,
+    2912,
+    2944,
+    3004,
+    3043,
+    3079,
+    3088,
+    3169,
+    3229,
+    3247,
+    3321,
+    3332,
+    3420,
+    3465,
+    3496,
+    3557,
+    3588,
+    3648,
+    3680,
+    3716,
+    3747,
+    3781,
+    3862,
+    3873,
+    3940,
+    4014,
+    4025,
+    4106,
+    4158,
+    4189,
+    4250,
+    4281,
+    4342,
+    4373,
+    4409,
+    4440,
+    4506,
+    4517,
+    4584,
+    4609,
+    4669,
+    4750,
+    4768,
+    4820,
+    4881,
+    4912,
+    4948,
+    4972,
+    5033,
+    5064,
+    5132,
+    5148,
+    5208,
+    5289,
+    5300,
+    5367,
+    5381,
+    5392,
+    5466,
+    5525,
+    5543,
+    5556,
+    5617,
+    5677,
+    5708,
+    5709,
+    5769,
+    5807,
+    5852,
+    5884,
+    5944,
+    6012,
+    6025,
+    6036,
+    6110,
+    6135,
+    6218,
+    6236,
+    6249,
+    6310,
+    6321,
+    6402,
+    6462,
+    6494,
+    6545,
+    6546,
+    6577,
+    6637,
+    6669,
+    6705,
+    6729,
+    6790,
+    6828,
+    6880,
+    6894,
+    6954,
+    6965,
+    7046,
+    7057,
+    7138,
+    7156,
+    7208,
+    7244,
+    7268,
+    7329,
+    7360,
+    7420,
+    7452,
+    7519,
+    7585,
+    7596,
+    7677,
+    7737,
+    7755,
+    7829,
+    7847,
+    7912,
+    7973,
+    8004,
+    8065,
+    8096,
+    8157,
+    8195,
+    8231,
+    8240,
+    8321,
+    8332,
+    8399,
+    8473,
+    8491,
+    8572,
+    8606,
+    8666,
+    8697,
+    8758,
+    8789,
+    8850,
+    8875,
+    8888,
+    8933,
+    9014,
+    9025,
+    9092,
+    9117,
+    9177,
+    9216,
+    9261,
+    9342,
+    9402,
+    9433,
+    9494,
+    9512,
+    9525,
+    9593,
+    9631,
+    9645,
+    9656,
+    9716,
+    9797,
+    9808,
+    9889,
+    9907,
+    9972,
+    10033,
+    10051,
+    10064,
+    10125,
+    10185,
+    10217,
+    10284,
+    10300,
+    10360,
+    10392,
+    10452,
+    10520,
+    10533,
+    10544,
+    10551,
+    10612,
+    10677,
+    10695,
+    10708,
+    10769,
+    10780,
+    10829,
+    10861,
+    10879,
+    10960,
+    10993,
+    11054,
+    11085,
+    11145,
+    11177,
+    11213,
+    11237,
+    11305,
+    11321,
+    11388,
+    11402,
+    11462,
+    11473,
+    11554,
+    11565,
+    11653,
+    11698,
+    11729,
+    11790,
+    11821,
+    11857,
+    11881,
+    11942,
+    11980,
+    12012,
+    12093,
+    12095,
+    12104,
+    12185,
+    12245,
+    12263,
+    12277,
+    12344,
+    12360,
+    12420,
+    12481,
+    12512,
+    12573,
+    12604,
+    12672,
+    12737,
+    12739,
+    12748,
+    12824,
+    12829,
+    12840,
+    12907,
+    12981,
+    12999,
+    13065,
+    13156,
+    13158,
+    13174,
+    13248,
+    13266,
+    13347,
+    13358,
+    13381,
+    13441,
+    13522,
+    13533,
+    13600,
+    13625,
+    13677,
+    13692,
+    13758,
+    13769,
+    13850,
+    13910,
+    13941,
+    14002,
+    14027,
+    14040,
+    14085,
+    14117,
+    14177,
+    14238,
+    14269,
+    14329,
+    14368,
+    14415,
+    14482,
+    14507,
+    14567,
+    14572,
+    14648,
+    14659,
+    14733,
+    14747,
+    14792,
+    14823,
+    14884,
+    14902,
+    14976,
+    15036,
+    15075,
+    15120,
+    15151,
+    15211,
+    15243,
+    15303,
+    15371,
+    15384,
+    15402,
+    15468,
+    15528,
+    15546,
+    15620,
+    15631,
+    15685,
+    15712,
+    15730,
+    15795,
+    15813,
+    15887,
+    15905,
+    15910,
+    15996,
+    16046,
+    16064,
+    16161,
+    16172,
+    16237,
+    16239,
+    16313,
+    16324,
+    16329,
+    16405,
+    16423,
+    16488,
+    16549,
+    16580,
+    16641,
+    16708,
+    16732,
+    16800
+  ],
+  "support_graph_components": [
+    {
+      "vertices": [
+        9216
+      ],
+      "degree_sequence": [
+        0
+      ]
+    },
+    {
+      "vertices": [
+        8195
+      ],
+      "degree_sequence": [
+        0
+      ]
+    },
+    {
+      "vertices": [
+        215,
+        1376,
+        1425,
+        1669,
+        2046,
+        2053,
+        2616,
+        4440,
+        5367,
+        5708,
+        5709,
+        6545,
+        6546,
+        6894,
+        7244,
+        8157,
+        9645,
+        10544,
+        10551,
+        10780,
+        10829,
+        10879,
+        12095,
+        12481,
+        12824,
+        13174,
+        14572,
+        15887,
+        16237,
+        16580
+      ],
+      "degree_sequence": [
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2
+      ]
+    },
+    {
+      "vertices": [
+        3079
+      ],
+      "degree_sequence": [
+        0
+      ]
+    },
+    {
+      "vertices": [
+        4106
+      ],
+      "degree_sequence": [
+        0
+      ]
+    },
+    {
+      "vertices": [
+        1035
+      ],
+      "degree_sequence": [
+        0
+      ]
+    },
+    {
+      "vertices": [
+        5132
+      ],
+      "degree_sequence": [
+        0
+      ]
+    },
+    {
+      "vertices": [
+        15371
+      ],
+      "degree_sequence": [
+        0
+      ]
+    },
+    {
+      "vertices": [
+        3088
+      ],
+      "degree_sequence": [
+        0
+      ]
+    },
+    {
+      "vertices": [
+        2069
+      ],
+      "degree_sequence": [
+        0
+      ]
+    },
+    {
+      "vertices": [
+        16405
+      ],
+      "degree_sequence": [
+        0
+      ]
+    },
+    {
+      "vertices": [
+        1048
+      ],
+      "degree_sequence": [
+        0
+      ]
+    },
+    {
+      "vertices": [
+        13677,
+        14027,
+        15384,
+        15685
+      ],
+      "degree_sequence": [
+        1,
+        1,
+        2,
+        2
+      ]
+    },
+    {
+      "vertices": [
+        5148
+      ],
+      "degree_sequence": [
+        0
+      ]
+    },
+    {
+      "vertices": [
+        14368
+      ],
+      "degree_sequence": [
+        0
+      ]
+    },
+    {
+      "vertices": [
+        13347
+      ],
+      "degree_sequence": [
+        0
+      ]
+    },
+    {
+      "vertices": [
+        8231
+      ],
+      "degree_sequence": [
+        0
+      ]
+    },
+    {
+      "vertices": [
+        16423
+      ],
+      "degree_sequence": [
+        0
+      ]
+    },
+    {
+      "vertices": [
+        7208
+      ],
+      "degree_sequence": [
+        0
+      ]
+    },
+    {
+      "vertices": [
+        11305
+      ],
+      "degree_sequence": [
+        0
+      ]
+    },
+    {
+      "vertices": [
+        15402
+      ],
+      "degree_sequence": [
+        0
+      ]
+    },
+    {
+      "vertices": [
+        10284
+      ],
+      "degree_sequence": [
+        0
+      ]
+    },
+    {
+      "vertices": [
+        45
+      ],
+      "degree_sequence": [
+        0
+      ]
+    },
+    {
+      "vertices": [
+        9261
+      ],
+      "degree_sequence": [
+        0
+      ]
+    },
+    {
+      "vertices": [
+        13065,
+        13358,
+        15996,
+        16046
+      ],
+      "degree_sequence": [
+        1,
+        1,
+        2,
+        2
+      ]
+    },
+    {
+      "vertices": [
+        8240
+      ],
+      "degree_sequence": [
+        0
+      ]
+    },
+    {
+      "vertices": [
+        56
+      ],
+      "degree_sequence": [
+        0
+      ]
+    },
+    {
+      "vertices": [
+        12344
+      ],
+      "degree_sequence": [
+        0
+      ]
+    },
+    {
+      "vertices": [
+        11321
+      ],
+      "degree_sequence": [
+        0
+      ]
+    },
+    {
+      "vertices": [
+        10300
+      ],
+      "degree_sequence": [
+        0
+      ]
+    },
+    {
+      "vertices": [
+        4158
+      ],
+      "degree_sequence": [
+        0
+      ]
+    },
+    {
+      "vertices": [
+        13381
+      ],
+      "degree_sequence": [
+        0
+      ]
+    },
+    {
+      "vertices": [
+        12360
+      ],
+      "degree_sequence": [
+        0
+      ]
+    },
+    {
+      "vertices": [
+        6218
+      ],
+      "degree_sequence": [
+        0
+      ]
+    },
+    {
+      "vertices": [
+        14415
+      ],
+      "degree_sequence": [
+        0
+      ]
+    },
+    {
+      "vertices": [
+        2129
+      ],
+      "degree_sequence": [
+        0
+      ]
+    },
+    {
+      "vertices": [
+        1109
+      ],
+      "degree_sequence": [
+        0
+      ]
+    },
+    {
+      "vertices": [
+        5208
+      ],
+      "degree_sequence": [
+        0
+      ]
+    },
+    {
+      "vertices": [
+        6236
+      ],
+      "degree_sequence": [
+        0
+      ]
+    },
+    {
+      "vertices": [
+        4189
+      ],
+      "degree_sequence": [
+        0
+      ]
+    },
+    {
+      "vertices": [
+        3169
+      ],
+      "degree_sequence": [
+        0
+      ]
+    },
+    {
+      "vertices": [
+        7268
+      ],
+      "degree_sequence": [
+        0
+      ]
+    },
+    {
+      "vertices": [
+        16488
+      ],
+      "degree_sequence": [
+        0
+      ]
+    },
+    {
+      "vertices": [
+        6249
+      ],
+      "degree_sequence": [
+        0
+      ]
+    },
+    {
+      "vertices": [
+        15468
+      ],
+      "degree_sequence": [
+        0
+      ]
+    },
+    {
+      "vertices": [
+        2161
+      ],
+      "degree_sequence": [
+        0
+      ]
+    },
+    {
+      "vertices": [
+        10360
+      ],
+      "degree_sequence": [
+        0
+      ]
+    },
+    {
+      "vertices": [
+        11388
+      ],
+      "degree_sequence": [
+        0
+      ]
+    },
+    {
+      "vertices": [
+        9342
+      ],
+      "degree_sequence": [
+        0
+      ]
+    },
+    {
+      "vertices": [
+        8321
+      ],
+      "degree_sequence": [
+        0
+      ]
+    },
+    {
+      "vertices": [
+        13441
+      ],
+      "degree_sequence": [
+        0
+      ]
+    },
+    {
+      "vertices": [
+        12420
+      ],
+      "degree_sequence": [
+        0
+      ]
+    },
+    {
+      "vertices": [
+        137
+      ],
+      "degree_sequence": [
+        0
+      ]
+    },
+    {
+      "vertices": [
+        11402
+      ],
+      "degree_sequence": [
+        0
+      ]
+    },
+    {
+      "vertices": [
+        8332
+      ],
+      "degree_sequence": [
+        0
+      ]
+    },
+    {
+      "vertices": [
+        1169
+      ],
+      "degree_sequence": [
+        0
+      ]
+    },
+    {
+      "vertices": [
+        14482
+      ],
+      "degree_sequence": [
+        0
+      ]
+    },
+    {
+      "vertices": [
+        148
+      ],
+      "degree_sequence": [
+        0
+      ]
+    },
+    {
+      "vertices": [
+        2197
+      ],
+      "degree_sequence": [
+        0
+      ]
+    },
+    {
+      "vertices": [
+        10392
+      ],
+      "degree_sequence": [
+        0
+      ]
+    },
+    {
+      "vertices": [
+        4250
+      ],
+      "degree_sequence": [
+        0
+      ]
+    },
+    {
+      "vertices": [
+        3229
+      ],
+      "degree_sequence": [
+        0
+      ]
+    },
+    {
+      "vertices": [
+        7329
+      ],
+      "degree_sequence": [
+        0
+      ]
+    },
+    {
+      "vertices": [
+        16549
+      ],
+      "degree_sequence": [
+        0
+      ]
+    },
+    {
+      "vertices": [
+        6310
+      ],
+      "degree_sequence": [
+        0
+      ]
+    },
+    {
+      "vertices": [
+        15528
+      ],
+      "degree_sequence": [
+        0
+      ]
+    },
+    {
+      "vertices": [
+        5289
+      ],
+      "degree_sequence": [
+        0
+      ]
+    },
+    {
+      "vertices": [
+        14507
+      ],
+      "degree_sequence": [
+        0
+      ]
+    },
+    {
+      "vertices": [
+        2221
+      ],
+      "degree_sequence": [
+        0
+      ]
+    },
+    {
+      "vertices": [
+        3247
+      ],
+      "degree_sequence": [
+        0
+      ]
+    },
+    {
+      "vertices": [
+        1200
+      ],
+      "degree_sequence": [
+        0
+      ]
+    },
+    {
+      "vertices": [
+        6321
+      ],
+      "degree_sequence": [
+        0
+      ]
+    },
+    {
+      "vertices": [
+        5300
+      ],
+      "degree_sequence": [
+        0
+      ]
+    },
+    {
+      "vertices": [
+        4281
+      ],
+      "degree_sequence": [
+        0
+      ]
+    },
+    {
+      "vertices": [
+        9402
+      ],
+      "degree_sequence": [
+        0
+      ]
+    },
+    {
+      "vertices": [
+        15546
+      ],
+      "degree_sequence": [
+        0
+      ]
+    },
+    {
+      "vertices": [
+        7360
+      ],
+      "degree_sequence": [
+        0
+      ]
+    },
+    {
+      "vertices": [
+        11462
+      ],
+      "degree_sequence": [
+        0
+      ]
+    },
+    {
+      "vertices": [
+        8399
+      ],
+      "degree_sequence": [
+        0
+      ]
+    },
+    {
+      "vertices": [
+        11473
+      ],
+      "degree_sequence": [
+        0
+      ]
+    },
+    {
+      "vertices": [
+        13522
+      ],
+      "degree_sequence": [
+        0
+      ]
+    },
+    {
+      "vertices": [
+        10452
+      ],
+      "degree_sequence": [
+        0
+      ]
+    },
+    {
+      "vertices": [
+        9433
+      ],
+      "degree_sequence": [
+        0
+      ]
+    },
+    {
+      "vertices": [
+        13533
+      ],
+      "degree_sequence": [
+        0
+      ]
+    },
+    {
+      "vertices": [
+        12512
+      ],
+      "degree_sequence": [
+        0
+      ]
+    },
+    {
+      "vertices": [
+        229
+      ],
+      "degree_sequence": [
+        0
+      ]
+    },
+    {
+      "vertices": [
+        14567
+      ],
+      "degree_sequence": [
+        0
+      ]
+    },
+    {
+      "vertices": [
+        2282
+      ],
+      "degree_sequence": [
+        0
+      ]
+    },
+    {
+      "vertices": [
+        1261
+      ],
+      "degree_sequence": [
+        0
+      ]
+    },
+    {
+      "vertices": [
+        4342
+      ],
+      "degree_sequence": [
+        0
+      ]
+    },
+    {
+      "vertices": [
+        3321
+      ],
+      "degree_sequence": [
+        0
+      ]
+    },
+    {
+      "vertices": [
+        7420
+      ],
+      "degree_sequence": [
+        0
+      ]
+    },
+    {
+      "vertices": [
+        16641
+      ],
+      "degree_sequence": [
+        0
+      ]
+    },
+    {
+      "vertices": [
+        6402
+      ],
+      "degree_sequence": [
+        0
+      ]
+    },
+    {
+      "vertices": [
+        3332
+      ],
+      "degree_sequence": [
+        0
+      ]
+    },
+    {
+      "vertices": [
+        15620
+      ],
+      "degree_sequence": [
+        0
+      ]
+    },
+    {
+      "vertices": [
+        5381
+      ],
+      "degree_sequence": [
+        0
+      ]
+    },
+    {
+      "vertices": [
+        2313
+      ],
+      "degree_sequence": [
+        0
+      ]
+    },
+    {
+      "vertices": [
+        1292
+      ],
+      "degree_sequence": [
+        0
+      ]
+    },
+    {
+      "vertices": [
+        15631
+      ],
+      "degree_sequence": [
+        0
+      ]
+    },
+    {
+      "vertices": [
+        5392
+      ],
+      "degree_sequence": [
+        0
+      ]
+    },
+    {
+      "vertices": [
+        4373
+      ],
+      "degree_sequence": [
+        0
+      ]
+    },
+    {
+      "vertices": [
+        9494
+      ],
+      "degree_sequence": [
+        0
+      ]
+    },
+    {
+      "vertices": [
+        10520
+      ],
+      "degree_sequence": [
+        0
+      ]
+    },
+    {
+      "vertices": [
+        8473
+      ],
+      "degree_sequence": [
+        0
+      ]
+    },
+    {
+      "vertices": [
+        7452
+      ],
+      "degree_sequence": [
+        0
+      ]
+    },
+    {
+      "vertices": [
+        12573
+      ],
+      "degree_sequence": [
+        0
+      ]
+    },
+    {
+      "vertices": [
+        13600
+      ],
+      "degree_sequence": [
+        0
+      ]
+    },
+    {
+      "vertices": [
+        289
+      ],
+      "degree_sequence": [
+        0
+      ]
+    },
+    {
+      "vertices": [
+        11554
+      ],
+      "degree_sequence": [
+        0
+      ]
+    },
+    {
+      "vertices": [
+        10533
+      ],
+      "degree_sequence": [
+        0
+      ]
+    },
+    {
+      "vertices": [
+        9512
+      ],
+      "degree_sequence": [
+        0
+      ]
+    },
+    {
+      "vertices": [
+        8491
+      ],
+      "degree_sequence": [
+        0
+      ]
+    },
+    {
+      "vertices": [
+        11565
+      ],
+      "degree_sequence": [
+        0
+      ]
+    },
+    {
+      "vertices": [
+        9525
+      ],
+      "degree_sequence": [
+        0
+      ]
+    },
+    {
+      "vertices": [
+        14648
+      ],
+      "degree_sequence": [
+        0
+      ]
+    },
+    {
+      "vertices": [
+        4409
+      ],
+      "degree_sequence": [
+        0
+      ]
+    },
+    {
+      "vertices": [
+        314
+      ],
+      "degree_sequence": [
+        0
+      ]
+    },
+    {
+      "vertices": [
+        13625
+      ],
+      "degree_sequence": [
+        0
+      ]
+    },
+    {
+      "vertices": [
+        12604
+      ],
+      "degree_sequence": [
+        0
+      ]
+    },
+    {
+      "vertices": [
+        6462
+      ],
+      "degree_sequence": [
+        0
+      ]
+    },
+    {
+      "vertices": [
+        14659
+      ],
+      "degree_sequence": [
+        0
+      ]
+    },
+    {
+      "vertices": [
+        16708
+      ],
+      "degree_sequence": [
+        0
+      ]
+    },
+    {
+      "vertices": [
+        2380
+      ],
+      "degree_sequence": [
+        0
+      ]
+    },
+    {
+      "vertices": [
+        1360
+      ],
+      "degree_sequence": [
+        0
+      ]
+    },
+    {
+      "vertices": [
+        5466
+      ],
+      "degree_sequence": [
+        0
+      ]
+    },
+    {
+      "vertices": [
+        16732
+      ],
+      "degree_sequence": [
+        0
+      ]
+    },
+    {
+      "vertices": [
+        3420
+      ],
+      "degree_sequence": [
+        0
+      ]
+    },
+    {
+      "vertices": [
+        3716,
+        6110,
+        6494,
+        8888
+      ],
+      "degree_sequence": [
+        1,
+        1,
+        2,
+        2
+      ]
+    },
+    {
+      "vertices": [
+        7519
+      ],
+      "degree_sequence": [
+        0
+      ]
+    },
+    {
+      "vertices": [
+        15712
+      ],
+      "degree_sequence": [
+        0
+      ]
+    },
+    {
+      "vertices": [
+        1393
+      ],
+      "degree_sequence": [
+        0
+      ]
+    },
+    {
+      "vertices": [
+        15730
+      ],
+      "degree_sequence": [
+        0
+      ]
+    },
+    {
+      "vertices": [
+        10612
+      ],
+      "degree_sequence": [
+        0
+      ]
+    },
+    {
+      "vertices": [
+        373
+      ],
+      "degree_sequence": [
+        0
+      ]
+    },
+    {
+      "vertices": [
+        9593
+      ],
+      "degree_sequence": [
+        0
+      ]
+    },
+    {
+      "vertices": [
+        8572
+      ],
+      "degree_sequence": [
+        0
+      ]
+    },
+    {
+      "vertices": [
+        13692
+      ],
+      "degree_sequence": [
+        0
+      ]
+    },
+    {
+      "vertices": [
+        12672
+      ],
+      "degree_sequence": [
+        0
+      ]
+    },
+    {
+      "vertices": [
+        2433
+      ],
+      "degree_sequence": [
+        0
+      ]
+    },
+    {
+      "vertices": [
+        11653
+      ],
+      "degree_sequence": [
+        0
+      ]
+    },
+    {
+      "vertices": [
+        3465
+      ],
+      "degree_sequence": [
+        0
+      ]
+    },
+    {
+      "vertices": [
+        12277,
+        14329,
+        14733,
+        15075
+      ],
+      "degree_sequence": [
+        1,
+        1,
+        2,
+        2
+      ]
+    },
+    {
+      "vertices": [
+        404
+      ],
+      "degree_sequence": [
+        0
+      ]
+    },
+    {
+      "vertices": [
+        5525
+      ],
+      "degree_sequence": [
+        0
+      ]
+    },
+    {
+      "vertices": [
+        4506
+      ],
+      "degree_sequence": [
+        0
+      ]
+    },
+    {
+      "vertices": [
+        14747
+      ],
+      "degree_sequence": [
+        0
+      ]
+    },
+    {
+      "vertices": [
+        8606
+      ],
+      "degree_sequence": [
+        0
+      ]
+    },
+    {
+      "vertices": [
+        9631
+      ],
+      "degree_sequence": [
+        0
+      ]
+    },
+    {
+      "vertices": [
+        16800
+      ],
+      "degree_sequence": [
+        0
+      ]
+    },
+    {
+      "vertices": [
+        7585
+      ],
+      "degree_sequence": [
+        0
+      ]
+    },
+    {
+      "vertices": [
+        4517
+      ],
+      "degree_sequence": [
+        0
+      ]
+    },
+    {
+      "vertices": [
+        5543
+      ],
+      "degree_sequence": [
+        0
+      ]
+    },
+    {
+      "vertices": [
+        3496
+      ],
+      "degree_sequence": [
+        0
+      ]
+    },
+    {
+      "vertices": [
+        7596
+      ],
+      "degree_sequence": [
+        0
+      ]
+    },
+    {
+      "vertices": [
+        6577
+      ],
+      "degree_sequence": [
+        0
+      ]
+    },
+    {
+      "vertices": [
+        11698
+      ],
+      "degree_sequence": [
+        0
+      ]
+    },
+    {
+      "vertices": [
+        15795
+      ],
+      "degree_sequence": [
+        0
+      ]
+    },
+    {
+      "vertices": [
+        5556
+      ],
+      "degree_sequence": [
+        0
+      ]
+    },
+    {
+      "vertices": [
+        10677
+      ],
+      "degree_sequence": [
+        0
+      ]
+    },
+    {
+      "vertices": [
+        440
+      ],
+      "degree_sequence": [
+        0
+      ]
+    },
+    {
+      "vertices": [
+        9656
+      ],
+      "degree_sequence": [
+        0
+      ]
+    },
+    {
+      "vertices": [
+        2493
+      ],
+      "degree_sequence": [
+        0
+      ]
+    },
+    {
+      "vertices": [
+        13758
+      ],
+      "degree_sequence": [
+        0
+      ]
+    },
+    {
+      "vertices": [
+        12737
+      ],
+      "degree_sequence": [
+        0
+      ]
+    },
+    {
+      "vertices": [
+        12739
+      ],
+      "degree_sequence": [
+        0
+      ]
+    },
+    {
+      "vertices": [
+        15813
+      ],
+      "degree_sequence": [
+        0
+      ]
+    },
+    {
+      "vertices": [
+        10695
+      ],
+      "degree_sequence": [
+        0
+      ]
+    },
+    {
+      "vertices": [
+        14792
+      ],
+      "degree_sequence": [
+        0
+      ]
+    },
+    {
+      "vertices": [
+        13769
+      ],
+      "degree_sequence": [
+        0
+      ]
+    },
+    {
+      "vertices": [
+        12748
+      ],
+      "degree_sequence": [
+        0
+      ]
+    },
+    {
+      "vertices": [
+        1485
+      ],
+      "degree_sequence": [
+        0
+      ]
+    },
+    {
+      "vertices": [
+        464
+      ],
+      "degree_sequence": [
+        0
+      ]
+    },
+    {
+      "vertices": [
+        11729
+      ],
+      "degree_sequence": [
+        0
+      ]
+    },
+    {
+      "vertices": [
+        1553,
+        10708,
+        13158,
+        15910
+      ],
+      "degree_sequence": [
+        1,
+        1,
+        2,
+        2
+      ]
+    },
+    {
+      "vertices": [
+        8666
+      ],
+      "degree_sequence": [
+        0
+      ]
+    },
+    {
+      "vertices": [
+        2524
+      ],
+      "degree_sequence": [
+        0
+      ]
+    },
+    {
+      "vertices": [
+        3557
+      ],
+      "degree_sequence": [
+        0
+      ]
+    },
+    {
+      "vertices": [
+        14823
+      ],
+      "degree_sequence": [
+        0
+      ]
+    },
+    {
+      "vertices": [
+        4584
+      ],
+      "degree_sequence": [
+        0
+      ]
+    },
+    {
+      "vertices": [
+        6637
+      ],
+      "degree_sequence": [
+        0
+      ]
+    },
+    {
+      "vertices": [
+        5617
+      ],
+      "degree_sequence": [
+        0
+      ]
+    },
+    {
+      "vertices": [
+        9716
+      ],
+      "degree_sequence": [
+        0
+      ]
+    },
+    {
+      "vertices": [
+        8697
+      ],
+      "degree_sequence": [
+        0
+      ]
+    },
+    {
+      "vertices": [
+        7677
+      ],
+      "degree_sequence": [
+        0
+      ]
+    },
+    {
+      "vertices": [
+        4609
+      ],
+      "degree_sequence": [
+        0
+      ]
+    },
+    {
+      "vertices": [
+        3588
+      ],
+      "degree_sequence": [
+        0
+      ]
+    },
+    {
+      "vertices": [
+        525
+      ],
+      "degree_sequence": [
+        0
+      ]
+    },
+    {
+      "vertices": [
+        6669
+      ],
+      "degree_sequence": [
+        0
+      ]
+    },
+    {
+      "vertices": [
+        11790
+      ],
+      "degree_sequence": [
+        0
+      ]
+    },
+    {
+      "vertices": [
+        10769
+      ],
+      "degree_sequence": [
+        0
+      ]
+    },
+    {
+      "vertices": [
+        2585
+      ],
+      "degree_sequence": [
+        0
+      ]
+    },
+    {
+      "vertices": [
+        13850
+      ],
+      "degree_sequence": [
+        0
+      ]
+    },
+    {
+      "vertices": [
+        12829
+      ],
+      "degree_sequence": [
+        0
+      ]
+    },
+    {
+      "vertices": [
+        1566
+      ],
+      "degree_sequence": [
+        0
+      ]
+    },
+    {
+      "vertices": [
+        15905
+      ],
+      "degree_sequence": [
+        0
+      ]
+    },
+    {
+      "vertices": [
+        14884
+      ],
+      "degree_sequence": [
+        0
+      ]
+    },
+    {
+      "vertices": [
+        12840
+      ],
+      "degree_sequence": [
+        0
+      ]
+    },
+    {
+      "vertices": [
+        1577
+      ],
+      "degree_sequence": [
+        0
+      ]
+    },
+    {
+      "vertices": [
+        2603
+      ],
+      "degree_sequence": [
+        0
+      ]
+    },
+    {
+      "vertices": [
+        556
+      ],
+      "degree_sequence": [
+        0
+      ]
+    },
+    {
+      "vertices": [
+        5677
+      ],
+      "degree_sequence": [
+        0
+      ]
+    },
+    {
+      "vertices": [
+        11821
+      ],
+      "degree_sequence": [
+        0
+      ]
+    },
+    {
+      "vertices": [
+        6705
+      ],
+      "degree_sequence": [
+        0
+      ]
+    },
+    {
+      "vertices": [
+        8758
+      ],
+      "degree_sequence": [
+        0
+      ]
+    },
+    {
+      "vertices": [
+        14902
+      ],
+      "degree_sequence": [
+        0
+      ]
+    },
+    {
+      "vertices": [
+        7737
+      ],
+      "degree_sequence": [
+        0
+      ]
+    },
+    {
+      "vertices": [
+        4669
+      ],
+      "degree_sequence": [
+        0
+      ]
+    },
+    {
+      "vertices": [
+        3648
+      ],
+      "degree_sequence": [
+        0
+      ]
+    },
+    {
+      "vertices": [
+        9797
+      ],
+      "degree_sequence": [
+        0
+      ]
+    },
+    {
+      "vertices": [
+        6729
+      ],
+      "degree_sequence": [
+        0
+      ]
+    },
+    {
+      "vertices": [
+        7755
+      ],
+      "degree_sequence": [
+        0
+      ]
+    },
+    {
+      "vertices": [
+        9808
+      ],
+      "degree_sequence": [
+        0
+      ]
+    },
+    {
+      "vertices": [
+        11857
+      ],
+      "degree_sequence": [
+        0
+      ]
+    },
+    {
+      "vertices": [
+        8789
+      ],
+      "degree_sequence": [
+        0
+      ]
+    },
+    {
+      "vertices": [
+        13910
+      ],
+      "degree_sequence": [
+        0
+      ]
+    },
+    {
+      "vertices": [
+        3680
+      ],
+      "degree_sequence": [
+        0
+      ]
+    },
+    {
+      "vertices": [
+        617
+      ],
+      "degree_sequence": [
+        0
+      ]
+    },
+    {
+      "vertices": [
+        11881
+      ],
+      "degree_sequence": [
+        0
+      ]
+    },
+    {
+      "vertices": [
+        12907
+      ],
+      "degree_sequence": [
+        0
+      ]
+    },
+    {
+      "vertices": [
+        1644
+      ],
+      "degree_sequence": [
+        0
+      ]
+    },
+    {
+      "vertices": [
+        10861
+      ],
+      "degree_sequence": [
+        0
+      ]
+    },
+    {
+      "vertices": [
+        2677
+      ],
+      "degree_sequence": [
+        0
+      ]
+    },
+    {
+      "vertices": [
+        13941
+      ],
+      "degree_sequence": [
+        0
+      ]
+    },
+    {
+      "vertices": [
+        14976
+      ],
+      "degree_sequence": [
+        0
+      ]
+    },
+    {
+      "vertices": [
+        6790
+      ],
+      "degree_sequence": [
+        0
+      ]
+    },
+    {
+      "vertices": [
+        2695
+      ],
+      "degree_sequence": [
+        0
+      ]
+    },
+    {
+      "vertices": [
+        5769
+      ],
+      "degree_sequence": [
+        0
+      ]
+    },
+    {
+      "vertices": [
+        4750
+      ],
+      "degree_sequence": [
+        0
+      ]
+    },
+    {
+      "vertices": [
+        655
+      ],
+      "degree_sequence": [
+        0
+      ]
+    },
+    {
+      "vertices": [
+        8850
+      ],
+      "degree_sequence": [
+        0
+      ]
+    },
+    {
+      "vertices": [
+        7829
+      ],
+      "degree_sequence": [
+        0
+      ]
+    },
+    {
+      "vertices": [
+        4768
+      ],
+      "degree_sequence": [
+        0
+      ]
+    },
+    {
+      "vertices": [
+        9889
+      ],
+      "degree_sequence": [
+        0
+      ]
+    },
+    {
+      "vertices": [
+        3747
+      ],
+      "degree_sequence": [
+        0
+      ]
+    },
+    {
+      "vertices": [
+        11942
+      ],
+      "degree_sequence": [
+        0
+      ]
+    },
+    {
+      "vertices": [
+        7847
+      ],
+      "degree_sequence": [
+        0
+      ]
+    },
+    {
+      "vertices": [
+        8875
+      ],
+      "degree_sequence": [
+        0
+      ]
+    },
+    {
+      "vertices": [
+        6828
+      ],
+      "degree_sequence": [
+        0
+      ]
+    },
+    {
+      "vertices": [
+        5807
+      ],
+      "degree_sequence": [
+        0
+      ]
+    },
+    {
+      "vertices": [
+        14002
+      ],
+      "degree_sequence": [
+        0
+      ]
+    },
+    {
+      "vertices": [
+        9907
+      ],
+      "degree_sequence": [
+        0
+      ]
+    },
+    {
+      "vertices": [
+        12981
+      ],
+      "degree_sequence": [
+        0
+      ]
+    },
+    {
+      "vertices": [
+        700
+      ],
+      "degree_sequence": [
+        0
+      ]
+    },
+    {
+      "vertices": [
+        15036
+      ],
+      "degree_sequence": [
+        0
+      ]
+    },
+    {
+      "vertices": [
+        16064
+      ],
+      "degree_sequence": [
+        0
+      ]
+    },
+    {
+      "vertices": [
+        1728
+      ],
+      "degree_sequence": [
+        0
+      ]
+    },
+    {
+      "vertices": [
+        3781
+      ],
+      "degree_sequence": [
+        0
+      ]
+    },
+    {
+      "vertices": [
+        12999
+      ],
+      "degree_sequence": [
+        0
+      ]
+    },
+    {
+      "vertices": [
+        2760
+      ],
+      "degree_sequence": [
+        0
+      ]
+    },
+    {
+      "vertices": [
+        11980
+      ],
+      "degree_sequence": [
+        0
+      ]
+    },
+    {
+      "vertices": [
+        1741
+      ],
+      "degree_sequence": [
+        0
+      ]
+    },
+    {
+      "vertices": [
+        10960
+      ],
+      "degree_sequence": [
+        0
+      ]
+    },
+    {
+      "vertices": [
+        4820
+      ],
+      "degree_sequence": [
+        0
+      ]
+    },
+    {
+      "vertices": [
+        14040
+      ],
+      "degree_sequence": [
+        0
+      ]
+    },
+    {
+      "vertices": [
+        5852
+      ],
+      "degree_sequence": [
+        0
+      ]
+    },
+    {
+      "vertices": [
+        6880
+      ],
+      "degree_sequence": [
+        0
+      ]
+    },
+    {
+      "vertices": [
+        8933
+      ],
+      "degree_sequence": [
+        0
+      ]
+    },
+    {
+      "vertices": [
+        7912
+      ],
+      "degree_sequence": [
+        0
+      ]
+    },
+    {
+      "vertices": [
+        12012
+      ],
+      "degree_sequence": [
+        0
+      ]
+    },
+    {
+      "vertices": [
+        10993
+      ],
+      "degree_sequence": [
+        0
+      ]
+    },
+    {
+      "vertices": [
+        9972
+      ],
+      "degree_sequence": [
+        0
+      ]
+    },
+    {
+      "vertices": [
+        5884
+      ],
+      "degree_sequence": [
+        0
+      ]
+    },
+    {
+      "vertices": [
+        2821
+      ],
+      "degree_sequence": [
+        0
+      ]
+    },
+    {
+      "vertices": [
+        14085
+      ],
+      "degree_sequence": [
+        0
+      ]
+    },
+    {
+      "vertices": [
+        1802
+      ],
+      "degree_sequence": [
+        0
+      ]
+    },
+    {
+      "vertices": [
+        781
+      ],
+      "degree_sequence": [
+        0
+      ]
+    },
+    {
+      "vertices": [
+        15120
+      ],
+      "degree_sequence": [
+        0
+      ]
+    },
+    {
+      "vertices": [
+        4881
+      ],
+      "degree_sequence": [
+        0
+      ]
+    },
+    {
+      "vertices": [
+        1813
+      ],
+      "degree_sequence": [
+        0
+      ]
+    },
+    {
+      "vertices": [
+        3862
+      ],
+      "degree_sequence": [
+        0
+      ]
+    },
+    {
+      "vertices": [
+        792
+      ],
+      "degree_sequence": [
+        0
+      ]
+    },
+    {
+      "vertices": [
+        3873
+      ],
+      "degree_sequence": [
+        0
+      ]
+    },
+    {
+      "vertices": [
+        16161
+      ],
+      "degree_sequence": [
+        0
+      ]
+    },
+    {
+      "vertices": [
+        2852
+      ],
+      "degree_sequence": [
+        0
+      ]
+    },
+    {
+      "vertices": [
+        7973
+      ],
+      "degree_sequence": [
+        0
+      ]
+    },
+    {
+      "vertices": [
+        14117
+      ],
+      "degree_sequence": [
+        0
+      ]
+    },
+    {
+      "vertices": [
+        6954
+      ],
+      "degree_sequence": [
+        0
+      ]
+    },
+    {
+      "vertices": [
+        16172
+      ],
+      "degree_sequence": [
+        0
+      ]
+    },
+    {
+      "vertices": [
+        11054
+      ],
+      "degree_sequence": [
+        0
+      ]
+    },
+    {
+      "vertices": [
+        15151
+      ],
+      "degree_sequence": [
+        0
+      ]
+    },
+    {
+      "vertices": [
+        4912
+      ],
+      "degree_sequence": [
+        0
+      ]
+    },
+    {
+      "vertices": [
+        10033
+      ],
+      "degree_sequence": [
+        0
+      ]
+    },
+    {
+      "vertices": [
+        6965
+      ],
+      "degree_sequence": [
+        0
+      ]
+    },
+    {
+      "vertices": [
+        9014
+      ],
+      "degree_sequence": [
+        0
+      ]
+    },
+    {
+      "vertices": [
+        5944
+      ],
+      "degree_sequence": [
+        0
+      ]
+    },
+    {
+      "vertices": [
+        12093
+      ],
+      "degree_sequence": [
+        0
+      ]
+    },
+    {
+      "vertices": [
+        9025
+      ],
+      "degree_sequence": [
+        0
+      ]
+    },
+    {
+      "vertices": [
+        10051
+      ],
+      "degree_sequence": [
+        0
+      ]
+    },
+    {
+      "vertices": [
+        8004
+      ],
+      "degree_sequence": [
+        0
+      ]
+    },
+    {
+      "vertices": [
+        12104
+      ],
+      "degree_sequence": [
+        0
+      ]
+    },
+    {
+      "vertices": [
+        11085
+      ],
+      "degree_sequence": [
+        0
+      ]
+    },
+    {
+      "vertices": [
+        10064
+      ],
+      "degree_sequence": [
+        0
+      ]
+    },
+    {
+      "vertices": [
+        4948
+      ],
+      "degree_sequence": [
+        0
+      ]
+    },
+    {
+      "vertices": [
+        859
+      ],
+      "degree_sequence": [
+        0
+      ]
+    },
+    {
+      "vertices": [
+        2912
+      ],
+      "degree_sequence": [
+        0
+      ]
+    },
+    {
+      "vertices": [
+        14177
+      ],
+      "degree_sequence": [
+        0
+      ]
+    },
+    {
+      "vertices": [
+        13156
+      ],
+      "degree_sequence": [
+        0
+      ]
+    },
+    {
+      "vertices": [
+        3940
+      ],
+      "degree_sequence": [
+        0
+      ]
+    },
+    {
+      "vertices": [
+        1894
+      ],
+      "degree_sequence": [
+        0
+      ]
+    },
+    {
+      "vertices": [
+        873
+      ],
+      "degree_sequence": [
+        0
+      ]
+    },
+    {
+      "vertices": [
+        15211
+      ],
+      "degree_sequence": [
+        0
+      ]
+    },
+    {
+      "vertices": [
+        4972
+      ],
+      "degree_sequence": [
+        0
+      ]
+    },
+    {
+      "vertices": [
+        16239
+      ],
+      "degree_sequence": [
+        0
+      ]
+    },
+    {
+      "vertices": [
+        884
+      ],
+      "degree_sequence": [
+        0
+      ]
+    },
+    {
+      "vertices": [
+        6012
+      ],
+      "degree_sequence": [
+        0
+      ]
+    },
+    {
+      "vertices": [
+        2944
+      ],
+      "degree_sequence": [
+        0
+      ]
+    },
+    {
+      "vertices": [
+        8065
+      ],
+      "degree_sequence": [
+        0
+      ]
+    },
+    {
+      "vertices": [
+        9092
+      ],
+      "degree_sequence": [
+        0
+      ]
+    },
+    {
+      "vertices": [
+        7046
+      ],
+      "degree_sequence": [
+        0
+      ]
+    },
+    {
+      "vertices": [
+        11145
+      ],
+      "degree_sequence": [
+        0
+      ]
+    },
+    {
+      "vertices": [
+        6025
+      ],
+      "degree_sequence": [
+        0
+      ]
+    },
+    {
+      "vertices": [
+        15243
+      ],
+      "degree_sequence": [
+        0
+      ]
+    },
+    {
+      "vertices": [
+        10125
+      ],
+      "degree_sequence": [
+        0
+      ]
+    },
+    {
+      "vertices": [
+        7057
+      ],
+      "degree_sequence": [
+        0
+      ]
+    },
+    {
+      "vertices": [
+        6036
+      ],
+      "degree_sequence": [
+        0
+      ]
+    },
+    {
+      "vertices": [
+        12185
+      ],
+      "degree_sequence": [
+        0
+      ]
+    },
+    {
+      "vertices": [
+        9117
+      ],
+      "degree_sequence": [
+        0
+      ]
+    },
+    {
+      "vertices": [
+        14238
+      ],
+      "degree_sequence": [
+        0
+      ]
+    },
+    {
+      "vertices": [
+        8096
+      ],
+      "degree_sequence": [
+        0
+      ]
+    },
+    {
+      "vertices": [
+        1954
+      ],
+      "degree_sequence": [
+        0
+      ]
+    },
+    {
+      "vertices": [
+        5033
+      ],
+      "degree_sequence": [
+        0
+      ]
+    },
+    {
+      "vertices": [
+        11177
+      ],
+      "degree_sequence": [
+        0
+      ]
+    },
+    {
+      "vertices": [
+        4014
+      ],
+      "degree_sequence": [
+        0
+      ]
+    },
+    {
+      "vertices": [
+        951
+      ],
+      "degree_sequence": [
+        0
+      ]
+    },
+    {
+      "vertices": [
+        4025
+      ],
+      "degree_sequence": [
+        0
+      ]
+    },
+    {
+      "vertices": [
+        16313
+      ],
+      "degree_sequence": [
+        0
+      ]
+    },
+    {
+      "vertices": [
+        3004
+      ],
+      "degree_sequence": [
+        0
+      ]
+    },
+    {
+      "vertices": [
+        14269
+      ],
+      "degree_sequence": [
+        0
+      ]
+    },
+    {
+      "vertices": [
+        13248
+      ],
+      "degree_sequence": [
+        0
+      ]
+    },
+    {
+      "vertices": [
+        1985
+      ],
+      "degree_sequence": [
+        0
+      ]
+    },
+    {
+      "vertices": [
+        16324
+      ],
+      "degree_sequence": [
+        0
+      ]
+    },
+    {
+      "vertices": [
+        15303
+      ],
+      "degree_sequence": [
+        0
+      ]
+    },
+    {
+      "vertices": [
+        5064
+      ],
+      "degree_sequence": [
+        0
+      ]
+    },
+    {
+      "vertices": [
+        10185
+      ],
+      "degree_sequence": [
+        0
+      ]
+    },
+    {
+      "vertices": [
+        16329
+      ],
+      "degree_sequence": [
+        0
+      ]
+    },
+    {
+      "vertices": [
+        11213
+      ],
+      "degree_sequence": [
+        0
+      ]
+    },
+    {
+      "vertices": [
+        13266
+      ],
+      "degree_sequence": [
+        0
+      ]
+    },
+    {
+      "vertices": [
+        12245
+      ],
+      "degree_sequence": [
+        0
+      ]
+    },
+    {
+      "vertices": [
+        983
+      ],
+      "degree_sequence": [
+        0
+      ]
+    },
+    {
+      "vertices": [
+        9177
+      ],
+      "degree_sequence": [
+        0
+      ]
+    },
+    {
+      "vertices": [
+        7138
+      ],
+      "degree_sequence": [
+        0
+      ]
+    },
+    {
+      "vertices": [
+        3043
+      ],
+      "degree_sequence": [
+        0
+      ]
+    },
+    {
+      "vertices": [
+        11237
+      ],
+      "degree_sequence": [
+        0
+      ]
+    },
+    {
+      "vertices": [
+        12263
+      ],
+      "degree_sequence": [
+        0
+      ]
+    },
+    {
+      "vertices": [
+        10217
+      ],
+      "degree_sequence": [
+        0
+      ]
+    },
+    {
+      "vertices": [
+        7156
+      ],
+      "degree_sequence": [
+        0
+      ]
+    },
+    {
+      "vertices": [
+        6135
+      ],
+      "degree_sequence": [
+        0
+      ]
+    }
+  ],
+  "seconds": 0.47582354999758536,
+  "scope": "All maximum independent sets in this842-word physical alphabet only"
+}

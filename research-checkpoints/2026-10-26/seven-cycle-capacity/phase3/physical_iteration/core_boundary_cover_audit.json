@@ -1,0 +1,10 @@
+{
+  "first_boundary_vertices": 437,
+  "second_boundary_vertices": 842,
+  "first_partition_cliques": 367,
+  "second_cover_terms": 367,
+  "second_denominator": 1,
+  "both_restricted_capacities_exactly": 367,
+  "checks": "full-space core-neighborhood membership, direct-coordinate cliques, integer coverage, independent367 lower code",
+  "source_sha256": "812f16eae44cd0597dc7ccf5a6c0147762f639dfce224050095440014a0d752b"
+}

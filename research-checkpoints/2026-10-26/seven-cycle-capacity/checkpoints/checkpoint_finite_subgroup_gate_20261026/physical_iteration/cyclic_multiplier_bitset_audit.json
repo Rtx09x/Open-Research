@@ -1,0 +1,1909 @@
+{
+  "positive_control_n382_k108": {
+    "first": 1,
+    "residual_residues": 107,
+    "candidate_multipliers": 191,
+    "unique_pair_unions": 18036,
+    "bitset_intersections": 18058,
+    "multipliers": [
+      1,
+      7,
+      39,
+      49,
+      109
+    ]
+  },
+  "records": [
+    {
+      "n": 368,
+      "k": 106,
+      "unit": {
+        "first": 1,
+        "residual_residues": 105,
+        "candidate_multipliers": 184,
+        "unique_pair_unions": 16735,
+        "bitset_intersections": 270200,
+        "multipliers": null
+      },
+      "no_unit_cases": [
+        {
+          "first": 2,
+          "residual_residues": 105,
+          "candidate_multipliers": 96,
+          "unique_pair_unions": 4503,
+          "bitset_intersections": 73933,
+          "multipliers": null
+        },
+        {
+          "first": 4,
+          "residual_residues": 106,
+          "candidate_multipliers": 96,
+          "unique_pair_unions": 4482,
+          "bitset_intersections": 81255,
+          "multipliers": null
+        },
+        {
+          "first": 8,
+          "residual_residues": 108,
+          "candidate_multipliers": 96,
+          "unique_pair_unions": 4446,
+          "bitset_intersections": 71753,
+          "multipliers": null
+        },
+        {
+          "first": 16,
+          "residual_residues": 104,
+          "candidate_multipliers": 96,
+          "unique_pair_unions": 4433,
+          "bitset_intersections": 69846,
+          "multipliers": null
+        },
+        {
+          "first": 23,
+          "residual_residues": 103,
+          "candidate_multipliers": 96,
+          "unique_pair_unions": 4412,
+          "bitset_intersections": 70041,
+          "multipliers": null
+        },
+        {
+          "first": 46,
+          "residual_residues": 115,
+          "candidate_multipliers": 96,
+          "unique_pair_unions": 4413,
+          "bitset_intersections": 69802,
+          "multipliers": null
+        },
+        {
+          "first": 92,
+          "residual_residues": 138,
+          "candidate_multipliers": 96,
+          "unique_pair_unions": 4484,
+          "bitset_intersections": 71630,
+          "multipliers": null
+        },
+        {
+          "first": 184,
+          "residual_residues": 92,
+          "candidate_multipliers": 96,
+          "unique_pair_unions": 1153,
+          "bitset_intersections": 13899,
+          "multipliers": null
+        }
+      ]
+    },
+    {
+      "n": 369,
+      "k": 106,
+      "unit": {
+        "first": 1,
+        "residual_residues": 105,
+        "candidate_multipliers": 184,
+        "unique_pair_unions": 16707,
+        "bitset_intersections": 274296,
+        "multipliers": null
+      },
+      "no_unit_cases": [
+        {
+          "first": 3,
+          "residual_residues": 106,
+          "candidate_multipliers": 64,
+          "unique_pair_unions": 1959,
+          "bitset_intersections": 40696,
+          "multipliers": null
+        },
+        {
+          "first": 9,
+          "residual_residues": 103,
+          "candidate_multipliers": 64,
+          "unique_pair_unions": 1911,
+          "bitset_intersections": 39571,
+          "multipliers": null
+        },
+        {
+          "first": 41,
+          "residual_residues": 102,
+          "candidate_multipliers": 64,
+          "unique_pair_unions": 1974,
+          "bitset_intersections": 39525,
+          "multipliers": null
+        },
+        {
+          "first": 123,
+          "residual_residues": 61,
+          "candidate_multipliers": 64,
+          "unique_pair_unions": 232,
+          "bitset_intersections": 2993,
+          "multipliers": null
+        }
+      ]
+    },
+    {
+      "n": 370,
+      "k": 106,
+      "unit": {
+        "first": 1,
+        "residual_residues": 105,
+        "candidate_multipliers": 185,
+        "unique_pair_unions": 16912,
+        "bitset_intersections": 286284,
+        "multipliers": null
+      },
+      "no_unit_cases": [
+        {
+          "first": 2,
+          "residual_residues": 105,
+          "candidate_multipliers": 113,
+          "unique_pair_unions": 6290,
+          "bitset_intersections": 118970,
+          "multipliers": null
+        },
+        {
+          "first": 5,
+          "residual_residues": 107,
+          "candidate_multipliers": 113,
+          "unique_pair_unions": 6286,
+          "bitset_intersections": 109038,
+          "multipliers": null
+        },
+        {
+          "first": 10,
+          "residual_residues": 105,
+          "candidate_multipliers": 113,
+          "unique_pair_unions": 6219,
+          "bitset_intersections": 114355,
+          "multipliers": null
+        },
+        {
+          "first": 37,
+          "residual_residues": 92,
+          "candidate_multipliers": 113,
+          "unique_pair_unions": 6106,
+          "bitset_intersections": 120909,
+          "multipliers": null
+        },
+        {
+          "first": 74,
+          "residual_residues": 111,
+          "candidate_multipliers": 113,
+          "unique_pair_unions": 6125,
+          "bitset_intersections": 95055,
+          "multipliers": null
+        },
+        {
+          "first": 185,
+          "residual_residues": 92,
+          "candidate_multipliers": 113,
+          "unique_pair_unions": 4279,
+          "bitset_intersections": 64834,
+          "multipliers": null
+        }
+      ]
+    },
+    {
+      "n": 371,
+      "k": 106,
+      "unit": {
+        "first": 1,
+        "residual_residues": 105,
+        "candidate_multipliers": 185,
+        "unique_pair_unions": 17002,
+        "bitset_intersections": 283930,
+        "multipliers": null
+      },
+      "no_unit_cases": [
+        {
+          "first": 7,
+          "residual_residues": 108,
+          "candidate_multipliers": 29,
+          "unique_pair_unions": 377,
+          "bitset_intersections": 5283,
+          "multipliers": null
+        },
+        {
+          "first": 53,
+          "residual_residues": 79,
+          "candidate_multipliers": 29,
+          "unique_pair_unions": 379,
+          "bitset_intersections": 5178,
+          "multipliers": null
+        }
+      ]
+    },
+    {
+      "n": 372,
+      "k": 107,
+      "unit": {
+        "first": 1,
+        "residual_residues": 106,
+        "candidate_multipliers": 186,
+        "unique_pair_unions": 16984,
+        "bitset_intersections": 289083,
+        "multipliers": null
+      },
+      "no_unit_cases": [
+        {
+          "first": 2,
+          "residual_residues": 107,
+          "candidate_multipliers": 126,
+          "unique_pair_unions": 7734,
+          "bitset_intersections": 150944,
+          "multipliers": null
+        },
+        {
+          "first": 3,
+          "residual_residues": 106,
+          "candidate_multipliers": 126,
+          "unique_pair_unions": 7734,
+          "bitset_intersections": 144929,
+          "multipliers": null
+        },
+        {
+          "first": 4,
+          "residual_residues": 106,
+          "candidate_multipliers": 126,
+          "unique_pair_unions": 7713,
+          "bitset_intersections": 158317,
+          "multipliers": null
+        },
+        {
+          "first": 6,
+          "residual_residues": 105,
+          "candidate_multipliers": 126,
+          "unique_pair_unions": 7688,
+          "bitset_intersections": 169388,
+          "multipliers": null
+        },
+        {
+          "first": 12,
+          "residual_residues": 102,
+          "candidate_multipliers": 126,
+          "unique_pair_unions": 7626,
+          "bitset_intersections": 178260,
+          "multipliers": null
+        },
+        {
+          "first": 31,
+          "residual_residues": 108,
+          "candidate_multipliers": 126,
+          "unique_pair_unions": 7747,
+          "bitset_intersections": 137035,
+          "multipliers": null
+        },
+        {
+          "first": 62,
+          "residual_residues": 93,
+          "candidate_multipliers": 126,
+          "unique_pair_unions": 7656,
+          "bitset_intersections": 148774,
+          "multipliers": null
+        },
+        {
+          "first": 93,
+          "residual_residues": 139,
+          "candidate_multipliers": 126,
+          "unique_pair_unions": 7734,
+          "bitset_intersections": 146786,
+          "multipliers": null
+        },
+        {
+          "first": 124,
+          "residual_residues": 62,
+          "candidate_multipliers": 126,
+          "unique_pair_unions": 1924,
+          "bitset_intersections": 28237,
+          "multipliers": null
+        },
+        {
+          "first": 186,
+          "residual_residues": 93,
+          "candidate_multipliers": 126,
+          "unique_pair_unions": 1970,
+          "bitset_intersections": 38363,
+          "multipliers": null
+        }
+      ]
+    },
+    {
+      "n": 373,
+      "k": 107,
+      "unit": {
+        "first": 1,
+        "residual_residues": 106,
+        "candidate_multipliers": 186,
+        "unique_pair_unions": 17198,
+        "bitset_intersections": 283415,
+        "multipliers": null
+      },
+      "no_unit_cases": []
+    },
+    {
+      "n": 374,
+      "k": 107,
+      "unit": {
+        "first": 1,
+        "residual_residues": 106,
+        "candidate_multipliers": 187,
+        "unique_pair_unions": 17286,
+        "bitset_intersections": 285266,
+        "multipliers": null
+      },
+      "no_unit_cases": [
+        {
+          "first": 2,
+          "residual_residues": 107,
+          "candidate_multipliers": 107,
+          "unique_pair_unions": 5642,
+          "bitset_intersections": 96085,
+          "multipliers": null
+        },
+        {
+          "first": 11,
+          "residual_residues": 104,
+          "candidate_multipliers": 107,
+          "unique_pair_unions": 5610,
+          "bitset_intersections": 90968,
+          "multipliers": null
+        },
+        {
+          "first": 17,
+          "residual_residues": 110,
+          "candidate_multipliers": 107,
+          "unique_pair_unions": 5639,
+          "bitset_intersections": 94248,
+          "multipliers": null
+        },
+        {
+          "first": 22,
+          "residual_residues": 99,
+          "candidate_multipliers": 107,
+          "unique_pair_unions": 5578,
+          "bitset_intersections": 91092,
+          "multipliers": null
+        },
+        {
+          "first": 34,
+          "residual_residues": 119,
+          "candidate_multipliers": 107,
+          "unique_pair_unions": 5643,
+          "bitset_intersections": 91351,
+          "multipliers": null
+        },
+        {
+          "first": 187,
+          "residual_residues": 93,
+          "candidate_multipliers": 107,
+          "unique_pair_unions": 4372,
+          "bitset_intersections": 64968,
+          "multipliers": null
+        }
+      ]
+    },
+    {
+      "n": 375,
+      "k": 108,
+      "unit": {
+        "first": 1,
+        "residual_residues": 107,
+        "candidate_multipliers": 187,
+        "unique_pair_unions": 17258,
+        "bitset_intersections": 278750,
+        "multipliers": null
+      },
+      "no_unit_cases": [
+        {
+          "first": 3,
+          "residual_residues": 106,
+          "candidate_multipliers": 87,
+          "unique_pair_unions": 3690,
+          "bitset_intersections": 69689,
+          "multipliers": null
+        },
+        {
+          "first": 5,
+          "residual_residues": 107,
+          "candidate_multipliers": 87,
+          "unique_pair_unions": 3696,
+          "bitset_intersections": 61529,
+          "multipliers": null
+        },
+        {
+          "first": 15,
+          "residual_residues": 112,
+          "candidate_multipliers": 87,
+          "unique_pair_unions": 3664,
+          "bitset_intersections": 69204,
+          "multipliers": null
+        },
+        {
+          "first": 25,
+          "residual_residues": 112,
+          "candidate_multipliers": 87,
+          "unique_pair_unions": 3691,
+          "bitset_intersections": 59839,
+          "multipliers": null
+        },
+        {
+          "first": 75,
+          "residual_residues": 112,
+          "candidate_multipliers": 87,
+          "unique_pair_unions": 3545,
+          "bitset_intersections": 58170,
+          "multipliers": null
+        },
+        {
+          "first": 125,
+          "residual_residues": 62,
+          "candidate_multipliers": 87,
+          "unique_pair_unions": 1954,
+          "bitset_intersections": 26981,
+          "multipliers": null
+        }
+      ]
+    },
+    {
+      "n": 376,
+      "k": 108,
+      "unit": {
+        "first": 1,
+        "residual_residues": 107,
+        "candidate_multipliers": 188,
+        "unique_pair_unions": 17477,
+        "bitset_intersections": 289272,
+        "multipliers": null
+      },
+      "no_unit_cases": [
+        {
+          "first": 2,
+          "residual_residues": 107,
+          "candidate_multipliers": 96,
+          "unique_pair_unions": 4503,
+          "bitset_intersections": 79342,
+          "multipliers": null
+        },
+        {
+          "first": 4,
+          "residual_residues": 106,
+          "candidate_multipliers": 96,
+          "unique_pair_unions": 4467,
+          "bitset_intersections": 87849,
+          "multipliers": null
+        },
+        {
+          "first": 8,
+          "residual_residues": 108,
+          "candidate_multipliers": 96,
+          "unique_pair_unions": 4443,
+          "bitset_intersections": 75474,
+          "multipliers": null
+        },
+        {
+          "first": 47,
+          "residual_residues": 117,
+          "candidate_multipliers": 96,
+          "unique_pair_unions": 4420,
+          "bitset_intersections": 70294,
+          "multipliers": null
+        },
+        {
+          "first": 94,
+          "residual_residues": 141,
+          "candidate_multipliers": 96,
+          "unique_pair_unions": 4490,
+          "bitset_intersections": 73411,
+          "multipliers": null
+        },
+        {
+          "first": 188,
+          "residual_residues": 94,
+          "candidate_multipliers": 96,
+          "unique_pair_unions": 1154,
+          "bitset_intersections": 17228,
+          "multipliers": null
+        }
+      ]
+    },
+    {
+      "n": 377,
+      "k": 108,
+      "unit": {
+        "first": 1,
+        "residual_residues": 107,
+        "candidate_multipliers": 188,
+        "unique_pair_unions": 17565,
+        "bitset_intersections": 290471,
+        "multipliers": null
+      },
+      "no_unit_cases": [
+        {
+          "first": 13,
+          "residual_residues": 110,
+          "candidate_multipliers": 20,
+          "unique_pair_unions": 149,
+          "bitset_intersections": 1740,
+          "multipliers": null
+        },
+        {
+          "first": 29,
+          "residual_residues": 101,
+          "candidate_multipliers": 20,
+          "unique_pair_unions": 167,
+          "bitset_intersections": 1766,
+          "multipliers": null
+        }
+      ]
+    },
+    {
+      "n": 378,
+      "k": 108,
+      "unit": {
+        "first": 1,
+        "residual_residues": 107,
+        "candidate_multipliers": 189,
+        "unique_pair_unions": 17509,
+        "bitset_intersections": 314105,
+        "multipliers": null
+      },
+      "no_unit_cases": [
+        {
+          "first": 2,
+          "residual_residues": 107,
+          "candidate_multipliers": 135,
+          "unique_pair_unions": 8874,
+          "bitset_intersections": 201620,
+          "multipliers": null
+        },
+        {
+          "first": 3,
+          "residual_residues": 106,
+          "candidate_multipliers": 135,
+          "unique_pair_unions": 8866,
+          "bitset_intersections": 184486,
+          "multipliers": null
+        },
+        {
+          "first": 6,
+          "residual_residues": 105,
+          "candidate_multipliers": 135,
+          "unique_pair_unions": 8834,
+          "bitset_intersections": 225523,
+          "multipliers": null
+        },
+        {
+          "first": 7,
+          "residual_residues": 108,
+          "candidate_multipliers": 135,
+          "unique_pair_unions": 8865,
+          "bitset_intersections": 186759,
+          "multipliers": null
+        },
+        {
+          "first": 9,
+          "residual_residues": 103,
+          "candidate_multipliers": 135,
+          "unique_pair_unions": 8835,
+          "bitset_intersections": 190847,
+          "multipliers": null
+        },
+        {
+          "first": 14,
+          "residual_residues": 105,
+          "candidate_multipliers": 135,
+          "unique_pair_unions": 8819,
+          "bitset_intersections": 214829,
+          "multipliers": null
+        },
+        {
+          "first": 18,
+          "residual_residues": 99,
+          "candidate_multipliers": 135,
+          "unique_pair_unions": 8591,
+          "bitset_intersections": 218931,
+          "multipliers": null
+        },
+        {
+          "first": 21,
+          "residual_residues": 115,
+          "candidate_multipliers": 135,
+          "unique_pair_unions": 8864,
+          "bitset_intersections": 199761,
+          "multipliers": null
+        },
+        {
+          "first": 27,
+          "residual_residues": 94,
+          "candidate_multipliers": 135,
+          "unique_pair_unions": 8429,
+          "bitset_intersections": 168260,
+          "multipliers": null
+        },
+        {
+          "first": 42,
+          "residual_residues": 105,
+          "candidate_multipliers": 135,
+          "unique_pair_unions": 8743,
+          "bitset_intersections": 236501,
+          "multipliers": null
+        },
+        {
+          "first": 54,
+          "residual_residues": 81,
+          "candidate_multipliers": 135,
+          "unique_pair_unions": 7975,
+          "bitset_intersections": 176688,
+          "multipliers": null
+        },
+        {
+          "first": 63,
+          "residual_residues": 94,
+          "candidate_multipliers": 135,
+          "unique_pair_unions": 8295,
+          "bitset_intersections": 164053,
+          "multipliers": null
+        },
+        {
+          "first": 126,
+          "residual_residues": 63,
+          "candidate_multipliers": 135,
+          "unique_pair_unions": 973,
+          "bitset_intersections": 16073,
+          "multipliers": null
+        },
+        {
+          "first": 189,
+          "residual_residues": 94,
+          "candidate_multipliers": 135,
+          "unique_pair_unions": 4395,
+          "bitset_intersections": 80121,
+          "multipliers": null
+        }
+      ]
+    },
+    {
+      "n": 379,
+      "k": 109,
+      "unit": {
+        "first": 1,
+        "residual_residues": 108,
+        "candidate_multipliers": 189,
+        "unique_pair_unions": 17759,
+        "bitset_intersections": 289948,
+        "multipliers": null
+      },
+      "no_unit_cases": []
+    },
+    {
+      "n": 380,
+      "k": 109,
+      "unit": {
+        "first": 1,
+        "residual_residues": 108,
+        "candidate_multipliers": 190,
+        "unique_pair_unions": 17844,
+        "bitset_intersections": 298922,
+        "multipliers": null
+      },
+      "no_unit_cases": [
+        {
+          "first": 2,
+          "residual_residues": 109,
+          "candidate_multipliers": 118,
+          "unique_pair_unions": 6823,
+          "bitset_intersections": 116384,
+          "multipliers": null
+        },
+        {
+          "first": 4,
+          "residual_residues": 110,
+          "candidate_multipliers": 118,
+          "unique_pair_unions": 6814,
+          "bitset_intersections": 123337,
+          "multipliers": null
+        },
+        {
+          "first": 5,
+          "residual_residues": 107,
+          "candidate_multipliers": 118,
+          "unique_pair_unions": 6817,
+          "bitset_intersections": 118209,
+          "multipliers": null
+        },
+        {
+          "first": 10,
+          "residual_residues": 105,
+          "candidate_multipliers": 118,
+          "unique_pair_unions": 6725,
+          "bitset_intersections": 121994,
+          "multipliers": null
+        },
+        {
+          "first": 19,
+          "residual_residues": 104,
+          "candidate_multipliers": 118,
+          "unique_pair_unions": 6816,
+          "bitset_intersections": 117493,
+          "multipliers": null
+        },
+        {
+          "first": 20,
+          "residual_residues": 110,
+          "candidate_multipliers": 118,
+          "unique_pair_unions": 6619,
+          "bitset_intersections": 125338,
+          "multipliers": null
+        },
+        {
+          "first": 38,
+          "residual_residues": 95,
+          "candidate_multipliers": 118,
+          "unique_pair_unions": 6597,
+          "bitset_intersections": 143485,
+          "multipliers": null
+        },
+        {
+          "first": 76,
+          "residual_residues": 114,
+          "candidate_multipliers": 118,
+          "unique_pair_unions": 6629,
+          "bitset_intersections": 107937,
+          "multipliers": null
+        },
+        {
+          "first": 95,
+          "residual_residues": 142,
+          "candidate_multipliers": 118,
+          "unique_pair_unions": 6823,
+          "bitset_intersections": 125492,
+          "multipliers": null
+        },
+        {
+          "first": 190,
+          "residual_residues": 95,
+          "candidate_multipliers": 118,
+          "unique_pair_unions": 1752,
+          "bitset_intersections": 24515,
+          "multipliers": null
+        }
+      ]
+    },
+    {
+      "n": 381,
+      "k": 109,
+      "unit": {
+        "first": 1,
+        "residual_residues": 108,
+        "candidate_multipliers": 190,
+        "unique_pair_unions": 17823,
+        "bitset_intersections": 291215,
+        "multipliers": null
+      },
+      "no_unit_cases": [
+        {
+          "first": 3,
+          "residual_residues": 109,
+          "candidate_multipliers": 64,
+          "unique_pair_unions": 2009,
+          "bitset_intersections": 40133,
+          "multipliers": null
+        },
+        {
+          "first": 127,
+          "residual_residues": 63,
+          "candidate_multipliers": 64,
+          "unique_pair_unions": 2017,
+          "bitset_intersections": 26733,
+          "multipliers": null
+        }
+      ]
+    },
+    {
+      "n": 382,
+      "k": 110,
+      "unit": {
+        "first": 1,
+        "residual_residues": 109,
+        "candidate_multipliers": 191,
+        "unique_pair_unions": 18038,
+        "bitset_intersections": 291060,
+        "multipliers": null
+      },
+      "no_unit_cases": [
+        {
+          "first": 2,
+          "residual_residues": 109,
+          "candidate_multipliers": 96,
+          "unique_pair_unions": 4549,
+          "bitset_intersections": 70191,
+          "multipliers": null
+        },
+        {
+          "first": 191,
+          "residual_residues": 95,
+          "candidate_multipliers": 96,
+          "unique_pair_unions": 4561,
+          "bitset_intersections": 65926,
+          "multipliers": null
+        }
+      ]
+    },
+    {
+      "n": 383,
+      "k": 110,
+      "unit": {
+        "first": 1,
+        "residual_residues": 109,
+        "candidate_multipliers": 191,
+        "unique_pair_unions": 18138,
+        "bitset_intersections": 298205,
+        "multipliers": null
+      },
+      "no_unit_cases": []
+    },
+    {
+      "n": 384,
+      "k": 110,
+      "unit": {
+        "first": 1,
+        "residual_residues": 109,
+        "candidate_multipliers": 192,
+        "unique_pair_unions": 18101,
+        "bitset_intersections": 293916,
+        "multipliers": null
+      },
+      "no_unit_cases": [
+        {
+          "first": 2,
+          "residual_residues": 109,
+          "candidate_multipliers": 128,
+          "unique_pair_unions": 7987,
+          "bitset_intersections": 124769,
+          "multipliers": null
+        },
+        {
+          "first": 3,
+          "residual_residues": 109,
+          "candidate_multipliers": 128,
+          "unique_pair_unions": 7984,
+          "bitset_intersections": 143093,
+          "multipliers": null
+        },
+        {
+          "first": 4,
+          "residual_residues": 110,
+          "candidate_multipliers": 128,
+          "unique_pair_unions": 7974,
+          "bitset_intersections": 138357,
+          "multipliers": null
+        },
+        {
+          "first": 6,
+          "residual_residues": 111,
+          "candidate_multipliers": 128,
+          "unique_pair_unions": 7954,
+          "bitset_intersections": 139297,
+          "multipliers": null
+        },
+        {
+          "first": 8,
+          "residual_residues": 108,
+          "candidate_multipliers": 128,
+          "unique_pair_unions": 7931,
+          "bitset_intersections": 137344,
+          "multipliers": null
+        },
+        {
+          "first": 12,
+          "residual_residues": 114,
+          "candidate_multipliers": 128,
+          "unique_pair_unions": 7926,
+          "bitset_intersections": 144327,
+          "multipliers": null
+        },
+        {
+          "first": 16,
+          "residual_residues": 104,
+          "candidate_multipliers": 128,
+          "unique_pair_unions": 7795,
+          "bitset_intersections": 126083,
+          "multipliers": null
+        },
+        {
+          "first": 24,
+          "residual_residues": 108,
+          "candidate_multipliers": 128,
+          "unique_pair_unions": 7779,
+          "bitset_intersections": 135856,
+          "multipliers": null
+        },
+        {
+          "first": 32,
+          "residual_residues": 112,
+          "candidate_multipliers": 128,
+          "unique_pair_unions": 7946,
+          "bitset_intersections": 129000,
+          "multipliers": null
+        },
+        {
+          "first": 48,
+          "residual_residues": 120,
+          "candidate_multipliers": 128,
+          "unique_pair_unions": 7812,
+          "bitset_intersections": 137460,
+          "multipliers": null
+        },
+        {
+          "first": 64,
+          "residual_residues": 96,
+          "candidate_multipliers": 128,
+          "unique_pair_unions": 7573,
+          "bitset_intersections": 117535,
+          "multipliers": null
+        },
+        {
+          "first": 96,
+          "residual_residues": 144,
+          "candidate_multipliers": 128,
+          "unique_pair_unions": 7952,
+          "bitset_intersections": 131361,
+          "multipliers": null
+        },
+        {
+          "first": 128,
+          "residual_residues": 64,
+          "candidate_multipliers": 128,
+          "unique_pair_unions": 2047,
+          "bitset_intersections": 26221,
+          "multipliers": null
+        },
+        {
+          "first": 192,
+          "residual_residues": 96,
+          "candidate_multipliers": 128,
+          "unique_pair_unions": 2012,
+          "bitset_intersections": 26678,
+          "multipliers": null
+        }
+      ]
+    },
+    {
+      "n": 385,
+      "k": 110,
+      "unit": {
+        "first": 1,
+        "residual_residues": 109,
+        "candidate_multipliers": 192,
+        "unique_pair_unions": 18317,
+        "bitset_intersections": 313776,
+        "multipliers": null
+      },
+      "no_unit_cases": [
+        {
+          "first": 5,
+          "residual_residues": 107,
+          "candidate_multipliers": 72,
+          "unique_pair_unions": 2529,
+          "bitset_intersections": 43587,
+          "multipliers": null
+        },
+        {
+          "first": 7,
+          "residual_residues": 108,
+          "candidate_multipliers": 72,
+          "unique_pair_unions": 2524,
+          "bitset_intersections": 47211,
+          "multipliers": null
+        },
+        {
+          "first": 11,
+          "residual_residues": 104,
+          "candidate_multipliers": 72,
+          "unique_pair_unions": 2499,
+          "bitset_intersections": 39360,
+          "multipliers": null
+        },
+        {
+          "first": 35,
+          "residual_residues": 122,
+          "candidate_multipliers": 72,
+          "unique_pair_unions": 2490,
+          "bitset_intersections": 39795,
+          "multipliers": null
+        },
+        {
+          "first": 55,
+          "residual_residues": 82,
+          "candidate_multipliers": 72,
+          "unique_pair_unions": 2289,
+          "bitset_intersections": 33453,
+          "multipliers": null
+        },
+        {
+          "first": 77,
+          "residual_residues": 115,
+          "candidate_multipliers": 72,
+          "unique_pair_unions": 2471,
+          "bitset_intersections": 38393,
+          "multipliers": null
+        }
+      ]
+    },
+    {
+      "n": 386,
+      "k": 111,
+      "unit": {
+        "first": 1,
+        "residual_residues": 110,
+        "candidate_multipliers": 193,
+        "unique_pair_unions": 18420,
+        "bitset_intersections": 296624,
+        "multipliers": null
+      },
+      "no_unit_cases": [
+        {
+          "first": 2,
+          "residual_residues": 111,
+          "candidate_multipliers": 97,
+          "unique_pair_unions": 4648,
+          "bitset_intersections": 68916,
+          "multipliers": null
+        },
+        {
+          "first": 193,
+          "residual_residues": 96,
+          "candidate_multipliers": 97,
+          "unique_pair_unions": 4657,
+          "bitset_intersections": 66275,
+          "multipliers": null
+        }
+      ]
+    },
+    {
+      "n": 387,
+      "k": 111,
+      "unit": {
+        "first": 1,
+        "residual_residues": 110,
+        "candidate_multipliers": 193,
+        "unique_pair_unions": 18394,
+        "bitset_intersections": 304519,
+        "multipliers": null
+      },
+      "no_unit_cases": [
+        {
+          "first": 3,
+          "residual_residues": 109,
+          "candidate_multipliers": 67,
+          "unique_pair_unions": 2149,
+          "bitset_intersections": 45114,
+          "multipliers": null
+        },
+        {
+          "first": 9,
+          "residual_residues": 112,
+          "candidate_multipliers": 67,
+          "unique_pair_unions": 2122,
+          "bitset_intersections": 45187,
+          "multipliers": null
+        },
+        {
+          "first": 43,
+          "residual_residues": 107,
+          "candidate_multipliers": 67,
+          "unique_pair_unions": 2167,
+          "bitset_intersections": 39725,
+          "multipliers": null
+        },
+        {
+          "first": 129,
+          "residual_residues": 64,
+          "candidate_multipliers": 67,
+          "unique_pair_unions": 254,
+          "bitset_intersections": 3494,
+          "multipliers": null
+        }
+      ]
+    },
+    {
+      "n": 388,
+      "k": 111,
+      "unit": {
+        "first": 1,
+        "residual_residues": 110,
+        "candidate_multipliers": 194,
+        "unique_pair_unions": 18618,
+        "bitset_intersections": 306075,
+        "multipliers": null
+      },
+      "no_unit_cases": [
+        {
+          "first": 2,
+          "residual_residues": 111,
+          "candidate_multipliers": 98,
+          "unique_pair_unions": 4692,
+          "bitset_intersections": 71981,
+          "multipliers": null
+        },
+        {
+          "first": 4,
+          "residual_residues": 110,
+          "candidate_multipliers": 98,
+          "unique_pair_unions": 4669,
+          "bitset_intersections": 77164,
+          "multipliers": null
+        },
+        {
+          "first": 97,
+          "residual_residues": 145,
+          "candidate_multipliers": 98,
+          "unique_pair_unions": 4706,
+          "bitset_intersections": 74836,
+          "multipliers": null
+        },
+        {
+          "first": 194,
+          "residual_residues": 97,
+          "candidate_multipliers": 98,
+          "unique_pair_unions": 1226,
+          "bitset_intersections": 15244,
+          "multipliers": null
+        }
+      ]
+    },
+    {
+      "n": 389,
+      "k": 112,
+      "unit": {
+        "first": 1,
+        "residual_residues": 111,
+        "candidate_multipliers": 194,
+        "unique_pair_unions": 18714,
+        "bitset_intersections": 304176,
+        "multipliers": null
+      },
+      "no_unit_cases": []
+    },
+    {
+      "n": 390,
+      "k": 112,
+      "unit": {
+        "first": 1,
+        "residual_residues": 111,
+        "candidate_multipliers": 195,
+        "unique_pair_unions": 18666,
+        "bitset_intersections": 311609,
+        "multipliers": null
+      },
+      "no_unit_cases": [
+        {
+          "first": 2,
+          "residual_residues": 111,
+          "candidate_multipliers": 147,
+          "unique_pair_unions": 10580,
+          "bitset_intersections": 187190,
+          "multipliers": null
+        },
+        {
+          "first": 3,
+          "residual_residues": 112,
+          "candidate_multipliers": 147,
+          "unique_pair_unions": 10570,
+          "bitset_intersections": 209364,
+          "multipliers": null
+        },
+        {
+          "first": 5,
+          "residual_residues": 112,
+          "candidate_multipliers": 147,
+          "unique_pair_unions": 10566,
+          "bitset_intersections": 197627,
+          "multipliers": null
+        },
+        {
+          "first": 6,
+          "residual_residues": 111,
+          "candidate_multipliers": 147,
+          "unique_pair_unions": 10535,
+          "bitset_intersections": 200816,
+          "multipliers": null
+        },
+        {
+          "first": 10,
+          "residual_residues": 115,
+          "candidate_multipliers": 147,
+          "unique_pair_unions": 10527,
+          "bitset_intersections": 202146,
+          "multipliers": null
+        },
+        {
+          "first": 13,
+          "residual_residues": 110,
+          "candidate_multipliers": 147,
+          "unique_pair_unions": 10566,
+          "bitset_intersections": 228305,
+          "multipliers": null
+        },
+        {
+          "first": 15,
+          "residual_residues": 112,
+          "candidate_multipliers": 147,
+          "unique_pair_unions": 10532,
+          "bitset_intersections": 221530,
+          "multipliers": null
+        },
+        {
+          "first": 26,
+          "residual_residues": 117,
+          "candidate_multipliers": 147,
+          "unique_pair_unions": 10568,
+          "bitset_intersections": 225159,
+          "multipliers": null
+        },
+        {
+          "first": 30,
+          "residual_residues": 105,
+          "candidate_multipliers": 147,
+          "unique_pair_unions": 10315,
+          "bitset_intersections": 199076,
+          "multipliers": null
+        },
+        {
+          "first": 39,
+          "residual_residues": 97,
+          "candidate_multipliers": 147,
+          "unique_pair_unions": 10288,
+          "bitset_intersections": 225941,
+          "multipliers": null
+        },
+        {
+          "first": 65,
+          "residual_residues": 97,
+          "candidate_multipliers": 147,
+          "unique_pair_unions": 10412,
+          "bitset_intersections": 209899,
+          "multipliers": null
+        },
+        {
+          "first": 78,
+          "residual_residues": 117,
+          "candidate_multipliers": 147,
+          "unique_pair_unions": 10176,
+          "bitset_intersections": 178852,
+          "multipliers": null
+        },
+        {
+          "first": 130,
+          "residual_residues": 65,
+          "candidate_multipliers": 147,
+          "unique_pair_unions": 2106,
+          "bitset_intersections": 30246,
+          "multipliers": null
+        },
+        {
+          "first": 195,
+          "residual_residues": 97,
+          "candidate_multipliers": 147,
+          "unique_pair_unions": 4682,
+          "bitset_intersections": 67445,
+          "multipliers": null
+        }
+      ]
+    },
+    {
+      "n": 391,
+      "k": 112,
+      "unit": {
+        "first": 1,
+        "residual_residues": 111,
+        "candidate_multipliers": 195,
+        "unique_pair_unions": 18908,
+        "bitset_intersections": 314473,
+        "multipliers": null
+      },
+      "no_unit_cases": [
+        {
+          "first": 17,
+          "residual_residues": 110,
+          "candidate_multipliers": 19,
+          "unique_pair_unions": 148,
+          "bitset_intersections": 1648,
+          "multipliers": null
+        },
+        {
+          "first": 23,
+          "residual_residues": 103,
+          "candidate_multipliers": 19,
+          "unique_pair_unions": 154,
+          "bitset_intersections": 1903,
+          "multipliers": null
+        }
+      ]
+    },
+    {
+      "n": 392,
+      "k": 112,
+      "unit": {
+        "first": 1,
+        "residual_residues": 111,
+        "candidate_multipliers": 196,
+        "unique_pair_unions": 18982,
+        "bitset_intersections": 333300,
+        "multipliers": null
+      },
+      "no_unit_cases": [
+        {
+          "first": 2,
+          "residual_residues": 111,
+          "candidate_multipliers": 112,
+          "unique_pair_unions": 6124,
+          "bitset_intersections": 121041,
+          "multipliers": null
+        },
+        {
+          "first": 4,
+          "residual_residues": 110,
+          "candidate_multipliers": 112,
+          "unique_pair_unions": 6086,
+          "bitset_intersections": 126400,
+          "multipliers": null
+        },
+        {
+          "first": 7,
+          "residual_residues": 108,
+          "candidate_multipliers": 112,
+          "unique_pair_unions": 6110,
+          "bitset_intersections": 112232,
+          "multipliers": null
+        },
+        {
+          "first": 8,
+          "residual_residues": 108,
+          "candidate_multipliers": 112,
+          "unique_pair_unions": 6052,
+          "bitset_intersections": 114718,
+          "multipliers": null
+        },
+        {
+          "first": 14,
+          "residual_residues": 105,
+          "candidate_multipliers": 112,
+          "unique_pair_unions": 6039,
+          "bitset_intersections": 149863,
+          "multipliers": null
+        },
+        {
+          "first": 28,
+          "residual_residues": 98,
+          "candidate_multipliers": 112,
+          "unique_pair_unions": 5661,
+          "bitset_intersections": 138367,
+          "multipliers": null
+        },
+        {
+          "first": 49,
+          "residual_residues": 122,
+          "candidate_multipliers": 112,
+          "unique_pair_unions": 6017,
+          "bitset_intersections": 112318,
+          "multipliers": null
+        },
+        {
+          "first": 56,
+          "residual_residues": 84,
+          "candidate_multipliers": 112,
+          "unique_pair_unions": 5232,
+          "bitset_intersections": 103409,
+          "multipliers": null
+        },
+        {
+          "first": 98,
+          "residual_residues": 147,
+          "candidate_multipliers": 112,
+          "unique_pair_unions": 6105,
+          "bitset_intersections": 108428,
+          "multipliers": null
+        },
+        {
+          "first": 196,
+          "residual_residues": 98,
+          "candidate_multipliers": 112,
+          "unique_pair_unions": 1553,
+          "bitset_intersections": 24635,
+          "multipliers": null
+        }
+      ]
+    },
+    {
+      "n": 393,
+      "k": 113,
+      "unit": {
+        "first": 1,
+        "residual_residues": 112,
+        "candidate_multipliers": 196,
+        "unique_pair_unions": 18974,
+        "bitset_intersections": 310908,
+        "multipliers": null
+      },
+      "no_unit_cases": [
+        {
+          "first": 3,
+          "residual_residues": 112,
+          "candidate_multipliers": 66,
+          "unique_pair_unions": 2128,
+          "bitset_intersections": 43430,
+          "multipliers": null
+        },
+        {
+          "first": 131,
+          "residual_residues": 65,
+          "candidate_multipliers": 66,
+          "unique_pair_unions": 2146,
+          "bitset_intersections": 29240,
+          "multipliers": null
+        }
+      ]
+    },
+    {
+      "n": 394,
+      "k": 113,
+      "unit": {
+        "first": 1,
+        "residual_residues": 112,
+        "candidate_multipliers": 197,
+        "unique_pair_unions": 19196,
+        "bitset_intersections": 314887,
+        "multipliers": null
+      },
+      "no_unit_cases": [
+        {
+          "first": 2,
+          "residual_residues": 113,
+          "candidate_multipliers": 99,
+          "unique_pair_unions": 4844,
+          "bitset_intersections": 76277,
+          "multipliers": null
+        },
+        {
+          "first": 197,
+          "residual_residues": 98,
+          "candidate_multipliers": 99,
+          "unique_pair_unions": 4852,
+          "bitset_intersections": 71162,
+          "multipliers": null
+        }
+      ]
+    },
+    {
+      "n": 395,
+      "k": 113,
+      "unit": {
+        "first": 1,
+        "residual_residues": 112,
+        "candidate_multipliers": 197,
+        "unique_pair_unions": 19298,
+        "bitset_intersections": 321691,
+        "multipliers": null
+      },
+      "no_unit_cases": [
+        {
+          "first": 5,
+          "residual_residues": 112,
+          "candidate_multipliers": 41,
+          "unique_pair_unions": 793,
+          "bitset_intersections": 11507,
+          "multipliers": null
+        },
+        {
+          "first": 79,
+          "residual_residues": 118,
+          "candidate_multipliers": 41,
+          "unique_pair_unions": 821,
+          "bitset_intersections": 12270,
+          "multipliers": null
+        }
+      ]
+    },
+    {
+      "n": 396,
+      "k": 114,
+      "unit": {
+        "first": 1,
+        "residual_residues": 113,
+        "candidate_multipliers": 198,
+        "unique_pair_unions": 19265,
+        "bitset_intersections": 312266,
+        "multipliers": null
+      },
+      "no_unit_cases": [
+        {
+          "first": 2,
+          "residual_residues": 113,
+          "candidate_multipliers": 138,
+          "unique_pair_unions": 9276,
+          "bitset_intersections": 148359,
+          "multipliers": null
+        },
+        {
+          "first": 3,
+          "residual_residues": 112,
+          "candidate_multipliers": 138,
+          "unique_pair_unions": 9282,
+          "bitset_intersections": 167825,
+          "multipliers": null
+        },
+        {
+          "first": 4,
+          "residual_residues": 114,
+          "candidate_multipliers": 138,
+          "unique_pair_unions": 9268,
+          "bitset_intersections": 166085,
+          "multipliers": null
+        },
+        {
+          "first": 6,
+          "residual_residues": 111,
+          "candidate_multipliers": 138,
+          "unique_pair_unions": 9246,
+          "bitset_intersections": 179589,
+          "multipliers": null
+        },
+        {
+          "first": 9,
+          "residual_residues": 112,
+          "candidate_multipliers": 138,
+          "unique_pair_unions": 9254,
+          "bitset_intersections": 174114,
+          "multipliers": null
+        },
+        {
+          "first": 11,
+          "residual_residues": 115,
+          "candidate_multipliers": 138,
+          "unique_pair_unions": 9269,
+          "bitset_intersections": 157277,
+          "multipliers": null
+        },
+        {
+          "first": 12,
+          "residual_residues": 114,
+          "candidate_multipliers": 138,
+          "unique_pair_unions": 9237,
+          "bitset_intersections": 175065,
+          "multipliers": null
+        },
+        {
+          "first": 18,
+          "residual_residues": 117,
+          "candidate_multipliers": 138,
+          "unique_pair_unions": 9227,
+          "bitset_intersections": 171981,
+          "multipliers": null
+        },
+        {
+          "first": 22,
+          "residual_residues": 121,
+          "candidate_multipliers": 138,
+          "unique_pair_unions": 9263,
+          "bitset_intersections": 161601,
+          "multipliers": null
+        },
+        {
+          "first": 33,
+          "residual_residues": 115,
+          "candidate_multipliers": 138,
+          "unique_pair_unions": 9267,
+          "bitset_intersections": 159403,
+          "multipliers": null
+        },
+        {
+          "first": 36,
+          "residual_residues": 126,
+          "candidate_multipliers": 138,
+          "unique_pair_unions": 9233,
+          "bitset_intersections": 179683,
+          "multipliers": null
+        },
+        {
+          "first": 44,
+          "residual_residues": 110,
+          "candidate_multipliers": 138,
+          "unique_pair_unions": 9232,
+          "bitset_intersections": 168711,
+          "multipliers": null
+        },
+        {
+          "first": 66,
+          "residual_residues": 99,
+          "candidate_multipliers": 138,
+          "unique_pair_unions": 8699,
+          "bitset_intersections": 138811,
+          "multipliers": null
+        },
+        {
+          "first": 99,
+          "residual_residues": 148,
+          "candidate_multipliers": 138,
+          "unique_pair_unions": 9266,
+          "bitset_intersections": 154315,
+          "multipliers": null
+        },
+        {
+          "first": 132,
+          "residual_residues": 66,
+          "candidate_multipliers": 138,
+          "unique_pair_unions": 1037,
+          "bitset_intersections": 13562,
+          "multipliers": null
+        },
+        {
+          "first": 198,
+          "residual_residues": 99,
+          "candidate_multipliers": 138,
+          "unique_pair_unions": 2349,
+          "bitset_intersections": 31758,
+          "multipliers": null
+        }
+      ]
+    },
+    {
+      "n": 397,
+      "k": 114,
+      "unit": {
+        "first": 1,
+        "residual_residues": 113,
+        "candidate_multipliers": 198,
+        "unique_pair_unions": 19496,
+        "bitset_intersections": 323464,
+        "multipliers": null
+      },
+      "no_unit_cases": []
+    },
+    {
+      "n": 398,
+      "k": 114,
+      "unit": {
+        "first": 1,
+        "residual_residues": 113,
+        "candidate_multipliers": 199,
+        "unique_pair_unions": 19588,
+        "bitset_intersections": 327893,
+        "multipliers": null
+      },
+      "no_unit_cases": [
+        {
+          "first": 2,
+          "residual_residues": 113,
+          "candidate_multipliers": 100,
+          "unique_pair_unions": 4935,
+          "bitset_intersections": 87829,
+          "multipliers": null
+        },
+        {
+          "first": 199,
+          "residual_residues": 99,
+          "candidate_multipliers": 100,
+          "unique_pair_unions": 4951,
+          "bitset_intersections": 75871,
+          "multipliers": null
+        }
+      ]
+    },
+    {
+      "n": 399,
+      "k": 114,
+      "unit": {
+        "first": 1,
+        "residual_residues": 113,
+        "candidate_multipliers": 199,
+        "unique_pair_unions": 19539,
+        "bitset_intersections": 338872,
+        "multipliers": null
+      },
+      "no_unit_cases": [
+        {
+          "first": 3,
+          "residual_residues": 112,
+          "candidate_multipliers": 91,
+          "unique_pair_unions": 4032,
+          "bitset_intersections": 82530,
+          "multipliers": null
+        },
+        {
+          "first": 7,
+          "residual_residues": 115,
+          "candidate_multipliers": 91,
+          "unique_pair_unions": 4028,
+          "bitset_intersections": 78966,
+          "multipliers": null
+        },
+        {
+          "first": 19,
+          "residual_residues": 104,
+          "candidate_multipliers": 91,
+          "unique_pair_unions": 3958,
+          "bitset_intersections": 79542,
+          "multipliers": null
+        },
+        {
+          "first": 21,
+          "residual_residues": 115,
+          "candidate_multipliers": 91,
+          "unique_pair_unions": 3899,
+          "bitset_intersections": 88145,
+          "multipliers": null
+        },
+        {
+          "first": 57,
+          "residual_residues": 85,
+          "candidate_multipliers": 91,
+          "unique_pair_unions": 3756,
+          "bitset_intersections": 68242,
+          "multipliers": null
+        },
+        {
+          "first": 133,
+          "residual_residues": 66,
+          "candidate_multipliers": 91,
+          "unique_pair_unions": 2204,
+          "bitset_intersections": 32224,
+          "multipliers": null
+        }
+      ]
+    },
+    {
+      "n": 400,
+      "k": 115,
+      "unit": {
+        "first": 1,
+        "residual_residues": 114,
+        "candidate_multipliers": 200,
+        "unique_pair_unions": 19787,
+        "bitset_intersections": 334240,
+        "multipliers": null
+      },
+      "no_unit_cases": [
+        {
+          "first": 2,
+          "residual_residues": 115,
+          "candidate_multipliers": 120,
+          "unique_pair_unions": 7067,
+          "bitset_intersections": 120596,
+          "multipliers": null
+        },
+        {
+          "first": 4,
+          "residual_residues": 114,
+          "candidate_multipliers": 120,
+          "unique_pair_unions": 7055,
+          "bitset_intersections": 137399,
+          "multipliers": null
+        },
+        {
+          "first": 5,
+          "residual_residues": 112,
+          "candidate_multipliers": 120,
+          "unique_pair_unions": 7047,
+          "bitset_intersections": 120434,
+          "multipliers": null
+        },
+        {
+          "first": 8,
+          "residual_residues": 116,
+          "candidate_multipliers": 120,
+          "unique_pair_unions": 7022,
+          "bitset_intersections": 118573,
+          "multipliers": null
+        },
+        {
+          "first": 10,
+          "residual_residues": 115,
+          "candidate_multipliers": 120,
+          "unique_pair_unions": 7011,
+          "bitset_intersections": 118454,
+          "multipliers": null
+        },
+        {
+          "first": 16,
+          "residual_residues": 120,
+          "candidate_multipliers": 120,
+          "unique_pair_unions": 7014,
+          "bitset_intersections": 117057,
+          "multipliers": null
+        },
+        {
+          "first": 20,
+          "residual_residues": 110,
+          "candidate_multipliers": 120,
+          "unique_pair_unions": 6957,
+          "bitset_intersections": 127378,
+          "multipliers": null
+        },
+        {
+          "first": 25,
+          "residual_residues": 112,
+          "candidate_multipliers": 120,
+          "unique_pair_unions": 6934,
+          "bitset_intersections": 114182,
+          "multipliers": null
+        },
+        {
+          "first": 40,
+          "residual_residues": 100,
+          "candidate_multipliers": 120,
+          "unique_pair_unions": 6716,
+          "bitset_intersections": 138573,
+          "multipliers": null
+        },
+        {
+          "first": 50,
+          "residual_residues": 125,
+          "candidate_multipliers": 120,
+          "unique_pair_unions": 6923,
+          "bitset_intersections": 118418,
+          "multipliers": null
+        },
+        {
+          "first": 80,
+          "residual_residues": 120,
+          "candidate_multipliers": 120,
+          "unique_pair_unions": 6811,
+          "bitset_intersections": 109928,
+          "multipliers": null
+        },
+        {
+          "first": 100,
+          "residual_residues": 150,
+          "candidate_multipliers": 120,
+          "unique_pair_unions": 7028,
+          "bitset_intersections": 139540,
+          "multipliers": null
+        },
+        {
+          "first": 200,
+          "residual_residues": 100,
+          "candidate_multipliers": 120,
+          "unique_pair_unions": 1799,
+          "bitset_intersections": 26830,
+          "multipliers": null
+        }
+      ]
+    },
+    {
+      "n": 401,
+      "k": 115,
+      "unit": {
+        "first": 1,
+        "residual_residues": 114,
+        "candidate_multipliers": 200,
+        "unique_pair_unions": 19893,
+        "bitset_intersections": 329330,
+        "multipliers": null
+      },
+      "no_unit_cases": []
+    }
+  ],
+  "complete_range": true,
+  "all_target_cases_infeasible": true,
+  "seconds": 41.62889946499854,
+  "maxRSS_KiB": 13068,
+  "scope": "Rank-one circular cyclic codes of size368..401 with direct distance-preserving rounding only; nonlinear/translated-deletion-and-completion constructions remain outside."
+}

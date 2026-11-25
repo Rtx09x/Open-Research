@@ -1,0 +1,9 @@
+{
+  "PASS": true,
+  "independent_orientation_assignments": 384,
+  "method": "own physical sample decoder and exact Fraction signed-permutation isotropy enumeration; no worker imports",
+  "expected_flux_loss": "1011088/15625",
+  "expected_emission_cost": "490176/15625",
+  "row_covariance_counterexample": "EXX^T=5/4 diag(1,0), EYY^T=3/4 diag(1,0)",
+  "scope": "general-k algebra and second-moment identity, not general-k stability or correlated-source theorem"
+}

@@ -1,0 +1,13 @@
+# Delayed tiny closure: primary-proof portability audit
+
+**Status:** independent mathematical audit passes; exact nonlinear pricing is owned by the packing worker. Pro's asserted PASS logs were not used as evidence for this judgment.
+
+Read the primary AH§3 insertion/matching rules and all later uses of open/closed state, plus Lemmas3,10–17,19–20. Delaying closure until an arriving tiny item fails advertised capacity changes insertion only. At a failure, old load>A_i−s≥A_i−d, while the triggering item fits the new container because s≤d≤min A_i. There remains at most one unfinished container. Reserved volume/sign never change, so pairing never overfills a physical bin and matching decisions do not inspect the new open status. Lemma3's unmatched separation argument therefore survives. Container creation still follows the same deterministic quota rule; discrepancy≤1 and zero-sum discrepancies remain valid. Largest-temporary-singleton choices and Lemmas11–14 do not depend on tiny closure timing.
+
+The interior threshold construction is valid: with p the minimum unmatched-positive volume(default1), n the minimum unmatched-negative volume(default1/2), choose t strictly between max(0,1−p) and min(1/2,n), avoiding the finite breakpoint set. Lemma3 guarantees a nonempty interval. This is post-execution analysis, not lookahead. It needs no unmatched positive container exactly at a=1−t and no additional a' assumption.
+
+Independently checked the replacement threshold charging algebra. With α+β=1, n1=αn+e,0≤e≤2, T temporary singles, convenience countsC1,C2, set m=min(v−u,1−w), B=u(α+2β)+wα and D=v−u−w+(β/α)m. Source count bounds give Φ≥Bn+DT−5m/α−6. IfD<0 use T≤αn+2 andD≥−1. Then B+αD=min(v+βu,αv+2βu+β(1−w))≥1 by the two remaining weight constraints. This yields a uniform additive constant, avoiding the source line that multiplies an inequality by potentially negative n−T/α. The α0 stratum remains the source's separate bounded-singleton argument. This is not a counterexample to the original asymptotic AH theorem.
+
+Tiny overflow charging may replace the old aggregate tiny-class weight lemma because the overall proof charges required container weights globally, not separately to each container's own items. Convex combinations of two valid aggregate tiny weights remain valid; a pointwise minimum would not follow. Modified tiny weights do not apply to the original proactive closure algorithm without this change.
+
+Source: [AH full paper](https://arxiv.org/html/1707.01728). Pro bundle proof was compared with source, not accepted on authority. Numerical gain, novelty and final certificate status are separate questions. Parameters α are deterministic container proportions, not randomized algorithm probabilities.

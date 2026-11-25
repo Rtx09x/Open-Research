@@ -1,0 +1,599 @@
+{
+  "status": "PASS",
+  "parent": 5,
+  "bundle_manifest_sha256": "1c9e09ee5eaf3a479b38de7760c53a1774e3e97779f0846c7f0e81d991a4757c",
+  "ancestors_recomputed": true,
+  "steps": [
+    "check_deletion_forced_receivers_independent.py",
+    "check_deletion_forced_face_independent.py",
+    "check_deletion_forced_face263_771_independent.py",
+    "check_deletion_parent5_independent.py"
+  ],
+  "results": {
+    "check_deletion_parent5_independent.json": {
+      "PASS": true,
+      "method": "Own literal deletion, CG/fixed-prefix rebuild, exact dual costs and recursive forced-clique partition; no worker code imports",
+      "manifest_sha256": "1c9e09ee5eaf3a479b38de7760c53a1774e3e97779f0846c7f0e81d991a4757c",
+      "nodes": 57,
+      "direct_exact_leaves": 47,
+      "independently_bound_Farkas_leaves": [
+        {
+          "path": "evidence/required_branch320/under_parent5/parent_263/forced_clique1136/parent_771",
+          "audit": "check_deletion_forced_face263_771_independent.json",
+          "margin": 1492663
+        },
+        {
+          "path": "evidence/required_branch320/under_parent5/parent_519",
+          "audit": "check_deletion_forced_face_independent.json",
+          "margin": 1551857
+        }
+      ],
+      "forced_partitions": [
+        {
+          "path": "evidence/required_branch320/under_parent5/parent_15/forced_clique160/partition.json",
+          "children": [
+            73,
+            81,
+            97,
+            161,
+            289,
+            545,
+            1057,
+            2081
+          ],
+          "gap": 68600413,
+          "multiplier": 116225784
+        },
+        {
+          "path": "evidence/required_branch320/under_parent5/parent_15/forced_clique160/parent_81/forced_clique7613/partition.json",
+          "children": [
+            36,
+            42,
+            2066,
+            2068
+          ],
+          "gap": 4293665,
+          "multiplier": 8684898
+        },
+        {
+          "path": "evidence/required_branch320/under_parent5/parent_15/forced_clique160/parent_161/forced_clique1068/partition.json",
+          "children": [
+            240,
+            248,
+            376,
+            488,
+            496
+          ],
+          "gap": 21162778,
+          "multiplier": 24788084
+        },
+        {
+          "path": "evidence/required_branch320/under_parent5/parent_15/forced_clique160/parent_2081/forced_clique676/partition.json",
+          "children": [
+            144,
+            145,
+            162,
+            168
+          ],
+          "gap": 12269962,
+          "multiplier": 13425443
+        },
+        {
+          "path": "evidence/required_branch320/under_parent5/parent_71/forced_clique330/partition.json",
+          "children": [
+            134,
+            147,
+            195,
+            323,
+            579,
+            1091,
+            2115
+          ],
+          "gap": 49528376,
+          "multiplier": 179571079
+        },
+        {
+          "path": "evidence/required_branch320/under_parent5/parent_135/forced_clique614/partition.json",
+          "children": [
+            262,
+            275,
+            291,
+            387,
+            643,
+            1155,
+            2179
+          ],
+          "gap": 58730788,
+          "multiplier": 159550466
+        },
+        {
+          "path": "evidence/required_branch320/under_parent5/parent_135/forced_clique614/parent_387/forced_clique293/partition.json",
+          "children": [
+            3975,
+            3979,
+            4003,
+            4035,
+            4039
+          ],
+          "gap": 12821788,
+          "multiplier": 13266733
+        },
+        {
+          "path": "evidence/required_branch320/under_parent5/parent_263/forced_clique1136/partition.json",
+          "children": [
+            518,
+            531,
+            547,
+            579,
+            771,
+            1283,
+            2307
+          ],
+          "gap": 54815387,
+          "multiplier": 193972520
+        }
+      ],
+      "receiver7_cases": [
+        14,
+        15,
+        23,
+        39,
+        71,
+        135,
+        263,
+        519,
+        1031,
+        2055
+      ],
+      "claim": "Normalized target320 code with constants cannot contain word5",
+      "global_upper319": false,
+      "seconds": 4.496731049002847,
+      "node_checks": [
+        {
+          "path": "evidence/required_branch320/under_parent5/parent_14",
+          "numerator": 319763378037,
+          "scale": 1000000000,
+          "direct_prune": true
+        },
+        {
+          "path": "evidence/required_branch320/under_parent5/parent_15",
+          "numerator": 320068600413,
+          "scale": 1000000000,
+          "direct_prune": false
+        },
+        {
+          "path": "evidence/required_branch320/under_parent5/parent_15/forced_clique160/parent_73",
+          "numerator": 319959979368,
+          "scale": 1000000000,
+          "direct_prune": true
+        },
+        {
+          "path": "evidence/required_branch320/under_parent5/parent_15/forced_clique160/parent_81",
+          "numerator": 320004293665,
+          "scale": 1000000000,
+          "direct_prune": false
+        },
+        {
+          "path": "evidence/required_branch320/under_parent5/parent_15/forced_clique160/parent_81/forced_clique7613/parent_36",
+          "numerator": 319853166833,
+          "scale": 1000000000,
+          "direct_prune": true
+        },
+        {
+          "path": "evidence/required_branch320/under_parent5/parent_15/forced_clique160/parent_81/forced_clique7613/parent_42",
+          "numerator": 319771701313,
+          "scale": 1000000000,
+          "direct_prune": true
+        },
+        {
+          "path": "evidence/required_branch320/under_parent5/parent_15/forced_clique160/parent_81/forced_clique7613/parent_2066",
+          "numerator": 319864060279,
+          "scale": 1000000000,
+          "direct_prune": true
+        },
+        {
+          "path": "evidence/required_branch320/under_parent5/parent_15/forced_clique160/parent_81/forced_clique7613/parent_2068",
+          "numerator": 319836987121,
+          "scale": 1000000000,
+          "direct_prune": true
+        },
+        {
+          "path": "evidence/required_branch320/under_parent5/parent_15/forced_clique160/parent_97",
+          "numerator": 319955512970,
+          "scale": 1000000000,
+          "direct_prune": true
+        },
+        {
+          "path": "evidence/required_branch320/under_parent5/parent_15/forced_clique160/parent_161",
+          "numerator": 320021162778,
+          "scale": 1000000000,
+          "direct_prune": false
+        },
+        {
+          "path": "evidence/required_branch320/under_parent5/parent_15/forced_clique160/parent_161/forced_clique1068/parent_240",
+          "numerator": 319979996737,
+          "scale": 1000000000,
+          "direct_prune": true
+        },
+        {
+          "path": "evidence/required_branch320/under_parent5/parent_15/forced_clique160/parent_161/forced_clique1068/parent_248",
+          "numerator": 319988455572,
+          "scale": 1000000000,
+          "direct_prune": true
+        },
+        {
+          "path": "evidence/required_branch320/under_parent5/parent_15/forced_clique160/parent_161/forced_clique1068/parent_376",
+          "numerator": 319787409634,
+          "scale": 1000000000,
+          "direct_prune": true
+        },
+        {
+          "path": "evidence/required_branch320/under_parent5/parent_15/forced_clique160/parent_161/forced_clique1068/parent_488",
+          "numerator": 319799433944,
+          "scale": 1000000000,
+          "direct_prune": true
+        },
+        {
+          "path": "evidence/required_branch320/under_parent5/parent_15/forced_clique160/parent_161/forced_clique1068/parent_496",
+          "numerator": 319995110524,
+          "scale": 1000000000,
+          "direct_prune": true
+        },
+        {
+          "path": "evidence/required_branch320/under_parent5/parent_15/forced_clique160/parent_289",
+          "numerator": 319965325449,
+          "scale": 1000000000,
+          "direct_prune": true
+        },
+        {
+          "path": "evidence/required_branch320/under_parent5/parent_15/forced_clique160/parent_545",
+          "numerator": 319963048701,
+          "scale": 1000000000,
+          "direct_prune": true
+        },
+        {
+          "path": "evidence/required_branch320/under_parent5/parent_15/forced_clique160/parent_1057",
+          "numerator": 319996648601,
+          "scale": 1000000000,
+          "direct_prune": true
+        },
+        {
+          "path": "evidence/required_branch320/under_parent5/parent_15/forced_clique160/parent_2081",
+          "numerator": 320012269962,
+          "scale": 1000000000,
+          "direct_prune": false
+        },
+        {
+          "path": "evidence/required_branch320/under_parent5/parent_15/forced_clique160/parent_2081/forced_clique676/parent_144",
+          "numerator": 319939361674,
+          "scale": 1000000000,
+          "direct_prune": true
+        },
+        {
+          "path": "evidence/required_branch320/under_parent5/parent_15/forced_clique160/parent_2081/forced_clique676/parent_145",
+          "numerator": 319893091648,
+          "scale": 1000000000,
+          "direct_prune": true
+        },
+        {
+          "path": "evidence/required_branch320/under_parent5/parent_15/forced_clique160/parent_2081/forced_clique676/parent_162",
+          "numerator": 319866886564,
+          "scale": 1000000000,
+          "direct_prune": true
+        },
+        {
+          "path": "evidence/required_branch320/under_parent5/parent_15/forced_clique160/parent_2081/forced_clique676/parent_168",
+          "numerator": 319846767847,
+          "scale": 1000000000,
+          "direct_prune": true
+        },
+        {
+          "path": "evidence/required_branch320/under_parent5/parent_23",
+          "numerator": 319716522247,
+          "scale": 1000000000,
+          "direct_prune": true
+        },
+        {
+          "path": "evidence/required_branch320/under_parent5/parent_39",
+          "numerator": 319960957199,
+          "scale": 1000000000,
+          "direct_prune": true
+        },
+        {
+          "path": "evidence/required_branch320/under_parent5/parent_71",
+          "numerator": 320049528376,
+          "scale": 1000000000,
+          "direct_prune": false
+        },
+        {
+          "path": "evidence/required_branch320/under_parent5/parent_71/forced_clique330/parent_134",
+          "numerator": 319960271113,
+          "scale": 1000000000,
+          "direct_prune": true
+        },
+        {
+          "path": "evidence/required_branch320/under_parent5/parent_71/forced_clique330/parent_147",
+          "numerator": 319940644569,
+          "scale": 1000000000,
+          "direct_prune": true
+        },
+        {
+          "path": "evidence/required_branch320/under_parent5/parent_71/forced_clique330/parent_195",
+          "numerator": 319987042990,
+          "scale": 1000000000,
+          "direct_prune": true
+        },
+        {
+          "path": "evidence/required_branch320/under_parent5/parent_71/forced_clique330/parent_323",
+          "numerator": 319952203244,
+          "scale": 1000000000,
+          "direct_prune": true
+        },
+        {
+          "path": "evidence/required_branch320/under_parent5/parent_71/forced_clique330/parent_579",
+          "numerator": 319965642576,
+          "scale": 1000000000,
+          "direct_prune": true
+        },
+        {
+          "path": "evidence/required_branch320/under_parent5/parent_71/forced_clique330/parent_1091",
+          "numerator": 319924136559,
+          "scale": 1000000000,
+          "direct_prune": true
+        },
+        {
+          "path": "evidence/required_branch320/under_parent5/parent_71/forced_clique330/parent_2115",
+          "numerator": 319998397226,
+          "scale": 1000000000,
+          "direct_prune": true
+        },
+        {
+          "path": "evidence/required_branch320/under_parent5/parent_135",
+          "numerator": 320058730788,
+          "scale": 1000000000,
+          "direct_prune": false
+        },
+        {
+          "path": "evidence/required_branch320/under_parent5/parent_135/forced_clique614/parent_262",
+          "numerator": 319964605791,
+          "scale": 1000000000,
+          "direct_prune": true
+        },
+        {
+          "path": "evidence/required_branch320/under_parent5/parent_135/forced_clique614/parent_275",
+          "numerator": 319962016378,
+          "scale": 1000000000,
+          "direct_prune": true
+        },
+        {
+          "path": "evidence/required_branch320/under_parent5/parent_135/forced_clique614/parent_291",
+          "numerator": 319907490898,
+          "scale": 1000000000,
+          "direct_prune": true
+        },
+        {
+          "path": "evidence/required_branch320/under_parent5/parent_135/forced_clique614/parent_387",
+          "numerator": 320012821788,
+          "scale": 1000000000,
+          "direct_prune": false
+        },
+        {
+          "path": "evidence/required_branch320/under_parent5/parent_135/forced_clique614/parent_387/forced_clique293/parent_3975",
+          "numerator": 319970274491,
+          "scale": 1000000000,
+          "direct_prune": true
+        },
+        {
+          "path": "evidence/required_branch320/under_parent5/parent_135/forced_clique614/parent_387/forced_clique293/parent_3979",
+          "numerator": 319808583710,
+          "scale": 1000000000,
+          "direct_prune": true
+        },
+        {
+          "path": "evidence/required_branch320/under_parent5/parent_135/forced_clique614/parent_387/forced_clique293/parent_4003",
+          "numerator": 319798292180,
+          "scale": 1000000000,
+          "direct_prune": true
+        },
+        {
+          "path": "evidence/required_branch320/under_parent5/parent_135/forced_clique614/parent_387/forced_clique293/parent_4035",
+          "numerator": 319993811016,
+          "scale": 1000000000,
+          "direct_prune": true
+        },
+        {
+          "path": "evidence/required_branch320/under_parent5/parent_135/forced_clique614/parent_387/forced_clique293/parent_4039",
+          "numerator": 319977987715,
+          "scale": 1000000000,
+          "direct_prune": true
+        },
+        {
+          "path": "evidence/required_branch320/under_parent5/parent_135/forced_clique614/parent_643",
+          "numerator": 319925799542,
+          "scale": 1000000000,
+          "direct_prune": true
+        },
+        {
+          "path": "evidence/required_branch320/under_parent5/parent_135/forced_clique614/parent_1155",
+          "numerator": 319936021736,
+          "scale": 1000000000,
+          "direct_prune": true
+        },
+        {
+          "path": "evidence/required_branch320/under_parent5/parent_135/forced_clique614/parent_2179",
+          "numerator": 319981669550,
+          "scale": 1000000000,
+          "direct_prune": true
+        },
+        {
+          "path": "evidence/required_branch320/under_parent5/parent_263",
+          "numerator": 320054815387,
+          "scale": 1000000000,
+          "direct_prune": false
+        },
+        {
+          "path": "evidence/required_branch320/under_parent5/parent_263/forced_clique1136/parent_518",
+          "numerator": 319978287880,
+          "scale": 1000000000,
+          "direct_prune": true
+        },
+        {
+          "path": "evidence/required_branch320/under_parent5/parent_263/forced_clique1136/parent_531",
+          "numerator": 319928274184,
+          "scale": 1000000000,
+          "direct_prune": true
+        },
+        {
+          "path": "evidence/required_branch320/under_parent5/parent_263/forced_clique1136/parent_547",
+          "numerator": 319882965781,
+          "scale": 1000000000,
+          "direct_prune": true
+        },
+        {
+          "path": "evidence/required_branch320/under_parent5/parent_263/forced_clique1136/parent_579",
+          "numerator": 319933073506,
+          "scale": 1000000000,
+          "direct_prune": true
+        },
+        {
+          "path": "evidence/required_branch320/under_parent5/parent_263/forced_clique1136/parent_771",
+          "numerator": 320001053258,
+          "scale": 1000000000,
+          "direct_prune": false
+        },
+        {
+          "path": "evidence/required_branch320/under_parent5/parent_263/forced_clique1136/parent_1283",
+          "numerator": 319908833735,
+          "scale": 1000000000,
+          "direct_prune": true
+        },
+        {
+          "path": "evidence/required_branch320/under_parent5/parent_263/forced_clique1136/parent_2307",
+          "numerator": 319999231591,
+          "scale": 1000000000,
+          "direct_prune": true
+        },
+        {
+          "path": "evidence/required_branch320/under_parent5/parent_519",
+          "numerator": 320000960179,
+          "scale": 1000000000,
+          "direct_prune": false
+        },
+        {
+          "path": "evidence/required_branch320/under_parent5/parent_1031",
+          "numerator": 319878318095,
+          "scale": 1000000000,
+          "direct_prune": true
+        },
+        {
+          "path": "evidence/required_branch320/under_parent5/parent_2055",
+          "numerator": 319946958768,
+          "scale": 1000000000,
+          "direct_prune": true
+        }
+      ]
+    },
+    "check_deletion_forced_face263_771_independent.json": {
+      "PASS": true,
+      "geometry": "independent literal deletion, no worker imports",
+      "root_required_receiver_dependency_sha256": "2784a559893740026e5d290b4d6a177167c262345c14976382de3e28b5fe6299",
+      "conditional_path": [
+        [
+          3,
+          5
+        ],
+        [
+          7,
+          263
+        ]
+      ],
+      "extra_fixed_ones": [
+        771
+      ],
+      "conditional_dual_numerator": 320001053258,
+      "scale": 1000000000,
+      "gap": 1053258,
+      "forced_words": 1632,
+      "forced_equalities": 2370,
+      "CG_nodes": 922,
+      "global_rows": 7752,
+      "minimum": -8316,
+      "rhs": -1500979,
+      "strict_Farkas_margin": 1492663,
+      "files_sha256": {
+        "model.json": "978713a00812568021950f7d7e1fce0dcb11613962fd33d53bcfa886476ce2c1",
+        "dual.json": "273a7d50a5a1087f0ae88b38906d4885e3b433bfe0beb292c3557a113017dcba",
+        "equations.json": "7e8e59ce78653dd5e851df142c7500fa3a47d4eef6107b7bcdb8c39a4205fbad",
+        "face_farkas.json": "5e3bc511eebeaffe9849e00887028c3b72b35eb2dea5440518b3b0089cd46817"
+      },
+      "seconds": 0.23595083999680355,
+      "scope": "Excludes320 only for normalized codes on receiver-parent path[(3,5),(7,263)] plus selected771; no global319 proof"
+    },
+    "check_deletion_forced_face_independent.json": {
+      "PASS": true,
+      "geometry": "independent literal deletion, no worker imports",
+      "root_required_receiver_dependency_sha256": "2784a559893740026e5d290b4d6a177167c262345c14976382de3e28b5fe6299",
+      "conditional_path": [
+        [
+          3,
+          5
+        ],
+        [
+          7,
+          519
+        ]
+      ],
+      "conditional_dual_numerator": 320000960179,
+      "scale": 1000000000,
+      "gap": 960179,
+      "forced_words": 1654,
+      "forced_equalities": 2344,
+      "CG_nodes": 922,
+      "global_rows": 7710,
+      "minimum": -10356,
+      "rhs": -1562213,
+      "strict_Farkas_margin": 1551857,
+      "files_sha256": {
+        "model.json": "1735b57f556bde1497c413cb48d84e74f54cdc5fdc306a0afdc73cb797d2e7ae",
+        "dual.json": "2111fcb9ef3c4be9aacfea2e56d216d4ccd31d9b3f5978b29361db56561776e4",
+        "equations.json": "9a7afad8c635937a3e72722715e7e6774c8468b3ecab5abbd5318efb3405da9b",
+        "face_farkas.json": "138b921f03582774330345fb7c5118911b4d5af11ca3c10fb6c5de8e329c984c"
+      },
+      "seconds": 0.2650442550002481,
+      "scope": "Excludes320 only for normalized codes on receiver-parent path[(3,5),(7,519)]; no global319 proof"
+    },
+    "check_deletion_forced_receivers_independent.json": {
+      "PASS": true,
+      "independent_global_dual": true,
+      "gap": 497437108,
+      "scale": 1000000000,
+      "required_receiver_count": 16,
+      "parents_per_receiver": 13,
+      "strict_multiplier_margins": [
+        15223544,
+        2562892,
+        2562892,
+        2562892
+      ],
+      "certificate_sha256": "2784a559893740026e5d290b4d6a177167c262345c14976382de3e28b5fe6299",
+      "scope": "Every hypothetical320 code covers these16 outputs exactly once; not a global319 bound."
+    },
+    "deletion_cg_global_dual_audit.json": {
+      "passed": true,
+      "certificate": "/workspace/shared/research-active/deletion-code-optimality/continuation/evidence/parent5_exclusion_frozen/evidence/required_receivers320/global_dual.json",
+      "sha256": "1d1793b7996d2e4dec16361b4fbed9417d18ff8d46ed5c2ce07e4b8141d40dc5",
+      "numerator": 320497437108,
+      "denominator": 1000000000,
+      "exact_upper": "80124359277/250000000",
+      "upper_float": 320.497437108,
+      "integer_upper": 320,
+      "full_word_coverage_checks": 4096,
+      "cliques_checked": 599,
+      "nodes_expanded": 52,
+      "maximum_CG_rank": 1,
+      "seconds": 0.06146574020385742,
+      "method": "independent insertion-first string geometry; explicit four group transports; no worker imports"
+    }
+  },
+  "scope": "Normalized size320 code cannot contain word5; not global319."
+}

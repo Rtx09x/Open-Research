@@ -1,0 +1,231 @@
+{
+  "status": "NUMERICAL_CONTROLS_NOT_PROOF",
+  "seconds": 5.42890664999868,
+  "results": [
+    {
+      "L": 1,
+      "n": 4,
+      "bases": "coordinate",
+      "width": 2,
+      "matvecs_each_direction": 2,
+      "trials": 80,
+      "mean_error_factor": 4.0,
+      "max_error_factor": 4.0,
+      "standard_error": 0.0,
+      "known_exact_width2_mean": 4
+    },
+    {
+      "L": 1,
+      "n": 4,
+      "bases": "coordinate",
+      "width": 3,
+      "matvecs_each_direction": 3,
+      "trials": 80,
+      "mean_error_factor": 2.589715875348885,
+      "max_error_factor": 3.993950641295916,
+      "standard_error": 0.07398206094811557
+    },
+    {
+      "L": 1,
+      "n": 4,
+      "bases": "dense",
+      "width": 2,
+      "matvecs_each_direction": 2,
+      "trials": 80,
+      "mean_error_factor": 3.457396159169641,
+      "max_error_factor": 3.4573961591696407,
+      "standard_error": 4.965068306494546e-17
+    },
+    {
+      "L": 1,
+      "n": 4,
+      "bases": "dense",
+      "width": 3,
+      "matvecs_each_direction": 3,
+      "trials": 80,
+      "mean_error_factor": 2.216894033747729,
+      "max_error_factor": 3.379630486808409,
+      "standard_error": 0.058468456100991606
+    },
+    {
+      "L": 2,
+      "n": 8,
+      "bases": "coordinate",
+      "width": 2,
+      "matvecs_each_direction": 2,
+      "trials": 80,
+      "mean_error_factor": 5.999999999999999,
+      "max_error_factor": 5.999999999999999,
+      "standard_error": 0.0,
+      "known_exact_width2_mean": 6
+    },
+    {
+      "L": 2,
+      "n": 8,
+      "bases": "coordinate",
+      "width": 3,
+      "matvecs_each_direction": 3,
+      "trials": 80,
+      "mean_error_factor": 2.5676069875222582,
+      "max_error_factor": 5.498073611392025,
+      "standard_error": 0.097633891600912
+    },
+    {
+      "L": 2,
+      "n": 8,
+      "bases": "dense",
+      "width": 2,
+      "matvecs_each_direction": 2,
+      "trials": 80,
+      "mean_error_factor": 2.976208539801001,
+      "max_error_factor": 5.3832881050248,
+      "standard_error": 0.09024910762205497
+    },
+    {
+      "L": 2,
+      "n": 8,
+      "bases": "dense",
+      "width": 3,
+      "matvecs_each_direction": 3,
+      "trials": 80,
+      "mean_error_factor": 2.10770664670735,
+      "max_error_factor": 3.5650512489844064,
+      "standard_error": 0.044998265201197804
+    },
+    {
+      "L": 3,
+      "n": 16,
+      "bases": "coordinate",
+      "width": 2,
+      "matvecs_each_direction": 2,
+      "trials": 80,
+      "mean_error_factor": 8.000000000000002,
+      "max_error_factor": 8.000000000000002,
+      "standard_error": 0.0,
+      "known_exact_width2_mean": 8
+    },
+    {
+      "L": 3,
+      "n": 16,
+      "bases": "coordinate",
+      "width": 3,
+      "matvecs_each_direction": 3,
+      "trials": 80,
+      "mean_error_factor": 2.5867047515904726,
+      "max_error_factor": 4.325199718801727,
+      "standard_error": 0.08268182001675843
+    },
+    {
+      "L": 3,
+      "n": 16,
+      "bases": "dense",
+      "width": 2,
+      "matvecs_each_direction": 2,
+      "trials": 80,
+      "mean_error_factor": 2.997603671663903,
+      "max_error_factor": 5.51920138868283,
+      "standard_error": 0.06823741399076019
+    },
+    {
+      "L": 3,
+      "n": 16,
+      "bases": "dense",
+      "width": 3,
+      "matvecs_each_direction": 3,
+      "trials": 80,
+      "mean_error_factor": 2.12369778838633,
+      "max_error_factor": 2.817359061524691,
+      "standard_error": 0.031316965488899735
+    },
+    {
+      "L": 4,
+      "n": 32,
+      "bases": "coordinate",
+      "width": 2,
+      "matvecs_each_direction": 2,
+      "trials": 80,
+      "mean_error_factor": 10.000000000000002,
+      "max_error_factor": 10.000000000000002,
+      "standard_error": 0.0,
+      "known_exact_width2_mean": 10
+    },
+    {
+      "L": 4,
+      "n": 32,
+      "bases": "coordinate",
+      "width": 3,
+      "matvecs_each_direction": 3,
+      "trials": 80,
+      "mean_error_factor": 2.5474932435251114,
+      "max_error_factor": 4.322082036946746,
+      "standard_error": 0.0854123396843702
+    },
+    {
+      "L": 4,
+      "n": 32,
+      "bases": "dense",
+      "width": 2,
+      "matvecs_each_direction": 2,
+      "trials": 80,
+      "mean_error_factor": 3.3664770302293974,
+      "max_error_factor": 5.442536477834025,
+      "standard_error": 0.06268265726382309
+    },
+    {
+      "L": 4,
+      "n": 32,
+      "bases": "dense",
+      "width": 3,
+      "matvecs_each_direction": 3,
+      "trials": 80,
+      "mean_error_factor": 2.2777848761437327,
+      "max_error_factor": 2.766006257011354,
+      "standard_error": 0.025081047366844578
+    },
+    {
+      "L": 5,
+      "n": 64,
+      "bases": "coordinate",
+      "width": 2,
+      "matvecs_each_direction": 2,
+      "trials": 80,
+      "mean_error_factor": 11.999999999999998,
+      "max_error_factor": 11.999999999999998,
+      "standard_error": 0.0,
+      "known_exact_width2_mean": 12
+    },
+    {
+      "L": 5,
+      "n": 64,
+      "bases": "coordinate",
+      "width": 3,
+      "matvecs_each_direction": 3,
+      "trials": 80,
+      "mean_error_factor": 2.638052899291172,
+      "max_error_factor": 5.445854196833855,
+      "standard_error": 0.10053327796319375
+    },
+    {
+      "L": 5,
+      "n": 64,
+      "bases": "dense",
+      "width": 2,
+      "matvecs_each_direction": 2,
+      "trials": 80,
+      "mean_error_factor": 3.3955111624934133,
+      "max_error_factor": 4.374587721659002,
+      "standard_error": 0.041976503212620954
+    },
+    {
+      "L": 5,
+      "n": 64,
+      "bases": "dense",
+      "width": 3,
+      "matvecs_each_direction": 3,
+      "trials": 80,
+      "mean_error_factor": 2.3065103394223825,
+      "max_error_factor": 2.8562697712045333,
+      "standard_error": 0.019095155010590698
+    }
+  ]
+}

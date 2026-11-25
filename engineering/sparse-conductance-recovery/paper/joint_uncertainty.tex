@@ -1,0 +1,225 @@
+\documentclass[11pt,letterpaper]{article}
+\usepackage[margin=.82in]{geometry}
+\usepackage{amsmath,amssymb,amsthm,microtype,hyperref}
+\hypersetup{colorlinks=true,allcolors=black,pdftitle={Joint Severity and Measurement Uncertainty}}
+\newtheorem{theorem}{Theorem}
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{corollary}[theorem]{Corollary}
+\newcommand{\ceil}[1]{\left\lceil #1\right\rceil}
+\newcommand{\floor}[1]{\left\lfloor #1\right\rfloor}
+\title{Joint Severity and Measurement Uncertainty}
+\author{A standalone research supplement}
+\date{8 October 2026}
+\renewcommand{\labelitemi}{$\bullet$}
+\begin{document}
+\maketitle
+\section{What the result means}
+A faulty resistor may increase by an unknown amount, and a resistance meter may report a slightly inaccurate reading. These uncertainties act together: a branch produces a range of possible hub readings, and meter error widens that range. The largest number of branches compatible with a single reading is the relevant ambiguity count, denoted by $K$.
+
+For the explicitly weighted network studied here, this count determines the worst-case number of adaptive measurements to within two queries, provided a stated noise margin makes local tests reliable. The resulting order is
+\[
+ \min\{m,\,1+\delta m+\epsilon m^3\}.
+\]
+Here $m$ counts branches, $\delta$ is the width of the allowed fault increase, and $\epsilon$ bounds each measurement error. The two uncertainty terms arise in one overlap calculation; the result is not obtained merely by adding two separate lower bounds.
+
+The margin is important. It first becomes feasible at $m=162$. Below that size, or outside the margin, this supplement still proves the overlap geometry and an adaptive lower bound, but supplies no matching noisy upper bound or general identifiability guarantee. That limitation belongs to the decoder used in the proof; it is not a proof of impossibility for smaller networks. At zero noise, a stronger inherited exact decoder applies without this margin.
+
+\noindent\textbf{Status.} This supplement presents the audited deduction and its proofs. The accompanying independent computational audit found no mathematical defect within the stated scope. It is not a literature-priority audit or a claim of breakthrough novelty. Numerical checks support formulas and implementations; the continuous-parameter claims rest on the proofs below.
+
+\section{Model and the coupled overlap statistic}
+The known healthy graph is $K_{2,m}$, with hubs $s,t$ and peripheral vertices $v_1,\ldots,v_m$. Branch $i$ is $s$--$v_i$--$t$, with resistances
+\[
+ a_i=1,\qquad b_i=2+\frac{i}{m+1},\qquad 1\le i\le m.
+\]
+Exactly one of the $2m$ resistors increases by a fixed unknown $\tau\in[1,1+\delta]$, where $0\le\delta\le1$. An $s$-edge means $(s,v_i)$ and a $t$-edge means $(v_i,t)$. Every unordered pair of distinct vertices may be queried, including repeated queries. Each response is its true faulty-network effective resistance plus an arbitrary error in $[-\epsilon,\epsilon]$, with $\epsilon\ge0$. Errors may be selected adaptively and need not agree across repetitions; no stochastic independence is assumed. The healthy response is computed exactly, not measured with another error.
+
+Let $A=A(m,\delta,\epsilon)$ be the least worst-case query budget of a deterministic adaptive strategy that identifies the faulty edge for every fixed admissible fault and every admissible error sequence. Set $A=\infty$ if this is impossible. Exact severity recovery is not required and generally cannot be guaranteed under positive adversarial error. Computation and preprocessing are not counted as queries.
+
+Define
+\[
+ L_i=1+b_i,\qquad C=\sum_{i=1}^m\frac1{L_i},\qquad
+ k_i(u)=\frac{u}{L_i(L_i+u)},\qquad H_i(u)=\frac1{C-k_i(u)}.
+\]
+The conductance loss $k_i(u)$, and hence the hub resistance $H_i(u)$, is the same for either edge orientation on branch $i$. Put
+\[
+ K=\max_{y\in\mathbb R}\#\{i:\ [H_i(1),H_i(1+\delta)]\cap[y-\epsilon,y+\epsilon]\ne\varnothing\}.
+\]
+All intervals are closed. A maximizing $y$ exists because there are finitely many nonempty compact expanded intervals.
+
+\begin{theorem}[Adaptive query bracket]
+For every $m\ge4$, $0\le\delta\le1$ and $\epsilon\ge0$,
+\[
+ A\ge\max\{2,\ceil{K/2}\}.
+\]
+If, in addition, the strict robust-decoding margin
+\[
+ \epsilon+\frac4{m-1}<\frac1{40} \tag{M}
+\]
+holds, then
+\[
+ \max\{2,\ceil{K/2}\}\le A\le
+ \min\{\floor{m/2}+1,\,\floor{K/2}+2\}. \tag{T}
+\]
+The two endpoints of this bracket differ by at most two queries.
+\end{theorem}
+The margin is sufficient, not asserted necessary. It requires $m\ge162$ and $\epsilon<1/40-4/(m-1)$. At $m=162$ the ceiling is $1/6440$. For fixed $\epsilon<1/40$, it holds exactly when $m>1+4/(1/40-\epsilon)$. Equality is excluded because closed error-expanded classes can touch.
+
+\begin{theorem}[Exact geometry and uniform order]
+For all the parameters above, without requiring (M),
+\[
+ K=\max\{j-i+1:\ 1\le i\le j\le m,\ H_i(1)-H_j(1+\delta)\le2\epsilon\}. \tag{E}
+\]
+Furthermore, define
+\[
+ B_- =\frac47\delta(m+1)+\frac{18}7\epsilon(m-1)^2(m+1),
+\]
+\[
+ B_+ =\frac{25}9\delta(m+1)+\frac{800}{81}\epsilon m^2(m+1).
+\]
+Then
+\[
+ \min\{m,1+\floor{B_-}\}\le K\le\min\{m,1+B_+\}. \tag{G}
+\]
+Writing $S=\min\{m,1+\delta m+\epsilon m^3\}$, explicit loose uniform constants are
+\[
+ \frac27 S\le K\le\frac{1000}{81}S.
+\]
+Under (M), also
+\[
+ \frac17 S\le A\le\frac{2000}{81}S.
+\]
+Thus $K=\Theta(S)$ unconditionally and $A=\Theta(S)$ on the margin domain, with universal constants.
+\end{theorem}
+
+\section{Electrical identities and the lower bound}
+For arbitrary positive branch resistances $a_j,b_j$, set
+\[
+ w_j=\frac{a_jb_j}{a_j+b_j},\quad \beta_j=\frac{a_j}{a_j+b_j},\quad
+ H=\left(\sum_j\frac1{a_j+b_j}\right)^{-1}.
+\]
+Eliminating the peripheral vertices yields
+\[
+ \begin{aligned}
+ R_{st}&=H,\\
+ R_{s,v_j}&=w_j+\beta_j^2H,\\
+ R_{t,v_j}&=w_j+(1-\beta_j)^2H,\\
+ R_{v_j,v_k}&=w_j+w_k+(\beta_j-\beta_k)^2H\quad(j\ne k).
+ \end{aligned}
+\]
+For completeness, ground $t$ and order the remaining Laplacian variables as $s,v_1,\ldots,v_m$. Its peripheral diagonal block has entries $1/a_j+1/b_j$, whose inverses are $w_j$. The off-diagonal hub entries are $-1/a_j$. The Schur complement at $s$ is $\sum_j1/(a_j+b_j)=1/H$, and $w_j/a_j=1-\beta_j$. Block inversion therefore gives $G_{ss}=H$, $G_{s,v_j}=H(1-\beta_j)$ and
+\[
+ G_{v_j,v_k}=\mathbf1_{j=k}w_j+H(1-\beta_j)(1-\beta_k).
+\]
+Taking the appropriate quadratic forms proves all four identities.
+
+\begin{proof}[Proof of the lower bound in Theorem 1]
+Choose $y$ attaining $K$. For each counted branch choose one admissible $\tau_i$ whose hub response lies in $[y-\epsilon,y+\epsilon]$, and retain both edge orientations at that same severity. These are $2K$ fixed physical faults, chosen before generating the adaptive transcript. Existence also follows explicitly from the inverse
+\[
+ \tau_i=\frac{kL_i^2}{1-kL_i},\qquad k=C-1/H_i(\tau_i).
+\]
+Their hub-response diameter is at most $2\epsilon$.
+
+For a query avoiding $v_i$, the identities express the response under either retained fault on branch $i$ as $z_q+c_qH_i(\tau_i)$. The constants use only the healthy queried branches. The coefficient is $1$ for $(s,t)$; $\beta_p^2$ or $(1-\beta_p)^2$ for a hub/peripheral pair; and $(\beta_p-\beta_q)^2$ for two peripheral vertices, where the healthy $\beta_p=1/L_p$. Every coefficient lies in $[0,1]$. Both orientations on the avoided branch have identical responses.
+
+At each query discard candidate branches whose peripheral vertices are queried, at most two branches, and answer at the midpoint of the surviving response range. That range has diameter at most $2\epsilon$, so the answer is within $\epsilon$ of every surviving fixed fault's true response. Survivors remain consistent with every earlier answer. After $t<\ceil{K/2}$ queries, at least $K-2t>0$ branches remain, and the two orientations of one untouched branch are still indistinguishable. This proves $A\ge\ceil{K/2}$. Separately, one query touches at most two peripheral vertices; for $m\ge4$ an untouched branch remains and its two equal-severity faults have identical response. Hence $A\ge2$. This argument includes arbitrary all-pairs adaptive policies and repetitions, and does not require (M).
+\end{proof}
+
+\section{A robust decoder and the upper bound}
+\begin{proof}[Proof of the upper bound in Theorem 1]
+When branch $i$ is faulty, its increment in $w_i$ is $b_i^2k_i(\tau)$ for an $s$-edge increase and $k_i(\tau)$ for a $t$-edge increase. Over $b\in[2,3]$ and $\tau\in[1,2]$, the local contributions belong to the closed classes
+\[
+ \mathcal C_0=\{0\},\qquad \mathcal C_t=[1/20,2/15],\qquad
+ \mathcal C_s=[1/3,3/4].
+\]
+Indeed, $\tau/[(1+b)(1+b+\tau)]$ decreases in $b$ and increases in $\tau$, while $b^2\tau/[(1+b)(1+b+\tau)]$ increases in both variables. Evaluation at the corresponding corners gives these endpoints. The smallest interclass gap is $1/20$.
+
+Every healthy or faulty nonlocal term in a hub/peripheral or peripheral/peripheral resistance lies in $[0,4/(m-1)]$: its squared coefficient is at most one, and the $m-1$ intact branches each have conductance greater than $1/4$. Consequently, subtracting the computed healthy response leaves the appropriate local increment plus an error of absolute value at most
+\[
+ \rho=\epsilon+\frac4{m-1}.
+\]
+The difference of two terms in the same interval has radius $4/(m-1)$, not twice that quantity. There is only one measurement error. Under (M), $2\rho<1/20$, so the three expanded classes $\mathcal C_0+[-\rho,\rho]$, $\mathcal C_t+[-\rho,\rho]$, and $\mathcal C_s+[-\rho,\rho]$ are disjoint.
+
+A peripheral-pair query therefore determines whether one endpoint is on the faulty branch and, if so, the edge orientation. It need not identify which endpoint. A hub/peripheral query additionally identifies whether its specific peripheral endpoint is faulty.
+
+First query $(s,t)$. The answer leaves $r\le K$ candidate branches. Scan disjoint pairs of candidates. If a pair is incident to the fault, query $s$ against one of its endpoints: an incident result locates the fault there; an outside result places it at the other endpoint, with the orientation already known. If $r$ is odd and all pairs are outside, query the last peripheral vertex against $s$ to determine orientation. The worst-case additional cost is $\floor{r/2}+1$, including one query when $r=1$. This gives $A\le\floor{K/2}+2$. Skipping the initial hub query and scanning all branches instead gives $A\le\floor{m/2}+1$. The difference $\floor{K/2}+2-\ceil{K/2}$ is two for even $K$ and one for odd $K$; the other cap and the lower bound of two only narrow the bracket.
+\end{proof}
+
+\section{Exact interval geometry and its proof}
+\begin{proof}[Proof of Theorem 2]
+For fixed positive severity, $k_i$ and $H_i$ decrease strictly with $i$, and both increase strictly with severity. Thus the two endpoint arrays of the expanded observation intervals are ordered in the same direction. Branches containing any fixed observation form a contiguous block. A block $i,\ldots,j$ has a common observation precisely when its greatest lower endpoint does not exceed its least upper endpoint:
+\[
+ H_i(1)-\epsilon\le H_j(1+\delta)+\epsilon.
+\]
+This proves (E), including equality.
+
+Write $I_i=[h_i,u_i]=[k_i(1),k_i(1+\delta)]$. On $3\le L\le4$ and $1\le u\le2$,
+\[
+ \frac1{36}\le\frac{\partial k}{\partial u}=\frac1{(L+u)^2}\le\frac1{16},
+ \qquad
+ \frac9{400}\le\left|\frac{d}{dL}\frac1{L(L+1)}\right|\le\frac7{144}.
+\]
+Hence the lengths of $I_i$ lie between $\delta/36$ and $\delta/16$, and consecutive lower endpoints have spacings between $9/[400(m+1)]$ and $7/[144(m+1)]$.
+
+For the upper bound, select one $k_i\in I_i$ for each of the $K$ branches counted at a maximizing observation, with hub-response diameter at most $2\epsilon$. Since
+\[
+ \frac{dk}{dH}=(C-k)^2\le C^2<\frac{m^2}{9},
+\]
+the selected $k_i$ have diameter at most $2\epsilon m^2/9$. Their lower endpoints therefore span at most $\delta/16+2\epsilon m^2/9$. Dividing by the minimum lower-endpoint spacing and adding one gives $1+B_+$, with a cap of $m$.
+
+For the lower bound, set $\eta=\epsilon(m-1)^2/8$ and let $x$ be the smallest lower endpoint. Every interval whose lower endpoint is in $[x,x+\delta/36+\eta]$ intersects
+\[
+ [x+\delta/36,\,x+\delta/36+\eta].
+\]
+This follows from its length of at least $\delta/36$. The maximum spacing of lower endpoints guarantees at least
+\[
+ \min\left\{m,1+\floor{\left(\frac\delta{36}+\eta\right)\frac{144(m+1)}7}\right\}
+ =\min\{m,1+\floor{B_-}\}
+\]
+such intervals. Choose one point from each intersection. All selected points are admissible, lying in $[1/20,2/15]$. On this entire range,
+\[
+ C-k>\frac{m-1}{4},\qquad \frac{dH}{dk}<\frac{16}{(m-1)^2},
+\]
+because $C>m/4$ and $k\le2/15<1/4$. Their hub responses have diameter at most $16\eta/(m-1)^2=2\epsilon$, and thus share a feasible observation midpoint. This proves the lower half of (G). Even for large $\eta$, only admissible selected points are mapped through $H$; no inadmissible window endpoint is used.
+
+To verify the uniform constants, put $X=\delta m+\epsilon m^3$. For $m\ge4$, $B_-\ge(4/7)X$ and $B_+\le(1000/81)X$. Since $1+\floor{B_-}\ge\max\{1,(4/7)X\}\ge(2/7)(1+X)$, capping at $m$ yields the asserted lower constant for $K$. The upper follows by the same cap and $1000/81\ge1$. Finally, under (M), $A\ge K/2$ and the bracket implies $A\le2K$: for $K\ge2$, $\floor{K/2}+2\le2K$, and for $K=1$ the hub query plus one local query uses two. This gives the stated constants for $A$.
+\end{proof}
+
+Equation (E) is computable by a linear two-pointer scan of the ordered endpoint arrays, counting arithmetic comparisons rather than bit complexity. It does not discretize severity or readings. Equivalently, sweep the expanded intervals with start events before end events at ties. In particular,
+\[
+ K=m\quad\Longleftrightarrow\quad H_1(1)-H_m(1+\delta)\le2\epsilon.
+\]
+At $\delta=\epsilon=0$, $K=1$. At $\epsilon=0$, the monotone hub map preserves intersections and recovers the severity-only overlap statistic. At $\delta=0$, $K$ counts finite-increase hub signatures in a window of width $2\epsilon$; these are not deletion signatures.
+
+\section{Consequences and boundaries of the claim}
+Along growing-$m$ parameter sequences satisfying (M), the worst-case adaptive budget stays bounded if and only if $\delta=O(m^{-1})$ and $\epsilon=O(m^{-3})$. Indeed, if $\min(m,1+\delta m+\epsilon m^3)$ is bounded while $m$ grows, its second argument must be bounded; nonnegativity bounds both terms separately. The converse follows from the upper bound. A fixed positive severity width, or a fixed positive error level admitted by (M), eventually yields order-$m$ complexity.
+
+The $m^{-3}$ signature spacing comes from adjacent conductance-loss spacing of order $m^{-1}$ combined with a hub-map derivative of order $m^{-2}$. These precision requirements describe this weighted family and this worst-case error model, not a universal law of circuit diagnosis.
+
+The elimination and severity-overlap arguments build on the realistic-fault extension; the untouched-branch noisy-cluster adversary builds on the earlier deletion-noise result. The present deduction uses finite-increase intervals, a robust orientation decoder and a common conductance window to establish the coupled law. Equal exponents in deletion and finite-increase models do not permit interchanging their signatures, constants or decoders.
+
+For comparison, the earlier exact projective decoder at $\epsilon=0$ gives, for every $m\ge4$,
+\[
+ A\le\min\{\ceil{m/2},\,1+\ceil{K/2}\},\qquad N=\ceil{m/2},
+\]
+where $N$ is the deterministic nonadaptive exact-measurement minimax budget. These are inherited comparison results, not consequences of the noisy decoder proved here. No exact noisy nonadaptive optimum is asserted. An earlier bounded-error theorem with severity interval $[1/2,1]$ cannot automatically be transferred to $[1,1+\delta]$, especially when $\delta=0$.
+
+\section{Computational audit and reproduction}
+The supplied exact-rational verifier and the independent stress verifier both report all checks passed. Their coverage must be distinguished from theorem proofs and from testing inside (M).
+\begin{itemize}
+\item The original verifier tests 300 geometry cases. Of these, 105 satisfy (M): 20 at $m=162$, 25 at $m=200$, and 30 each at $m=500,1000$. The other 195 legitimately test unconditional geometry.
+\item It compares 5,670 all-pairs resistance values with independently assembled grounded-Laplacian inverses for $m=4,\ldots,8$, every faulty edge and severities $1,3/2,2$. None are in the margin regime.
+\item Three exact full-cluster transitions at $m=4,10,50$ include equality and a just-below-threshold failure. All are outside (M), testing unconditional closed-endpoint geometry.
+\item Its 756 robust local-class checks all satisfy (M), at $(m,\epsilon)=(200,1/1000),(500,1/100),(1000,1/50)$. Both orientations, incident and outside probes, and both error endpoints are included. Linearity in error covers the entire error interval for each sampled fault and query.
+\item Its 9,465 fixed-fault adversary/query checks use $m=4,5,8,16,32$, all outside (M). They verify physical severity realizations and untouched-branch response diameters. The code checks their common response rather than rebuilding both orientations separately; orientation equality is proved analytically.
+\item The independent stress verifier makes 5,046 exact geometry evaluations for $m=4,\ldots,16$ at six severity widths, including all 2,445 distinct positive overlap breakpoints, an interior point in every gap, zero and the saturated tail. This covers every change in $K$ as $\epsilon$ varies for each tested $(m,\delta)$, not continuous variation in $\delta$.
+\item It makes 5,040 independent rank-one/projective local-decoder checks at $m=162,163,200,500$, using zero noise, half the permissible margin and 99.9\% of it. Both orientations, five severities in $[1,2]$, both error endpoints, and incident/outside hub/peripheral and peripheral-pair probes are included. All satisfy (M), including its smallest feasible size. They use independent response-increment expressions rather than subtraction of the original verifier's elimination formulas.
+\end{itemize}
+No finite test establishes the continuous-severity statements, all adaptive policies, or an exact minimax value. The analytic proofs supply the first two, and this supplement does not claim the third.
+
+From the repository root, run Python with SymPy available:
+\begin{verbatim}
+python research/joint_uncertainty_extension/verify.py
+python research/joint_uncertainty_audit/stress_exact.py
+\end{verbatim}
+These regenerate the adjacent \texttt{certificates.json} and \texttt{stress\_results.json}. The two principal theorems are proved in this supplement. The inherited exact-zero-noise comparison is proved in the packaged main manuscript, in ``How severity uncertainty changes the optimum,'' specifically ``Projective pair cover'' and ``An interval overlap law.'' See \texttt{manuscript/structure\_uncertainty\_fault\_diagnosis.tex} and its adjacent PDF and Word versions. Historical working notes are not required. Additional end-to-end regression tests are documented in \texttt{research/gaussian\_joint\_adversarial/README.md}.
+\end{document}

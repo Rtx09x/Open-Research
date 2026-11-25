@@ -1,0 +1,15 @@
+{
+  "status": "PASS",
+  "grid_fill_cases": 13758,
+  "published_parameter_stream_prefixes": 250000,
+  "overflow_events": 4262,
+  "original_proactive_rule_counterexample": {
+    "containers": 1000,
+    "item_size": "1/2580",
+    "c": "1/60",
+    "claimed_charge_with_constant": "56978263832048644/57291524611081",
+    "deficit": "313260779032356/57291524611081"
+  },
+  "seconds": 5.379634141921997,
+  "scope": "finite stress tests plus counterexample to reusing overflow charge for unmodified AH; analytic proof is separate"
+}

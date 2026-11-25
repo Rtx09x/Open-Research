@@ -1,0 +1,41 @@
+{
+  "PASS": true,
+  "certificate_sha256": "1e6c0136787701aa8ac1fc5b73e8ad932a6be814c5549aaadfa00913b72a28c1",
+  "seed_size": 133777,
+  "admissible_reservoir_words": 112769,
+  "matching_size": 112718,
+  "hall_selected": 53,
+  "hall_deleted": 2,
+  "hall_surplus": 51,
+  "zero_cost_selected": 50,
+  "nonzero_selected_words": [
+    [
+      13358,
+      9676
+    ],
+    [
+      13358,
+      11980
+    ],
+    [
+      13358,
+      14233
+    ]
+  ],
+  "deleted_Z_words": [
+    [
+      13065,
+      11685
+    ],
+    [
+      13065,
+      14177
+    ]
+  ],
+  "exact_forced_core_maximum": 133828,
+  "required_surplus": 1316,
+  "target_shortfall": 1265,
+  "seconds": 2.2304176129982807,
+  "maxRSS_KiB": 182088,
+  "scope": "Only codes retaining all prescribed4272 core words and using Z/T(Z) otherwise. Not the unconstrained joint alphabet or global C7."
+}

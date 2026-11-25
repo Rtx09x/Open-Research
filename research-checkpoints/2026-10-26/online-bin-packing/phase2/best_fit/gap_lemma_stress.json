@@ -1,0 +1,9 @@
+{
+  "status": "PASS",
+  "tiny_items": 25000,
+  "created_containers": 451,
+  "gap_and_charge_checks": 2500,
+  "exact_envelope_constructions": 6114,
+  "seconds": 0.6712942123413086,
+  "scope": "finite falsification tests, not a substitute for universal theorem"
+}

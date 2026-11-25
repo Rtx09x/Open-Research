@@ -1,0 +1,55 @@
+{
+  "frozen": true,
+  "files": [
+    {
+      "path": "README.md",
+      "bytes": 1802,
+      "sha256": "89be2fc4c3f55ada38866fc4c6a212a509b3e93a3fcbd7e9db58a5cf50d0048e"
+    },
+    {
+      "path": "evidence/best_dual.json",
+      "bytes": 53384,
+      "sha256": "1d1793b7996d2e4dec16361b4fbed9417d18ff8d46ed5c2ce07e4b8141d40dc5"
+    },
+    {
+      "path": "evidence/dual_audit.json",
+      "bytes": 372,
+      "sha256": "6d5c1051989e2e05b28a84435b401f78d167b850b9bdace3e44684230dff716a"
+    },
+    {
+      "path": "evidence/exact_fractional_root.json",
+      "bytes": 251245,
+      "sha256": "e1b850a19af0bd2bd26555ddbfcd1498015e044653a8d4769a498b561c1a3c44"
+    },
+    {
+      "path": "evidence/negative_controls.json",
+      "bytes": 151,
+      "sha256": "ab41cf3d102ac9c6037d06003d6d8af3eb39226ae2ce4c7dfeca09870e998944"
+    },
+    {
+      "path": "evidence/primal_audit.json",
+      "bytes": 440,
+      "sha256": "4ff9143614307756f17a531c03434e9574f300928936d128f4eb6f088e51314d"
+    },
+    {
+      "path": "scripts/negative_controls.py",
+      "bytes": 1141,
+      "sha256": "4a5c6cc3757fb5fbce18c5c51fa62b288456a506a3aabc39ccfc3a5d05b78230"
+    },
+    {
+      "path": "scripts/verify_cg_hierarchy.py",
+      "bytes": 3348,
+      "sha256": "3d7c6cf2d22128c49e36ed07c5229274d963d58092f29f47a1e62a1a30745932"
+    },
+    {
+      "path": "scripts/verify_fractional_root.py",
+      "bytes": 3372,
+      "sha256": "87cedd5fcffb7cf3f5c76be6f942b225ddf9d872035ee7f176315dcd08a86c7f"
+    }
+  ],
+  "claims": [
+    "Exact global upper320.497437108, integer bound unchanged320",
+    "Exact finite-LP bracket320.497435475376..320.497437108",
+    "Not a code, not a319proof, novelty unverified"
+  ]
+}

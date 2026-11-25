@@ -1,0 +1,1338 @@
+[
+  {
+    "path": "deletion-code-optimality/README.md",
+    "source": "deletion-code-optimality/README.md",
+    "source_sha256": "42d1c2583dcddcfe19a3c03bb7c8b6ce8161f061aa5164b1d429a085e7582971",
+    "adaptations": [
+      "Replace workspace navigation with a curated portable checkpoint index and explicit omitted-artifact/audit boundaries."
+    ]
+  },
+  {
+    "path": "deletion-code-optimality/literature.md",
+    "source": "deletion-code-optimality/literature.md",
+    "source_sha256": "56ff4349e7f3df013ff14499d42c51bbd2211ec994750d92a1511f703d4bec4e",
+    "adaptations": []
+  },
+  {
+    "path": "deletion-code-optimality/results.md",
+    "source": "deletion-code-optimality/results.md",
+    "source_sha256": "2146e4338e3edd7d54800baec2c6be920bf514e5e00dfde634b66849cd12b4d8",
+    "adaptations": []
+  },
+  {
+    "path": "deletion-code-optimality/trade_lemma.md",
+    "source": "deletion-code-optimality/trade_lemma.md",
+    "source_sha256": "e1a2e3a5536e5cf9664575b95ff1e5bafbc93307dc4135cc2f4223914c69fcac",
+    "adaptations": []
+  },
+  {
+    "path": "deletion-code-optimality/orbit_relaxation.md",
+    "source": "deletion-code-optimality/orbit_relaxation.md",
+    "source_sha256": "c107075d35685cacb854ad5a5ec2db771303b2d6e6aa58cb93dea95470e6e04a",
+    "adaptations": []
+  },
+  {
+    "path": "deletion-code-optimality/spectral_certificate.md",
+    "source": "deletion-code-optimality/spectral_certificate.md",
+    "source_sha256": "1001a4e485edbeb463f4d001b8f9acfd222f070fd9b61df4c4b62285824773b0",
+    "adaptations": []
+  },
+  {
+    "path": "deletion-code-optimality/scripts/baseline.py",
+    "source": "deletion-code-optimality/scripts/baseline.py",
+    "source_sha256": "f08e16524607660974136ba8c44a4657afcc2fd7ea5b25a110a0dfd9393d2d4d",
+    "adaptations": []
+  },
+  {
+    "path": "deletion-code-optimality/scripts/common.py",
+    "source": "deletion-code-optimality/scripts/common.py",
+    "source_sha256": "cfd09c4d7f3ce1fd95c3ef453db8c8fe7e5013a6fd573312496ecd74d39bd13b",
+    "adaptations": []
+  },
+  {
+    "path": "deletion-code-optimality/scripts/trades.py",
+    "source": "deletion-code-optimality/scripts/trades.py",
+    "source_sha256": "97c117a7dcc14d0e6b26899c0da07f6ad0dc2bafefa37acfeafd38ed3893f5b7",
+    "adaptations": []
+  },
+  {
+    "path": "deletion-code-optimality/scripts/verify_trades_independent.py",
+    "source": "deletion-code-optimality/scripts/verify_trades_independent.py",
+    "source_sha256": "70d9b2d95ca7dd71111898c4764351d1c429b23f9cd645b581ee25e63e6c766a",
+    "adaptations": []
+  },
+  {
+    "path": "deletion-code-optimality/scripts/small_exact_control.py",
+    "source": "deletion-code-optimality/scripts/small_exact_control.py",
+    "source_sha256": "2f315229222771bfe1fbd412f5c9a2d851d352a6c390fc1a777a80019a3c8785",
+    "adaptations": []
+  },
+  {
+    "path": "deletion-code-optimality/evidence/baseline_n12.json",
+    "source": "deletion-code-optimality/evidence/baseline_n12.json",
+    "source_sha256": "bd6a94190bbe618565188c440bf759a8d561985a7f0b5f79ce068332bfcf5fe6",
+    "adaptations": []
+  },
+  {
+    "path": "deletion-code-optimality/evidence/environment.json",
+    "source": "deletion-code-optimality/evidence/environment.json",
+    "source_sha256": "399f7c4dc83c55b5b26de6f031b0ca5b0d97df72b472071702a34f370a140405",
+    "adaptations": []
+  },
+  {
+    "path": "deletion-code-optimality/evidence/independent_trades_n12_k9.json",
+    "source": "deletion-code-optimality/evidence/independent_trades_n12_k9.json",
+    "source_sha256": "668f0517e1fe281cf431a8d66f74b9da0bc11112380d81eab0b8d204d1fc8b3e",
+    "adaptations": []
+  },
+  {
+    "path": "deletion-code-optimality/evidence/trades_n12_k9.json",
+    "source": "deletion-code-optimality/evidence/trades_n12_k9.json",
+    "source_sha256": "df5a4a34f9e2e55cc53395961bf68b5ce6558e843819e12421cf85da18189400",
+    "adaptations": []
+  },
+  {
+    "path": "deletion-code-optimality/evidence/vt0_n12.txt",
+    "source": "deletion-code-optimality/evidence/vt0_n12.txt",
+    "source_sha256": "738e49ed18d9601031104fd94b72bee32a02320f4951d4979e9993713fb4fca2",
+    "adaptations": []
+  },
+  {
+    "path": "deletion-code-optimality/evidence/small_exact_control_n6.json",
+    "source": "deletion-code-optimality/evidence/small_exact_control_n6.json",
+    "source_sha256": "7f7ece0872b10cd373b7d6f5a530a59b42083db1830876386c66972dbc9bc35a",
+    "adaptations": []
+  },
+  {
+    "path": "deletion-code-optimality/evidence/trades_n6_k2.json",
+    "source": "deletion-code-optimality/evidence/trades_n6_k2.json",
+    "source_sha256": "9e80ec17b596891a0cc0a82623618d13c4069e02abde4cba6a0801a206883494",
+    "adaptations": []
+  },
+  {
+    "path": "symmetric-quantum-codes/README.md",
+    "source": "symmetric-quantum-codes/README.md",
+    "source_sha256": "9385c13a1cecfb914598a971d7c3d3f410eddac39243e343514634d1989b37a4",
+    "adaptations": [
+      "Replace workspace navigation with a curated portable checkpoint index and explicit omitted-artifact/audit boundaries."
+    ]
+  },
+  {
+    "path": "symmetric-quantum-codes/literature.md",
+    "source": "symmetric-quantum-codes/literature.md",
+    "source_sha256": "a960a8c63d6476eae3f0309d9139f56028245047574d2d1ac128631a23b02022",
+    "adaptations": []
+  },
+  {
+    "path": "symmetric-quantum-codes/proved_reduction.md",
+    "source": "symmetric-quantum-codes/proved_reduction.md",
+    "source_sha256": "d7ef88d2d627c53d1856e1dc521053ce02c04dfdf20810416f56664f214697c2",
+    "adaptations": []
+  },
+  {
+    "path": "symmetric-quantum-codes/generator_reformulation.md",
+    "source": "symmetric-quantum-codes/generator_reformulation.md",
+    "source_sha256": "b5ab3bd3c2986ef19ba5f89e71f76ff14e7c4891087d3c808fb335e0c6417705",
+    "adaptations": []
+  },
+  {
+    "path": "symmetric-quantum-codes/certify_lp.py",
+    "source": "symmetric-quantum-codes/certify_lp.py",
+    "source_sha256": "a0b0bb407150d0c5d5c233cd45d214a0db59d4fb2343de074afed5f2fb7b1d99",
+    "adaptations": []
+  },
+  {
+    "path": "symmetric-quantum-codes/certify_gram_bound.py",
+    "source": "symmetric-quantum-codes/certify_gram_bound.py",
+    "source_sha256": "34e2b1582e1fca159136a67eabef80740f3b40dc2813b211b947b915b5fe8d8b",
+    "adaptations": []
+  },
+  {
+    "path": "symmetric-quantum-codes/certify_pure_complement.py",
+    "source": "symmetric-quantum-codes/certify_pure_complement.py",
+    "source_sha256": "e0f42cf811c34b2d969155471ac821bd0c895243c4097d004f74d0a796fa412c",
+    "adaptations": []
+  },
+  {
+    "path": "symmetric-quantum-codes/certify_pure_complement_short.py",
+    "source": "symmetric-quantum-codes/certify_pure_complement_short.py",
+    "source_sha256": "a1191c0f0599aa59478fa422a494a7dba19354c80cd665a25eaf55f7a735d49f",
+    "adaptations": []
+  },
+  {
+    "path": "symmetric-quantum-codes/certify_time_reversal.py",
+    "source": "symmetric-quantum-codes/certify_time_reversal.py",
+    "source_sha256": "47dc79c53b2917627af5976826e98376f2fa1390f7a4402339f55ab9b559ffcd",
+    "adaptations": []
+  },
+  {
+    "path": "symmetric-quantum-codes/code19_exact.py",
+    "source": "symmetric-quantum-codes/code19_exact.py",
+    "source_sha256": "284a20120c400bfd2ecdc1b966c6199c46814f8e4a35766a5da436087f01aa49",
+    "adaptations": []
+  },
+  {
+    "path": "symmetric-quantum-codes/intrinsic_lp.py",
+    "source": "symmetric-quantum-codes/intrinsic_lp.py",
+    "source_sha256": "038905fbe1eab04955fe90371fdfee331a87afcb79e961071a5353f67fe84258",
+    "adaptations": []
+  },
+  {
+    "path": "symmetric-quantum-codes/optimize_robust_gap.py",
+    "source": "symmetric-quantum-codes/optimize_robust_gap.py",
+    "source_sha256": "cf058903c178e3489050eb6b5a99ef2fe09af8d3d01bc2d58ff47a1732464b7c",
+    "adaptations": []
+  },
+  {
+    "path": "symmetric-quantum-codes/pure_complement_exact_eliminate.py",
+    "source": "symmetric-quantum-codes/pure_complement_exact_eliminate.py",
+    "source_sha256": "20edd1985b7fdcf11ed2d45634d8ff882b9d2fd1ef494ca24c07e0044327af5c",
+    "adaptations": []
+  },
+  {
+    "path": "symmetric-quantum-codes/robust_pure_gap.py",
+    "source": "symmetric-quantum-codes/robust_pure_gap.py",
+    "source_sha256": "4cc286524bbac92631fcc91de350031d47bca30be83b26900c26efa78e572295",
+    "adaptations": []
+  },
+  {
+    "path": "symmetric-quantum-codes/generator_model.py",
+    "source": "symmetric-quantum-codes/generator_model.py",
+    "source_sha256": "ec62020f5ba06d107a8ee472f9774bb10ef23ec5929d677019d9bd8b4ad20f30",
+    "adaptations": []
+  },
+  {
+    "path": "symmetric-quantum-codes/generator_defect_diagnostics.py",
+    "source": "symmetric-quantum-codes/generator_defect_diagnostics.py",
+    "source_sha256": "7129c78612307238f6b5c99fe33fdc63f4153df6fa0594480dccdb43140b7506",
+    "adaptations": [
+      "Retain imported helper functions verbatim; omit exploratory main requiring a deliberately excluded non-code NPZ diagnostic."
+    ]
+  },
+  {
+    "path": "symmetric-quantum-codes/search_full_code.py",
+    "source": "symmetric-quantum-codes/search_full_code.py",
+    "source_sha256": "35189b738bc6276afac44586ae1d5d20a7b764c384f0ab9655ce7b0b8bf2dabe",
+    "adaptations": []
+  },
+  {
+    "path": "symmetric-quantum-codes/audit_generator_reconstruction.py",
+    "source": "symmetric-quantum-codes/audit_generator_reconstruction.py",
+    "source_sha256": "faa04a46e47b70aa6461e7030ee0c2d8836589020b40bbc79dd4b08c4d7fbd4a",
+    "adaptations": []
+  },
+  {
+    "path": "symmetric-quantum-codes/audit_moment_model.py",
+    "source": "symmetric-quantum-codes/audit_moment_model.py",
+    "source_sha256": "0c915816a32008c64fcb1ee29eb1613c4c9432dbd83c0173d685ae655abe5be7",
+    "adaptations": []
+  },
+  {
+    "path": "symmetric-quantum-codes/lp_exact_certificates.json",
+    "source": "symmetric-quantum-codes/lp_exact_certificates.json",
+    "source_sha256": "93bb7ff8fa8dbe428c0fbbad564f7fbdce08fe01b048567ba5165a079daf82c6",
+    "adaptations": []
+  },
+  {
+    "path": "symmetric-quantum-codes/gram_bound_exact_certificate.json",
+    "source": "symmetric-quantum-codes/gram_bound_exact_certificate.json",
+    "source_sha256": "5f48d330ec896f14c97a6a3d8267d7dc476d99f78494e2c2dcdf95002f1d3a0a",
+    "adaptations": []
+  },
+  {
+    "path": "symmetric-quantum-codes/pure_complement_certificate.json",
+    "source": "symmetric-quantum-codes/pure_complement_certificate.json",
+    "source_sha256": "f622573793e00b53240f5879d8799bbd683d1600380983f46882fbcfcd63aa1b",
+    "adaptations": []
+  },
+  {
+    "path": "symmetric-quantum-codes/pure_complement_short_certificate.json",
+    "source": "symmetric-quantum-codes/pure_complement_short_certificate.json",
+    "source_sha256": "4d6eef6e1d45ba51ab5ce0d9224fc05a0811f1cd58540761ae48f68096dc5ce9",
+    "adaptations": []
+  },
+  {
+    "path": "symmetric-quantum-codes/pure_complement_elimination.json",
+    "source": "symmetric-quantum-codes/pure_complement_elimination.json",
+    "source_sha256": "207b3338ab8ae709008ba2a87a0297b453b360bedca84adda21ae267a153fbfb",
+    "adaptations": []
+  },
+  {
+    "path": "symmetric-quantum-codes/time_reversal_certificate.json",
+    "source": "symmetric-quantum-codes/time_reversal_certificate.json",
+    "source_sha256": "be21743c939bb469392c29c32da0d63afadfb593b42561db6be30140ee2bb1f7",
+    "adaptations": []
+  },
+  {
+    "path": "symmetric-quantum-codes/code19_root_certificate.json",
+    "source": "symmetric-quantum-codes/code19_root_certificate.json",
+    "source_sha256": "7b3cadbbe269a722e0726c9bf5ffae06c5a524f586b426347d1ba2d24ad7ea16",
+    "adaptations": []
+  },
+  {
+    "path": "symmetric-quantum-codes/code19_kl_reduction.json",
+    "source": "symmetric-quantum-codes/code19_kl_reduction.json",
+    "source_sha256": "b2f3ae27248a22ab9e1706f3ccd25409b146eb6e4527e49565f1745d1d34c8fc",
+    "adaptations": []
+  },
+  {
+    "path": "symmetric-quantum-codes/optimized_robust_gap_certificate.json",
+    "source": "symmetric-quantum-codes/optimized_robust_gap_certificate.json",
+    "source_sha256": "087cddb578337d8b9b1027f3721ec3fbf9a60db566b47aac071397d7de0a3d0b",
+    "adaptations": []
+  },
+  {
+    "path": "symmetric-quantum-codes/robust_pure_gap_certificate.json",
+    "source": "symmetric-quantum-codes/robust_pure_gap_certificate.json",
+    "source_sha256": "fa03df4488b26752f62f4266b566813c59541db2001e6d8de7fc480001d319f6",
+    "adaptations": []
+  },
+  {
+    "path": "symmetric-quantum-codes/generator_reconstruction_positive_control.json",
+    "source": "symmetric-quantum-codes/generator_reconstruction_positive_control.json",
+    "source_sha256": "081110680cd5388bd43d871c114e2c9a498ec2abcf37b3d5267d1699e63a3829",
+    "adaptations": []
+  },
+  {
+    "path": "symmetric-quantum-codes/moment_model_positive_control.json",
+    "source": "symmetric-quantum-codes/moment_model_positive_control.json",
+    "source_sha256": "c05643f6808bd0316db65cf2353ab147639c30f9082df4966139e17763314bdc",
+    "adaptations": []
+  },
+  {
+    "path": "symmetric-quantum-codes/full_search_n18_log.json",
+    "source": "symmetric-quantum-codes/full_search_n18_log.json",
+    "source_sha256": "3b9e321df4e2cd4caa6fe7569fae48fe773785f77bcab1a4db8885ffba8863e5",
+    "adaptations": []
+  },
+  {
+    "path": "hss-probe-reuse/adversarial_scan.py",
+    "source": "hss-probe-reuse/adversarial_scan.py",
+    "source_sha256": "59e1fad85e7f0a86c9614939d81ceb1f2e3804e4b677dafbb8dfaf454bdbf76f",
+    "adaptations": []
+  },
+  {
+    "path": "hss-probe-reuse/amplification_scan.py",
+    "source": "hss-probe-reuse/amplification_scan.py",
+    "source_sha256": "525cf00740443b821907831fb7eabb79ae5ccc7dedd32485c274bbea50485aa4",
+    "adaptations": []
+  },
+  {
+    "path": "hss-probe-reuse/baseline.py",
+    "source": "hss-probe-reuse/baseline.py",
+    "source_sha256": "370099b3624dc5e2e7500347c39a6d83c65d360a91546b721d4bf72702205c56",
+    "adaptations": []
+  },
+  {
+    "path": "hss-probe-reuse/compare_frozen.py",
+    "source": "hss-probe-reuse/compare_frozen.py",
+    "source_sha256": "08a1b1e1c30c7c4d708ebeca953ce95c1f637511b5b580386b9886c65c3e8d9f",
+    "adaptations": []
+  },
+  {
+    "path": "hss-probe-reuse/conditional_difference.py",
+    "source": "hss-probe-reuse/conditional_difference.py",
+    "source_sha256": "c6dbe9d3036dfc8c9455f39af02defe2ec964b7d665ab4ff66e2d79805d9709f",
+    "adaptations": []
+  },
+  {
+    "path": "hss-probe-reuse/conditional_ledger.py",
+    "source": "hss-probe-reuse/conditional_ledger.py",
+    "source_sha256": "0edfac0b57004315512a54c6f3e0bd2a3de4a9ac9c8444b44018e6623c8ea406",
+    "adaptations": []
+  },
+  {
+    "path": "hss-probe-reuse/energy_ledger.py",
+    "source": "hss-probe-reuse/energy_ledger.py",
+    "source_sha256": "f24d763f4df9e1030a23741e6592aca4e8e0600fa74ac163b4a83bd753866ab0",
+    "adaptations": []
+  },
+  {
+    "path": "hss-probe-reuse/exact_conditional_operator.py",
+    "source": "hss-probe-reuse/exact_conditional_operator.py",
+    "source_sha256": "781f9b7f0af9f4791da1210405b82ac6425c4541f34ed94ecc4d46886a15bd43",
+    "adaptations": []
+  },
+  {
+    "path": "hss-probe-reuse/exact_tree_test.py",
+    "source": "hss-probe-reuse/exact_tree_test.py",
+    "source_sha256": "ccda9906505768b7041e84d008800acaea96fc35afc6f872ba40396f5a2a2092",
+    "adaptations": []
+  },
+  {
+    "path": "hss-probe-reuse/frozen_operator.py",
+    "source": "hss-probe-reuse/frozen_operator.py",
+    "source_sha256": "f9d973a377d12917126e50b7e10c457bab8a9d136a4102d4ed0e1a38a6d12b35",
+    "adaptations": []
+  },
+  {
+    "path": "hss-probe-reuse/potential_operator.py",
+    "source": "hss-probe-reuse/potential_operator.py",
+    "source_sha256": "7aebe090dc7d7a6f1bb1f7e30da5a37bdee01e1982c5cd1e965d6bcccf704b49",
+    "adaptations": []
+  },
+  {
+    "path": "hss-probe-reuse/rational_potential_counterexample.py",
+    "source": "hss-probe-reuse/rational_potential_counterexample.py",
+    "source_sha256": "890e4050f8903301851bf2ba140b7e440647f6a0a0b029b3cb618dbc494f1afa",
+    "adaptations": []
+  },
+  {
+    "path": "hss-probe-reuse/run_baseline.py",
+    "source": "hss-probe-reuse/run_baseline.py",
+    "source_sha256": "40befc51505a1557418541ee9be1d5a96738d080b3b6a53d7f4fd884766f39b8",
+    "adaptations": []
+  },
+  {
+    "path": "hss-probe-reuse/test_dependency.py",
+    "source": "hss-probe-reuse/test_dependency.py",
+    "source_sha256": "f6e2e775e9e932e34137b184bcbb5f67ea0adb4cbc2037ac658ee0ec44447cb4",
+    "adaptations": []
+  },
+  {
+    "path": "hss-probe-reuse/test_heavy_tail.py",
+    "source": "hss-probe-reuse/test_heavy_tail.py",
+    "source_sha256": "5ecf0927ecc546556d957066fdb46bceae1f270e1ccc49c57222c30ce675a4fd",
+    "adaptations": []
+  },
+  {
+    "path": "hss-probe-reuse/tree_flow.py",
+    "source": "hss-probe-reuse/tree_flow.py",
+    "source_sha256": "4cdc1a42aacd3d3ffc0508ab175acb6bd3077a35c760d7aac6b30542609718a2",
+    "adaptations": []
+  },
+  {
+    "path": "hss-probe-reuse/tree_frames.py",
+    "source": "hss-probe-reuse/tree_frames.py",
+    "source_sha256": "96e4b95224b4fa14765216135edb66f0e47c2cfce1d400cf3dfd8c400e39d0a6",
+    "adaptations": []
+  },
+  {
+    "path": "hss-probe-reuse/verify_rational_potential.py",
+    "source": "hss-probe-reuse/verify_rational_potential.py",
+    "source_sha256": "de990a2886ea0ba66754d84c9eeed573fed2811081fa9c58681465d22598bd08",
+    "adaptations": []
+  },
+  {
+    "path": "hss-probe-reuse/verify_results.py",
+    "source": "hss-probe-reuse/verify_results.py",
+    "source_sha256": "11aeaad7380841c305c2f9b587f5ed1c3bf292c162b9c297a18778bb22643c97",
+    "adaptations": []
+  },
+  {
+    "path": "hss-probe-reuse/README.md",
+    "source": "hss-probe-reuse/README.md",
+    "source_sha256": "f88b785274c42fd5a5aaf5ff922545f422b0bd1f8948f9b7430ef6ea3559b83e",
+    "adaptations": [
+      "Replace workspace navigation with a curated portable checkpoint index and explicit omitted-artifact/audit boundaries."
+    ]
+  },
+  {
+    "path": "hss-probe-reuse/literature.md",
+    "source": "hss-probe-reuse/literature.md",
+    "source_sha256": "927b2631b306573241b81532baa940cd5ddc76b8b9be7166031ef1b19b6b245a",
+    "adaptations": []
+  },
+  {
+    "path": "hss-probe-reuse/checkpoint_summary.md",
+    "source": "hss-probe-reuse/checkpoint_summary.md",
+    "source_sha256": "06ac45c2ad8c9d376145940e68141a600e32ea2c41a8bac77405bda10a0102a5",
+    "adaptations": []
+  },
+  {
+    "path": "hss-probe-reuse/actual_dependency_witness.md",
+    "source": "hss-probe-reuse/actual_dependency_witness.md",
+    "source_sha256": "acb2969a33a3c3cbc2923bc2c38ceddc0b2564a3bb05d8bce0551f5422f73544",
+    "adaptations": []
+  },
+  {
+    "path": "hss-probe-reuse/minimal_sketch_obstruction.md",
+    "source": "hss-probe-reuse/minimal_sketch_obstruction.md",
+    "source_sha256": "3de0b358e1628565a380087b8d8e399c42d186e1d50e040ce9f8d3a67c14090a",
+    "adaptations": []
+  },
+  {
+    "path": "hss-probe-reuse/tree_flow_theorem.md",
+    "source": "hss-probe-reuse/tree_flow_theorem.md",
+    "source_sha256": "74ec3e11d759346b976a0c135d8a67bae9a7cacd9168253112753adf8c4b420c",
+    "adaptations": []
+  },
+  {
+    "path": "hss-probe-reuse/fixed_basis_unbiasedness.md",
+    "source": "hss-probe-reuse/fixed_basis_unbiasedness.md",
+    "source_sha256": "47fb1ed014d89b7f94ba18c2cb66c278d85b9b0d7be2e91c5fbe5575dd8bd840",
+    "adaptations": []
+  },
+  {
+    "path": "hss-probe-reuse/variance_reduction_target.md",
+    "source": "hss-probe-reuse/variance_reduction_target.md",
+    "source_sha256": "42e597dacc6c6e93105206e8b5d2daacac38a5c2c841ba9f54039a09472f8952",
+    "adaptations": []
+  },
+  {
+    "path": "hss-probe-reuse/rational_potential_counterexample.md",
+    "source": "hss-probe-reuse/rational_potential_counterexample.md",
+    "source_sha256": "e90f1d8099a04cd3d5605838af19fe894a46d80f6cc82a0869da03ad95c2c64f",
+    "adaptations": []
+  },
+  {
+    "path": "hss-probe-reuse/rational_potential_certificate.json",
+    "source": "hss-probe-reuse/rational_potential_certificate.json",
+    "source_sha256": "6ebb7fd354cab7cc9745412efa2dba5ea4231e4c9df5a892ce691755120f0c8f",
+    "adaptations": []
+  },
+  {
+    "path": "hss-probe-reuse/baseline_results.json",
+    "source": "hss-probe-reuse/baseline_results.json",
+    "source_sha256": "c3356f724b7a94deb9f8c4fd2bf2b0acb5f78e4cee9c9d30fff338fa26c18d7c",
+    "adaptations": []
+  },
+  {
+    "path": "hss-probe-reuse/heavy_tail_results.json",
+    "source": "hss-probe-reuse/heavy_tail_results.json",
+    "source_sha256": "f6f563d90eb7b863b38831dc83c5e8d54c78f73601d51ad49aa14e4f35d5c438",
+    "adaptations": []
+  },
+  {
+    "path": "hss-probe-reuse/tree_flow_results.json",
+    "source": "hss-probe-reuse/tree_flow_results.json",
+    "source_sha256": "acd3283225184b922ae4edda001899866d113a72f54b1a929e74b862dbd885ee",
+    "adaptations": []
+  },
+  {
+    "path": "hss-probe-reuse/exact_tree_results.json",
+    "source": "hss-probe-reuse/exact_tree_results.json",
+    "source_sha256": "9a248abfd4f123f46770cfa153e76897fae8211b178a1e22eaf4bd0ee8192803",
+    "adaptations": []
+  },
+  {
+    "path": "hss-probe-reuse/tree_frame_results.json",
+    "source": "hss-probe-reuse/tree_frame_results.json",
+    "source_sha256": "79b83b07a9743ee755265aaa936a69db42780059c77f6c96d6e0b68b391ae60f",
+    "adaptations": []
+  },
+  {
+    "path": "hss-probe-reuse/dependency_results.json",
+    "source": "hss-probe-reuse/dependency_results.json",
+    "source_sha256": "ba5161749829f209e48da4066b93986589b506178aac125f0433749076fe7f41",
+    "adaptations": []
+  },
+  {
+    "path": "hss-probe-reuse/exact_conditional_operator_results.json",
+    "source": "hss-probe-reuse/exact_conditional_operator_results.json",
+    "source_sha256": "5c2ac8c757c2d80716d8c3f2e70b9fb7b961f597e7995df02bbd61722e55d13f",
+    "adaptations": []
+  },
+  {
+    "path": "hss-probe-reuse/conditional_ledger_results.json",
+    "source": "hss-probe-reuse/conditional_ledger_results.json",
+    "source_sha256": "abc86a8585fefb61fb68aa862a9c8ab1c2f4d308b2a80d4510043ec46e8f4808",
+    "adaptations": []
+  },
+  {
+    "path": "hss-probe-reuse/conditional_difference_results.json",
+    "source": "hss-probe-reuse/conditional_difference_results.json",
+    "source_sha256": "4332e656f8e007367720108cc1738aded7e23d90c141e2444b352dedefae89fa",
+    "adaptations": []
+  },
+  {
+    "path": "hss-probe-reuse/potential_operator_results.json",
+    "source": "hss-probe-reuse/potential_operator_results.json",
+    "source_sha256": "2771a6d4581acefc1b6e44467295419995d898d0b24c9cf98dd049106a9a4f82",
+    "adaptations": []
+  },
+  {
+    "path": "hss-probe-reuse/energy_ledger_results.json",
+    "source": "hss-probe-reuse/energy_ledger_results.json",
+    "source_sha256": "9a009214e7446f50ed25c8251026bb4c3b79148a39594132b079b62d54f523cd",
+    "adaptations": []
+  },
+  {
+    "path": "hss-probe-reuse/frozen_operator_results.json",
+    "source": "hss-probe-reuse/frozen_operator_results.json",
+    "source_sha256": "6c8eac0b1c63cdfd1935211cac8e6860020a0211a9e1af9e93f0295a7774703a",
+    "adaptations": []
+  },
+  {
+    "path": "hss-probe-reuse/adversarial_results.json",
+    "source": "hss-probe-reuse/adversarial_results.json",
+    "source_sha256": "64c5de1e71e9fd417c4105176329de6526219983ae3060a13e596a2b2a9dc861",
+    "adaptations": []
+  },
+  {
+    "path": "hss-probe-reuse/amplification_results.json",
+    "source": "hss-probe-reuse/amplification_results.json",
+    "source_sha256": "38e065756574a508baf702813493803c92f2d771f33fc2d3bd1be32c2a792a2d",
+    "adaptations": []
+  },
+  {
+    "path": "hss-probe-reuse/environment.txt",
+    "source": "hss-probe-reuse/environment.txt",
+    "source_sha256": "066d5133b69beba408bc1f985242f2fe76aa32973363f134521a9865b58f22ff",
+    "adaptations": []
+  },
+  {
+    "path": "hss-probe-reuse/simple_energy_increase_witness.json",
+    "source": "hss-probe-reuse/simple_energy_increase_witness.json",
+    "source_sha256": "79e9d6580638af07fd93854f111281738200b9f099bf4a4f0093468eb0ee082c",
+    "adaptations": []
+  },
+  {
+    "path": "seven-cycle-capacity/README.md",
+    "source": "seven-cycle-capacity/README.md",
+    "source_sha256": "d088c5a0a4e66a485d9159d001a069c3ef98410cc153704958676e62c2e192af",
+    "adaptations": [
+      "Replace workspace navigation with a curated portable checkpoint index and explicit omitted-artifact/audit boundaries."
+    ]
+  },
+  {
+    "path": "seven-cycle-capacity/result_proof.md",
+    "source": "seven-cycle-capacity/result_proof.md",
+    "source_sha256": "ed24b4444698fadde0f29c644532be4514b9f4bb8bb07bb006015a597ea70ccb",
+    "adaptations": [
+      "Update audit-directory pointers only."
+    ]
+  },
+  {
+    "path": "seven-cycle-capacity/literature.md",
+    "source": "seven-cycle-capacity/literature.md",
+    "source_sha256": "197879d783798e9230d915f244d64f99e619027631106de5608115b5433e628c",
+    "adaptations": []
+  },
+  {
+    "path": "seven-cycle-capacity/source_provenance.json",
+    "source": "seven-cycle-capacity/source_provenance.json",
+    "source_sha256": "bc4b52ce40ccf5ffd37e883e7bae57ecdb990ee6fb236f43d20a4a2def9ec9d9",
+    "adaptations": []
+  },
+  {
+    "path": "seven-cycle-capacity/recycled_quaternary_rule.json",
+    "source": "seven-cycle-capacity/recycled_quaternary_rule.json",
+    "source_sha256": "df1071ff02891cb93124edb46deff96bcd4413e376b5af7a302f5e404c8e2438",
+    "adaptations": []
+  },
+  {
+    "path": "seven-cycle-capacity/terminal_recycled_base.json",
+    "source": "seven-cycle-capacity/terminal_recycled_base.json",
+    "source_sha256": "b0ae2dd8aebd6c4b5d4da828462ed8542624097a436f0a5cc0729b93e880b751",
+    "adaptations": []
+  },
+  {
+    "path": "seven-cycle-capacity/recycled_terminal_certificate.json",
+    "source": "seven-cycle-capacity/recycled_terminal_certificate.json",
+    "source_sha256": "1ce5b83eb0ef9af2cdd64a6a6fc0b7c77944a61a46577ce96bdbbc91e64a4905",
+    "adaptations": []
+  },
+  {
+    "path": "seven-cycle-capacity/optimized_recycle_certificate.json",
+    "source": "seven-cycle-capacity/optimized_recycle_certificate.json",
+    "source_sha256": "b881a676f4e8eda4fa66add95e488d01008a4b7b17a9aad945e23daa9746b883",
+    "adaptations": []
+  },
+  {
+    "path": "seven-cycle-capacity/weighted_terminal_improvement.json",
+    "source": "seven-cycle-capacity/weighted_terminal_improvement.json",
+    "source_sha256": "60f9b23d6813c3555cc454a73b87dec837497154124c0e3a9363e1c6d3a94515",
+    "adaptations": []
+  },
+  {
+    "path": "seven-cycle-capacity/weighted_terminal_independent_verification.json",
+    "source": "seven-cycle-capacity/weighted_terminal_independent_verification.json",
+    "source_sha256": "23f306afbea16c799529aaa285180acf4e44fb285322142b089d963d0acd5b73",
+    "adaptations": []
+  },
+  {
+    "path": "seven-cycle-capacity/verification_recycled_terminal_certificate.json",
+    "source": "seven-cycle-capacity/verification_recycled_terminal_certificate.json",
+    "source_sha256": "51f423d341d191e560d3d758912c021f4e63e70c21a5b90d01466dcdc7007943",
+    "adaptations": []
+  },
+  {
+    "path": "seven-cycle-capacity/verification_optimized_recycle_certificate.json",
+    "source": "seven-cycle-capacity/verification_optimized_recycle_certificate.json",
+    "source_sha256": "0a70112eb9538aa69f8dcf3f3e979a6e7e0d9bdcb3bf81099c51094aefeabe66",
+    "adaptations": []
+  },
+  {
+    "path": "seven-cycle-capacity/verify_recycled_certificate.py",
+    "source": "seven-cycle-capacity/verify_recycled_certificate.py",
+    "source_sha256": "07e4128102d09c58441ed781b22162c71091262e5343bd69a30bcb9ee2a91ca7",
+    "adaptations": []
+  },
+  {
+    "path": "seven-cycle-capacity/verify_weighted_terminal_independent.py",
+    "source": "seven-cycle-capacity/verify_weighted_terminal_independent.py",
+    "source_sha256": "e09aaef9d497b305c4e00a11f41397829f3892c30456b0149cb27565b146a758",
+    "adaptations": []
+  },
+  {
+    "path": "seven-cycle-capacity/verify_base.py",
+    "source": "seven-cycle-capacity/verify_base.py",
+    "source_sha256": "4116b149e3b52becb952848ae55e56ce2a7b74f3ddfd82caa6f46204ca233041",
+    "adaptations": []
+  },
+  {
+    "path": "seven-cycle-capacity/replay_wrapper.py",
+    "source": "seven-cycle-capacity/replay_wrapper.py",
+    "source_sha256": "aab8e630d128579091ce872ecc84edf1067ef2d35a260be86315ef3b8cb636b1",
+    "adaptations": [
+      "Lower address-space cap from 2500 MiB to 2048 MiB; no mathematical change."
+    ]
+  },
+  {
+    "path": "seven-cycle-capacity/base_verification.json",
+    "source": "seven-cycle-capacity/base_verification.json",
+    "source_sha256": "3f9e085ff8313f8a6732ebde01ecba20dccb8252018462ab236560c1f778e209",
+    "adaptations": []
+  },
+  {
+    "path": "seven-cycle-capacity/recycle_terminal.py",
+    "source": "seven-cycle-capacity/recycle_terminal.py",
+    "source_sha256": "d0a419eaf1868e93f676df0cb637adda69c1397389b5ca2a125ac57f53c605ae",
+    "adaptations": []
+  },
+  {
+    "path": "seven-cycle-capacity/certify_optimized_tree.py",
+    "source": "seven-cycle-capacity/certify_optimized_tree.py",
+    "source_sha256": "ad090bfe4f2279504445ae25bc0020305ecc7355a173f85065067ecfe6bf7b2d",
+    "adaptations": []
+  },
+  {
+    "path": "seven-cycle-capacity/binary_dp_screen.py",
+    "source": "seven-cycle-capacity/binary_dp_screen.py",
+    "source_sha256": "81c3b27a3c575913b31f0ef71f2e0facb6b7faaa9da99aff5eaec9250cbbd5ad",
+    "adaptations": []
+  },
+  {
+    "path": "seven-cycle-capacity/terminal_multi_pairs.py",
+    "source": "seven-cycle-capacity/terminal_multi_pairs.py",
+    "source_sha256": "adad7f952e7e20d29ea5da52d63c85c1f1fe246af71ab8950849b60eda523b31",
+    "adaptations": []
+  },
+  {
+    "path": "seven-cycle-capacity/terminal_weighted_gadget.py",
+    "source": "seven-cycle-capacity/terminal_weighted_gadget.py",
+    "source_sha256": "f5376ac2b60cd5d39cfd55e806ee2378eb904a38a889524a229e6a256007931d",
+    "adaptations": []
+  },
+  {
+    "path": "seven-cycle-capacity/binary_dp_screen.json",
+    "source": "seven-cycle-capacity/binary_dp_screen.json",
+    "source_sha256": "4a10c8f15c8b2a90f7a6a92b14d6060a027032418820acb937e41a4db07dde6a",
+    "adaptations": []
+  },
+  {
+    "path": "seven-cycle-capacity/published/.gitignore",
+    "source": "seven-cycle-capacity/published/.gitignore",
+    "source_sha256": "314e07d79ebbc9cbe9c467dfd9d5a1c116c871125edac8a9bf7577d53e4ca8d5",
+    "adaptations": []
+  },
+  {
+    "path": "seven-cycle-capacity/published/LICENSE",
+    "source": "seven-cycle-capacity/published/LICENSE",
+    "source_sha256": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4",
+    "adaptations": []
+  },
+  {
+    "path": "seven-cycle-capacity/published/NOTICE",
+    "source": "seven-cycle-capacity/published/NOTICE",
+    "source_sha256": "359e841fec992d2e6df7c44e4e700f94fd1241673a1e10efe15b6dd1787e3a7d",
+    "adaptations": []
+  },
+  {
+    "path": "seven-cycle-capacity/published/README.md",
+    "source": "seven-cycle-capacity/published/README.md",
+    "source_sha256": "982fc8645a23e563ece76d68120981401a3118451ed73af7bd594b685371b2ff",
+    "adaptations": []
+  },
+  {
+    "path": "seven-cycle-capacity/published/RELEASE_MANIFEST.json",
+    "source": "seven-cycle-capacity/published/RELEASE_MANIFEST.json",
+    "source_sha256": "a2b5defac011c3ad322245c0ae0bc34edd768fce7dd622783a8701e653bf974e",
+    "adaptations": []
+  },
+  {
+    "path": "seven-cycle-capacity/published/data/base_c7.json",
+    "source": "seven-cycle-capacity/published/data/base_c7.json",
+    "source_sha256": "2395d9ce16e068010a5f2a57f3fbfec5a607fa9272b02afd6c9e4a95fc70016b",
+    "adaptations": []
+  },
+  {
+    "path": "seven-cycle-capacity/published/data/certificates.json",
+    "source": "seven-cycle-capacity/published/data/certificates.json",
+    "source_sha256": "c86f1db7687c3ed9e2a951d602671ce606f1b3830aa8ecf74b7ece069804ebd1",
+    "adaptations": []
+  },
+  {
+    "path": "seven-cycle-capacity/published/data/paper_claims.json",
+    "source": "seven-cycle-capacity/published/data/paper_claims.json",
+    "source_sha256": "a1c85246f777296e81124113d88538a987eee93d712b08e8605b84d1b114677c",
+    "adaptations": []
+  },
+  {
+    "path": "seven-cycle-capacity/published/requirements.txt",
+    "source": "seven-cycle-capacity/published/requirements.txt",
+    "source_sha256": "1469e091c5d308853ab94f5b8c3befc952f5d35e0418ee607896867eaccb089f",
+    "adaptations": []
+  },
+  {
+    "path": "seven-cycle-capacity/published/scripts/make_manifest.py",
+    "source": "seven-cycle-capacity/published/scripts/make_manifest.py",
+    "source_sha256": "d33d4cbed63b29cd3fd98262cd851e160b1670679aae49ca69631dcca57fffa9",
+    "adaptations": []
+  },
+  {
+    "path": "seven-cycle-capacity/published/scripts/verify_upstream_online.py",
+    "source": "seven-cycle-capacity/published/scripts/verify_upstream_online.py",
+    "source_sha256": "e65b4c1aa0307161316015836228b751482d87025bb5fb1167579793e920984d",
+    "adaptations": []
+  },
+  {
+    "path": "seven-cycle-capacity/published/shannon/__init__.py",
+    "source": "seven-cycle-capacity/published/shannon/__init__.py",
+    "source_sha256": "6f478dacd2650af182e0debb33a339b22ebd09208de42e1ef190136a6fdce31d",
+    "adaptations": []
+  },
+  {
+    "path": "seven-cycle-capacity/published/shannon/bpz.py",
+    "source": "seven-cycle-capacity/published/shannon/bpz.py",
+    "source_sha256": "ded77004630f8a53feaddf87dfab83cc1d93ddb65292367c7d27c4a8dc0f3715",
+    "adaptations": []
+  },
+  {
+    "path": "seven-cycle-capacity/published/shannon/certificates.py",
+    "source": "seven-cycle-capacity/published/shannon/certificates.py",
+    "source_sha256": "96b22141e2d8c6679f4caec37734c8a9e21f52a34dc0492c49b92793b9a1af36",
+    "adaptations": []
+  },
+  {
+    "path": "seven-cycle-capacity/published/shannon/construction.py",
+    "source": "seven-cycle-capacity/published/shannon/construction.py",
+    "source_sha256": "ce394bd301afee91b416a6934673a34c2eaac9ac760ea6088e493868e15a25fc",
+    "adaptations": []
+  },
+  {
+    "path": "seven-cycle-capacity/published/shannon/counting.py",
+    "source": "seven-cycle-capacity/published/shannon/counting.py",
+    "source_sha256": "fa85a79814413afdad7d4fc85120f15ae19269c40846c9d8f855dfcd7261d8f8",
+    "adaptations": []
+  },
+  {
+    "path": "seven-cycle-capacity/published/shannon/gadget.py",
+    "source": "seven-cycle-capacity/published/shannon/gadget.py",
+    "source_sha256": "54b30e6992b11983cc321be33dbfd6f6768eadafda4d095cc1caca173c32b2c6",
+    "adaptations": []
+  },
+  {
+    "path": "seven-cycle-capacity/published/shannon/graph.py",
+    "source": "seven-cycle-capacity/published/shannon/graph.py",
+    "source_sha256": "36a6118783cd5b4963079aa7143f44ab2bbb747576c47202fdce65c91ddae0f9",
+    "adaptations": []
+  },
+  {
+    "path": "seven-cycle-capacity/published/tests/conftest.py",
+    "source": "seven-cycle-capacity/published/tests/conftest.py",
+    "source_sha256": "27c6f946cdc4f3c2cbbf20f6ebf2edf3bb29b64ac111701193e8e3aab819328e",
+    "adaptations": []
+  },
+  {
+    "path": "seven-cycle-capacity/published/tests/test_bpz_rules.py",
+    "source": "seven-cycle-capacity/published/tests/test_bpz_rules.py",
+    "source_sha256": "dd2f89f8cf1b6511b5b11fbcd22a1331a5414f47ef27e150dddbd3cf78a750d2",
+    "adaptations": []
+  },
+  {
+    "path": "seven-cycle-capacity/published/tests/test_c4_bruteforce.py",
+    "source": "seven-cycle-capacity/published/tests/test_c4_bruteforce.py",
+    "source_sha256": "e431aa47c559fe6713137e344048eb8d789bafa58d047bb35e7decbaa45b8c46",
+    "adaptations": []
+  },
+  {
+    "path": "seven-cycle-capacity/published/tests/test_certificates.py",
+    "source": "seven-cycle-capacity/published/tests/test_certificates.py",
+    "source_sha256": "b7d6e7ea86b5749e85100f9796cf2b7825e574ae61e52b8cd97ed0f4681fbd83",
+    "adaptations": []
+  },
+  {
+    "path": "seven-cycle-capacity/published/tests/test_counting.py",
+    "source": "seven-cycle-capacity/published/tests/test_counting.py",
+    "source_sha256": "5fa24762f5be66b86777860a4abee4e1b9b22639ef73df7db0f083ad7c58cf11",
+    "adaptations": []
+  },
+  {
+    "path": "seven-cycle-capacity/published/tests/test_gadget_setlevel.py",
+    "source": "seven-cycle-capacity/published/tests/test_gadget_setlevel.py",
+    "source_sha256": "ce3e3f694225fe8a45b37cd62463bcad6d7c3a306bf409630263cdb1484f06fe",
+    "adaptations": []
+  },
+  {
+    "path": "seven-cycle-capacity/published/tests/test_paper_claims.py",
+    "source": "seven-cycle-capacity/published/tests/test_paper_claims.py",
+    "source_sha256": "93c91ab9b97ffc704a146452d9cfd3f26abc1cdd497ce238ba82051460cb3452",
+    "adaptations": []
+  },
+  {
+    "path": "seven-cycle-capacity/published/tests/test_regressions.py",
+    "source": "seven-cycle-capacity/published/tests/test_regressions.py",
+    "source_sha256": "c1af60d4a96e37f6f35a6b5dee95252abd32c5547344d74905c47031fe74b00e",
+    "adaptations": []
+  },
+  {
+    "path": "seven-cycle-capacity/published/tests/test_theorem2_setlevel.py",
+    "source": "seven-cycle-capacity/published/tests/test_theorem2_setlevel.py",
+    "source_sha256": "98e224b61ce2205450092a74f226b114f0ac49f2878f82f000abcd9c7f6d7a2f",
+    "adaptations": []
+  },
+  {
+    "path": "seven-cycle-capacity/published/tests/test_upstream_pinned.py",
+    "source": "seven-cycle-capacity/published/tests/test_upstream_pinned.py",
+    "source_sha256": "6392f2ad587cf71fe4a8d9f9f7a435657b3b794682ba1a693f2c928db6d31aaf",
+    "adaptations": []
+  },
+  {
+    "path": "seven-cycle-capacity/published/upstream/BaseC7Data.lean",
+    "source": "seven-cycle-capacity/published/upstream/BaseC7Data.lean",
+    "source_sha256": "bb50af06aeefdd1a2aafce35802e6f129fa16132b1a070a9d3806a0227f718ba",
+    "adaptations": []
+  },
+  {
+    "path": "seven-cycle-capacity/published/upstream/GITBLOBS",
+    "source": "seven-cycle-capacity/published/upstream/GITBLOBS",
+    "source_sha256": "7dbeedb44952be931ff4e41e15e78920fc1bf07548561d500b43c1ba9d5b31d1",
+    "adaptations": []
+  },
+  {
+    "path": "seven-cycle-capacity/published/upstream/README.md",
+    "source": "seven-cycle-capacity/published/upstream/README.md",
+    "source_sha256": "5995c821b83c9ede8da1fdc4fcb08bd2581c1fbd533d76f96226a085c2bd5b3a",
+    "adaptations": []
+  },
+  {
+    "path": "seven-cycle-capacity/published/upstream/SHA256SUMS",
+    "source": "seven-cycle-capacity/published/upstream/SHA256SUMS",
+    "source_sha256": "b71c5b2e02aa0b276438ae803de4b4f0d4bf2df469170c82b4d4be52557478ff",
+    "adaptations": []
+  },
+  {
+    "path": "seven-cycle-capacity/published/upstream/Substitutions.lean",
+    "source": "seven-cycle-capacity/published/upstream/Substitutions.lean",
+    "source_sha256": "fd9f47de04fc3019c483b716d12d4371146b3e9beef5bde151ffeb09f66768ec",
+    "adaptations": []
+  },
+  {
+    "path": "seven-cycle-capacity/published/upstream/TerminalCodes.lean",
+    "source": "seven-cycle-capacity/published/upstream/TerminalCodes.lean",
+    "source_sha256": "f3b082926f921fd28a2a413aaeeee26d95931e0a3098929c19355c5a21dfda03",
+    "adaptations": []
+  },
+  {
+    "path": "seven-cycle-capacity/published/verify_arithmetic.py",
+    "source": "seven-cycle-capacity/published/verify_arithmetic.py",
+    "source_sha256": "0123dfa34397125a1c887571471210d1c9074e665fe03c7d20fb961d6bdda4b6",
+    "adaptations": []
+  },
+  {
+    "path": "seven-cycle-capacity/published/verify_certificates.py",
+    "source": "seven-cycle-capacity/published/verify_certificates.py",
+    "source_sha256": "34b938511ae02f8445c33bc32d9d619214a8a5fd55c38b32244b41cec23c8a1a",
+    "adaptations": []
+  },
+  {
+    "path": "online-bin-packing/AH_THREE_PARAMETER_REFINEMENT.md",
+    "source": "online-bin-packing/AH_THREE_PARAMETER_REFINEMENT.md",
+    "source_sha256": "dc6dde2b9f986f576a27621f308a63fa332c9b6d19940c1b92415ac084cb61c8",
+    "adaptations": [
+      "Clarify which historical anchors are in the lean bundle.",
+      "Add independently audited interior-threshold convention and source-linked proof note; no numerical change.",
+      "Clarify deterministic container proportions instead of probability terminology."
+    ]
+  },
+  {
+    "path": "online-bin-packing/ah_three_parameter_full_certificate.json",
+    "source": "online-bin-packing/ah_three_parameter_full_certificate.json",
+    "source_sha256": "39da513da04fa7d8722ca6e1f14406d6d04962ad9d11f77a0fc52810295f96e7",
+    "adaptations": []
+  },
+  {
+    "path": "online-bin-packing/ah_published_numeric_snapshot.json",
+    "source": "online-bin-packing/ah_published_numeric_snapshot.json",
+    "source_sha256": "a4709c039ff0c92240eb0025496a001ebed3253a8b3c8ab5fb2c1fd8257df229",
+    "adaptations": []
+  },
+  {
+    "path": "online-bin-packing/verify_ah_full.py",
+    "source": "online-bin-packing/verify_ah_full.py",
+    "source_sha256": "9c981c0495f0eb67b78016a0b6c129c9851c0b557a58d2241b19a770003cc1d5",
+    "adaptations": []
+  },
+  {
+    "path": "online-bin-packing/verify_ah_independent.py",
+    "source": "online-bin-packing/verify_ah_independent.py",
+    "source_sha256": "815a9b87f502bda24d0378b8a9f5e761146600cf947a144af89a50e8697b0c6d",
+    "adaptations": []
+  },
+  {
+    "path": "online-bin-packing/verify_ah_source_delta.py",
+    "source": "online-bin-packing/verify_ah_source_delta.py",
+    "source_sha256": "ad84bfc30faaff930b257d26866879cf15867890520bf5ff88d1c6b2fed64fab",
+    "adaptations": []
+  },
+  {
+    "path": "online-bin-packing/verify_ah_three_parameter_algebra.py",
+    "source": "online-bin-packing/verify_ah_three_parameter_algebra.py",
+    "source_sha256": "2915e151717260372708be84e71ec602238df7f4f3310bc53a665830401233dd",
+    "adaptations": []
+  },
+  {
+    "path": "online-bin-packing/ah_three_parameter_full_verification.json",
+    "source": "online-bin-packing/ah_three_parameter_full_verification.json",
+    "source_sha256": "b0e0f6e8eb838c4f86dc94ccb6a65b16642c9a4a17c8c1bf067465b3df1f410c",
+    "adaptations": []
+  },
+  {
+    "path": "online-bin-packing/literature.md",
+    "source": "online-bin-packing/literature.md",
+    "source_sha256": "a98bb0e98710f9f9a7aeea404fe0205406147232dfec0cf9ead6f891337f1126",
+    "adaptations": []
+  },
+  {
+    "path": "online-bin-packing/README.md",
+    "source": "online-bin-packing/README.md",
+    "source_sha256": "2bd5680549bededbb56df92ab5b5356ef741bf3a319be5ef39ca9a6d7827f8c6",
+    "adaptations": [
+      "Replace workspace navigation with a curated portable checkpoint index and explicit omitted-artifact/audit boundaries."
+    ]
+  },
+  {
+    "path": "online-bin-packing/ah_three_parameter_result.json",
+    "source": "online-bin-packing/ah_three_parameter_result.json",
+    "source_sha256": "b692a645262db15b70ea8ddf2cba6e3b0534564c18c42efe5629393c9d7214e2",
+    "adaptations": []
+  },
+  {
+    "path": "online-bin-packing/AH_TWO_PARAMETER_REFINEMENT.md",
+    "source": "online-bin-packing/AH_TWO_PARAMETER_REFINEMENT.md",
+    "source_sha256": "09faaa133000f0b4d51a919a0d116c9301e44fc7cb2ab86698787d5a22a7d6b9",
+    "adaptations": []
+  },
+  {
+    "path": "online-bin-packing/AH_PARAMETER_REFINEMENT.md",
+    "source": "online-bin-packing/AH_PARAMETER_REFINEMENT.md",
+    "source_sha256": "64dab9eae8e0093773305f44783a70d0a869cb09fca30ad6a5cf940c5c3cfb5c",
+    "adaptations": []
+  },
+  {
+    "path": "online-bin-packing/ah_two_parameter_published_weights_certificate.json",
+    "source": "online-bin-packing/ah_two_parameter_published_weights_certificate.json",
+    "source_sha256": "8d101ab6e75195895074dccaeae3eedc94893c08e356a63c120b088779bb2adf",
+    "adaptations": []
+  },
+  {
+    "path": "online-bin-packing/ah_two_parameter_published_weights_verification.json",
+    "source": "online-bin-packing/ah_two_parameter_published_weights_verification.json",
+    "source_sha256": "72838164b1720ae2d80d39ad6daf6a20ea99f968770ea61d77611cd1a2729d8d",
+    "adaptations": []
+  },
+  {
+    "path": "online-bin-packing/ah_variant_full_certificate.json",
+    "source": "online-bin-packing/ah_variant_full_certificate.json",
+    "source_sha256": "5a0f85b921936474584cf842c8d7e28c6b980146a8b00163d8c37e0fcd8822f4",
+    "adaptations": []
+  },
+  {
+    "path": "online-bin-packing/ah_variant_full_verification.json",
+    "source": "online-bin-packing/ah_variant_full_verification.json",
+    "source_sha256": "5c4466c132fcea557b5f1cf40fc6514c9222166405bbbdb0813738588cfe77c6",
+    "adaptations": []
+  },
+  {
+    "path": "online-bin-packing/verify_ah_three_face_algebra.py",
+    "source": "online-bin-packing/verify_ah_three_face_algebra.py",
+    "source_sha256": "3073fb7f51e992d31677320729c79e3861c7669f34130c797c94367e67877527",
+    "adaptations": []
+  },
+  {
+    "path": "online-bin-packing/ah_three_face_result.json",
+    "source": "online-bin-packing/ah_three_face_result.json",
+    "source_sha256": "55ee665275d7e154d736e29656be15f5e8b7b72df26a093822fcfef077adb5bc",
+    "adaptations": []
+  },
+  {
+    "path": "deletion-code-optimality/provenance/original_checkpoint_manifest.json",
+    "source": "deletion-code-optimality/artifact_manifest.json",
+    "source_sha256": "bccdd880db126411fc5db596283a2b8f3ce6da751dff2a4a0b5026dcae4748e7",
+    "adaptations": []
+  },
+  {
+    "path": "symmetric-quantum-codes/provenance/original_checkpoint_manifest.json",
+    "source": "symmetric-quantum-codes/evidence_manifest.json",
+    "source_sha256": "34bc586e98fdfb851b749debe938a89fc8ea2a114c8a6ee7c2ffddaece06eaac",
+    "adaptations": []
+  },
+  {
+    "path": "hss-probe-reuse/provenance/original_checkpoint_manifest.md",
+    "source": "hss-probe-reuse/MANIFEST.md",
+    "source_sha256": "8b09a865a9f11bb160cced12d51795857c84c3098bf3a2fad637560846e56bbe",
+    "adaptations": []
+  },
+  {
+    "path": "seven-cycle-capacity/provenance/original_checkpoint_manifest.json",
+    "source": "seven-cycle-capacity/DELIVERABLE_MANIFEST.json",
+    "source_sha256": "ce84577d4daec308e49e6189fb95aa685497701f04e636805288ea9b82ad5a39",
+    "adaptations": []
+  },
+  {
+    "path": "online-bin-packing/provenance/original_checkpoint_manifest.json",
+    "source": "online-bin-packing/preferred_checkpoint_manifest.json",
+    "source_sha256": "df76383a0a4cc2b47547700d316b87d312104b5fd5dd67045e9ff6f6a69a5838",
+    "adaptations": []
+  },
+  {
+    "path": "seven-cycle-capacity/tests/audit_c7_terminal.py",
+    "source": "advisor/audit_c7_terminal.py",
+    "source_sha256": "88188053862169fbacb56ffe2ecfd550d1f929a61e370c79ae8b4ffc7dd71118",
+    "adaptations": [
+      "Replace absolute scratch dependency paths by track-relative paths."
+    ]
+  },
+  {
+    "path": "seven-cycle-capacity/tests/audit_c7_recycled.py",
+    "source": "advisor/audit_c7_recycled.py",
+    "source_sha256": "ebffbda1c678af8f6c2928578460dc9e7180dfd18955fd4188ef7b093ae0ceca",
+    "adaptations": [
+      "Replace absolute scratch dependency paths by track-relative paths."
+    ]
+  },
+  {
+    "path": "seven-cycle-capacity/tests/audit_c7_optimized.py",
+    "source": "advisor/audit_c7_optimized.py",
+    "source_sha256": "f82044f5c7cf345c42c639a1426590b7344fb9f1d7b43b87b5fbc83b4fc10196",
+    "adaptations": [
+      "Replace absolute scratch dependency paths by track-relative paths."
+    ]
+  },
+  {
+    "path": "seven-cycle-capacity/tests/c7_terminal_audit.json",
+    "source": "advisor/c7_terminal_audit.json",
+    "source_sha256": "c0d4b5ae9c78aa9e15fa202d4d6064e6339646a5627d4ab6366674313b307302",
+    "adaptations": []
+  },
+  {
+    "path": "seven-cycle-capacity/tests/c7_recycled_audit.json",
+    "source": "advisor/c7_recycled_audit.json",
+    "source_sha256": "5874b9d6d5f4e948b9907b50f1367be87bc7bf01c82526f13921986104365ec0",
+    "adaptations": []
+  },
+  {
+    "path": "seven-cycle-capacity/tests/c7_optimized_audit.json",
+    "source": "advisor/c7_optimized_audit.json",
+    "source_sha256": "7c0c0795939673cea1e891a1ab8bc27031686cdf5f1f31aedcf8ce662448730b",
+    "adaptations": []
+  },
+  {
+    "path": "online-bin-packing/tests/audit_ah_three_parameter.py",
+    "source": "advisor/audit_ah_three_parameter.py",
+    "source_sha256": "bf10c8149c9d510395b18b18e4b2c117c3c5df8a992f51b057d02aceeb038e35",
+    "adaptations": [
+      "Replace absolute scratch dependency paths by track-relative paths.",
+      "Replay independent numerical-table facts instead of redistributing the full primary paper."
+    ]
+  },
+  {
+    "path": "online-bin-packing/tests/audit_ah_two_scenario_floor.py",
+    "source": "advisor/audit_ah_two_scenario_floor.py",
+    "source_sha256": "5f33e6f31e973e2cdb6c8396d1f371c38e707d4d44043a50b153bfdad20ccf16",
+    "adaptations": [
+      "Replace absolute scratch dependency paths by track-relative paths.",
+      "Replay independent numerical-table facts instead of redistributing the full primary paper."
+    ]
+  },
+  {
+    "path": "online-bin-packing/tests/ah_three_parameter_audit.json",
+    "source": "advisor/ah_three_parameter_audit.json",
+    "source_sha256": "568fe8bae8b86f549e0ed253b1562451ae7a8b7a49e38c9441bf27be93d99547",
+    "adaptations": []
+  },
+  {
+    "path": "online-bin-packing/tests/ah_two_scenario_floor_audit.json",
+    "source": "advisor/ah_two_scenario_floor_audit.json",
+    "source_sha256": "9c499e0c245e3e4ed8c7ad96df9ac05b928d8c9718ca8ae1ce7c5a1f5118a90f",
+    "adaptations": []
+  },
+  {
+    "path": "symmetric-quantum-codes/tests/audit_code19.py",
+    "source": "advisor/audit_code19.py",
+    "source_sha256": "2a0bc3446968b4136e2f34d8a3d5f6b48545ef71bf3a9d7345201fcbf0fdc5d3",
+    "adaptations": [
+      "Replace absolute scratch dependency paths by track-relative paths."
+    ]
+  },
+  {
+    "path": "symmetric-quantum-codes/tests/audit_gram_map_exact.py",
+    "source": "advisor/audit_gram_map_exact.py",
+    "source_sha256": "24d84766cd873c19d75f455de6bb9ce9f581bd8e40013c457a245cc647500ec7",
+    "adaptations": [
+      "Replace absolute scratch dependency paths by track-relative paths."
+    ]
+  },
+  {
+    "path": "symmetric-quantum-codes/tests/audit_optimized_robust_gap.py",
+    "source": "advisor/audit_optimized_robust_gap.py",
+    "source_sha256": "6303fd764bf6644f80248c2ef53ac2618ad2bab952c17028523b37ed36a0f58e",
+    "adaptations": [
+      "Replace absolute scratch dependency paths by track-relative paths."
+    ]
+  },
+  {
+    "path": "symmetric-quantum-codes/tests/audit_pure_complement.py",
+    "source": "advisor/audit_pure_complement.py",
+    "source_sha256": "8528afe2150cd9362a950ffa2afe08eddc99b6cfc8ef7f9d415ca25f6444b2b6",
+    "adaptations": [
+      "Replace absolute scratch dependency paths by track-relative paths."
+    ]
+  },
+  {
+    "path": "symmetric-quantum-codes/tests/audit_robust_pure_gap.py",
+    "source": "advisor/audit_robust_pure_gap.py",
+    "source_sha256": "abf7627d46553cc44ea2cf5bfa579cc61125c0185e3880929b0ca03757f48728",
+    "adaptations": [
+      "Replace absolute scratch dependency paths by track-relative paths."
+    ]
+  },
+  {
+    "path": "symmetric-quantum-codes/tests/audit_time_reversal.py",
+    "source": "advisor/audit_time_reversal.py",
+    "source_sha256": "10115acdecc4e820bb5c1d38de0beeeaab6e708271ca5ba496155a0d6477d3ef",
+    "adaptations": [
+      "Replace absolute scratch dependency paths by track-relative paths."
+    ]
+  },
+  {
+    "path": "symmetric-quantum-codes/tests/code19_audit.json",
+    "source": "advisor/code19_audit.json",
+    "source_sha256": "e799327180d7c20444c1d7c1ae421d9e78e7629f3be537443ef26bf1ed404363",
+    "adaptations": []
+  },
+  {
+    "path": "symmetric-quantum-codes/tests/gram_map_exact_audit.json",
+    "source": "advisor/gram_map_exact_audit.json",
+    "source_sha256": "2880d966f76e370f4087c45e79f0f5165ff572a75c5f5c9ca085a7299d11e717",
+    "adaptations": []
+  },
+  {
+    "path": "symmetric-quantum-codes/tests/optimized_robust_gap_audit.json",
+    "source": "advisor/optimized_robust_gap_audit.json",
+    "source_sha256": "a7fdc764d0a63aa4f136115e32b85ab5317c9df4313d74b06a8c238292a06245",
+    "adaptations": []
+  },
+  {
+    "path": "symmetric-quantum-codes/tests/pure_complement_audit.json",
+    "source": "advisor/pure_complement_audit.json",
+    "source_sha256": "90688944fe0b1e2b0371d3d396abb8d94e41ce823039f24482b8c4b59dcb0277",
+    "adaptations": []
+  },
+  {
+    "path": "symmetric-quantum-codes/tests/robust_pure_gap_audit.json",
+    "source": "advisor/robust_pure_gap_audit.json",
+    "source_sha256": "cd6127e333c72d6b175ea6001fac28c5c62a05ceef263226cf880ab5ac8ff8ac",
+    "adaptations": []
+  },
+  {
+    "path": "symmetric-quantum-codes/tests/time_reversal_audit.json",
+    "source": "advisor/time_reversal_audit.json",
+    "source_sha256": "95d6d28adc54b76e5fafedfe414c5d5fa84a4311e39d18f5918ad3a20797d434",
+    "adaptations": []
+  },
+  {
+    "path": "symmetric-quantum-codes/tests/check_quantum_farkas.py",
+    "source": "coordination/check_quantum_farkas.py",
+    "source_sha256": "b0edc28ea7784b18f661d76f53b34f3430921f7674d53d35496f9155b048fea9",
+    "adaptations": [
+      "Resolve certificates and replay outputs within this track."
+    ]
+  },
+  {
+    "path": "symmetric-quantum-codes/tests/check_quantum_gram_bound.py",
+    "source": "coordination/check_quantum_gram_bound.py",
+    "source_sha256": "7e9cfb02b43e416c803e45d620ba7c9175ed3da9698708e5c5e22f114a00f393",
+    "adaptations": [
+      "Resolve certificates and replay outputs within this track."
+    ]
+  },
+  {
+    "path": "online-bin-packing/AH_ENDPOINT_CONVENTION.md",
+    "source": "frontier-audit/AH_ENDPOINT_CONVENTION.md",
+    "source_sha256": "44e025b2cd86414091f36ad7283fe975cff1443d1211cc5f7ca051be88b26638",
+    "adaptations": []
+  },
+  {
+    "path": "online-bin-packing/tests/ah_portable_check.py",
+    "source": "frontier-audit/ah_portable_check.py",
+    "source_sha256": "f9af7efa65dfb39bf64d923a267a4479ee047977d8715921a69dd122aec35382",
+    "adaptations": [
+      "Set default track root to parent of relocated tests folder; numerical logic unchanged. Explicit --track-root remains supported."
+    ]
+  },
+  {
+    "path": "online-bin-packing/tests/extract_ah_primary_facts.py",
+    "source": "frontier-audit/extract_ah_primary_facts.py",
+    "source_sha256": "cc306f25821d0ed4e6c4a0cb1b4a083974cb2ce99a48526d996b2c4ac0f4dcc5",
+    "adaptations": []
+  },
+  {
+    "path": "online-bin-packing/tests/ah_primary_numerical_facts.json",
+    "source": "frontier-audit/ah_primary_numerical_facts.json",
+    "source_sha256": "99a00d0648429fd93d0c56c79c4351cf7a3dff967a104f70b0e75979c8af3dad",
+    "adaptations": []
+  },
+  {
+    "path": "online-bin-packing/tests/ah_portable_check.log",
+    "source": "frontier-audit/ah_portable_check.log",
+    "source_sha256": "3014629f90b536008c34725f20e6bb7594bff1d9c6361cda3d4dc7569d0307ec",
+    "adaptations": []
+  },
+  {
+    "path": "online-bin-packing/tests/ah_fresh_check.log",
+    "source": "frontier-audit/ah_fresh_check.log",
+    "source_sha256": "0f7b047f130d1d6b65dfae804a8372b2e83ef44532f863080b5e0de4cce55c7e",
+    "adaptations": []
+  },
+  {
+    "path": "online-bin-packing/tests/ah_fact_extraction.log",
+    "source": "frontier-audit/ah_fact_extraction.log",
+    "source_sha256": "9dfbd9ce6af9f3a96e03503babb75e65a0c2f8af99ccd3ac29d002e803146929",
+    "adaptations": []
+  },
+  {
+    "path": "seven-cycle-capacity/tests/c7_portable_check.py",
+    "source": "frontier-audit/c7_portable_check.py",
+    "source_sha256": "66a1a4a39b02ecf6d71940a2a298d65d7bce333f84dd8a2e7564e06426c9aacf",
+    "adaptations": [
+      "Set default track root to parent of relocated tests folder; numerical logic unchanged. Explicit --track-root remains supported."
+    ]
+  },
+  {
+    "path": "seven-cycle-capacity/tests/c7_fresh_check.log",
+    "source": "frontier-audit/c7_fresh_check.log",
+    "source_sha256": "d7228ed9c4bbf12069408196ad4245fa69b0b52af45205036145c710b606056f",
+    "adaptations": []
+  },
+  {
+    "path": "integration/AUDIT_FINDINGS.md",
+    "source": "frontier-audit/AUDIT_FINDINGS.md",
+    "source_sha256": "45080736528f80fa1956f87944ba4b849575b5ada5cceaf9d498e2acaec906c4",
+    "adaptations": []
+  },
+  {
+    "path": "integration/AUDIT_MANIFEST.json",
+    "source": "frontier-audit/AUDIT_MANIFEST.json",
+    "source_sha256": "4c904a067729b3c1491bc4f608a5b34a87faeae8505ed4496cb2e5fc0bfb3c99",
+    "adaptations": []
+  },
+  {
+    "path": "symmetric-quantum-codes/spin_diagnostics.py",
+    "source": "symmetric-quantum-codes/spin_diagnostics.py",
+    "source_sha256": "051281b16dbb507f127b0a649bf4c736771074f21aa50172178e5fb308c690c8",
+    "adaptations": []
+  }
+]

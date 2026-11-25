@@ -1,0 +1,35 @@
+{
+  "utc": "2026-10-25T21:59:01.742752+00:00",
+  "all_rejected": true,
+  "scope": "four selected negative controls; not exhaustive correctness or security testing",
+  "cases": [
+    {
+      "case": "packing_false_upper",
+      "checker": "online-bin-packing/phase2/best_fit/verify_step_independent.py",
+      "rejected_by_assertion": true,
+      "returncode": 1,
+      "output_tail": "Traceback (most recent call last):\n  File \"/tmp/phase2-negative-ly5_dlr8/online-bin-packing/phase2/best_fit/verify_step_independent.py\", line 47, in <module>\n    ns=[check(N,Q(1),rho,c,0,R),check(HUGE,y,rho,c,1,R)]\n        ^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/tmp/phase2-negative-ly5_dlr8/online-bin-packing/phase2/best_fit/verify_step_independent.py\", line 31, in check\n    visit(0,cap,Q(0));return nodes\n    ^^^^^^^^^^^^^^^^^\n  File \"/tmp/phase2-negative-ly5_dlr8/online-bin-packing/phase2/best_fit/verify_step_independent.py\", line 27, in visit\n    nodes+=1;assert offset+value+rho*envelope(room,c)<=target\n                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError\n"
+    },
+    {
+      "case": "packing_source_binding",
+      "checker": "online-bin-packing/phase2/best_fit/verify_step_independent.py",
+      "rejected_by_assertion": true,
+      "returncode": 1,
+      "output_tail": "Traceback (most recent call last):\n  File \"/tmp/phase2-negative-pndw4lck/online-bin-packing/phase2/best_fit/verify_step_independent.py\", line 34, in <module>\n    assert hashlib.sha256(source.read_bytes()).hexdigest()==J['source_certificate_sha256']\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError\n"
+    },
+    {
+      "case": "quantum_negative_multiplier",
+      "checker": "symmetric-quantum-codes/phase2/check_interval_dual.py",
+      "rejected_by_assertion": true,
+      "returncode": 1,
+      "output_tail": "Traceback (most recent call last):\n  File \"/tmp/phase2-negative-qk268xpy/symmetric-quantum-codes/phase2/check_interval_dual.py\", line 59, in <module>\n    z=[qint(v)for v in cert['enumerator_inequality_dual']];assert all(int(v)>=0 for v in cert['enumerator_inequality_dual']);p=0\n                                                                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError\n"
+    },
+    {
+      "case": "quantum_wrong_gram_factor",
+      "checker": "symmetric-quantum-codes/phase2/check_interval_dual.py",
+      "rejected_by_assertion": true,
+      "returncode": 1,
+      "output_tail": "cone lift done; seconds 2.369415760040283\nTraceback (most recent call last):\n  File \"/tmp/phase2-negative-3k1v_irc/symmetric-quantum-codes/phase2/check_interval_dual.py\", line 130, in <module>\n    assert abs(R[a,c])<arb('1e-8'),('Z residual',J,a,c,str(R[a,c]))\n           ^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError: ('Z residual', 1, 0, 0, '[5087.71989787248900814522723359161837085262571440973145432205154462564207891 +/- 4.63e-72]')\n"
+    }
+  ]
+}

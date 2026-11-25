@@ -1,0 +1,13 @@
+{
+  "passed": true,
+  "uncapped_fractional_lower_numerator": 320497435475376,
+  "uncapped_fractional_lower_denominator": 1000000000000,
+  "uncapped_fractional_lower": 320.497435475376,
+  "certified_upper": 320.497437108,
+  "scaled_fractional_feasible_size_exact": 320,
+  "all_maximal_cliques_independently_enumerated": 155496,
+  "CG_nodes_checked": 786,
+  "cap_in_scaled_model": true,
+  "not_a_code": true,
+  "seconds": 2.462038980000216
+}

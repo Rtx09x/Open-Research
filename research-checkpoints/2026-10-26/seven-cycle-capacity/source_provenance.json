@@ -1,0 +1,15 @@
+{
+  "repository": "https://github.com/tandonravi/C7-Shannon-Capacity-Heterogeneous-Recursion",
+  "commit_sha": "c753408492dde92a239708986d16c15dbf6c3235",
+  "commit_date": "2026-09-01T02:34:24Z",
+  "retrieved_for_research_date": "2026-10-25",
+  "upstream_release_manifest_files_checked": 36,
+  "matching_release_hashes": 35,
+  "stale_manifest_entries": [
+    "README.md"
+  ],
+  "stale_entry_current_upstream_verified": true,
+  "note": "Only README.md differs from the bundled release manifest; its bytes match the current pinned upstream commit. All35 remaining listed files match the release manifest.",
+  "download_method": "public GitHub tarball via urllib; no git checkout or push",
+  "license": "Apache-2.0; LICENSE and NOTICE retained"
+}

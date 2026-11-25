@@ -1,0 +1,94 @@
+{
+  "status": "PASS",
+  "scope": "Independent exact physical 2t-erasure coefficients and symbolic phase closure; analytic uniform log bound audited separately",
+  "finite_inequalities": [
+    {
+      "t": 1,
+      "impossible_family_gap": "1"
+    },
+    {
+      "t": 2,
+      "impossible_family_gap": "4685568031994477157949559932104926843463/5000000000000000000000000000000000000000"
+    },
+    {
+      "t": 3,
+      "impossible_family_gap": "15632572188103386439207988871874503217/20000000000000000000000000000000000000"
+    },
+    {
+      "t": 4,
+      "impossible_family_gap": "1582681333028223269953689542646885668389/2500000000000000000000000000000000000000"
+    },
+    {
+      "t": 5,
+      "impossible_family_gap": "2484659805332470363390070183599999530673/5000000000000000000000000000000000000000"
+    },
+    {
+      "t": 6,
+      "impossible_family_gap": "1858552514201937053355094425596437098381/5000000000000000000000000000000000000000"
+    },
+    {
+      "t": 7,
+      "impossible_family_gap": "1276794716853277902114069449169204074573/5000000000000000000000000000000000000000"
+    },
+    {
+      "t": 8,
+      "impossible_family_gap": "146266157068064970011964056219203567517/1000000000000000000000000000000000000000"
+    },
+    {
+      "t": 9,
+      "impossible_family_gap": "216164053041607723018544769836227611889/5000000000000000000000000000000000000000"
+    },
+    {
+      "t": 10,
+      "construction_inequality": true
+    },
+    {
+      "t": 11,
+      "construction_inequality": true
+    },
+    {
+      "t": 12,
+      "construction_inequality": true
+    },
+    {
+      "t": 13,
+      "construction_inequality": true
+    }
+  ],
+  "physical_controls": [
+    {
+      "t": 10,
+      "n": 420,
+      "diagonal_entries": 42,
+      "zero_entries": 1718,
+      "cross_entries": 4,
+      "path_phase_identity": true
+    },
+    {
+      "t": 11,
+      "n": 506,
+      "diagonal_entries": 46,
+      "zero_entries": 2066,
+      "cross_entries": 4,
+      "path_phase_identity": true
+    },
+    {
+      "t": 12,
+      "n": 600,
+      "diagonal_entries": 50,
+      "zero_entries": 2446,
+      "cross_entries": 4,
+      "path_phase_identity": true
+    },
+    {
+      "t": 13,
+      "n": 702,
+      "diagonal_entries": 54,
+      "zero_entries": 2858,
+      "cross_entries": 4,
+      "path_phase_identity": true
+    }
+  ],
+  "uniform_log_endpoint": "353/572",
+  "source_sha256": "61cc32b4e1d1d15207d7b8fd5dbbb32fc7780714c49ec7aa68eb39194a12b0a6"
+}

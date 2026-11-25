@@ -1,0 +1,18 @@
+{
+  "all_passed": true,
+  "scope": "Numerical known-19 positive controls, not infeasibility proofs.",
+  "checks": [
+    {
+      "command": "python audit_moment_model.py",
+      "passed": true,
+      "output": "{'known19_moment_vs_direct_gram_error': 2.7139748781657147e-15, 'known19_Schur_eigenvalues': [-4.289572142209114e-15, -2.7950317409201235e-15, -1.2818465330938438e-15, -7.041782683472442e-16, -2.479451067656473e-16, -2.999466642712015e-17, 2.0395932119420738e-16, 4.186106583063958e-16, 4.2005887297382706e-16, 8.850419371502228e-16, 2.634486976787133e-15, 3.5318685821201463e-15, 0.060101711327547366, 0.0601017113275481], 'rank': 2, 'status': 'numerical positive control for coefficient conventions'}\n",
+      "wall_seconds": 0.7711784269995405
+    },
+    {
+      "command": "python audit_generator_reconstruction.py",
+      "passed": true,
+      "output": "{'code_first_two_coordinate_error': 2.4361809033238127e-16, 'max_degree_one_closure_error': 2.6645352591003757e-15, 'max_low_shell_boundary_error': 5.570261576140558e-15, 'unitarity_error': 1.6128725904880626e-15}\n",
+      "wall_seconds": 0.6793317329993442
+    }
+  ]
+}

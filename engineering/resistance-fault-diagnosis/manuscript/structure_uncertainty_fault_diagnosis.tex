@@ -1,0 +1,1125 @@
+\documentclass[11pt,letterpaper]{article}
+\usepackage[margin=0.95in]{geometry}
+\usepackage{amsmath,amssymb,amsthm,booktabs,hyperref,microtype}
+\hypersetup{colorlinks=true,linkcolor=black,citecolor=black,urlcolor=black,pdftitle={Structure and Uncertainty in Resistance-Based Fault Diagnosis},pdfauthor={Rudra Tiwari}}
+\newtheorem{theorem}{Theorem}
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{corollary}[theorem]{Corollary}
+\newtheorem{proposition}[theorem]{Proposition}
+\newcommand{\ceil}[1]{\left\lceil #1\right\rceil}
+\newcommand{\floor}[1]{\left\lfloor #1\right\rfloor}
+\newcommand{\A}{\mathsf A}
+\newcommand{\N}{\mathsf N}
+\newcommand{\R}{\mathbb R}
+\newcommand{\one}{\mathbf 1}
+\DeclareMathOperator{\tr}{tr}
+\title{Structure and Uncertainty in Resistance-Based Fault Diagnosis}
+\author{Rudra Tiwari\\University of Delhi, India}
+\date{October 2026}
+\begin{document}
+\maketitle
+\begin{abstract}
+A known resistor network undergoes one edge fault, and a test returns one scalar effective resistance between chosen vertices. We study the roles of topology, physical terminal access, severity uncertainty, and measurement error. For prescribed complete deletion and generic known weights, we characterize restricted-terminal ambiguity on all connected graphs. On arbitrary connected graphs, an optimal adaptive strategy has a healthy spine followed by a binary-search tail, giving an exact subset dynamic program exponential in the number of blocks plus bridges. Fixed designs combine block activation, local three-edge augmentation, and distinct bridge path signatures. On every bridgeless connected graph, a doubled-articulation cactus yields the exact fixed optimum and minimum-cost access. Every identifying access set in that class simulates every unrestricted query without increasing any faultwise decision-tree depth. The biconnected formulas follow as special cases. Exact counts do not predict robustness: an energy argument forces more than $2\alpha(m-n)/(1-\alpha)$ adaptive tests under relative error $\alpha$, and cubic prisms require one exact generic test but linearly many one-percent-error tests. For unknown finite changes preserving connectivity, two-anchor reconstruction recovers the edge and its magnitude in at most $2n-3$ scalar tests for every positive weighting. A bounded-weight $K_{2,p}$ family gives a matching worst-case linear-order lower bound: known severity permits two adaptive tests, while fixed positive severity uncertainty requires linearly many. Full proofs separate generic identifiability, bounded-error performance, and physical access.
+\end{abstract}
+
+
+\section{Problem and main conclusions}
+A resistance measurement can contain much more than a binary answer. For a known graph with generic weights, one exact scalar can sometimes distinguish every possible deleted edge. The same graph may need linearly many observations once each reading is allowed a small adversarial error. A different idealization is that a fault has a prescribed magnitude. A complete deletion supplies a finite dictionary of hypotheses, while an unknown finite component change introduces a continuous nuisance parameter. These distinctions are essential when translating exact query counts into diagnostic guarantees.
+
+We examine three connected questions. Which faults are structurally indistinguishable from a set of accessible vertices? How many scalar observations are necessary once identification is possible? How do error and severity uncertainty change that answer? Our strongest conclusions concern arbitrary graph topology or every positive weighting; explicit families then show that the different regimes genuinely occur.
+
+\subsection{Measurement and fault models}
+Let $G=(V,E)$ be a known finite connected loopless undirected graph, with $n=|V|$, $m=|E|$, positive conductances $c_e$, and resistances $r_e=1/c_e$. Except in the terminal-ambiguity theorem, graphs are simple. Here vertex-biconnected means having at least three vertices and remaining connected after deletion of any one vertex, except where an explicit multigraph-block convention is stated. An orientation of each edge is used only to define its incidence vector $b_e$; no conclusion depends on that orientation. Let
+\[
+ L=\sum_{e\in E}c_e b_e b_e^{\mathsf T}
+\]
+be the weighted Laplacian and $L^+$ its Moore--Penrose inverse. For distinct vertices $u,v$, write $b_{uv}=\mathbf e_u-\mathbf e_v$. Their effective resistance is
+\[
+ R_{uv}=b_{uv}^{\mathsf T}L^+b_{uv}.
+\]
+A query is an unordered vertex pair and returns one scalar driving-point resistance. It does not return all node voltages, a transfer matrix, or a freely selected path sum. If only $B\subseteq V$ is accessible, the permitted family is $\binom B2$. The graph and healthy component values are known exactly unless explicitly stated otherwise; the baseline resistances in our algorithms are computed from that model.
+
+In the \emph{deletion model}, nature deletes exactly one existing edge $e$. The response is $R^e_{uv}$, with $+\infty$ when the terminals disconnect. In the \emph{finite-change model}, exactly one conductance changes by a nonzero finite amount $\delta$, all resulting conductances are nonnegative, and the changed graph remains connected. A nonbridge deletion is included as $\delta=-c_e$; deletion of a bridge is excluded from that model. In the \emph{bounded-severity model}, one resistance increases by an unknown amount $t\in[a,b]$, where $0<a\le b<\infty$ is known.
+
+Write $\A$ for the minimum worst-case depth of a deterministic adaptive identifying strategy and $\N$ for the minimum number of queries chosen before any answers. Both strategies have the same permitted pairs. The fault remains fixed throughout testing, and tests do not alter components. In exact models, repeated queries are redundant. They are allowed in noisy lower bounds. Failure of identifiability means infinite complexity. When severity is unknown, lower bounds already apply to edge location alone; our exact upper bounds recover magnitude as well.
+
+An additive error $\varepsilon$ permits any answer in $[R-\varepsilon,R+\varepsilon]$. Relative error $\alpha\in(0,1)$ permits any answer in $[(1-\alpha)R,(1+\alpha)R]$. Errors are adversarial and may differ at each repeated test. Thus averaging is not assumed to reduce error. The associated complexities are denoted $\A^{\mathrm{abs}}_\varepsilon,\N^{\mathrm{abs}}_\varepsilon$ and $\A^{\mathrm{rel}}_\alpha,\N^{\mathrm{rel}}_\alpha$.
+
+A positive weighting is \emph{generic} for a finite diagnosis problem if it avoids a finite union of proper polynomial zero sets responsible for accidental equalities of distinct rational response functions. We use simultaneous genericity for all allowed queries and fault pairs. This is an open dense full-measure set, but it does not include every symmetric or prescribed weighting. Section~\ref{sec:realization} gives a finite-bit randomized realization and a conservative precision guarantee.
+
+\subsection{Organization of the results}
+The results separate several resources that can otherwise be conflated.
+\begin{enumerate}
+\item Restricted-terminal ambiguity is characterized on every connected graph, including articulation points and infinite responses. Its biconnected specialization gives closed exact query formulas.
+\item On every connected graph, a healthy-spine normal form gives an exact adaptive subset recurrence over blocks and bridges. Its dependence on their number is exponential. Fixed designs require local augmentation and activation, together with pairwise distinct bridge path signatures.
+\item On every bridgeless connected graph, a doubled-articulation cactus gives an exact fixed optimum and minimum-cost physical access. Any identifying access set preserves every unrestricted faultwise depth and hence both worst-case and expected-depth optima.
+\item A concrete $K_{2,p}$ with $O(\log p)$-bit bounded resistances has $\A=2$ and $\N=\ceil{p/2}$ for deletion. A planar cubic construction shows that a linear exact generic gap does not require degree-two vertices.
+\item A universal finite-change algorithm uses at most $2n-3$ pair measurements, without genericity or a finite severity dictionary. Its support recovery has an explicit signal-dependent error guarantee.
+\item On the same $K_{2,p}$, an interval-overlap statistic determines adaptive complexity within one query when severity lies in $[a,b]$. For $[1,1+\delta]$, $0\le\delta\le1$, the complexity is $\Theta(\min\{p,1+\delta p\})$, while the fixed optimum remains $\ceil{p/2}$.
+\item Under relative error, a weighted energy budget gives a lower bound valid on every graph and for every adaptive strategy. A companion bounded-degree upper bound establishes finite identifiability, yielding a one-query versus linear-query transition on cubic prisms.
+\end{enumerate}
+All these statements refer to their stated models. No assertion that generic exact performance survives constant error is implicit.
+
+\subsection{Prior work and attribution}
+Fiedorowicz and Basu~\cite{FB} formulate faulty-edge identification by effective-resistance measurements, study fixed test sets, and leave adaptive strategies for future work. Sequential diagnosis has a much longer history~\cite{VHF}, including path-probe diagnosis of tree systems~\cite{IKT}. Our unit of cost is one scalar electrical pair query, rather than an arbitrary subset test or chosen path measurement.
+
+Analog fault diagnosis is a particularly close antecedent. Huang and Cheng~\cite{HC} review classical accessible-node criteria and develop test-point selection for unknown single-branch perturbations; the topological criteria and degree-two obstructions they discuss predate this investigation. Starzyk et al.~\cite{Starzyk} select tests from fault dictionaries and account for ambiguous measured values. Tadeusiewicz and Korzybski~\cite{TK} and Liu and Starzyk~\cite{LS} use low-rank inverse updates for finite parameter deviations. These establish sensitivity directions, low-rank fault equations, and ambiguity analysis as prior methods. Our possible contribution lies in the exact scalar-pair query budgets, the topology-specific reductions, and their minimax dependence on severity and bounded error.
+
+The combinatorial ingredients are also classical. Three-edge-connected components and cactus representations of two-edge cuts are standard~\cite{MNS}. The Watanabe--Nakamura augmentation theorem~\cite{WN}, with a proof exposition by Szigeti~\cite{Szigeti}, supplies the fixed-design min--max formula once the electrical reduction is established. Linear-time minimum three-edge-connectivity augmentation is due to Watanabe and Yamakado~\cite{WY}. We make no claim to invent these graph structures or their algorithms.
+
+Related effective-resistance graph reconstruction must be distinguished carefully. The final ALT 2026 paper of Bennett, Black, Nayyeri, and Warton~\cite{WBBN} includes uniqueness and convex completion results for known unknown-weight locations, together with polynomial numerical recovery. We do not describe that completion problem as open. Quantitative log-determinant curvature already appears in Laplacian graph learning~\cite{YCP}, and noisy resistance-based inference has been studied by Hoskins et al.~\cite{HMMT}. Here the healthy network is known, the changed edge is unknown, and the observation cost is minimax scalar query count. These distinctions delimit the claims; they do not certify priority.
+
+\section{Electrical identities and structural dependence}
+We first record the algebra used throughout. It is standard linear network theory, included to make the later arguments self-contained; see also Doyle and Snell~\cite{DS} for the variational electrical framework.
+
+\begin{lemma}[A single conductance change]\label{lem:update}
+Suppose an edge $e$ changes conductance by $\delta\ne0$ and the resulting graph remains connected with nonnegative conductances. Put $p=L^+b_e$ and $R_e=b_e^{\mathsf T}L^+b_e$. Then $1+\delta R_e>0$, and every pair satisfies
+\[
+ R'_{uv}-R_{uv}=\gamma(p_u-p_v)^2,
+ \qquad \gamma=-\frac{\delta}{1+\delta R_e}.
+\]
+For a nonbridge deletion, define $\tau_e=c_eR_e$ and $s_e=1-\tau_e>0$. With $T_{qe}=b_q^{\mathsf T}L^+b_e$,
+\[
+ R_q^e-R_q=\frac{c_eT_{qe}^2}{s_e}.
+\]
+\end{lemma}
+\begin{proof}
+Restrict both Laplacians to the subspace orthogonal to $\one$, on which they are positive definite. The changed operator is $L+\delta b_eb_e^{\mathsf T}$. Conjugating by $L^{-1/2}$ on this subspace gives $I+\delta ww^{\mathsf T}$ with $\|w\|^2=R_e$. Its one possibly changed eigenvalue is $1+\delta R_e$, which is positive. Direct multiplication verifies the Sherman--Morrison inverse
+\[
+ (L+\delta b_eb_e^{\mathsf T})^{-1}
+ =L^{-1}-\frac{\delta L^{-1}b_eb_e^{\mathsf T}L^{-1}}{1+\delta R_e}.
+\]
+Evaluation on $b_{uv}$ gives the formula, and $\delta=-c_e$ gives the deletion statement.
+\end{proof}
+
+\begin{lemma}[Energy and total leverage]\label{lem:energy}
+For every pair $q$,
+\[
+ \sum_{e\in E}c_eT_{qe}^2=R_q,
+ \qquad \sum_{e\in E}\tau_e=n-1.
+\]
+Every $\tau_e$ lies in $(0,1]$, with equality $\tau_e=1$ exactly for bridges. Consequently
+\[
+ \sum_{e\text{ nonbridge}}(1-\tau_e)=m-n+1.
+\]
+\end{lemma}
+\begin{proof}
+The first equality follows by inserting $L=\sum_e c_eb_eb_e^{\mathsf T}$ into $b_q^{\mathsf T}L^+LL^+b_q=R_q$. The second is the trace identity $\sum_e c_eb_e^{\mathsf T}L^+b_e=\tr(L^+L)=n-1$, often called Foster's identity. The direct edge is a feasible unit-current route between its endpoints, so $R_e\le1/c_e$. If there is an alternate path, sending a sufficiently small positive fraction of the unit current along it strictly improves the energy, giving strict inequality. A bridge carries the full unit current between its endpoints and all other edges carry zero, giving equality. Subtract the trace sum from $m$; bridges contribute zero slack.
+\end{proof}
+
+\begin{lemma}[Dependence on a component]\label{lem:dependence}
+In a connected-terminal network, the resistance $R_{st}$ depends nontrivially as a rational function on an edge conductance $c_h$ if and only if $h$ lies on a simple $s$--$t$ path.
+\end{lemma}
+\begin{proof}
+For a unit current from $s$ to $t$, orient every nonzero current by decreasing voltage. The resulting directed flow is acyclic and decomposes into simple $s$--$t$ paths. Thus an edge on no such path carries zero current. Removing it cannot change the optimum energy and hence cannot change $R_{st}$.
+
+Conversely, suppose a simple $s$--$t$ path $P$ contains $h$. Assign resistance one on $P$ and resistance $T$ to every other edge. The unit path flow has bounded energy, so the energy-minimizing flow has every off-path current of order $T^{-1/2}$. Conservation then forces its currents on $P$ to approach one as $T$ tends to infinity. For some finite positive assignment, $I_h\ne0$. Differentiating the strictly convex energy minimum gives $\partial R_{st}/\partial r_h=I_h^2>0$. This differentiation follows directly by evaluating each nearby minimizer in the other quadratic energy and taking the two one-sided bounds. Since $r_h=1/c_h$, the response depends nontrivially on $c_h$ as well. Grounded Laplacian inversion expresses every finite response as a rational function with positive denominator.
+\end{proof}
+
+\section{An exact ambiguity theorem for restricted access}\label{sec:terminal}
+For a terminal set $B$ with $|B|\ge2$, form $G_B$ by adding a new vertex $z$ and one spoke $zb$ for every $b\in B$. All spokes belong to one vertex-biconnected block, denoted $H_B$: a path in connected $G$ between any two terminals closes with their spokes to form a cycle. Only original edges are fault candidates.
+
+\begin{theorem}[Terminal ambiguity]\label{thm:terminal}
+Let $G$ be connected and loopless, with parallel edges permitted. For two distinct original edges $e,f$, the following conditions are equivalent.
+\begin{enumerate}
+\item For every positive conductance assignment, deleting $e$ and deleting $f$ give identical responses on every pair in $B$.
+\item Every simple path with distinct endpoints in $B$ contains both $e,f$ or contains neither.
+\item Either both edges lie outside $H_B$, or both lie inside $H_B$ and $H_B-\{e,f\}$ is disconnected.
+\end{enumerate}
+Outside one proper algebraic exceptional set, these conditions describe exactly all equal complete $B$-response vectors. Thus the resulting topological classes are the exact generic ambiguity classes.
+\end{theorem}
+\begin{proof}
+Assume condition 2 and fix $s,t\in B$. If every $s$--$t$ path contains $e$, every such path also contains $f$, and both deletions give infinity. Otherwise the surviving paths avoiding $e$ also avoid $f$, and conversely. In $G-e$, edge $f$ lies on no surviving $s$--$t$ path; in $G-f$, the same is true of $e$. By Lemma~\ref{lem:dependence}, both responses equal the response in $G-\{e,f\}$. This proves condition 1.
+
+If condition 2 fails, there is a simple terminal path containing, say, $f$ but not $e$. In $G-e$, the response for its endpoints is finite and depends nontrivially on $c_f$. In $G-f$, that response is either identically infinite or is independent of $c_f$. Hence the two responses are not identical functions. This proves the converse.
+
+It remains to express path membership topologically. Simple cycles through $z$ correspond exactly to simple paths with distinct endpoints in $B$. An original edge belongs to $H_B$ if and only if it belongs to one of these cycles. For the nontrivial direction, subdivide the edge inside its biconnected block. Any two vertices of a biconnected graph lie on a common cycle, so there is a cycle through $z$ and the subdivision vertex, and therefore through the original edge.
+
+The cycles through $z$ span the binary cycle space of $H_B$. Indeed, consider a cycle $C$ avoiding $z$. Biconnectivity supplies two internally disjoint paths from $z$ to distinct vertices $x,y$ of $C$, each first meeting $C$ at its endpoint. Their union is an $x$--$y$ path $P$ through $z$. The two arcs of $C$, combined separately with $P$, are cycles through $z$ whose symmetric difference is $C$.
+
+Suppose two edges inside $H_B$ have equal membership in every cycle through $z$. Their membership parity is therefore zero on every cycle. Since $H_B$ has no bridges, $H_B-e$ is connected. If $H_B-\{e,f\}$ were connected, a path between the endpoints of $e$ avoiding both edges would form a cycle containing $e$ but not $f$, a contradiction. Thus they form a two-edge cut. Conversely, every cycle meets a two-edge cut of a bridgeless graph in zero or two edges, proving equal membership. Edges outside $H_B$ occur in no terminal path; an inside edge occurs in at least one, so it cannot be equivalent to an outside edge. This establishes condition 3.
+
+Finally, every nonstructural equality between finite responses is the zero set of a nonzero polynomial after positive denominators are cleared. There are finitely many edge and terminal pairs. Their exceptional sets have a proper finite union, while finite-versus-infinite distinctions need no exception. Outside that union, no additional equality is possible.
+\end{proof}
+
+An immediate algorithm constructs $H_B$, groups all original edges outside it into one invisible class, and finds the series classes inside it. A simple implementation deletes each original edge in turn and finds bridges, costing $O(m(n+m+|B|))$ with standard graph searches. Faster classical cut-decomposition algorithms may replace this implementation; the elementary bound is already polynomial.
+
+If every class is a singleton, exact identification is possible generically. A single invisible edge can be identified as the unique fault with the healthy response vector because exactly one fault is promised. With a no-fault alternative, even that one invisible edge is indistinguishable from healthy operation. Two invisible edges can never be separated. More generally, adaptation cannot split any structural class: every permitted answer agrees for its members at every stage.
+
+\begin{corollary}[Biconnected terminal criterion]\label{cor:terminal}
+If $G$ is vertex-biconnected, then $B$ identifies every complete deletion generically if and only if $B$ intersects both shores of every two-edge cut of $G$. In particular, on a biconnected three-edge-connected graph, any prescribed pair of distinct vertices identifies every deletion with one generic exact measurement.
+\end{corollary}
+\begin{proof}
+Every original edge lies on a path between any prescribed two distinct terminals in a biconnected graph, so all lie in $H_B$. Removing two edges disconnects a bridgeless graph into exactly two components whenever it disconnects at all. The added spokes reconnect these components exactly when $B$ meets both. Apply Theorem~\ref{thm:terminal} and take simultaneous genericity over the finite possible measurements.
+\end{proof}
+
+Vertex-biconnectivity cannot be replaced by edge-connectivity alone. Two copies of $K_4$ sharing one vertex are three-edge-connected, yet a query confined to one copy detects no deletion in the other copy. Conversely, degree-two vertices are not the only source of restricted-access ambiguity: two disjoint $K_4$ graphs joined by two independent connector edges have minimum degree three, but terminals confined to one side cannot distinguish deletion of the two connectors.
+
+The fault-magnitude promise also matters. A $K_4$ with generic weights can be identified from one terminal pair for complete deletion. If instead any sufficiently small positive conductance reduction is permitted, every edge carrying nonzero healthy query current produces a response interval starting at the healthy value. Those intervals overlap near zero, and one available scalar pair cannot separate their unknown magnitudes. The finite deletion dictionary and continuous perturbation problem are different identification tasks.
+
+\section{Exact generic query counts on biconnected graphs}\label{sec:counts}
+Let $G$ now be a simple vertex-biconnected graph on at least three vertices. Put two edges in the same \emph{series class} when they are equal or form a two-edge cut. This is an equivalence relation: in a bridgeless graph, $\{e,f\}$ is a cut exactly when every cycle contains $e$ if and only if it contains $f$.
+
+For a nonsingleton class $C$ of size $k$, contract every component of $G-C$. The resulting edges of $C$ form a cycle, with a two-edge parallel cycle permitted when $k=2$. To verify this, fix $e\in C$. The bridges of $G-e$ are exactly $C-\{e\}$. Contracting the components left after these bridges are removed gives a tree. Every bridge must lie on the path between the endpoints of $e$, since otherwise it remains a bridge when $e$ is restored. Thus the tree is a path and restoring $e$ closes it into a cycle.
+
+A query $q=\{u,v\}$ projects to two vertices of this quotient cycle. Let $a_C(q)$ and $k-a_C(q)$ be the sizes of its two arcs; when the projected terminals coincide use sizes $0,k$. Define
+\[
+ b_C(q)=\max\{a_C(q),k-a_C(q)\}
+\]
+for nonsingletons and $b_C(q)=1$ for singletons, and set
+\[
+ \kappa(G)=\min_{q\in\binom V2}\max_C b_C(q).
+\]
+Let $\nu(G)$ be the maximum number of pairwise disjoint nonempty proper vertex sets $X_i$ with $|\partial_G X_i|=2$, taking $\nu=0$ when there are none. Here $\partial_G X$ denotes the edge cut of a vertex set.
+
+\begin{theorem}[Generic adaptive and fixed optima]\label{thm:counts}
+For simultaneous generic known positive weights and complete deletion,
+\[
+ \A(G)=1+\ceil{\log_2\kappa(G)},\qquad
+ \N(G)=\max\{1,\ceil{\nu(G)/2}\}.
+\]
+A nonempty query set $Q$ identifies every fault generically if and only if the formal multigraph $G+Q$ is three-edge-connected. Every pair in $Q$ adds one formal link, including a parallel link when its endpoints are adjacent in $G$; no resistor is physically added. If $K$ is the largest series-class size, then
+\[
+ \max\{1,\ceil{\log_2 K}\}\le\A(G)\le1+\ceil{\log_2 K}.
+\]
+\end{theorem}
+\begin{proof}
+By Corollary~\ref{cor:terminal} applied to one pair, two faults have the same generic answer exactly when they form a two-edge cut whose shores do not separate the terminals. Thus different series classes always give different answers. Within one class, precisely the edges on a common terminal arc agree. The first response identifies a class and one consecutive arc of its candidates.
+
+Fix a first query $q$. Some answer leaves $r=\max_C b_C(q)$ candidates in one class. Every later query has at most two responses on that class, so a worst-case continuation needs at least $\ceil{\log_2 r}$ tests. Minimization over $q$ yields the adaptive lower bound. Conversely, choose $q$ attaining $\kappa$. Any consecutive subinterval of a class can be made one query arc by choosing terminals in its two boundary components. Bisect the surviving interval repeatedly. Each split has distinct structural responses and leaves intervals of sizes differing by at most one. This attains the lower bound. The same construction starts from the whole class when its first query arc is empty. The bounds using $K$ follow from $\ceil{K/2}\le\kappa\le K$, with $\A\ge1$.
+
+For fixed queries, each cut pair is separated exactly when at least one query link crosses its shore. Since every original cut has size at least two, this is equivalent to all cuts in $G+Q$ having size at least three. This proves the electrical augmentation equivalence.
+
+We now invoke the classical edge-connectivity augmentation min--max theorem~\cite{WN,Szigeti}: allowing arbitrary added multiedges, the minimum number needed for $k$-edge-connectivity is the ceiling of half the maximum deficiency sum over subpartitions, with deficiency $\max\{0,k-|\partial X|\}$. For a bridgeless graph and $k=3$, only two-edge-cut shores have positive deficiency, each one. The augmentation minimum is therefore $\ceil{\nu/2}$. If there is no such shore, no augmentation is needed but at least one observation is needed to distinguish the multiple faults, giving the outer maximum with one. Duplicate copies of a query link are unnecessary: all original deficits are at most one, so keeping one copy of any duplicated link preserves feasibility. Thus the augmentation optimum can be realized by an actual set of pair queries.
+\end{proof}
+
+The adaptive formula is more specific than a general optimal-decision-tree recurrence. Only the first query needs optimization; balanced interval search is then minimax-optimal. Enumerating all $O(n^2)$ first pairs and their series-class arcs gives a polynomial algorithm. Classical minimum-augmentation algorithms give an optimal fixed generic design~\cite{WY}. Computing the numerical response dictionary for decoding is a separate task; we do not claim that full electrical calibration is linear-time.
+
+\section{Physical terminal access in one block}\label{sec:access}
+The number of available terminals and the number of measurements are different costs. Adaptation changes which already available pair is tested; it does not expose an inaccessible vertex. The terminal criterion also solves an exact access-design problem.
+
+Partition the vertices of a biconnected graph into three-edge-connected components: two vertices are equivalent if no cut of at most two edges separates them. Contract each component, discard loops, and preserve parallel edges. The resulting quotient $C$ is a bridgeless cactus, whose cycles may have length two. Write $X_x\subseteq V$ for the original vertices represented by quotient vertex $x$. This is the classical cactus representation of two-edge cuts~\cite{MNS}.
+
+For completeness, the equivalence relation is transitive because any cut separating $u,w$ puts an intermediate vertex $v$ on one shore or the other. Each two-edge-cut shore is a union of whole components. Distinct quotient vertices can be separated by at most two edges. A bridgeless noncactus would contain a theta subdivision, whose two branch vertices have three edge-disjoint paths, a contradiction. Thus the quotient is a cactus. Its two-edge cuts are exactly pairs of edges on one cycle, and they lift to the corresponding cuts of $G$.
+
+\begin{theorem}[Minimum cost access]\label{thm:access}
+Give every vertex a positive access cost $a_v$. If $C$ has a single vertex, the cheapest identifying access set consists of the two cheapest distinct vertices. Otherwise let
+\[
+ \mathcal L=\{x\in V(C):\deg_C(x)=2\}.
+\]
+A terminal set $B$ permits generic exact identification of every complete edge deletion if and only if it meets every $X_x$ for $x\in\mathcal L$. The optimal access cost and minimum cardinality are respectively
+\[
+ \sum_{x\in\mathcal L}\min_{v\in X_x}a_v,
+ \qquad |\mathcal L|.
+\]
+An optimum chooses a cheapest vertex independently in every required component.
+\end{theorem}
+\begin{proof}
+By Corollary~\ref{cor:terminal}, terminals must meet both shores of every two-edge cut. A degree-two cactus vertex has its two incident edges as a cut, with its singleton vertex as one shore. Hence its component must contain a terminal.
+
+Conversely, every shore $S$ of every two-edge cut in a nontrivial bridgeless cactus contains a vertex of global degree two. The induced cactus $C[S]$ is connected. All global degrees are positive and even. If they were all at least four in $S$, then
+\[
+ 2|E(C[S])|+2=\sum_{x\in S}\deg_C(x)\ge4|S|,
+\]
+giving $|E(C[S])|\ge2|S|-1$. But a connected loopless cactus on $|S|$ vertices has at most $2(|S|-1)$ edges: each attached cycle of length $\ell\ge2$ adds $\ell$ edges and $\ell-1$ vertices, and $\ell\le2(\ell-1)$. This contradiction proves the assertion. Thus meeting all degree-two components meets both shores of every cut and suffices.
+
+The required components are disjoint, so their individual minimum costs add and the proposed choices attain the lower bound. A nontrivial bridgeless cactus has at least two degree-two vertices: if it had at most one, its degree sum would be at least $4|V(C)|-2$, contradicting the same edge bound. The proposed set therefore supplies at least two terminals. If the quotient has a single vertex, there are no two-edge cuts, so any two distinct terminals suffice; fewer provide no query.
+\end{proof}
+
+If only $A\subseteq V$ may be accessed, feasibility means that $A$ meets every required component; choose the cheapest vertex in each intersection. For a single-vertex quotient, $A$ must contain two distinct vertices. If $B_0$ is already accessible, pay only for required components not met by $B_0$, or add the cheapest allowed vertices until two are available in the trivial-quotient case. Nonnegative costs give the same optimum, possibly with additional zero-cost terminals. A standard linear-time cactus routine followed by a cost scan gives a linear-time access optimization; this computational ingredient is classical.
+
+For a cycle, every vertex is required. For a subdivision of a biconnected three-edge-connected core, all original core vertices form one component, while every inserted degree-two vertex is a required singleton component. Thus, with the original vertices already accessible, every subdivision vertex must be added to localize a deletion within its path. Before adding access, a single generic pair of original vertices identifies which original core edge was subdivided into the faulty path, but no permitted strategy locates the deleted edge within that path.
+
+\begin{theorem}[Identifying access preserves the query optima]\label{thm:accesspreserve}
+Let $B$ be any terminal set identifying all deletions generically in a biconnected graph. For every unrestricted pair query $q$, some pair $q_B\in\binom B2$ has a generic response partition refining that of $q$. Consequently
+\[
+ \A_B=\A_V,\qquad \N_B=\N_V.
+\]
+Every unrestricted decision tree can be simulated without increasing the depth for any individual fault, and hence without increasing expected depth under any fixed prior.
+\end{theorem}
+\begin{proof}
+Consider first a nontrivial cactus quotient $C$. Form a bipartite incidence tree $T$ with one node for every cactus vertex and one for every cactus cycle, connecting each cycle to its vertices. It is a tree because distinct cactus cycles attach in a tree-like pattern. Cycle nodes have degree at least two, so its leaves are exactly the cactus vertices of global degree two. Theorem~\ref{thm:access} says that $B$ meets each such leaf component.
+
+Map the endpoints of $q$ to quotient vertices $x,y$. If they differ, extend the unique $x$--$y$ path in $T$ at both ends to leaves $a,b$. The components reached by going away from the original path are disjoint, so the leaves are distinct and the extended path contains the original path unchanged. Any two-edge cut separating $x,y$ consists of two edges of one cactus cycle. On the incidence path, the two neighbors of that cycle node are the gates through which $x,y$ reach the cycle. The extended leaf path uses the same gates, so the cut also separates $a,b$. If $x=y$, no cut separates them and any two distinct leaves suffice.
+
+Choose terminals of $B$ in the leaf components $a,b$. Every two-edge cut crossed by $q$ is crossed by their query $q_B$. For any pair of faults distinguished by $q$, either it is not a cut pair and every query separates it generically, or its cut is crossed by $q$ and hence by $q_B$. Thus the latter partition refines the former. If the quotient is trivial, every pair query is already discrete generically, and any two terminals suffice.
+
+For a fixed generic weighting, the known finite dictionary gives a lookup from each $q_B$ answer to the corresponding $q$ answer: choose any consistent fault, whose $q$ response is independent of that choice by refinement. At each node of an unrestricted decision tree, perform $q_B$, apply this lookup, and follow the original branch. The simulation costs at most one query per original node and preserves every faultwise depth. For a fixed design, replace its queries separately and remove duplicate replacements. These give $\A_B\le\A_V$ and $\N_B\le\N_V$; the reverse inequalities follow because restricted pairs are a subset of unrestricted pairs.
+\end{proof}
+
+Thus minimum-cost identifying access can attain both unrestricted query optima, with a separate appropriate strategy for each objective. This is an exact generic, unit-query-cost conclusion. Refinement need not preserve numerical margins, noisy identifiability, or location-dependent measurement costs. In the nontrivial cactus, every cut shore contains a degree-two vertex and those singleton shores are disjoint, so $\nu(G)=|\mathcal L|$ as well.
+
+\section{Exact generic diagnosis on every connected graph}\label{sec:connected}
+Articulation points introduce an uninformative healthy answer, while bridges can produce infinity. These responses prevent the one-block formula from extending by a direct maximum over blocks. They nevertheless admit an exact normal form with a much smaller state space than arbitrary fault subsets.
+
+Throughout this section, $G$ is a connected simple graph with at least one edge, exactly one edge is deleted, and weights are simultaneously generic for every query, both between fault responses and against the healthy reference. A graph with one edge has $\A=\N=0$, since the fault is already known. Graphs with no edges have no fault hypothesis and are excluded. Unrestricted access is assumed until Section~\ref{sec:connectedaccess}.
+
+Partition $E$ into its nontrivial vertex-biconnected blocks and singleton bridges; call these \emph{pieces}. A nontrivial block has at least three vertices and contains no bridge. The block-cut tree determines the unique route between any two physical terminals. For a query $q=\{s,t\}$, a block on this route has distinct entrance and exit vertices, called its \emph{gates}; an endpoint lying inside the block is itself its corresponding gate. The active pieces of $q$ are its traversed blocks and the bridges separating $s,t$. All other pieces are inactive.
+
+\begin{theorem}[The response partition across blocks]\label{thm:blockpartition}
+The generic response partition of one query consists precisely of the following nonempty classes:
+\begin{enumerate}
+\item One class containing all edges in inactive pieces, with the healthy response $R_q$.
+\item One class containing all active bridges, with response $+\infty$.
+\item In each active nontrivial block, the local series-class gate arcs of Theorem~\ref{thm:counts}, with singleton series classes remaining singleton.
+\end{enumerate}
+The classes in the third group have finite responses strictly larger than $R_q$. Classes belonging to distinct active blocks have distinct responses. Empty classes are omitted.
+\end{theorem}
+\begin{proof}
+A unit current between $s,t$ uses only the block-cut route. Its energy is the sum of the effective resistances between successive block gates and the resistances of the intervening bridges. Components attached away from this route carry no current. Consequently a deletion in an inactive piece leaves $R_q$ unchanged, even if it disconnects an irrelevant component. Deleting an active bridge disconnects the terminals, giving infinity. Deleting an edge in an active nontrivial block changes only that block's local summand, and it does not disconnect the block.
+
+For distinct gates in a biconnected block, every edge lies on a simple gate-to-gate path. This follows, for example, by adding a gate link, subdividing the chosen edge, and using the common-cycle property of a biconnected graph. Lemma~\ref{lem:dependence}, or the nonzero transfer term in Lemma~\ref{lem:update}, then shows that the deletion increment is a nonzero rational function. It is nonnegative for every positive assignment and positive outside a proper algebraic exceptional set. Theorem~\ref{thm:counts} gives exactly its within-block equalities.
+
+Consider faults in two different active blocks. Their increments depend on disjoint sets of resistance variables. Scaling every resistance in the first block by a positive factor scales its nonzero increment by that factor and leaves the second increment fixed. Thus the two increments cannot be identical rational functions. Each accidental equality is therefore a proper algebraic condition. The same reasoning excludes equality of any active-block increment with zero. There are finitely many queries and fault comparisons, so simultaneous genericity avoids all these conditions at once. Infinity remains distinct from every finite value. This establishes the stated partition, including its healthy class.
+\end{proof}
+
+\subsection{A healthy spine followed by binary search}
+An answer is called healthy when it equals the known baseline $R_q$; this does not assert that the network has no fault. The exactly-one-fault promise is retained throughout.
+
+\begin{lemma}[Optimal binary tails]\label{lem:binarytails}
+Suppose the candidate set consists either of a nonempty consecutive arc containing $r$ edges of one block series class, or of $r$ bridges lying on one block-cut route, with gaps allowed. Its exact additional minimax query cost is $\ceil{\log_2 r}$ for $r\ge1$.
+\end{lemma}
+\begin{proof}
+For the series-arc case, a later query is either inactive in that block or projects to one local gate pair. It has at most two responses on the series class. Thus $d$ additional queries have at most $2^d$ leaves and require $d\ge\ceil{\log_2 r}$. Choose gates in the physical components bounding the middle of the surviving consecutive interval. The two resulting arcs split its candidates into sizes differing by at most one. Repeated interval bisection attains the bound, as in the proof of Theorem~\ref{thm:counts}.
+
+For bridge candidates, every query has only two possible responses: its healthy finite value or infinity. This yields the same lower bound. Order the remaining bridges along the route on which they lie. Choose a physical vertex between the two central candidate bridges and another vertex beyond the first candidate at one end of their span. The intervening query route contains precisely the desired initial segment of the ordered candidate list. Earlier eliminated bridges in the gaps do not affect which surviving candidates return infinity. Hence this query makes a balanced split, and iteration gives the upper bound. For $r=1$ no further observation is required.
+\end{proof}
+
+Number the pieces $1,\ldots,p$, with edge sets $E_i$. For a remaining piece set $U\subseteq\{1,\ldots,p\}$, define
+\[
+ w(U)=\sum_{i\in U}|E_i|,
+ \qquad H(q)=\{i:q\text{ activates piece }i\}.
+\]
+For $U\cap H(q)\ne\varnothing$, let $r(q,U)$ be the largest nonhealthy response-class size among edges in the pieces of $U$. By Theorem~\ref{thm:blockpartition}, this is the maximum of the number of active remaining bridges and the local series-arc sizes in active remaining blocks; omit zero sizes.
+
+\begin{theorem}[Healthy spine normal form and exact subset recurrence]\label{thm:spine}
+Every optimal adaptive strategy can be replaced, without increasing worst-case depth, by a sequence followed along healthy answers until the first nonhealthy answer, and then a balanced binary search. Define $F(U)=0$ for $w(U)\le1$. For $w(U)>1$, define
+\[
+ F(U)=\min_{q:\,U\cap H(q)\ne\varnothing}
+ \left[1+\max\left\{F\bigl(U\setminus H(q)\bigr),
+                \ceil{\log_2 r(q,U)}\right\}\right].
+\]
+Then
+\[
+ \A(G)=F(\{1,\ldots,p\}).
+\]
+After polynomial preprocessing of the topological partitions, a direct implementation uses $O(2^p n^2p)$ elementary combinatorial work and $O(2^p)$ memoization words in addition to preprocessing storage. This is fixed-parameter tractable in the number of blocks plus bridges; it is not a polynomial-time algorithm for arbitrary connected graphs.
+\end{theorem}
+\begin{proof}
+Initially all pieces are possible. On a healthy answer, precisely the edges in active pieces are eliminated, by Theorem~\ref{thm:blockpartition}. Therefore, until the first changed answer, the candidate set is always the union of whole pieces never activated by an earlier query. There is a single continuing healthy branch, so the queries on it form a fixed sequence once the strategy is specified. The sequence can stop as soon as at most one candidate edge remains.
+
+If the first nonhealthy answer is finite, it identifies one active block and one of that block's series arcs. If it is infinite, it identifies the currently surviving bridges on the query route. Lemma~\ref{lem:binarytails} gives the exact optimal continuation cost in either case. Replacing any continuation by this binary search cannot increase its worst-case depth.
+
+Now fix a state $U$ with $w(U)>1$ and its first query $q$. If it activates no remaining piece, every candidate has the same healthy answer, so it can be discarded. Otherwise, its healthy child has state $U\setminus H(q)$ and its largest changed child has optimal tail cost $\ceil{\log_2 r(q,U)}$. Minimizing the maximum child cost, plus the first query, proves the recurrence by induction on $|U|$: every retained query removes at least one piece on the healthy branch. If the healthy child is empty, it is unreachable; assigning it cost zero cannot raise the maximum because a changed child exists. A one-edge healthy child already identifies the fault and also costs zero. These boundary conditions depend on the exactly-one-fault model.
+
+There are $2^p$ possible piece subsets and at most $\binom n2$ queries. Store each query's active-piece mask and each active block's largest local class size; the structural decomposition and arc sizes are polynomial-time computable. Scanning the $p$ pieces computes $r(q,U)$ and the next state, giving the claimed work bound. One stored value and an attaining first query per subset suffice for memoization and policy reconstruction, while binary tails have their explicit construction above. The operation count is combinatorial; numerical response-dictionary calibration and decoding are separate costs.
+\end{proof}
+
+The normal form is genuinely adaptive: a first nonhealthy answer selects a block arc or bridge list that determines the later binary queries. Only its healthy spine is a preselected sequence. Equivalently, choose $q_1,\ldots,q_k$ with $U_0=\{1,\ldots,p\}$ and $U_i=U_{i-1}\setminus H(q_i)$, where every query hits a remaining piece and $w(U_k)\le1$. The worst-case cost is
+\[
+ \max_{1\le i\le k}\left[i+\ceil{\log_2 r(q_i,U_{i-1})}\right].
+\]
+Its minimum is $\A(G)$. A final healthy singleton has depth $k$, already bounded by this maximum. The one-edge, zero-query case is separate. For a single nontrivial block, the recurrence reduces exactly to Theorem~\ref{thm:counts}.
+
+\subsection{Fixed designs with bridge signatures}
+For a fixed family $Q$, project every query traversing a nontrivial block $B$ to its two physical gates in $B$. These projected pairs are formal augmentation links, allowing parallel links. For a bridge $e$, define its path-incidence signature
+\[
+ \chi_Q(e)=\bigl(\mathbf 1\{q\text{ traverses }e\}\bigr)_{q\in Q}.
+\]
+
+\begin{theorem}[The fixed design criterion on connected graphs]\label{thm:connectedfixed}
+A fixed query family $Q$ identifies every edge deletion generically if and only if both conditions hold:
+\begin{enumerate}
+\item Every nontrivial block $B$ is traversed by at least one query, and $B$ plus all its projected query links is three-edge-connected.
+\item The signatures $\chi_Q(e)$ of the original bridges are pairwise distinct.
+\end{enumerate}
+At most one bridge may have the all-zero signature, and such a signature is permitted. In a bridgeless graph, the conditions reduce to global three-edge-connectivity of $G+Q$ together with activation of every nontrivial block.
+\end{theorem}
+\begin{proof}
+If a nontrivial block is never traversed, all of its at least three candidate faults give the healthy vector, so identification fails. Once it is activated, Theorem~\ref{thm:counts} says that its internal fault pairs are separated exactly when its projected links augment it to three-edge-connectivity. For bridges, a query returns infinity precisely when its path-incidence coordinate is one; otherwise it returns its healthy value. Pairwise distinct bridge signatures are therefore necessary and sufficient for separating bridge faults.
+
+Assume the two conditions. Faults within one nontrivial block are separated by local augmentation. Faults in different blocks are separated either by a query activating only one of them, or by a query activating both, whose finite changed responses are generically distinct by Theorem~\ref{thm:blockpartition}. A bridge with a nonzero signature has an infinite coordinate, distinguishing it from every nonbridge fault. If one bridge has zero signature, a query activating any given nontrivial block separates its healthy response from every fault in that block. Thus all remaining pairs are separated. Two zero-signature bridges would coincide, which condition 2 forbids. The one-edge graph with the empty family satisfies the criterion vacuously.
+
+For the final equivalence, a two-edge cut in a bridgeless connected graph lies within one of its nontrivial blocks: any block meeting a cut contributes either zero or at least two cut edges. Its separation by a query link is precisely its separation by the corresponding projected gate link. Consequently covering all original two-edge cuts is equivalent to three-edge-connectivity of both the locally augmented blocks and $G+Q$. Activation is still an additional requirement for already-three-edge-connected blocks.
+\end{proof}
+
+A bouquet or chain of three-edge-connected blocks illustrates the activation issue. The original graph may already be three-edge-connected as an edge-connected graph, while a query misses an entire leaf block. Pure global augmentation cannot detect that loss of electrical information. Bridges are different again: all traversed bridge faults share the single infinity answer, so they cannot be assigned different analog values.
+
+\subsection{The classical tree boundary}
+On a tree, a deleted edge gives infinity exactly for query paths containing that edge; otherwise it gives the unchanged healthy resistance. Thus the problem becomes binary path-test diagnosis, a classical subject~\cite{IKT}. There is a useful exact relation between its two fault promises that does not require importing a historical algorithm or an exceptional-case formula.
+
+Let $D(T)$ be the fixed optimum for distinguishing the healthy tree from every single-edge fault, with $D(T)=0$ for a single vertex. Let $\N_{\mathrm{exact}}(T)$ be the fixed optimum when exactly one fault is promised. For a nonempty tree,
+\[
+ \N_{\mathrm{exact}}(T)=
+ \min\left\{D(T),\ \min_{e\in E(T)}
+       \bigl[D(T_e^{(1)})+D(T_e^{(2)})\bigr]\right\},
+\]
+where $T_e^{(1)},T_e^{(2)}$ are the two components of $T-e$.
+
+To prove the relation, consider an identifying path family. If every edge signature is nonzero, it also distinguishes the healthy tree and needs at least $D(T)$ tests. Otherwise exactly one edge $e$ has zero signature. No query crosses $e$, so every query lies entirely in one component of $T-e$. Every edge in either component must have a distinct nonzero signature, since a zero signature would coincide with that of $e$. Thus the queries within each component solve its healthy-or-one-fault problem, giving the displayed lower bound. Conversely, a healthy-or-one-fault design for the whole tree is an exactly-one design. Alternatively, combine such designs for both components of $T-e$ and infer $e$ when every answer is healthy. This proves equality, including the one-edge case. It is a transfer between classical path-testing models, not a claim of a new tree-testing algorithm.
+
+\section{Fixed optima and lossless access in bridgeless graphs}\label{sec:connectedaccess}
+We now obtain a closed fixed-count formula for every bridgeless connected simple graph with at least one edge, including arbitrary articulation structure. The local biconnected cacti must be joined in a way that records physical block activation, rather than merely their original two-edge cuts.
+
+For every nontrivial block $B$, let $C_B$ be its cactus quotient by three-edge-connected components, as in Section~\ref{sec:access}. Retain parallel edges and discard loops. Construct an auxiliary multigraph $K$ as follows:
+\begin{enumerate}
+\item Take disjoint copies of the local cacti $C_B$.
+\item For each original articulation vertex $a$, add a separate vertex $z_a$.
+\item For each incidence of $a$ with a block $B$, join $z_a$ to the vertex of $C_B$ representing $a$ by two parallel artificial edges.
+\end{enumerate}
+The block-cut incidence graph is a tree. Consequently $K$ is a bridgeless cactus, whose added incidence links are length-two cycles. No artificial node is an available physical terminal, and no resistor or edge of $K$ is inserted into the measured network.
+
+When $K$ is nontrivial, let $\mathcal D$ be its degree-two vertices and put $D=|\mathcal D|$. Associate to each $x\in\mathcal D$ a \emph{physical demand region} $R_x$:
+\begin{enumerate}
+\item If $x$ belongs to a nontrivial local cactus, $R_x$ is the original component represented by $x$. It has local degree two and contains no original articulation.
+\item If $x$ is a trivial local cactus, its block $B$ is a leaf block with one articulation $a$, and $R_x=V(B)\setminus\{a\}$.
+\end{enumerate}
+These are exactly all possibilities. Indeed $\deg_K(z_a)$ is twice the number of blocks incident with $a$, at least four. A nontrivial local cactus vertex has degree equal to its local degree plus twice the number of original articulations it represents. A trivial one has twice that latter number. Thus the degree-two test produces precisely the stated regions. In particular, in a three-edge-connected leaf block the representative must be private to the block, not its articulation. All demand regions are nonempty and pairwise disjoint.
+
+\begin{theorem}[Exact fixed optimum on bridgeless connected graphs]\label{thm:bridgelessfixed}
+For generic known positive weights and one complete edge deletion, if $K$ consists of one vertex then
+\[
+ \N(G)=1.
+\]
+Otherwise
+\[
+ \N(G)=\ceil{D/2}.
+\]
+An optimal design is constructible in polynomial time by classical minimum three-edge-connectivity augmentation of the auxiliary cactus, followed by physical endpoint replacement.
+\end{theorem}
+\begin{proof}
+First establish the endpoint lower bound. A region of the first type is a two-edge-cut shore in the physical graph, since it contains no articulation with an external attachment. If no query has an endpoint in the region, its two boundary-edge faults have identical answers. A region of the second type is the private vertex set of a leaf block. Without an endpoint there, no query traverses the block, and all its faults are invisible. Hence every identifying family needs at least one endpoint in each of the $D$ pairwise disjoint regions, requiring at least $\ceil{D/2}$ queries.
+
+For the upper bound, apply the classical augmentation theorem~\cite{WN,Szigeti} to nontrivial $K$. Its minimum number of links for three-edge-connectivity is $\ceil{D/2}$. To justify this specialization explicitly, every two-edge-cut shore of a bridgeless cactus contains a degree-two vertex, by the degree-sum argument in the proof of Theorem~\ref{thm:access}. Thus a subpartition of deficient shores has at most $D$ members, while the $D$ singleton degree-two shores are themselves a subpartition attaining that number. Every deficient shore has deficiency one, so the classical min--max value is exactly the claimed ceiling.
+
+We may replace the augmentation links so that all their endpoints lie in $\mathcal D$. Form the bipartite incidence tree of $K$, with one node for each cactus vertex and one for each cycle. Its leaves are precisely the degree-two cactus vertices. For any link, extend the unique incidence-tree path between its two endpoints to a leaf-to-leaf path without backtracking. Every two-edge cut crossed by the original link lies in one cactus cycle, and crossing is determined by the path's two gates at that cycle. The extended path preserves these gates. Therefore the replacement leaf link crosses every cut crossed by the original link. Replacing links independently preserves augmentation; duplicate replacement links, if any, can be discarded because all deficits are one.
+
+Choose one actual vertex $b_x\in R_x$ for every $x\in\mathcal D$, and replace each leaf link $xy$ by the physical query $\{b_x,b_y\}$. Distinct demand regions are disjoint, so these are genuine queries between distinct physical vertices. Coverage of every local cactus two-edge cut means that the projected links three-edge-connect each block. It remains to verify activation, which is not automatic from local cut coverage in a block with trivial cactus.
+
+If $B$ has nontrivial $C_B$, a query crossing any one of its local two-edge cuts traverses $B$ between distinct gates. If $C_B$ is trivial and there is more than one block, choose an incident doubled articulation link. The augmented cactus must have a leaf link crossing the two-edge cut consisting of that doubled link. Its incidence-tree path enters $B$'s component node and either leaves through a different articulation incidence or ends there at a leaf. In the first case its physical gates are distinct original articulations. In the second case $B$ is a leaf block and its chosen endpoint lies in $V(B)\setminus\{a\}$, distinct from the entering articulation. Thus $B$ is physically traversed in both cases. Theorem~\ref{thm:connectedfixed} proves that the constructed family identifies all faults. Its size is at most $\ceil{D/2}$, matching the lower bound.
+
+Finally, $K$ has one vertex exactly when $G$ is one already-three-edge-connected block. No graph augmentation is then needed, but the simple graph has multiple edge-fault hypotheses, so at least one query is needed. Any pair of distinct physical vertices distinguishes all faults generically by Theorem~\ref{thm:counts}. This proves the exceptional value one. Classical augmentation algorithms~\cite{WY}, cactus construction, leaf-path extension, and endpoint substitution are polynomial-time combinatorial procedures; this is a reduction to those algorithms, not a new augmentation algorithm.
+\end{proof}
+
+The count $D$ can be obtained without constructing the artificial links explicitly: count every degree-two local component containing no original articulation, and add every leaf block with trivial local cactus. No other region contributes. The one-block trivial-cactus case remains separate. With one nontrivial block, $D$ is the number of degree-two vertices of its ordinary cactus, so Theorem~\ref{thm:bridgelessfixed} recovers the fixed formula in Theorem~\ref{thm:counts}.
+
+\subsection{Minimum access and query refinement}
+Write $S\subseteq V$ for the accessible physical vertices in this section, reserving $B$ for an individual block. Access costs $a_v$ are positive.
+
+\begin{theorem}[Minimum access on bridgeless connected graphs]\label{thm:bridgelessaccess}
+If $K$ is nontrivial, a terminal set $S$ identifies all deletions generically if and only if it intersects every demand region $R_x$. Its minimum cardinality and minimum total access cost are
+\[
+ D,\qquad \sum_{x\in\mathcal D}\min_{v\in R_x}a_v.
+\]
+If $K$ has one vertex, identifiability is equivalent to $|S|\ge2$, and the cheapest access consists of the two cheapest distinct vertices.
+\end{theorem}
+\begin{proof}
+The endpoint lower bound in Theorem~\ref{thm:bridgelessfixed} proves necessity. If $S$ meets every region, choose each physical representative $b_x$ in $S\cap R_x$ and run that theorem's construction. All resulting queries are accessible and identify every fault. The regions are disjoint, so both cardinality and cost minimize independently within them. A nontrivial bridgeless cactus has at least two degree-two vertices by the same cactus edge bound used earlier, so these choices provide at least two terminals. In the one-vertex case, any two physical terminals suffice and fewer allow no query, while multiple faults must be distinguished.
+\end{proof}
+
+If only a specified pool of vertices may be exposed, intersect every demand region with that pool and test nonemptiness. Already accessible vertices eliminate the cost of their met regions. The same independent minimization then gives the additional access cost. These statements concern exposing terminals; they do not assume that adaptive testing can create new access.
+
+\begin{theorem}[Lossless accessible query simulation]\label{thm:bridgelessrefinement}
+Let $S$ satisfy the identifying-access criterion of Theorem~\ref{thm:bridgelessaccess}. For every unrestricted physical query $q$, there is a query $q_S\in\binom S2$ whose generic response partition refines that of $q$. Consequently
+\[
+ \A_S=\A_V,\qquad \N_S=\N_V.
+\]
+Every unrestricted decision tree has an accessible simulation without increasing its depth for any fault. In particular, the optimal expected depth under every fixed prior is preserved, with identification still required for all hypotheses.
+\end{theorem}
+\begin{proof}
+Lift physical vertices to $K$ carefully. An original articulation $a$ lifts to its separate node $z_a$. A nonarticulation belongs to one block and lifts to the vertex of that block's cactus representing its three-edge-connected component. This convention records which incident blocks an articulation-terminal query actually traverses.
+
+Suppose first that the endpoints of $q$ have distinct lifts. Extend their unique path in the incidence tree of $K$ to a leaf-to-leaf path and choose its two physical representatives in $S$. All local cactus-cycle passages of the original path remain with the same two gates. Hence every local two-edge cut separating the original query gates remains crossed by the replacement query.
+
+We must also show that every originally active block stays physically active, including blocks whose distinct physical gates lie in one contracted component. An internal block retains its original distinct articulation gates: even if those gates contract together locally, their different doubled articulation incidences remain on the path. At an endpoint block, extension cannot return along the entering incidence. Continuing through another local cactus cycle reaches a different component gate. Continuing through another articulation incidence reaches a different original vertex. If extension ends at a leaf component, its physical representative either lies in a component containing no articulation, or lies in the private region of a trivial-cactus leaf block. It is again distinct from the entering articulation. Finally, an original articulation endpoint is represented by $z_a$ itself; extending away from it adds blocks on its other side and does not erase the original block passage. Thus every formerly active block remains traversed between distinct physical gates.
+
+Now suppose the two distinct physical endpoints have the same lift. They must be nonarticulations in the same three-edge-connected component of one block $B$. The original query activates $B$ alone and crosses none of its local two-edge cuts. Its within-block classes are therefore the full series classes, and all outside faults form its healthy class. By Theorem~\ref{thm:bridgelessaccess}, some accessible fixed design identifies every fault, so at least one accessible query traverses $B$. Choose such a query. It cannot merge different series classes of $B$, although it may split them. It separates every $B$ fault from every outside-block fault, and any additional activated blocks only divide the original healthy class. Thus it refines the original query. This also covers the exceptional case in which $K$ consists of one vertex: any two distinct vertices of $S$ give a discrete partition.
+
+In the distinct-lift case, the same conclusion now follows from Theorem~\ref{thm:blockpartition}. Original within-block distinctions survive because every previously crossed cut remains crossed. Different originally active blocks remain generically distinguishable. Newly activated blocks split the old healthy class and cannot merge it with an old active class. The graph is bridgeless, so no added activation can enlarge an infinity class. This proves partition refinement in both cases.
+
+Fix the known generic weighting and its response dictionaries. For each replacement answer, refinement supplies a well-defined lookup giving the original query's answer: every fault consistent with the replacement answer gives that same original answer. At each node of an unrestricted tree, ask its accessible replacement, apply the lookup, and follow the original branch. For every actual fault the simulated original history is identical. It reaches the same leaf at the same depth, or can terminate earlier if the extra distinctions are used. Thus every faultwise depth vector is attainable or improved, including for priors assigning zero probability to some hypotheses while requiring their identification. Replacing the queries of a fixed design separately, and discarding duplicate replacements, likewise cannot increase its cardinality. Reverse inequalities follow because every accessible query is unrestricted. This proves all the conclusions.
+\end{proof}
+
+The identifying-access hypothesis is essential. The theorem does not claim refinement for an arbitrary terminal set. Bridgelessness is also essential to this proof: extending a path in a graph with bridges can add formerly untested bridges to an existing infinity class and merge faults that the original query distinguished. The result preserves exact generic, unit-cost query complexity; it gives no guarantee for numerical separation, bounded-error performance, or location-dependent query costs.
+
+\subsection{Two contrasting articulation families}
+\begin{corollary}[Already three edge connected blocks]\label{cor:leafblocks}
+Suppose $G$ is bridgeless and every nontrivial block is three-edge-connected. If there are multiple blocks and $L$ of them are leaf blocks, then
+\[
+ \A(G)=\N(G)=\ceil{L/2}.
+\]
+For one block, $\A=\N=1$.
+\end{corollary}
+\begin{proof}
+The demand regions are exactly the private regions of the leaf blocks, so Theorem~\ref{thm:bridgelessfixed} gives the fixed upper bound. For an adaptive lower bound, follow the healthy spine. Each query uses endpoints in at most two leaf-block private regions and can therefore activate at most two previously untouched leaf blocks. Any untouched block still contains at least three possible faults and permits the healthy continuation, so the strategy cannot finish while one remains untouched. Hence that actual branch has at least $\ceil{L/2}$ queries. If the final query removes every candidate from its healthy branch, some changed branch still reaches that query at the same depth. Thus the argument gives a genuine worst-case adaptive lower bound, rather than counting endpoints across mutually exclusive branches. The one-block statement is Theorem~\ref{thm:counts}.
+\end{proof}
+
+In contrast, let $G$ be a chain of $k\ge1$ triangles, with distinct successive articulation vertices in each internal triangle. Its demand count is $D=k+2$, so
+\[
+ \N(G)=\ceil{(k+2)/2},\qquad \A(G)=2.
+\]
+An end-to-end query activates every triangle and leaves at most two edges in any response class; Lemma~\ref{lem:binarytails} resolves those with one further query. No one query suffices, because in any triangle its three-edge series class either is inactive or is split into at most two arcs. For $k=1$ the same reasoning applies. A bouquet of triangles has different demand regions, so the distinct-articulation chain convention matters.
+
+\section{Realizing exact gaps beyond special weights}\label{sec:realization}
+The biconnected formulas remain useful for explicit constructions within the broader connected-graph theory. We record two consequences: exact linear gaps without degree-two vertices, and a constructive interpretation of genericity.
+
+\begin{theorem}[Planar cubic linear gaps]\label{thm:cubic}
+Let $H$ be any simple planar three-edge-connected cubic graph with $h$ vertices and $p=3h/2$ edges. Replace each core edge $uv$ by a fresh copy of $K_4-ab$, joining its missing-edge endpoints $a,b$ to $u,v$ by two attachment edges. The resulting graph $G_H$ is simple, planar, cubic, and biconnected. It has $7h$ vertices and $7p$ edges. For generic known positive weights,
+\[
+ \A(G_H)=2,\qquad \N(G_H)=\ceil{p/2}.
+\]
+\end{theorem}
+\begin{proof}
+The missing-edge ports lie on a common face of $K_4-ab$, so the gadget can be inserted along the planar drawing of each core edge. Its four vertices all have degree three after attachment, and every original vertex retains degree three. A three-edge-connected cubic graph has no articulation: at an articulation, one of at least two resulting components would have only one of the three incident edges, contradicting three-edge-connectivity. Thus deleting a core vertex leaves the remaining construction connected. Deleting a gadget vertex leaves its remaining vertices connected to one or both ports, while $H-uv$ supplies an external route between the core endpoints. Hence $G_H$ is biconnected.
+
+The only two-edge cuts are the two attachments of one gadget. To check this, two attachments in different gadgets remove at most two distinct core links, leaving $H$ connected and every gadget still attached. One attachment and one internal edge cannot disconnect: $K_4-ab$ has no bridge, and the external core remains connected. Internal deletions in different gadgets likewise leave each connected. Two internal deletions in one gadget leave it connected when its two ports are linked externally, because restoring the virtual port edge gives $K_4$, which remains connected after two edge deletions. Finally, the two attachments of one gadget do isolate it.
+
+Thus all nonsingleton series classes have size two and correspond to the $p$ disjoint gadget shores. A query can cross at most two of these shores, since it has only two endpoints. With $p\ge3$, every first query leaves an unsplit class, so $\kappa=2$ and Theorem~\ref{thm:counts} gives $\A=2$. A fixed set must touch every gadget, requiring at least $\ceil{p/2}$ pairs. Pairing one representative per gadget, with one overlapping pair if $p$ is odd, crosses every deficient cut and attains the bound.
+\end{proof}
+
+This example separates the general cut obstruction from the familiar unobserved-degree-two obstruction. With prism cores $H=C_k\mathbin{\square}K_2$, the construction has $14k$ vertices and fixed optimum $\ceil{3k/2}$. Generic weights may be chosen in any positive open box, including $(1,2)^E$.
+
+\begin{proposition}[Finite bit generic realizations]\label{prop:grid}
+For a biconnected simple graph, let
+\[
+ J=\binom n2\binom m2,\qquad d=2n-3,\qquad S\ge2dJ
+\]
+be integers. Independently choose $j_e$ uniformly from $\{1,\ldots,S\}$ and set
+\[
+ c_e=\frac{S+j_e}{2S},\qquad r_e=\frac{2S}{S+j_e}.
+\]
+With probability at least one half, all exact query partitions are the structural partitions of Theorem~\ref{thm:counts}. Checking those partitions and resampling otherwise is a Las Vegas procedure with expected at most two trials and expected bit complexity polynomial in $n,m,\log S$. Each resistance is in $[1,2)$ and has $O(\log S)$ bits. In particular, choosing $S=2dJ$ gives $O(\log(nm))$-bit resistances and expected bit complexity polynomial in the graph size. On an accepted weighting, distinct scalar responses differ by at least $D^{-2}$, and additive error $\varepsilon<1/(2D^2)$ preserves both exact optimum counts, where $D=(2mS)^{n-1}$.
+\end{proposition}
+\begin{proof}
+For a connected deleted graph, the matrix-tree and two-forest formulas express $R_{uv}=F/T$, where $F,T$ are conductance polynomials of degrees $n-2,n-1$. A nonidentity difference of two responses therefore has a nonzero cross-multiplied numerator of degree at most $2n-3$. Affine substitution of the integer variables $j_e$ preserves nonzeroness.
+
+The elementary polynomial grid bound states that a nonzero polynomial of total degree at most $d$ vanishes at independent uniform points of an $S$-element grid with probability at most $d/S$. One proves it by induction on the number of variables: isolate the highest power in the last variable, bound failure of its nonzero leading coefficient by induction, and use the univariate root bound otherwise. A union bound over at most $J$ comparisons gives probability of any accidental equality at most $dJ/S\le1/2$. Exact rational Laplacian arithmetic checks the full response dictionary against the topological partitions. Its arithmetic and bit costs are polynomial because the input and determinant sizes have polynomial bit length.
+
+Put $a_e=S+j_e\le2S$. Each response is $2S$ times an integer forest polynomial divided by the integer spanning-tree polynomial. The latter has at most $m^{n-1}$ terms, each at most $(2S)^{n-1}$, so its value is at most $D$. The reduced denominator of each response is therefore at most $D$. Distinct rationals with such denominators differ by at least $D^{-2}$. Error intervals for unequal responses are disjoint at the stated bound; structurally equal responses remain indistinguishable because the adversary may return their exact common value. This preserves the upper and lower query counts.
+For the polynomial-size choice $S=2dJ$, $\log D=O(n\log(nm))$, so the sufficient error tolerance requires only polynomially many precision bits.
+\end{proof}
+
+The absolute precision bound is exponentially small in graph size, although the number of precision bits is polynomial for $S=2dJ$. It is not an inverse-polynomial robustness guarantee. The explicit family below has a stronger quantitative margin and avoids randomized weight selection.
+
+\section{An explicit bounded resistance reference family}\label{sec:weighted}
+Throughout this section and the severity analysis, $p$ denotes the number of branches, so $K_{2,p}$ has $p+2$ vertices and $2p$ edges. For $p\ge3$, its hubs are $s,t$ and its peripheral vertices are $v_1,\ldots,v_p$. Assign
+\[
+ r(sv_i)=1,\qquad r(tv_i)=b_i=2+\frac{i}{p+1}.
+\]
+All resistances lie in $[1,3)$ and have $O(\log p)$-bit descriptions. Define
+\[
+ g_i=(1+b_i)^{-1},\quad C=\sum_i g_i,\quad
+ H_i=(C-g_i)^{-1}.
+\]
+Then $1/4<g_i<1/3$ and all $g_i$ are distinct.
+
+\begin{lemma}[Elimination of a parallel branch]\label{lem:elimination}
+For arbitrary positive branch resistances $a_i=r(sv_i)$ and $b_i=r(tv_i)$, put
+\[
+ w_i=\frac{a_i b_i}{a_i+b_i},\quad
+ \beta_i=\frac{a_i}{a_i+b_i},\quad
+ H=\left(\sum_i\frac1{a_i+b_i}\right)^{-1}.
+\]
+The pair responses are
+\[
+ R_{st}=H,\qquad R_{sv_i}=w_i+\beta_i^2H,\qquad
+ R_{tv_i}=w_i+(1-\beta_i)^2H,
+\]
+and
+\[
+ R_{v_iv_j}=w_i+w_j+(\beta_i-\beta_j)^2H.
+\]
+\end{lemma}
+\begin{proof}
+Eliminating an unqueried degree-two vertex replaces its branch by conductance $(a_i+b_i)^{-1}$. For a queried vertex $v_i$ with unit current injection, minimize the branch dissipation over the currents sent into the two hubs. Completing the square leaves an unavoidable local term $a_i b_i/(a_i+b_i)$ and the fraction $a_i/(a_i+b_i)$ injected toward the second hub. With two queried vertices the local terms add, while their net hub injection is the difference of these fractions. Dissipation in the reduced hub network is the square of this injection times $H$. With a hub as the second terminal the same computation has only one local term. These give all displayed formulas.
+\end{proof}
+
+\begin{theorem}[Explicit deletion gap]\label{thm:weighted}
+For the prescribed complete-deletion model on this weighted $K_{2,p}$,
+\[
+ \A=2,\qquad \N=\ceil{p/2}.
+\]
+\end{theorem}
+\begin{proof}
+A query $\{s,t\}$ returns $H_i$ and identifies the faulty branch because the $g_i$ are distinct. Then $\{s,v_i\}$ returns $1$ if $tv_i$ failed, or $b_i+H_i$ if $sv_i$ failed, so two queries suffice.
+
+If a peripheral vertex is never a terminal, deleting either of its incident edges leaves an unobserved pendant vertex. Removing its zero-current surviving edge reduces both hypotheses to the same network on the observed vertices. Every query uses at most two peripheral vertices, so one query cannot identify all faults for $p\ge3$, and every fixed identifying set needs at least $\ceil{p/2}$ queries.
+
+For a matching upper bound, cover the peripheral vertices by that many pairs, using disjoint pairs with one overlap when $p$ is odd. Fix a queried pair $\{v_a,v_b\}$ and put $x=g_a$, $y=g_b$, $h=C-x-y>0$, and $D_0=(C-x)(C-y)$. Circuit elimination gives
+\begin{align*}
+ O_i&=2-x-y+(x-y)^2H_i &&(i\notin\{a,b\}),\\
+ L_a&=2-y+\frac{y^2}{C-x} &&(tv_a\text{ deleted}),\\
+ L_b&=2-x+\frac{x^2}{C-y} &&(tv_b\text{ deleted}),\\
+ U_a&=\frac1x-y+\frac{(1-y)^2}{C-x} &&(sv_a\text{ deleted}),\\
+ U_b&=\frac1y-x+\frac{(1-x)^2}{C-y} &&(sv_b\text{ deleted}).
+\end{align*}
+Here either fault orientation on an outside branch gives $O_i$. Since $H_i<4/(p-1)\le2$ and $1/4<x,y<1/3$,
+\[
+ O_i<\frac{109}{72}<\frac53<L_a,L_b<\frac{71}{36}<\frac83<U_a,U_b.
+\]
+For instance, $O_i<3/2+2(1/12)^2=109/72$; the other bounds follow by inserting the same ranges in the displayed formulas. The only possible remaining collisions are within the lower or upper incident pair. Direct subtraction yields
+\[
+ L_a-L_b=\frac{(x-y)h^2}{D_0},
+\]
+and
+\[
+ U_a-U_b=-\frac{(x-y)h\{h(1-xy)+x+y-2xy\}}{xyD_0}.
+\]
+Both are nonzero because $x\ne y$, $h>0$, and $x+y-2xy>0$. Thus each pair query distinguishes its four incident faults individually and from all nonincident faults. A cover separates every two faults and meets the lower bound.
+\end{proof}
+
+This is a maximal-order gap in the number of hypotheses. Any finite identifiable dictionary with $M$ hypotheses has $\N\le M-1$: repeatedly add a query that separates a still-indistinguishable pair, increasing the number of response classes at each step. Thus no gap can grow faster than linearly in $M$.
+
+\begin{proposition}[Explicit measurement margins]\label{prop:weightedprecision}
+Set
+\[
+ d_A=\frac{9}{16(p+1)(p-1)^2},\qquad
+ d_F=\frac{9(p-2)^2}{256(p+1)(p-1)^2}.
+\]
+The two-query adaptive strategy is valid under additive error $\varepsilon<d_A/2$. The fixed pair cover is valid for $\varepsilon<d_F/2$. Under the smaller of these bounds both exact optima remain unchanged.
+\end{proposition}
+\begin{proof}
+For $i\ne j$, the spacing of $b_i$ gives
+\[
+ |g_i-g_j|>\frac1{16(p+1)},\qquad
+ |H_i-H_j|=\frac{|g_i-g_j|}{(C-g_i)(C-g_j)}>d_A,
+\]
+because each denominator factor is less than $(p-1)/3$. The second adaptive query separates its answers by more than one.
+
+For a peripheral pair, $h>(p-2)/4$, so the lower incident difference in the preceding proof exceeds $d_F$ in magnitude. The upper difference has more than eight times that magnitude because $(1-xy)/(xy)>8$. Gaps between the three response ranges are at least $11/72>d_F$. Thus every two fixed response vectors have a coordinate separation exceeding $d_F$. Disjoint bounded-error intervals give the upper bounds; zero error is allowed, so the exact lower bounds remain valid.
+\end{proof}
+
+For $p\ge6$, a common sufficient bound is $\varepsilon<9/[32(p+1)(p-1)^2]$. This states a precision cost, rather than hiding a branch index in an exact real number. The hub answers occupy an interval of width less than $4/[3(p-1)^2]$, so some adjacent spacing is at most $4/[3(p-1)^3]$. The $p^{-3}$ order is unavoidable for this particular hub encoding. These error bounds concern measurements with known component values, not arbitrary component tolerance.
+
+\section{Universal recovery of an unknown finite change}\label{sec:universal}
+The deletion hypothesis can be relaxed without assuming genericity. The response increment under one finite change is a scaled one-dimensional squared-distance matrix. Two stars reconstruct that matrix's coordinate vector sufficiently to expose the sparse fault support.
+
+\begin{theorem}[Universal scalar recovery]\label{thm:universal}
+Let $G$ be a known connected weighted simple graph on $n\ge2$ vertices. Suppose exactly one existing edge changes conductance by a nonzero finite amount, leaving all conductances nonnegative and the graph connected. A deterministic adaptive procedure identifies its endpoints and the conductance change with at most $2n-3$ pair-resistance queries. No generic-weight assumption, finite severity dictionary, or enumeration of candidate edges is required.
+\end{theorem}
+\begin{proof}
+Let the unknown edge have incidence $b_e$, let $p=L^+b_e$, and use $\gamma$ from Lemma~\ref{lem:update}. Pick any root $r$ and query all $n-1$ pairs $\{r,v\}$. At least one increment is nonzero: otherwise $p_v=p_r$ for every $v$, contradicting $Lp=b_e$. Select an anchor $a$ with nonzero increment and set $\sigma$ to that increment's sign. All nonzero increments have sign $\sigma$.
+
+Write $D_{uv}=\sigma(R'_{uv}-R_{uv})\ge0$. Query the additional $n-2$ pairs $\{a,v\}$ with $v\notin\{r,a\}$, and define
+\[
+ z_r=0,\qquad z_a=D_{ra},\qquad
+ z_v=\frac{D_{ra}+D_{rv}-D_{av}}2
+ \quad(v\notin\{r,a\}).
+\]
+Expanding the squared-distance identity yields
+\[
+ z_v=|\gamma|(p_a-p_r)(p_v-p_r).
+\]
+Therefore
+\[
+ Lz=|\gamma|(p_a-p_r)b_e
+\]
+has exactly two nonzero coordinates. Their locations identify the two endpoints, which specify one edge because the graph is simple. If $t$ is either nonzero coordinate of $Lz$, then
+\[
+ \gamma=\frac{\sigma t^2}{D_{ra}},\qquad
+ \delta=-\frac{\gamma}{1+\gamma R_e}.
+\]
+The second denominator equals $1/(1+\delta R_e)>0$, so recovery is valid. The new conductance is $c_e+\delta$, with zero recognizing a complete nonbridge deletion. The procedure used $(n-1)+(n-2)=2n-3$ measurements and only rational operations after the baseline calculations.
+\end{proof}
+
+The baseline inverse may be precomputed. Given its predicted queried values, the measured-coordinate reconstruction costs $O(n)$ arithmetic operations and multiplication by $L$ costs $O(m)$. Rational known weights and rational finite changes give polynomial bit-length arithmetic, but exact-oracle input precision remains a separate resource. The budget $2n-3$ is not claimed optimal for every graph. The bounded-severity lower bound in the next section proves worst-case order optimality, $\Omega(n)$, even when changes stay in a fixed compact interval.
+
+\begin{proposition}[A support recovery margin]\label{prop:universalnoise}
+Let each queried changed resistance have additive error at most $\varepsilon$, with the healthy baseline computed exactly. Define
+\[
+ M=\max_v|R'_{rv}-R_{rv}|>0,\qquad
+ D=\max_v\sum_{e\ni v}c_e.
+\]
+Choose $a$ maximizing the absolute observed root increment and take its observed sign $\sigma$. Form the same $z$ from these sign-corrected observations. The two largest absolute coordinates of $Lz$ are the faulty endpoints whenever
+\[
+ \varepsilon\le M/4,\qquad
+ \varepsilon<\frac{\sqrt{|\gamma|M/2}}{6D}.
+\]
+In particular, it suffices that
+\[
+ \varepsilon\le\frac{|\gamma|R_e^2}{16},
+ \qquad
+ \varepsilon<\frac{|\gamma|R_e}{24D}.
+\]
+\end{proposition}
+\begin{proof}
+The largest observed root increment has magnitude at least $M-\varepsilon$. Its true magnitude is at least $M-2\varepsilon\ge M/2>\varepsilon$, so its sign is correct. Compare the reconstructed vector with the exact vector for this selected anchor. Its nonanchor coordinate errors are at most $3\varepsilon/2$, its anchor error at most $\varepsilon$, and its root error zero. Each Laplacian row has absolute sum at most $2D$, hence
+\[
+ \|Lz_{\mathrm{observed}}-Lz_{\mathrm{true}}\|_\infty\le3D\varepsilon.
+\]
+The two true nonzero magnitudes equal
+\[
+ t_0=|\gamma||p_a-p_r|
+ \ge\sqrt{|\gamma|M/2}.
+\]
+The strict second condition makes the error less than $t_0/2$. The two true-support coordinates then exceed every off-support coordinate in magnitude.
+
+The potential difference across the faulty edge is $R_e$, so at least one of its endpoints differs from the root potential by at least $R_e/2$. Thus $M\ge|\gamma|R_e^2/4$. The first simpler condition implies $\varepsilon\le M/4$. The second is more conservative than $|\gamma|R_e/(12\sqrt2D)$, which in turn is at most the displayed signal-dependent threshold. This proves sufficiency.
+\end{proof}
+
+This is a support guarantee, not a uniform accuracy guarantee for severity near a singular inverse parameter map. Arbitrarily small changes give arbitrarily small signals; no fixed positive error can distinguish all such faults. Classical low-rank analog diagnosis often observes richer transfer voltages under chosen excitations~\cite{TK,LS}. The theorem above uses only scalar driving-point pair measurements. Its distance reconstruction and Sherman--Morrison algebra are elementary prior tools; priority of the exact combined scalar-query guarantee remains unconfirmed.
+
+\section{How severity uncertainty changes the optimum}\label{sec:severity}
+Return to the explicit $K_{2,p}$ from Section~\ref{sec:weighted}, with $p\ge4$. Exactly one resistance increases by an unknown amount $t$ in a prescribed interval $[a,b]$. The two edges on one branch have the same effect on that branch's total resistance when changed by the same amount, but different local effects if the branch vertex is measured.
+
+\begin{lemma}[A common loss adversary]\label{lem:severitylower}
+Consider $p$ internally disjoint paths, each with at least two edges, joining two hubs. Suppose a set of $k$ paths each admits two distinct edge faults that reduce that path's conductance by the same positive amount $\lambda$, independent of the path. Then every adaptive identifying pair-query strategy has worst-case depth at least $\ceil{k/2}$.
+\end{lemma}
+\begin{proof}
+Retain the two designated faults on each untouched candidate path. A query touches internal vertices of at most two paths; discard those paths from the retained set. Every remaining fault gives the same response: elimination of its unqueried path reduces the total hub conductance by the same $\lambda$, while the queried branches and their internal components remain unchanged. Answer with that common response. After fewer than $\ceil{k/2}$ queries, at least one path remains untouched and its two faults are compatible with the entire transcript. Either is a fixed physical explanation of all answers, so the strategy cannot stop.
+\end{proof}
+
+The branch total is $L_i=1+b_i\in(3,4)$. Increasing either edge by $t$ reduces the branch conductance by
+\[
+ f_{L_i}(t)=\frac{t}{L_i(L_i+t)}.
+\]
+The admissible losses therefore form intervals
+\[
+ I_i=\left[\frac{a}{L_i(L_i+a)},\,\frac{b}{L_i(L_i+b)}\right],
+ \qquad
+ K=\max_{\lambda>0}|\{i:\lambda\in I_i\}|.
+\]
+This overlap statistic quantifies how many branch identities can be hidden by choosing different allowed severities.
+
+\begin{lemma}[Projective pair cover]\label{lem:projective}
+A fixed cover of the peripheral vertices by $\ceil{p/2}$ pairs identifies every edge and every nonzero finite resistance change preserving positivity on the changed edge.
+\end{lemma}
+\begin{proof}
+For $q=\{v_a,v_b\}$, set $d=g_a-g_b\ne0$. By Lemma~\ref{lem:update}, the resistance increment for an edge fault is a scalar depending on its magnitude times a squared transfer signature. Normalizing by its nonzero hub increment $\Delta R_{st}$ gives these five coefficients:
+\[
+ \begin{array}{c|c}
+ \text{fault location}&\Delta R_q/\Delta R_{st}\\ \hline
+ \text{outside branches }a,b&d^2\\
+ sv_a&(d+b_a C)^2\\
+ tv_a&(C-d)^2\\
+ sv_b&(b_b C-d)^2\\
+ tv_b&(C+d)^2
+ \end{array}
+\]
+To derive them explicitly, the unit hub excitation sends current $g_i/C$ through branch $i$. For a unit excitation from $v_a$ to $v_b$, completing the square as in Lemma~\ref{lem:elimination} gives the hub potential difference $-d/C.$ The voltage-drop ratio on an outside edge is therefore $-d$, and the ratios on the four incident edges, up to orientation signs irrelevant after squaring, are $d+b_aC$, $C-d$, $b_bC-d$, and $C+d$. The rank-one formula removes the common fault-dependent scalar, yielding the table. No hub query is actually taken in this fixed scheme.
+
+The four incident coefficients are distinct and exceed $d^2$. Indeed, $|d|<1/12$ and $C>p/4\ge1$, so $C>|2d|$. The roots $C-d,C+d$ are distinct and exceed $|d|$. The two other positive roots exceed $2C-|d|>C+|d|$, and their difference is
+\[
+ (d+b_aC)-(b_bC-d)=(b_a-b_b)(C-2g_ag_b)\ne0.
+\]
+Here $b_a\ne b_b$ and $C\ge g_a+g_b>2g_ag_b$.
+
+Choose disjoint pairs $(1,2),(3,4),\ldots$; when $p$ is odd, use $(1,2),\ldots,(p-2,p-1),(p-1,p)$. Divide each query coordinate by its positive outside coefficient $d^2$. Every edge's resulting column equals one away from queries touching its branch, and is strictly greater than one on those queries. Two incomparable supports cannot give proportional columns: a coordinate exclusive to each would force the proportionality constant to be both greater and less than one. Comparable supports in this cover have a common outside coordinate for $p\ge4$, so proportionality would force constant one. Distinct supports then contradict their entries, while equal supports are separated by the four distinct incident coefficients. The two edges of the same branch likewise have distinct incident coefficients. Hence all edge columns are nonzero and pairwise nonproportional.
+
+The observed increment vector identifies the edge's line, including its sign, then the scalar $\Delta R_{st}$. In the positive-increase case, if that scalar is $u$, the loss is $\lambda=C^2u/(1+Cu)$ and the resistance increase is $t=\lambda/[g_i(g_i-\lambda)]$. The rank-one inverse formula gives the same recovery for negative changes. Thus both location and magnitude are determined.
+\end{proof}
+
+\begin{theorem}[An interval overlap law]\label{thm:severity}
+For exact measurements and resistance increase $t\in[a,b]$ on the explicit $K_{2,p}$,
+\[
+ \N_{[a,b]}=\ceil{p/2},
+\]
+and
+\[
+ \max\{2,\ceil{K/2}\}
+ \le\A_{[a,b]}
+ \le\min\{\ceil{p/2},\,1+\ceil{K/2}\}.
+\]
+If $a=b$, then $\A=2$. If $[a,b]=[1/2,1]$, then
+\[
+ \A=\N=\ceil{p/2}.
+\]
+The latter equality also holds when every positive finite increase is allowed.
+\end{theorem}
+\begin{proof}
+Any fixed query set must touch every $v_i$, since its two incident edges changed by the same admissible amount give identical responses when it is never queried. This gives $\N\ge\ceil{p/2}$, and Lemma~\ref{lem:projective} attains it.
+
+A common loss in $K$ intervals gives $\A\ge\ceil{K/2}$ by Lemma~\ref{lem:severitylower}. A first query always leaves a peripheral vertex unused for $p\ge4$, and its two equal-severity incident faults coincide on that first answer; hence $\A\ge2$. For the upper bound, a hub query determines $\lambda=C-1/R'_{st}$ exactly and leaves at most $K$ candidate branches. It also gives the normalization scalar for the coefficient table. Pair the surviving peripheral vertices and query each pair; its four incident coefficients distinguish all incident candidates individually from outside candidates. Pair an odd last candidate with any other peripheral vertex. This needs at most $\ceil{K/2}$ more tests. Alternatively use the fixed cover.
+
+When $a=b$, $f_L(a)$ strictly decreases in $L$, so $K=1$. For $[1/2,1]$, take $\lambda=1/20$ and
+\[
+ t_i=\frac{L_i^2}{20-L_i}.
+\]
+This increases from $9/17$ to $1$ as $L_i$ runs from $3$ to $4$, so every $t_i\in(9/17,1)$ is permitted and $K=p$. The lower bound equals the fixed upper bound. The same finite list of faults supplies the lower bound if all positive magnitudes are allowed.
+\end{proof}
+
+\begin{corollary}[An uncertainty width threshold]\label{cor:width}
+For severity $t\in[1,1+\delta]$, $0\le\delta\le1$, the explicit family satisfies
+\[
+ \A_{[1,1+\delta]}=\Theta(\min\{p,1+\delta p\}),
+ \qquad \N_{[1,1+\delta]}=\ceil{p/2},
+\]
+with universal constants. More explicitly,
+\[
+ \min\!\left\{p,1+\floor{\frac47\delta(p+1)}\right\}
+ \le K\le
+ \min\!\left\{p,1+\frac{25}{9}\delta(p+1)\right\}.
+\]
+\end{corollary}
+\begin{proof}
+On $L\in[3,4]$, $t\in[1,2]$, the derivative $\partial f_L(t)/\partial t=1/(L+t)^2$ lies between $1/36$ and $1/16$. Each interval has length between $\delta/36$ and $\delta/16$. Its lower endpoint is $h(L)=1/[L(L+1)]$, whose derivative magnitude $(2L+1)/[L^2(L+1)^2]$ lies between $9/400$ and $7/144$. Since neighboring $L_i$ differ by $1/(p+1)$, neighboring lower endpoints have spacings in the corresponding divided interval.
+
+Intervals covering one point have lower endpoints spanning at most $\delta/16$. The minimum spacing gives the upper bound on $K$. Starting at the smallest lower endpoint $x$, every interval beginning in $[x,x+\delta/36]$ covers $x+\delta/36$. The maximum spacing gives the lower bound. Inserting these estimates in Theorem~\ref{thm:severity} proves the order statement, including $\delta=0$.
+\end{proof}
+
+Consequently constant adaptive complexity requires uncertainty width $O(1/p)$ in this family. A prescribed finite increase, just like complete deletion, retains the two-query strategy; uncertainty in magnitude is the operative distinction. Combining the compact-interval lower bound with Theorem~\ref{thm:universal} gives an $O(n)$ upper and $\Omega(n)$ lower across general known graphs and unknown finite changes.
+
+\subsection{Noise can preserve or destroy identification}
+The effect of noise also depends on the severity range. For $t\in[1/2,1]$, the local term $w_i$ from Lemma~\ref{lem:elimination} increases by
+\[
+ \Delta w_S=\frac{b_i^2t}{(1+b_i)(1+b_i+t)}
+ \quad\text{or}\quad
+ \Delta w_T=\frac{t}{(1+b_i)(1+b_i+t)}
+\]
+according as the $s$-edge or $t$-edge changes. Uniformly,
+\[
+ \Delta w_T\in[1/36,1/12],\qquad
+ \Delta w_S\in[4/21,9/20].
+\]
+These bounds follow by monotonicity in $t$ and $b_i\in[2,3]$. An unchanged branch has local increment zero. In either the healthy or faulty network, the remaining $p-1$ branches give hub resistance less than $4/(p-1)$. Every nonlocal term in a hub-peripheral or peripheral-pair query lies between zero and that bound. Its measured increment therefore differs from the local increment by at most
+\[
+ e_{\mathrm{tot}}=\varepsilon+\frac4{p-1}.
+\]
+If $e_{\mathrm{tot}}<1/72$, the expanded local classes $\{0\}$, $[1/36,1/12]$, and $[4/21,9/20]$ are disjoint. A query detects whether a faulty peripheral vertex is incident and determines its $s$- or $t$-orientation.
+
+\begin{theorem}[Exact eventual constant error counts]\label{thm:severitynoise}
+For $p\ge4$, severity $t\in[1/2,1]$, and additive error satisfying
+\[
+ \varepsilon\ge\frac2{p-1},\qquad
+ \varepsilon+\frac4{p-1}<\frac1{72},
+\]
+the exact edge-location complexities are
+\[
+ \A^{\mathrm{abs}}_\varepsilon=\floor{p/2}+1,\qquad
+ \N^{\mathrm{abs}}_\varepsilon=\ceil{2p/3}.
+\]
+For every fixed $\varepsilon\in(0,1/72)$, these conditions hold for sufficiently large $p$. These are location guarantees; exact continuous severity recovery is not asserted under nonzero error.
+\end{theorem}
+\begin{proof}
+For the fixed upper bound, use a query graph on the peripheral vertices made of disjoint three-vertex paths, replacing one such group by a four-vertex path for $p\equiv1\pmod3$ or a five-vertex path for $p\equiv2\pmod3$. The count is $\ceil{2p/3}$. Every vertex has a nonempty distinct set of incident query edges because each component is a path on at least three vertices. Local-class decoding returns exactly that incidence set for the faulty vertex and its orientation, identifying the edge.
+
+For a fixed lower bound, represent any proposed query set by a graph including the hubs. Repeated queries may be discarded for a necessary condition: against adversarial error, repeated identical readings can always be supplied. Every peripheral vertex needs positive degree, or its two incident equal-severity faults agree exactly. No query may join two degree-one peripheral vertices $v_i,v_j$. Indeed, give the $t$-edge at each the severity $t_i=L_i^2/(20-L_i)$, respectively $t_j$. Both have local increment $1/20$. The only query touching either touches both, so every chosen query has the same local contribution under the two faults. The full responses differ by at most $4/(p-1)\le2\varepsilon$, and their error intervals overlap in every coordinate. They cannot be distinguished. If $d_1$ is the number of degree-one peripheral vertices and $k$ is the number of queries, each query has at most one such endpoint, so $d_1\le k$. The peripheral degree sum gives
+\[
+ 2k\ge d_1+2(p-d_1)=2p-d_1\ge2p-k,
+\]
+proving $k\ge\ceil{2p/3}$.
+
+For the adaptive upper bound, query disjoint peripheral pairs until local decoding reports incidence. One additional query between a hub and one endpoint distinguishes the pair's two vertices, while the local class determines orientation. For odd $p$, if all $\floor{p/2}$ pairs report no incidence, query the remaining vertex against a hub. The worst-case count is $\floor{p/2}+1$.
+
+For odd $p$, the exact lower bound $\ceil{p/2}$ already matches. Let $p=2k$. During the first $k-1$ probes, retain both orientations on every untouched peripheral vertex with admissible severities. For a query avoiding those vertices, the local contribution is common, and the nonlocal contribution is in $[0,4/(p-1)]$. Return the common local term plus $2/(p-1)$. This is within $\varepsilon$ of every retained response. At least two vertices remain untouched.
+
+On probe $k$, if any vertex remains untouched, its two orientations still agree within the adversarial answers. Otherwise the $k$ probes must have been disjoint peripheral pairs, and the last pair touches exactly the last two vertices $v_i,v_j$. Retain their tuned $t$-edge faults of local increment $1/20$. Both are compatible with the earlier answers. On the final query return the common local term plus $1/20+2/(p-1)$; both remain possible. Thus depth $k$ cannot suffice. Every terminal ambiguity is realized by two fixed physical faults explaining the entire transcript.
+\end{proof}
+
+The asymptotic gap at constant small error is $4/3$, rather than the linear deletion-model gap. Exact unknown-severity measurements had $\A=\N=\ceil{p/2}$; a bounded advantage reappears because adaptive testing can add a resolving query after finding an incident pair.
+
+A broader compact severity interval can instead destroy identifiability.
+\begin{proposition}[Nonvanishing faults with all pairs ambiguity]\label{prop:severityimpossible}
+If severity may range over $[1/11,2]$, then the weighted $K_{2,p}$ has two distinct edge faults whose response intervals overlap on every pair whenever
+\[
+ \varepsilon\ge\frac2{p-1}
+ \quad\text{for additive error, or}\quad
+ \alpha\ge\frac3{p-1}
+ \quad\text{for relative error}.
+\]
+Whenever the stated relative-error condition lies below one, it has the usual relative-noise interpretation. Neither arbitrary adaptation nor repeated measurements restores identification.
+\end{proposition}
+\begin{proof}
+Fix one branch with resistances $1,b$, $b\in(2,3)$. Compare replacing its $s$-edge by $a'=4b/(5b-4)$ with replacing its $t$-edge by $4$. The positive increments satisfy $a'-1\in(1/11,1/3)$ and $4-b\in(1,2)$. Both faults give the same local parallel resistance $w=4/5$; every other local term is unchanged. In both networks the hub resistance is less than $4/(p-1)$, and all coefficients multiplying it in Lemma~\ref{lem:elimination} are in $[0,1]$. Therefore every pair response differs by less than $4/(p-1)$, proving additive interval overlap.
+
+For every nonhub pair the sum of the two responses is at least $4/3$, since its common local contribution is at least $2/3$. The symmetric relative separation is therefore less than $3/(p-1)$. For the hub pair, the changed branch conductances lie respectively in $(11/45,3/10)$ and at $1/5$. Their difference is less than $1/10$, and the other conductance exceeds $(p-1)/4$. The hub symmetric relative separation is less than $1/[5(p-1)]$. Relative intervals overlap exactly when their symmetric separation is at most $\alpha$, so the stated bound covers every pair. An answer in each overlap supplies a transcript compatible with both faults under any adaptive choices.
+\end{proof}
+
+The noise obstruction uses $[1/11,2]$, not $[1/2,1]$. The distinction is substantive: both ranges exclude arbitrarily weak faults, yet one has eventual constant-noise identification and the other has all-pairs ambiguity.
+
+\section{A topology wide obstruction under measurement error}\label{sec:energynoise}
+We return to the global notation $n=|V|$, $m=|E|$. A query has a fixed energy budget spread across the possible faulty edges. This limits how many fault hypotheses one noisy observation can exclude.
+
+\begin{theorem}[The leverage slack lower bound]\label{thm:energybound}
+Let $S$ be any set of at least two nonbridge candidate deletions in a known connected weighted graph. Put
+\[
+ s_e=1-c_eR_e,\qquad W=\sum_{e\in S}s_e,\qquad
+ s_{\max}=\max_{e\in S}s_e.
+\]
+Under relative error $\alpha\in(0,1)$, every deterministic successful strategy of finite worst-case depth $t$ obeys
+\[
+ t>\frac{2\alpha}{1-\alpha}(W-s_{\max}).
+\]
+The inequality allows any restricted set of permitted pairs and repeated adaptive queries. For the full fault problem, whenever there are at least two nonbridges, it implies
+\[
+ t>\frac{2\alpha}{1-\alpha}(m-n).
+\]
+For additive error $\varepsilon>0$, if every permitted healthy pair has resistance at most $D_R$, then
+\[
+ t>\frac{2\varepsilon}{D_R}(W-s_{\max}).
+\]
+\end{theorem}
+\begin{proof}
+Let $\Delta_{qe}=R_q^e-R_q\ge0$. Lemmas~\ref{lem:update} and \ref{lem:energy} give
+\[
+ \sum_{e\in S}s_e\frac{\Delta_{qe}}{R_q}\le1.
+\]
+Set $h=2\alpha/(1-\alpha)$. At query $q$, return $y_q=(1+\alpha)R_q$, using the healthy response only as a reference, not as a fault hypothesis. This answer lies in fault $e$'s interval exactly when
+\[
+ (1-\alpha)(R_q+\Delta_{qe})\le(1+\alpha)R_q,
+\]
+or $\Delta_{qe}/R_q\le h$; the other endpoint inequality follows from monotonicity. Excluded candidates have ratio strictly greater than $h$, so their total slack is strictly less than $1/h$. After $t$ queries, the union of excluded candidates has slack less than $t/h$, regardless of how the queries were selected.
+
+A leaf identifying at most one edge retains at most $s_{\max}$ slack. Therefore success requires $W-s_{\max}<t/h$. More formally, if a proposed depth is at most $h(W-s_{\max})$, every prefix up to that depth leaves more than $s_{\max}$ slack and hence at least two compatible faults. Continue the adversary only along those prefixes. At the contradiction, either survivor is one fixed explanation of the entire transcript. There is no assumption that an infinite transcript is realizable by one edge.
+
+For all nonbridges, Lemma~\ref{lem:energy} gives $W=m-n+1$, while $s_{\max}\le1$, proving the cycle-rank consequence. For additive error return $R_q+\varepsilon$. A candidate survives exactly when $\Delta_{qe}\le2\varepsilon$. The excluded slack is less than $R_q/(2\varepsilon)\le D_R/(2\varepsilon)$, and the same argument proves the last inequality.
+\end{proof}
+
+The integer consequence is $t\ge\floor{h(W-s_{\max})}+1$. If every candidate has slack at least $\rho>0$, the weaker bound $t>h\rho(|S|-1)$ follows. The lower bound can be valid even when diagnosis is impossible; a companion finite-identifiability theorem is needed to show a genuine increase in achievable query complexity.
+
+\begin{theorem}[A bounded degree finite upper bound]\label{thm:boundeddegree}
+Let the known graph be simple, let $c_e\ge c_{\min}>0$, and let the maximum weighted degree be $D$. Candidate faults are nonbridge deletions. Querying the endpoints of every candidate edge identifies all candidates under relative error
+\[
+ \alpha<\frac{3c_{\min}^3}{8D^3}.
+\]
+Thus at most $m$ fixed pair queries suffice.
+\end{theorem}
+\begin{proof}
+Take two distinct candidates $e,f$. Write $R_e=b_e^{\mathsf T}L^+b_e$, $R_f=b_f^{\mathsf T}L^+b_f$, $T=b_e^{\mathsf T}L^+b_f$, and
+\[
+ a=\frac{\tau_e}{1-\tau_e},\qquad
+ b=\frac{\tau_f}{1-\tau_f},\qquad
+ \theta=\frac{T^2}{R_eR_f}.
+\]
+Rename the edges so that $a\ge b$. At query $e$ their responses are $R_e(1+a)$ and $R_e(1+b\theta)$. Their symmetric relative separation is
+\[
+ \frac{a-b\theta}{2+a+b\theta}
+ \ge\frac{\tau_e(1-\theta)}2.
+\]
+Indeed $a-b\theta\ge a(1-\theta)$ and the denominator is at most $2(1+a)$.
+
+The largest Laplacian eigenvalue is at most $2D$: for any vector $x$, $\sum c_{uv}(x_u-x_v)^2\le2D\|x\|^2$. Hence $L^+$ on the zero-sum subspace dominates $(2D)^{-1}I$. The two-by-two Gram matrix of $b_e,b_f$ in the $L^+$ inner product therefore dominates $(2D)^{-1}$ times their Euclidean Gram matrix. For distinct edges of a simple graph, the latter determinant is three if they share an endpoint and four otherwise. Monotonicity of determinants on positive definite matrices gives
+\[
+ R_eR_f-T^2\ge\frac3{4D^2}.
+\]
+Also $R_e\le1/c_e$, $R_f\le1/c_f$, while a unit current at an endpoint has energy at least the reciprocal of its weighted degree by Cauchy--Schwarz. Thus $R_e\ge1/D$ and $\tau_e\ge c_e/D$. Combining,
+\[
+ \frac{\tau_e(1-\theta)}2
+ \ge\frac{3c_{\min}^3}{8D^3}.
+\]
+Two positive response intervals with relative half-width $\alpha$ are disjoint when their symmetric relative separation exceeds $\alpha$. At least one of the selected endpoint queries therefore separates every candidate pair.
+\end{proof}
+
+\begin{corollary}[One exact test versus linearly many noisy tests]\label{cor:prism}
+For the cubic prism $C_k\mathbin{\square}K_2$, $k\ge3$, assign conductances in $[1,1.1]$. Every one-percent-relative-error strategy requires
+\[
+ \A^{\mathrm{rel}}_{0.01}>\frac{2k}{99},
+\]
+and $\N^{\mathrm{rel}}_{0.01}\le3k$. Thus both noisy complexities are $\Theta(k)$. For generic weights in the same box, $\A=\N=1$ with exact measurements.
+\end{corollary}
+\begin{proof}
+The graph has $n=2k$, $m=3k$, is biconnected and three-edge-connected, and every deletion preserves connectivity. The energy lower bound gives $2k/99$. Its weighted degree is at most $3.3$, and
+\[
+ \frac3{8(3.3)^3}=\frac1{72(1.1)^3}>0.01.
+\]
+The endpoint theorem gives the upper bound. Corollary~\ref{cor:terminal} gives the exact generic count.
+\end{proof}
+
+This is a statement about bounded adversarial error, not independent stochastic noise. The change from one to linear-many tests is established on an identifiable family; it is not an impossibility theorem disguised as a large lower bound. The cycle-rank obstruction uses every weighting, while the exact one-query comparison uses genericity.
+
+\subsection{An exact linear to quadratic transition in unit cliques}
+Dense graphs need not exhibit a smooth deterioration with precision. The unit-resistance clique gives an exact phase diagram. Its low-noise fixed count is already known from Fiedorowicz and Basu~\cite{FB}; we include a direct proof so that the transition argument is self-contained.
+
+\begin{theorem}[The clique precision phase diagram]\label{thm:clique}
+For complete deletion in unit-resistance $K_n$, $n\ge6$, define
+\[
+ a_n=\frac1{4n-7},\qquad b_n=\frac3{4n-3},\qquad m=\binom n2.
+\]
+With relative error $\alpha$ in the total measured resistance,
+\[
+ (\A^{\mathrm{rel}}_\alpha,\N^{\mathrm{rel}}_\alpha)=
+ \begin{cases}
+  (\floor{n/2}+1,\ \ceil{2n/3}),&0\le\alpha<a_n,\\
+  (m-1,\ m-1),&a_n\le\alpha<b_n,\\
+  (\infty,\ \infty),&\alpha\ge b_n.
+ \end{cases}
+\]
+Threshold equality belongs to the less informative regime because the error intervals are closed.
+\end{theorem}
+\begin{proof}
+On the zero-sum subspace, $L^+=(1/n)I$. Lemma~\ref{lem:update} gives
+\[
+ R_q^e=\frac2n+\frac{(b_q^{\mathsf T}b_e)^2}{n(n-2)}.
+\]
+The response is one of three numbers,
+\[
+ \ell=\frac2n,\qquad u=\frac{2n-3}{n(n-2)},\qquad
+ h=\frac2{n-2},
+\]
+according as the query shares zero, one, or two endpoints with the fault. Their relative-interval overlap thresholds are respectively
+\[
+ \frac{u-\ell}{u+\ell}=a_n,\qquad
+ \frac{h-u}{h+u}=b_n,\qquad
+ \frac{h-\ell}{h+\ell}=\frac1{n-1},
+\]
+with $a_n<b_n<1/(n-1)$.
+
+Below $a_n$, the three intervals are disjoint, so each measurement reveals the exact count of faulty endpoints in the queried pair. Noise cannot improve the noiseless optimum because exact answers are permitted. We establish those counts next.
+
+For adaptive upper bounds, a state with one unknown faulty vertex in a two-element set $X$ and one in a disjoint $b$-element set $Y$, $b\ge2$, takes at most $\floor{(b+2)/2}$ queries. For $b=2$, two cross pairs suffice. For $b=3$, write $X=\{a,b\}$, $Y=\{c,d,e\}$ and query $\{a,c\}$. Count two finishes; count zero leaves $bd,be$ for one further query; count one leaves $ad,ae,bc$, distinguished by querying $\{a,d\}$. For $b\ge4$, query two vertices of $Y$. A positive answer leaves a $(2,2)$ state, while zero leaves a $(2,b-2)$ state, proving the bound by induction. Starting with any pair in the full problem, count two finishes, count zero leaves the same problem on $n-2$ vertices, and count one leaves $(2,n-2)$. The small bases $n=3,4,5$ take at most $2,3,3$ queries. Induction gives $\A\le\floor{n/2}+1$.
+
+For the adaptive lower bound when $n=2r+1$, answer zero for $r-1$ tests. At least three untouched vertices remain, and their three possible faulty pairs cannot be distinguished by one further pair query, even if a known clean vertex allows a singleton test. Thus at least two more queries are needed. For $n=2r$, answer zero for $r-2$ tests, leaving at least four untouched vertices. Their six pairs need at least three further queries. A pair of those vertices has a four-hypothesis count-one child, too large for one final ternary query. A singleton query has a three-edge star child, on which one pair query has only two possible counts. A query avoiding the four is uninformative. These observations prove the lower bound.
+
+For fixed queries, form their simple query graph $Q$. An edge fault $uv$ has signature equal to the sum of the incidence columns of $u,v$ in $Q$. A resolving query graph cannot contain a two-vertex component or two isolates, because the resulting identical vertex columns cause collisions with a third vertex. If it has one isolate, it cannot also have a three-vertex path: the sum of that path's two leaf columns equals its center column plus the isolate column.
+
+With no isolates, all components have at least three vertices; a component of size $s$ has at least $s-1\ge2s/3$ edges. This gives $|Q|\ge\ceil{2n/3}$. With one isolate, a component of size three must be a triangle, while each component of size $s\ge4$ has at least $s-1\ge3s/4$ edges. Hence $|Q|\ge\ceil{3(n-1)/4}\ge\ceil{2n/3}$ for $n\ge6$, checking $n=6,7,8$ directly and using the unrounded inequality for $n\ge9$.
+
+For a matching fixed upper bound, use disjoint three-vertex paths, replacing one group by a four-vertex star when $n\equiv1\pmod3$, or by a five-vertex path when $n\equiv2\pmod3$. This uses $\ceil{2n/3}$ edges. A signature collision would give a nonzero vector $z$ with entries in $\{-1,0,1\}$, at most four nonzero coordinates, equally many of each sign, and $z_u+z_v=0$ on every query edge. On any nonzero connected component it must alternate signs throughout. Two such components require at least six coordinates. One three-vertex path or four-vertex star has unequal bipartition sizes, violating the zero sum, and one five-vertex path needs five nonzero coordinates. No collision exists. This proves the low-noise counts.
+
+For $a_n\le\alpha<b_n$, choose one number $c$ in the intersection of the $\ell$ and $u$ intervals. It is a legal answer for every fault except when the query equals the fault itself. Along a transcript always returning $c$, every unqueried edge remains possible, so at least $m-1$ distinct queries are necessary even adaptively. Conversely, query any $m-1$ pairs. The $h$ interval is disjoint from both lower intervals, so a high response identifies that pair as the fault; if none occurs, the one unqueried edge is faulty.
+
+For $\alpha\ge b_n$, take adjacent fault edges $e=\{a,b\}$ and $f=\{a,c\}$. Their responses at any query are among $(h,u),(u,h),(u,u),(u,\ell),(\ell,u),(\ell,\ell)$, never $(h,\ell)$. Every listed pair has overlapping intervals. Choose a fixed answer in each query's overlap. This full answer table is legal under both faults, including repeats, so no adaptive strategy identifies both correctly.
+\end{proof}
+
+For one-percent relative error, cliques with $6\le n\le26$ retain the low-noise counts; those with $27\le n\le75$ require exactly $\binom n2-1$ tests; those with $n\ge76$ are unidentifiable. The noisy optimum jumps from order $n$ to order $n^2$ before becoming infinite. The two thresholds are both order $1/n$, and the intermediate regime removes all adaptive advantage. Relative error here is relative to total resistance, not to the resistance increment. With an extra healthy hypothesis, the intermediate regime would require $m$ equality tests rather than $m-1$.
+
+\section{Verification and scope}\label{sec:verification}
+The arguments above are analytic. Finite computations serve to detect algebraic, implementation, and endpoint errors; they do not establish infinite-family theorems or novelty. The checks used different formulations where feasible; their scope, provenance and formal-verification coverage are recorded in the accompanying reviewer guide.
+
+The restricted-terminal characterization was checked on 839 connected graphs and 19,771 terminal sets, with 284,187 path-signature versus block-cut comparisons and 1,565 exact rational electrical query comparisons. The minimum-access criterion was tested on 390 biconnected graphs and 45,589 terminal sets. A separate biconnected audit covered every one of the 538 unlabeled simple atlas graphs on three through seven vertices: 770,016 path-versus-cut comparisons, exact unrestricted adaptive and fixed optimization on every graph, and 9,049 rational response entries on the smaller graphs all agreed with the formulas. A second audit used exact rational inversion on 15 larger cycles and subdivided dense cores, up to 13 vertices and 18 edges.
+
+Access preservation was checked by explicit cut enumeration and direct partition refinement, without using its closed-form conclusion: 538 biconnected graphs, 32,735 identifying terminal sets, and 18 additional abstract cactus models with 41 terminal sets gave 676,119 domination checks and 32,776 restricted-versus-unrestricted optimization comparisons, with no discrepancy. The abstract cacti check quotient combinatorics; they are not treated as biconnected physical networks.
+
+A practical topology-based planner for the biconnected case accompanies the manuscript. It constructs an optimal adaptive policy and fixed design in that scope, checks restricted access, and compares the exact response dictionary with its structural partition to reject accidental equalities. Its optimum counts were checked on all 538 biconnected atlas graphs. The planner is an implementation and verification aid, not a new graph-augmentation algorithm.
+
+The connected-graph partition and healthy-spine recurrence were checked on all 995 connected unlabeled simple atlas graphs on two through seven vertices: 1,137,178 query/fault-pair partition comparisons, 995 exact adaptive optimizations, 13,916 fixed-design checks, and 1,466 exact rational response entries agreed. The bridgeless fixed count agreed with unrestricted fixed optimization on all 577 bridgeless connected atlas graphs. Optimal-size physical leaf-region certificates were additionally found on 98 randomly glued cases within the chosen audit size; two larger generated instances were skipped. All 173 atlas graphs with individually three-edge-connected blocks satisfied Corollary~\ref{cor:leafblocks}.
+
+A separate formulation tested 160 graphs assembled from two to five blocks, up to 26 vertices and 31 edges. It compared 3,579,088 query/fault-pair relations against direct original simple-path membership, checked the exact unrestricted adaptive optimum against the piece-subset recurrence on every graph, and checked unrestricted fixed optima on 16 selected small cases. Every requested physical fixed-design certificate was found and verified against the original path oracle. This checker reused decomposition and demand-region routines but did not assume the response partition when computing its reference answers. Its randomized certificate search was a check, not the constructive proof. A further access audit on 83 graphs and 332 identifying terminal sets verified 26,876 unrestricted-query refinement claims directly from original simple-path signatures, with no discrepancy.
+
+The explicit weighted deletion family was compared with rational Laplacian inversion for small branch counts and checked at larger counts through 100. Independent finite-change tests assembled grounded Laplacians afresh and verified projective signatures, equal-loss adversaries, and exact magnitude recovery for branch counts three through ten and several rational severities. Universal two-anchor recovery was tested on 142 connected graphs of orders two through six, with 4,448 fault/root cases and 38,440 scalar queries, recovering every tested location and change. The constant-error severity decoder was checked in 14,028 exact rational fault-query cases at 500 branches, including both error endpoints.
+
+The clique phase diagram was checked by a separate exact interval solver that includes closed interval endpoints and solves adaptive minimax and fixed separation problems. It covered $n=4,5,6$ at zero, interior, and threshold error values, plus selected $n=7$ cases. Its electrical values were separately compared with rational grounded-Laplacian inversion. The smaller cases use their actual low-noise optima, not an extrapolation of the $n\ge6$ formula. For cubic prisms, exact response checks also verified the one-percent endpoint-separation upper bound.
+
+Several limits remain important. The healthy graph and its weights are known exactly. The structural results require simultaneous generic weights. The terminal theorem, response partition, fixed-design criterion, and adaptive subset recurrence allow every connected graph; the closed demand-count and lossless-access results require bridgelessness. The subset recurrence is exponential in the number of blocks plus bridges and is not claimed to be polynomial for arbitrary connected graphs. Unknown-severity recovery assumes one finite change preserving connectivity. Noise theorems use bounded adversarial errors, not independently sampled errors that may be averaged. The models omit physical reconnection time, parallel test execution, drifting faults, and unknown component tolerance. Multiple simultaneous faults are outside the present claims.
+
+The literature comparisons establish relevant distinctions but not priority. Classical analog diagnosis includes rich excitation and readout models that may subsume parts of a scalar-query construction after conversion. The graph augmentation min--max theorem is an external classical theorem invoked in our fixed-count derivation; the electrical reductions and other manuscript claims are proved here.
+
+Natural remaining questions include a joint severity-and-precision minimax law beyond the explicit family, optimal scalar-query constants for universal finite-change recovery, and quantitative terminal selection that optimizes noise margins rather than generic partitions. The access-preservation theorem explains why exact generic query count alone cannot capture that last design objective. Closing additive constants in the parallel-path bounds below is a smaller, well-defined problem.
+
+\appendix
+\section{A general bounded error law for parallel paths}\label{sec:parallel}
+The short-branch reference family does not describe all parallel-path networks. Long paths retain a local binary-search advantage even when noise makes the hub encoding ambiguous. We give a sharp-order theorem under explicit component and geometry margins.
+
+Let $p\ge3$ internally vertex-disjoint paths join hubs $s,t$. Path $i$ has $\ell_i\ge2$ edges, total resistance $L_i$, and residual hub resistance
+\[
+ H_i=\left(\sum_{j\ne i}L_j^{-1}\right)^{-1}.
+\]
+Let $r_*$ be the smallest edge resistance, $D_0=\sum_i(\ell_i-1)$ the number of internal vertices, and $\ell_{\max}=\max_i\ell_i$. For an internal vertex $x$ on path $i$, let $P_x,Q_x$ be its prefix and suffix resistances, and define
+\[
+ \mu_i=\max_x\frac{\min(P_x,Q_x)^2}{L_i},\quad
+ \mu_*=\min_i\mu_i,\quad
+ K_\varepsilon=\max_a|\{i:H_i\in[a,a+2\varepsilon]\}|.
+\]
+Here $D_0$ is a vertex count, unrelated to the weighted degree $D$ in earlier theorems.
+
+\begin{theorem}[Parallel path cluster law]\label{thm:parallel}
+Suppose $0\le\varepsilon<\min\{r_*/2,\mu_*/4\}$. For every length-two path additionally assume
+\[
+ H_i+|r_{i1}-r_{i2}|>2\varepsilon.
+\]
+For exactly one complete deletion and arbitrary vertex-pair queries,
+\[
+ \max\{\ceil{K_\varepsilon/2},\,\ceil{\log_2\ell_{\max}}\}
+ \le\A^{\mathrm{abs}}_\varepsilon
+ \le1+2(K_\varepsilon-1)+B_0,
+\]
+where
+\[
+ B_0=\max_i b_i,\qquad
+ b_i=\begin{cases}
+ 1,&\ell_i=2,\\
+ \ceil{\log_2(\ell_i-1)}+1,&\ell_i\ge3.
+ \end{cases}
+\]
+Moreover,
+\[
+ \ceil{D_0/2}\le\N^{\mathrm{abs}}_\varepsilon\le D_0+2p+1.
+\]
+Consequently $\A^{\mathrm{abs}}_\varepsilon=\Theta(K_\varepsilon+\log\ell_{\max})$ and $\N^{\mathrm{abs}}_\varepsilon=\Theta(D_0)$ with absolute constants. If every path has at least three edges and each resistor lies in $[r_*,r^*]$, the sufficient condition $\varepsilon<r_*^2/(12r^*)$ implies all hypotheses.
+\end{theorem}
+\begin{proof}
+We establish a lower bound, a path membership test, and a robust within-path search.
+
+If a query avoids the internal vertices of faulty path $i$, elimination gives response $z_q+c_qH_i$, where $z_q,c_q$ are independent of the untouched path and $0\le c_q\le1$. For two terminals on different intact paths at prefix fractions $\beta,\gamma$, $c_q=(\beta-\gamma)^2$. For two terminals on the same intact path, separated by resistance $d$ in a path of total $L$, the response is
+\[
+ d-\frac{d^2}{L}+\frac{d^2}{L^2}H_i.
+\]
+Hubs are included by endpoint fractions. Choose a cluster of $K_\varepsilon$ residual resistances in an interval of width $2\varepsilon$. At each step discard at most two paths touched by the query and answer at the midpoint of the surviving response range. All faults on all remaining paths agree within the error bound. Fewer than $\ceil{K_\varepsilon/2}$ tests leave an untouched path with at least two candidate deletions. Restricted to any one path, every exact pair query has at most two distinct deletion responses. If neither terminal is internal to the candidate path, all its edge deletions give the same response. If exactly one terminal is internal, it lies after deletion on either the $s$-attached or $t$-attached surviving segment, giving at most two values. If both terminals are internal, the intact other paths reduce to resistance $H_i$ between the hubs; the response depends only on which of the two terminal arcs contains the deleted edge. Thus every query has at most two values on this path's deletions. Zero noise is permitted, so a binary decision-tree lower bound gives $\ceil{\log_2\ell_{\max}}$. A fixed set must touch every degree-two vertex, giving $\ceil{D_0/2}$.
+
+For membership, a noisy hub query leaves at most $K_\varepsilon$ possible paths, and any two candidates satisfy $|H_i-H_j|\le2\varepsilon$. On candidate path $i$, select an internal vertex with prefix $P$, suffix $Q$, and total $L=P+Q$, attaining $\mu_i$. Query both $\{s,x\}$ and $\{t,x\}$. A suffix fault on path $i$ has signature $(P,P+H_i)$, while a prefix fault has $(Q+H_i,Q)$. An outside candidate path $j$ gives
+\[
+ \left(\frac{PQ}{L}+\frac{P^2}{L^2}H_j,\
+       \frac{PQ}{L}+\frac{Q^2}{L^2}H_j\right).
+\]
+For a suffix fault, subtract the outside second coordinate from the own-path coordinate to obtain
+\[
+ \frac{P^2}{L}+H_i\left(1-\frac{Q^2}{L^2}\right)
+ -(H_j-H_i)\frac{Q^2}{L^2}
+ \ge\frac{P^2}{L}-2\varepsilon>2\varepsilon.
+\]
+The prefix case uses the first coordinate and $Q^2/L$. Thus each own-path error box is disjoint from every outside error box. These two observations decide membership without assuming a separate dictionary margin.
+
+Once path $i$ is known, the better hub query at prefix $P$ has response separation
+\[
+ \Gamma(P)=H_i+|L_i-2P|.
+\]
+Call a vertex bad if $\Gamma(P)\le2\varepsilon$. The corresponding prefix interval has length at most $2\varepsilon$, while successive prefix sums differ by at least $r_*>2\varepsilon$. At most one vertex is bad. If none is bad, ordinary edge-count bisection takes $\ceil{\log_2\ell_i}$ tests. If one is bad, merge its two incident edges into one ordered atom. Every boundary between the $\ell_i-1$ atoms is a good hub cut, so bisection takes $\ceil{\log_2(\ell_i-1)}$ tests. A singleton atom is resolved. For a double atom and $\ell_i\ge3$, query the endpoints of its lighter edge, of resistance $a$. The two possible responses are $a$ and $L_i-a+H_i$, whose gap obeys
+\[
+ L_i+H_i-2a\ge H_i+(\ell_i-2)r_*>2\varepsilon.
+\]
+One extra query suffices. A length-two path has only one internal vertex, and its additional hypothesis makes that vertex good, giving one test.
+
+The adaptive procedure first takes the hub query, tests at most $K_\varepsilon-1$ candidate paths at two queries each, and then searches the identified path. This gives the upper bound.
+
+For a fixed scheme, include the hub query. On each path include the better hub query at every good internal vertex, both hub queries at the membership vertex, and the lighter-edge query if a bad vertex exists. After duplicates are removed, each path contributes at most $\ell_i+1$ queries: the largest case has $\ell_i-2$ good cuts, two membership queries at the bad vertex, and one exceptional edge query. Thus the total is at most $1+\sum_i(\ell_i+1)=D_0+2p+1$. The hub reading restricts the candidate cluster, membership tests identify its path, good cuts identify the atom, and the extra test resolves a double atom.
+
+Finally, choose a vertex nearest the resistance midpoint of a path with at least three edges. If the midpoint is in an edge of resistance $a$, an internal endpoint can be chosen with $\min(P,Q)\ge(L_i-a)/2$. Thus
+\[
+ \mu_i\ge\frac{(L_i-r_{\max,i})^2}{4L_i}
+ \ge\frac{(\ell_i-1)^2r_*^2}{4\ell_i r^*}
+ \ge\frac{r_*^2}{3r^*}.
+\]
+The sufficient error bound implies both required strict inequalities. Since $D_0\ge p$ and $B_0=O(\log\ell_{\max})$, the stated order bounds follow.
+\end{proof}
+
+The extra length-two condition has real content. If its best orientation gap is at most $2\varepsilon$, the two edge deletions have overlapping intervals for every query: queries avoiding its internal vertex agree, and queries using it have difference at most $H_i+|r_{i1}-r_{i2}|$. In particular, unit-resistance $K_{2,p}$ is unidentifiable when $\varepsilon\ge1/(p-1)$.
+
+\begin{corollary}[A unit resistance precision scale]\label{cor:unitprecision}
+For integers $L\ge p\ge3$, take unit-resistance paths of lengths $L,L+1,\ldots,L+p-1$. Uniformly for $0\le\varepsilon<1/12$,
+\[
+ \A^{\mathrm{abs}}_\varepsilon
+ =\Theta\!\left(\log L+\min\{p,1+\varepsilon p^2\}\right),
+ \qquad
+ \N^{\mathrm{abs}}_\varepsilon=\Theta(pL).
+\]
+\end{corollary}
+\begin{proof}
+All lengths lie in $[L,2L)$ and every path has at least three edges, so Theorem~\ref{thm:parallel} applies. Neighboring path conductances differ between $1/(4L^2)$ and $1/L^2$, while every residual conductance sum lies between $(p-1)/(2L)$ and $(p-1)/L$. Therefore neighboring ordered hub answers have spacings between
+\[
+ d=\frac1{4(p-1)^2}\quad\text{and}\quad U=\frac4{(p-1)^2}.
+\]
+Any interval of width $2\varepsilon$ contains at most $1+\floor{2\varepsilon/d}$ answers, and starting at an extreme contains at least $\min\{p,1+\floor{2\varepsilon/U}\}$. Hence $K_\varepsilon=\Theta(\min\{p,1+\varepsilon p^2\})$. Substitute this, $\ell_{\max}=\Theta(L)$, and $D_0=\Theta(pL)$ into the theorem.
+\end{proof}
+
+This $p^{-2}$ path-encoding scale differs from the $p^{-3}$ scale of bounded-total length-two branches. The metric range controls the distinction. When all hub answers merge, local search can still save queries on long paths; loss of branch encoding does not imply universal loss of adaptivity.
+
+Independent checks of this appendix included 17 networks and 288 valid error/phase comparisons, using exact interval margins and full query dictionaries for small cases. A particularly useful stress test used ten unit paths of length four at $\varepsilon=6/25$: here $\mu_*=1$, each residual hub resistance is $4/9$, and every path has a bad midpoint while still satisfying the theorem. The atom-merging repair and endpoint test remain valid.
+
+\begin{thebibliography}{99}
+\bibitem{FB} B. Fiedorowicz and A. Basu. \emph{Identifying faulty edges in resistive electrical networks}. Discrete Applied Mathematics 395 (2026), 400--424. \url{https://doi.org/10.1016/j.dam.2026.08.008}. Open version: \url{https://arxiv.org/html/2512.23527v3}.
+\bibitem{VHF} P. K. Varshney, C. R. P. Hartmann, and J. M. de Faria Jr. \emph{Application of Information Theory to Sequential Fault Diagnosis}. IEEE Transactions on Computers C-31(2) (1982), 164--170. \url{https://doi.org/10.1109/TC.1982.1675963}.
+\bibitem{IKT} T. Ibaraki, T. Kameda, and S. Toida. \emph{Minimal Test Set for Diagnosing a Tree System}. North-Holland Mathematics Studies 59 (1981), 215--240. \url{https://doi.org/10.1016/S0304-0208(08)73468-6}.
+\bibitem{HC} J.-L. Huang and K.-T. Cheng. \emph{Test Point Selection for Analog Fault Diagnosis of Unpowered Circuit Boards}. IEEE Transactions on Circuits and Systems II 47(10) (2000), 977--987. \url{https://doi.org/10.1109/82.877140}.
+\bibitem{Starzyk} J. A. Starzyk, D. Liu, Z.-H. Liu, D. E. Nelson, and J. O. Rutkowski. \emph{Entropy-Based Optimum Test Points Selection for Analog Fault Dictionary Techniques}. IEEE Transactions on Instrumentation and Measurement 53(3) (2004), 754--761. \url{https://doi.org/10.1109/TIM.2004.827085}.
+\bibitem{TK} M. Tadeusiewicz and M. Korzybski. \emph{A method for fault diagnosis in linear electronic circuits}. International Journal of Circuit Theory and Applications 28(3) (2000), 245--262. Publisher abstract: \url{https://onlinelibrary.wiley.com/doi/abs/10.1002/(SICI)1097-007X(200005/06)28:3<245::AID-CTA103>3.0.CO;2-X}.
+\bibitem{LS} D. Liu and J. A. Starzyk. \emph{A generalized fault diagnosis method in dynamic analogue circuits}. International Journal of Circuit Theory and Applications 30(5) (2002), 487--510. \url{https://doi.org/10.1002/cta.187}.
+\bibitem{MNS} K. Mehlhorn, A. Neumann, and J. M. Schmidt. \emph{Certifying 3-Edge-Connectivity}. Algorithmica 77(2) (2017), 309--335. \url{https://doi.org/10.1007/s00453-015-0075-x}. Open version: \url{https://arxiv.org/abs/1211.6553}.
+\bibitem{WN} T. Watanabe and A. Nakamura. \emph{Edge-connectivity augmentation problems}. Journal of Computer and System Sciences 35(1) (1987), 96--144. \url{https://doi.org/10.1016/0022-0000(87)90038-9}.
+\bibitem{Szigeti} Z. Szigeti. \emph{Edge-Connectivity Augmentations of Graphs and Hypergraphs}. In W. Cook, L. Lov\'asz, and J. Vygen (eds.), \emph{Research Trends in Combinatorial Optimization}, Springer, 2009, pp. 483--521. \url{https://doi.org/10.1007/978-3-540-76796-1_22}. Open version: \url{https://pagesperso.g-scop.grenoble-inp.fr/~szigetiz/articles/szigeti_for%20_Korte_book_final.pdf}.
+\bibitem{WY} T. Watanabe and M. Yamakado. \emph{A Linear Time Algorithm for Smallest Augmentation to 3-Edge-Connect a Graph}. IEICE Transactions on Fundamentals E76-A(4) (1993), 518--531. \url{https://globals.ieice.org/en_transactions/fundamentals/10.1587/e76-a_4_518/_p}.
+\bibitem{WBBN} H. Bennett, M. Black, A. Nayyeri, and E. Warton. \emph{Graph Inference with Effective Resistance Queries}. Proceedings of Algorithmic Learning Theory, Proceedings of Machine Learning Research 313 (2026), 1--31. Final conference version: \url{https://proceedings.mlr.press/v313/warton26a.html}.
+\bibitem{YCP} J. Ying, J. V. de M. Cardoso, and D. P. Palomar. \emph{Does the $\ell_1$-norm Learn a Sparse Graph under Laplacian Constrained Graphical Models?} arXiv:2006.14925v2, 2023. \url{https://arxiv.org/abs/2006.14925}.
+\bibitem{HMMT} J. G. Hoskins, C. Musco, C. Musco, and C. E. Tsourakakis. \emph{Inferring \mbox{Networks} From Random Walk-Based Node Similarities}. Advances in Neural Information Processing Systems 31 (2018). \url{https://papers.neurips.cc/paper_files/paper/2018/hash/2f25f6e326adb93c5787175dda209ab6-Abstract.html}.
+\bibitem{DS} P. G. Doyle and J. L. Snell. \emph{Random Walks and Electric Networks}. Mathematical Association of America, 1984; freely available author version. \url{https://math.dartmouth.edu/~doyle/docs/walkspdf/walks.pdf}.
+\end{thebibliography}
+\end{document}

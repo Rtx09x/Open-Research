@@ -1,0 +1,11 @@
+{
+  "passed": true,
+  "tests": [
+    "test_snapshot_hashes_match_the_pin_file",
+    "test_all_rules_match_upstream_word_for_word",
+    "test_all_terminal_codes_match_upstream",
+    "test_base_data_matches_upstream"
+  ],
+  "wall_seconds": 0.010988296999130398,
+  "scope": "Direct invocation of four upstream snapshot/Lean transcription tests, without pytest. Not the entire pytest suite."
+}

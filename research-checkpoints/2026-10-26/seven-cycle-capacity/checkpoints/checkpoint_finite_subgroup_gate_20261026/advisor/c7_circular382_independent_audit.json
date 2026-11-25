@@ -1,0 +1,25 @@
+{
+  "PASS": true,
+  "n": 382,
+  "thresholds": [
+    107,
+    108
+  ],
+  "unit_normalized_solutions": [
+    [
+      1,
+      7,
+      39,
+      49,
+      109
+    ]
+  ],
+  "no_unit_gcd_cases": [
+    2,
+    191
+  ],
+  "minimum_of_unique_template": 108,
+  "seconds": 0.745113004999439,
+  "zero_coordinate_case": "A zero can be replaced by a repeated nonzero multiplier without harming coverage; the unique resulting feasible template has five distinct nonzero coordinates, so no omitted zero-coordinate solution exists.",
+  "scope": "Complete rank-one circular classification at n382 only, modulo unit reparameterization, coordinate signs and permutations. No nonlinear-code exclusion."
+}

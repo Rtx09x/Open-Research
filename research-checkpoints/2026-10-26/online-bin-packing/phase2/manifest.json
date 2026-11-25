@@ -1,0 +1,225 @@
+{
+  "description": "Phase2 frozen preferred Best Fit successor and preserved one-open exact-ratio anchor; copied Pro replay and caches excluded",
+  "preferred_certificate_sha256": "efd98b3ab6c17d81ad14da565410c47de2490b99c8c4742c9e3ebde183a8e315",
+  "frozen_phase1_dependency": {
+    "path": "ah_three_parameter_full_certificate.json",
+    "sha256": "39da513da04fa7d8722ca6e1f14406d6d04962ad9d11f77a0fc52810295f96e7"
+  },
+  "files": [
+    {
+      "path": "phase2/AUDIT.md",
+      "bytes": 7586,
+      "sha256": "3689fc1b0f24655b0afe8d344dfaf584045ee04a970dfe98e01d92997dc96270"
+    },
+    {
+      "path": "phase2/FINAL_REPLAY.log",
+      "bytes": 3832,
+      "sha256": "ace946c3554ddad704eedbc15b370a027f76a98c1e585fd394071da526d0093f"
+    },
+    {
+      "path": "phase2/HANDOFF.md",
+      "bytes": 8230,
+      "sha256": "a4c4f5587696fddcbe3990fe42cc085fb280c129ec5f4ab573d4ee8bb85338bc"
+    },
+    {
+      "path": "phase2/README.md",
+      "bytes": 2827,
+      "sha256": "36d046a3ff8ed58c07f268a0dab120e3da32ada0b0cf0bfbe457ad3208ea1f50"
+    },
+    {
+      "path": "phase2/SINGLE_THRESHOLD_THEOREM.md",
+      "bytes": 12324,
+      "sha256": "d808e80146cf23c1d60ede92150ddc9dd7cc99c24c17a92b7ebda77a918c708d"
+    },
+    {
+      "path": "phase2/best_fit/BEST_FIT_THEOREM.md",
+      "bytes": 9965,
+      "sha256": "a3958250e40af31b789a93fbef924251c96a9af5cd89dc358a412fc60ec82941"
+    },
+    {
+      "path": "phase2/best_fit/NEXT_STRUCTURAL_TARGET.md",
+      "bytes": 1588,
+      "sha256": "b2441f16fa131158301f8c89ae379946dfddd3f0a1a217359fc79a8a94138e8d"
+    },
+    {
+      "path": "phase2/best_fit/best_fit_certificate.json",
+      "bytes": 381343,
+      "sha256": "efd98b3ab6c17d81ad14da565410c47de2490b99c8c4742c9e3ebde183a8e315"
+    },
+    {
+      "path": "phase2/best_fit/best_fit_simple20_certificate.json",
+      "bytes": 381344,
+      "sha256": "ae35dca1245ecfd32affcb5f95e029eb67dcd7f104ac08d811b501dbf7de6e99"
+    },
+    {
+      "path": "phase2/best_fit/check_all_cases.py",
+      "bytes": 1992,
+      "sha256": "19b9d01dc164f2d33719e01a99b15d0ff9adc5a099e0579c3d094df9fef77762"
+    },
+    {
+      "path": "phase2/best_fit/explore_step_charge.py",
+      "bytes": 1355,
+      "sha256": "ba269118c9018e5d55ec0db7667afa418ea1b0784800a98934eacd454b2c2a8f"
+    },
+    {
+      "path": "phase2/best_fit/gap_lemma_stress.json",
+      "bytes": 261,
+      "sha256": "db0e8fb1c08c9124652c99a23f209449449e804845dd327899bc3c21ad6d07f3"
+    },
+    {
+      "path": "phase2/best_fit/independent_step_verification.json",
+      "bytes": 49872,
+      "sha256": "7115db7b9016092ee65766f5d9bffa024e8cf2713f14366f29f485d551d1c455"
+    },
+    {
+      "path": "phase2/best_fit/metadata_normalization.json",
+      "bytes": 407,
+      "sha256": "cf69bd2dce4ee3e23c9be4472752558ddcbb6e54e0c4d57d97c7813021b19404"
+    },
+    {
+      "path": "phase2/best_fit/step_charge_exploration.json",
+      "bytes": 9670,
+      "sha256": "64600cd07b2dfe105fcde9dba01382358bb081ddd424a65fc8868a89d8b891af"
+    },
+    {
+      "path": "phase2/best_fit/step_pricing.py",
+      "bytes": 1561,
+      "sha256": "d6fe2947c9cd6a7cebcc1e77aa3116535c950f5a30304f93cb8641a6c31476d1"
+    },
+    {
+      "path": "phase2/best_fit/stress_gap_lemma.py",
+      "bytes": 2917,
+      "sha256": "d814ac288d55666ca022055ccaa508c9c00acef02e42e8b27e49c4c0a3992d09"
+    },
+    {
+      "path": "phase2/best_fit/verify_step_independent.py",
+      "bytes": 3089,
+      "sha256": "7fd38f1e8bbe4f4171228f5126ecc6ddb96e5ed7ba17f22d959925efcc503d0c"
+    },
+    {
+      "path": "phase2/check_tiny_lemmas.py",
+      "bytes": 2636,
+      "sha256": "143be790b0fc9c8af06f0af42bb5707432d5d3ea7e0e61388893312c577e09ad"
+    },
+    {
+      "path": "phase2/continuous_mixture_search.json",
+      "bytes": 16402,
+      "sha256": "489fab8a78826dca346c2bf9ff946918dd829042209ef3a7fd96ba0c03ca05f2"
+    },
+    {
+      "path": "phase2/coupled/SATURATION_THEOREM.md",
+      "bytes": 11861,
+      "sha256": "e37acb1cda08dbf86510f51c7b1968137d1daa9376dd58b6d1931f43fb0574a2"
+    },
+    {
+      "path": "phase2/coupled/check_saturation.py",
+      "bytes": 5020,
+      "sha256": "b7c257c2dc367d6effaa79c6479c724b674b10dccd5e1f4e5d625390dc59085b"
+    },
+    {
+      "path": "phase2/coupled/limiting_conservation.json",
+      "bytes": 922,
+      "sha256": "f3f371ba0240b15f3a1853c914878f47fd258817719e5687243dc23a749042a0"
+    },
+    {
+      "path": "phase2/coupled/probe_tiny_best_fit.py",
+      "bytes": 2845,
+      "sha256": "30cb81c654864a3b4e5370816aefbb7027ed8b7c9177159796c6e988263646e3"
+    },
+    {
+      "path": "phase2/coupled/saturation_check.json",
+      "bytes": 3487,
+      "sha256": "74144a8e0280cdc06ad2db3eee035dd5c9979406f2625ecff28e186fd6ac5e7d"
+    },
+    {
+      "path": "phase2/coupled/tiny_best_fit_probe.json",
+      "bytes": 1811,
+      "sha256": "142c901929688a08c6c671eecd27cb8b9173b9b57b66b7c9649dd03f97d31a15"
+    },
+    {
+      "path": "phase2/exact_nonlinear_pricing.py",
+      "bytes": 1721,
+      "sha256": "7c851ea46c1924b1f164399e35f467312b270bb96e7aef66d8612f04e75a37a2"
+    },
+    {
+      "path": "phase2/exact_threshold_search.json",
+      "bytes": 10191,
+      "sha256": "3b52583432e45cb062d7adad3a8a4f53f7a1bfd5795f7604ef9f73254b48c941"
+    },
+    {
+      "path": "phase2/exact_threshold_search.log",
+      "bytes": 754,
+      "sha256": "22ade08b350eba24eff0717314fb72bf4d247a598f45050d273876a262295e41"
+    },
+    {
+      "path": "phase2/exact_threshold_search.py",
+      "bytes": 3555,
+      "sha256": "140fd7e766963f3af5a18cecd9394cacdc3a7f4ffca51d155fe858c8b1bdca39"
+    },
+    {
+      "path": "phase2/export_single_thresholds.py",
+      "bytes": 1573,
+      "sha256": "2ec07f0c7448b1a5145680e3e0b3e195e500dd31dd5578bd1904d29d69a1aa01"
+    },
+    {
+      "path": "phase2/independent_nonlinear_check.json",
+      "bytes": 177183,
+      "sha256": "db1b2f2ee4683d18a56e80f76044320c69c4eb83f613f6e304321f3b2c36a942"
+    },
+    {
+      "path": "phase2/literature.md",
+      "bytes": 2471,
+      "sha256": "23fcabb77b319ebda6c70bc79261e4dd3a4aa2157da10d6ca84292314630e1fe"
+    },
+    {
+      "path": "phase2/mixture_search_log.txt",
+      "bytes": 851,
+      "sha256": "e6819c1a68a5f7f8d558575018e99904c866ce629bd28abe374da6760002974c"
+    },
+    {
+      "path": "phase2/optimize_overflow_mixtures.py",
+      "bytes": 6832,
+      "sha256": "01c3838362df25dc0fc92710a92efb4077326c5722ce54d46200036fb0bf4062"
+    },
+    {
+      "path": "phase2/pro_replay_log.txt",
+      "bytes": 865,
+      "sha256": "15596878346866a0921e7bb7ae391797f2a717664bff511d843c5c786d281bd6"
+    },
+    {
+      "path": "phase2/research_log.md",
+      "bytes": 6013,
+      "sha256": "7e529ac9727db863191f40e0b61f81d57c554f9d8a9ed8fb1a2e12fbcf4a438a"
+    },
+    {
+      "path": "phase2/result_summary.json",
+      "bytes": 1530,
+      "sha256": "dbccb2fbab8fb0ddbcd8380ed689ab07accd21030a563ea1e3633d3d10fe5fab"
+    },
+    {
+      "path": "phase2/single_threshold_certificate.json",
+      "bytes": 118368,
+      "sha256": "82e0291a83739bb44749a76e9f6b52cfe335d062cbcaa36235bd4d8b86060474"
+    },
+    {
+      "path": "phase2/single_threshold_verification.json",
+      "bytes": 97100,
+      "sha256": "ff7370294915b6aff6b533792097fbf44bba847025dcf620041e180e741d853c"
+    },
+    {
+      "path": "phase2/tiny_lemma_stress.json",
+      "bytes": 524,
+      "sha256": "a5bfbcf0a5ca2e66d54d1670250c768cc280716886f8e295aeab92473f4033d0"
+    },
+    {
+      "path": "phase2/verify_nonlinear_independent.py",
+      "bytes": 4913,
+      "sha256": "8a08fa70fc3d433b5b9ae436441508ea8c852f1c5897d67e1c4f21c16d163d6e"
+    },
+    {
+      "path": "phase2/verify_single_thresholds.py",
+      "bytes": 5096,
+      "sha256": "52bdac1ff538e9659c60e6b49a0843d3cac48bdaef9dfdcf7d600fb48c2617e7"
+    }
+  ]
+}

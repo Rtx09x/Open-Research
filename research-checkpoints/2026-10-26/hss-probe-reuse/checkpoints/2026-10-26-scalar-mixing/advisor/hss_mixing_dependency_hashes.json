@@ -1,0 +1,20 @@
+{
+  "analytic_PASS": true,
+  "scope": "Restricted uniformly mixing arbitrary-rank prescribed-basis theorem and separate complex scalar corollary; not arbitrary transfers/unknown bases",
+  "files": {
+    "uniformly_mixing_fixed_basis_bound.md": "c1444bae9b281921dc2b0dd98281a839ae8199be67bdeeee6ab705d22cbbdbcc",
+    "uniformly_mixing_matrix_source_moments.md": "e2c04dbcc4ac55e9bc5799811d06570a7fefc18412a0635e7021d7eed8ca26ea",
+    "matrix_branch_flux_reduction.md": "d544d2ac9120bd66907b9654f5c79250eb2af1b18d4e133f12c3285aed7f742d",
+    "verify_uniform_mixing_two_step_exact.py": "826f8abfeab268b1f3c3452f710059cd147d7db3db47b8ad13129d137a79b7f2",
+    "verify_matrix_branch_flux_exact.py": "75d8c55b39dc58e995df813bf46aa58aa63e73dbbffa341227aec5818fac8345",
+    "verify_triangular_regression_exact.py": "e9d0fad33a1ec4c7e7d8fbfc0e120119a54939d0cd367b1c55886111cf008bc5",
+    "complex_scalar_fixed_basis_corollary.md": "2db06054c1ddf68285d0dc735b46eaaf8a4eb0ef3c01975e72df9fefc4a15152"
+  },
+  "worker_control_replay": "hss_mixing_controls/uniform_mixing_two_step_exact_results.json",
+  "independent_analytic_audits": [
+    "hss_uniform_mixing_reconstruction_audit.md",
+    "hss_uniform_mixing_matrix_source_audit.md",
+    "hss_complex_scalar_audit.md"
+  ],
+  "note": "Worker control replay is distinct from independent analytic audit; no claim independent code for this replay."
+}

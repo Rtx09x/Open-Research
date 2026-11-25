@@ -1,0 +1,32 @@
+[
+  {
+    "L": 1,
+    "n": 4,
+    "transpose_sign_assignments": 4,
+    "maximum_energy_eigenvalues": [
+      1.0000000000000007
+    ],
+    "seconds": 0.0013901309994253097
+  },
+  {
+    "L": 2,
+    "n": 8,
+    "transpose_sign_assignments": 64,
+    "maximum_energy_eigenvalues": [
+      1.0000000000000013,
+      1.0000000000000007
+    ],
+    "seconds": 0.024785886000245227
+  },
+  {
+    "L": 3,
+    "n": 16,
+    "transpose_sign_assignments": 16384,
+    "maximum_energy_eigenvalues": [
+      1.0000000000004374,
+      1.0000000000002678,
+      1.0000000000001354
+    ],
+    "seconds": 13.513851236999471
+  }
+]

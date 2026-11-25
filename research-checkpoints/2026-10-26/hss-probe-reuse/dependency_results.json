@@ -1,0 +1,42 @@
+[
+  {
+    "null_columns": 1,
+    "sketch_width": 3,
+    "covariance": 0.25244260008483294,
+    "theory_from_gap": 0.25019746086745165,
+    "X_variance": 0.12465935130489059,
+    "expected_X_variance": 0.125
+  },
+  {
+    "null_columns": 2,
+    "sketch_width": 4,
+    "covariance": 0.39051187690793326,
+    "theory_from_gap": 0.39180850668228845,
+    "X_variance": 0.12483457763835754,
+    "expected_X_variance": 0.125
+  },
+  {
+    "null_columns": 4,
+    "sketch_width": 6,
+    "covariance": 0.5901996155188355,
+    "theory_from_gap": 0.590394211801901,
+    "X_variance": 0.12477227676869954,
+    "expected_X_variance": 0.125
+  },
+  {
+    "null_columns": 8,
+    "sketch_width": 10,
+    "covariance": 0.8601793092336671,
+    "theory_from_gap": 0.8599153544025504,
+    "X_variance": 0.1248766900084041,
+    "expected_X_variance": 0.125
+  },
+  {
+    "null_columns": 16,
+    "sketch_width": 18,
+    "covariance": 1.239120230394447,
+    "theory_from_gap": 1.2340907060119906,
+    "X_variance": 0.1251028058371103,
+    "expected_X_variance": 0.125
+  }
+]

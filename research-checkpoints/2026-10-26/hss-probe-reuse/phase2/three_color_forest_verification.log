@@ -1,0 +1,22 @@
+{
+  "status": "PASS",
+  "exact_integer_arithmetic": true,
+  "all_labeled_rooted_forests_on_four_vertices": 125,
+  "cases": 274,
+  "executions": 88576,
+  "sharp_rank_one_scope_counterexample": {
+    "parent": [
+      -1,
+      0,
+      1,
+      2
+    ],
+    "k": 1,
+    "sign_assignments": 256,
+    "error_sum": 512,
+    "expected_error": 2,
+    "optimum": 1,
+    "query_count_each_execution": 6
+  },
+  "seconds": 6.737643413000114
+}

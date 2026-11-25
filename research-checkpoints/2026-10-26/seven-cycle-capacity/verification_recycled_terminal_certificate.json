@@ -1,0 +1,11 @@
+{
+  "verified": true,
+  "certificate": "recycled_terminal_certificate.json",
+  "dimension": 128000,
+  "certified_lower_bound": "3.258832624209610237867099424184",
+  "finite_family_checks": true,
+  "literal_S2a_admissible": true,
+  "exact_arithmetic_and_root_bracket": true,
+  "strict_rate_gain_over_published_construction": true,
+  "elapsed_seconds": 5.1397865179988
+}

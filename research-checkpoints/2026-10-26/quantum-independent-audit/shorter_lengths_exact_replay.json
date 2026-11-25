@@ -1,0 +1,50 @@
+{
+  "scope": "Exact rational algebra only; theorem applicability and novelty separately audited",
+  "results": [
+    {
+      "n": 9,
+      "d": 5,
+      "exact_farkas_valid": true
+    },
+    {
+      "n": 10,
+      "d": 5,
+      "exact_farkas_valid": true
+    },
+    {
+      "n": 11,
+      "d": 5,
+      "exact_farkas_valid": true
+    },
+    {
+      "n": 12,
+      "d": 5,
+      "exact_farkas_valid": true
+    },
+    {
+      "n": 13,
+      "d": 5,
+      "exact_farkas_valid": true
+    },
+    {
+      "n": 14,
+      "d": 5,
+      "exact_farkas_valid": true
+    },
+    {
+      "n": 15,
+      "d": 5,
+      "exact_farkas_valid": true
+    },
+    {
+      "n": 16,
+      "d": 5,
+      "exact_farkas_valid": true
+    },
+    {
+      "n": 17,
+      "d": 5,
+      "exact_farkas_valid": true
+    }
+  ]
+}

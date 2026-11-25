@@ -1,0 +1,10 @@
+{
+  "exact": true,
+  "short_Farkas_identity": true,
+  "analytic_argument": "HS self-adjoint twirl norm; rank-one Q MacWilliams identity; ||R-Q||F\u00b2=2N\u00b2nu; triangle/Cauchy-Schwarz",
+  "A_matches": true,
+  "w_matches": true,
+  "contradiction_bound": "3146129664606981651889659/7386807976480762375000000",
+  "necessary_strict_variance_lower_bound": "1/100000000",
+  "scope": "unrestricted hypothetical n18 code; weak structural bound, not exclusion; novelty unconfirmed"
+}

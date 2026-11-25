@@ -1,0 +1,14 @@
+{
+  "status": "EXACT_FRACTION_PASS",
+  "N": 8,
+  "L": 2,
+  "width": 3,
+  "fine_sign_assignments": 256,
+  "complete_sectors": 21,
+  "actual_forward_and_transpose_samples": true,
+  "correlated_anchor_retained": true,
+  "coarser_frames_unchanged": true,
+  "carried_whole_sector_characters_exact": true,
+  "Walsh_Gram": "256 I_21",
+  "scope": "Exact correlated-law sector identity, not a finite check of the all-depth risk theorem"
+}

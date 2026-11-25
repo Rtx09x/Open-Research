@@ -1,0 +1,9 @@
+{
+  "n": 19,
+  "actual_P_tensor3_twirl_constructed": true,
+  "equality_error": 1.6079582110251067e-11,
+  "lifted_KL_error": 1.5577816814271728e-15,
+  "standard_copy_error": 1.8041124150158794e-16,
+  "PPT_min": -9.693409137438058e-18,
+  "elapsed_seconds": 29.651891231536865
+}

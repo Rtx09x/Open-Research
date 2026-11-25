@@ -1,0 +1,33 @@
+{
+  "passed": true,
+  "returncode": 0,
+  "seconds": 944.7034585559959,
+  "command": "python advisor/phase3/check_quantum_general_tight_independent.py 34 3",
+  "limits": {
+    "address_space_bytes": 2147483648,
+    "cpu_seconds": 1800,
+    "cpus": 1
+  },
+  "host_utc_finished": "2026-10-26T03:11:45.096434+00:00",
+  "output": "PPT block 0 elapsed 28.61 maxRSSKiB 90520\nPPT block 2 elapsed 28.61 maxRSSKiB 90520\nPPT block 4 elapsed 28.89 maxRSSKiB 90520\nPPT block 6 elapsed 29.98 maxRSSKiB 91800\nPPT block 8 elapsed 32.13 maxRSSKiB 91800\nPPT block 10 elapsed 35.49 maxRSSKiB 91968\nPPT block 12 elapsed 40.88 maxRSSKiB 92608\nPPT block 14 elapsed 49.1 maxRSSKiB 93504\nPPT block 16 elapsed 59.58 maxRSSKiB 94912\nPPT block 18 elapsed 71.46 maxRSSKiB 97984\nPPT block 20 elapsed 86.0 maxRSSKiB 99736\nPPT block 22 elapsed 103.46 maxRSSKiB 102168\nPPT block 24 elapsed 123.3 maxRSSKiB 104856\nPPT block 26 elapsed 148.15 maxRSSKiB 111512\nPPT block 28 elapsed 176.89 maxRSSKiB 113996\nPPT block 30 elapsed 206.97 maxRSSKiB 117836\nPPT block 32 elapsed 241.56 maxRSSKiB 121932\nPPT block 34 elapsed 275.51 maxRSSKiB 126412\nPPT block 36 elapsed 311.9 maxRSSKiB 138444\nPPT block 38 elapsed 349.83 maxRSSKiB 140920\nPPT block 40 elapsed 385.22 maxRSSKiB 145656\nPPT block 42 elapsed 421.62 maxRSSKiB 150264\nPPT block 44 elapsed 456.34 maxRSSKiB 154744\nPPT block 46 elapsed 490.97 maxRSSKiB 159096\nPPT block 48 elapsed 526.76 maxRSSKiB 163320\nPPT block 50 elapsed 559.29 maxRSSKiB 167416\nPPT block 52 elapsed 590.47 maxRSSKiB 171384\nPPT block 54 elapsed 619.45 maxRSSKiB 192248\nPPT block 56 elapsed 647.71 maxRSSKiB 192248\nPPT block 58 elapsed 674.62 maxRSSKiB 192248\nPPT block 60 elapsed 699.38 maxRSSKiB 195388\nPPT block 62 elapsed 721.92 maxRSSKiB 198332\nPPT block 64 elapsed 742.93 maxRSSKiB 201020\nPPT block 66 elapsed 763.18 maxRSSKiB 203452\nPPT block 68 elapsed 781.76 maxRSSKiB 205756\nPPT block 70 elapsed 800.44 maxRSSKiB 207932\nPPT block 72 elapsed 817.5 maxRSSKiB 209724\nPPT block 74 elapsed 830.48 maxRSSKiB 211388\nPPT block 76 elapsed 841.87 maxRSSKiB 212796\nPPT block 78 elapsed 852.27 maxRSSKiB 214204\nPPT block 80 elapsed 861.88 maxRSSKiB 215356\nPPT block 82 elapsed 870.29 maxRSSKiB 216252\nPPT block 84 elapsed 876.92 maxRSSKiB 217148\nPPT block 86 elapsed 882.46 maxRSSKiB 217788\nPPT block 88 elapsed 888.09 maxRSSKiB 218428\nPPT block 90 elapsed 892.16 maxRSSKiB 218812\nPPT block 92 elapsed 895.19 maxRSSKiB 219196\nPPT block 94 elapsed 897.47 maxRSSKiB 219452\nPPT block 96 elapsed 898.86 maxRSSKiB 219708\nPPT block 98 elapsed 899.51 maxRSSKiB 219836\nPPT block 100 elapsed 899.81 maxRSSKiB 219836\nPPT block 102 elapsed 899.9 maxRSSKiB 219964\nIndependent cone coefficients ready 899.9107646942139\n{\n  \"passed\": true,\n  \"n\": 34,\n  \"t\": 3,\n  \"certificate_sha256\": \"04ca5f383f77f8168d3989cb2b67a13ae51a82648518ec75d0f6407c1fb392ba\",\n  \"constant_exact\": \"-2785623/2000000000000\",\n  \"main_residual_budget\": \"119/400000000\",\n  \"extra_KL_defect_bound\": \"175520817638704151/160875000000000000000000000000000000000000000000000000000000000000\",\n  \"extra_KL_defect_less_than\": \"1e-35\",\n  \"strict_upper_using_coarse_KL_bound\": \"-109531149999999999999999999999/100000000000000000000000000000000000\",\n  \"KL_vectors_checked\": 535,\n  \"diagnostic_max_KL_eigenresidual\": 5.3266001780387965e-74,\n  \"diagnostic_max_moment_residual\": 5.11661419798823e-11,\n  \"diagnostic_max_enum_residual\": 8.508424489795918e-10,\n  \"seconds\": 942.637654542923,\n  \"max_RSS_KiB\": 236096,\n  \"entry_tolerance\": \"1/1000000000\",\n  \"arithmetic\": \"Independent SymPy exact6j to256bit Arb; declarative full-space collection; no worker imports\",\n  \"scope\": \"Finite necessary relaxation exclusion, conditional only on audited representation-theoretic identities, not novelty.\"\n}\n",
+  "result": {
+    "passed": true,
+    "n": 34,
+    "t": 3,
+    "certificate_sha256": "04ca5f383f77f8168d3989cb2b67a13ae51a82648518ec75d0f6407c1fb392ba",
+    "constant_exact": "-2785623/2000000000000",
+    "main_residual_budget": "119/400000000",
+    "extra_KL_defect_bound": "175520817638704151/160875000000000000000000000000000000000000000000000000000000000000",
+    "extra_KL_defect_less_than": "1e-35",
+    "strict_upper_using_coarse_KL_bound": "-109531149999999999999999999999/100000000000000000000000000000000000",
+    "KL_vectors_checked": 535,
+    "diagnostic_max_KL_eigenresidual": 5.3266001780387965e-74,
+    "diagnostic_max_moment_residual": 5.11661419798823e-11,
+    "diagnostic_max_enum_residual": 8.508424489795918e-10,
+    "seconds": 942.637654542923,
+    "max_RSS_KiB": 236096,
+    "entry_tolerance": "1/1000000000",
+    "arithmetic": "Independent SymPy exact6j to256bit Arb; declarative full-space collection; no worker imports",
+    "scope": "Finite necessary relaxation exclusion, conditional only on audited representation-theoretic identities, not novelty."
+  }
+}
