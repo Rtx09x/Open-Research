@@ -1,101 +1,59 @@
 <div align="center">
 
-<img src="https://capsule-render.vercel.app/api?type=rect&amp;color=0:101c2d,100:254963&amp;height=190&amp;section=header&amp;text=Open%20Research&amp;fontColor=ffffff&amp;fontSize=55&amp;fontAlignY=40&amp;desc=An%20independent%20initiative%20for%20open%2C%20collaborative%20and%20AI-assisted%20research.&amp;descAlignY=69&amp;descSize=15" width="100%" alt="An independent initiative for open, collaborative and AI-assisted research.">
-
-
+<img src="https://capsule-render.vercel.app/api?type=rect&amp;color=0:101c2d,100:254963&amp;height=190&amp;section=header&amp;text=Open%20Research&amp;fontColor=ffffff&amp;fontSize=55&amp;fontAlignY=40&amp;desc=An%20independent%20initiative%20for%20open%2C%20collaborative%20and%20AI-assisted%20research.&amp;descAlignY=69&amp;descSize=15" width="100%" alt="Open Research. An independent initiative for open, collaborative and AI-assisted research.">
 
 [![Contributions](https://img.shields.io/badge/contributions-open-376c59?style=flat-square)](CONTRIBUTING.md)
 [![Software](https://img.shields.io/badge/software-MIT-405c78?style=flat-square)](LICENSES/MIT.txt)
 [![Research](https://img.shields.io/badge/research-CC%20BY%204.0-405c78?style=flat-square)](LICENSE.md)
 
-[Research collection](#founding-research-collection) · [Research domains](#research-domains) · [Standards](#research-standards) · [Contribute](CONTRIBUTING.md)
+[Research](#research) · [Contributing](#contributing) · [Research standards](#research-standards) · [About](#about)
 
 </div>
 
----
+## Why Open Research?
 
-## Overview
+For someone outside academia, pursuing a research question can be difficult. Access to equipment, computing resources, specialist knowledge and experienced collaborators is often limited. An interesting idea may go unexplored because the person who had it simply cannot investigate it.
 
-Research has historically depended on access to specialised infrastructure, institutional networks, funding and expertise. Advances in artificial intelligence and computation are changing the scale and complexity of investigations that individuals and small teams can undertake. Open Research seeks to translate that expanded capacity into rigorous, substantive contributions across disciplines.
+AI is changing part of that equation. Individuals can now attempt problems that would previously have been difficult to approach without considerable resources or years of specialist training. This does not remove the need for expertise or careful verification, but it opens up new opportunities for independent research.
 
-Participation is open to everyone, irrespective of professional background, qualifications or institutional affiliation. The standard for inclusion is the quality, transparency and scientific merit of the contribution.
+Open Research brings the model of open-source collaboration to research. This repository is a place to propose questions, share findings and work on problems with others. A researcher can publish a derivation here; someone else can examine it, identify a gap, develop an alternative proof or take the result further. The work, its history and the contributions of everyone involved remain accessible.
 
-## Founding research collection
+Anyone is welcome to contribute, regardless of their academic background or profession. **We judge contributions by the quality of the work.**
 
-**2026 · In preparation**
+## Research
 
-The initial collection originates from research conducted by the founder across mathematics, physics, computer science and engineering. It will establish the scientific foundation of the initiative and provide concrete problems, methods and results for further investigation.
+### Founding collection · 2026
 
-The collection is being prepared for public release, with manuscripts or technical reports, supporting evidence, computational implementations where applicable, and explicit verification records. Individual results will be identified according to their actual state of development and review. No claim of independent validation is implied by inclusion.
+The first collection draws on independent research by [Rudra Tiwari](https://github.com/Rtx09x), the founder of Open Research.
 
-As the collection is released, this section will serve as an index to the research and its associated artifacts.
+It covers problems in quantum error correction, physical computing, electrical network diagnosis, information theory, numerical linear algebra and the analysis of algorithms. The collection is currently being prepared for release. Each project will document its findings, supporting evidence and outstanding questions, alongside a manuscript or technical report where appropriate.
 
-## Research domains
+The individual projects will be linked here as they become available.
 
-| Domain | Research areas |
+### Research domains
+
+| Domain | Areas of interest |
 | :--- | :--- |
-| [**Mathematics**](mathematics/) | Pure and applied mathematics, optimisation, information theory and numerical analysis |
-| [**Physics**](physics/) | Fundamental and theoretical physics, quantum information |
-| [**Applied Physics**](applied-physics/) | Physical computing, interacting systems, programmable materials and physics-based technologies |
-| [**Computer Science**](computer-science/) | Algorithms, machine learning, computation and theoretical computer science |
-| [**Engineering**](engineering/) | Electrical, mechanical and systems engineering |
+| [Mathematics](mathematics/) | Pure and applied mathematics, information theory, numerical analysis |
+| [Physics](physics/) | Theoretical physics, quantum information |
+| [Applied Physics](applied-physics/) | Physical computing, interacting systems, programmable materials |
+| [Computer Science](computer-science/) | Algorithms, machine learning, theory of computation |
+| [Engineering](engineering/) | Electrical, mechanical and systems engineering |
 
-These domains represent the initial scope of the initiative. New disciplines, interdisciplinary investigations and research directions may be proposed as the collection develops.
+These directories are a starting point. Research need not fit neatly into a single discipline, and contributors can propose additional domains.
 
-## Research standards
+## Contributing
 
-> **Open participation does not imply a lower standard of evidence.**
+You do not need a finished paper to participate. You might have a question worth investigating, an existing body of work to share, or a new approach to a problem someone else is working on.
 
-Open Research accepts original investigations, partial results, conjectures, alternative solutions and independent reviews. Prior publication is not required. Contributions must nevertheless be appropriately documented, attributable and supported by evidence commensurate with their claims.
+There are several ways to get involved:
 
-<table>
-<tr>
-<td width="50%"><strong>Rigour and reproducibility</strong><p>Document assumptions, methods, evidence, checks and limitations. Provide supporting proofs, code or experimental records wherever applicable.</p></td>
-<td width="50%"><strong>Transparent verification</strong><p>Distinguish preliminary findings from internally checked, independently examined and formally reviewed results.</p></td>
-</tr>
-<tr>
-<td><strong>Responsible AI assistance</strong><p>Disclose the role of AI in research and the checks performed. Researchers remain accountable for the claims they submit.</p></td>
-<td><strong>Attribution and autonomy</strong><p>Credit substantive contributions and prior work. Researchers retain copyright and maintain their projects under the applicable open licence.</p></td>
-</tr>
-</table>
+- [Propose a problem](https://github.com/Rtx09x/Open-Research/issues/new/choose), whether or not you have a solution.
+- Submit original research or extend an existing project through a pull request.
+- Reproduce a result, examine a proof or report an error using the [research feedback form](https://github.com/Rtx09x/Open-Research/issues/new/choose).
+- Collaborate with other researchers on methods, experiments and manuscripts.
 
-### Verification framework
-
-| Status | Meaning |
-| :--- | :--- |
-| Unverified | Preliminary work or conjecture |
-| Internally verified | Substantive checks documented by the research team |
-| Under independent review | Independent examination underway |
-| Independently verified | Independent checking supports specified claims |
-| Peer reviewed | Specified claims have undergone formal peer review |
-| Disputed | Material unresolved objections exist |
-
-Admission into Open Research is not scientific endorsement. Verification applies to specified claims and versions, and statuses must reflect the available evidence. See the complete [verification standards](VERIFICATION.md).
-
-## Origins and leadership
-
-Open Research was founded in 2026 by **[Rudra Tiwari](https://github.com/Rtx09x)**, an undergraduate researcher working across AI-assisted scientific discovery, mathematics, physics and computational research.
-
-The initiative grew out of his independent investigations into scientific and mathematical problems, and the broader question of how AI could enable more individuals to participate meaningfully in research. His research forms the basis of the founding collection.
-
-Open Research is currently independent and founder-led. Its long-term objective is to develop a distributed community of researchers, project maintainers and independent reviewers, with individual attribution and scientific accountability preserved throughout.
-
-**Founder and initial maintainer:** [Rudra Tiwari · @Rtx09x](https://github.com/Rtx09x)
-
-See [governance](GOVERNANCE.md) for the current operating structure.
-
-## Open collaboration
-
-Research is not limited to producing a new result. Identifying an error, reproducing a finding, developing a better method or formulating a worthwhile question can be equally meaningful contributions.
-
-| Contribution | How to participate |
-| :--- | :--- |
-| Propose a research problem or domain | [Submit a proposal](https://github.com/Rtx09x/Open-Research/issues/new/choose) |
-| Submit or extend research | Follow the [contribution guidelines](CONTRIBUTING.md) |
-| Review, reproduce or challenge a result | Submit [research feedback](https://github.com/Rtx09x/Open-Research/issues/new/choose) with supporting evidence |
-| Maintain a research project | Use the [project template](templates/project/) and agreed repository standards |
-
-Each project has a minimal common structure:
+Each project has a primary research domain and its own folder. The only required structure is:
 
 ```text
 domain/
@@ -106,25 +64,46 @@ domain/
     └── code/
 ```
 
-Researchers have autonomy over the remaining organization of their work. Original contributions retain their attribution; work derived from existing research must acknowledge its sources and substantive collaborators.
+Project maintainers decide how to organise everything else. The [project template](templates/project/) and [contribution guidelines](CONTRIBUTING.md) explain the requirements for submitting and maintaining research.
 
-## Resources and policies
+## Research standards
 
-| Document | Purpose |
+We accept work in progress, negative results and conjectures, as well as completed investigations. A submission should explain what has actually been established, how it was checked and what remains uncertain. A conjecture is welcome as a conjecture; a claimed theorem needs a proof.
+
+AI-assisted research is encouraged. Contributors must disclose how AI was used and describe the checks performed on its output. Responsibility for the submitted work remains with its authors.
+
+### Verification
+
+Research can be admitted before independent review, but admission does not establish correctness. Every project records its verification status, and individual claims may have separate statuses where necessary.
+
+| Status | Meaning |
 | :--- | :--- |
-| [Contribution guidelines](CONTRIBUTING.md) | Submission criteria, organization and attribution |
-| [Verification standards](VERIFICATION.md) | Evidence, review and scientific accountability |
-| [Governance](GOVERNANCE.md) | Maintainership and decision-making |
-| [Code of conduct](CODE_OF_CONDUCT.md) | Professional standards for collaboration |
-| [Licensing](LICENSE.md) | Open reuse and contributor rights |
-| [Citation](CITATION.cff) | Citation metadata for the initiative |
+| Unverified | Substantive validation has not yet been established. |
+| Internally verified | The research team has documented its own checks. |
+| Under independent review | An independent examination is in progress. |
+| Independently verified | Independent checks support the specified result. |
+| Peer reviewed | The specified result has undergone formal peer review. |
+| Disputed | A material objection remains unresolved. |
 
-Research should be cited at the individual project and author level. Where Open Research materially supports an investigation, appropriate acknowledgement of the initiative is encouraged.
+See [VERIFICATION.md](VERIFICATION.md) for the full framework. Reviewers are encouraged to document the scope and outcome of their checks, including unsuccessful attempts at reproduction.
 
----
+### Authorship and credit
 
-<div align="center">
+Contributors retain copyright in their original work, subject to the permissions granted under the applicable open licence. Research built on previous work must cite its sources. Joint work should credit everyone who contributed substantively, with authorship reflecting their actual contributions.
 
-**Open participation · Rigorous research · Individual recognition · Collective progress**
+When publishing work developed through Open Research, please acknowledge the initiative where appropriate. Cite individual research projects and their authors rather than treating the repository as a substitute for scholarly citation.
 
-</div>
+## About
+
+Open Research was founded in 2026 by **[Rudra Tiwari](https://github.com/Rtx09x)**, an undergraduate researcher working on problems in mathematics, physics and computational science using AI-assisted methods.
+
+The initiative grew out of his own experience investigating scientific questions independently. The founding collection is the first step towards opening that process to other researchers and building a shared body of work.
+
+The repository is currently maintained by its founder. As more researchers participate, project maintainers and independent reviewers will take on greater responsibilities. The initiative is presently independent.
+
+## Repository documentation
+
+[Contribution guidelines](CONTRIBUTING.md) · [Verification standards](VERIFICATION.md) · [Governance](GOVERNANCE.md) · [Code of conduct](CODE_OF_CONDUCT.md) · [Project template](templates/project/)
+
+Original software is available under the [MIT License](LICENSES/MIT.txt); original research material is covered by [CC BY 4.0](LICENSE.md), subject to the repository licensing policy and any identified third-party rights. Repository-level citation information is available in [CITATION.cff](CITATION.cff).
+
