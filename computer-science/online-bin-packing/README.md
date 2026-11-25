@@ -6,7 +6,15 @@ What performance can a specified deterministic online bin-packing algorithm guar
 
 ## Results and scope
 
-The October checkpoint reports an algorithm-specific asymptotic ratio bracket 1.5782054112079646… ≤ R ≤ 1.5782055179987482…. The lower endpoint concerns a particular algorithm and input construction, not a universal lower bound for all online algorithms.
+For a specified retuned tiny-Best-Fit Advanced Harmonic algorithm, the checkpoint gives the internally checked asymptotic competitive-ratio bracket
+
+$$
+1.5782054112079646\ldots\;\leq R\leq\;1.5782055179987482\ldots
+$$
+
+The interval is approximately **$1.068\times10^{-7}$ wide**. The lower endpoint comes from an explicit seven-size rational input family with offline optimum exactly $N$; the upper endpoint uses the stated ordered-suffix analysis and pricing certificates. Together they sharply constrain the possible improvement obtainable from analysis alone for this fixed algorithm. Five packing checkpoint checks passed in the release replay.
+
+The lower bound is **algorithm-specific**, not a universal lower bound for every online packing algorithm, and the endpoints do not prove the exact ratio. The published universal gap remains open.
 
 ## Materials
 

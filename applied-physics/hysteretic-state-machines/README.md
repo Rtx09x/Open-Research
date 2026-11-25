@@ -9,6 +9,17 @@ Rudra Tiwari, University of Delhi, India.
 
 This is the lean core of the 16 October 2026 reviewed package. “Reviewed” means the documented research/editorial checking process, not independent human peer review or publication acceptance. AI assistance was used in that workflow. Original material is offered under the repository licensing policy; third-party rights remain with their owners.
 
+## Main results
+
+Within the repeated-pulse model, with at most one upward and one downward switch per pulse, the paper develops an exact theory of which finite state machines can be built and how much memory they require:
+
+- **Realizability:** a finite unary transition map is realizable if and only if it has no directed two-cycle between distinct states. Every admissible map on $m$ states has an $m$-switch realization using pairwise interactions and uniform hysteresis spans.
+- **Sharp cycle capacity:** with the required interaction degree, the maximum nontrivial cycle length on $n\geq3$ switches is $\binom{n}{\lfloor(n-1)/2\rfloor}$. For every period at least three, a construction comes within two switches of the capacity lower bound.
+- **Exact constructions:** a 100-state cycle uses nine switches; a 1,000-state cycle uses 13 switches and is optimal in switch count. The latter construction uses interactions up to seven-body order.
+- **Exact reset cost:** an $m$-state one-pulse reset requires exactly $\lceil2\sqrt{m-1}\rceil-1$ switches in the paper's model. Further results characterize merge operations, independent elements, and interaction-order tradeoffs.
+
+The manuscript contains the analytic arguments and constructions. The computational suite checks finite witnesses, resource bounds and controls; it passed again for this release. These claims concern the stated threshold model, not a demonstrated manufactured device. See the [claim-to-evidence map](EVIDENCE.md) and [release validation record](../../RELEASE_VALIDATION.md).
+
 ## Scope
 
 The paper studies finite-state transitions under a repeated quasistatic scalar pulse, with at most one rising and one falling individual switch. It gives realizability, memory, interaction-degree and support results in that specific threshold model. It does not establish manufacturing cost, energy use, thermal robustness, physical implementability of arbitrary coefficients, or control of all off-protocol initial conditions.

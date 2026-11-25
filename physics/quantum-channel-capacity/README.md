@@ -6,7 +6,11 @@ Can quantum information be transmitted at positive rate for the stated qubit dep
 
 ## Results and scope
 
-The archived research includes an exact obstruction for a specified stabilizer-shield architecture and a separate squeezed-obstruction checker. It does not establish positive quantum capacity at p = 0.205, where p denotes total nonidentity Pauli error probability.
+For the qubit depolarizing channel with total nonidentity Pauli error probability $p=0.205$, the work develops an exact obstruction to a particular stabilizer-shield route toward quantum communication.
+
+The proof treats full $[[m,2]]$ stabilizer encoding subspaces and **arbitrary CPTP receiver decoders**, including the specified erasure-flag and postselection behavior. It derives a quantitative distance obstruction to the target shield and supplies an additional random-stabilizer result. The accompanying exact checker verifies finite-block inequalities, including the stated $m=4096$ and $m=8192$ cases. A separate checker verifies a squeezed-state obstruction in its own noise setting.
+
+Both standalone checkers passed in the release replay. The result rules out the stated architecture under its hypotheses; it does not establish zero channel capacity or positive quantum capacity at $p=0.205$.
 
 ## Materials
 

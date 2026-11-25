@@ -8,6 +8,17 @@ The core of the resistance-diagnosis research track: the current paper, its comp
 
 Author: Rudra Tiwari, University of Delhi, India. The manuscript is the reviewed 16 October 2026 version, preserved byte-for-byte. Review and verification involved AI assistance; “reviewed” does not mean independent human peer review, publication acceptance, or certified novelty.
 
+## Main results
+
+For a known, positively weighted electrical network, each test measures one scalar effective resistance. The paper develops exact diagnosis results across several distinct fault and measurement models:
+
+- **Optimal adaptive diagnosis:** for prescribed single-edge deletion with generic weights, a connected-graph strategy has a healthy spine followed by a binary-search tail. An exact subset dynamic program finds the optimum, with exponential dependence on the number of blocks plus bridges.
+- **Optimal fixed designs and access:** on bridgeless connected graphs, a doubled-articulation cactus yields the exact fixed-design optimum and minimum-cost terminal access. Every identifying access set can simulate unrestricted queries without increasing faultwise decision-tree depth, under the stated exact generic model.
+- **Unknown finite changes:** two-anchor reconstruction identifies a single changed edge and its magnitude in at most **$2n-3$ scalar measurements**, for every positive baseline weighting when the target stays connected.
+- **A sharp distinction between exact and noisy diagnosis:** the paper gives a relative-error lower bound and examples where a cubic prism needs one exact generic measurement but linearly many tests under 1% relative error. Known and uncertain fault severity can also lead to different query complexity.
+
+All 31 core and extended checks passed in the release replay. The mathematical derivations remain open to independent expert review; the full hypotheses are in the [manuscript](manuscript/structure_uncertainty_fault_diagnosis.pdf).
+
 ## Results and limits
 
 For a known positively weighted network, the paper studies diagnosis from scalar pair-resistance measurements. It proves restricted-terminal ambiguity, connected-graph adaptive recurrence, bridgeless fixed-design/access formulas, explicit adaptive-versus-fixed gaps, universal single finite-change recovery, and severity/noise-dependent bounds. The full assumptions and analytic proofs are in the manuscript.

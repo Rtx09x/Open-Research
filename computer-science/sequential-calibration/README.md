@@ -6,7 +6,16 @@ What expected calibration error can be guaranteed in the classical adversarial b
 
 ## Results and scope
 
-The v3 adaptive-weight package presents a candidate bound O(T^(20423/30846)) using the stated sign-preservation-with-reuse transfer. Version 2 had a documented gap; v3 gives a proposed stronger induction and retains the counterexample and erratum.
+The v3 adaptive-weight package presents an internally checked **candidate asymptotic calibration bound**
+
+$$
+\mathbb{E}[\mathrm{CalErr}(T)]=O\!\left(T^{20423/30846}\right)
+=O\!\left(T^{0.6620955715489852\ldots}\right).
+$$
+
+The mechanism adapts continuation weights to observed count ratios in the sign-preservation-with-reuse game, then invokes the stated transfer to classical marginal calibration. The exponent improves on the **inspected historical printed comparator** of 0.662942288; that comparison is not a claim about the current literature frontier.
+
+The exact-arithmetic replay checked **4,988 cells** covering the stated trigger domain; the package also reports 167,280 finite state/horizon controls. A real gap in the earlier v2 induction was identified, with a 19-round counterexample. The v3 package documents a stronger deletion-augmented induction and the erratum. Those numerical checks are evidence for the numerical obligations, not a substitute for independent scrutiny of the repaired analytic argument.
 
 ## Materials
 

@@ -6,11 +6,18 @@ How few physical qubits can support a two-dimensional quantum code entirely with
 
 ## Results and scope
 
-The October checkpoint reports an internally checked computer-assisted exclusion at n=18 for t=2 and a known construction at n=19. For t=3 it reports 35 ≤ n ≤ 37; the exact minimum and the proposed general formula remain open. These statements are restricted to the specified symmetric-subspace model.
+The work studies two-dimensional complex codes **inside the fully symmetric $n$-qubit subspace**, correcting arbitrary errors on at most $t$ physical qubits. Its strongest internally checked results include:
+
+- **Two-error minimum:** $n_{\min}(2)=19$ in this model. The central new exclusion is a computer-assisted certificate ruling out $n=18$; the 19-qubit construction was already known. The full minimum also uses shorter-length exclusions and the known construction, as documented in the proof package.
+- **Three errors:** $35\leq n_{\min}(3)\leq37$, combining certificates excluding 33 and 34 with an exact existence certificate at 37. Whether 35 or 36 works remains open.
+- **General lower bound:** for rank-two codes and $t\geq2$, the archived volume theorem and equality exclusion yield $n\geq2t^2+4t+2$. The proposed exact formula $3t^2+3t+1$ remains a conjecture.
+- **Explicit higher-radius constructions:** the checkpoint also supplies a phase-twisted construction with $n=4t^2+2t$ for $t\geq10$, under the stated construction hypotheses.
+
+These are scoped results, not bounds for arbitrary quantum codes outside the symmetric subspace. The independent internal arithmetic verifier for the 18-qubit certificate passed a fresh 256-bit interval replay; the general-bound checkpoint replay also passed. The analytic applicability argument and priority still need independent expert scrutiny.
 
 ## Materials
 
-[Project checkpoint](../../research-checkpoints/2026-10-26/symmetric-quantum-codes/) · [Independent verifier materials](../../research-checkpoints/2026-10-26/quantum-independent-audit/) · [General bound and assumptions](../../research-checkpoints/2026-10-26/symmetric-quantum-codes/checkpoints/2026-10-26-all-t-volume/THEOREM.md)
+[Two-error theorem and proof](../../research-checkpoints/2026-10-26/symmetric-quantum-codes/phase2/theorem_and_necessity.md) · [Three-error bracket](../../research-checkpoints/2026-10-26/symmetric-quantum-codes/phase3/t3_verified_bracket.md) · [Independent verifier materials](../../research-checkpoints/2026-10-26/quantum-independent-audit/) · [General bound and assumptions](../../research-checkpoints/2026-10-26/symmetric-quantum-codes/checkpoints/2026-10-26-all-t-volume/THEOREM.md)
 
 ## Verification and limitations
 

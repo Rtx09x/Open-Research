@@ -6,7 +6,13 @@ How can changes in a known electrical network be recovered from pairwise effecti
 
 ## Results and scope
 
-The archived work studies exact reconstruction for same-direction changes and contrasting lower bounds for mixed-sign changes. Its rank-adaptive and structured-network statements require the precise assumptions in the manuscript. The archived lower bounds do not imply impossibility for every measurement model.
+The research develops a rank-adaptive way to reconstruct a changed network from exact effective-resistance measurements, and shows how radically the answer changes when conductance changes can cancel.
+
+- **Same-direction changes:** for a connected target with Laplacian-change rank $r$, the stated adaptive algorithm reconstructs the network using $(r+1)(n-1)-r(r+1)/2$ distinct pair queries. It infers the direction and stopping rank within the monotone promise, without prior knowledge of the changed locations.
+- **Mixed-sign lower bounds:** six changes among existing edges of a unit complete graph can require quadratically many randomized queries and nearly all pairs deterministically, even though only four pair readings change. A separate construction with a new edge gives a three-change marked-pair reduction.
+- **Structured networks:** for product-weight complete baselines with at most $K\geq1$ changes, the manuscript gives the class-wide minimax order $\Theta(\min\{n^2,n+K^2\})$ under its monotone exact-oracle assumptions.
+
+The manuscript also treats disconnected weakening and weighted class-structured networks. The exact recovery and composition test suites passed in the release replay; the different recovery and lower-bound models should not be conflated.
 
 ## Materials
 
@@ -14,7 +20,7 @@ The archived work studies exact reconstruction for same-direction changes and co
 
 ## Verification and limitations
 
-The manuscript and supporting studies are internally checked research, not independently verified or peer reviewed. The model assumes a known baseline network and an exact oracle where stated; noisy and joint-uncertainty variants are separate studies.
+The manuscript and supporting studies are internally checked research, with independent expert review and peer review pending. The model assumes a known baseline network and an exact oracle where stated; noisy and joint-uncertainty variants are separate studies.
 
 ## Reproduce
 
