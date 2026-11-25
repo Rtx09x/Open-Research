@@ -8,5 +8,5 @@ Propose new research through the [contribution guidelines](../CONTRIBUTING.md). 
 
 ## Founding projects
 
-- [Symmetric quantum error correction](symmetric-quantum-error-correction/)
+- [Symmetric quantum error correction](symmetric-quantum-error-correction/) · [Preprint PDF](symmetric-quantum-error-correction/preprint/symmetric_quantum_error_correcting_codes.pdf)
 - [Quantum channel capacity](quantum-channel-capacity/)

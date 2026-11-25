@@ -6,7 +6,7 @@
 [![Software](https://img.shields.io/badge/software-MIT-405c78?style=flat-square)](LICENSES/MIT.txt)
 [![Research](https://img.shields.io/badge/research-CC%20BY%204.0-405c78?style=flat-square)](LICENSE.md)
 
-[Research](#research) · [Contributing](#contributing) · [Research standards](#research-standards) · [About](#about)
+[Research](#research) · [Preprints](#preprints) · [Contributing](#contributing) · [Research standards](#research-standards) · [About](#about)
 
 </div>
 
@@ -43,6 +43,20 @@ The results have been **internally verified**: the repository includes proofs, s
 | [Seven-cycle Shannon capacity](mathematics/seven-cycle-shannon-capacity/) | Exact finite-subgroup and construction-family obstructions, with replayable certificates |
 | [Quantum channel capacity](physics/quantum-channel-capacity/) | Exact stabilizer-shield obstruction against arbitrary decoders in the stated architecture |
 The shared [26 October checkpoint](research-checkpoints/) preserves the proofs, dependencies and replay tools used across several tracks. Read the project pages for model assumptions, verification status and what remains open. The [release validation record](RELEASE_VALIDATION.md) lists the checks actually run.
+
+### Preprints
+
+Seven papers by Rudra Tiwari, with LaTeX sources on their project pages.
+
+| Paper | Result | PDF |
+| :--- | :--- | :--- |
+| [Hysteretic state machines](applied-physics/hysteretic-state-machines/) | Sharp memory bounds and exact interaction tradeoffs. | [Read PDF](applied-physics/hysteretic-state-machines/preprint/physical_resource_complexity_hysteretic_state_machines.pdf) |
+| [Resistance-based fault diagnosis](engineering/resistance-fault-diagnosis/) | Single-edge diagnosis under access, uncertainty and noise constraints. | [Read PDF](engineering/resistance-fault-diagnosis/preprint/structure_uncertainty_fault_diagnosis.pdf) |
+| [Sparse conductance recovery](engineering/sparse-conductance-recovery/) | Rank-adaptive reconstruction and quadratic mixed-sign query lower bounds. | [Read PDF](engineering/sparse-conductance-recovery/preprint/sparse_conductance_recovery.pdf) |
+| [Symmetric quantum error correction](physics/symmetric-quantum-error-correction/) | General qubit lower bounds, finite certificates and code constructions. | [Read PDF](physics/symmetric-quantum-error-correction/preprint/symmetric_quantum_error_correcting_codes.pdf) |
+| [Sequential calibration](computer-science/sequential-calibration/) | Candidate error exponent with exact arithmetic certificates. | [Read PDF](computer-science/sequential-calibration/preprint/adaptive_weight_sequential_calibration.pdf) |
+| [Online bin packing](computer-science/online-bin-packing/) | A tight competitive-ratio bracket for the specified algorithm. | [Read PDF](computer-science/online-bin-packing/preprint/deterministic_online_bin_packing.pdf) |
+| [Seven-cycle zero-error codes](mathematics/seven-cycle-shannon-capacity/) | Exact capacity and obstruction certificates for specified subchannels. | [Read PDF](mathematics/seven-cycle-shannon-capacity/preprint/seven_cycle_shannon_capacity_obstructions.pdf) |
 
 ### Research domains
 

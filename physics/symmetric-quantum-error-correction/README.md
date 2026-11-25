@@ -1,5 +1,8 @@
 # Symmetric quantum error correction
 
+**Preprint · November 2026** — [Read the PDF](preprint/symmetric_quantum_error_correcting_codes.pdf) · [LaTeX source](preprint/symmetric_quantum_error_correcting_codes.tex) · [Build instructions](preprint/BUILD.md)
+
+
 ## Question
 
 How few physical qubits can support a two-dimensional quantum code entirely within the permutation-symmetric subspace, correcting up to t arbitrary physical-qubit errors?

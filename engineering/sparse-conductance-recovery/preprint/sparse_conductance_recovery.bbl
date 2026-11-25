@@ -1,0 +1,72 @@
+\begin{thebibliography}{9}
+\providecommand{\natexlab}[1]{#1}
+\providecommand{\url}[1]{\texttt{#1}}
+\expandafter\ifx\csname urlstyle\endcsname\relax
+  \providecommand{\doi}[1]{doi: #1}\else
+  \providecommand{\doi}{doi: \begingroup \urlstyle{rm}\Url}\fi
+
+\bibitem[Chen et~al.(2025)Chen, Epperly, Tropp, and Webber]{CETW}
+Yifan Chen, Ethan~N. Epperly, Joel~A. Tropp, and Robert~J. Webber.
+\newblock Randomly pivoted cholesky: Practical approximation of a kernel matrix
+  with few entry evaluations.
+\newblock \emph{Communications on Pure and Applied Mathematics}, 78:\penalty0
+  995--1041, 2025.
+\newblock \doi{10.1002/cpa.22234}.
+
+\bibitem[Doyle and Snell(1984)]{DS}
+Peter~G. Doyle and J.~Laurie Snell.
+\newblock \emph{Random Walks and Electric Networks}.
+\newblock Mathematical Association of America, 1984.
+
+\bibitem[Fiedorowicz and Basu(2026)]{FB}
+Barbara Fiedorowicz and Amitabh Basu.
+\newblock Identifying faulty edges in resistive electrical networks.
+\newblock \emph{Discrete Applied Mathematics}, 395:\penalty0 400--424, 2026.
+\newblock \doi{10.1016/j.dam.2026.08.008}.
+\newblock arXiv:2512.23527.
+
+\bibitem[Ghosh et~al.(2008)Ghosh, Boyd, and Saberi]{GBS}
+Arpita Ghosh, Stephen Boyd, and Amin Saberi.
+\newblock Minimizing effective resistance of a graph.
+\newblock \emph{SIAM Review}, 50\penalty0 (1):\penalty0 37--66, 2008.
+\newblock \doi{10.1137/050645452}.
+
+\bibitem[Harbrecht et~al.(2012)Harbrecht, Peters, and Schneider]{HPS}
+Helmut Harbrecht, Michael Peters, and Reinhold Schneider.
+\newblock On the low-rank approximation by the pivoted cholesky decomposition.
+\newblock \emph{Applied Numerical Mathematics}, 62\penalty0 (4):\penalty0
+  428--440, 2012.
+\newblock \doi{10.1016/j.apnum.2011.10.001}.
+
+\bibitem[Hoskins et~al.(2018)Hoskins, Musco, Musco, and Tsourakakis]{HMMT}
+Jeremy~G. Hoskins, Cameron Musco, Christopher Musco, and Charalampos~E.
+  Tsourakakis.
+\newblock Inferring networks from random walk-based node similarities.
+\newblock In \emph{Advances in Neural Information Processing Systems
+  (NeurIPS)}, volume~31, 2018.
+
+\bibitem[Monnig and Meyer(2018)]{MM}
+Nathan~D. Monnig and Fran{\c c}ois~G. Meyer.
+\newblock The resistance perturbation distance: A metric for the analysis of
+  dynamic networks.
+\newblock \emph{Discrete Applied Mathematics}, 236:\penalty0 347--386, 2018.
+\newblock \doi{10.1016/j.dam.2017.10.007}.
+\newblock arXiv:1605.01091.
+
+\bibitem[Reyzin and Srivastava(2007)]{RS}
+Lev Reyzin and Nikhil Srivastava.
+\newblock Learning and verifying graphs using queries with a focus on edge
+  counting.
+\newblock In \emph{Algorithmic Learning Theory (ALT)}, volume 4754 of
+  \emph{Lecture Notes in Computer Science}, pages 285--297, 2007.
+\newblock \doi{10.1007/978-3-540-75225-7_24}.
+
+\bibitem[Warton et~al.(2026)Warton, Bennett, Black, and Nayyeri]{WBBN}
+Evelyn Warton, Huck Bennett, Mitchell Black, and Amir Nayyeri.
+\newblock Graph inference with effective resistance queries.
+\newblock In \emph{Proceedings of the 37th International Conference on
+  Algorithmic Learning Theory (ALT)}, volume 313 of \emph{Proceedings of
+  Machine Learning Research}, pages 1--31, 2026.
+\newblock URL \url{https://proceedings.mlr.press/v313/warton26a.html}.
+
+\end{thebibliography}

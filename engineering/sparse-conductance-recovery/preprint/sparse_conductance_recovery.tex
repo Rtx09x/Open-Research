@@ -1,0 +1,581 @@
+\documentclass[11pt,letterpaper]{article}
+\usepackage{lmodern}
+\usepackage[left=1.05in,right=1.05in,top=0.88in,bottom=0.92in]{geometry}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath,amssymb,amsthm,mathtools,booktabs,array,tabularx,microtype,xcolor}
+\usepackage[numbers,sort&compress]{natbib}
+\usepackage{xurl}
+\usepackage[colorlinks=true,linkcolor=blue!65!black,citecolor=blue!65!black,urlcolor=blue!65!black]{hyperref}
+\hypersetup{
+  pdftitle={Sparse Conductance Recovery from Effective-Resistance Queries},
+  pdfauthor={Rudra Tiwari},
+  pdfsubject={Rank-adaptive monotone reconstruction, structured minimax bounds, and mixed-sign obstructions}
+}
+\setlength{\parindent}{1.5em}
+\setlength{\parskip}{0pt}
+\setlength{\emergencystretch}{2em}
+\setcounter{tocdepth}{2}
+\newtheorem{theorem}{Theorem}
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{proposition}[theorem]{Proposition}
+\newtheorem{corollary}[theorem]{Corollary}
+\newcommand{\one}{\mathbf 1}
+\newcommand{\rank}{\operatorname{rank}}
+\newcommand{\diag}{\operatorname{diag}}
+\newcommand{\ceil}[1]{\left\lceil #1\right\rceil}
+\newcommand{\floor}[1]{\left\lfloor #1\right\rfloor}
+
+\begin{document}
+\thispagestyle{empty}
+\begin{center}
+\vspace*{0.22in}
+{\LARGE\bfseries Sparse Conductance Recovery from\\[.15em] Effective-Resistance Queries\par}
+\vspace{0.20in}
+{\large Rank-Adaptive Monotone Reconstruction, Structured Minimax Bounds,\\[.1em] and Mixed-Sign Obstructions\par}
+\vspace{0.24in}
+{\normalsize\bfseries Rudra Tiwari\par}
+\vspace{0.03in}
+{\normalsize\itshape University of Delhi, New Delhi, India\\Inter-University Accelerator Centre (IUAC), New Delhi, India\par}
+\vspace{0.10in}
+{\small\href{https://orcid.org/0009-0004-8521-7627}{ORCID: 0009-0004-8521-7627}\quad|\quad\href{https://rtx09x.github.io/}{Website}\quad|\quad\href{https://github.com/Rtx09x}{GitHub}\quad|\quad\href{https://github.com/Rtx09x/Open-Research/tree/main/engineering/sparse-conductance-recovery}{Open-Research}\par}
+\vspace{0.15in}
+{\normalsize November 2026\par}
+\end{center}
+\vspace{0.16in}
+\begin{abstract}
+A known weighted graph can be reconstructed after unknown-location, same-direction conductance changes from a rank-adaptive number of exact effective-resistance queries. For a connected target, the count is $(r+1)(n-1)-r(r+1)/2$, where $r$ is the rank of the Laplacian change. The algorithm applies classical pivoted Cholesky to a rooted Gram matrix, inferring direction and stopping rank within the promised monotone class. Decreases that disconnect the graph admit the same bound with $t=c-1+\sum_C r_C\le k$ replacing $r$, using the baseline induced on each recovered component. Mixed signs behave differently: six changes to existing edges of a unit complete baseline, with target conductances in $[3/4,5/4]$, can require quadratically many randomized queries and nearly all pairs deterministically. Only four readings change. A balanced baseline makes all six relative severities constant. If new edges are permitted, a three-change star construction reduces exactly to one-marked-pair search. Structured baselines admit sharper monotone bounds: $O(n+(k+t)^2)$ for known weighted $t$-class blow-ups, including disconnected weakening, and sharp class-wide minimax $\Theta(\min\{n^2,n+K^2\})$ for product-weight complete baselines with at most $K\ge1$ changes. These are exact-oracle results, with full reconstruction and support-only recovery distinguished throughout.
+\end{abstract}
+\vspace{0.12in}
+\noindent\textbf{Keywords:} effective resistance, sparse graph perturbation, pivoted Cholesky, monotone conductance recovery, minimax query complexity, mixed-sign cancellation.
+\clearpage
+\tableofcontents
+\clearpage
+\section{Introduction, Problem Boundary, and Summary of Results}
+Recovering unknown parameter perturbations in an electrical network from scalar driving-point effective-resistance measurements is a fundamental inverse problem sitting at the intersection of spectral graph theory, matrix completion, and circuit diagnosis~\cite{DS,GBS,FB,WBBN}. When a known baseline network $G=(V,E)$ with $n=|V|$ vertices suffers \emph{multiple} simultaneous conductance changes at unknown locations, two phenomena emerge that do not appear in single-fault diagnosis: (i)~the algebraic rank $r = \operatorname{rank}(L'-L)$ of the Laplacian perturbation governs how many adaptive queries suffice under a same-direction (monotone) promise, and (ii)~allowing both increases and decreases (mixed signs) enables exact electrical cancellation, forcing quadratically many queries even when only a constant number of edges change.
+
+\paragraph{Distinct scope from single-fault resistance diagnosis.}
+This paper is an independent companion to our single-fault study \emph{Structure and Uncertainty in Resistance-Based Fault Diagnosis} (\url{https://github.com/Rtx09x/Open-Research/tree/main/engineering/resistance-fault-diagnosis}). Whereas that work analyzes single-edge deletion, single finite changes ($2n-3$ queries), restricted terminal access, bounded severity intervals, and adversarial measurement noise, the present paper studies \emph{multi-edge sparse conductance recovery} ($k \ge 1$ simultaneous changes) with unrestricted pair access under exact resistance oracles. Its central contributions are rank-adaptive monotone reconstruction, sharp minimax complexity on structured baselines, and worst-case mixed-sign quadratic lower bounds. Companion extensions addressing bounded measurement noise and compositional multi-component diagnosis are archived separately in the project repository and are not conflated with the exact-oracle theorems proved here.
+
+\begin{table}[!htbp]
+\centering
+\caption{Summary of exact-oracle query complexity results established in this paper ($f_n(a)=(a+1)(n-1)-\frac{a(a+1)}{2}$, $k$ = number of changed pairs, $r=\operatorname{rank}(L'-L)$).}
+\label{tab:summary}
+\small
+\begin{tabularx}{\linewidth}{@{}l X l@{}}
+\toprule
+\textbf{Regime / Baseline} & \textbf{Promise \& Target Conditions} & \textbf{Exact Query Bound} \\
+\midrule
+Arbitrary connected baseline & Monotone ($w'\le w$ or $w'\ge w$), connected target, unknown $r,k,\sigma$ & $f_n(r) \le f_n(\min\{k,n-1\})$ (Thm.~\ref{thm:connected}) \\
+Arbitrary connected baseline & Monotone weakening disconnecting into $c$ components ($t=c-1+\sum_C r_C\le k$) & $f_n(t)$ with physical $+\infty$ oracle \\
+Unit complete graph $K_n$ & Mixed-sign, $6$ existing-edge changes, $w'\in[3/4,5/4]$, $4$ altered readings & $\Omega(n^2)$ randomized; near-all-pairs det. \\
+Arbitrary baseline + new edge & Mixed-sign, $3$-change star with $1$ new edge & Exact reduction to marked-pair search \\
+Known weighted $t$-class blow-up & Monotone (incl.\ disconnected weakening), $\le k$ changes & $O(n + (k+t)^2)$ \\
+Product-weight complete graph & Monotone, $\le K\ge 1$ changes (class-wide minimax) & $\Theta(\min\{n^2, n+K^2\})$ \\
+\bottomrule
+\end{tabularx}
+\end{table}
+
+\section{Model and the distinction between promises}
+Let $V=\{1,\ldots,n\}$ be a known labeled vertex set. A weighted simple graph is specified by nonnegative finite conductances $w_{uv}=w_{vu}$, with zero denoting an absent edge. Its Laplacian and effective resistances are
+\[
+ L=\sum_{u<v}w_{uv}b_{uv}b_{uv}^{\mathsf T},\qquad
+ R_{uv}=b_{uv}^{\mathsf T}L^+b_{uv},\qquad b_{uv}=e_u-e_v.
+\]
+The resistance formula applies to vertices in the same component. Between components the oracle returns $+\infty$, rather than the finite quadratic form of the global pseudoinverse. The baseline $G$ is connected and fully known. A fixed unknown target $G'$ has conductances $w'$, Laplacian $L'$, and exact pair-query oracle $R'$. We count distinct oracle calls; baseline computation, storage, and exact linear algebra are not charged. Every unordered vertex pair is available. Parallel physical edges, if present, can only be recovered through their aggregate conductance.
+
+Write $k=|\{uv:w'_{uv}\ne w_{uv}\}|$. Full reconstruction means recovering all conductances, including their magnitudes. Support recovery means recovering only this changed-pair set. A \emph{monotone promise} says either $w'\le w$ entrywise or $w'\ge w$ entrywise. The direction, $k$, support, and magnitudes need not be supplied. Increases may add edges when the model permits them; decreases never do. The mixed-sign lower bounds below use two explicitly different models: six changes among existing edges, and three changes with one new edge. They are worst-case results, not assertions that every mixed-sign target is difficult.
+
+For $0\le a\le n-1$, define
+\[
+ f_n(a)=(a+1)(n-1)-\frac{a(a+1)}2.
+\]
+This is nondecreasing on the displayed integer range and at most $\binom n2$. Indeed, $f_n(a+1)-f_n(a)=n-2-a\ge0$ for $a\le n-2$, and $f_n(n-1)=\binom n2$. The trivial one-vertex graph needs no query. All rank, equality, sign, and infinity tests below are exact; no noise-robust support guarantee is implied.
+
+\section{Connected monotone recovery}
+\begin{theorem}[Unknown locations and direction]\label{thm:connected}
+Suppose the target is connected and satisfies the monotone promise. Set $r=\rank(L'-L)$. A deterministic adaptive algorithm reconstructs $G'$ in exactly $f_n(r)$ distinct pair queries for $n\ge2$, without knowing $r$ or $k$. In particular,
+\[
+ Q\le f_n(\min\{k,n-1\})\le\binom n2.
+\]
+If the graph of changed pairs, including isolated vertices, has $h$ components, then $r=n-h$. No genericity or incoherence condition is required.
+\end{theorem}
+
+\begin{proof}
+Work first on $\one^\perp$, where the restrictions $A$ and $A'$ of $L$ and $L'$ are positive definite. A decrease gives $A'\preceq A$ and therefore $A'^{-1}\succeq A^{-1}$; an increase reverses both orders. For completeness, write $A'=A^{1/2}TA^{1/2}$: if $0\prec T\preceq I$, then $T^{-1}\succeq I$, which proves the inverse-order assertion by congruence. Also
+\[
+ A'^{-1}-A^{-1}=-A'^{-1}(A'-A)A^{-1},
+\]
+so this difference has rank $r$. Let $\sigma=+1$ for decreases and $\sigma=-1$ for increases. Thus
+\[
+ K=\sigma(L'^+-L^+)\succeq0,\qquad K\one=0,\qquad \rank K=r.
+\]
+The nonsymmetric product used to prove rank is not being used to infer positive semidefiniteness.
+
+Choose any root $o$. Query $R'_{ov}$ for all $v\ne o$ and compare with the known baseline. Under the promise, all nonzero differences have sign $\sigma$. Define
+\[
+ D_{uv}=\sigma(R'_{uv}-R_{uv})=K_{uu}+K_{vv}-2K_{uv}.
+\]
+If all root differences vanish, then $b_{ov}^{\mathsf T}K b_{ov}=0$ for every $v\ne o$. For a positive semidefinite matrix, a zero quadratic form implies $K b_{ov}=0$; the $n-1$ root-difference vectors span $\one^\perp$. Together with $K\one=0$, this gives $K=0$, hence $L'=L$. Otherwise any nonzero root difference identifies $\sigma$.
+
+Index the nonroot vertices by $W=V\setminus\{o\}$ and form the rooted Gram matrix
+\[
+ H_{uv}=\frac{D_{ou}+D_{ov}-D_{uv}}2
+        =(e_u-e_o)^{\mathsf T}K(e_v-e_o),\qquad u,v\in W.
+\]
+It is positive semidefinite of rank $r$: the matrix with columns $e_v-e_o$ is an isomorphism from $\mathbb R^{n-1}$ onto $\one^\perp$. Its diagonal $H_{vv}=D_{ov}$ is already known.
+
+We recover $H$ by exact pivoted Cholesky. Initially set $\widehat H=0$ and $d=\diag H$. Whenever $d_a>0$, query pairs $\{a,v\}$ for nonroot vertices $v$ other than $a$ and earlier pivots. Previously queried pairs and symmetry supply the remaining entries of $H_{:,a}$. Put
+\[
+ h=H_{:,a}-\widehat H_{:,a},\qquad
+ \widehat H\leftarrow\widehat H+\frac{hh^{\mathsf T}}{d_a},\qquad
+ d\leftarrow\diag H-\diag\widehat H.
+\]
+To justify this step, write the current residual, after permuting the pivot first, as
+\[
+ S=H-\widehat H=
+ \begin{pmatrix}d_a&b^{\mathsf T}\\ b&C\end{pmatrix}\succeq0.
+\]
+Subtracting $S_{:,a}S_{a,:}/d_a$ leaves the block matrix with zero first row and column and lower block $C-bb^{\mathsf T}/d_a$. The Schur complement is positive semidefinite, and invertible block elimination shows its rank is $\rank S-1$. Each pivot therefore preserves positive semidefiniteness and removes exactly one rank. If all residual diagonals vanish, then $|S_{uv}|^2\le S_{uu}S_{vv}=0$, so $S=0$. There are exactly $r$ pivots; no prior rank bound or square roots are needed.
+
+The root star costs $n-1$ queries. Pivot $j$, for $1\le j\le r$, costs $n-1-j$ new pairs, because its root pair and its pairs with earlier pivots are cached. Hence
+\[
+ Q=(n-1)+\sum_{j=1}^r(n-1-j)=f_n(r).
+\]
+A final full-rank pivot can cost zero queries: its only unrecovered residual entry is its known diagonal.
+
+Pad $H$ with a zero root row and column to obtain $H_0$, and set $P=I-\one\one^{\mathsf T}/n$. The translated Gram representation above gives $K=PH_0P$, since centering removes the root translation. Thus the target is recovered by
+\[
+ P'=L^++\sigma K,\qquad
+ L'=\left(P'+\frac{\one\one^{\mathsf T}}n\right)^{-1}
+       -\frac{\one\one^{\mathsf T}}n,\qquad
+ w'_{uv}=-L'_{uv}\quad(u\ne v).
+\]
+The inverse identity follows by considering $\one^\perp$ and $\operatorname{span}\{\one\}$ separately.
+
+Finally, up to a common sign, $L'-L=B\Lambda B^{\mathsf T}$, where $B$ contains the incidence columns of the $k$ changed pairs and $\Lambda$ is positive diagonal. Its kernel is precisely the vectors constant on each component of the changed-pair graph: the quadratic form is a positive sum of squared endpoint differences. Its rank is therefore $n-h\le\min\{k,n-1\}$, completing the proof.
+\end{proof}
+
+With rational input conductances and rational finite oracle answers, the procedure uses rational arithmetic throughout. The query result is separate from the polynomial exact-linear-algebra work and the bit cost of representing the input and answers. The connected algebra in fact only needs $L'-L$ to have one semidefinite sign on $\one^\perp$; the common-direction edge promise supplies that sign and the support-rank interpretation.
+
+\subsection{Why the promise matters}
+Polarity inference is valid only inside a promised monotone class. Neither a consistent root-star sign nor a zero root star cheaply certifies that an arbitrary target is monotone. For example, change the unit triangle on vertices $0,1,2$ to
+\[
+ w'_{01}=w'_{02}=\frac{12}{13},\qquad w'_{12}=\frac{20}{13}.
+\]
+In a triangle with conductances $a,b,c$ on $01,02,12$, the three resistances are $(b+c)/(ab+ac+bc)$, $(a+c)/(ab+ac+bc)$, and $(a+b)/(ab+ac+bc)$. Substitution gives $R'_{01}=R'_{02}=2/3$, exactly their baseline values, but $R'_{12}=1/2\ne2/3$. Thus the zero-diagonal stopping rule can fail for mixed changes. Exact all-pairs reconstruction can check the promise afterwards, but the rank-adaptive algorithm is not an inexpensive promise-verification procedure.
+
+\section{Decreases that disconnect the target}
+\begin{theorem}[Induced component recovery]\label{thm:disconnected}
+Suppose every changed conductance decreases, possibly to zero, and let $C_1,\ldots,C_c$ be the target components, with sizes $s_i$. Define
+\[
+ r_i=\rank\bigl(L_{G'[C_i]}-L_{G[C_i]}\bigr),\qquad
+ t=c-1+\sum_{i=1}^c r_i.
+\]
+There is a deterministic exact reconstruction algorithm with
+\[
+ Q\le f_n(t)\le f_n(\min\{k,n-1\})\le\binom n2.
+\]
+Here $G[C_i]$ is the baseline induced graph, with its own Laplacian and effective resistances. It is neither a principal submatrix retaining external degrees nor the restriction of the original whole-graph resistance metric.
+\end{theorem}
+
+\begin{proof}
+Start with all vertices unassigned. Choose a root $o$ among them and query it against every other unassigned vertex. The finite answers identify exactly its target component $C$; the infinite answers exclude the remaining vertices. Remove $C$ and repeat until all components are known. Every baseline edge joining distinct recovered components was deleted, so all cross-component conductances are determined.
+
+Each $G[C_i]$ is connected because it contains the surviving connected graph $G'[C_i]$. Consequently the connected decreasing-change algorithm applies within $C_i$, using this induced baseline. The component-discovery queries already supply its entire finite root star. All subsequent internal pivots reuse cached answers. For a singleton there is no local query or nontrivial inverse.
+
+If the components are discovered in the displayed order and $N_i=s_i+\cdots+s_c$, the exact count for this procedure is
+\[
+ Q=\sum_{i=1}^c(N_i-1)
+   +\sum_{i=1}^c\left[r_i(s_i-1)-\frac{r_i(r_i+1)}2\right].
+\]
+To bound it cleanly, select each component root and all its $r_i$ pivot vertices. They are distinct, and their number is $m=c+\sum_i r_i=t+1\le n$. Every queried pair has at least one selected endpoint. Therefore
+\[
+ Q\le\binom n2-\binom{n-m}2
+   =mn-\frac{m(m+1)}2=f_n(t).
+\]
+The algorithm need not query cross-component pairs incident to local pivots; counting all such pairs only increases this upper bound.
+
+Let $b$ be the number of baseline edges crossing the recovered component partition. All were deleted. Contracting the connected baseline to this partition yields a connected graph, so $b\ge c-1$. There are at most $k-b$ changed internal edges, and hence $\sum_i r_i\le k-b$. Thus $t\le k$. Independently $r_i\le s_i-1$ gives $t\le n-1$. Monotonicity of $f_n$ proves the remaining inequalities.
+\end{proof}
+
+The global difference $L'^+-L^+$ is not asserted to be positive semidefinite after disconnection. Deleting the only edge of $K_2$ makes $L'^+=0$, already disproving that assertion. Component discovery and induced-baseline replacement are essential. The theorem covers bridge deletion, unchanged internal components, isolated vertices, and the all-isolated target. In particular one deletion requires at most $f_n(1)=2n-3$ queries for $n\ge2$.
+
+\section{Six mixed changes with four altered readings}
+We next construct a known-baseline family in which the changed-edge support is sparse but most measurements reveal nothing. All six changed pairs are existing edges, and every target remains connected with positive conductances.
+
+\begin{lemma}[A two-dimensional inverse perturbation]\label{lem:construction}
+Let $u,a,v,b$ be distinct vertices. Suppose $x=e_u-e_a$ and $z=e_v-e_b$ are eigenvectors of the baseline Laplacian with a common eigenvalue $\lambda>0$. For $s\in\{+1,-1\}$ and $0<2\lambda\eta<1$, define
+\[
+ K=s\eta(xz^{\mathsf T}+zx^{\mathsf T}),\qquad H=L^++K,
+\]
+\[
+ \beta=\frac{\lambda^2\eta}{1-4\lambda^2\eta^2},\qquad
+ \gamma=\frac{2\lambda^3\eta^2}{1-4\lambda^2\eta^2}.
+\]
+Then $H\one=0$, $H$ is positive definite on $\one^\perp$, and
+\[
+ H^+-L=\gamma(xx^{\mathsf T}+zz^{\mathsf T})
+           -s\beta(xz^{\mathsf T}+zx^{\mathsf T}).
+\]
+If the two negative conductance updates below do not exhaust their baseline edges, $H^+$ is a connected positive-weight target Laplacian. Its only conductance changes are
+\[
+ \begin{aligned}
+ \Delta w_{ua}=\Delta w_{vb}&=\gamma,\\
+ \Delta w_{uv}=\Delta w_{ab}&=s\beta,\\
+ \Delta w_{ub}=\Delta w_{av}&=-s\beta.
+ \end{aligned}
+\]
+Exactly the four cross pairs $uv,ub,av,ab$ have altered resistance readings, of magnitude $2\eta$.
+\end{lemma}
+
+\begin{proof}
+The vectors $x,z$ are orthogonal with squared norm $2$. On the orthonormal basis $x/\sqrt2,z/\sqrt2$, let $T$ represent the restriction of $H$. Then
+\[
+ T=
+ \begin{pmatrix}1/\lambda&2s\eta\\2s\eta&1/\lambda\end{pmatrix},\qquad
+ T^{-1}=
+ \frac{1}{1/\lambda^2-4\eta^2}
+ \begin{pmatrix}1/\lambda&-2s\eta\\-2s\eta&1/\lambda\end{pmatrix}.
+\]
+The first matrix has eigenvalues $1/\lambda\pm2\eta>0$. On the orthogonal complement inside $\one^\perp$, $H$ agrees with $L^+$. Subtracting the baseline inverse $\lambda I$ in the displayed two-dimensional block gives diagonal $2\gamma$ and off-diagonal $-2s\beta$, proving the formula. Reading off the six off-diagonal entries gives the stated conductance changes. There are four increases and two decreases, whatever $s$ is. Positivity of all edge weights and the positive definiteness on $\one^\perp$ identify $H^+$ as the target Laplacian and $H$ as its pseudoinverse.
+
+Because $x,z$ have disjoint support, $\diag K=0$ and
+\[
+ R'_{ij}-R_{ij}=K_{ii}+K_{jj}-2K_{ij}=-2K_{ij}.
+\]
+The only nonzero unordered off-diagonal entries of $K$ are its four cross pairs, each equal to $\eta$ or $-\eta$. This proves exact equality to the baseline on every other reading.
+\end{proof}
+
+\begin{proposition}[Uniform absolute weights]\label{prop:unit}
+For every $n\ge4$, a unit-conductance complete baseline has a family of $N=6\binom n4$ distinct six-change targets. Every target conductance lies in $[3/4,5/4]$, and only four of the $M=\binom n2$ pair readings change. Each fixed query changes in exactly $4\binom{n-2}2$ targets, a fraction $4/M$ of the family.
+\end{proposition}
+
+\begin{proof}
+For the unit complete graph $L=nP$, every vector orthogonal to $\one$ has eigenvalue $\lambda=n$. Set $\eta=1/(8n^2)$ in Lemma~\ref{lem:construction}. Then
+\[
+ \beta=\frac{1/8}{1-1/(16n^2)}\le\frac{32}{255}<\frac14,\qquad
+ \gamma=\frac{1/(32n)}{1-1/(16n^2)}\le\frac{2}{255}<\frac14.
+\]
+All updated conductances are therefore in the stated interval.
+
+For each four-set choose one of its three unordered partitions into pairs, order the two vertices within each pair canonically, and include both values of $s$. Swapping the two pairs leaves $K$ unchanged, so this convention has $6\binom n4$ choices. There are no duplicates: the nonzero entries of $K$ identify the four-set and its two absent within-pair entries, hence the partition, and then its signs identify $s$. Distinct $K$ give distinct pseudoinverses and target graphs. All six choices on a fixed four-set nevertheless have the same changed-edge support, namely its entire $K_4$.
+
+For a query pair, choose the other two vertices in $\binom{n-2}2$ ways. Two of the three partitions place that query across the two pairs, and each allows both signs. It therefore changes in $4\binom{n-2}2$ targets. Dividing by $6\binom n4$ gives $4/\binom n2$.
+\end{proof}
+
+The two updates of size $\gamma$ vanish with $n$ in this unit-baseline family. This proposition does not claim constant relative severity for all six changes. A separate construction below supplies that property at the cost of a vanishing minimum baseline conductance.
+
+\section{Quadratic lower bounds for mixed changes}
+\begin{theorem}[Randomized and deterministic barriers]\label{thm:lower}
+For the family in Proposition~\ref{prop:unit}, any randomized adaptive algorithm using at most $q$ queries has uniform-prior full-reconstruction success at most
+\[
+ \frac{4q}{M}+\frac1N,\qquad M=\binom n2,\quad N=6\binom n4.
+\]
+Worst-case success at least $2/3$ consequently requires
+\[
+ q\ge\frac{M}{4}\left(\frac23-\frac1N\right)=\Omega(n^2).
+\]
+For support recovery, replace $1/N$ by $6/N$; the same asymptotic lower bound holds. Deterministic exact full reconstruction has worst-case query cost at least
+\[
+ M-\floor{B_n},\qquad B_n=\frac{n(1+\sqrt{4n-3})}{4}.
+\]
+Support-only exact reconstruction has lower bound $\max\{0,M-\floor{B_n}-6\}$. Thus deterministic full reconstruction can require $\binom n2-O(n^{3/2})$ queries. The healthy baseline need not be an allowed target.
+\end{theorem}
+
+\begin{proof}
+First fix an algorithm's random seed. Inspect the first $q$ distinct queried pairs on the hypothetical all-baseline transcript, stopping sooner if the algorithm halts. Until the first altered answer, an actual target induces exactly that sequence. The probability under a uniform target of such a first altered answer is at most $4q/M$, by Proposition~\ref{prop:unit} and the union bound. If no target remains consistent, the no-hit contribution is zero. Repeated pairs supply no new information.
+
+All no-hit targets produce the same transcript and a fixed output. That output is correct for at most one full target, contributing at most $1/N$ to the \emph{unconditional} success probability. It is not a conditional-success estimate. For a support-only output, at most six targets, all on a common four-set, share that support; its contribution is at most $6/N$. Averaging over random seeds preserves both bounds. Worst-case success is no larger than the uniform-prior average, proving the randomized statements. When $n=4$ the support is indeed fixed and needs no query; the support-only lower bound is an asymptotic claim.
+
+For the stronger deterministic result, answer according to the baseline as long as there remain at least two consistent targets. Let $U$ be the simple graph of pairs not yet queried. Any four-cycle in $U$ has an opposite-pair partition. Lemma~\ref{lem:construction} supplies two signed targets whose four altered readings are exactly those cycle edges. Both agree with the entire transcript, so an exact full-reconstruction algorithm cannot stop while such a cycle remains.
+
+We give the elementary extremal estimate needed here. If a graph with degrees $d_v$ contains no four-cycle, each pair of vertices has at most one common neighbor. Counting length-two paths by their middle vertex gives
+\[
+ \sum_v\binom{d_v}{2}\le\binom n2.
+\]
+If it has $e$ edges, $\sum_vd_v=2e$ and Cauchy--Schwarz gives $\sum_vd_v^2\ge4e^2/n$. Consequently
+\[
+ \frac{2e^2}{n}-e\le\frac{n(n-1)}2,
+ \qquad e\le B_n.
+\]
+Thus whenever fewer than $M-\floor{B_n}$ distinct pairs have been queried, $U$ has a four-cycle and the adversarial baseline transcript is still consistent with two targets. This forces at least that many queries on some actual target; it does not require the baseline itself to belong to the hypothesis class.
+
+For support recovery, two signs on the same four-set are not enough. If all four-cycles of $U$ use at most one four-set, removing its at most six internal edges makes $U$ four-cycle-free. Therefore $|E(U)|>B_n+6$ guarantees two four-cycles on different four-sets and hence two surviving supports. The same adversary yields the stated bound, with the harmless loss of six queries.
+\end{proof}
+
+These randomized inequalities are maximum-query-budget statements. They also imply an $\Omega(n^2)$ lower bound on a uniform worst-case expected cost, but not with the identical displayed constant. Indeed, if the expected query count is at most $T$ on every target, truncate at $q=\max\{1,\ceil{6T}\}$. Markov's inequality loses at most $1/6$ success, leaving at least $1/2$ from an original $2/3$ guarantee. Applying the fixed-budget inequality gives $q\ge(M/4)(1/2-1/N)$ for full recovery, and similarly with $6/N$ for support. Since $q\le6T+1$, the claimed order follows.
+
+The quadratic order is sharp: query every pair. For a connected target resistance matrix $R'$, double centering yields
+\[
+ L'^+=-\frac12PR'P,
+\]
+because $R'_{ij}=L'^+_{ii}+L'^+_{jj}-2L'^+_{ij}$ and $P\one=0$. Inverting on $\one^\perp$ reconstructs every weight. Known $k=6$, knowledge of the entire allowed family, and unlimited computation do not circumvent the lower bound.
+
+\section{A constant relative severity variant}
+\begin{proposition}[Balanced baseline]\label{prop:balanced}
+Let $n=2h\ge4$ and let known parts $A,B$ each have size $h$. Give the complete baseline conductance $1$ across the parts and $1/n$ within each part. There is a family of $N_b=2\binom h2^2$ six-existing-edge targets in which every changed edge has relative severity strictly between $3\%$ and $11\%$. Full and support-only reconstruction still require $\Omega(n^2)$ bounded-error adaptive queries. The number of cross-part queries required by deterministic exact full recovery can be at least
+\[
+ h^2-\floor{\frac{h(1+\sqrt{4h-3})}{2}}.
+\]
+\end{proposition}
+
+\begin{proof}
+Choose $\{u,a\}\subset A$ and $\{v,b\}\subset B$. Their difference vectors are eigenvectors with common eigenvalue
+\[
+ \lambda=h+\frac hn=\frac{n+1}{2}.
+\]
+The across-part neighbors contribute $h$ on each difference vector; the within-part complete graph contributes $h/n$. Use Lemma~\ref{lem:construction} with $\eta=1/(10\lambda^2)$, giving
+\[
+ \beta=\frac{1/10}{1-1/(25\lambda^2)},\qquad
+ \gamma=\frac{1/(50\lambda)}{1-1/(25\lambda^2)}.
+\]
+The four cross-edge relative changes equal $\beta$ and the two within-edge relative changes equal $n\gamma$. Since $\lambda\ge5/2$,
+\[
+ \frac1{10}<\beta\le\frac{125}{1242}<\frac{101}{1000},\qquad
+ \frac4{125}<n\gamma<\frac1{25}.
+\]
+For the second pair of bounds, write
+\[
+ n\gamma=\frac{n}{25(n+1)}
+       \left(1-\frac{4}{25(n+1)^2}\right)^{-1}.
+\]
+The denominator factor is below $1$, and $n/(n+1)\ge4/5$, giving the strict lower bound. For the upper bound, $4/[25(n+1)^2]<1/(n+1)$ implies the factor being inverted is larger than $n/(n+1)$. All cross weights exceed $0.899$, and within weights only increase from $1/n$. The six updates are therefore positive-weight graph modifications of the claimed relative severities.
+
+There are two signs for each pair of within-part pairs, giving $N_b$ distinct targets. A within-part query never changes. For each fixed cross query, $(h-1)^2$ choices of the other two vertices and two signs change its answer. The hit fraction is
+\[
+ \frac{2(h-1)^2}{2\binom h2^2}=\frac4{h^2}.
+\]
+The proof of Theorem~\ref{thm:lower} now gives full success at most $4q/h^2+1/N_b$ and support success at most $4q/h^2+2/N_b$, since exactly two signs share a support. Both imply the asymptotic quadratic barrier.
+
+For deterministic full recovery, take the unqueried subgraph of the $h$-by-$h$ complete bipartite graph. A four-cycle again supplies two signed targets. If this bipartite graph has no four-cycle and $e$ edges, counting common neighbors in one part and applying Cauchy--Schwarz to the $h$ degrees in the other gives
+\[
+ \frac{e^2/h-e}{2}\le\binom h2,
+ \qquad e\le\frac{h(1+\sqrt{4h-3})}{2}.
+\]
+The baseline-transcript adversary proves the stated bound. Within-part queries supply no information and cannot shorten it.
+\end{proof}
+
+This variant does not simultaneously give a uniform positive lower bound on all absolute baseline conductances: its within-part weights are $1/n$. The absolute-weight and constant-relative-severity conclusions belong to different baselines.
+
+\section{Three changes when a new edge is allowed}
+A smaller construction is possible when an absent edge may acquire positive conductance. It has a different allowed-edge model and does not establish the minimum hard sparsity among changes restricted to existing edges.
+
+\begin{theorem}[Exact one-pair search]\label{thm:star}
+Let the baseline be a unit-conductance star on center $0$ and $n-1$ labeled leaves, where $n\ge3$. For an unknown leaf pair $\{u,v\}$, set
+\[
+ w'_{0u}=w'_{0v}=\frac23,\qquad w'_{uv}=\frac23,
+\]
+leaving all other conductances unchanged. These are exactly three changes, including one added edge. Of all pair resistances, only $R'_{uv}$ changes, from $2$ to $1$.
+
+Under the promise that one of these $M_\star=\binom{n-1}2$ targets occurred, full reconstruction and support recovery both have deterministic adaptive and fixed-query complexity exactly $M_\star-1$. For worst-case success at least $p\in(0,1]$, the optimal randomized maximum-query budget is
+\[
+ \max\{0,\ceil{pM_\star}-1\}.
+\]
+At $p=2/3$ this is $\ceil{2M_\star/3}-1$. If the healthy baseline is also allowed, deterministic exact detection instead needs $M_\star$ queries.
+\end{theorem}
+
+\begin{proof}
+The modified three-vertex circuit has a triangle with resistance $3/2$ on each edge. The effective resistance between any two of its vertices is a direct resistance $3/2$ in parallel with the two-edge path of resistance $3$, hence
+\[
+ \left((3/2)^{-1}+3^{-1}\right)^{-1}=1.
+\]
+All other leaves are pendant at $0$. A pendant branch carrying no source or sink has zero current, while a queried pendant leaf contributes its unit spoke in series. Consequently every center-leaf resistance remains $1$, the hidden pair has resistance $1$, and every other leaf-pair resistance remains $2$. Exactly one possible query reveals a nonbaseline answer. The three changed edges determine the hidden leaf pair uniquely, and conversely the pair determines all target weights; support and full recovery are equivalent in this family.
+
+Querying any $M_\star-1$ leaf pairs is sufficient: a changed answer identifies the target, and otherwise the omitted pair is identified by elimination. With fewer queries, at least two alternatives survive the all-baseline transcript. Center queries provide no information. This proves both adaptive and fixed-list deterministic optima, including the zero-query case $n=3$.
+
+For randomized strategies, fix the random seed and inspect the first $q$ distinct leaf pairs on the all-baseline path, stopping sooner on a halt. At most $q$ targets can produce a first changed answer, and at most one of the remaining targets can match the final guess on the common transcript. Uniform-prior success is therefore at most $\min\{1,(q+1)/M_\star\}$. Averaging over seeds gives the same bound for arbitrary adaptive randomization.
+
+It is attained simultaneously on every hidden pair: choose $q$ distinct leaf pairs uniformly, query them, and, if all are baseline, guess uniformly among the $M_\star-q$ unqueried pairs. For $0\le q\le M_\star-1$, success on each target is
+\[
+ \frac q{M_\star}+\frac{M_\star-q}{M_\star}
+                  \frac1{M_\star-q}=\frac{q+1}{M_\star}.
+\]
+Solving this inequality for integer $q$ proves the sharp budget formula. Finally, if the healthy baseline is allowed, fewer than $M_\star$ all-baseline readings leave an unqueried target indistinguishable from it. Querying all leaf pairs detects every modification, proving the detection statement.
+\end{proof}
+
+The added edge has zero baseline conductance, so its relative severity is undefined. The elementary parallel-resistance calculation is a classical star--triangle electrical identity, not a new circuit transformation. This family isolates the query obstruction cleanly, while the six-edge construction establishes it without new edges.
+
+
+\section{Structured monotone recovery from a small core}
+Throughout this section, $t$ denotes a number of known vertex classes, not the component-rank parameter of the earlier disconnected theorem. Write $S$ for the endpoints of the $k$ genuinely changed pairs, so $s=|S|\le2k$.
+
+\begin{theorem}[Weighted vertex classes including disconnected targets]\label{thm:blowup}
+Let $n\ge2$. A known connected baseline has a known partition into nonempty classes $V_1,\ldots,V_t$, known positive weights $a_i$, and a known symmetric entrywise nonnegative matrix $C=(c_{ab})$, with
+\[
+ w_{ij}=a_i a_j c_{p(i),p(j)}\quad(i\ne j),\qquad i\in V_{p(i)}.
+\]
+The diagonal of $C$ permits within-class edges; the classes need not be maximal. A target changes $k$ distinct conductances by arbitrary nonzero magnitudes of one common sign, keeping all conductances nonnegative. Increases may add edges at baseline zeros. Weakening may disconnect the target, with physical $+\infty$ answers across components. Without knowing the direction, $k$, support, or magnitudes, deterministic exact reconstruction uses at most
+\[
+ Q\le\min\left\{\binom n2,\ \floor{n/2}+n-t+
+ \binom{\min\{n,4k+t\}}2\right\}.
+\]
+In particular, $Q=O(n+(k+t)^2)$. Rational inputs and finite oracle answers require only rational arithmetic, exact comparisons, and infinity tests.
+\end{theorem}
+
+\begin{proof}
+Put $A_b=\sum_{j\in V_b}a_j$ and $d_a=\sum_b c_{ab}A_b>0$. For a pair $u,v\in V_a$, the baseline potential for $b=e_u-e_v$ is, up to a constant,
+\[
+ \phi_i=\frac{\mathbf1_{i=u}-\mathbf1_{i=v}}{a_i d_a}.
+\]
+Indeed $L=\diag(a_i d_{p(i)})-W_{\mathrm{full}}$, where $(W_{\mathrm{full}})_{ij}=a_i a_j c_{p(i),p(j)}$ includes a harmless diagonal. The class-weighted sum of $\phi$ vanishes in every class, so $L\phi=b$. Every changed pair incident to $u$ or $v$ has nonzero baseline voltage drop, and every pair avoiding both has zero drop.
+
+We next justify the exact equality test, including disconnection. Write the positive change matrix as $D=BWB^{\mathsf T}$, where $B$ contains oriented changed-pair vectors and $W$ is positive diagonal. For an increase, Woodbury on $\one^\perp$ gives
+\[
+ R(b)-R'(b)=y^{\mathsf T}(W^{-1}+B^{\mathsf T}L^+B)^{-1}y,
+ \qquad y=B^{\mathsf T}L^+b.
+\]
+The middle matrix is positive definite even for dependent columns of $B$. Thus equality holds exactly when every baseline changed-pair drop is zero. For a decrease $L'=L-D$, use instead the extended variational identity
+\[
+ R'(b)=\sup_x\{2b^{\mathsf T}x-x^{\mathsf T}L'x\}
+ \ \ge\ R(b)+\phi^{\mathsf T}D\phi,\qquad \phi=L^+b.
+\]
+The supremum is finite and equal to physical resistance if the endpoints share a target component; otherwise it is infinite, by translating the potential on one component. A nonzero changed-pair drop makes the inequality strict. If all drops vanish, $D\phi=0$ and $L'\phi=b$. The latter identity implies that the endpoints share a component, since the range of $L'$ has zero sum on each component. Completing the square around $\phi$ gives the supremum $b^{\mathsf T}\phi=R(b)$. Consequently, for same-class distinct pairs,
+\[
+ R'_{uv}=R_{uv}\quad\Longleftrightarrow\quad u,v\notin S.
+\]
+An infinite answer simply counts as changed.
+
+In each class query a fixed disjoint matching until an unchanged answer is found or that class's matching is exhausted. If an unchanged pair is found, take one endpoint $o_a$ as a certified healthy representative and query its within-class star. The nonzero differences identify exactly $S\cap V_a$. Put those vertices and $o_a$ into a core $T$. If no unchanged pair is found, put the whole class into $T$; this also handles singletons. Thus $S\subseteq T$ and $T$ is nonempty. A successful class contributes $s_a+1$ vertices, where $s_a=|S\cap V_a|$. In an unsuccessful class every disjoint tested pair touches $S$, so $\floor{|V_a|/2}\le s_a$ and $|V_a|\le2s_a+1$. Hence
+\[
+ |T|\le2s+t\le4k+t,\qquad |T|\le n.
+\]
+Matching tests cost at most $\floor{n/2}$, and the successful stars cost at most $n-t$, before cache savings.
+
+It remains to reconstruct from all core-pair measurements without assuming connectivity. Put $I=V\setminus T$. Every changed edge has both endpoints in $T$, so
+\[
+ L'_{II}=L_{II},\qquad L'_{TI}=L_{TI},\qquad L'_{IT}=L_{IT}.
+\]
+When $I$ is nonempty, $L_{II}$ is positive definite: extend a vector on $I$ by zero on $T$; zero baseline energy forces a globally constant vector and hence the zero vector. Every target component meets $T$, since otherwise its indicator in $I$ would be a nonzero null vector of $L'_{II}=L_{II}$.
+
+Form the known baseline core Schur complement and its unknown target counterpart
+\[
+ H=L_{TT}-L_{TI}L_{II}^{-1}L_{IT},\qquad
+ H'=L'_{TT}-L'_{TI}L_{II}^{-1}L'_{IT}.
+\]
+For $I=\varnothing$, omit the elimination terms. These are Laplacians and
+\[
+ H'-H=L'_{TT}-L_{TT}.
+\]
+To see both resistance preservation and the Laplacian property, minimize full network energy over the interior potential for each fixed boundary potential. The unique minimizer is $x_I=-L_{II}^{-1}L_{IT}x_T$ and the minimum energy is $x_T^{\mathsf T}Hx_T$. The same elimination in the variational resistance formula, for injections supported on $T$, gives precisely the core resistance, including infinite values between components. Equivalently, grounded Laplacian elimination has nonpositive off-diagonal entries and zero row sums, and preserves the boundary part of each component.
+
+Query all pairs inside $T$. Their finite/infinite pattern identifies the core components. For each finite component $U\subseteq T$, let $R'_U$ be its resistance matrix, with zero diagonal, and $J_U=I-\one\one^{\mathsf T}/|U|$. Recover
+\[
+ P_U=-\tfrac12J_UR'_UJ_U,\qquad
+ H'_U=(P_U+\one\one^{\mathsf T}/|U|)^{-1}-\one\one^{\mathsf T}/|U|.
+\]
+A singleton gives the zero block. Assemble these blocks into $H'$, with zero entries between blocks, and obtain
+\[
+ L'=L+\operatorname{pad}_T(H'-H).
+\]
+Here padding places the matrix in the $TT$ block and fills all other entries with zero. Conductances are the negatives of off-diagonal entries. No prior assignment of interior vertices to target components is needed, and no infinite quantities are subtracted. The core costs at most $\binom{|T|}2$ additional queries. Caching all answers enforces the all-pairs cap and proves the theorem.
+\end{proof}
+
+The core $H$ is a Schur complement, not the induced-subgraph Laplacian on $T$. Replacing it with an induced Laplacian invalidates the lifting identity. No global positive-semidefinite pseudoinverse difference is asserted for disconnected targets.
+
+\subsection{The connected embedding interpretation}
+For connected targets there is a useful alternative explanation of compression. Set $\sigma=+1$ for decreases and $-1$ for increases, and write the positive-semidefinite matrix $Z=\sigma(L'^+-L^+)=FF^{\mathsf T}$ with $F$ of full column rank. With $\Delta=L'-L$,
+\[
+ LZ=-\sigma\Delta L'^+.
+\]
+Outside $S$, the right side has zero rows, so $(LF)_iF^{\mathsf T}=0$ and hence $(LF)_i=0$. Therefore, for $i\in V_a\setminus S$,
+\[
+ F_i=\frac1{d_a}\sum_b c_{ab}\sum_{j\in V_b}a_jF_j.
+\]
+All healthy rows within a class are identical. Map every omitted healthy vertex to its representative $\rho(i)\in T$ and every core vertex to itself. Squared distances of rows of $F$ give
+\[
+ R'_{ij}-R_{ij}=R'_{\rho(i),\rho(j)}-R_{\rho(i),\rho(j)},
+\]
+with zero on the right for equal representatives. Thus one copies resistance \emph{differences}, not target resistances. Centering and inverse-Laplacian reconstruction then suffice in the connected case. The core proof above is preferable for a unified algorithm because it also covers disconnection.
+
+\begin{corollary}[Product-weight complete baselines]\label{cor:product}
+For a known baseline $w_{ij}=a_i a_j$ with $a_i>0$, arbitrary common-sign changes admit deterministic exact reconstruction with $O(\min\{n^2,n+k^2\})$ queries, without advance sparsity or direction knowledge. Disconnected weakening is included under the physical-infinity convention. Fixed $t$ weighted blow-ups have the same asymptotic upper bound.
+\end{corollary}
+\begin{proof}
+Use Theorem~\ref{thm:blowup} with $t=1$, or fixed $t$. For the clique one can sharpen the elementary count: stop a global disjoint matching at the first unchanged pair. If found, it takes at most $s+1$ tests; its healthy endpoint supplies a full root star identifying $S$, after which querying all pairs in $S$ suffices. The count is at most $n+s(s+1)/2\le n+2k^2+k$. For a connected target, the rooted signed-difference Gram matrix has zero diagonal outside $S$, hence zero rows there by positive semidefiniteness; the root star and $S$-pairs recover it exactly by the earlier centering formula.
+
+If no unchanged pair occurs, $\floor{n/2}\le s\le2k$, so $n\le4k+1$ and all pairs cost at most $8k^2+2k$. Reconstruct each finite component block if needed. A disconnected weakened product clique cannot contain a healthy vertex, since that vertex would retain positive edges to every other vertex; it therefore falls into this all-pairs branch. For $n\le1$ no query is required.
+\end{proof}
+
+\section{A matching lower bound and sharp structured minimax rate}
+\begin{theorem}[Hidden matching resistance oracle]\label{thm:matching}
+On a unit complete baseline $K_n$, fix a supplied set $S$ of $2h$ vertices, where $1\le h\le\floor{n/2}$, and a supplied $\delta>0$. Increase each edge of an unknown perfect matching $M$ on $S$ by $\delta$. Deterministic exact support recovery needs at least $h(h-1)$ queries in the worst case. Bounded-error randomized recovery with success at least $2/3$ on every target needs $\Omega(h^2)$ queries, both for a uniform worst-case cap and for worst-case expected query cost. These conclusions also hold for full reconstruction.
+\end{theorem}
+\begin{proof}
+Orient the matching vectors $b_e$ arbitrarily and put $P_M=\sum_{e\in M}b_eb_e^{\mathsf T}$. Disjoint support gives $P_M^2=2P_M$ and $P_M\one=0$. With $J=I-\one\one^{\mathsf T}/n$, the target Laplacian is $nJ+\delta P_M$, so diagonalizing on $\one^\perp$ gives
+\[
+ L_0^+-L_M^+=\alpha P_M,\qquad \alpha=\frac{\delta}{n(n+2\delta)}.
+\]
+The baseline resistance is $2/n$. A queried pair has resistance drop $4\alpha$ if it is a matching edge, $2\alpha$ if both endpoints are in $S$ but it is not a matching edge, $\alpha$ if exactly one endpoint is in $S$, and zero otherwise. Indeed the drop is $\alpha\sum_{e\in M}(b_{uv}^{\mathsf T}b_e)^2$. Queries outside $S$ give known answers independent of $M$, and inside $S$ they give exactly one membership bit. This is an exact graph realization of a hidden-matching oracle; it is not an assertion that arbitrary real measurements contain only one bit.
+
+For a deterministic adversary, start with candidate graph $H=K_{2h}$. For a queried edge $e$, answer no and delete it if $H-e$ still has a perfect matching; otherwise answer yes and retain it. A yes edge is already forced in every remaining matching. At termination exact recovery requires a unique perfect matching in $H$. A graph on $2h$ vertices with a unique perfect matching has at most $h^2$ edges: among the four cross edges connecting the endpoints of two matched edges, at most two can exist, since three would contain an alternating four-cycle and permit another matching. Thus there are at most $h+2\binom h2=h^2$ edges. At least $\binom{2h}2-h^2=h(h-1)$ no answers are necessary. The nonempty candidate set throughout guarantees a fixed legal target realizing the transcript.
+
+For randomization, use the uniform distribution over the $N_h=(2h-1)!!$ perfect matchings. Fix a random seed, remove known-answer and repeated query nodes, and suppose the resulting deterministic tree has depth at most $q$. Each feasible path has at most $h$ yes answers. Its leaves are prefix-free; padding them with zeros to length $\bar q=\max\{q,h\}$ preserves distinctness. Their number is at most
+\[
+ \sum_{j=0}^h\binom{\bar q}j\le(e\bar q/h)^h.
+\]
+For the inequality put $x=h/\bar q\le1$, multiply the sum by $x^h$, use $x^j\ge x^h$ for $j\le h$, and bound $(1+x)^{\bar q}\le e^h$. A leaf's one output is correct for at most one matching. Since $N_h\ge h!\ge(h/e)^h$, average success is at most
+\[
+ \frac{(e\bar q/h)^h}{(2h-1)!!}\le(e^2\bar q/h^2)^h.
+\]
+For $h\ge30$ and $q\le h^2/(4e^2)$ this is at most $4^{-h}<2/3$. Averaging over the random seed gives the same bound, contradicting success $2/3$ on every target. For expected cost at most $T$ on every target, truncate at $\ceil{6T}$ queries. Markov's inequality loses at most $1/6$ average success, leaving at least $1/2$, which the same transcript count excludes for sufficiently small $T/h^2$. This proves the asymptotic expected-cost statement as well.
+\end{proof}
+
+\begin{theorem}[Sharp class-wide at-most-budget minimax rate]\label{thm:minimax}
+For $1\le K\le\binom n2$, the worst-case exact-reconstruction query complexity over known product-weight complete baselines and targets with at most $K$ common-sign changes is
+\[
+ \Theta(\min\{n^2,n+K^2\}).
+\]
+The upper bound is deterministic. The lower bound holds on the unit clique, for support recovery and randomized algorithms with per-input success at least $2/3$, even with a connected target and increases only. This is class-wide minimax sharpness, not a claim that every fixed product-weight baseline is equally hard. An explicit $K=0$ promise requires zero queries.
+\end{theorem}
+\begin{proof}
+Corollary~\ref{cor:product} gives the upper bound uniformly, with all-pairs saturation. For the quadratic lower term take $h=\min\{K,\floor{n/2}\}$ in Theorem~\ref{thm:matching}. It remains to prove an independent $\Omega(n)$ lower bound, since the matching family supplies its endpoints.
+
+Increase one unknown edge of $K_n$ by a fixed known $\delta$, uniformly among all $\binom n2$ edges. Fix an algorithm's random seed and follow its hypothetical all-baseline transcript up to its cap $q$ or termination. Its queried endpoints form a set $U$ of size at most $2q$. A hidden edge avoiding $U$ gives exactly that transcript; at most one such edge can be guessed correctly. If an actual execution first gets a changed response, its preceding queries followed that same transcript and the hidden edge meets $U$. By the matching resistance formula and a union bound, average success is at most
+\[
+ \Pr(e\cap U\ne\varnothing)+\binom n2^{-1}
+ \le\frac{2|U|}{n}+\binom n2^{-1}
+ \le\frac{4q}{n}+\binom n2^{-1}.
+\]
+For $n\ge4$ and $q\le n/12$ this is at most $1/2$. Averaging over seeds proves the lower bound; truncation gives the expected-cost version. The one-edge and matching families are both legal for at most $K$ changes. The maximum of their bounds is within a constant of their sum, yielding $\Omega(n+\min\{K^2,n^2\})$, equivalent to the displayed saturated rate. The finitely many bounded-$h$ cases are absorbed by the linear lower bound. This is not a direct-sum assertion about one target.
+\end{proof}
+
+The distinction between ``at most $K$'' and ``exactly $k$'' is material. The matching family itself has exactly $h$ changes and yields $\Omega(k^2)$ for $k\le\floor{n/2}$. In that sparse exact-$k$ range a linear term follows when $k\le n/4$: disclose $k-1$ disjoint changed edges, then hide one changed edge among the remaining $N=n-2(k-1)\ge n/2$ vertices. Orthogonality makes the disclosed resistance contribution subtractable and leaves the preceding one-edge argument on $N$ vertices. For $n/4<k\le\floor{n/2}$ the matching bound already dominates $n$. No sharp exact-$k$ extension to larger $k$ is asserted here.
+
+\section{What remains unresolved for arbitrary baselines}
+The precise remaining question is whether every known connected weighted simple baseline and every unknown connected target with at most $K$ monotone conductance changes admit deterministic or bounded-error randomized exact reconstruction using $O(\min\{n^2,n+K^2\})$ scalar pair-resistance queries, with computation and bit complexity stated separately. The disconnected variant uses physical infinity and is also unresolved in this generality.
+
+The general connected upper bound in Theorem~\ref{thm:connected} remains $f_n(r)$ with $r\le\min\{K,n-1\}$. The matching lower bound rules out universal $O(n+K\log n)$ recovery, for example with $K$ of order $n^{3/4}$, but is compatible with $O(n+K^2)$. It does not prove an $nK$ lower bound. For $\sqrt n\ll K\ll n$ the generic $nK$ upper bound and $K^2$ lower term leave a gap; for $K\lesssim\sqrt n$ the proposed target is linear while the generic method may still cost $nK$.
+
+The same-class zero test does not extend to arbitrary pair injections on arbitrary baselines. On a four-vertex path, weakening the middle edge changes the end-to-end resistance although neither queried endpoint touches that edge. In the connected embedding $Z=FF^{\mathsf T}$, rows of $LF$ still vanish outside $S$, but root-star observations reveal translated row norms rather than all cross-inner-products. That harmonic constraint alone has not yielded a linear-cost source-location method on a general graph. A representation with singleton classes has $t=n$ and gives only the all-pairs bound.
+
+Nor do generic low-rank matrix-completion lower bounds settle this graph problem: admissible matrices must arise from inverse Laplacians with sparse same-sign conductance differences. The mixed-sign hiding constructions above are indefinite and do not transfer to the monotone class merely by adding a positive shift; a dense conductance change would violate the sparsity promise. Finally, arbitrary vector-current quadratic-form access is a stronger oracle. A linear combination of several pair measurements cannot be charged as one scalar pair query.
+
+
+\section{Prior tools and scope of the contribution}
+The recovery engine is classical exact positive-semidefinite pivoted Cholesky, equivalently a Nystr\"om reconstruction from selected columns. Harbrecht, Peters, and Schneider~\cite{HPS} and Chen, Epperly, Tropp, and Webber~\cite{CETW} give standard treatments. The rank-one residual update, positive-semidefinite stopping rule, and exact recovery after rank-many pivots are not new. The precise count $f_n(r)$ is symmetric-entry caching after the resistance-to-rooted-Gram reduction. The two-dimensional inverse calculation in Lemma~\ref{lem:construction} is a special case of the classical Woodbury inverse-update identity. Inverse-Laplacian resistance formulas and resistance perturbation methods are standard; see Ghosh, Boyd, and Saberi~\cite{GBS} and Monnig and Meyer~\cite{MM}.
+
+Warton, Bennett, Black, and Nayyeri~\cite{WBBN} study graph inference with effective-resistance queries. Their Theorem 11 gives a monotone equality test using a root star, overlapping directly with the initial detection step here. Their completion results in Sections 6.2--6.3, including Theorems 32 and 36--37, assume that the positions of the unknown adjacency entries are supplied. That known-location problem differs from recovering unknown changed locations and magnitudes. Their discussion also records general quadratic reconstruction lower bounds through tree shortest-path queries, for which effective resistance equals path distance; the older tree-query construction is due to Reyzin and Srivastava~\cite{RS}. Thus a quadratic lower bound for unrestricted reconstruction is prior art. The restriction to a known baseline with six changed existing conductances, four altered readings, and the separate quantitative refinements is the point of the construction here.
+
+The four-cycle extremal estimate is classical; its complete elementary proof was included to make the near-all-pairs bound self-contained. The star--triangle and series/parallel electrical identities are likewise classical. The structured minimax theorem proves optimality only for its stated class and promise. No theorem here proves optimality of the general monotone rank bound, minimal hard sparsity in the existing-edge-only model, robustness to finite precision, or that a general target's monotonicity can be checked at the claimed rank-adaptive cost.
+
+
+The structured support-discovery arguments and the matching-oracle reduction are derived here, while resistance centering, Schur-complement or Kron elimination, and inverse reconstruction are standard machinery. Fiedorowicz and Basu~\cite{FB}, in their 2 October 2026 revision, study closely related resistance fault diagnosis, principally single faults and nonadaptive test sets. Their complete-graph single-deletion test count is not an adaptive multiple-fault lower bound. Hoskins, Musco, Musco, and Tsourakakis~\cite{HMMT} study learning graphs from incomplete or noisy resistance-based similarities through optimization; the inspected result does not supply the exact unknown-support monotone query theorem proved here.
+
+Known-location completion must remain separate from known-endpoint recovery. The matching lower bound supplies all affected vertices but leaves their pairing unknown. Warton et al.'s completion theorem supplies the unknown adjacency positions themselves; its $k$-query algorithms have exact exponential-time unweighted and approximate polynomial-time weighted guarantees. Using every allowable baseline edge as a candidate can yield an $m$-query completion route, subject to those computational and numerical qualifications, but does not imply an exact rational unknown-support $O(n+K^2)$ theorem on arbitrary dense baselines. For a tree baseline under changes confined to its edges, direct edge-pair measurements already recover edge resistances, so dense support discovery is the relevant obstruction.
+
+\subsection{Independent exact arithmetic checks}
+A fresh rational implementation checked $813$ monotone targets, including $106$ disconnected outcomes: all $729$ four-vertex complete-baseline outcomes with conductances in $\{0,1/2,1\}$, plus $84$ random rational cases on $2$ through $8$ vertices. It reconstructed the grounded inverse independently of the centered-inverse derivation, checking the full target Laplacian, ranks, cached counts, and induced-component bound. It also checked $30$ signed six-change constructions over both baselines and every star target on $3$ through $9$ vertices, totaling $84$ star targets. Separate enumeration verified signed-family uniqueness, sixfold support multiplicity, and query-hit counts for $n=4,5,6,7$. These exact-arithmetic checks are evidence against implementation and algebra mistakes; the proofs above establish the mathematical statements.
+
+The structured implementations additionally passed $188$ product-clique recovery cases and $34$ matching-response formula cases; $128$ connected weighted-blow-up cases; and $160$ extension cases including $113$ disconnected targets and $52$ all-isolated outcomes. A separate implementation, importing none of those verifiers, passed $60$ structured cases including $21$ disconnected, $8$ new-edge-addition cases, and $27$ nonempty interior eliminations, and all $19$ perfect matchings on endpoint sets of sizes $2$, $4$, and $6$ with two outside vertices.
+
+
+
+\section*{Reproducibility and Disclosure}
+\addcontentsline{toc}{section}{Reproducibility and Disclosure}
+The source files, exact-arithmetic test suites, and companion supplements (bounded-noise sparse recovery and compositional diagnosis) are archived in the public Open-Research repository (\url{https://github.com/Rtx09x/Open-Research/tree/main/engineering/sparse-conductance-recovery}, release reference \texttt{7099139817e621ce40074813c163389f3eefe6a3}). All theorems in this paper assume exact resistance readings; noise-robust and finite-precision guarantees are outside the scope of the main theorems. This manuscript was prepared with AI-assisted mathematical drafting and verification workflows.
+
+\paragraph{Relation to the companion manuscript.} At rank one the count specializes to $2n-3$, which is also obtained in the companion single-fault manuscript. Here the contributions concern unknown support at general rank, disconnected weakening, and the query complexity of mixed-sign changes.
+
+\bibliographystyle{plainnat}
+\bibliography{references}
+\end{document}

@@ -1,0 +1,107 @@
+\begin{thebibliography}{14}
+\providecommand{\natexlab}[1]{#1}
+\providecommand{\url}[1]{\texttt{#1}}
+\expandafter\ifx\csname urlstyle\endcsname\relax
+  \providecommand{\doi}[1]{doi: #1}\else
+  \providecommand{\doi}{doi: \begingroup \urlstyle{rm}\Url}\fi
+
+\bibitem[Ahmad and Dhodhi(2000)]{ahmad2000}
+I.~Ahmad and M.~K. Dhodhi.
+\newblock State assignment of finite-state machines.
+\newblock \emph{IEE Proceedings: Computers and Digital Techniques},
+  147\penalty0 (1):\penalty0 15--22, 2000.
+\newblock \doi{10.1049/ip-cdt:20000163}.
+
+\bibitem[Ali et~al.(2026)Ali, Al~Ardat, Feider, Maakestad, Walk, Schrecengost,
+  and Paulsen]{ali2026}
+Oche~T. Ali, Faten~A. Al~Ardat, Jack Feider, Harry Maakestad, Alex Walk,
+  Zachariah~S. Schrecengost, and Joseph~D. Paulsen.
+\newblock Materializing split, mixed, and three-body interactions using
+  rotor-based mechanical hysterons.
+\newblock arXiv:2607.21974, 2026.
+\newblock URL \url{https://arxiv.org/abs/2607.21974}.
+
+\bibitem[Baconnier et~al.(2025)Baconnier, Teunisse, and van
+  Hecke]{baconnier2025}
+Paul Baconnier, Margot~H. Teunisse, and Martin van Hecke.
+\newblock Dynamic self-loops in networks of passive and active binary elements.
+\newblock \emph{Physical Review Letters}, 135:\penalty0 207402, 2025.
+\newblock \doi{10.1103/x1b1-rynn}.
+
+\bibitem[Duffus et~al.(1988)Duffus, Sands, and Woodrow]{duffus1988}
+Dwight Duffus, Bill Sands, and Robert Woodrow.
+\newblock Lexicographic matchings cannot form hamiltonian cycles.
+\newblock \emph{Order}, 5:\penalty0 149--161, 1988.
+\newblock \doi{10.1007/BF00337620}.
+
+\bibitem[Farkas(1902)]{farkas1902}
+Julius Farkas.
+\newblock Theorie der einfachen ungleichungen.
+\newblock \emph{Journal f{\"u}r die reine und angewandte Mathematik},
+  124:\penalty0 1--27, 1902.
+\newblock \doi{10.1515/crll.1902.124.1}.
+
+\bibitem[Liu et~al.(2024)Liu, Teunisse, Korovin, Vermaire, Jin, Bense, and van
+  Hecke]{liu2024}
+Jingran Liu, Margot Teunisse, George Korovin, Ivo~R. Vermaire, Lishuai Jin,
+  Hadrien Bense, and Martin van Hecke.
+\newblock Controlled pathways and sequential information processing in serially
+  coupled mechanical hysterons.
+\newblock \emph{Proceedings of the National Academy of Sciences}, 121\penalty0
+  (22):\penalty0 e2308414121, 2024.
+\newblock \doi{10.1073/pnas.2308414121}.
+
+\bibitem[Muhaxheri et~al.(2025)Muhaxheri, Antonetti, and
+  Santangelo]{muhaxheri2025}
+Gentian Muhaxheri, Victoria Antonetti, and Christian~D. Santangelo.
+\newblock A catastrophic approach to designing interacting hysterons.
+\newblock \emph{New Journal of Physics}, 27\penalty0 (12):\penalty0 125004,
+  2025.
+\newblock \doi{10.1088/1367-2630/ae26c1}.
+
+\bibitem[M{\"u}tze(2016)]{mutze2016}
+Torsten M{\"u}tze.
+\newblock Proof of the middle levels conjecture.
+\newblock \emph{Proceedings of the London Mathematical Society}, 112\penalty0
+  (4):\penalty0 677--713, 2016.
+\newblock \doi{10.1112/plms/pdw004}.
+
+\bibitem[M{\"u}tze and Su(2017)]{mutzesu2017}
+Torsten M{\"u}tze and Pascal Su.
+\newblock Bipartite kneser graphs are hamiltonian.
+\newblock \emph{Combinatorica}, 37:\penalty0 1207--1219, 2017.
+\newblock \doi{10.1007/s00493-016-3434-6}.
+
+\bibitem[Paulsen(2026)]{paulsen2026}
+Joseph~D. Paulsen.
+\newblock Mechanical hysterons with tunable interactions of general sign.
+\newblock \emph{Nature Communications}, 17:\penalty0 2799, 2026.
+\newblock \doi{10.1038/s41467-026-70913-2}.
+
+\bibitem[Preisach(1935)]{preisach1935}
+F.~Preisach.
+\newblock {\"U}ber die magnetische nachwirkung.
+\newblock \emph{Zeitschrift f{\"u}r Physik}, 94:\penalty0 277--302, 1935.
+\newblock \doi{10.1007/BF01349418}.
+
+\bibitem[Shohat and van Hecke(2025)]{shohat2025}
+Dor Shohat and Martin van Hecke.
+\newblock Geometric control and memory in networks of hysteretic elements.
+\newblock \emph{Physical Review Letters}, 134:\penalty0 188201, 2025.
+\newblock \doi{10.1103/PhysRevLett.134.188201}.
+
+\bibitem[Teunisse and van Hecke(2025)]{teunisse2025}
+Margot~H. Teunisse and Martin van Hecke.
+\newblock Transition graphs of interacting hysterons: structure, design,
+  organization and statistics.
+\newblock \emph{Royal Society Open Science}, 12\penalty0 (9):\penalty0 250753,
+  2025.
+\newblock \doi{10.1098/rsos.250753}.
+
+\bibitem[Teunisse and van Hecke(2026)]{teunisse2026span}
+Margot~H. Teunisse and Martin van Hecke.
+\newblock Interacting hysterons with asymptotically small or large spans.
+\newblock \emph{New Journal of Physics}, 28:\penalty0 043505, 2026.
+\newblock \doi{10.1088/1367-2630/ae5841}.
+
+\end{thebibliography}

@@ -10,4 +10,4 @@ Propose new research through the [contribution guidelines](../CONTRIBUTING.md). 
 
 - [Hierarchical matrix recovery](hierarchical-matrix-recovery/)
 - [Binary single-deletion codes](binary-single-deletion-codes/)
-- [Seven-cycle Shannon capacity](seven-cycle-shannon-capacity/)
+- [Seven-cycle Shannon capacity](seven-cycle-shannon-capacity/) · [Preprint PDF](seven-cycle-shannon-capacity/preprint/seven_cycle_shannon_capacity_obstructions.pdf)

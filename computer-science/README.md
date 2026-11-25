@@ -8,5 +8,5 @@ Propose new research through the [contribution guidelines](../CONTRIBUTING.md). 
 
 ## Founding projects
 
-- [Sequential calibration](sequential-calibration/)
-- [Deterministic online bin packing](online-bin-packing/)
+- [Sequential calibration](sequential-calibration/) · [Preprint PDF](sequential-calibration/preprint/adaptive_weight_sequential_calibration.pdf)
+- [Deterministic online bin packing](online-bin-packing/) · [Preprint PDF](online-bin-packing/preprint/deterministic_online_bin_packing.pdf)

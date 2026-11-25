@@ -1,0 +1,268 @@
+\documentclass[11pt,letterpaper]{article}
+\usepackage{lmodern}
+\usepackage[left=1.05in,right=1.05in,top=0.88in,bottom=0.92in]{geometry}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath,amssymb,amsthm,mathtools,booktabs,array,tabularx,microtype,xcolor}
+\usepackage[numbers,sort&compress]{natbib}
+\usepackage{xurl}
+\usepackage[colorlinks=true,linkcolor=blue!65!black,citecolor=blue!65!black,urlcolor=blue!65!black]{hyperref}
+\hypersetup{
+  pdftitle={Symmetric Quantum Error-Correcting Codes: Finite Minima, General Lower Bounds, and Phase-Twisted Constructions},
+  pdfauthor={Rudra Tiwari},
+  pdfsubject={Finite minima, volume bounds, cubic moment cuts, and phase-twisted constructions for permutation-invariant qubit codes}
+}
+\setlength{\parindent}{1.5em}
+\setlength{\parskip}{0pt}
+\setlength{\emergencystretch}{2em}
+\setcounter{tocdepth}{2}
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{proposition}[theorem]{Proposition}
+\newtheorem{corollary}[theorem]{Corollary}
+\theoremstyle{definition}
+\newtheorem{definition}[theorem]{Definition}
+\newtheorem{conjecture}[theorem]{Conjecture}
+\theoremstyle{remark}
+\newtheorem{remark}[theorem]{Remark}
+\newcommand{\Tr}{\operatorname{Tr}}
+\newcommand{\Sym}{\operatorname{Sym}}
+\newcommand{\SU}{\mathrm{SU}}
+\newcommand{\C}{\mathbb{C}}
+\newcommand{\R}{\mathbb{R}}
+\newcommand{\Z}{\mathbb{Z}}
+\newcommand{\ket}[1]{|#1\rangle}
+\newcommand{\bra}[1]{\langle#1|}
+
+\begin{document}
+\thispagestyle{empty}
+\begin{center}
+\vspace*{0.22in}
+{\LARGE\bfseries Symmetric Quantum Error-Correcting Codes:\\[.15em] Finite Minima, General Lower Bounds,\\[.15em] and Phase-Twisted Constructions\par}
+\vspace{0.20in}
+{\large Exact Certificates, Unrestricted Volume Inequalities, Dipole--Quadrupole\\[.1em] Moment Cuts, and Explicit All-$t$ Families in $\Sym^n(\C^2)$\par}
+\vspace{0.24in}
+{\normalsize\bfseries Rudra Tiwari\par}
+\vspace{0.03in}
+{\normalsize\itshape University of Delhi, New Delhi, India\\Inter-University Accelerator Centre (IUAC), New Delhi, India\par}
+\vspace{0.10in}
+{\small\href{https://orcid.org/0009-0004-8521-7627}{ORCID: 0009-0004-8521-7627}\quad|\quad\href{https://rtx09x.github.io/}{Website}\quad|\quad\href{https://github.com/Rtx09x}{GitHub}\quad|\quad\href{https://github.com/Rtx09x/Open-Research/tree/main/physics/symmetric-quantum-error-correction}{Open-Research}\par}
+\vspace{0.15in}
+{\normalsize November 2026\par}
+\end{center}
+\vspace{0.16in}
+\begin{abstract}
+We study the minimum length $n_{\min}(t)$ of a two-dimensional complex code in the fully symmetric $n$-qubit subspace that corrects arbitrary errors on up to $t$ qubits. First, we establish the volume bound $n+1\ge K(t+1)^2$ for logical dimension $K\ge2$, without a nondegeneracy assumption. For $K=2$ and $t\ge2$, we exclude equality using divisibility and finite modular obstructions. Second, we give a computer-assisted proof of $n_{\min}(2)=19$ using a three-copy partial-time-reversal certificate and the known 19-qubit code. We obtain $35\le n_{\min}(3)\le37$ and $50\le n_{\min}(4)\le61$. At $n=35$, an exact cubic moment inequality and a rational linear cut restrict the remaining feasible region. Third, phase-twisted codes give lengths $4t^2+2t$ for $t\ge10$, $4t^2-1$ for $t\ge36$, and $(2t+1)(2t-D)$ for positive integers $D$ with $t\ge10000D$. The last family gives leading coefficient $3.9998$. We also give an exact witness at $(t,n)=(20,1599)$ and obstructions for restricted amplitude families. We discuss the overlap between the $t=2$ minimum and Yuxuan Zhang's report; the $t=3$ cases $n=35,36$ remain open.
+\end{abstract}
+\vspace{0.10in}
+\noindent\textbf{Keywords:} permutation-invariant quantum codes, symmetric subspace, Knill--Laflamme conditions, Wigner $6j$ symbols, semidefinite relaxations, interval arithmetic certification, phase-twisted gnu codes.
+\clearpage
+\tableofcontents
+\clearpage
+
+\section{Introduction and Summary of Results}
+Permutation-invariant (PI) quantum error-correcting codes live inside the $(n+1)$-dimensional symmetric subspace $V_n = \Sym^n(\C^2) \subset (\C^2)^{\otimes n}$ spanned by the Dicke states $\ket{D_n^w}$ ($0 \le w \le n$). They were introduced by Ruskai~\cite{Ruskai2000} and developed systematically by Ouyang~\cite{Ouyang2014}, Gross~\cite{Gross2021}, and Aydin, Alekseyev, and Barg (AAB)~\cite{AAB2024} (see also~\cite{Ouyang2024,SpinBosonicPI2026}). Because $V_n$ is isomorphic to the spin-$j$ irreducible representation of $\SU(2)$ with $j=n/2$, PI codes simultaneously protect against arbitrary $t$-qubit physical errors, collective deletion/erasure errors, and spin-rotation noise, making them natural candidates for collective atomic ensembles and bosonic two-mode encodings~\cite{TwoModeLoss2026}.
+
+A central open question in this area is determining $n_{\min}(t)$, the smallest integer $n$ for which $\Sym^n(\C^2)$ contains a two-dimensional complex subspace correcting arbitrary errors supported on at most $t$ physical qubits (equivalently, quantum distance $d \ge 2t+1$). While $n_{\min}(1)=7$ is classical (attained by the 7-qubit Ruskai/Ouyang code), the values beyond the cases resolved or bracketed below and the exact asymptotic leading coefficient of $n_{\min}(t)/t^2$ remain open. In particular, numerical and polyhedral-symmetry constructions have motivated the following conjecture, which we treat strictly as an unproved open problem:
+
+\begin{conjecture}[Quadratic-length conjecture]\label{conj:3t2}
+For every integer $t \ge 1$, the minimum length of a complex rank-two code in $\Sym^n(\C^2)$ correcting $t$ arbitrary physical-qubit errors satisfies $n_{\min}(t) = 3t^2 + 3t + 1$.
+\end{conjecture}
+
+\begin{table}[!htbp]
+\centering
+\caption{Summary of finite brackets, unrestricted all-$t$ lower bounds, explicit constructions, and restricted-family obstructions established or assembled in this paper.}
+\label{tab:quantum-summary}
+\small
+\begin{tabularx}{\linewidth}{@{}l l X@{}}
+\toprule
+\textbf{Regime} & \textbf{Result} & \textbf{Scope \& Proof Mechanism} \\
+\midrule
+$t=1$, $K=2$ & $n_{\min}(1)=7$ & Known 7-qubit code; exact KL positive control \\
+$t=2$, $K=2$ & $n_{\min}(2)=19$ & Known AAB 19-qubit code + $n=18$ 3-copy/PTR 256-bit Arb dual ($L < -19677/200000000$) \\
+$t=3$, $K=2$ & $35 \le n_{\min}(3) \le 37$ & Scalar/shadow $n\le 32$, 3-copy $n=33,34$, exact 37-qubit code; $n=35,36$ OPEN \\
+$t=4$, $K=2$ & $50 \le n_{\min}(4) \le 61$ & Uniform lower bound $50$; explicit exact 61-qubit code; $n_{\min}(4)$ OPEN \\
+All $t \ge 1$, $K \ge 2$ & $n+1 \ge K(t+1)^2$ & Unrestricted volume bound via Racah/Lloyd positivity + LP monotonicity \\
+All $t \ge 2$, $K=2$ & $n_{\min}(t) \ge 2t^2+4t+2$ & Equality excluded via $(2t-1)\mid 2025$ ($t\ge 3$) + modular arithmetic \\
+$n=35$, $t=3$ & $|\Tr(ZO)| \le 40000\,a_1$ & Exact cubic inequality $|\Tr(ZO)|^2 \le \frac{64}{405}c^3(4c-3)a_1^2 a_2$ + Farkas $a_2 < 9/40$ \\
+All $t \ge 10$ & $n = 4t^2+2t$ & Phase-twisted gnu codes (improves AAB explicit $4t^2+2t+1$) \\
+All $t \ge 36$ & $n = 4t^2-1$ & Reflection-even phase-twisted construction; exact algebraic $(t,n)=(20,1599)$ \\
+$t \ge 10000D$ & $n = (2t+1)(2t-D)$ & Uniform ellipse-cosine leverage $<42/95$; leading $3.9998\,t^2$ \\
+Restricted family & $\deg q > \lfloor t/100\rfloor$ & Alternating-grid amplitude-polynomial barriers (amplification $\ge e^{t/4}$; $s=0, t\le 8$) \\
+\bottomrule
+\end{tabularx}
+\end{table}
+
+Table~\ref{tab:quantum-summary} organizes the four pillars of this paper: (i)~unrestricted all-$t$ lower bounds, (ii)~finite minima and exact brackets for $t=2,3,4$ plus an exact rational cubic cut at $n=35$, (iii)~explicit phase-twisted all-$t$ constructions breaking the $4t^2$ barrier, and (iv)~restricted-family obstructions clarifying why fixed-binomial phase families cannot reach Conjecture~\ref{conj:3t2}.
+
+\section{Physical Model and Representation-Theoretic Formulation}
+Let $V_n = \Sym^n(\C^2)$ with dimension $N = n+1$ and total spin $j = n/2$. Denote the orthonormal Dicke basis by $\{\ket{D_n^w}\}_{w=0}^n$. A rank-$K$ symmetric quantum code is a $K$-dimensional complex subspace $\mathcal{C} \subset V_n$, represented either by an orthogonal projector $P = P^* = P^2$ of trace $K$ or by an isometry $C:\C^K \to V_n$ with arbitrary complex columns.
+
+\begin{definition}[Physical $t$-error correction and Knill--Laflamme conditions~\cite{KnillLaflamme1997}]\label{def:kl}
+A code $C:\C^K \to V_n$ corrects arbitrary errors supported on at most $t$ physical qubits if and only if $C^* E^* F C = \lambda(E,F) I_K$ for every pair of operators $E,F$ each supported on at most $t$ qubits. Because $E^*F$ has support size at most $2t$ and $V_n$ is permutation-invariant, this condition is equivalent to scalar compression of every irreducible collective-spin tensor $T_{r,q}$ of rank $0 \le r \le \min(2t,n)$:
+\begin{equation}\label{eq:spin-kl}
+  P T_{r,q} P = \frac{\Tr(P T_{r,q})}{K}\, P \qquad \text{for all } 0 \le r \le \min(2t,n),\; |q| \le r.
+\end{equation}
+\end{definition}
+
+It is essential to distinguish three operator spaces: (a)~full physical Pauli errors on at most $t$ sites, whose images generally leave $V_n$; (b)~intrinsic collective-spin tensors preserving $V_n$, of total dimension $(t+1)^2$ through rank $t$; and (c)~degree-$k$ homogeneous loss operators $E_{k,a}: V_n \to V_{n-k}$ ($0 \le a \le k$) with matrix elements
+\begin{equation}\label{eq:kraus-loss}
+  E_{k,a}\ket{D_n^w} = \sqrt{\frac{\binom{k}{a}\binom{n-k}{w-a}}{\binom{n}{w}}}\ket{D_{n-k}^{w-a}},
+\end{equation}
+where out-of-range binomials vanish. Writing reduced amplitudes $q_w^{(\alpha)} = c_w^{(\alpha)} / \sqrt{\binom{n}{w}}$ for logical basis states $\ket{\alpha_L} = \sum_w c_w^{(\alpha)} \ket{D_n^w}$, the $k=2t$ erasure Knill--Laflamme equations reduce exactly to equality of diagonal Gram matrices and vanishing of cross Gram matrices with entries
+\begin{equation}\label{eq:gram-kl}
+  G^{(\alpha,\beta)}_{a,b} = \sqrt{\binom{k}{a}\binom{k}{b}} \sum_{\ell=0}^{n-k} \binom{n-k}{\ell}\,\overline{q_{\ell+a}^{(\alpha)}}\, q_{\ell+b}^{(\beta)}.
+\end{equation}
+Note that ``scalar compression'' in \eqref{eq:spin-kl} does \emph{not} require $\Tr(P T_{r,q}) = 0$; purity/anticoherence is a strictly stronger condition that fails for valid symmetric codes such as the exact 37-qubit $t=3$ code.
+
+For Hilbert--Schmidt orthonormal spin tensors $\{T_{r,q}\}$, define the rank-$r$ weight enumerator of a rank-$K$ projector $P$ by
+\begin{equation}\label{eq:enumerator}
+  a_r = \frac{N}{K^2} \sum_{q=-r}^{r} \bigl|\Tr(P T_{r,q})\bigr|^2, \qquad a_0 = 1, \qquad \sum_{r=0}^n a_r = \frac{N}{K}.
+\end{equation}
+Define the $(n+1)\times(n+1)$ real involutory Racah/MacWilliams matrix $M$ ($M^2 = I$) and shadow matrix $S$ by
+\begin{equation}\label{eq:macwilliams}
+  M_{a,r} = (-1)^{n+a+r}(2a+1)\begin{Bmatrix} j & j & a \\ j & j & r \end{Bmatrix}, \qquad H = KM - I, \qquad S_{a,r} = (-1)^r M_{a,r}.
+\end{equation}
+Every physical rank-$K$ code in $\Sym^n(\C^2)$ correcting $t$ arbitrary physical errors satisfies the necessary scalar and shadow inequalities:
+\begin{equation}\label{eq:lp-cone}
+\begin{aligned}
+  a &\ge 0, & a_0 &= 1, & \sum_{r=0}^n a_r &= \frac{N}{K},\\
+  (Ha)_r &= 0 \quad(1 \le r \le 2t), &
+  (Ha)_r &\ge 0 \quad(r > 2t), & Sa &\ge 0.
+\end{aligned}
+\end{equation}
+Ordinary LP feasibility (without shadow/time-reversal constraints) is monotone in $n$; by contrast, $\theta$-invariant (time-reversal) LP feasibility is \emph{not} monotone in $n$ (an explicit counterexample at $t=3$ is feasible at $n=35$ yet infeasible at $n=36$).
+
+\section{General Unrestricted All-$t$ Lower Bounds}
+We record three unrestricted theorems valid for all complex codes in $\Sym^n(\C^2)$ without further symmetry or nondegeneracy assumptions.
+
+\begin{theorem}[Unconditional Spin-Hamming Volume Bound]\label{thm:volume}
+Let $K \ge 2$ and $t \ge 1$ be integers. If $\Sym^n(\C^2)$ contains a complex $K$-dimensional code correcting arbitrary errors on at most $t$ physical qubits, then
+\begin{equation}\label{eq:volume}
+  n + 1 \ge K(t+1)^2.
+\end{equation}
+\end{theorem}
+\begin{proof}[Proof outline]
+Write $m=(t+1)^2$, $d_r=2r+1$ and $R_a(x)=N M_{ax}/d_a$. Let $L(x)=\sum_{a=0}^t d_aR_a(x)$ and $c_r=\sum_{a,b=0}^t d_ad_b\bigl\{\begin{smallmatrix}a&b&r\\j&j&j\end{smallmatrix}\bigr\}^2$. Clebsch--Gordan orthogonality gives $L(x)^2=N\sum_{r=0}^{2t}d_rc_rR_r(x)$ and $c_0=m/N$. Applying the detection equalities to this expansion yields
+\[
+\sum_x (K L(x)^2-N^2c_x)a_x=0.
+\]
+It suffices to exclude ordinary intrinsic LP feasibility at $n=Km-2$ by the length-monotonicity theorem of Giannisis Manes, Subramanian and Jiang~\cite{TwoModeLoss2026}, Supplement VIII.2, Theorem 6. The response and escape estimates in the supplement give $L(r)/m\ge1-r(r+1)/(8m)$ and $c_r/c_0<1-r(r+1)/(4m)$ for $1\le r\le2t$. Thus at $N=Km-1$ the coefficients in the displayed identity are strictly positive at $r=0,\ldots,2t$, and nonnegative beyond $2t$ because $c_r=0$ there. As $a_0=1$, this is impossible. The supplement gives the full estimates, including the finite polynomial positivity calculation, and the exact LP monotonicity premise.
+\end{proof}
+
+\begin{theorem}[Strict Inequality for All Rank-Two Codes with $t \ge 2$]\label{thm:all-t-strict}
+For $K=2$ and every integer $t \ge 2$, equality in \eqref{eq:volume} is impossible. Consequently,
+\begin{equation}\label{eq:strict-lower}
+  n_{\min}(t) \ge 2t^2 + 4t + 2.
+\end{equation}
+\end{theorem}
+\begin{proof}[Proof structure]
+Suppose equality $n+1 = 2(t+1)^2$ holds for some $t \ge 2$. Tightness of the Racah/Lloyd LP bound forces the support of the code's nonzero weight enumerators $a_r$ ($r \ge 1$) to lie entirely inside the zero set of the degree-$t$ Lloyd polynomial $\Psi_t(x)$ evaluated at integer spin-index values $x = r(r+1)$. For $t=2$ ($n=17$), direct evaluation shows $\Psi_2$ has no admissible integer roots matching $r(r+1)$, ruling out $n=17$ immediately. For $t \ge 3$, expressing the elementary symmetric sums of the roots in terms of $t$ via Newton's identities and imposing integrality of the rational coefficients forces $(2t-1)$ to divide $2025 = 3^4 \cdot 5^2$. The finite list of candidate integers $t \ge 3$ with $(2t-1) \mid 2025$ ($t \in \{3,5,8,13,14,23,38,41,68,113,203,338,1013\}$) is then eliminated individually by exact integer/modular arithmetic tests on the discriminant and root integrality of $\Psi_t$. Thus $n+1 \ge 2(t+1)^2 + 1$, giving $n \ge 2t^2+4t+2$.
+\end{proof}
+
+\begin{theorem}[General Erasure-Marginal Rank Bound]\label{thm:loss}
+If a complex $K$-dimensional code in $\Sym^n(\C^2)$ corrects $k$ physical qubit erasures, then the Gram matrix of the $k+1$ loss operators on any logical basis vector has rank $k+1$, and $n \ge (K+1)k + K - 1$. In particular, for $K=2$ and $k=2t$, $n \ge 6t+1$.
+\end{theorem}
+\begin{proof}[Proof idea]
+The key step is to exclude a nonzero common degree-$k$ annihilator of the binary forms representing the code. This uses the minimal-order annihilator argument and the erasure Knill--Laflamme equations, as proved in the accompanying \texttt{general-loss-bound.md}. Consequently the common Gram matrix of the loss images has rank $k+1$. The $K$ logical basis vectors have mutually orthogonal loss-image spans in $V_{n-k}$ by the cross Gram equalities. Counting their dimensions gives $n-k+1\ge K(k+1)$.
+\end{proof}
+
+\section{Finite Minima, Exact Brackets, and Cubic Moment Cuts}
+
+\subsection{The $t=2$ Minimum $n_{\min}(2)=19$ and Three-Copy Certification}
+For $t=2$, Theorem~\ref{thm:all-t-strict} yields $n_{\min}(2) \ge 18$, while Aydin, Alekseyev, and Barg~\cite{AAB2024} construct an exact 19-qubit symmetric code correcting two errors. Settling $n_{\min}(2)=19$ therefore reduces to excluding arbitrary complex rank-two codes at $n=18$.
+
+To exclude $n=18$, consider the $\SU(2)$-twirled two-copy and three-copy moments of a rank-two projector $P$ on $V_{18}$ ($N=19$, $j=9$):
+\begin{equation}\label{eq:twirl}
+  Z^{(2)} = \int_{\SU(2)} (U P U^*)^{\otimes 2}\,dU, \qquad
+  Z^{(3)} = \int_{\SU(2)} (U P U^*)^{\otimes 3}\,dU.
+\end{equation}
+Because $P$ is a complex rank-two orthogonal projector satisfying \eqref{eq:spin-kl} for $r \le 4$, the three-copy invariant $Z^{(3)}$ decomposes into spin-$J$ blocks $Z^{(3)} = \bigoplus_J I_{2J+1} \otimes Z_J$ in the pair-$(12)$ recoupled basis, with swap-$(23)$ implemented by the real orthogonal Racah matrix
+\[
+  F_J[L,K] = (-1)^n \sqrt{(2L+1)(2K+1)}\begin{Bmatrix} j & j & L \\ j & J & K \end{Bmatrix}.
+\]
+The necessary cone combines: (i)~positive semidefiniteness of $Z_J$ and the complement-projector blocks $(I-P)\otimes P \otimes P$, (ii)~permutation symmetry of $Z^{(3)}$, (iii)~linear Knill--Laflamme equalities for $r \le 4$, and (iv)~partial time-reversal positivity on mixed $P / (I-P)$ tensor factors. The archived rational dual certificate, replayed with outward-rounded 256-bit Arb interval arithmetic in two independent implementations (\texttt{research-checkpoints/2026-10-26/quantum-independent-audit/}), establishes the strict contradiction
+\begin{equation}\label{eq:n18-cert}
+  0 \le L < -\frac{19677}{200000000} < 0,
+\end{equation}
+excluding every arbitrary complex rank-two code in $\Sym^{18}(\C^2)$ and certifying $n_{\min}(2)=19$.
+
+\subsection{The $t=3$ Bracket $35 \le n_{\min}(3) \le 37$ and Exact $n=35$ Cubic Moment Cut}
+For $t=3$, Theorem~\ref{thm:all-t-strict} gives $n_{\min}(3) \ge 32$. Scalar/shadow LPs exclude $n \le 32$, while three-copy relaxations exclude $n=33$ and $n=34$ (\texttt{t3\_verified\_bracket.md}). An explicit exact complex 37-qubit code (independently verified against \eqref{eq:gram-kl}) yields the upper bound $n_{\min}(3) \le 37$, leaving $n=35$ and $n=36$ open. For $t=4$, an exact 61-qubit code and uniform lower bound give $50 \le n_{\min}(4) \le 61$.
+
+Because standard two- and three-copy SDP relaxations have not yet separated $n=35$ or $n=36$, we derive a new exact \emph{nonlinear} (cubic) moment inequality valid for every complex rank-two projector on $V_n$, together with a rigorous rational linear cut at $n=35$.
+
+\begin{theorem}[Unrestricted Dipole--Quadrupole Cubic Moment Inequality]\label{thm:cubic}
+Let $N=n+1$, $j=n/2$, $c=j(j+1)$, and let $P=P^*=P^2$ be any complex rank-two projector on $V_n$ with $Z = \int_{\SU(2)} (UPU^*)^{\otimes 3}\,dU$ and rank enumerators $a_r$ as in \eqref{eq:enumerator}. Define the quadrupole tensor $Q_{ab} = \frac{1}{2}\{J_a,J_b\} - \frac{c}{3}\delta_{ab} I$ ($a,b \in \{x,y,z\}$) and the $\SU(2)$-invariant three-copy operator
+\begin{equation}\label{eq:O-op}
+  O = \sum_{a,b \in \{x,y,z\}} Q_{ab}^{(1)} \otimes J_a^{(2)} \otimes J_b^{(3)}.
+\end{equation}
+Then, with no code or symmetry assumptions,
+\begin{equation}\label{eq:cubic-ineq}
+  \bigl|\Tr(ZO)\bigr|^2 \le \frac{64}{405}\, c^3(4c-3)\, a_1^2 a_2.
+\end{equation}
+\end{theorem}
+\begin{proof}
+Set $d_a = \Tr(P J_a)$ and $q_{ab} = \Tr(P Q_{ab})$. Since $P, J_a, Q_{ab}$ are Hermitian, $d \in \R^3$ and $q \in \R^{3\times 3}$ is real symmetric traceless. By $\SU(2)$-invariance of $O$,
+\[
+  \Tr(ZO) = \Tr(P^{\otimes 3} O) = \sum_{a,b} q_{ab} d_a d_b = \Tr\!\Bigl[q\Bigl(dd^{\mathsf T} - \frac{\|d\|^2}{3}I_3\Bigr)\Bigr],
+\]
+where the last equality uses $\Tr(q)=0$. Using the standard spin-$j$ Hilbert--Schmidt traces $\Tr(J_z^2) = Nc/3$ and $\Tr(Q_{zz}^2) = Nc(4c-3)/45$ together with $\Tr(Q_{ij}Q_{kl}) = \frac{Nc(4c-3)}{30}\bigl(\frac{\delta_{ik}\delta_{jl}+\delta_{il}\delta_{jk}}{2}-\frac{1}{3}\delta_{ij}\delta_{kl}\bigr)$ and irreducibility of ranks $r=1,2$, we obtain
+\[
+  \|d\|_2^2 = \sum_a d_a^2 = \frac{4c}{3}\,a_1, \qquad
+  \|q\|_F^2 = \sum_{a,b} q_{ab}^2 = \frac{2c(4c-3)}{15}\,a_2.
+\]
+The traceless matrix $M_d = dd^{\mathsf T} - \frac{1}{3}\|d\|_2^2 I_3$ has squared Frobenius norm $\|M_d\|_F^2 = \frac{2}{3}\|d\|_2^4 = \frac{32c^2}{27}a_1^2$. Applying Cauchy--Schwarz yields
+\[
+  |\Tr(ZO)|^2 \le \|q\|_F^2 \, \|M_d\|_F^2 = \frac{2c(4c-3)}{15}\,a_2 \cdot \frac{32c^2}{27}\,a_1^2 = \frac{64}{405}\, c^3(4c-3)\, a_1^2 a_2. \qedhere
+\]
+\end{proof}
+
+\begin{theorem}[Exact Rational Linear Cut at $n=35, t=3$]\label{thm:n35-cut}
+Every arbitrary complex rank-two code in $\Sym^{35}(\C^2)$ correcting $t=3$ physical-qubit errors satisfies
+\begin{equation}\label{eq:n35-a2}
+  a_2 \le \frac{574057297}{2590000000} < \frac{9}{40},
+\end{equation}
+and consequently the linear three-copy SDP cut
+\begin{equation}\label{eq:n35-linear}
+  -40000\,a_1 \le \Tr(ZO) \le 40000\,a_1.
+\end{equation}
+\end{theorem}
+\begin{proof}
+At $n=35$ ($N=36, j=35/2, c=1295/4$), the archived rational residual-Farkas dual (\texttt{a2\_n35\_farkas\_dual.json}) supplies 8 equality multipliers $\lambda$ and 28 nonnegative inequality multipliers $y$ (denominator $10^6$) for the exact cone $Ea=b, Ga \ge 0, a \ge 0$ of \eqref{eq:lp-cone}. Defining $\mathrm{res} = e_2 - E^{\mathsf T}\lambda + G^{\mathsf T}y$ and $\varepsilon = \|\mathrm{res}\|_\infty$, exact integer-factorial verification (\texttt{check\_a2\_n35\_dual.py}, freshly replayed) confirms $\varepsilon < 1/900000$ and
+\[
+  a_2 = e_2^{\mathsf T}a = \lambda^{\mathsf T}b - y^{\mathsf T}Ga + \mathrm{res}^{\mathsf T}a \le \lambda^{\mathsf T}b + \frac{N}{2}\varepsilon = \frac{574057297}{2590000000} < \frac{9}{40}.
+\]
+Exact integer arithmetic further verifies $\frac{64}{405} c^3(4c-3)\cdot \frac{9}{40} < 40000^2$ at $c=1295/4$. Combining with Theorem~\ref{thm:cubic} yields \eqref{eq:n35-linear}.
+\end{proof}
+
+Fresh exact replay of \texttt{check\_cubic\_cut.py} confirms that \eqref{eq:cubic-ineq} strictly cuts off saved numerical pseudo-moment points at $n=35$ (logical pseudo-moment: $|\Tr(ZO)| \approx 25.93$, squared RHS $26.68$, signed rational margin $+645.78 > 0$) and $n=36$ (baseline pseudo-moment: signed margin $+817.72 > 0$). However, this does \emph{not} yet certify infeasibility of $n=35$ or $n=36$ across the full cone.
+
+\section{Phase-Twisted Constructions and Restricted-Family Barriers}
+Aydin, Alekseyev, and Barg~\cite{AAB2024} gave an explicit all-$t$ family of permutation-invariant codes of length $n_{\mathrm{AAB}}(t) = 4t^2 + 2t + 1$. By replacing real positive alternating signs on a uniform Dicke grid with complex phases $\eta_i$ ($|\eta_i|=1$) tuned via a univariate Vandermonde nonnegative-polynomial bridge, our archived constructions achieve strictly shorter explicit all-$t$ lengths:
+\begin{itemize}
+  \item \textbf{Phase-twisted gnu codes:} $n = 4t^2 + 2t$ for all $t \ge 10$, where edge phases remain compatible because adjacent grid transitions form a path (\texttt{phase\_twisted\_gnu\_candidate.md}).
+  \item \textbf{Reflection-even phase-twisted codes:} $n = 4t^2 - 1$ for all $t \ge 36$, together with an exact rational sum-of-squares Gram certificate at $(t,n) = (20, 1599)$ (\texttt{validated\_phase\_sos\_t20\_20261026\_0334/THEOREM.md}).
+  \item \textbf{Uniform ellipse-cosine construction:} $n = (2t+1)(2t-D)$ for every integer $D \ge 1$ and $t \ge 10000D$, via a global leverage bound $< 42/95$. Setting $D = \lfloor t/10000 \rfloor$ yields asymptotic leading length $3.9998\,t^2+O(t)$ (breaking $4t^2$, though with a large threshold $t \ge 10000$ and small numerical reduction).
+\end{itemize}
+
+Conversely, two audited \emph{restricted-family} obstructions explain why simple binomial-grid phase twists cannot reach Conjecture~\ref{conj:3t2}'s leading coefficient $3$:
+\begin{enumerate}
+  \item \textbf{Fixed-binomial phase barrier:} For $t \ge 1024$, Gamma-duplication and entropy-tangent bounds force $D/t < 0.495$ in the fixed-binomial phase family, giving asymptotic length at least $3.01\,t^2$.
+  \item \textbf{Linear-surplus amplitude-polynomial barriers (\texttt{LINEAR\_SURPLUS\_THEOREMS.md}):} For $t \ge 10000$, $0 \le s \le \lfloor t/1000\rfloor$, $m=3t+s$, $g=t+1$, $n=mg$, and alternating-grid squared amplitudes $\binom{m}{i}q(i)$ with $\deg q \le t+s-1$, exact Weierstrass-product bounds on the central ladder weights $A(c+x)/A(c)$ prove: (a)~for each parity $e \in \{0,1\}$, $\max_{i \equiv e} h(i)/h(i_e) \ge \exp(t/4)$ where $h(i)=q(i)q(i+1)$; (b)~no solution exists with $\deg q \le \lfloor t/100\rfloor$; and (c)~at $s=0$ ($n=3t(t+1)$), no degree-$\le(t-1)$ solution exists even over $\C$ for $t \in \{4,5,6,7,8\}$. The script \nolinkurl{check_linear_surplus_constants.py} checks the logarithmic estimates and the tail margin $-55783/10^7$.
+\end{enumerate}
+Crucially, these are \emph{ansatz-specific} obstructions, never unrestricted lower bounds on $n_{\min}(t)$.
+
+\section{Comparison with Prior and Concurrent Work}
+Our explicit constructions are benchmarked strictly against the stated all-$t$ formula $4t^2+2t+1$ of Aydin, Alekseyev, and Barg~\cite{AAB2024} (who also constructed the known $n=19, t=2$ code); we do not assert that no other unpublished or non-uniform construction improves upon $4t^2+2t+1$. Recent work~\cite{SpinBosonicPI2026,TwoModeLoss2026} establishes structural correspondences between PI, spin, and two-mode bosonic loss codes and studies finite-group symmetry in optimal loss codes; our lower bounds apply to arbitrary complex planes without group-symmetry restriction.
+
+\paragraph{Overlap with Yuxuan Zhang (November 2026).}
+Zhang~\cite{Zhang2026} also reports $n_{\min}(2)=19$ using a three-copy semidefinite relaxation with partial time reversal.
+
+\section{Reproducibility, Limitations, and Disclosure}
+All theorem documents, companion scripts, and SHA-256 manifests are archived in \url{https://github.com/Rtx09x/Open-Research/tree/main/physics/symmetric-quantum-error-correction} (release reference \texttt{7099139817e621ce40074813c163389f3eefe6a3}) with the proof texts and selected certificates also supplied in the accompanying supplement. The interval checker for $n=18$ uses \texttt{python-flint} at 256-bit precision. Conjecture~\ref{conj:3t2} ($3t^2+3t+1$) and $n \in \{35,36\}$ for $t=3$ remain open. This work was developed with AI-assisted mathematical discovery and verification workflows.
+
+\paragraph{Proof supplement.}
+The accompanying \texttt{supplement/} contains the full volume and equality arguments, finite exclusion and existence chain, and the original construction proof documents. The \texttt{EVIDENCE.md} index identifies their certificate files and replay entry points.
+\bibliographystyle{plainnat}
+\bibliography{references}
+\end{document}

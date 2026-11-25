@@ -8,4 +8,4 @@ Propose new research through the [contribution guidelines](../CONTRIBUTING.md). 
 
 ## Founding projects
 
-- [Hysteretic state machines](hysteretic-state-machines/)
+- [Hysteretic state machines](hysteretic-state-machines/) · [Preprint PDF](hysteretic-state-machines/preprint/physical_resource_complexity_hysteretic_state_machines.pdf)

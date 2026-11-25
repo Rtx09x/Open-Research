@@ -1,0 +1,42 @@
+\begin{thebibliography}{5}
+\providecommand{\natexlab}[1]{#1}
+\providecommand{\url}[1]{\texttt{#1}}
+\expandafter\ifx\csname urlstyle\endcsname\relax
+  \providecommand{\doi}[1]{doi: #1}\else
+  \providecommand{\doi}{doi: \begingroup \urlstyle{rm}\Url}\fi
+
+\bibitem[Dagan et~al.(2025)Dagan, Daskalakis, Fishelson, Golowich, Kleinberg,
+  and Okoroafor]{Dagan2024}
+Yuval Dagan, Constantinos Daskalakis, Maxwell Fishelson, Noah Golowich, Robert
+  Kleinberg, and Princewill Okoroafor.
+\newblock Breaking the $t^{2/3}$ barrier for sequential calibration.
+\newblock In \emph{Proceedings of the 57th Annual ACM Symposium on Theory of
+  Computing (STOC)}, 2025.
+\newblock arXiv:2406.13668v4.
+
+\bibitem[Dai and Fishelson(2026)]{DaiFishelson2026}
+Eric Dai and Maxwell Fishelson.
+\newblock Explicit asymptotic bounds for sequential calibration beyond
+  $t^{2/3}$, October 2026.
+\newblock arXiv:2610.07623v2 [stat.ML].
+
+\bibitem[Fishelson and Mohri(2026)]{FishelsonMohri2026}
+Maxwell Fishelson and Mehryar Mohri.
+\newblock High-dimensional online calibration from harmonic weights, November
+  2026.
+\newblock arXiv:2610.07740.
+
+\bibitem[Foster and Vohra(1998)]{FosterVohra1998}
+Dean~P. Foster and Rakesh~V. Vohra.
+\newblock Asymptotic calibration.
+\newblock \emph{Biometrika}, 85\penalty0 (2):\penalty0 379--390, 1998.
+\newblock \doi{10.1093/biomet/85.2.379}.
+
+\bibitem[Qiao and Valiant(2021)]{QiaoValiant2021}
+Mingda Qiao and Gregory Valiant.
+\newblock Stronger calibration lower bounds via sidestepping.
+\newblock In \emph{Proceedings of the 53rd Annual ACM SIGACT Symposium on
+  Theory of Computing (STOC)}, pages 456--466, 2021.
+\newblock \doi{10.1145/3406325.3451050}.
+
+\end{thebibliography}

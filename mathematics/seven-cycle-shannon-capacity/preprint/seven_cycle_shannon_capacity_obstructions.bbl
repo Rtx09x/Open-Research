@@ -1,0 +1,65 @@
+\begin{thebibliography}{8}
+\providecommand{\natexlab}[1]{#1}
+\providecommand{\url}[1]{\texttt{#1}}
+\expandafter\ifx\csname urlstyle\endcsname\relax
+  \providecommand{\doi}[1]{doi: #1}\else
+  \providecommand{\doi}{doi: \begingroup \urlstyle{rm}\Url}\fi
+
+\bibitem[Buys et~al.(2026)Buys, Polak, and Zuiddam]{BPZ2026}
+Pjotr Buys, Sven~C. Polak, and Jeroen Zuiddam.
+\newblock Lean-verified lower bounds for the shannon capacity of odd cycles,
+  2026.
+\newblock Repository
+  \url{https://github.com/spectra-research/shannon-capacity-lean}, pinned
+  commit \texttt{aa21eeb12b75b0413d3fa9fb4208b5d0bf2c4d65}.
+
+\bibitem[Itty et~al.(2026)Itty, Rosin, Carstensen, and Reichman]{IRCR2026}
+Nathaniel Itty, Christopher~D. Rosin, Chase Carstensen, and Daniel Reichman.
+\newblock Improved lower bounds for the shannon capacity of odd cycles, 2026.
+\newblock arXiv:2607.21517.
+
+\bibitem[Lov{\'a}sz(1979)]{Lovasz1979}
+L{\'a}szl{\'o} Lov{\'a}sz.
+\newblock On the shannon capacity of a graph.
+\newblock \emph{IEEE Transactions on Information Theory}, 25\penalty0
+  (1):\penalty0 1--7, 1979.
+\newblock \doi{10.1109/TIT.1979.1055985}.
+
+\bibitem[Mergen(2026)]{Mergen2026}
+Gokhan Mergen.
+\newblock The shannon capacity of the 7-cycle: Local exchange certificates,
+  July 2026.
+\newblock Public certificates (18 July 2026),
+  \url{https://www.gokhanmergen.com/information-theory-problems/problems/shannon-capacity-c7.html}.
+
+\bibitem[Polak and Schrijver(2019)]{PolakSchrijver2019}
+Sven~C. Polak and Alexander Schrijver.
+\newblock New lower bound on the shannon capacity of $c_7$ from circular
+  graphs.
+\newblock \emph{Information Processing Letters}, 143:\penalty0 37--40, 2019.
+\newblock \doi{10.1016/j.ipl.2018.11.006}.
+\newblock arXiv:1808.07438.
+
+\bibitem[Shannon(1956)]{Shannon1956}
+Claude~E. Shannon.
+\newblock The zero error capacity of a noisy channel.
+\newblock \emph{IRE Transactions on Information Theory}, 2\penalty0
+  (3):\penalty0 8--19, 1956.
+\newblock \doi{10.1109/TIT.1956.1056798}.
+
+\bibitem[Tandon(2026)]{Tandon2026}
+Ravi Tandon.
+\newblock Strengthening recursive constructions for zero-error shannon
+  capacity, 2026.
+\newblock arXiv:2608.30273v1; repository
+  \url{https://github.com/tandonravi/C7-Shannon-Capacity-Heterogeneous-Recursion}.
+
+\bibitem[Tao and Contributors(2026)]{TaoConstants9a}
+Terence Tao and Contributors.
+\newblock Optimization problems ledger: Constant 9a (shannon capacity of
+  $c_7$), 2026.
+\newblock Tracks Leo Tang's reported lower bound $\approx
+  3.258838705444608\dots$;
+  \url{https://teorth.github.io/optimizationproblems/constants/9a.html}.
+
+\end{thebibliography}

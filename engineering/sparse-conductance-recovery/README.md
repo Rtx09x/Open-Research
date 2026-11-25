@@ -1,5 +1,8 @@
 # Sparse conductance recovery
 
+**Preprint · November 2026** — [Read the PDF](preprint/sparse_conductance_recovery.pdf) · [LaTeX source](preprint/sparse_conductance_recovery.tex) · [Build instructions](preprint/BUILD.md)
+
+
 ## Question
 
 How can changes in a known electrical network be recovered from pairwise effective-resistance measurements?
@@ -16,7 +19,7 @@ The manuscript also treats disconnected weakening and weighted class-structured 
 
 ## Materials
 
-[Sparse conductance manuscript](paper/sparse_conductance_changes.pdf) · [LaTeX source](paper/sparse_conductance_changes.tex) · [Additional studies](paper/)
+[Earlier sparse conductance manuscript](paper/sparse_conductance_changes.pdf) · [LaTeX source](paper/sparse_conductance_changes.tex) · [Additional studies](paper/)
 
 ## Verification and limitations
 

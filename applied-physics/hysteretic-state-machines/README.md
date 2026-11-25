@@ -1,10 +1,13 @@
 # Physical memory
 
+**Preprint · November 2026** — [Read the PDF](preprint/physical_resource_complexity_hysteretic_state_machines.pdf) · [LaTeX source](preprint/physical_resource_complexity_hysteretic_state_machines.tex) · [Build instructions](preprint/BUILD.md)
+
+
 **Physical Resource Complexity of Hysteretic State Machines: Realizability, Optimal Memory, and Interaction Tradeoffs**
 Rudra Tiwari, University of Delhi, India.
 
-- [Current reviewed manuscript, 22 pages](paper/main.pdf)
-- [Unchanged LaTeX source](paper/main.tex), [bibliography](paper/references.bib), and native TikZ figures in `paper/figures/`
+- [Earlier manuscript, 22 pages](paper/main.pdf)
+- [Earlier LaTeX source](paper/main.tex), [bibliography](paper/references.bib), and native TikZ figures in `paper/figures/`
 - [Claim-to-evidence map and validation record](EVIDENCE.md)
 
 This is the lean core of the 16 October 2026 reviewed package. “Reviewed” means the documented research/editorial checking process, not independent human peer review or publication acceptance. AI assistance was used in that workflow. Original material is offered under the repository licensing policy; third-party rights remain with their owners.

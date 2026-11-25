@@ -1,5 +1,8 @@
 # Deterministic online bin packing
 
+**Preprint · November 2026** — [Read the PDF](preprint/deterministic_online_bin_packing.pdf) · [LaTeX source](preprint/deterministic_online_bin_packing.tex) · [Build instructions](preprint/BUILD.md)
+
+
 ## Question
 
 What performance can a specified deterministic online bin-packing algorithm guarantee against an optimal offline packing?

@@ -1,8 +1,11 @@
 # Structure and Uncertainty in Resistance-Based Fault Diagnosis
 
-The core of the resistance-diagnosis research track: the current paper, its complete source, and reproducible checks of its stated claims. All other studies and historical material are excluded.
+**Preprint · November 2026** — [Read the PDF](preprint/structure_uncertainty_fault_diagnosis.pdf) · [LaTeX source](preprint/structure_uncertainty_fault_diagnosis.tex) · [Build instructions](preprint/BUILD.md)
 
-- [Reviewed manuscript, 37 pages](manuscript/structure_uncertainty_fault_diagnosis.pdf)
+
+The core of the resistance-diagnosis research track: the paper, its source, and reproducible checks of its stated claims.
+
+- [Earlier manuscript, 37 pages](manuscript/structure_uncertainty_fault_diagnosis.pdf)
 - [Complete LaTeX source](manuscript/structure_uncertainty_fault_diagnosis.tex), with inline bibliography and no external figures
 - [Opposite leaf-pairing construction proof](research/planner/OPPOSITE_PAIRING_PROOF.md)
 
@@ -57,7 +60,7 @@ The default runs 12 core checks; `--full` adds 19 exhaustive or extended audit r
 
 ## Fresh core validation, 23 October 2026
 
-All 12 core checks and all 19 extended audit runs passed in a disposable copy with SymPy 1.14.0 and NetworkX 3.7. The main manuscript rebuilt successfully to 37 pages with no unresolved references or citations. Temporary TeX format/font-map configuration was needed for the container, not for the source. The committed PDF remains the original reviewed file. These are finite exact/combinatorial checks, not a full formal proof or independent human replication.
+All 12 core checks and all 19 extended audit runs passed in a disposable copy with SymPy 1.14.0 and NetworkX 3.7. The main manuscript rebuilt successfully to 37 pages with no unresolved references or citations. Temporary TeX format/font-map configuration was needed for the container, not for the source. The archived 37-page PDF is the version associated with this check. These are finite exact/combinatorial checks, not a full formal proof or independent human replication.
 
 ## Deliberately excluded
 

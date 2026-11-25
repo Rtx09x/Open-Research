@@ -1,0 +1,192 @@
+\documentclass[11pt,letterpaper]{article}
+\usepackage{lmodern}
+\usepackage[left=1.05in,right=1.05in,top=0.88in,bottom=0.92in]{geometry}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath,amssymb,amsthm,mathtools,booktabs,array,tabularx,microtype,xcolor}
+\usepackage[numbers,sort&compress]{natbib}
+\usepackage{xurl}
+\usepackage[colorlinks=true,linkcolor=blue!65!black,citecolor=blue!65!black,urlcolor=blue!65!black]{hyperref}
+\hypersetup{
+  pdftitle={A Tight Competitive-Ratio Bracket for Advanced Harmonic with Tiny Best Fit},
+  pdfauthor={Rudra Tiwari},
+  pdfsubject={Exact rational certification of Advanced Harmonic refinements, tiny-container charging, and restricted lower-bound obstructions}
+}
+\setlength{\parindent}{1.5em}
+\setlength{\parskip}{0pt}
+\setlength{\emergencystretch}{2em}
+\setcounter{tocdepth}{2}
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{proposition}[theorem]{Proposition}
+\newtheorem{corollary}[theorem]{Corollary}
+\theoremstyle{definition}
+\newtheorem{definition}[theorem]{Definition}
+\theoremstyle{remark}
+\newtheorem{remark}[theorem]{Remark}
+\newcommand{\OPT}{\operatorname{OPT}}
+\newcommand{\ALG}{\operatorname{ALG}}
+\newcommand{\R}{\mathbb{R}}
+
+\begin{document}
+\thispagestyle{empty}
+\begin{center}
+\vspace*{0.22in}
+{\LARGE\bfseries A Tight Competitive-Ratio Bracket\\[.14em] for Advanced Harmonic with Tiny Best Fit\par}
+\vspace{0.20in}
+{\large Exact scenario certification and a seven-size lower bound\par}
+\vspace{0.24in}
+{\normalsize\bfseries Rudra Tiwari\par}
+\vspace{0.03in}
+{\normalsize\itshape University of Delhi, New Delhi, India\\Inter-University Accelerator Centre (IUAC), New Delhi, India\par}
+\vspace{0.10in}
+{\small\href{https://orcid.org/0009-0004-8521-7627}{ORCID: 0009-0004-8521-7627}\quad|\quad\href{https://rtx09x.github.io/}{Website}\quad|\quad\href{https://github.com/Rtx09x}{GitHub}\quad|\quad\href{https://github.com/Rtx09x/Open-Research/tree/main/computer-science/online-bin-packing}{Open-Research}\par}
+\vspace{0.15in}
+{\normalsize November 2026\par}
+\end{center}
+\vspace{0.16in}
+\begin{abstract}
+We give an all-input upper bound and a seven-size lower bound for the same deterministic online bin packing algorithm, a retuned Advanced Harmonic variant using Best Fit over all advertised tiny containers. Its asymptotic competitive ratio lies between $1.5782054112079646\dots$ and $1.5782055179987482\dots$, a width of $1.068\times10^{-7}$. The upper bound combines chronological charging over the suffix of tiny-container creations with two revised small-class proportions and exact pricing of 804 strict knapsacks across 402 scenarios. The lower bound uses fixed rational item sizes and an offline optimum of exactly $N$ bins for each batch multiplicity $N$, then counts the positive containers the online algorithm must create. The upper endpoint is numerically below Martin's concurrent $1.5782147437$ bound for a separately tuned Advanced Harmonic variant. We also give exact upper certificates for two precursor variants and causal counterstrategies against three restricted extensions of the 2018 lower-bound adversary.
+\end{abstract}
+\vspace{0.10in}
+\noindent\textbf{Keywords:} online bin packing, asymptotic competitive ratio, Advanced Harmonic, exact rational knapsack certification, tiny Best Fit, adversary tree rigidity.
+\clearpage
+\tableofcontents
+\clearpage
+
+\section{Introduction}
+In classic deterministic online one-dimensional bin packing~\cite{LeeLee1985,Seiden2002}, a sequence $\sigma$ of items with sizes in $(0,1]$ arrives one by one and must be assigned irrevocably to unit-capacity bins. The asymptotic competitive ratio of a deterministic algorithm $\ALG$ is
+\[
+  R(\ALG) = \inf\bigl\{ R \in \R : \exists\, C \text{ such that } \ALG(\sigma) \le R \cdot \OPT(\sigma) + C \text{ for all finite inputs } \sigma \bigr\}.
+\]
+For nearly a decade, the benchmark upper bound was the Advanced Harmonic (AH) algorithm of Balogh, B\'ek\'esi, D\'osa, Epstein, and Levin~\cite{Balogh2018AH}, with published ratio $1.57828956$ (exact rational $1.5782895555\dots$), alongside their universal lower bound $1.5427809\dots$~\cite{Balogh2019LB}. In October 2026, Karyamsetty Martin~\cite{Martin2026} rebuilt the AH scenario analysis as an exact rational optimization and retuned container proportions to certify $1.5782147437$ across all 402 scenarios, while proving rigidity of the 2018 lower-bound adversary tree.
+
+The main result is the $1.068\times 10^{-7}$ bracket for a fixed algorithm in Section~\ref{sec:phase7}. The precursor upper certificates in Section~\ref{sec:local-cert} isolate the effects of changing container proportions and the tiny closing rule. The restricted adversary results concern a separate lower-bound question.
+
+\begin{table}[!htbp]
+\centering\small
+\caption{Certified upper bounds and an algorithm-specific lower bound.}
+\label{tab:packing-layers}
+\begin{tabularx}{\linewidth}{@{}X l@{}}
+\toprule
+Source or algorithm & Asymptotic ratio bound \\
+\midrule
+Original Advanced Harmonic~\cite{Balogh2018AH} & $\le 1.5782895555\dots$ \\
+Three-transfer AH precursor & $\le 1.5782320612\dots$ \\
+Size-sensitive closing precursor & $\le 1.5782316166\dots$ \\
+Martin's retuned AH~\cite{Martin2026} & $\le 1.5782147437$ \\
+\textbf{Retuned tiny-Best-Fit AH} & $[1.5782054112\dots,\;1.5782055180]$ (rounded) \\
+\bottomrule
+\end{tabularx}
+\end{table}
+
+\section{Exact Certification of Three-Transfer AH and Tiny-Container Closing}\label{sec:local-cert}
+In the AH framework~\cite{Balogh2018AH}, items are classified into size intervals and packed into typed containers according to fixed container proportions $\alpha$. A retrospective threshold $t \in (0,1/2)$ and $a = 1-t$ partitions the analysis into 402 scenarios determined by the smallest unmatched positive volume $p$ and smallest unmatched negative volume $n$.
+
+\subsection{Interior-Threshold Repair and Strict Knapsack Reduction}
+By Lemma~3 of~\cite{Balogh2018AH}, whenever both unmatched positive and negative containers exist, $p + n > 1$, so $\max(0, 1-p) < \min(1/2, n)$. Choosing $t$ strictly inside this open interval and outside the finite breakpoint set ensures every unmatched positive has volume strictly greater than $a=1-t$ and every unmatched negative has volume strictly greater than $t$. Replacing non-tiny items by their lower-endpoint representatives yields two \emph{strict} offline knapsack pricing cases per scenario (804 exact rational knapsacks in total): (i)~no huge item of size $\ge a$, where the representative sum satisfies $S < 1$; and (ii)~a huge item of size $\ge a$, leaving remaining capacity $\le t < y$ and forcing threshold-class items into the $u$-branch with $S < y$.
+
+\begin{theorem}[Three-Transfer Refinement]\label{thm:rstar}
+Applying the exact rational container-proportion transfers
+\[
+\begin{aligned}
+  \text{class } 167\;(1\!\to\! 3): &\quad \kappa = \frac{101}{10^6}, \\
+  \text{class } 172\;(2\!\to\! 6): &\quad \delta = \frac{203907985616802938880}{661406035963546729717373}, \\
+  \text{class } 179\;(10\!\to\! 2): &\quad \eta = \frac{56254421499138925905512741470208}{47449963408280619234481631165243337}.
+\end{aligned}
+\]
+preserves positivity, support, and all 492 large-class balance inequalities across the 164 large-threshold scenarios, certifying the exact rational upper bound on the asymptotic competitive ratio
+\[
+  R_* = \frac{1848920194883516152323541607}{1171513518439186595284254720} \approx 1.5782320611603713.
+\]
+\end{theorem}
+
+\begin{theorem}[Size-Sensitive Tiny-Container Closing Extension]\label{thm:rnew}
+Modifying solely the tiny-container closing rule of the three-transfer AH algorithm (preserving every published weight table $u,v,w$ and all non-tiny proportions) yields a size-sensitive tiny charging inequality that certifies across all 402 scenarios and 804 exact strict knapsacks the exact rational upper bound on the asymptotic competitive ratio
+\begin{equation}\label{eq:rnew}
+  R_{\mathrm{new}} = \frac{87931323061219230147063794829048504459349}{55715094120735551199336133222286481162240} \approx 1.5782316165646344,
+\end{equation}
+improving the certified upper bound by $R_* - R_{\mathrm{new}} \approx 4.44595737 \times 10^{-7}$. The active pricing scenario occurs at $(x,y)=(49/320, 1/6)$ without a huge item, with maximizing representative pattern $3\times \text{class } 167 + 1\times \text{class } 172 + 1\times \text{class } 179$.
+\end{theorem}
+
+The scripts \texttt{verify\_algebra.py} and \texttt{verify\_final\_extension.py} verify all 402 scenarios, 804 exact strict knapsacks (18,983 branch-and-bound nodes), and all 492 large-class balance inequalities with zero floating-point approximation.
+
+\section{The Fixed-Algorithm Competitive-Ratio Bracket}\label{sec:phase7}
+\begin{theorem}
+Let $\mathrm{BF\text{-}AH}$ use Best Fit over all existing advertised tiny containers, the original Advanced Harmonic matching rules, and the frozen retuned proportions of classes 167 and 179 supplied in the supplement. Then
+\begin{equation}\label{eq:phase7-bracket}
+  1.5782054112079646\dots \le R(\mathrm{BF\text{-}AH}) \le 1.5782055179987482\dots .
+\end{equation}
+The endpoints denote the exact rationals specified in the proofs below.
+\end{theorem}
+
+\subsection{All-input upper bound}
+A tiny item is placed into a fitting advertised container with smallest residual capacity. A new quota-selected container is created only if none fits. Write $B$ for the quota-weighted mean of the capacities $17/60$ and $1$, and let $0\le c\le g\le 1/43$ be scenario cutoffs. Let $h$ count containers with final residual greater than $c$, $L_c=\sum_{s>c}s$ and $E_g=\sum_s(s-g)_+$ over tiny items.
+
+If $h>0$, let $E$ be the first-created container whose final residual exceeds $c$. Every later birth item exceeded the residual of $E$ at its birth. Every later container that ever receives an item of size at most $c$ can charge its capacity deficit to its own birth item: immediately before the first such placement, $E$ is a fitting alternative, so Best Fit bounds the chosen residual by the current residual of $E$. For the remaining later containers, charge to the next birth within that remaining class. That birth was rejected by all old containers, and hence bounds the final residual of its predecessor. The two classes use disjoint birth items, with at most one exceptional last container. Summing over the entire creation suffix and applying quota discrepancy there yields
+\[
+ h\le \frac{L_c+E_g}{B-g}+O(1).
+\]
+The sum of residuals in excess of $g$ is at most $E_g+1$ by charging each earlier container to its immediate successor. Combining the two estimates gives the following charge for each tiny item, where $b$ is the quota-weighted required tiny-container weight:
+\[
+ f_{c,g}(s)=
+ \begin{cases}
+  bs/(B-c),&s\le c,\\
+  b\bigl[s+(s-g)_+\bigr]/(B-g),&s>c.
+ \end{cases}
+\]
+The additive constants are uniform in input length and item sizes. The original AH weight reduction and the finite scenario decomposition then apply with this tiny charge. The exact checks cover 402 scenarios and 804 strict knapsacks with both retuned supports positive. In the active scenario $(3/7,1/2)$ the cutoffs are $c=997/2100120$ and $g=11/500$. The exact upper endpoint is
+\[
+ U=\frac{96988842290419266162339453629607142739}{61455140781288409357546665835971477504}.
+\]
+
+\subsection{Algorithm-specific lower bound}
+Let $\tau=10^{-9}$ and $p=997/2100120$. For each $N$, give the algorithm $N$ items of size $p-6\tau$, then $N$ copies of each of the six other sizes in Table~\ref{tab:seven-size}, with the huge batch last. The seven sizes add to exactly one, so the volume lower bound and the one-of-each packing give $\OPT=N$.
+
+\begin{table}[!htbp]
+\centering\small
+\caption{Fixed item sizes for the lower bound. Each column represents a batch of $N$ items.}
+\label{tab:seven-size}
+\begin{tabular}{@{}ccccccc@{}}
+\toprule
+Tiny & 165 & 179 & 205 & 208 & 211 & Huge \\
+\midrule
+$p-6\tau$ & $1/3+\tau$ & $1/11+\tau$ & $1/37+\tau$ & $1/40+\tau$ & $1/43+\tau$ & $1/2+\tau$ \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+Completed tiny containers hold either 596 or 2106 copies. Let $\beta=18866629793/32568497273$ be the quota fraction of type 2 and write $K=596(1-\beta)+2106\beta$. All but the last tiny container are full with respect to this item size, so the type-2 positive count is $\beta N/K+O(1)$. The remaining batches contribute at least $K_P N-O(1)$ positives under the small-class quotas and the separate class-165 large-container count, with
+\[
+ K_P=\frac{4629362226716989759188631892637569797799391977917968977}
+ {2934040051782717193271004450452948397602065646874525696}.
+\]
+Two positive containers cannot share a bin under the matching rule, giving the exact lower endpoint $L=K_P+\beta/K$. This construction certifies the floor for the specified algorithm. The universal lower bound for deterministic online algorithms is a separate quantity. The supplement includes the full charging proof, quota recount, exact parameter tables, and replay commands.
+
+\section{Restricted Lower-Bound Branch Obstructions}
+On the lower-bound side, we analyze adaptive extensions of the 2018 adversary tree~\cite{Balogh2019LB} starting from the causally realized nine-state $t=3$ prefix with target ratio $r = 3857/2500 = 1.5428$, initial bin mass $z = r/6 = 3857/15000$, and $C$-ready old bin mass $t = (2-r)/6 = 381/5000$.
+
+\begin{lemma}[Structural Conservation Lemma]\label{lem:conservation}
+Consider any causal suffix policy that, after the nine-state prefix (volume $\ge N/6-O(1)$), processes stages $i$ of $n_i N$ items of base size $s_i < 1/2$ without touching the $tN$ old $C$-ready slots, opening at most $u_i n_i N + O(1)$ new bins and creating $v_i n_i N + O(1)$ new $C$-ready slots. When $cN$ items of size $C = 1/2+\varepsilon$ arrive, define
+\[
+  M_V = \sum_i (r s_i - u_i) n_i, \qquad
+  M_H = \sum_i \bigl(2(r-1)s_i - u_i + v_i\bigr) n_i.
+\]
+If $M_V \ge 0$ and $M_H \ge 0$ throughout the permitted batch-count cone, then $\ALG_C \le r\cdot \OPT_C + O(1)$ for every stopping length $c \ge 0$.
+\end{lemma}
+\begin{proof}
+The online cost satisfies $\ALG_C/N \le \max\{z + \sum_i u_i n_i,\; z - t + \sum_i (u_i - v_i) n_i + c\} + O(1/N)$, while $\OPT_C/N \ge \max\{c,\; 1/6 + \sum_i s_i n_i + c/2 - O(1/N)\}$. The first online branch is dominated by $r(1/6 + \sum_i s_i n_i + c/2)$ when $M_V \ge 0$, up to the bounded additive error (since $z=r/6$). For the second branch, subtracting it from $r\max\{c, 1/6+\sum_i s_i n_i + c/2\}$ has derivative $r/2-1 < 0$ for $c < c_* = 1/3 + 2\sum_i s_i n_i$ and $r-1 > 0$ for $c > c_*$; its global minimum at $c_*$ equals exactly $M_H$ since $z=r/6$ and $t=(2-r)/6$.
+\end{proof}
+
+Applying Lemma~\ref{lem:conservation} to three adaptive attack architectures (including an $E$-separator overdose with $F$-completion and forced third-or-later $B$-mark inequalities) yields exact rational causal counterpolicies. The checker \texttt{verify\_packing\_branch\_obstruction.py} verifies the universal $B/C$ two-line affine dominance, 26-item periodic causal policy with zero $2A$ marks, exact $C$-slack $274809/162500000$, and $D$-counterpolicy margin $17219239/195000000$. These results parallel—on a specific restricted prefix—the broader adversary rigidity proved independently by Martin~\cite{Martin2026}.
+
+\section{Comparison with Concurrent Work, Limitations, and Disclosure}
+Karyamsetty Martin~\cite{Martin2026} (23 October 2026) independently certified $R = 1.5782147437$ across all 402 AH scenarios via exact per-scenario dual optimization and proportion retuning, proved rigidity of the 2018 adversary tree under ordinary-size batch extensions, and showed that Extreme Harmonic's marking/bonus/red-sand mechanisms do not bind in AH.
+\begin{itemize}
+  \item The size-sensitive closing extension ($R_{\mathrm{new}} \approx 1.57823162$) is numerically \emph{weaker} than Martin's $1.5782147437$, though it demonstrates a distinct mechanism (size-sensitive tiny closing without changing published $u,v,w$).
+  \item The retuned tiny-Best-Fit upper bound ($1.57820552$ when rounded) is numerically lower than Martin's $1.5782147437$. The supplement gives a separate rational pricing implementation and checks 120,000 tiny prefixes.
+\end{itemize}
+All local exact-arithmetic checkers are archived at \url{https://github.com/Rtx09x/Open-Research/tree/main/computer-science/online-bin-packing} (release reference \texttt{7099139817e621ce40074813c163389f3eefe6a3}). This manuscript was developed with AI-assisted mathematical and exact-verification workflows.
+
+\bibliographystyle{plainnat}
+\bibliography{references}
+\end{document}

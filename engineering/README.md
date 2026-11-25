@@ -8,5 +8,5 @@ Propose new research through the [contribution guidelines](../CONTRIBUTING.md). 
 
 ## Founding projects
 
-- [Resistance-based fault diagnosis](resistance-fault-diagnosis/)
-- [Sparse conductance recovery](sparse-conductance-recovery/)
+- [Resistance-based fault diagnosis](resistance-fault-diagnosis/) · [Preprint PDF](resistance-fault-diagnosis/preprint/structure_uncertainty_fault_diagnosis.pdf)
+- [Sparse conductance recovery](sparse-conductance-recovery/) · [Preprint PDF](sparse-conductance-recovery/preprint/sparse_conductance_recovery.pdf)

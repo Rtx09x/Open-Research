@@ -1,0 +1,65 @@
+\begin{thebibliography}{9}
+\providecommand{\natexlab}[1]{#1}
+\providecommand{\url}[1]{\texttt{#1}}
+\expandafter\ifx\csname urlstyle\endcsname\relax
+  \providecommand{\doi}[1]{doi: #1}\else
+  \providecommand{\doi}{doi: \begingroup \urlstyle{rm}\Url}\fi
+
+\bibitem[Aydin et~al.(2024)Aydin, Alekseyev, and Barg]{AAB2024}
+Arda Aydin, Max~A. Alekseyev, and Alexander Barg.
+\newblock A family of permutationally invariant quantum codes.
+\newblock \emph{Quantum}, 8:\penalty0 1321, 2024.
+\newblock \doi{10.22331/q-2024-04-30-1321}.
+\newblock arXiv:2310.05358.
+
+\bibitem[Aydin et~al.(2026)Aydin, Albert, and Barg]{SpinBosonicPI2026}
+Arda Aydin, Victor~V. Albert, and Alexander Barg.
+\newblock Quantum error correction beyond {$SU(2)$}: Spin, bosonic, and
+  permutation-invariant codes from convex geometry.
+\newblock \emph{PRX Quantum}, 2026.
+\newblock \doi{10.1103/kx3b-4nrp}.
+
+\bibitem[Gross(2021)]{Gross2021}
+Jonathan~A. Gross.
+\newblock Designing codes around interactions: The case of a spin.
+\newblock \emph{Physical Review Letters}, 127\penalty0 (1):\penalty0 010504,
+  2021.
+\newblock \doi{10.1103/PhysRevLett.127.010504}.
+
+\bibitem[Knill and Laflamme(1997)]{KnillLaflamme1997}
+Emanuel Knill and Raymond Laflamme.
+\newblock Theory of quantum error-correcting codes.
+\newblock \emph{Physical Review A}, 55\penalty0 (2):\penalty0 900--911, 1997.
+\newblock \doi{10.1103/PhysRevA.55.900}.
+
+\bibitem[Manes et~al.(2026)Manes, Subramanian, and Jiang]{TwoModeLoss2026}
+Argyris~Giannisis Manes, Mahadevan Subramanian, and Liang Jiang.
+\newblock Optimal two-mode bosonic loss codes from finite group symmetry, 2026.
+\newblock arXiv:2610.00561v1.
+
+\bibitem[Ouyang(2014)]{Ouyang2014}
+Yingkai Ouyang.
+\newblock Permutation-invariant quantum codes.
+\newblock \emph{Physical Review A}, 90\penalty0 (6):\penalty0 062317, 2014.
+\newblock \doi{10.1103/PhysRevA.90.062317}.
+
+\bibitem[Ouyang(2024)]{Ouyang2024}
+Yingkai Ouyang.
+\newblock A new take on permutation-invariant quantum codes.
+\newblock \emph{Quantum Views}, 8:\penalty0 80, 2024.
+\newblock \doi{10.22331/qv-2024-05-13-80}.
+
+\bibitem[Ruskai(2000)]{Ruskai2000}
+Mary~Beth Ruskai.
+\newblock Pauli exchange errors in quantum computation.
+\newblock \emph{Physical Review Letters}, 85\penalty0 (1):\penalty0 194--197,
+  2000.
+\newblock \doi{10.1103/PhysRevLett.85.194}.
+
+\bibitem[Zhang(2026)]{Zhang2026}
+Yuxuan Zhang.
+\newblock Symmetric two-error quantum code length, November 2026.
+\newblock Online research report, 10 November 2026,
+  \url{https://yuxuanzhang1995.github.io/agentic-research/symmetric-two-error-code-length/}.
+
+\end{thebibliography}

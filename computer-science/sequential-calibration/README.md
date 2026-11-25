@@ -1,5 +1,8 @@
 # Sequential calibration
 
+**Preprint · November 2026** — [Read the PDF](preprint/adaptive_weight_sequential_calibration.pdf) · [LaTeX source](preprint/adaptive_weight_sequential_calibration.tex) · [Build instructions](preprint/BUILD.md)
+
+
 ## Question
 
 What expected calibration error can be guaranteed in the classical adversarial binary forecasting setting?

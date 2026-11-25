@@ -1,0 +1,45 @@
+\begin{thebibliography}{5}
+\providecommand{\natexlab}[1]{#1}
+\providecommand{\url}[1]{\texttt{#1}}
+\expandafter\ifx\csname urlstyle\endcsname\relax
+  \providecommand{\doi}[1]{doi: #1}\else
+  \providecommand{\doi}{doi: \begingroup \urlstyle{rm}\Url}\fi
+
+\bibitem[Balogh et~al.(2018)Balogh, B{\'e}k{\'e}si, D{\'o}sa, Epstein, and
+  Levin]{Balogh2018AH}
+J{\'a}nos Balogh, J{\'o}zsef B{\'e}k{\'e}si, Gy{\"o}rgy D{\'o}sa, Leah Epstein,
+  and Asaf Levin.
+\newblock A new and improved algorithm for online bin packing.
+\newblock In \emph{26th Annual European Symposium on Algorithms (ESA 2018)},
+  volume 112 of \emph{LIPIcs}, pages 5:1--5:14, 2018.
+\newblock \doi{10.4230/LIPIcs.ESA.2018.5}.
+\newblock arXiv:1707.01728.
+
+\bibitem[Balogh et~al.(2019)Balogh, B{\'e}k{\'e}si, D{\'o}sa, Epstein, and
+  Levin]{Balogh2019LB}
+J{\'a}nos Balogh, J{\'o}zsef B{\'e}k{\'e}si, Gy{\"o}rgy D{\'o}sa, Leah Epstein,
+  and Asaf Levin.
+\newblock A new lower bound for classic online bin packing.
+\newblock In \emph{Approximation and Online Algorithms (WAOA 2018)}, volume
+  11312 of \emph{LNCS}, pages 18--28, 2019.
+\newblock arXiv:1807.05554.
+
+\bibitem[Lee and Lee(1985)]{LeeLee1985}
+C.~C. Lee and D.~T. Lee.
+\newblock A simple on-line bin-packing algorithm.
+\newblock \emph{Journal of the ACM}, 32\penalty0 (3):\penalty0 562--572, 1985.
+\newblock \doi{10.1145/3828.3833}.
+
+\bibitem[Martin(2026)]{Martin2026}
+Karyamsetty Martin.
+\newblock Tightening the online bin packing gap from both sides, and the limits
+  of the current methods, October 2026.
+\newblock arXiv:2610.32367v1 [cs.DS], 23 October 2026.
+
+\bibitem[Seiden(2002)]{Seiden2002}
+Steven~S. Seiden.
+\newblock On the online bin packing problem.
+\newblock \emph{Journal of the ACM}, 49\penalty0 (5):\penalty0 640--671, 2002.
+\newblock \doi{10.1145/585265.585269}.
+
+\end{thebibliography}

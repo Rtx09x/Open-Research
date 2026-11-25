@@ -1,5 +1,8 @@
 # Seven-cycle Shannon capacity
 
+**Preprint · November 2026** — [Read the PDF](preprint/seven_cycle_shannon_capacity_obstructions.pdf) · [LaTeX source](preprint/seven_cycle_shannon_capacity_obstructions.tex) · [Build instructions](preprint/BUILD.md)
+
+
 ## Question
 
 How large can zero-error codes become for the seven-cycle confusability graph?

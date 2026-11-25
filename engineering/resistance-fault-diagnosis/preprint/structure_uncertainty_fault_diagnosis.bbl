@@ -1,0 +1,116 @@
+\begin{thebibliography}{15}
+\providecommand{\natexlab}[1]{#1}
+\providecommand{\url}[1]{\texttt{#1}}
+\expandafter\ifx\csname urlstyle\endcsname\relax
+  \providecommand{\doi}[1]{doi: #1}\else
+  \providecommand{\doi}{doi: \begingroup \urlstyle{rm}\Url}\fi
+
+\bibitem[Doyle and Snell(1984)]{DS}
+Peter~G. Doyle and J.~Laurie Snell.
+\newblock \emph{Random Walks and Electric Networks}.
+\newblock Mathematical Association of America, 1984.
+
+\bibitem[Fiedorowicz and Basu(2026)]{FB}
+Barbara Fiedorowicz and Amitabh Basu.
+\newblock Identifying faulty edges in resistive electrical networks.
+\newblock \emph{Discrete Applied Mathematics}, 395:\penalty0 400--424, 2026.
+\newblock \doi{10.1016/j.dam.2026.08.008}.
+\newblock arXiv:2512.23527.
+
+\bibitem[Hoskins et~al.(2018)Hoskins, Musco, Musco, and Tsourakakis]{HMMT}
+Jeremy~G. Hoskins, Cameron Musco, Christopher Musco, and Charalampos~E.
+  Tsourakakis.
+\newblock Inferring networks from random walk-based node similarities.
+\newblock In \emph{Advances in Neural Information Processing Systems
+  (NeurIPS)}, volume~31, 2018.
+
+\bibitem[Huang and Cheng(2000)]{HC}
+Jiun-Lang Huang and Kwang-Ting Cheng.
+\newblock Test point selection for analog fault diagnosis of unpowered circuit
+  boards.
+\newblock \emph{IEEE Transactions on Circuits and Systems II: Analog and
+  Digital Signal Processing}, 47\penalty0 (10):\penalty0 977--987, 2000.
+\newblock \doi{10.1109/82.877140}.
+
+\bibitem[Ibaraki et~al.(1981)Ibaraki, Kameda, and Toida]{IKT}
+Toshihide Ibaraki, Tsunehiko Kameda, and Shunichi Toida.
+\newblock Minimal test set for diagnosing a tree system.
+\newblock In \emph{North-Holland Mathematics Studies}, volume~59, pages
+  215--240. 1981.
+\newblock \doi{10.1016/S0304-0208(08)73468-6}.
+
+\bibitem[Liu and Starzyk(2002)]{LS}
+Dong Liu and Janusz~A. Starzyk.
+\newblock A generalized fault diagnosis method in dynamic analogue circuits.
+\newblock \emph{International Journal of Circuit Theory and Applications},
+  30\penalty0 (5):\penalty0 487--510, 2002.
+\newblock \doi{10.1002/cta.187}.
+
+\bibitem[Mehlhorn et~al.(2017)Mehlhorn, Neumann, and Schmidt]{MNS}
+Kurt Mehlhorn, Adrian Neumann, and Jens~M. Schmidt.
+\newblock Certifying 3-edge-connectivity.
+\newblock \emph{Algorithmica}, 77\penalty0 (2):\penalty0 309--335, 2017.
+\newblock \doi{10.1007/s00453-015-0075-x}.
+\newblock arXiv:1211.6553.
+
+\bibitem[Starzyk et~al.(2004)Starzyk, Liu, Liu, Nelson, and Rutkowski]{Starzyk}
+Janusz~A. Starzyk, Dong Liu, Zhi-Hong Liu, Dale~E. Nelson, and J.~O. Rutkowski.
+\newblock Entropy-based optimum test points selection for analog fault
+  dictionary techniques.
+\newblock \emph{IEEE Transactions on Instrumentation and Measurement},
+  53\penalty0 (3):\penalty0 754--761, 2004.
+\newblock \doi{10.1109/TIM.2004.827085}.
+
+\bibitem[Szigeti(2009)]{Szigeti}
+Zolt{\'a}n Szigeti.
+\newblock Edge-connectivity augmentations of graphs and hypergraphs.
+\newblock In William Cook, L{\'a}szl{\'o} Lov{\'a}sz, and Jens Vygen, editors,
+  \emph{Research Trends in Combinatorial Optimization}, pages 483--521.
+  Springer, 2009.
+\newblock \doi{10.1007/978-3-540-76796-1_22}.
+
+\bibitem[Tadeusiewicz and Korzybski(2000)]{TK}
+Micha{\l} Tadeusiewicz and Marek Korzybski.
+\newblock A method for fault diagnosis in linear electronic circuits.
+\newblock \emph{International Journal of Circuit Theory and Applications},
+  28\penalty0 (3):\penalty0 245--262, 2000.
+\newblock
+  \doi{10.1002/(SICI)1097-007X(200005/06)28:3<245::AID-CTA103>3.0.CO;2-X}.
+
+\bibitem[Varshney et~al.(1982)Varshney, Hartmann, and de~Faria~Jr.]{VHF}
+Pramod~K. Varshney, Carlos R.~P. Hartmann, and J.~M. de~Faria~Jr.
+\newblock Application of information theory to sequential fault diagnosis.
+\newblock \emph{IEEE Transactions on Computers}, C-31\penalty0 (2):\penalty0
+  164--170, 1982.
+\newblock \doi{10.1109/TC.1982.1675963}.
+
+\bibitem[Warton et~al.(2026)Warton, Bennett, Black, and Nayyeri]{WBBN}
+Evelyn Warton, Huck Bennett, Mitchell Black, and Amir Nayyeri.
+\newblock Graph inference with effective resistance queries.
+\newblock In \emph{Proceedings of the 37th International Conference on
+  Algorithmic Learning Theory (ALT)}, volume 313 of \emph{Proceedings of
+  Machine Learning Research}, pages 1--31, 2026.
+\newblock URL \url{https://proceedings.mlr.press/v313/warton26a.html}.
+
+\bibitem[Watanabe and Nakamura(1987)]{WN}
+Toshimasa Watanabe and Akira Nakamura.
+\newblock Edge-connectivity augmentation problems.
+\newblock \emph{Journal of Computer and System Sciences}, 35\penalty0
+  (1):\penalty0 96--144, 1987.
+\newblock \doi{10.1016/0022-0000(87)90038-9}.
+
+\bibitem[Watanabe and Yamakado(1993)]{WY}
+Toshimasa Watanabe and M.~Yamakado.
+\newblock A linear time algorithm for smallest augmentation to 3-edge-connect a
+  graph.
+\newblock \emph{IEICE Transactions on Fundamentals of Electronics,
+  Communications and Computer Sciences}, E76-A\penalty0 (4):\penalty0 518--531,
+  1993.
+
+\bibitem[Ying et~al.(2023)Ying, de~Miranda~Cardoso, and Palomar]{YCP}
+Jiaxi Ying, Jos{\'e}~Vin{\'i}cius de~Miranda~Cardoso, and Daniel~P. Palomar.
+\newblock Does the $\ell_1$-norm learn a sparse graph under laplacian
+  constrained graphical models?, 2023.
+\newblock arXiv:2006.14925v2.
+
+\end{thebibliography}
