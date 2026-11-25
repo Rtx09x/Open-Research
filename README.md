@@ -1,9 +1,7 @@
 <div align="center">
 
-<img src="https://capsule-render.vercel.app/api?type=rect&amp;color=0:101c2d,100:254963&amp;height=190&amp;section=header&amp;text=Open%20Research&amp;fontColor=ffffff&amp;fontSize=55&amp;fontAlignY=40&amp;desc=Independent%20research.%20Open%20collaboration.&amp;descAlignY=69&amp;descSize=17" width="100%" alt="Open Research: Independent research. Open collaboration.">
+<img src="https://capsule-render.vercel.app/api?type=rect&amp;color=0:101c2d,100:254963&amp;height=190&amp;section=header&amp;text=Open%20Research&amp;fontColor=ffffff&amp;fontSize=55&amp;fontAlignY=40&amp;desc=Independent%20research.%20Open%20collaboration.&amp;descAlignY=69&amp;descSize=17" width="100%" alt="An independent initiative for open, collaborative and AI-assisted research.">
 
-
-**An independent initiative for open, collaborative and AI-assisted research.**
 
 [![Contributions](https://img.shields.io/badge/contributions-open-376c59?style=flat-square)](CONTRIBUTING.md)
 [![Software](https://img.shields.io/badge/software-MIT-405c78?style=flat-square)](LICENSES/MIT.txt)
