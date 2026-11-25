@@ -6,7 +6,7 @@
 [![Software](https://img.shields.io/badge/software-MIT-405c78?style=flat-square)](LICENSES/MIT.txt)
 [![Research](https://img.shields.io/badge/research-CC%20BY%204.0-405c78?style=flat-square)](LICENSE.md)
 
-[Research](#research) · [Preprints](#preprints) · [Contributing](#contributing) · [Research standards](#research-standards) · [About](#about)
+[Research](#research) · [Contributing](#contributing) · [Research standards](#research-standards) · [About](#about)
 
 </div>
 
@@ -22,6 +22,8 @@ Anyone is welcome to contribute, regardless of their academic background or prof
 
 ## Research
 
+<a id="preprints"></a>
+
 ### Founding collection · 2026
 
 The first collection draws on independent research by [Rudra Tiwari](https://github.com/Rtx09x), the founder of Open Research.
@@ -30,33 +32,20 @@ The first collection draws on independent research by [Rudra Tiwari](https://git
 
 The results have been **internally verified**: the repository includes proofs, source, certificates, checkers and a [record of the release replays](RELEASE_VALIDATION.md). The work is AI-assisted and awaits independent expert review; individual projects distinguish established results within their models from candidates, restricted obstructions and open questions.
 
-| Project | Results in the collection |
-| :--- | :--- |
-| [Hysteretic state machines](applied-physics/hysteretic-state-machines/) | Exact realizability criterion, sharp cycle capacity and an optimal 1,000-state / 13-switch construction |
-| [Resistance-based fault diagnosis](engineering/resistance-fault-diagnosis/) | Optimal diagnosis structures and single finite-change recovery in at most $2n-3$ measurements |
-| [Sparse conductance recovery](engineering/sparse-conductance-recovery/) | Rank-adaptive exact reconstruction and quadratic mixed-sign query lower bounds |
-| [Symmetric quantum error correction](physics/symmetric-quantum-error-correction/) | Internally certified two-error minimum 19; three-error bracket 35–37; general lower bound |
-| [Sequential calibration](computer-science/sequential-calibration/) | Candidate expected error $O(T^{20423/30846})$, with repaired induction and exact arithmetic certificates |
-| [Online bin packing](computer-science/online-bin-packing/) | Specified algorithm's ratio bracketed within about $1.068\times10^{-7}$ |
-| [Hierarchical matrix recovery](mathematics/hierarchical-matrix-recovery/) | Depth-independent fixed-basis error bounds using $6k$ matrix-vector products |
-| [Binary single-deletion codes](mathematics/binary-single-deletion-codes/) | Exact local radius-nine barrier, checksum necessity and two size-320 root-case exclusions |
-| [Seven-cycle Shannon capacity](mathematics/seven-cycle-shannon-capacity/) | Exact finite-subgroup and construction-family obstructions, with replayable certificates |
-| [Quantum channel capacity](physics/quantum-channel-capacity/) | Exact stabilizer-shield obstruction against arbitrary decoders in the stated architecture |
-The shared [26 October checkpoint](research-checkpoints/) preserves the proofs, dependencies and replay tools used across several tracks. Read the project pages for model assumptions, verification status and what remains open. The [release validation record](RELEASE_VALIDATION.md) lists the checks actually run.
-
-### Preprints
-
-Seven papers by Rudra Tiwari, with LaTeX sources on their project pages.
-
-| Paper | Result | PDF |
+| Paper or project | Main result | Preprint |
 | :--- | :--- | :--- |
-| [Hysteretic state machines](applied-physics/hysteretic-state-machines/) | Sharp memory bounds and exact interaction tradeoffs. | [Read PDF](applied-physics/hysteretic-state-machines/preprint/physical_resource_complexity_hysteretic_state_machines.pdf) |
-| [Resistance-based fault diagnosis](engineering/resistance-fault-diagnosis/) | Single-edge diagnosis under access, uncertainty and noise constraints. | [Read PDF](engineering/resistance-fault-diagnosis/preprint/structure_uncertainty_fault_diagnosis.pdf) |
-| [Sparse conductance recovery](engineering/sparse-conductance-recovery/) | Rank-adaptive reconstruction and quadratic mixed-sign query lower bounds. | [Read PDF](engineering/sparse-conductance-recovery/preprint/sparse_conductance_recovery.pdf) |
-| [Symmetric quantum error correction](physics/symmetric-quantum-error-correction/) | General qubit lower bounds, finite certificates and code constructions. | [Read PDF](physics/symmetric-quantum-error-correction/preprint/symmetric_quantum_error_correcting_codes.pdf) |
-| [Sequential calibration](computer-science/sequential-calibration/) | Candidate error exponent with exact arithmetic certificates. | [Read PDF](computer-science/sequential-calibration/preprint/adaptive_weight_sequential_calibration.pdf) |
-| [Online bin packing](computer-science/online-bin-packing/) | A tight competitive-ratio bracket for the specified algorithm. | [Read PDF](computer-science/online-bin-packing/preprint/deterministic_online_bin_packing.pdf) |
-| [Seven-cycle zero-error codes](mathematics/seven-cycle-shannon-capacity/) | Exact capacity and obstruction certificates for specified subchannels. | [Read PDF](mathematics/seven-cycle-shannon-capacity/preprint/seven_cycle_shannon_capacity_obstructions.pdf) |
+| [Physical Resource Complexity of Hysteretic State Machines](applied-physics/hysteretic-state-machines/) | Exact realizability criterion, sharp cycle capacity and an optimal 1,000-state / 13-switch construction | [Read PDF](applied-physics/hysteretic-state-machines/preprint/physical_resource_complexity_hysteretic_state_machines.pdf) |
+| [Structure and Uncertainty in Resistance-Based Fault Diagnosis](engineering/resistance-fault-diagnosis/) | Optimal diagnosis structures and single finite-change recovery in at most $2n-3$ measurements | [Read PDF](engineering/resistance-fault-diagnosis/preprint/structure_uncertainty_fault_diagnosis.pdf) |
+| [Sparse Conductance Recovery from Effective-Resistance Queries](engineering/sparse-conductance-recovery/) | Rank-adaptive exact reconstruction and quadratic mixed-sign query lower bounds | [Read PDF](engineering/sparse-conductance-recovery/preprint/sparse_conductance_recovery.pdf) |
+| [Symmetric Quantum Error-Correcting Codes: Finite Minima, General Lower Bounds, and Phase-Twisted Constructions](physics/symmetric-quantum-error-correction/) | Internally certified two-error minimum 19; three-error bracket 35–37; general lower bound | [Read PDF](physics/symmetric-quantum-error-correction/preprint/symmetric_quantum_error_correcting_codes.pdf) |
+| [Adaptive-Weight Sequential Calibration Beyond $T^{2/3}$: Deletion-Augmented Local-Trace Induction and Exact Rational Certification](computer-science/sequential-calibration/) | Candidate expected error $O(T^{20423/30846})$, with repaired induction and exact arithmetic certificates | [Read PDF](computer-science/sequential-calibration/preprint/adaptive_weight_sequential_calibration.pdf) |
+| [A Tight Competitive-Ratio Bracket for Advanced Harmonic with Tiny Best Fit](computer-science/online-bin-packing/) | Specified algorithm's ratio bracketed within about $1.068\times10^{-7}$ | [Read PDF](computer-science/online-bin-packing/preprint/deterministic_online_bin_packing.pdf) |
+| [Hierarchical matrix recovery](mathematics/hierarchical-matrix-recovery/) | Depth-independent fixed-basis error bounds using $6k$ matrix-vector products |   |
+| [Binary single-deletion codes](mathematics/binary-single-deletion-codes/) | Exact local radius-nine barrier, checksum necessity and two size-320 root-case exclusions |   |
+| [Structural Obstructions for Zero-Error Codes on Powers of the Seven-Cycle](mathematics/seven-cycle-shannon-capacity/) | Exact finite-subgroup and construction-family obstructions, with replayable certificates | [Read PDF](mathematics/seven-cycle-shannon-capacity/preprint/seven_cycle_shannon_capacity_obstructions.pdf) |
+| [Quantum channel capacity](physics/quantum-channel-capacity/) | Exact stabilizer-shield obstruction against arbitrary decoders in the stated architecture |   |
+
+The shared [26 October checkpoint](research-checkpoints/) preserves the proofs, dependencies and replay tools used across several tracks. Read the project pages for model assumptions, verification status and what remains open. The [release validation record](RELEASE_VALIDATION.md) lists the checks actually run.
 
 ### Research domains
 
