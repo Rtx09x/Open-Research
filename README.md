@@ -16,8 +16,6 @@
 
 ## Overview
 
-Open Research is an independent research initiative established to expand participation in the production of knowledge. It brings the collaborative principles of open-source software to scientific and scholarly investigation: researchers can share problems, develop methods, publish findings, examine evidence and extend existing work in a common, openly accessible environment.
-
 Research has historically depended on access to specialised infrastructure, institutional networks, funding and expertise. Advances in artificial intelligence and computation are changing the scale and complexity of investigations that individuals and small teams can undertake. Open Research seeks to translate that expanded capacity into rigorous, substantive contributions across disciplines.
 
 Participation is open to everyone, irrespective of professional background, qualifications or institutional affiliation. The standard for inclusion is the quality, transparency and scientific merit of the contribution.
